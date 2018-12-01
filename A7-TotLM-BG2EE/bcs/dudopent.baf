@@ -1,0 +1,27 @@
+IF
+  Global("GATE_OPEN","MYAREA",0)
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SetGlobal("GATE_OPEN","MYAREA",1)
+    StartCutScene("DUDOPENC")
+END
+
+IF
+  !Global("GATE_OPEN","MYAREA",0)
+  Unlocked(Myself)
+THEN
+  RESPONSE #100
+    Lock(Myself)
+    Continue()
+END
+
+IF
+  !Global("GATE_OPEN","MYAREA",0)
+  !Unlocked(Myself)
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+

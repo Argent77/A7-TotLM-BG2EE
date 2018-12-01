@@ -1,0 +1,51 @@
+IF
+  Global("CRYPT_THING_TELEPORT","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([383.1346],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1207.1972],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([3113.1835],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([470.1954],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([2187.2377],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([3469.1326],INNATE_CRYPT_THING_TELEPORT))
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
+    Continue()
+  RESPONSE #20
+    Continue()
+END
+
+IF
+  Global("CRYPT_THING_TELEPORT","LOCALS",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("CRYPT_THING_TELEPORT","LOCALS",0)
+END
+

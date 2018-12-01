@@ -1,0 +1,12 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    CloseDoor("ID9716_DOOR1")
+    CloseDoor("ID9716_DOOR2")
+    MultiPlayerSync()
+    Lock("ID9716_DOOR1")
+    Lock("ID9716_DOOR2")
+END
+

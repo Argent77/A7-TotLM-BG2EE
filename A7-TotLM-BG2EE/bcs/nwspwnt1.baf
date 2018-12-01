@@ -1,0 +1,29 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    CreateCreature("CYANIMP1",[232.296],0)
+    CreateCreature("CYANIMP1",[427.219],0)
+    CreateCreature("CYANIMP2",[754.283],2)
+    CreateCreature("CYANIMP2",[864.418],2)
+    CreateCreature("CYANIMP3",[584.681],8)
+    CreateCreature("CYANIMP3",[780.601],8)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

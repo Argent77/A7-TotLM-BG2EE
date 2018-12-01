@@ -1,0 +1,17 @@
+IF
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("MAGICMOUTH_DONE","MYAREA",1)
+    SetGlobal("MAGICMOUTH_TALK","MYAREA",3)
+    Deactivate(Myself)
+END
+
+IF
+  !Global("MAGICMOUTH_DONE","MYAREA",0)
+  !Global("MAGICMOUTH_TALK","MYAREA",3)
+THEN
+  RESPONSE #100
+    OpenDoor(Myself)
+END
+

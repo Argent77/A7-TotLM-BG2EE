@@ -1,0 +1,82 @@
+IF
+  !Global("EFPIKWRN_inactive","LOCALS",1)
+  Global("CREATURE_STATE_VARBit15","LOCALS",1)
+  Opened([PC])
+  See([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  !Global("EFPIKWRN_inactive","LOCALS",1)
+  !Global("CREATURE_STATE_VARBit1","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit1","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("EFPIKWRN_inactive","LOCALS",1)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("EFPIKWRN_inactive","LOCALS",1)
+END
+
+IF
+  !Global("EFPIKWRN_inactive","LOCALS",1)
+  !Global("CREATURE_STATE_VARBit14","LOCALS",1)
+  PickPocketFailed([PC])
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@18056)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@18057)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@18058)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@18059)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@17990)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@17992)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@17993)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@17994)
+    Continue()
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit14","LOCALS",1)
+    DisplayStringHead(Myself,@17995)
+    Continue()
+END
+
+IF
+  !Global("EFPIKWRN_inactive","LOCALS",1)
+  Global("CREATURE_STATE_VARBit14","LOCALS",1)
+  PickPocketFailed([PC])
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+

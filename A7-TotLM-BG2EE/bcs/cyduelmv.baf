@@ -1,0 +1,30 @@
+IF
+  Race(Myself,HARPY)
+  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+THEN
+  RESPONSE #100
+    ChangeAIScript("GNT3MOVE",DEFAULT)
+END
+
+IF
+  Race(Myself,WYVERN)
+  !Global("MAP_GROUP_HOSTILE6","MYAREA",0)
+THEN
+  RESPONSE #100
+    ChangeAIScript("GNT6MOVE",DEFAULT)
+END
+
+IF
+  !NearLocation(Myself,1076,617,5)
+THEN
+  RESPONSE #100
+    MoveToPoint([1076.617])
+END
+
+IF
+  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+THEN
+  RESPONSE #100
+    RandomWalk()
+END
+

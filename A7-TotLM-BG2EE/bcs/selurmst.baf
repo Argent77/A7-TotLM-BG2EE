@@ -1,0 +1,45 @@
+IF
+  GlobalGT("ID#CHALLENGE_PERSEVERANCE","GLOBAL",1)
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    DestroySelf()
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    FaceObject([PC])
+    Continue()
+END
+
+IF
+  !IsActive(Myself)
+  !Global("SPRITE_IS_DEADCYSHAMB","GLOBAL",0)
+  !Exists([ENEMY])
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    SetGlobal("FORCE_TALK","LOCALS",1)
+    Activate(Myself)
+    Continue()
+END
+
+IF
+  !Global("FORCE_TALK","LOCALS",0)
+  See([PC])
+  !Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    MultiPlayerSync()
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+

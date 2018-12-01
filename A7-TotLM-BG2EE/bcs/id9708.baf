@@ -1,0 +1,49 @@
+IF
+  !Global("ID9708_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9708_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("ID9708_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OR(2)
+    OpenState("ID9708_HIDE_DOOR1",TRUE)
+    Global("#ID9708_DOOR","ID9708",0)
+THEN
+  RESPONSE #100
+    CloseDoor("ID9708_HIDE_DOOR1")
+    TriggerActivation("To9707",FALSE)
+    SetGlobal("#ID9708_DOOR","ID9708",1)
+    Continue()
+END
+
+IF
+  !Global("ID9708_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OpenState("ID9708_HIDE_DOOR1",FALSE)
+THEN
+  RESPONSE #100
+    OpenDoor("ID9708_HIDE_DOOR1")
+    TriggerActivation("To9707",TRUE)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
+IF
+  !Global("ID#SPAWN_DJINNI","GLOBAL",0)
+  !Global("#spawn_group_0","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_0","MYAREA",1)
+    CreateCreature("djinni_",[582.320],2)
+    Continue()
+END
+

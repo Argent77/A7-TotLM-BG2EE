@@ -1,0 +1,7 @@
+IF
+  GlobalGT("ID#MASTER_QUEST","GLOBAL",2)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

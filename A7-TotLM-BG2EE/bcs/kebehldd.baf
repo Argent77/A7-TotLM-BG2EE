@@ -1,0 +1,96 @@
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  GlobalGT("DANCE_CUTSCENE","MYAREA",2)
+  Global("BEHOLDER_MOVE","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("BEHOLDER_MOVE","MYAREA",1)
+    Continue()
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("BEHOLDER_MOVE","MYAREA",2)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("KEBEHLDD_inactive","LOCALS",1)
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("SAW_PC","LOCALS",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("SAW_PC","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("SAW_PC","LOCALS",0)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("SAW_PC","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
+  Global("CREATURE_STATE_VARBit20","LOCALS",1)
+  NearLocation(Myself,1146,500,8)
+  Global("BEHOLDER_MOVE","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",1)
+    IncrementGlobal("CREATURE_STATE_VARBit20","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
+  Global("BEHOLDER_MOVE","MYAREA",1)
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit20","LOCALS",1)
+    SetHomeLocation([1146.500])
+    MoveToPoint([1146.500])
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("MOVEMENT_LIST_0_LOC","LOCALS",1)
+  Global("BEHOLDER_MOVE","MYAREA",1)
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    SaveObjectLocation("LOCALS","#saved_loc",Myself)
+    SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",2)
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  Global("MOVEMENT_LIST_0_LOC","LOCALS",2)
+  Global("BEHOLDER_MOVE","MYAREA",1)
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    SetGlobal("BEHOLDER_MOVE","MYAREA",2)
+    SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",3)
+END
+
+IF
+  !Global("KEBEHLDD_inactive","LOCALS",1)
+  GlobalLT("DANCE_CUTSCENE","MYAREA",4)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+

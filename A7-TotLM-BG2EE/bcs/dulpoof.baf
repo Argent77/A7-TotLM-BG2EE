@@ -1,0 +1,37 @@
+IF
+  !HasItem("CIFADE",Myself)
+THEN
+  RESPONSE #100
+    GiveItemCreate("CIFADE",Myself,1,1,1)
+    Continue()
+END
+
+IF
+  !Global("SPRITE_IS_DEADLUREMASTER","GLOBAL",0)
+THEN
+  RESPONSE #100
+    EquipItemEx("CIFADE",0)
+    Wait(2)
+    DestroySelf()
+END
+
+IF
+  !HasItem("SPAWN",Myself)
+THEN
+  RESPONSE #100
+    GiveItemCreate("SPAWN",Myself,1,1,1)
+    Continue()
+END
+
+IF
+  !Global("spawned","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("spawned","LOCALS",1)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    FaceObject(NearestEnemyOf(Myself))
+    ApplySpellRES("dw#brkin",Myself)
+    Continue()
+END
+

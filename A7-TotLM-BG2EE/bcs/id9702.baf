@@ -1,0 +1,39 @@
+IF
+  !Global("ID9702_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9702_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("ID9702_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OR(2)
+    OpenState("ID9702_HIDE_DOOR1",TRUE)
+    Global("#ID9702_DOOR","ID9702",0)
+THEN
+  RESPONSE #100
+    CloseDoor("ID9702_HIDE_DOOR1")
+    TriggerActivation("To9701",FALSE)
+    SetGlobal("#ID9702_DOOR","ID9702",1)
+    Continue()
+END
+
+IF
+  !Global("ID9702_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OpenState("ID9702_HIDE_DOOR1",FALSE)
+THEN
+  RESPONSE #100
+    OpenDoor("ID9702_HIDE_DOOR1")
+    TriggerActivation("To9701",TRUE)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

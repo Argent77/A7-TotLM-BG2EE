@@ -1,0 +1,19 @@
+IF
+  !Global("ID#EAST_BLOCK","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MoveToPoint([771.573])
+  RESPONSE #100
+    MoveToPoint([893.750])
+  RESPONSE #100
+    MoveToPoint([993.860])
+END
+
+IF
+  ActionListEmpty()
+THEN
+  RESPONSE #100
+    RandomWalk()
+    Wait(0)
+END
+

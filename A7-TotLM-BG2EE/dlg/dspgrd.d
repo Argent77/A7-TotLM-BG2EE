@@ -1,0 +1,7 @@
+BEGIN ~DSPGRD~
+
+IF ~  True()
+~ THEN BEGIN 0
+  SAY @11440
+  IF ~~ THEN EXIT
+END

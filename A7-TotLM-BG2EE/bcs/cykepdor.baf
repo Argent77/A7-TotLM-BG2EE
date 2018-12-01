@@ -1,0 +1,15 @@
+IF
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+
+IF
+  OpenState(Myself,FALSE)
+  GlobalGT("ID#SPIRITS_FREED","GLOBAL",3)
+THEN
+  RESPONSE #100
+    OpenDoor(Myself)
+END
+

@@ -1,0 +1,7 @@
+IF
+  Entered([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",1)
+END
+

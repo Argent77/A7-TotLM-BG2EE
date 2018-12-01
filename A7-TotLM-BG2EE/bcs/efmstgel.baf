@@ -1,0 +1,10 @@
+IF
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    ReallyForceSpell(Myself,INNATE_MUSTARD_JELLY_VAPOR)
+    Wait(2)
+END
+

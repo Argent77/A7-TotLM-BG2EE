@@ -1,0 +1,12 @@
+// -*- coding: us-ascii -*- 
+// Setup (index >= 1000000)
+@1000000 = ~Trials of the Luremaster for BG2:EE~
+@1000050 = ~Make IWD spells available to the player~
+@1000100 = ~Rebalance weapons and equipment~
+
+
+@1100000 = ~Requires BG2:EE or EET.~
+@1100001 = ~Requires BG2:EE patch 2.0 or later.~
+@1100002 = ~Requires the main component to be installed.~
+@1100003 = ~This feature is already installed by another mod.~
+@1100004 = ~Could not find list of installed IWD spells. No changes have been made.~

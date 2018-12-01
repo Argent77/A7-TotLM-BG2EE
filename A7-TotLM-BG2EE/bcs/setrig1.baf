@@ -1,0 +1,18 @@
+IF
+  Global("ID9704_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9704_HIDDEN_DOOR_STATE","GLOBAL",1)
+    DisplayStringNoNameHead([PC],@40717)
+END
+
+IF
+  !Global("ID9704_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OpenState(Myself,FALSE)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9704_HIDDEN_DOOR_STATE","GLOBAL",0)
+    DisplayStringNoNameHead([PC],@40718)
+END
+

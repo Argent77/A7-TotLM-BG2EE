@@ -1,0 +1,21 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("HOBART")
+    ClearAllActions()
+    MultiPlayerSync()
+    StartCutScene("CYHRPAMB")
+    MoveToPoint([1457.920])
+    Face(8)
+    OpenDoor("ID9700_DOOR3")
+    MoveToPoint([1440.890])
+    StartCutScene("CGPTFCEN")
+    MoveToPoint([1457.920])
+    CloseDoor("ID9700_DOOR3")
+    Wait(1)
+    StartCutScene("CGPTFCEN")
+    EndCutSceneMode()
+    DestroySelf()
+END
+

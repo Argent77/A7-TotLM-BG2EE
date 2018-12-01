@@ -1,0 +1,18 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    SetGlobal("HOBART_TRANSFORM","MYAREA",1)
+    ClearAllActions()
+    MultiPlayerSync()
+    MoveViewObject(Myself,INSTANT)
+    FaceObject(NearestEnemyOf(Myself))
+    SmallWait(6)
+    SetGlobal("MAP_GROUP_HOSTILE8","MYAREA",1)
+    ForceSpell(Myself,INNATE_HOBART_TO_RAKSHASA)
+    MoveViewObject([PC],INSTANT)
+    EndCutSceneMode()
+    Enemy()
+END
+

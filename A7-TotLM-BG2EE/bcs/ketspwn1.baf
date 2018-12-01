@@ -1,0 +1,20 @@
+IF
+  !Global("KETSPWN1_init","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("KETSPWN1_init","LOCALS",1)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    FaceObject(NearestEnemyOf(Myself))
+    ApplySpellRES("dw#brkin",Myself)
+    Continue()
+END
+
+IF
+  Global("TELEPORT_1","MYAREA",0)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("TELEPORT_1","MYAREA",1)
+END
+

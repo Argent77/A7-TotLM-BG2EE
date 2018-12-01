@@ -1,0 +1,35 @@
+IF
+  Difficulty(EASIEST)
+THEN
+  RESPONSE #100
+    ChangeAIScript("EFATKC",RACE)
+END
+
+IF
+  Difficulty(EASY)
+THEN
+  RESPONSE #100
+    ChangeAIScript("EFATKS25",RACE)
+END
+
+IF
+  Difficulty(NORMAL)
+THEN
+  RESPONSE #100
+    ChangeAIScript("EFATKS50",RACE)
+END
+
+IF
+  Difficulty(HARD)
+THEN
+  RESPONSE #100
+    ChangeAIScript("EFATKS75",RACE)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    ChangeAIScript("EFATKS00",RACE)
+END
+

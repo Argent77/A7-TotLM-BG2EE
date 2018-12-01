@@ -1,0 +1,463 @@
+IF
+  Global("ATTACK_SET","LOCALS",0)
+  !Global("TELEPORT_1","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  !Global("TELEPORT_2","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  !Global("TELEPORT_3","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",2)
+    SetGlobal("TELEPORT_SET","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("ATTACK_SET","LOCALS",0)
+  Global("TELEPORT_SET","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",1)
+    SetGlobal("TELEPORT_SET","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("TELEPORT_SET","LOCALS",2)
+  !Global("TELEPORT_2","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",3)
+    Continue()
+END
+
+IF
+  Global("TELEPORT_SET","LOCALS",3)
+  !Global("TELEPORT_3","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("TELEPORT_SET","LOCALS",1)
+  !Global("TELEPORT_1","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("TELEPORT_SET","LOCALS",2)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  Global("TELEPORT_SET","LOCALS",1)
+  Global("TELEPORT_1","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",3)
+    SetGlobal("TELEPORT_SET","LOCALS",0)
+    SetGlobal("ATTACK_SET","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1749.1145],INNATE_CRYPT_THING_TELEPORT))
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  Global("TELEPORT_SET","LOCALS",2)
+  Global("TELEPORT_2","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",3)
+    SetGlobal("TELEPORT_SET","LOCALS",0)
+    SetGlobal("ATTACK_SET","LOCALS",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([844.1167],INNATE_CRYPT_THING_TELEPORT))
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  Global("TELEPORT_SET","LOCALS",3)
+  Global("TELEPORT_3","MYAREA",0)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",3)
+    SetGlobal("TELEPORT_SET","LOCALS",0)
+    SetGlobal("ATTACK_SET","LOCALS",1)
+    SetGlobal("TELEPORT_3","MYAREA",1)
+    ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1534.1862],INNATE_CRYPT_THING_TELEPORT))
+END
+
+IF
+  Global("ATTACK_SET","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",1)
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  Detect(Myself)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !StateCheck(NearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !CheckSpellState(NearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !CheckSpellState(NearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !StateCheck(SecondNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !CheckSpellState(SecondNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !CheckSpellState(SecondNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !StateCheck(ThirdNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !CheckSpellState(ThirdNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !CheckSpellState(ThirdNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !StateCheck(FourthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !CheckSpellState(FourthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !CheckSpellState(FourthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !StateCheck(FifthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !CheckSpellState(FifthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !CheckSpellState(FifthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !StateCheck(SixthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !CheckSpellState(SixthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !CheckSpellState(SixthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  False()
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  OR(3)
+    CheckSpellState(LastSeenBy,BUFF_PRO_WEAPONS)
+    CheckSpellState(LastSeenBy,BUFF_PRO_EFFECTS)
+    StateCheck(LastSeenBy,STATE_HASTED)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_DISPEL_MAGIC)
+    ForceSpell(LastSeenBy,WIZARD_DISPEL_MAGIC)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  DifficultyGT(EASY)
+  HaveSpell(CLERIC_FINGER_OF_DEATH)
+  OR(5)
+    See([PC.0.0.MAGE])
+    See([PC.0.0.BARD])
+    See([PC.0.0.THIEF])
+    See([PC.0.0.MAGE_THIEF])
+    See([FAMILIAR])
+  !StateCheck(LastSeenBy(Myself),STATE_HARMLESS)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStatGT(LastSeenBy(Myself),0,DEATH_WARD)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatGT(LastSeenBy(Myself),7,SAVEVSSPELL)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(CLERIC_FINGER_OF_DEATH)
+    ForceSpell(LastSeenBy(Myself),CLERIC_FINGER_OF_DEATH)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  DifficultyGT(EASY)
+  HaveSpell(CLERIC_FINGER_OF_DEATH)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_HARMLESS)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStatGT(LastSeenBy(Myself),0,DEATH_WARD)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatGT(LastSeenBy(Myself),7,SAVEVSSPELL)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+  RandomNum(4,1)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(CLERIC_FINGER_OF_DEATH)
+    ForceSpell(LastSeenBy(Myself),CLERIC_FINGER_OF_DEATH)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  DifficultyGT(EASIEST)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  See(NearestEnemyOf(Myself))
+  TriggerOverride(LastSeenBy(Myself),Range(NearestAllyOf(Myself),12))
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(LastSeenBy(Myself),55,MAGICDAMAGERESISTANCE)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  DifficultyGT(EASIEST)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  See(SecondNearestEnemyOf(Myself))
+  TriggerOverride(LastSeenBy(Myself),Range(NearestAllyOf(Myself),12))
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(LastSeenBy(Myself),55,MAGICDAMAGERESISTANCE)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  DifficultyGT(EASIEST)
+  HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  See(ThirdNearestEnemyOf(Myself))
+  TriggerOverride(LastSeenBy(Myself),Range(NearestAllyOf(Myself),12))
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(LastSeenBy(Myself),55,MAGICDAMAGERESISTANCE)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  OR(6)
+    See(Player4)
+    See(Player3)
+    See(Player5)
+    See(Player2)
+    See(Player6)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_BLIND)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_ANIMATE_DEAD)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_HORROR)
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_STUN)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_BLIND)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_POWER_WORD_KILL)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),CLERIC_ANIMATE_DEAD)
+  RESPONSE #50
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_HORROR)
+  RESPONSE #100
+    SetGlobal("ATTACK_SET","LOCALS",0)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+END
+
+IF
+  Global("guards_summoned","LOCALS",0)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("GUARDS_1","MYAREA",1)
+  DifficultyGT(EASY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("guards_summoned","LOCALS",1)
+    SetGlobal("GUARDS_1","MYAREA",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
+    DisplayStringHead(Myself,@15409) // "Guards!"
+    Continue()
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  Global("guards_summoned","LOCALS",1)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("GUARDS_2","MYAREA",1)
+  GlobalTimerExpired("bd_summoned","LOCALS")
+  DifficultyGT(NORMAL)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("guards_summoned","LOCALS",2)
+    SetGlobal("GUARDS_2","MYAREA",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
+    DisplayStringHead(Myself,@15409) // "Guards!"
+    Continue()
+END
+
+IF
+  Global("guards_summoned","LOCALS",2)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("GUARDS_3","MYAREA",1)
+  GlobalTimerExpired("bd_summoned","LOCALS")
+  DifficultyGT(HARD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("guards_summoned","LOCALS",3)
+    SetGlobal("GUARDS_3","MYAREA",1)
+    DisplayStringHead(Myself,@15409) // "Guards!"
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END

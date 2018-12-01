@@ -1,0 +1,83 @@
+IF
+  HaveSpell(CLERIC_CURSE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_CURSE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  OR(2)
+    See([PC.0.0.CLERIC_ALL])
+    See([PC.0.0.MAGE_ALL])
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_RIGID_THINKING)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CONFUSED)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_RIGID_THINKING)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_MENTAL_DOMINATION)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_MENTAL_DOMINATION)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_CLOAK_OF_FEAR)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CLOAK_OF_FEAR)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_INSECT_PLAGUE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),CLERIC_INSECT_PLAGUE)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

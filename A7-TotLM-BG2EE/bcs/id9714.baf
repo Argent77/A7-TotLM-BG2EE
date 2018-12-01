@@ -1,0 +1,75 @@
+IF
+  !Global("ID9714_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9714_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  !Global("#_9714MS3_AWAKE","MYAREA",1)
+  !Global("DOOR_1_UNLOCKED","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9714MS3_AWAKE","MYAREA",1)
+    StaticSequence("9714MS3",1) // SEQ_AWAKE
+    Continue()
+END
+
+IF
+  Global("ID9714_CUTSCENE","GLOBAL",2)
+THEN
+  RESPONSE #100
+    StaticSequence("9714MS4",0) // SEQ_ATTACK
+    SetGlobal("ID9714_CUTSCENE","GLOBAL",0)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_ERRIS","GLOBAL",1)
+  !Global("#spawn_group_0","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_0","MYAREA",1)
+    CreateCreature("erris",[3190.860],4)
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_GEDDIAN","GLOBAL",1)
+  !Global("#spawn_group_1","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_1","MYAREA",1)
+    CreateCreature("geddian",[3327.822],10)
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_GILES","GLOBAL",1)
+  !Global("#spawn_group_2","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_2","MYAREA",1)
+    CreateCreature("giles",[3257.928],2)
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_ZIERKKI","GLOBAL",1)
+  !Global("#spawn_group_3","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_3","MYAREA",1)
+    CreateCreature("zierkki",[3360.892],12)
+    Continue()
+END
+

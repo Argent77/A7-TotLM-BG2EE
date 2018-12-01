@@ -1,0 +1,27 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ClearAllActions()
+    MultiPlayerSync()
+    MoveViewPoint([3310.2026],FAST)
+    Wait(1)
+    StaticSequence("9800MS1",1) // SEQ_AWAKE
+    SmallWait(4)
+    StaticSequence("9800MS1",0) // SEQ_ATTACK
+    SmallWait(4)
+    StaticSequence("9800MS1",1) // SEQ_AWAKE
+    SmallWait(4)
+    StaticSequence("9800MS1",0) // SEQ_ATTACK
+    Wait(1)
+    PlaySound("AM9800C")
+    StaticSequence("9800MS1",1) // SEQ_AWAKE
+    Wait(3)
+    SoundActivate("AM9800D",TRUE)
+    SetGlobal("OPENED_HIDE","MYAREA",1)
+    OpenDoor("ID9800_Hide1")
+    TriggerActivation("To9711",TRUE)
+    EndCutSceneMode()
+END
+

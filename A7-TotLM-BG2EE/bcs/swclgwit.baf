@@ -1,0 +1,9 @@
+IF
+  GlobalGT("ID#CHALLENGE_WITS","GLOBAL",2)
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    DestroySelf()
+END
+

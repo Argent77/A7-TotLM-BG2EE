@@ -1,0 +1,67 @@
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MINOTAUR_TRAP","MYAREA",2)
+  See([PC])
+  Detect([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("MINOTAUR_TRAP","MYAREA",3)
+    DisplayStringHead(Myself,@18048)
+    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SmallWait(8)
+    SetGlobal("MINOTAUR_TRAP","MYAREA",4)
+    Continue()
+END
+
+IF
+  !Global("CREATURE_STATE_VARBit1","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit1","LOCALS",1)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+END
+
+IF
+  Global("MINOTAUR_TRAP","MYAREA",4)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+  Detect([PC])
+THEN
+  RESPONSE #40
+    DisplayStringHead(Myself,@1980)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #40
+    DisplayStringHead(Myself,@18060)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #180
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+END
+
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+

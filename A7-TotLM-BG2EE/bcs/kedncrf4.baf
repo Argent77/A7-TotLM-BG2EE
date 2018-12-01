@@ -1,0 +1,69 @@
+IF
+  Global("DANCE_STEP","LOCALS",0)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.-2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([0.2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([2.0])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([-2.0])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([2.-2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([-2.-2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([2.2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([-2.2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+END
+
+IF
+  Global("DANCE_STEP","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",2)
+    SetGlobal("SPIN_RIGHT","LOCALS",8)
+    SetGlobal("SPIN_LEFT","LOCALS",0)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",2)
+    SetGlobal("SPIN_LEFT","LOCALS",8)
+    SetGlobal("SPIN_RIGHT","LOCALS",0)
+    Continue()
+END
+
+IF
+  !Global("SPIN_RIGHT","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPIN_RIGHT","LOCALS",-1)
+    RandomTurn()
+END
+
+IF
+  !Global("SPIN_LEFT","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPIN_LEFT","LOCALS",-1)
+    RandomTurn()
+END
+
+IF
+  Global("DANCE_STEP","LOCALS",2)
+THEN
+  RESPONSE #100
+    MoveToSavedLocation("#savedloc","LOCALS")
+    Face(0)
+    SetGlobal("DANCE_STEP","LOCALS",0)
+END
+

@@ -1,0 +1,130 @@
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),CLERIC_CAUSE_MODERATE_WOUNDS)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),CLERIC_CAUSE_DISEASE)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),CLERIC_UNHOLY_BLIGHT)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_ICE_STORM)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_SNILLOCS_SNOWBALL_SWARM)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_CHROMATIC_ORB)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_VITRIOLIC_SPHERE)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_FIREBALL)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_LIGHTNING_BOLT)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_LANCE_OF_DISRUPTION)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !Global("SPELL_SET","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),CLERIC_ENTANGLE)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),WIZARD_STINKING_CLOUD)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),WIZARD_BLINDNESS)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),WIZARD_SLOW)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    Wait(2)
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",0)
+    ForceSpell(LastSeenBy(Myself),WIZARD_ANIMATE_DEAD)
+    Wait(2)
+END
+

@@ -1,0 +1,10 @@
+IF
+  Global("HOBART_TRANSFORM","MYAREA",0)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SetGlobal("HOBART_TRANSFORM","MYAREA",1)
+    StartCutScene("KERAKREV")
+END
+

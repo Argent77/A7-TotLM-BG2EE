@@ -1,0 +1,9 @@
+IF
+  Global("ID9700_HANGING_MAN","GLOBAL",0)
+  Entered([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("ID9700_HANGING_MAN","GLOBAL",1)
+    StartCutScene("CYHANGC")
+END
+

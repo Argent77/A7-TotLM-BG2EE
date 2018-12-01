@@ -1,0 +1,40 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("AMBUSH_HARPY_1")
+    MoveToPoint([1456.1325])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("AMBUSH_HARPY_2")
+    MoveToPoint([1157.1103])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("AMBUSH_HARPY_3")
+    MoveToPoint([1772.973])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("AMBUSH_HARPY_4")
+    MoveToPoint([1230.1280])
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("AMBUSH_HARPY_5")
+    MoveToPoint([1706.1267])
+END
+

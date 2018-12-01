@@ -1,0 +1,81 @@
+IF
+  OpenState(Myself,TRUE)
+  OR(5)
+    !Contains("DGEM08","Heaven")
+    !Contains("DGEM02","Day")
+    !Contains("DGEM09","Earth")
+    !Contains("DGEM05","Sea")
+    !Contains("DGEM04","Night")
+THEN
+  RESPONSE #100
+    SetGlobal("HIDE_STATE","MYAREA",0)
+    SoundActivate("AM9800D",FALSE)
+    StaticSequence("9800MS1",0) // SEQ_ATTACK
+    CloseDoor(Myself)
+    TriggerActivation("To9711",FALSE)
+END
+
+IF
+  Global("HIDE_STATE","MYAREA",0)
+  Contains("DGEM08","Heaven")
+  Contains("DGEM02","Day")
+  Contains("DGEM09","Earth")
+  Contains("DGEM05","Sea")
+  Contains("DGEM04","Night")
+THEN
+  RESPONSE #100
+    SetGlobal("HIDE_STATE","MYAREA",1)
+    Continue()
+END
+
+IF
+  !Global("HIDE_STATE","MYAREA",0)
+  Global("OPENED_HIDE","MYAREA",0)
+  OpenState(Myself,FALSE)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("CAHIDEO")
+END
+
+IF
+  !Global("HIDE_STATE","MYAREA",0)
+  !Global("OPENED_HIDE","MYAREA",0)
+  OpenState(Myself,FALSE)
+THEN
+  RESPONSE #100
+    OpenDoor(Myself)
+    TriggerActivation("To9711",TRUE)
+    SoundActivate("AM9800D",TRUE)
+    StaticSequence("9800MS1",1) // SEQ_AWAKE
+END
+
+IF
+  Global("HIDE_DOOR_XP","MYAREA",0)
+  !Global("OPENED_HIDE","MYAREA",0)
+THEN
+  RESPONSE #100
+    AddexperienceParty(30000)
+    SetGlobal("HIDE_DOOR_XP","MYAREA",1)
+END
+
+IF
+  !Global("#_9800MS1_AWAKE","MYAREA",1)
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9800MS1_AWAKE","MYAREA",1)
+    SoundActivate("AM9800D",TRUE)
+    StaticSequence("9800MS1",1) // SEQ_AWAKE
+END
+
+IF
+  !Global("#_9800MS1_ATTACK","MYAREA",1)
+  OpenState(Myself,FALSE)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9800MS1_ATTACK","MYAREA",1)
+    SoundActivate("AM9800D",FALSE)
+    StaticSequence("9800MS1",0) // SEQ_ATTACK
+END
+

@@ -1,0 +1,12 @@
+// -*- coding: us-ascii -*- 
+// Setup (index >= 1000000)
+@1000000 = ~Die Herausforderungen des Meisters der Verlockung fuer BG2:EE~
+@1000050 = ~Dem Spieler vorhandene IWD-Zauber zur Verfuegung stellen~
+@1000100 = ~Waffen und Ausruestung anpassen~
+
+
+@1100000 = ~Benoetigt BG2:EE oder EET.~
+@1100001 = ~Benoetigt BG2:EE patch 2.0 oder neuer.~
+@1100002 = ~Benoetigt die Hauptkomponente.~
+@1100003 = ~Diese Funktion wurde bereits von einer anderen Mod zur Verfuegung gestellt.~
+@1100004 = ~Liste mit installierten IWD-Zaubern nicht verfuegbar. Es wurden keine Veraenderungen vorgenommen.~

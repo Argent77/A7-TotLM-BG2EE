@@ -1,0 +1,16 @@
+IF
+  !Global("EFXDELL_inactive","LOCALS",1)
+  LevelPartyLT(12)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  !Global("EFXDELL_inactive","LOCALS",1)
+  True()
+THEN
+  RESPONSE #100
+    SetGlobal("EFXDELL_inactive","LOCALS",1)
+END
+

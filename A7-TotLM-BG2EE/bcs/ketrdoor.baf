@@ -1,0 +1,29 @@
+IF
+  Global("RINGLUR_FOUND","MYAREA",0)
+  PartyHasItem("RINGLUR")
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    SetGlobal("RINGLUR_FOUND","MYAREA",1)
+    StartCutScene("KEENDDOR")
+END
+
+IF
+  !Global("#_9711MS1_AWAKE","MYAREA",1)
+  !Global("RINGLUR_FOUND","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9711MS1_AWAKE","MYAREA",1)
+    SoundActivate("AM9711D",FALSE)
+    StaticSequence("9711MS1",1) // SEQ_AWAKE
+    Continue()
+END
+
+IF
+  OpenState(Myself,FALSE)
+  !Global("RINGLUR_FOUND","MYAREA",0)
+THEN
+  RESPONSE #100
+    OpenDoor(Myself)
+END
+

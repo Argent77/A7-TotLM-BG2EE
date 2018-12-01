@@ -1,0 +1,43 @@
+IF
+  !Global("ID9800_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9800_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("SUMMONER_TURN","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SUMMONER_TURN","MYAREA",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
+IF
+  Global("OH_auto_save","MYAREA",0)
+  OpenState("ID9800_Hide1",TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("OH_auto_save","MYAREA",1)
+END
+
+IF
+  Global("OH_auto_save","MYAREA",0)
+  OpenState("ID9800_Hide1",TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("OH_auto_save","MYAREA",1)
+END
+

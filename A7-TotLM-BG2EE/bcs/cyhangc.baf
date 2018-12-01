@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    SoundActivate("AM9700B",TRUE)
+    StaticSequence("9700MS2",1) // SEQ_AWAKE
+    Wait(6)
+    StaticSequence("9700MS2",0) // SEQ_ATTACK
+    SoundActivate("AM9700B",FALSE)
+    EndCutSceneMode()
+END
+

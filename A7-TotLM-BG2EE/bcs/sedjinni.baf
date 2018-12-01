@@ -1,0 +1,32 @@
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("OHNOWHR",Myself)
+END
+
+IF
+  !Global("SEDJINNI_init","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SEDJINNI_init","LOCALS",1)
+    SmallWait(8)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    FaceObject(NearestEnemyOf(Myself))
+    ApplySpellRES("dw#brkin",Myself)
+    Continue()
+END
+
+IF
+  Global("CAST_WHIRLWIND","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ForceSpell(NearestEnemyOf(Myself),CLERIC_WHIRLWIND)
+    SetGlobal("CAST_WHIRLWIND","LOCALS",1)
+    Wait(2)
+  RESPONSE #200
+    Continue()
+END
+

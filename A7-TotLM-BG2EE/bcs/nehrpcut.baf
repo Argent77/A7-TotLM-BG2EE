@@ -1,0 +1,43 @@
+IF
+  True()
+  Detect([PC])
+THEN
+  RESPONSE #100
+    CutSceneId("HRPMAT")
+    Face(6)
+    SetGlobal("ID#RESET_VISIBLE_RANGE","GLOBAL",1)
+    CreateCreature("CUTSPY",[-1.-1],0)
+    MultiPlayerSync()
+    MultiPlayerSync()
+    Face(6)
+    StartCutScene("NEHRPMOV")
+    SmallWait(8)
+    StartCutScene("CGPTFCEN")
+    MultiPlayerSync()
+    Wait(1)
+    SmallWait(8)
+    ClearActions("HRPCAT_0")
+    ClearActions("HRPCAT_1")
+    ClearActions("HRPCAT_2")
+    ClearActions("HRPFND_0")
+    ClearActions("HRPFND_1")
+    MultiPlayerSync()
+    MoveViewPoint([378.353],VERY_FAST)
+    DisplayStringHead(Myself,@24944)
+    Wait(1)
+    FaceObject([PC])
+    Wait(3)
+    MultiPlayerSync()
+    SetGlobal("AREA_CUTSCENE","MYAREA",2)
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

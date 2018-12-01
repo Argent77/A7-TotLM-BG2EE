@@ -1,0 +1,61 @@
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CHAMPIONS_STRENGTH)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CHAMPIONS_STRENGTH)
+    Wait(2)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",0)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",11)
+    Spell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_HOLD_PERSON)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",11)
+    Spell(LastSeenBy(Myself),CLERIC_HOLD_PERSON)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

@@ -1,0 +1,128 @@
+IF
+  !Global("ID9700_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9700_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  !Global("9700_RESET_JOIN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MultiPlayerSync()
+    SetGlobal("9700_RESET_JOIN","GLOBAL",0)
+    Continue()
+END
+
+IF
+  Global("ID9714_CUTSCENE","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9714_CUTSCENE","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("ID9700_HANGING_MAN","GLOBAL",0)
+  !Global("#_9700MS2_ATTACK","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9700MS2_ATTACK","MYAREA",1)
+    StaticSequence("9700MS2",0) // SEQ_ATTACK
+    Deactivate("AM9700B")
+    Continue()
+END
+
+IF
+  !Global("#_9700MS1_CAST","MYAREA",1)
+  OpenState("ID9700_STAIR1",TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9700MS1_CAST","MYAREA",1)
+    StaticSequence("9700MS1",2) // SEQ_CAST
+    Continue()
+END
+
+IF
+  Global("HOBART_TALK","MYAREA",0)
+  LevelPartyLT(12)
+THEN
+  RESPONSE #100
+    ActionOverride("AMBUSH_HARPY_4",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("HOBART_TALK","MYAREA",0)
+  LevelPartyLT(14)
+THEN
+  RESPONSE #100
+    ActionOverride("AMBUSH_HARPY_5",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("HOBART_TALK","MYAREA",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MultiPlayerSync()
+    StartCutScene("CYHOBTLK")
+    SetGlobal("HOBART_TALK","MYAREA",1)
+END
+
+IF
+  !Global("9700_RESET","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("MAP_GROUP_HOSTILE2","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE4","MYAREA",0)
+    SetGlobal("9700_RESET","GLOBAL",0)
+    Continue()
+END
+
+IF
+  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+  Dead("HARPY_0")
+  Dead("HARPY_1")
+  Dead("HARPY_2")
+  Dead("HARPY_3")
+THEN
+  RESPONSE #100
+    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",3)
+    Continue()
+END
+
+IF
+  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+  Dead("WYVERN_0")
+  Dead("WYVERN_1")
+  Dead("WYVERN_2")
+  Dead("WYVERN_3")
+  Dead("WYVERN_4")
+  Dead("WYVERN_5")
+  Dead("WYVERN_6")
+THEN
+  RESPONSE #100
+    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",2)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
+IF
+  False()
+  Global("OH_auto_save","MYAREA",0)
+  CombatCounter(0)
+THEN
+  RESPONSE #100
+    SetGlobal("OH_auto_save","MYAREA",1)
+END
+

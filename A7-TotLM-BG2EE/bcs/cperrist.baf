@@ -1,0 +1,9 @@
+IF
+  Global("ID#SPAWN_ERRIS","GLOBAL",0)
+  Contains("Tale3",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("ID#SPAWN_ERRIS","GLOBAL",1)
+    DestroyItem("Tale3")
+END
+

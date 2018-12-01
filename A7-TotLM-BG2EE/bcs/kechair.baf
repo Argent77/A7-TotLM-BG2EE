@@ -1,0 +1,16 @@
+IF
+  !Global("SPRITE_IS_DEADLUREMASTER","GLOBAL",0)
+  !Unlocked(Myself)
+THEN
+  RESPONSE #100
+    Unlock(Myself)
+END
+
+IF
+  Global("SPRITE_IS_DEADLUREMASTER","GLOBAL",0)
+  Unlocked(Myself)
+THEN
+  RESPONSE #100
+    Lock(Myself)
+END
+

@@ -1,0 +1,12 @@
+IF
+  Global("ID9714_CUTSCENE","GLOBAL",0)
+  Entered([ANYTHING])
+THEN
+  RESPONSE #100
+    SetGlobal("ID9714_CUTSCENE","GLOBAL",1)
+    StaticSequence("9714MS4",1) // SEQ_AWAKE
+    Wait(2)
+    StaticSequence("9714MS4",0) // SEQ_ATTACK
+    SetGlobal("ID9714_CUTSCENE","GLOBAL",0)
+END
+

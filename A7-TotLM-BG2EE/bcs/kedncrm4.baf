@@ -1,0 +1,121 @@
+IF
+  Global("DANCE_STEP","LOCALS",0)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.-2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([2.0])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    MoveToOffset([0.2])
+    SetGlobal("DANCE_STEP","LOCALS",1)
+  RESPONSE #100
+    Face(8)
+    Face(6)
+    Face(10)
+    Face(8)
+  RESPONSE #100
+    Face(8)
+    Face(10)
+    Face(6)
+    Face(8)
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",1)
+    SetGlobal("BOX","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",1)
+    SetGlobal("BOX","LOCALS",-1)
+    Continue()
+END
+
+IF
+  Global("BOX","LOCALS",1)
+THEN
+  RESPONSE #100
+    MoveToOffset([2.0])
+    SetGlobal("BOX","LOCALS",2)
+END
+
+IF
+  Global("BOX","LOCALS",-1)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.-2])
+    SetGlobal("BOX","LOCALS",-2)
+END
+
+IF
+  Global("BOX","LOCALS",2)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.2])
+    SetGlobal("BOX","LOCALS",3)
+END
+
+IF
+  Global("BOX","LOCALS",-2)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.2])
+    SetGlobal("BOX","LOCALS",-3)
+END
+
+IF
+  Global("BOX","LOCALS",3)
+THEN
+  RESPONSE #100
+    MoveToOffset([0.-2])
+    SetGlobal("BOX","LOCALS",0)
+END
+
+IF
+  Global("BOX","LOCALS",-3)
+THEN
+  RESPONSE #100
+    MoveToOffset([2.0])
+    SetGlobal("BOX","LOCALS",0)
+END
+
+IF
+  Global("DANCE_STEP","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",2)
+    SetGlobal("SPIN","LOCALS",-8)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DANCE_STEP","LOCALS",2)
+    SetGlobal("SPIN","LOCALS",8)
+    Continue()
+END
+
+IF
+  GlobalGT("SPIN","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPIN","LOCALS",-1)
+    RandomTurn()
+END
+
+IF
+  GlobalLT("SPIN","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPIN","LOCALS",1)
+    RandomTurn()
+END
+
+IF
+  Global("DANCE_STEP","LOCALS",2)
+THEN
+  RESPONSE #100
+    MoveToPoint([1079.771])
+    Face(8)
+    SetGlobal("DANCE_STEP","LOCALS",0)
+END
+

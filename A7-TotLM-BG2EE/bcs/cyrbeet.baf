@@ -1,0 +1,7 @@
+IF
+  !NearLocation(Myself,2194,1136,30)
+THEN
+  RESPONSE #100
+    MoveToPoint([2194.1136])
+END
+

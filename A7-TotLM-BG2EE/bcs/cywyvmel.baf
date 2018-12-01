@@ -1,0 +1,44 @@
+IF
+  Global("ATTACK_PREF","LOCALS",2)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_PREF","LOCALS",0)
+    Continue()
+END
+
+IF
+  !Global("ATTACK_PREF","LOCALS",2)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_PREF","LOCALS",2)
+    Continue()
+END
+
+IF
+  Global("ATTACK_PREF","LOCALS",0)
+  AttackedBy([0.0.HARPY],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("ATTACK_PREF","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("ATTACK_PREF","LOCALS",1)
+  See([0.0.HARPY])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  OR(2)
+    See([0.0.HARPY])
+    See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

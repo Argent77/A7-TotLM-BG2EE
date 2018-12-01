@@ -1,0 +1,60 @@
+IF
+  Global("MADE_OFFERING","MYAREA",0)
+  Contains("SYMHELM",Myself)
+THEN
+  RESPONSE #100
+    DestroyItem("SYMHELM")
+    SetGlobal("MADE_OFFERING","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("MADE_OFFERING","MYAREA",1)
+  !Exists([ENEMY])
+THEN
+  RESPONSE #100
+    MoveViewPoint([666.230],INSTANT)
+    Continue()
+END
+
+IF
+  Global("MADE_OFFERING","MYAREA",1)
+THEN
+  RESPONSE #100
+    StaticSequence("9713MS1",1) // SEQ_AWAKE
+    PlaySound("AM9713B")
+    SetGlobalTimer("OFFER_TIMER","MYAREA",5)
+    SetGlobal("MADE_OFFERING","MYAREA",2)
+    Wait(5)
+    Continue()
+END
+
+IF
+  !Global("#_9713MS1_CAST","MYAREA",1)
+  Global("MADE_OFFERING","MYAREA",2)
+  !GlobalTimerNotExpired("OFFER_TIMER","MYAREA")
+THEN
+  RESPONSE #100
+    SetGlobal("#_9713MS1_CAST","MYAREA",1)
+    StaticSequence("9713MS1",2) // SEQ_CAST
+    Continue()
+END
+
+IF
+  OpenState("ID9713_DOOR1",FALSE)
+  Global("MADE_OFFERING","MYAREA",2)
+  !GlobalTimerNotExpired("OFFER_TIMER","MYAREA")
+THEN
+  RESPONSE #100
+    OpenDoor("ID9713_DOOR1")
+    TriggerActivation("To9714",TRUE)
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

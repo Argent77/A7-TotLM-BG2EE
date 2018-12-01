@@ -1,0 +1,77 @@
+// Installing and updating areas
+
+COPY ~%MOD_FOLDER%/are~ ~override~
+  // Containers
+  READ_LONG 0x70 ofs_cont
+  READ_SHORT 0x74 num_cont
+  FOR (idx = 0; idx < num_cont; ++idx) BEGIN
+    SET ofs = ofs_cont + (idx * 0xc0)
+    READ_SHORT (ofs + 0x24) type
+    PATCH_IF (VARIABLE_IS_SET $map_containr(~%type%~)) BEGIN
+      WRITE_SHORT (ofs + 0x24) $map_containr(~%type%~)
+    END
+    READ_LONG (ofs + 0x84) old_strref
+    LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+    WRITE_LONG (ofs + 0x84) new_strref
+  END
+
+  // Regions
+  READ_LONG 0x5c ofs_region
+  READ_SHORT 0x5a num_region
+  FOR (idx = 0; idx < num_region; ++idx) BEGIN
+    SET ofs = ofs_region + (idx * 0xc4)
+    READ_LONG (ofs + 0x64) old_strref
+    LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+    WRITE_LONG (ofs + 0x64) new_strref
+  END
+
+  // Doors
+  READ_LONG 0xa8 ofs_door
+  READ_LONG 0xa4 num_door
+  FOR (idx = 0; idx < num_door; ++idx) BEGIN
+    SET ofs = ofs_door + (idx * 0xc8)
+    PATCH_FOR_EACH ofs2 IN ~0x98~ ~0xb4~ BEGIN
+      READ_LONG (ofs + ofs2) old_strref
+      LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+      WRITE_LONG (ofs + ofs2) new_strref
+    END
+  END
+
+  // Automap Notes
+  READ_LONG 0xc4 ofs_notes
+  READ_LONG 0xc8 num_notes
+  FOR (idx = 0; idx < num_notes; ++idx) BEGIN
+    SET ofs = ofs_notes + (idx * 0x34)
+    READ_SHORT (ofs + 0x08) type
+    PATCH_IF (type = 1) BEGIN
+      READ_LONG (ofs + 0x04) old_strref
+      LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+      WRITE_LONG (ofs + 0x04) new_strref
+    END
+  END
+
+  // Music
+  READ_LONG 0xbc ofs_songs
+  FOR (idx = 0; idx < 10; ++idx) BEGIN
+    SET ofs = ofs_songs + (idx * 0x4)
+    READ_SLONG ofs slot
+    PATCH_IF (slot > 0 && VARIABLE_IS_SET $map_music(~%slot%~)) BEGIN
+      WRITE_LONG ofs $map_music(~%slot%~)
+    END
+
+    // Adding battle songs
+    SET ofs = ofs_songs + (3 * 0x4)
+    PATCH_MATCH ~%SOURCE_RES%~ WITH
+      ~ID9716~ ~ID9717~ ~ID9718~ ~ID9800~ ~ID9801~
+        BEGIN WRITE_LONG ofs 48 END // BD1
+      ~ID9701~ ~ID9703~ ~ID9705~ ~ID9707~ ~ID9714~
+        BEGIN WRITE_LONG ofs 49 END // BD2
+      ~ID9713~
+        BEGIN WRITE_LONG ofs 50 END // BD3
+      ~ID9711~ ~ID9712~
+        BEGIN WRITE_LONG ofs 51 END // BF1
+      ~ID9700~ ~ID9702~ ~ID9704~ ~ID9706~ ~ID9708~ ~ID9709~ ~ID9710~
+        BEGIN WRITE_LONG ofs 52 END // BF2
+      DEFAULT
+    END
+  END

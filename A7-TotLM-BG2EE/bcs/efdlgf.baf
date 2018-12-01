@@ -1,0 +1,10 @@
+IF
+  NumTimesTalkedTo(0)
+  Detect([PC])
+  !Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+

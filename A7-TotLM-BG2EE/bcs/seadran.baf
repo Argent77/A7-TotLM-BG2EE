@@ -1,0 +1,1054 @@
+IF
+  Global("ID#SPAWN_DJINNI","GLOBAL",0)
+  Allegiance(Myself,ENEMY)
+  Detect([PC])
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@27394)
+    SetGlobal("ID#SPAWN_DJINNI","GLOBAL",1)
+    SetGlobal("SPELL_SET","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SPELL_SET","LOCALS",2)
+  GlobalLT("SET_2_CNT","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SPELL_SET","LOCALS",3)
+    SetGlobal("SET_2_CNT","LOCALS",0)
+    Continue()
+END
+
+IF
+  !HaveSpell(WIZARD_STONE_SKIN)
+  Global("SPELL_SET","LOCALS",1)
+THEN
+  RESPONSE #100
+    Wait(2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+END
+
+IF
+  HaveSpell(WIZARD_STONE_SKIN)
+  Global("SPELL_SET","LOCALS",1)
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_STONE_SKIN)
+    Wait(2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",0)
+  GlobalGT("SPELL_SET","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",4)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",5)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",1)
+  !HaveSpell(WIZARD_SEVEN_EYES)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Spell(Myself,WIZARD_SEVEN_EYES)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",2)
+  !HaveSpell(WIZARD_DISPEL_MAGIC)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HasItem("SCRL7M",Myself)
+  CheckStat(Myself,0,TRUE_SIGHT)
+  See([GOODCUTOFF.0.0.0.0.ILLUSIONARY])
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL7M")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(Myself,WIZARD_TRUE_SIGHT)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",3)
+  !HaveSpell(WIZARD_GLOBE_OF_INVULNERABILITY)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Spell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",4)
+  !HaveSpell(WIZARD_ANIMATE_DEAD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",4)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Spell(LastSeenBy(Myself),WIZARD_ANIMATE_DEAD)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",5)
+  !HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",5)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",5)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_1","LOCALS",6)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_1","LOCALS",6)
+  See(NearestEnemyOf(Myself))
+  Global("SPELL_SET","LOCALS",3)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2_CNT","LOCALS",2)
+    SetGlobal("SPELL_SET","LOCALS",2)
+    Continue()
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",0)
+  GlobalGT("SPELL_SET","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",4)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",5)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",6)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",8)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",9)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",10)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",11)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",12)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",13)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",14)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",15)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",16)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",17)
+    Continue()
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",18)
+    Continue()
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player1)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player2)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player3)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player4)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player5)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL8G",Myself)
+  See(Player6)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),8,WIZARD_SPELL_IMMUNITY)
+  OR(6)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TRAP)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_SHIELD_OF_THE_ARCHONS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_IMMUNITY)
+    CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL8G")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player1)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player2)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player3)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player4)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player5)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,EVILCUTOFF)
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  !GlobalTimerNotExpired("OH_TStop","LOCALS")
+  HasItem("SCRL6U",Myself)
+  See(Player6)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),1,WIZARD_SPELL_IMMUNITY)
+  OR(5)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+    CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_PROTECTION_FROM_MAGIC_ENERGY)
+    CheckStatGT(LastSeenBy(Myself),0,STONESKINS)
+    CheckStatGT(LastSeenBy(Myself),0,WIZARD_FIRE_SHIELD)
+  CheckStatLT(Myself,50,SPELLFAILUREMAGE)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    DestroyItem("SCRL6U")
+    DisplayStringHead(Myself,46153)
+    SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",1)
+  !HaveSpell(WIZARD_FINGER_OF_DEATH)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_FINGER_OF_DEATH)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",2)
+  !HaveSpell(WIZARD_DARTS_OF_BONE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_DARTS_OF_BONE)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",3)
+  !HaveSpell(WIZARD_DEATH_SPELL)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",4)
+  See(NearestEnemyOf(Myself))
+  OR(2)
+    !HaveSpell(WIZARD_SUN_FIRE)
+    !Range(LastSeenBy(Myself),15)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",4)
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),15)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(Myself,WIZARD_SUN_FIRE)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",5)
+  !HaveSpell(WIZARD_LOWER_RESISTANCE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",5)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_LOWER_RESISTANCE)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",6)
+  !HaveSpell(WIZARD_SHROUD_OF_FLAME)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",6)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_SHROUD_OF_FLAME)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",7)
+  !HaveSpell(WIZARD_CONE_OF_COLD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",7)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_CONE_OF_COLD)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",8)
+  !HaveSpell(WIZARD_VITRIOLIC_SPHERE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",8)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_VITRIOLIC_SPHERE)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",9)
+  !HaveSpell(WIZARD_MORDENKAINENS_FORCE_MISSILES)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",9)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",10)
+  !HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",10)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",11)
+  !HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",11)
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),15)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",12)
+  !HaveSpell(WIZARD_SLOW)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",12)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_SLOW)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",13)
+  !HaveSpell(WIZARD_FIREBALL)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",13)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_FIREBALL)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",14)
+  !HaveSpell(WIZARD_SNILLOCS_SNOWBALL_SWARM)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",14)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_SNILLOCS_SNOWBALL_SWARM)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",15)
+  !HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",15)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",16)
+  !HaveSpell(WIZARD_CHROMATIC_ORB)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",16)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_CHROMATIC_ORB)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",17)
+  !HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",17)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",18)
+  !HaveSpell(WIZARD_BURNING_HANDS)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",18)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",18)
+THEN
+  RESPONSE #100
+    SetGlobal("SEADRAN_CASTING_SET_2","LOCALS",19)
+    Continue()
+END
+
+IF
+  Global("SEADRAN_CASTING_SET_2","LOCALS",19)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2_CNT","LOCALS",-1)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

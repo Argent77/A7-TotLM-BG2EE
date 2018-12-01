@@ -1,0 +1,695 @@
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  AttackedBy([ANYTHING],DEFAULT)
+  !Race(LastAttackerOf(Myself),UMBERHULK)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_4")
+  See("OROG_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_6")
+  See("GUARD_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_3")
+  See("WYVERN_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_2")
+  See("GUARD_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_7")
+  See("MINOTAUR_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_7")
+  See("OROG_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_11")
+  See("GUARD_11")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_2")
+  See("MINOTAUR_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("BEHOLDER_0")
+  See("BEHOLDER_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_5")
+  See("OROG_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_4")
+  See("WYVERN_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_1")
+  See("WYVERN_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("BEHOLDER_1")
+  See("BEHOLDER_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_9")
+  See("GUARD_9")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_4")
+  See("GUARD_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_3")
+  See("MINOTAUR_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("BEHOLDER_2")
+  See("BEHOLDER_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_0")
+  See("GUARD_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_5")
+  See("WYVERN_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_7")
+  See("GUARD_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("BEHOLDER_3")
+  See("BEHOLDER_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_0")
+  See("MINOTAUR_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_8")
+  See("GUARD_8")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_4")
+  See("MINOTAUR_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_0")
+  See("OROG_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_1")
+  See("GUARD_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_6")
+  See("WYVERN_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_2")
+  See("WYVERN_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_1")
+  See("OROG_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_0")
+  See("WYVERN_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_5")
+  See("GUARD_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_5")
+  See("MINOTAUR_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_2")
+  See("OROG_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_6")
+  See("OROG_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("WYVERN_7")
+  See("WYVERN_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_3")
+  See("GUARD_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("OROG_3")
+  See("OROG_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_1")
+  See("MINOTAUR_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("GUARD_10")
+  See("GUARD_10")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  RandomNum(3,1)
+  !Dead("MINOTAUR_6")
+  See("MINOTAUR_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_4")
+  See("OROG_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_6")
+  See("GUARD_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_3")
+  See("WYVERN_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_2")
+  See("GUARD_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_7")
+  See("MINOTAUR_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_7")
+  See("OROG_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_11")
+  See("GUARD_11")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_2")
+  See("MINOTAUR_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("BEHOLDER_0")
+  See("BEHOLDER_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_5")
+  See("OROG_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_4")
+  See("WYVERN_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_1")
+  See("WYVERN_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("BEHOLDER_1")
+  See("BEHOLDER_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_9")
+  See("GUARD_9")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_4")
+  See("GUARD_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_3")
+  See("MINOTAUR_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("BEHOLDER_2")
+  See("BEHOLDER_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_0")
+  See("GUARD_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_5")
+  See("WYVERN_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_7")
+  See("GUARD_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("BEHOLDER_3")
+  See("BEHOLDER_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_0")
+  See("MINOTAUR_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_8")
+  See("GUARD_8")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_4")
+  See("MINOTAUR_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_0")
+  See("OROG_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_1")
+  See("GUARD_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_6")
+  See("WYVERN_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_2")
+  See("WYVERN_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_1")
+  See("OROG_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_0")
+  See("WYVERN_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_5")
+  See("GUARD_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_5")
+  See("MINOTAUR_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_2")
+  See("OROG_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_6")
+  See("OROG_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("WYVERN_7")
+  See("WYVERN_7")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_3")
+  See("GUARD_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("OROG_3")
+  See("OROG_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_1")
+  See("MINOTAUR_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("GUARD_10")
+  See("GUARD_10")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Dead("MINOTAUR_6")
+  See("MINOTAUR_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

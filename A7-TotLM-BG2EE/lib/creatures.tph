@@ -1,0 +1,40 @@
+// Installing and updating creatures
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/cre~ ~^.+\.cre$~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_NAME%~) BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      // updating strrefs
+      PATCH_FOR_EACH ofs IN ~0x08~ ~0x0c~ BEGIN
+        READ_LONG ofs old_strref
+        LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+        WRITE_LONG ofs new_strref
+      END
+
+      // updating known spells
+      READ_LONG 0x2a0 ofs_known
+      READ_LONG 0x2a4 num_known
+      FOR (idx = 0; idx < num_known; ++idx) BEGIN
+        SET ofs = ofs_known + (idx * 0x0c)
+        // SPL resrefs
+        READ_ASCII ofs resref (8) NULL
+        TO_UPPER ~resref~
+        PATCH_IF (NOT ~%resref%~ STR_EQ ~~ && VARIABLE_IS_SET $map_spell(~%resref%~)) BEGIN
+          TEXT_SPRINT new_resref $map_spell(~%resref%~)
+          WRITE_ASCIIE ofs ~%new_resref%~ (8)
+        END
+      END
+
+      // updating memorized spells
+      READ_LONG 0x2b0 ofs_spells
+      READ_LONG 0x2b4 num_spells
+      FOR (idx = 0; idx < num_spells; ++idx) BEGIN
+        SET ofs = ofs_spells + (idx * 0x0c)
+        READ_ASCII ofs resref (8) NULL
+        TO_UPPER ~resref~
+        PATCH_IF (NOT ~%resref%~ STR_EQ ~~ && VARIABLE_IS_SET $map_spell(~%resref%~)) BEGIN
+          TEXT_SPRINT new_resref $map_spell(~%resref%~)
+          WRITE_ASCIIE ofs ~%new_resref%~ (8)
+        END
+      END
+  END
+END

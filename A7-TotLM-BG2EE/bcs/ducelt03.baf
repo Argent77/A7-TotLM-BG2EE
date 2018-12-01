@@ -1,0 +1,17 @@
+IF
+  OpenState("ID9717_Door13",TRUE)
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+
+IF
+  Global("CELL_03","MYAREA",0)
+  Entered([PC])
+THEN
+  RESPONSE #100
+    Unlock("ID9717_Door13")
+    OpenDoor("ID9717_Door13")
+    SetGlobal("CELL_03","MYAREA",1)
+END
+

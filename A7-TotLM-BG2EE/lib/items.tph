@@ -1,0 +1,111 @@
+// Installing and updating items
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/itm~ ~^.+\.itm$~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_NAME%~) BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      // updating strrefs
+      PATCH_FOR_EACH ofs IN ~0x08~ ~0x0c~ ~0x50~ ~0x54~ BEGIN
+        READ_LONG ofs old_strref
+        LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+        WRITE_LONG ofs new_strref
+      END
+      // updating inventory icon
+      READ_ASCII 0x3a bam_resref (8) NULL
+      TO_UPPER ~bam_resref~
+      PATCH_IF (VARIABLE_IS_SET $map_spellicon(~%bam_resref%~)) BEGIN
+        TEXT_SPRINT new_bam_resref $map_spellicon(~%bam_resref%~)
+        WRITE_ASCIIE 0x3a ~%new_bam_resref%~ (8)
+      END
+
+      READ_LONG 0x64 ofs_abil
+      READ_SHORT 0x68 num_abil
+      READ_LONG 0x6a ofs_fx
+      SET num_fx = (SHORT_AT 0x6e) + (SHORT_AT 0x70)
+      // updating abilities
+      FOR (idx = 0; idx < num_abil; ++idx) BEGIN
+        SET ofs = ofs_abil + (idx * 0x38)
+        // updating inventory icon
+        READ_ASCII (ofs + 0x04) bam_resref (8) NULL
+        TO_UPPER ~bam_resref~
+        PATCH_IF (VARIABLE_IS_SET $map_spellicon(~%bam_resref%~)) BEGIN
+          TEXT_SPRINT new_bam_resref $map_spellicon(~%bam_resref%~)
+          WRITE_ASCIIE (ofs + 0x04) ~%new_bam_resref%~ (8)
+        END
+        // projectiles
+        READ_SHORT (ofs + 0x2a) old_id
+        LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+        WRITE_SHORT (ofs + 0x2a) new_id
+        SET value = (SHORT_AT (ofs + 0x1e)) + (SHORT_AT (ofs + 0x20))
+        PATCH_IF (value > num_fx) BEGIN SET num_fx = value END
+      END
+
+      // updating effects
+      FOR (idx = 0; idx < num_fx; ++idx) BEGIN
+        SET ofs = ofs_fx + (idx * 0x30)
+        READ_SHORT ofs opcode
+        // strrefs
+        LPF OPCODE_USE_STRREF INT_VAR opcode RET param1 param2 special END
+        PATCH_IF (param1) BEGIN
+          READ_LONG (ofs + 0x04) old_strref
+          LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+          WRITE_LONG (ofs + 0x04) new_strref
+        END
+        PATCH_IF (param2) BEGIN
+          READ_LONG (ofs + 0x08) old_strref
+          LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+          WRITE_LONG (ofs + 0x08) new_strref
+        END
+        PATCH_IF (special) BEGIN
+          READ_LONG (ofs + 0x2c) old_strref
+          LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+          WRITE_LONG (ofs + 0x2c) new_strref
+        END
+
+        // projectiles
+        LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 END
+        PATCH_IF (param1) BEGIN
+          READ_LONG (ofs + 0x04) old_id
+          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          WRITE_LONG (ofs + 0x04) new_id
+        END
+        PATCH_IF (param2) BEGIN
+          READ_LONG (ofs + 0x08) old_id
+          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          WRITE_LONG (ofs + 0x08) new_id
+        END
+
+        // SPL resrefs
+        LPF OPCODE_USE_RESREF INT_VAR opcode RET type END
+        PATCH_IF (~%type%~ STRING_CONTAINS_REGEXP ~SPL~ = 0) BEGIN
+          READ_ASCII (ofs + 0x14) resref (8) NULL
+          TO_UPPER ~resref~
+          PATCH_IF (NOT ~%resref%~ STR_EQ ~~ && VARIABLE_IS_SET $map_spell(~%resref%~)) BEGIN
+            TEXT_SPRINT new_resref $map_spell(~%resref%~)
+            WRITE_ASCIIE (ofs + 0x14) ~%new_resref%~ (8)
+          END
+        END
+
+        // smtables entries
+        PATCH_IF (opcode = 331) BEGIN
+          READ_LONG (ofs + 0x08) value
+          PATCH_IF (VARIABLE_IS_SET $map_smtables(~%value%~)) BEGIN
+            WRITE_LONG (ofs + 0x08) $map_smtables(~%value%~)
+          END
+        END
+
+        // portrait icons
+        PATCH_IF (opcode = 142) BEGIN
+          READ_LONG (ofs + 0x08) value
+          PATCH_IF (VARIABLE_IS_SET $map_statdesc(~%value%~)) BEGIN
+            WRITE_LONG (ofs + 0x08) $map_statdesc(~%value%~)
+          END
+        END
+      END
+  END
+END
+
+
+// Protection items that can't be worn together
+ACTION_FOR_EACH resref IN ~URING5A~ BEGIN
+  APPEND ~itemexcl.2da~ ~%resref%   1~
+END

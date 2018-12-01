@@ -1,0 +1,13 @@
+BEGIN ~DLORD~
+
+IF ~  NumTimesTalkedTo(0)
+~ THEN BEGIN 0
+  SAY @27436
+  IF ~~ THEN GOTO 1
+END
+
+IF ~~ THEN BEGIN 1
+  SAY @27437
+  IF ~~ THEN DO ~Enemy()
+~ EXIT
+END

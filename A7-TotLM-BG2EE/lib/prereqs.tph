@@ -1,0 +1,126 @@
+// Prerequisites
+
+// Remap selected CONTAINR.2DA entries to default entry "non-visible"
+OUTER_FOR (idx = 0; idx < 17; ++idx) BEGIN
+  OUTER_SET $map_containr(~%idx%~) = (idx < 13) ? idx : 8
+END
+
+
+// Expand random treasure table
+COPY - ~%MOD_FOLDER%/2da/rndtres-iwd.2da~ ~override~
+  CLEAR_ARRAY ~src_table~
+  COUNT_2DA_COLS src_numCols
+  READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
+BUT_ONLY
+
+COPY_EXISTING - ~rndtres.2da~ ~override~
+  COUNT_2DA_COLS dst_numCols
+  READ_2DA_ENTRY 1 0 1 defValue
+BUT_ONLY
+
+OUTER_FOR (row = 0; row < src_table; ++row) BEGIN
+  OUTER_TEXT_SPRINT name $src_table(~%row%~ ~0~)
+  OUTER_TEXT_SPRINT line ~~
+  OUTER_FOR (col = 0; col < src_numCols; ++col) BEGIN
+    OUTER_TEXT_SPRINT item $src_table(~%row%~ ~%col%~)
+    OUTER_TEXT_SPRINT line ~%line%%item%  ~
+  END
+  // expand columns if needed
+  OUTER_FOR (col = src_numCols; col < dst_numCols; ++col) BEGIN
+    OUTER_TEXT_SPRINT line ~%line%%defValue%  ~
+  END
+  APPEND ~rndtres.2da~ ~%line%~ UNLESS ~\b%name%\b~
+END
+
+COPY_EXISTING ~rndtres.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// Expand xplist table
+COPY - ~%MOD_FOLDER%/2da/xplist-iwd.2da~ ~override~
+  CLEAR_ARRAY ~src_table~
+  COUNT_2DA_COLS src_numCols
+  READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
+BUT_ONLY
+
+COPY_EXISTING - ~xplist.2da~ ~override~
+  COUNT_2DA_COLS dst_numCols
+  READ_2DA_ENTRY 1 0 1 defValue
+BUT_ONLY
+
+OUTER_FOR (row = 0; row < src_table; ++row) BEGIN
+  OUTER_TEXT_SPRINT name $src_table(~%row%~ ~0~)
+  OUTER_TEXT_SPRINT line ~~
+  OUTER_FOR (col = 0; col < src_numCols; ++col) BEGIN
+    OUTER_TEXT_SPRINT item $src_table(~%row%~ ~%col%~)
+    OUTER_TEXT_SPRINT line ~%line%%item%  ~
+  END
+  // expand columns if needed
+  OUTER_FOR (col = src_numCols; col < dst_numCols; ++col) BEGIN
+    OUTER_TEXT_SPRINT line ~%line%%defValue%  ~
+  END
+  APPEND ~xplist.2da~ ~%line%~ UNLESS ~\b%name%\b~
+END
+
+COPY_EXISTING ~xplist.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// Expand smtables.2da (by one entry)
+COPY_EXISTING ~smtables.2da~ ~override~
+  CLEAR_ARRAY ~dst_table~
+  READ_2DA_ENTRIES_NOW ~dst_table~ 2
+  FOR (row = 1; row < dst_table; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER ~dst_table~ row 1 resref
+    PATCH_IF (~%resref%~ STR_EQ ~CWELEMW~) BEGIN
+      SET $map_smtables(~21~) = row - 1 // exclude 2da header
+      SET row = dst_table
+    END
+  END
+BUT_ONLY
+ACTION_IF (NOT VARIABLE_IS_SET ~map_smtables_21~) BEGIN
+  OUTER_SET row = dst_table - 1 // exclude 2da header
+  OUTER_SET $map_smtables(~21~) = row
+  APPEND ~smtables.2da~ ~%row%_WATER_ELEMENTAL_WIZ  CWELEMW~
+END
+
+COPY_EXISTING ~smtables.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// Expand statdesc.2da
+COPY - ~%MOD_FOLDER%/2da/statdesc-iwd.2da~ ~override~
+  CLEAR_ARRAY ~src_table~
+  READ_2DA_ENTRIES_NOW ~src_table~ 3
+BUT_ONLY
+
+COPY_EXISTING - ~statdesc.2da~ ~override~
+  CLEAR_ARRAY ~dst_table~
+  READ_2DA_ENTRIES_NOW ~dst_table~ 3
+  SET max_id = 0
+  FOR (row = 0; row < dst_table; ++row) BEGIN 
+    READ_2DA_ENTRY_FORMER ~dst_table~ row 0 value
+    PATCH_IF (IS_AN_INT ~value~ && value > max_id) BEGIN
+      SET max_id = value
+    END
+  END
+BUT_ONLY
+
+OUTER_FOR (row = 0; row < src_table; ++row) BEGIN
+  OUTER_SET old_id = $src_table(~%row%~ ~0~)
+  OUTER_SET max_id += 1
+  OUTER_SET new_id = max_id
+  OUTER_SET old_strref = $src_table(~%row%~ ~1~)
+  LAF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+  OUTER_TEXT_SPRINT resref $src_table(~%row%~ ~2~)
+  OUTER_TEXT_SPRINT line ~%new_id%   %new_strref%   %resref%~
+  APPEND ~statdesc.2da~ ~%line%~
+  OUTER_SET $map_statdesc(~%old_id%~) = new_id
+END
+
+COPY_EXISTING ~statdesc.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY

@@ -1,0 +1,165 @@
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_STRENGTH_OF_ONE)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_STRENGTH_OF_ONE)
+    Wait(2)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",0)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",4)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",5)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",6)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("LOCAL_CAST_SPELL","LOCALS",8)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_ALICORN_LANCE)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",24)
+    Spell(LastSeenBy(Myself),CLERIC_ALICORN_LANCE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_CONJURE_FIRE_ELEMENTAL)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",24)
+    Spell(LastSeenBy(Myself),CLERIC_CONJURE_FIRE_ELEMENTAL)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_THORN_SPRAY)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",24)
+    Spell(LastSeenBy(Myself),CLERIC_THORN_SPRAY)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_INSECT_PLAGUE)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",4)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_INSECT_PLAGUE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_MOLD_TOUCH)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",5)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_MOLD_TOUCH)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_PRODUCE_FIRE)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",6)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_PRODUCE_FIRE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_ANIMAL_SUMMONING_1)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",7)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_ANIMAL_SUMMONING_1)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_SPIKE_STONES)
+  GlobalLT("LOCAL_CAST_SPELL","LOCALS",8)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_SPIKE_STONES)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_FIRE_SEEDS)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Spell(LastSeenBy(Myself),CLERIC_FIRE_SEEDS)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

@@ -1,0 +1,21 @@
+IF
+  LevelPartyGT(14)
+THEN
+  RESPONSE #100
+    ChangeAIScript("NEQHRPAH",CLASS)
+END
+
+IF
+  LevelPartyLT(12)
+THEN
+  RESPONSE #100
+    ChangeAIScript("NEQHRPAL",CLASS)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    ChangeAIScript("NEQHRPAM",CLASS)
+END
+

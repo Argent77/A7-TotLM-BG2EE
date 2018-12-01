@@ -1,0 +1,31 @@
+IF
+  GlobalGT("ID#CHALLENGE_COURAGE","GLOBAL",1)
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    DestroySelf()
+END
+
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    FaceObject([PC])
+    Continue()
+END
+
+IF
+  NumTimesTalkedTo(0)
+  See([PC])
+  !Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+

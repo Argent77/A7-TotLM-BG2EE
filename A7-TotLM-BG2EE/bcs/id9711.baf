@@ -1,0 +1,364 @@
+IF
+  !Global("ID9711_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9711_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("SPRITE_IS_DEADHARALD","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("trharld",[1058.470],0)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("SPRITE_IS_DEADHOBART","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("trhobrt",[858.541],14)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("SPRITE_IS_DEADCRIEK","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("trcriek",[1302.470],2)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("SPRITE_IS_DEADADRAN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("tradran",[706.705],12)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("SPRITE_IS_DEADSHELHAI","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CreateCreature("trshelh",[864.753],12)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+THEN
+  RESPONSE #100
+    CreateCreature("trsph1",[1314.619],4)
+    CreateCreature("trsph2",[857.883],10)
+    CreateCreature("trsph3",[1461.645],4)
+    SetGlobal("#luremaster_final_spawn","ID9711",1)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph4",[632.602],0)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph5",[1512.372],0)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph6",[1761.541],0)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",3)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph7",[687.872],4)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph8",[1247.294],10)
+END
+
+IF
+  GlobalGT("ID9711_HERO","GLOBAL",0)
+  Global("#spectral_reinforcements","ID9711",5)
+THEN
+  RESPONSE #100
+    IncrementGlobal("ID9711_HERO","GLOBAL",-1)
+    IncrementGlobal("#spectral_reinforcements","ID9711",1)
+    CreateCreature("trsph9",[690.528],0)
+END
+
+IF
+  Global("RESET_TEAMS","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE2","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE3","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE4","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE5","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE6","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE7","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE8","MYAREA",0)
+    SetGlobal("RESET_TEAMS","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_A","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_B","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_C","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_D","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_A","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_B","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_C","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_D","GLOBAL",0)
+    SetGlobal("9700_RESET","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",1)
+  Global("SPRITE_IS_DEADHrpMat","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_A","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_B","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_C","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_D","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",2)
+  Global("SPRITE_IS_DEADWyvMat","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_A","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_B","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_C","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_D","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+END
+
+IF
+  !Global("ID9700_HANGING_MAN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9700_HANGING_MAN","GLOBAL",0)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("#spawn_group_0","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_0","MYAREA",1)
+    CreateCreature("ckspgrdh",[208.1404],12)
+    CreateCreature("ckspgrdh",[918.1218],2)
+    CreateCreature("ckspgrdh",[302.1340],12)
+    CreateCreature("ckspgrdh",[390.1585],12)
+    CreateCreature("ckspgrdh",[624.1918],8)
+    CreateCreature("ckspgrdh",[672.1918],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE2","MYAREA",0)
+  !Global("#spawn_group_1","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_1","MYAREA",1)
+    CreateCreature("ckspgrd2",[870.1937],8)
+    CreateCreature("ckspgrd2",[428.1219],2)
+    CreateCreature("ckspgrd2",[1296.1728],4)
+    CreateCreature("ckspgrd2",[441.1661],12)
+    CreateCreature("ckspgrd2",[798.1920],8)
+    CreateCreature("ckspgrd2",[923.1922],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+  !Global("#spawn_group_2","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_2","MYAREA",1)
+    CreateCreature("ckspgrd3",[1017.1576],8)
+    CreateCreature("ckspgrd3",[1541.1354],6)
+    CreateCreature("ckspgrd3",[491.1717],10)
+    CreateCreature("ckspgrd3",[327.1341],12)
+    CreateCreature("ckspgrd3",[1101.1907],8)
+    CreateCreature("ckspgrd3",[1247.1835],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
+  !Global("#spawn_group_3","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_3","MYAREA",1)
+    CreateCreature("ckspgrd4",[1567.1352],6)
+    CreateCreature("ckspgrd4",[1752.1271],6)
+    CreateCreature("ckspgrd4",[944.1218],12)
+    CreateCreature("ckspgrd4",[2080.705],2)
+    CreateCreature("ckspgrd4",[1886.1311],8)
+    CreateCreature("ckspgrd4",[1445.1438],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE5","MYAREA",0)
+  !Global("#spawn_group_4","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_4","MYAREA",1)
+    CreateCreature("ckspgrd5",[1932.1504],2)
+    CreateCreature("ckspgrd5",[1708.1604],10)
+    CreateCreature("ckspgrd5",[2228.946],2)
+    CreateCreature("ckspgrd5",[2021.689],2)
+    CreateCreature("ckspgrd5",[1246.1507],8)
+    CreateCreature("ckspgrd5",[1827.1248],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE6","MYAREA",0)
+  !Global("#spawn_group_5","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_5","MYAREA",1)
+    CreateCreature("ckspgrd6",[1780.1268],8)
+    CreateCreature("ckspgrd6",[1517.1357],8)
+    CreateCreature("ckspgrd6",[1204.1887],8)
+    CreateCreature("ckspgrd6",[1154.1909],8)
+    CreateCreature("ckspgrd6",[1923.1299],8)
+    CreateCreature("ckspgrd6",[781.1583],10)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE7","MYAREA",0)
+  !Global("#spawn_group_6","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_6","MYAREA",1)
+    CreateCreature("ckspgrd7",[382.1124],8)
+    CreateCreature("ckspgrd7",[495.1050],8)
+    CreateCreature("ckspgrd7",[513.1084],6)
+    CreateCreature("ckspgrd7",[347.1311],14)
+    CreateCreature("ckspgrd7",[175.595],10)
+    CreateCreature("ckspgrd7",[304.564],8)
+    Continue()
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE8","MYAREA",0)
+  !Global("#spawn_group_7","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_7","MYAREA",1)
+    CreateCreature("rakshinv",[2388.728],6)
+    CreateCreature("rakshinv",[1913.136],14)
+    CreateCreature("ckinvst",[2237.635],8)
+    CreateCreature("ckinvst",[2309.708],8)
+    CreateCreature("ckinvst",[1905.244],14)
+    CreateCreature("ckinvst",[2063.191],0)
+    CreateCreature("ckinvst",[2340.312],4)
+    CreateCreature("ckinvst",[2475.514],4)
+    CreateCreature("ckinvst",[1973.337],10)
+    CreateCreature("ckinvst",[2408.413],6)
+    CreateCreature("ckinvst",[2137.530],8)
+    CreateCreature("ckinvst",[2440.641],6)
+    Continue()
+END
+

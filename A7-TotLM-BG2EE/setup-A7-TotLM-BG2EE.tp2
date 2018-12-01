@@ -1,0 +1,66 @@
+BACKUP ~A7-TotLM-BG2EE/backup~
+AUTHOR ~Argent77 at Spellhold Studios~
+VERSION ~0.8-beta~
+
+ALWAYS
+  INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
+END
+
+README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
+       ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.txt~
+       ~%MOD_FOLDER%/readme/readme.html~
+       ~%MOD_FOLDER%/readme/readme.txt~
+
+LANGUAGE ~English~
+         ~english~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+LANGUAGE ~Deutsch~
+         ~german~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/german/setup.tra~
+         ~%MOD_FOLDER%/languages/german/mod.tra~
+LANGUAGE ~Italiano (Traduzione: Aedan)~
+         ~italian~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/italian/setup.tra~
+         ~%MOD_FOLDER%/languages/italian/mod.tra~
+
+
+BEGIN @1000000 // Trials of the Luremaster for BG2:EE
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @1100000  // Requires BG2:EE or EET.
+  REQUIRE_PREDICATE (VALID_SCRIPT_TRIGGERS ~NearLocation(Myself,0,0,0) NearSavedLocation(Myself,"x",0)~ &&
+                     VALID_SCRIPT_ACTIONS ~ZoomLock(0)~) @1100001 // Requires BG2:EE 2.0 or later.
+  DESIGNATED 0
+
+  INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/prereqs.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/music.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/areas.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/projectiles.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/spells.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/items.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/creatures.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/stores.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/compile.tph~
+  INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
+
+
+BEGIN @1000050 // Make IWD spells available to the player
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  FORBID_COMPONENT ~setup-stratagems.tp2~ ~1500~ @1100003 // This feature is already installed by another mod.
+  FORBID_COMPONENT ~setup-stratagems.tp2~ ~1510~ @1100003 // This feature is already installed by another mod.
+  FORBID_COMPONENT ~setup-iwdification.tp2~ ~30~ @1100003 // This feature is already installed by another mod.
+  FORBID_COMPONENT ~setup-iwdification.tp2~ ~40~ @1100003 // This feature is already installed by another mod.
+  DESIGNATED 10
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-spells_player.tph~
+
+
+BEGIN @1000100 // Rebalance weapons and equipment
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  DESIGNATED 20
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~

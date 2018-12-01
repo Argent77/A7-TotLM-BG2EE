@@ -1,0 +1,43 @@
+IF
+  See([PC])
+THEN
+  RESPONSE #100
+    FaceObject([PC])
+    Continue()
+END
+
+IF
+  !IsActive(Myself)
+  !Global("FORCE_TALK","LOCALS",0)
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    Activate(Myself)
+    Continue()
+END
+
+IF
+  !Global("WATCH_GROUP","MYAREA",0)
+  Global("FORCE_TALK","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("WATCH_GROUP","MYAREA",0)
+    Continue()
+END
+
+IF
+  !Global("FORCE_TALK","LOCALS",0)
+  See([PC])
+  !Allegiance(Myself,ENEMY)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    ClearAllActions()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    MultiPlayerSync()
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+

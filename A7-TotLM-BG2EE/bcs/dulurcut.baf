@@ -1,0 +1,14 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    MultiPlayerSync()
+    ClearAllActions()
+    MultiPlayerSync()
+    MoveViewObject(Myself,VERY_FAST)
+    Wait(3)
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+

@@ -1,0 +1,10 @@
+IF
+  !IsActive(Myself)
+  Global("FORCE_TALK","LOCALS",0)
+  !Exists([ENEMY])
+THEN
+  RESPONSE #100
+    SetGlobal("FORCE_TALK","LOCALS",1)
+    Continue()
+END
+

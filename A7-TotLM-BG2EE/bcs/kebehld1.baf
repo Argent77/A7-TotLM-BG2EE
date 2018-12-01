@@ -1,0 +1,109 @@
+IF
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobal("BEHOLDER_CASTS","LOCALS",2)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("BEHOLDER_CASTS","LOCALS",3)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("BEHOLDER_CASTS","LOCALS",4)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+END
+
+IF
+  GlobalGT("BEHOLDER_CASTS","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    FaceObject(NearestEnemyOf(Myself))
+    Continue()
+END
+
+IF
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalGT("BEHOLDER_CASTS","LOCALS",0)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CHARM_PERSON)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FEAR)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FLESH_TO_STONE)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DISINTEGRATE)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DEATH_RAY)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLOW)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLEEP)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  GlobalGT("BEHOLDER_CASTS","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CHARM_PERSON)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FEAR)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FLESH_TO_STONE)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DISINTEGRATE)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DEATH_RAY)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLOW)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLEEP)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+END
+

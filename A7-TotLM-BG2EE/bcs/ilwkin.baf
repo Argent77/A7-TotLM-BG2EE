@@ -1,0 +1,34 @@
+IF
+  IsActive(Myself)
+  !Range(NearestEnemyOf(Myself),30)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Wait(1)
+    SetSequence(16) // SEQ_SLEEP
+    Wait(1)
+    Deactivate(Myself)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !IsActive(Myself)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    Activate(Myself)
+    SetSequence(1)  // SEQ_AWAKE
+    SetInterrupt(TRUE)
+END
+
+IF
+  !IsActive(Myself)
+  !Range(NearestEnemyOf(Myself),30)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    NoAction()
+END
+

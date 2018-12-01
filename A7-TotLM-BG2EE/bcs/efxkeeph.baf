@@ -1,0 +1,16 @@
+IF
+  !Global("EFXKEEPH_inactive","LOCALS",1)
+  LevelPartyGT(14)
+THEN
+  RESPONSE #100
+    SetGlobal("EFXKEEPH_inactive","LOCALS",1)
+END
+
+IF
+  !Global("EFXKEEPH_inactive","LOCALS",1)
+  True()
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

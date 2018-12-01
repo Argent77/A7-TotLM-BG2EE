@@ -1,0 +1,23 @@
+IF
+  !Global("MSPORES_inactive","LOCALS",1)
+  Global("Internal4","LOCALS",5)
+THEN
+  RESPONSE #300
+    SetGlobal("MSPORES_inactive","LOCALS",1)
+END
+
+IF
+  !Global("MSPORES_inactive","LOCALS",1)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #300
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    Continue()
+  RESPONSE #100
+    IncrementGlobal("Internal4","LOCALS",1)
+    SetGlobalTimer("#localtimer","LOCALS",19)
+    ReallyForceSpell(NearestEnemyOf(Myself),INNATE_MYCONID_SPORES)
+    Wait(2)
+END
+

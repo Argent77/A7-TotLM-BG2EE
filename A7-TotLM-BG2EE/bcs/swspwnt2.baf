@@ -1,0 +1,29 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    SetGlobal("SPRITE_IS_DEADCYEarthE","GLOBAL",0)
+    SetGlobal("WATCH_GROUP","MYAREA",2)
+    CreateCreature("CYEARTHE",[454.253],14)
+    CreateCreature("CYEARTHE",[257.335],14)
+    CreateCreature("CYEARTHE",[581.601],8)
+    CreateCreature("CYEARTHE",[771.513],8)
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

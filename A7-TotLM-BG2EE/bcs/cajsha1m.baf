@@ -1,0 +1,488 @@
+IF
+  Global("OH_Inactive","LOCALS",1)
+  !See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("OH_Moved","LOCALS",0)
+  HaveSpell(CLERIC_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("OH_Moved","LOCALS",1)
+    Spell(NearestEnemyOf(Myself),CLERIC_DISPEL_MAGIC)
+END
+
+IF
+  Global("OH_Moved","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("OH_Moved","LOCALS",2)
+    SetGlobal("OH_Inactive","LOCALS",1)
+    SetHomeLocation([881.663])
+    MoveToPointNoInterrupt([881.663])
+    Face(10)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  HPPercentLT(Myself,60)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See([EVILCUTOFF.0.LYCANTHROPE])
+  HPPercentLT(LastSeenBy(Myself),60)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See(SecondNearest([EVILCUTOFF.0.LYCANTHROPE]))
+  HPPercentLT(LastSeenBy(Myself),60)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_CRITICAL_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  HPPercentLT(Myself,70)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See([EVILCUTOFF.0.LYCANTHROPE])
+  HPPercentLT(LastSeenBy(Myself),70)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See(SecondNearest([EVILCUTOFF.0.LYCANTHROPE]))
+  HPPercentLT(LastSeenBy(Myself),70)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  HPPercentLT(Myself,80)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See([EVILCUTOFF.0.LYCANTHROPE])
+  HPPercentLT(LastSeenBy(Myself),80)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See(SecondNearest([EVILCUTOFF.0.LYCANTHROPE]))
+  HPPercentLT(LastSeenBy(Myself),80)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  HPPercentLT(Myself,85)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(Myself,CLERIC_CURE_LIGHT_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See([EVILCUTOFF.0.LYCANTHROPE])
+  HPPercentLT(LastSeenBy(Myself),85)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_LIGHT_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  OR(2)
+    !GlobalTimerNotExpired("OH_Cast","LOCALS")
+    CheckStatGT(Myself,0,AURACLEANSING)
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See(SecondNearest([EVILCUTOFF.0.LYCANTHROPE]))
+  HPPercentLT(LastSeenBy(Myself),85)
+  !StateCheck(LastSeenBy(Myself),-2147475450)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+  CheckStat(LastSeenBy(Myself),0,MINORGLOBE)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_DEFLECTION)
+  !CheckStatGT(LastSeenBy(Myself),0,WIZARD_SPELL_TURNING)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_TRAP)
+  !CheckStat(LastSeenBy(Myself),1,CLERIC_SHIELD_OF_THE_ARCHONS)
+  !CheckStat(LastSeenBy(Myself),7,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !StateCheck(Myself,STATE_SILENCED)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURE_LIGHT_WOUNDS)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  See([GOODCUTOFF.0.0.CLERIC_ALL])
+  CheckStatLT(LastSeenBy(Myself),50,SPELLFAILUREPRIEST)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),-2,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  See([GOODCUTOFF.0.0.DRUID_ALL])
+  CheckStatLT(LastSeenBy(Myself),50,SPELLFAILUREPRIEST)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),-2,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  See([GOODCUTOFF.0.0.MAGE_ALL])
+  CheckStatLT(LastSeenBy(Myself),50,SPELLFAILUREMAGE)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),-2,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_MISCAST_MAGIC)
+  See([GOODCUTOFF.0.0.BARD_ALL])
+  CheckStatLT(LastSeenBy(Myself),50,SPELLFAILUREMAGE)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),-2,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_RIGID_THINKING)
+  See(NearestEnemyOf(Myself))
+  !General(LastSeenBy(Myself),UNDEAD)
+  !Race(LastSeenBy(Myself),DEMONIC)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),0,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_RIGID_THINKING)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_RIGID_THINKING)
+  See(SecondNearestEnemyOf(Myself))
+  !General(LastSeenBy(Myself),UNDEAD)
+  !Race(LastSeenBy(Myself),DEMONIC)
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatGT(LastSeenBy(Myself),0,SAVEVSSPELL)
+  !CheckStatGT(LastSeenBy(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  !CheckStat(LastSeenBy(Myself),1,OFFENSIVE_MODIFIER)
+  !CheckStat(LastSeenBy(Myself),4,WIZARD_SPELL_IMMUNITY)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_RIGID_THINKING)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_CURSE)
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_IMMUNITY)
+  !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURSE)
+END
+
+IF
+  !GlobalTimerNotExpired("OH_Cast","LOCALS")
+  HaveSpell(CLERIC_CURSE)
+  See(SecondNearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_NOT_TARGETABLE)
+  !CheckStat(LastSeenBy(Myself),2,WIZARD_SPELL_IMMUNITY)
+  !CheckStatGT(LastSeenBy(Myself),0,MINORGLOBE)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(Myself,50,SPELLFAILUREPRIEST)
+  !CheckStatGT(Myself,0,CLERIC_INSECT_PLAGUE)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("OH_Cast","LOCALS",6)
+    Spell(LastSeenBy(Myself),CLERIC_CURSE)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

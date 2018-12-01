@@ -1,0 +1,155 @@
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Contains("blun01",Myself)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DestroyItem("blun01")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_LIGHTNING_BOLT)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun01")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_FIREBALL)
+    Wait(2)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Contains("blun02",Myself)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DestroyItem("blun02")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_FLESH_TO_STONE)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun02")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_POISON_PARALYZATION_DARTS)
+    Wait(2)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Contains("blun03",Myself)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DestroyItem("blun03")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_POISON_CONFUSION_DARTS)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun03")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_MAGIC_MISSILE_5)
+    Wait(2)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Contains("blun04",Myself)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DestroyItem("blun04")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_DEATH_FOG)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun04")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_CLOUDKILL)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun04")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_STINKING_CLOUD)
+    Wait(2)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Contains("blun05",Myself)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
+THEN
+  RESPONSE #100
+    DestroyItem("blun05")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    Wait(2)
+  RESPONSE #100
+    DestroyItem("blun05")
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_FINGER_OF_DEATH)
+    Wait(2)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Global("SET_CHEST_1","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_CHEST_1","MYAREA",1)
+    CreateItem("blun01",0,0,0)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Global("SET_CHEST_2","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_CHEST_2","MYAREA",1)
+    CreateItem("blun02",0,0,0)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Global("SET_CHEST_3","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_CHEST_3","MYAREA",1)
+    CreateItem("blun03",0,0,0)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Global("SET_CHEST_4","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_CHEST_4","MYAREA",1)
+    CreateItem("blun04",0,0,0)
+END
+
+IF
+  !Global("TALE_PLACED","MYAREA",0)
+  !Contains("TALE1",Myself)
+  Global("SET_CHEST_5","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_CHEST_5","MYAREA",1)
+    CreateItem("blun05",0,0,0)
+END
+

@@ -1,0 +1,124 @@
+IF
+  Detect(Myself)
+  !See([0.0.UMBERHULK])
+  !See([0.0.MINOTAUR])
+  !See([0.0.ORC])
+  !See([0.0.WYVERN])
+  !See([0.0.SPECTRAL_UNDEAD])
+  !See([GOODCUTOFF])
+  False()
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",0)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,65)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_CHARM_PERSON)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",0)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,55)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_FEAR)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",0)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,45)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",0)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,25)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_FLESH_TO_STONE)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",1)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,15)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_DOMINATION)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",1)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,35)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_SLOW)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",1)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  HPGT(Myself,5)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    Continue()
+END
+
+IF
+  Global("BeholderBehavior","LOCALS",1)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !Allegiance(LastSeenBy,GOODCUTOFF)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    FaceObject(LastSeenBy)
+    ForceSpell(LastSeenBy,BEHOLDER_DEATH_RAY)
+    Continue()
+END

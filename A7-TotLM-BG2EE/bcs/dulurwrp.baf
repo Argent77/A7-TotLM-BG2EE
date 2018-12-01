@@ -1,0 +1,214 @@
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  !HaveAnySpells()
+THEN
+  RESPONSE #100
+    SetGlobal("DULURWRP_inactive","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",4)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",5)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",6)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",8)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",1)
+  NearLocation(Myself,1251,269,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",2)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",1)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([1251.269],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",2)
+  NearLocation(Myself,836,1023,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",3)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",2)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([836.1023],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",3)
+  NearLocation(Myself,539,575,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",4)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",3)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([539.575],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",4)
+  NearLocation(Myself,1616,359,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",5)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",4)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([1616.359],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",5)
+  NearLocation(Myself,1058,952,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",6)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",5)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([1058.952],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",6)
+  NearLocation(Myself,1769,560,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",7)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",6)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([1769.560],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",7)
+  NearLocation(Myself,1144,361,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",8)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",7)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([1144.361],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",8)
+  NearLocation(Myself,604,826,5)
+THEN
+  RESPONSE #100
+    SetGlobal("WARP_LOC","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("DULURWRP_inactive","LOCALS",1)
+  Global("WARP_LOC","LOCALS",8)
+  Global("WARP","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpellPoint([604.826],WIZARD_DIMENSION_DOOR)
+    Wait(5)
+    SetGlobal("WARP_LOC","LOCALS",0)
+    SetGlobal("WARP","LOCALS",1)
+END
+

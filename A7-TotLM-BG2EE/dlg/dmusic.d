@@ -1,0 +1,7 @@
+BEGIN ~DMUSIC~
+
+IF ~  True()
+~ THEN BEGIN 0
+  SAY @15993
+  IF ~~ THEN EXIT
+END

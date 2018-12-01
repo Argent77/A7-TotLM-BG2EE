@@ -1,0 +1,132 @@
+IF
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_FLAME_ARROW)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_BURNING_HANDS)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_FLAME_ARROW)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_BURNING_HANDS)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

@@ -1,0 +1,33 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MultiPlayerSync()
+    SetGlobal("9700_RESET_JOIN","GLOBAL",1)
+    DisplayString("HOBART",@23357)
+    ActionOverride("HOBART",SetSequence(2)) // SEQ_CAST
+    ReallyForceSpell(Myself,INNATE_TELEPORT_WITHOUT_ERROR)
+    CreateVisualEffectObject("PORTALH","HOBART")
+    Wait(1)
+    FadeToColor([30.0],0)
+    Wait(2)
+    Deactivate("HOBART")
+    SmallWait(5)
+    ActionOverride(Player2,LeaveAreaLUA("ID9700","LOAD9700",[1497.1088],8))
+    ActionOverride(Player3,LeaveAreaLUA("ID9700","LOAD9700",[1410.1051],10))
+    ActionOverride(Player4,LeaveAreaLUA("ID9700","LOAD9700",[1539.1054],6))
+    ActionOverride(Player5,LeaveAreaLUA("ID9700","LOAD9700",[1385.999],12))
+    ActionOverride(Player6,LeaveAreaLUA("ID9700","LOAD9700",[1554.1005],4))
+    LeaveAreaLUAPanic("ID9700","LOAD9700",[1446.1088],8)
+    LeaveAreaLUA("ID9700","LOAD9700",[1446.1088],8)
+    MultiPlayerSync()
+    SmallWait(5)
+    ReallyForceSpell(Myself,INNATE_TELEPORT_WITHOUT_ERROR)
+    CreateVisualEffectObject("PORTALH","HOBART")
+    FadeFromColor([15.0],0)
+    Wait(1)
+    UnhideGUI()
+    EndCutSceneMode()
+END
+

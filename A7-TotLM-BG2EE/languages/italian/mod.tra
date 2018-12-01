@@ -1,0 +1,2623 @@
+@10 = ~Scarabeo Rinoceronte~
+@12 = ~Scarabeo Scavatore~
+@73 = ~Corazza Animata~
+@77 = ~Arma Troll~
+@267 = ~Cotta di Piastre~
+@283 = ~Grazie. Arrivederci.~
+@288 = ~Addio.~
+@540 = ~Cosa accadde?~
+@757 = ~Maledizione~
+@764 = ~Corazza Animata~
+@768 = ~Scarabeo Scavatore~
+@771 = ~Scarabeo Bombardiere~
+@774 = ~Scarabeo Bombardiere~
+@777 = ~Elementale dell'Acqua~
+@779 = ~Scarabeo Rinoceronte~
+@783 = ~Elementale dell'Acqua~
+@788 = ~Scheletro dell'Esplosione~
+@827 = ~Scheletro dell'Esplosione~
+@832 = ~Élite Goblin~
+@843 = ~Miconide Rosso~
+@846 = ~Predone Neo-Orog~
+@854 = ~Scheletro Guardiaossa~
+@863 = ~Miconide Rosso~
+@866 = ~Predone Neo-Orog~
+@873 = ~Scheletro Guardiaossa~
+@913 = ~Questo sarcofago è stato sigillato in qualche modo strano. Non è possibile rimuovere il coperchio.~
+@934 = ~Simbolo Sacro~
+@1412 = ~Rocce Aguzze~
+@1428 = ~Chi sei?~
+@1711 = ~Devo andare. Addio.~
+@1785 = ~Come mai?~
+@1848 = ~Emozione: Coraggio~
+@1863 = ~Emozione: Paura~
+@1864 = ~Emozione: Speranza~
+@1865 = ~Sangue Bruciante di Beltyn~
+@1902 = ~Scarica Elettrostatica~
+@1954 = ~Sudario Fiammeggiante~
+@1980 = ~"UCCIDI!"~
+@2320 = ~Monster Transparency
+Do not translate~
+@2332 = ~Oggetto Trasparente del Mostro~
+@2556 = ~Ancora una volta, chi sei?~
+@2693 = ~Evocare Elementale dell'Acqua~
+@2969 = ~Invisibilità
+(Illusione/Visione)
+Livello: 2
+Raggio d'azione: Tocco
+Durata: Speciale
+Tempo di lancio: 2
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Questo incantesimo fa sì che la creatura toccata scompaia e non sia individuabile né con la semplice vista né con l'infravisione. La creatura invisibile non viene magicamente ridotta al silenzio, quindi in certi casi può essere individuata. Perfino gli alleati non possono vedere la creatura invisibile e il suo equipaggiamento, a meno che non siano in grado di vedere gli oggetti invisibili in condizioni normali o con l'ausilio della magia. Gli oggetti abbandonati o posati dalla creatura invisibile diventano visibili; quelli raccolti scompaiono se riposti tra gli abiti o nelle borse portate dalla creatura. L'incantesimo rimane attivo finché non viene spezzato o dissolto con la magia, finché l'incantatore o il destinatario non lo annullano, finché la creatura non attacca qualcuno oppure finché non sono trascorse 24 ore. La creatura invisibile può aprire porte, parlare, mangiare, salire le scale e così via. Se attacca, diventa immediatamente visibile, sebbene l'invisibilità le consenta di attaccare per prima.~
+@2972 = ~Quest'armatura venne realizzata dal fabbro nanico Karador e da un incantatore elfico noto come Elameth dei Cinque Alberi. Durante il periodo di collaborazione tra la Mano dei Seldarine e le Profondità di Dorn, vennero creati numerosi oggetti di meravigliosa fattura. Quest'armatura era uno di questi. Eccezionalmente bella e leggera, un tempo l'armatura era indossata da un'elfa sceriffo della Mano Mozzata ed è per questo che gli orchi non la presero quando saccheggiarono la torre. L'armatura venne successivamente rubata dalla Mano dalla Vergine Ilmadia.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Carisma: +1
+- Resistenza al Fuoco: +10%
+- Resistenza al Freddo: +10%
+- Resistenza all'Elettricità: +10%
+- Resistenza all'Acido: +10%
+
+Classe Armatura: 1 (-2 contro danno tagliente)
+
+Richiede:
+Forza 12
+
+Peso: 20~
+@2976 = ~Spada Larga~
+@2977 = ~La spada larga è una pesante arma militare e ha una lama a doppio taglio. La sua lunghezza complessiva è di circa un metro e dieci ed è concepita per tagliare. La maggior parte delle spade larghe ha un'impugnatura a cestino o un guardamano a conchiglia. Arma preferita della cavalleria, la spada larga è conosciuta di cultura in cultura con nomi diversi, generalmente in base all'impugnatura. La lama maggiormente pesante la rende leggermente più lenta e più dannosa di una spada lunga.
+
+STATISTICHE:
+
+Danno: 2d4
+Fattore-velocità: 5
+Tipo di Competenza: Spada Lunga
+Tipo: A una mano
+
+Requisiti:
+Forza 6
+
+Peso: 4~
+@2983 = ~Impiegate quasi esclusivamente dai ranger di Eldath nelle terre ad ovest di Faerûn, le Frecce della Cattura sono celeberrime per permettere di catturare il bersaglio arrecandogli poco danno. Vengono generalmente utilizzate comunemente per bloccare gli animali in carica, ma sono piuttosto efficaci anche contro pericolosi umanoidi. Di norma sono decorate con nastri blu e verdi e fiori per rimarcare la loro creazione per mostrare che sono state create dai pacificatori di Eldath. Queste decorazioni le rendeno leggermente meno efficaci in combattimento.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- Il bersaglio colpito viene intralciato per 4 round
+
+THAC0: -1
+Danno: 1d6-1 (proiettile)
+Dispositivo: Arco
+
+Peso: 0~
+@2984 = ~Frecce della Cattura~
+@3070 = ~Simbolo, Disperazione~
+@3077 = ~Un estratto...
+
+"Uno dei primi passi verso una vita in armonia con gli animali è imparare a rispettare il nostro sempre mutevole rapporto con loro. Molte persone pensano che gli umani e i semiumani siano esseri superiori agli animali ma, come ho già affermato, il criterio per stabilire questa 'superiorità' è molto soggettivo. Per questo motivo dobbiamo considerare il nostro rapporto con gli animali selvaggi su basi personali e sempre mutevoli. Diamo alle creature il rispetto che si meritano, ma ricordiamoci sempre che i predatori sono predatori, non importa quanto si rispetti il loro territorio."~
+@3097 = ~Gli Animali Sono Tuoi Amici~
+@3098 = ~Gli Animali Sono Tuoi Amici~
+@3153 = ~Cos'è questo posto?~
+@4380 = ~Un tempo, questa bacchetta era di proprietà del mago-bandito mezzelfo Illep l'Attento. Illep, un nativo di Myth Drannor, faceva uso della sottile bacchetta d'ebano per individuare le trappole che incontrava spesso durante i suoi numerosi furti in appartamenti. Illep era benvoluto da molte persone, ma un guerriero umano di nome Brammel rimase offeso dai modi affettati di Illep una notte che si trovava in una taverna. Nonostante la sua abilità con i pugnali, il piccolo ladro poté fare ben poco per riprendersi dalle ferite al petto e al collo che gli erano state inferte dall'ascia di Brammel. Questi fu arrestato dalle guardie cittadine e la bacchetta doveva essere riportata alla famiglia di Illep a Myth Drannor. La piccola carovana che la trasportava fu saccheggiata da banditi umani e se ne perse ogni traccia.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Scoprire Trappole
+  Le trappole vengono rivelate come se il personaggio fosse un ladro
+
+Richiede:
+Intelligenza 9
+
+Peso: 1~
+@4381 = ~Bacchetta di Individuazione delle Trappole~
+@4386 = ~Sprigiona Spore~
+@4435 = ~Controllavo e basta. Arrivederci.~
+@6280 = ~Prego.~
+@6391 = ~Sciame di Palle di Neve di Snilloc~
+@6393 = ~Sciame di Palle di Neve di Snilloc
+(Apparizione)
+Livello: 2
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 2
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: 1/2
+
+Questo incantesimo fa sì che uno spruzzo di palle di neve esploda in un punto entro il raggio d'azione. Le palle di neve colpiranno ogni cosa all'interno dell'area d'effetto, provocando 1d3 punti di danno da freddo per livello del personaggio, fino a un massimo di 8d3 punti di danno all'8° livello. Contro le creature del fuoco infligge 1d6 punti di danno da freddo per livello, sino ad un massimo di 8d6 punti di danno all'8° livello.~
+@6512 = ~Sangue Bruciante di Beltyn~
+@6513 = ~Sangue Bruciante di Beltyn
+(Necromanzia)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 round ogni 2 livelli
+Tempo di lancio: 4
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Questo incantesimo trasforma il sangue di un bersaglio in fiamma, causando 3d4 punti di danno per round e mandando in stato berserk il nemico per il dolore. L'avversario ottiene un tiro-salvezza contro Incantesimi ad ogni round; se lo effettua con successo, i danni e lo stato berserk vengono negati. Questo incantesimo non funziona contro i non morti e le creature extraplanari che non hanno sangue (come gli elementali). Se la vittima è resistente al fuoco, tale resistenza abbasserà o annullerà il danno causato da questo incantesimo.~
+@6650 = ~Le fionde esistono sin dall'inizio delle prime documentazioni scritte. La fionda di base è composta da una banda di cuoio o di tessuto con una toppa destinata ad ospitare il proiettile. L'arma deve essere tenuta da entrambe le due estremità della banda e fatta roteare attorno alla testa di chi la impugna. Raggiunta la velocità di rotazione massima, il proiettile viene scagliato col il rilascio di una delle estremità della banda.
+
+STATISTICHE:
+
+Fattore-velocità: 6
+Tipo di Competenza: Fionda
+Tipo: A una mano
+
+Richiede:
+Forza 3
+
+Peso: 0~
+@6652 = ~L'armatura di cuoio, contrariamente a quanto si crede, non è morbida e flessibile come il cuoio utilizzato per gli stivali dei ranger o le vesti dei druidi. Quel tipo di cuoio non offre una protezione migliore dei semplici abiti.
+
+STATISTICHE:
+
+Classe Armatura: 8 (10 contro danno perforante e da proiettile)
+
+Richiede:
+Forza 4
+
+Peso: 15~
+@6656 = ~La versione più comune dell'ascia da battaglia è un grosso manico lungo circa 1,20 metri con una lama affilata da una parte montata su una estremità. Le asce da battaglia vengono chiamate anche asce larghe.
+
+STATISTICHE:
+
+Danno: 1d8 (tagliente)
+Fattore-velocità: 7
+Tipo di Competenza: Ascia
+Tipo: A una mano
+
+Richiede:
+Forza 10
+
+Peso: 7~
+@6663 = ~A prima vista, questa sembra essere un'armatura di cuoio ordinaria; un'ispezione più ravvicinata rivela piccoli indizi di diversi incantamenti arcani. I rivetti che tengono assemblate le varie parti scintillano lucenti, come se fossero lucidati. I pezzi di cuoio sono leggeri e impalpabili al tatto, ma diventano immediatamente rigidi quando vengono colpiti da un colpo possente. Quando viene indossata, i normali cigolii tipici di queste armature sono misteriosamente assenti.
+
+STATISTICHE:
+
+Classe Armatura: 6 (8 contro danno perforante e da proiettile)
+
+Richiede:
+Forza 4
+
+Peso: 5~
+@6664 = ~Cuoio Borchiato~
+@6667 = ~L'armatura di cuoio borchiato ha poco in comune con la normale armatura di cuoio. Mentre quest'ultima ha un rivestimento rigido, l'armatura di cuoio borchiato è morbida e flessibile grazie a centinaia di rivetti in metallo. I rivetti sono molto vicini l'uno all'altro, in modo da formare un rivestimento flessibile di duro metallo che devia gli attacchi taglienti. Il rivestimento in morbido cuoio è molto più di un semplice sostegno su cui attaccare i rivetti.
+
+STATISTICHE:
+
+Classe Armatura: 7 (6 contro danno perforante e da proiettile, 5 contro danno tagliente)
+
+Richiede:
+Forza 6
+
+Peso: 25~
+@6669 = ~Armatura di Cotta di Piastre~
+@6673 = ~La cotta di maglia è fatta di anelli di metallo incastrati tra loro. Viene sempre indossata sopra uno strato imbottito di tessuto o di cuoio morbido per evitare sfregamenti e attutire l'impatto dei colpi.
+
+STATISTICHE:
+
+Classe Armatura: 5 (3 contro danno tagliente, 7 contro danno contundente)
+
+Richiede:
+Forza 8
+
+Peso: 40~
+@6676 = ~La cotta di maglia è fatta di anelli di metallo incastrati tra loro. Viene sempre indossata sopra uno strato imbottito di tessuto o di cuoio morbido per evitare sfregamenti e attutire l'impatto dei colpi.
+
+STATISTICHE:
+
+Classe Armatura: 3 (1 contro danno tagliente, 5 contro danno contundente)
+
+Richiede:
+Forza 7
+
+Peso: 10~
+@6696 = ~Tra le molte armi forgiate all'ombra del Dorso del Mondo, parecchie recano il marchio dei fabbri nani. Questa magnifica ascia da battaglia non fa eccezione. Il suo acciaio e il suo bilanciamento sono la testimonianza del lavoro di un armaiolo accurato e la lama dell'ascia è intessuta di incantamenti che consentono di ferire persino le creature soprannaturali. Come molte delle armi di creazione nanica, la lama è leggera, permettendo a chi la maneggia di vibrare più rapidamente i colpi; la punta non smussabile garantisce che il taglio sia sempre netto. Le rune naniche lungo l'impugnatura recitano "Di Dorn", senza dubbio il marchio di un fabbro indicante il luogo di produzione dell'arma.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d8+2 (tagliente)
+Fattore-velocità: 5
+Tipo di Competenza: Ascia
+Tipo: A una mano
+
+Richiede:
+Forza 10
+
+Peso: 5~
+@6703 = ~La maggior parte delle clave sono bastoni dal legno robusto e resistente, stretti all'altezza dell'impugnatura e più larghi all'altra estremità. Queste semplici armi vengono utilizzate da quando le razze dei Reami iniziarono a servirsi di strumenti. Chiunque può trovare un buon pezzo di legno e agitarlo; da qui, l'ampia diffusione della clava.
+
+STATISTICHE:
+
+Danno: 1d6 (contundente)
+Fattore-velocità: 4
+Tipo di Competenza: Clava
+Tipo: A una mano
+
+Richiede:
+Forza 5
+
+Peso: 3~
+@6716 = ~Quando montano il loro destriero, i guerrieri non riescono ad usare in modo efficace le armi con aste lunghe e, di conseguenza, alcune di queste armi sono state modificate con l'adozione di manici più corti che possono essere usati con una sola mano. Le mazze e i mezzafrusti sono due esempi di questa tendenza; il martello da guerra ne è un altro. Il martello da guerra da cavaliere deriva dal martello di Lucerne. È interamente realizzato in acciaio, con rondelle che proteggono e rinforzano l'impugnatura. Le rondelle sono piccoli dischi di metallo, spesso di forma decorativa. Il manico è lungo circa 45 centimetri.
+
+STATISTICHE:
+
+Danno: 1d4+1 (contundente)
+Fattore-velocità: 4
+Tipo di Competenza: Martello da Guerra
+Tipo: A una mano
+
+Richiede:
+Forza 9
+
+Peso: 6~
+@6745 = ~Spada Corta~
+@6756 = ~Un proiettile è semplicemente una pietra rotonda e ben equilibrata.
+
+STATISTICHE:
+
+Danno: 1d4+1 (proiettile)
+Dispositivo: Fionda
+
+Peso: 0~
+@6799 = ~Le Mani Litigiose~
+@6807 = ~Questa classe di elmi a viso aperto, fatti di cuoio rinforzato o di metallo, copre quasi tutta la testa, ad eccezione del volto e del collo. Gli elmi di questo tipo in genere proteggono il naso.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Protegge contro i colpi critici
+
+Peso: 2~
+@6811 = ~Elmo di Protezione dallo Charme~
+@6818 = ~Uno scudo piccolo è generalmente rotondo e si porta sull'avambraccio, impugnato dalla mano che lo sostiene. Il suo peso, ridotto rispetto a quello di uno scudo medio, consente a chi lo usa di tenere in mano anche altri oggetti, ma non di brandire o di portare altre armi.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1
+- Nessuna protezione contro attacchi a distanza
+
+Richiede:
+Forza 4
+
+Peso: 3~
+@6820 = ~Lo scudo grande, conosciuto anche come scudo ad aquilone o scudo a torre, è un enorme scudo di metallo o di legno la cui altezza va all'incirca dai piedi al mento di chi lo usa. Deve essere legato saldamente all'avambraccio. La mano che impugna lo scudo deve inoltre tenerlo con fermezza tutto il tempo. Ovviamente, questo preclude l'utilizzo di tale mano per qualsiasi cosa diversa dal mantenere lo scudo grande al suo posto.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1, +2 contro attacchi a distanza
+
+Richiede:
+Forza 15
+
+Peso: 15~
+@6823 = ~Stivali della Velocità~
+@6824 = ~Gli stivali vengono di norma realizzati a mano dai calzolai. I comuni stivali sono fatti utilizzando una forma standard, mentre quelli di buona qualità vengono confezionati su misura per il piede di chi li indosserà.
+
+STATISTICHE:
+
+Peso: 4~
+@6835 = ~Anello del Ladro di Sabbia~
+@6837 = ~Il Dono di Edventar~
+@6855 = ~La morning star ha un'impugnatura in legno che termina con una punta di metallo realizzata con una guaina di ferro chiodata. La lunghezza complessiva delle morning star è di circa 1,2 metri. Alcune di queste armi hanno punta rotonda, ovale o cilindrica ricoperta di chiodi. Dall'estremità superiore della maggior parte delle morning star, indipendentemente dal modello, si estende un lungo spunzone per trafiggere.
+
+STATISTICHE:
+
+Danno: 2d4 (contundente)
+Fattore-velocità: 7
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 12~
+@6862 = ~L'arco lungo è simile a quello corto, eccetto per il fatto che il sostegno è alto quasi quanto l'arciere, di solito da 1,8 a 2 metri. Presenta due vantaggi rispetto all'arco corto: migliore gittata e maggiore precisione.
+
+STATISTICHE:
+
+THAC0: +1
+Fattore-velocità: 7
+Tipo di Competenza: Arco Lungo
+Tipo: A due mani
+
+Richiede:
+Forza 12
+
+Peso: 3~
+@6875 = ~La balestra è un arco montato trasversalmente su un fusto in legno o in metallo. In quest'ultimo caso, viene chiamata tiller. L'arco è di solito realizzato in legno di frassino o di tasso. La balestra lancia un quadrello (anche detto dardo).
+
+STATISTICHE:
+
+THAC0: +2
+Fattore-velocità: 5
+Tipo di competenza: Balestra
+Tipo: A due mani
+
+Richiede:
+Forza 8
+
+Peso: 7~
+@6888 = ~Balestra Leggera della Velocità~
+@7347 = ~Nelle pianure dello Shaar Orientale viveva un piccolo fabbro umano, alto quanto un nano ma dal cuore generoso. Pur essendo molto bravo a forgiare armi, il suo vero dono era quello di fischiettare una canzone talmente commovente da far piangere come un bambino persino un adulto. Tuttavia, soltanto un mago eremita condivideva e trascorreva il suo tempo con il piccolo uomo, poiché gli altri non facevano altro che prenderlo in giro per la sua bassa statura. Sordi alla canzone del fabbro a causa dei loro pregiudizi, dalla beffa ben presto si passò al vero tormento e alla fine l'allegro uomo decise di lasciare per sempre la sua casa. Prima di partire forgiò quest'arma per regalarla al suo unico amico, il quale, durante la fabbricazione, le applicò un incantesimo. E così, quando la spada veniva sguainata, fischiettava al suo proprietario. Passò poco tempo e anche il mago abbandonò disgustato la piccola città, portando con sé la spada.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d6+2 (perforante)
+Fattore-velocità: 1
+Tipo di Competenza: Spada Corta
+Tipo: A una mano
+
+Richiede:
+Forza 4
+
+Peso: 2~
+@7353 = ~Umani che vissero per un breve periodo in un avamposto nella Foresta Congelata portarono alla luce quest'arma e molte altre dalle rovine di un antico insediamento nel cuore di quella fredda landa. Senza mai conoscere il nome degli scomparsi benefattori, i coloni utilizzarono questi "strumenti" per disboscare un vasto territorio, anche se alla fine i loro sforzi non valsero a molto. Sopraffatti da un gruppo più numeroso di hobgoblin, queste povere anime vennero dimenticate come i loro antenati.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 1 attacco addizionale per round
+
+THAC0: +3
+Danno: +1
+Fattore-velocità: 3
+Tipo di Competenza: Balestra
+Tipo: A due mani
+
+Richiede:
+Forza 8
+
+Peso: 5~
+@7354 = ~Come altre borse magiche, questa sembra essere un normale sacco di tela di circa 60 per 120 centimetri. La borsa conservante si apre in uno spazio nondimensionale e il suo interno è più grande delle sue dimensioni esterne. A prescindere da cosa sia messo in questo oggetto, la borsa ha sempre lo stesso peso.
+
+STATISTICHE:
+
+Peso: 5~
+@7360 = ~L'anello venne regalato al cacciatore-razziatore di scogliera conosciuto come Edventar da un gruppo di elfi acquatici, suoi amici da lungo tempo. Il suo aiuto nel rintracciare la "Regina Pirata" di Dambrath era stato di vitale importanza per la loro sopravvivenza, sebbene Yenandra continui ad essere temuta ovunque l'acqua tocchi la costa.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Il portatore è immune a ogni cosa, magica o meno, che influenzi in qualsiasi modo il movimento. Questo include gli incantesimi Velocità e Lentezza.
+
+Peso: 0~
+@7363 = ~Posseduto per la maggior parte di una generazione da un maestro ladro, questo anello veniva utilizzato nei mercati di Waterdeep. Tra la folla in piena luce, il ladro rubava una quantità innumerabile di borsellini ai nobili, sostituendoli con dei sacchetti di sabbia perché non si accorgessero del furto. La sua identità non venne mai scoperta, ma il nome "Ladro di Sabbia" fu più volte maledetto. Si dice che sia andato in pensione e che viva tra gli stessi nobili che un tempo derubava.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Il portatore diventa invisibile, come se fosse sotto effetto dell'omonimo incantesimo
+
+Peso: 0~
+@7375 = ~Questi stivali sono stati incantati magicamente per far sì che il loro portatore possa muoversi a velocità raddoppiata rispetto al normale. Sono molto apprezzati da tutti coloro la cui professione implica viaggi dalle lunghe distanze.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Impostano il Fattore-movimento a 13 (il valore base è 9)
+
+Peso: 4~
+@7404 = ~Sudario Fiammeggiante~
+@7509 = ~Emozione: Coraggio~
+@7510 = ~Emozione: Coraggio
+(Incantamento/Charme)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 ora
+Tempo di lancio: 4
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo crea un'emozione di coraggio all'interno dell'area d'effetto. Tutte le creature influenzate dall'incantesimo ottengono un bonus pari a +1 ai tiri per colpire, +3 ai danni e 5 Punti Ferita temporanei (che possono essere aggiunti ai Punti Ferita Massimi). Questo incantesimo annulla tutti gli effetti di Paura presenti nell'area d'effetto al momento del lancio.~
+@7511 = ~Emozione: Paura~
+@7512 = ~Emozione: Paura
+(Incantamento/Charme)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: 5 round
+Tempo di lancio: 4
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Neg.
+
+Questo incantesimo crea un'emozione di paura all'interno dell'area d'effetto. Tutte i nemici che non effettuano con successo il proprio tiro-salvezza contro Incantesimi fuggiranno per 5 round. Questo incantesimo annulla gli effetti di Emozione: Disperazione se lanciato nell'area in cui esso ha effetto.~
+@7513 = ~Emozione: Speranza~
+@7514 = ~Emozione: Speranza
+(Incantamento/Charme)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 ora
+Tempo di lancio: 4
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo crea un'emozione di speranza all'interno dell'area d'effetto. Tutte le creature influenzate dall'incantesimo ottengono un aumento del morale e un bonus pari a +2 ai loro tiri per colpire, ai danni e ai tiri-salvezza. Questo incantesimo annulla tutti gli effetti di disperazione se lanciato nell'area in cui essi hanno effetto.~
+@7516 = ~Sudario Fiammeggiante
+(Invocazione)
+Livello: 5
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 round ogni 2 livelli (speciale)
+Tempo di lancio: 5
+Area d'effetto: Raggio di 1,5 metri
+Tiro-salvezza: Neg.
+
+Questo incantesimo fa sì che una creatura sia avviluppata dalle fiamme a meno che non effettui con successo un tiro-salvezza contro Incantesimi. La creatura brucia, subendo 2d6 punti di danno da fuoco ad ogni round, e lingue di fiamme si sprigionano dalla essa, facendo sì che qualsiasi creatura in un raggio di 1,5 metri subisca 1d4 punti di danno da fuoco derivante dalle fiamme. Chiunque venga colpito dalle fiamme della vittima deve a sua volta effettuare con successo un tiro-salvezza contro Incantesimi per evitare di acquisire lui stesso il sudario. Questo incantesimo è particolarmente utile per disperdere gruppi di troll o di salamandre del gelo.~
+@7533 = ~Causa Ferite Moderate
+(Necromanzia)
+Livello: 2
+Sfera: Guarigione
+Raggio d'azione: Tocco
+Durata: Istantanea
+Tempo di lancio: 5
+Area d'effetto: 1 creatura
+Tiro-salvezza: 1/2
+
+Lanciando questo incantesimo e toccando una creatura, il personaggio infligge 11 punti di danno al corpo della creatura (un tiro-salvezza contro Incantesimi effettuato con successo dimezza i danni). Non può essere lanciato dai personaggi di allineamento buono.~
+@7536 = ~Evocare Elementale dell'Acqua
+(Evocazione/Attrazione)
+Livello: 5
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 turno per livello
+Tempo di lancio: 9
+Area d'effetto: Speciale
+Tiro-salvezza: Nessuno
+
+Questo incantesimo permette al lanciatore di evocare un elementale con 8 DV dal Piano Elementale dell'Acqua e di sottometterlo alla sua volontà. Questo elementale combatterà al fianco del personaggio fino al termine dell'incantesimo o finché non viene distrutto.~
+@7551 = ~Sfera Congelante di Otiluke~
+@7552 = ~Sfera Congelante di Otiluke
+(Alterazione, Apparizione)
+Livello: 6
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 6
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Questo incantesimo scaglia una sfera fredda contro una creatura che infligge 1d4+2 punti di danno da freddo per livello del lanciatore. Se il bersaglio effettua con successo un tiro-salvezza contro Incantesimi, schiva la sfera ed evita del tutto il danno.~
+@7857 = ~Vai avanti.~
+@7903 = ~Maledizione
+(Evocazione/Attrazione)
+Livello: 1
+Sfera: Tutte
+Raggio d'azione: Visuale del lanciatore
+Durata: 6 round
+Tempo di lancio: 9
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Nessuno
+
+Quando mormora l'incantesimo Maledizione, il personaggio abbassa il morale dei nemici e infligge una penalità pari a -1 ai loro tiri-salvezza e ai loro tiri per colpire. Nell'istante in cui il lancio dell'incantesimo viene completato, esso influenza tutte le creature in un raggio di 4,5 metri centrato nel punto scelto dal personaggio. Le creature colpite dall'incantesimo che lasciano l'area sono ancora soggette ai suoi effetti; coloro che vi entrano in seguito non lo sono.~
+@7913 = ~Creare Fuoco
+(Alterazione)
+Livello: 4
+Sfera: Elementale (Fuoco)
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 round
+Tempo di lancio: 7
+Area d'effetto: Raggio di 1,5 metri
+Tiro-salvezza: Nessuno
+
+Quando questo incantesimo viene lanciato, dal bersaglio selezionato esplodono delle fiamme, infliggendo 1d4 punti di danno da fuoco più 1 punto per livello del lanciatore a tutte le creature nel raggio d'effetto dell'incantesimo. Le creature subiranno il danno una volta al round a prescindere da quando entreranno nell'area d'effetto.~
+@7914 = ~Scarica Elettrostatica
+(Alterazione)
+Livello: 4
+Sfera: Tempo atmosferico
+Raggio d'azione: 0
+Durata: 1 turno per livello 
+Tempo di lancio: 9
+Area d'effetto: Visuale del lanciatore
+Tiro-salvezza: 1/2
+
+Scarica Elettrostatica è simile a Invocare il Fulmine, tranne per il fatto che può essere utilizzato anche in luoghi chiusi. Questo incantesimo permette al lanciatore di generare una scarica elettrostatica su una qualunque creatura si trovi all'interno dell'area d'effetto, infliggendo 2d8 punti di danno da elettricità più 1d8 punti di danno addizionale per livello del personaggio (un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno). La scarica continua a sprigionarsi una volta per turno per tutta la durata dell'incantesimo.~
+@8040 = ~Rocce Aguzze
+(Alterazione, Incantamento)
+Livello: 5
+Sfera: Elementale (Terra)
+Raggio d'azione: Visuale del lanciatore
+Durata: 12 round
+Tempo di lancio: 6
+Area d'effetto: Raggio di 2,5 metri
+Tiro-salvezza: Speciale
+
+Questo incantesimo deforma le rocce circostanti, rimodellando il terreno in spuntoni acuminati che si mescolano con l'ambiente circostante. Ogni creatura che entra nell'area d'effetto subisce 2d4 punti di danno perforante per round e deve effettuare con successo un tiro-salvezza contro Incantesimi o subire una riduzione del Fattore-movimento del 30%.~
+@8065 = ~Carne in Pietra
+(Alterazione)
+Livello: 6
+Raggio d'azione: Visuale del lanciatore
+Durata: Permanente
+Tempo di lancio: 6
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Questo incantesimo trasforma una creatura in pietra. Il bersaglio dell'incantesimo ha diritto ad un tiro-salvezza contro Incantesimi per evitare l'effetto. La pietrificazione può essere annullata con l'incantesimo arcano di 6° livello Pietra in Carne. Questo incantesimo funziona sui non morti cadaverici (ad esempio, zombi e ghoul), ma non sui non morti incorporei e scheletrici.~
+@8099 = ~Simbolo, Dolore
+(Evocazione/Attrazione)
+Livello: 7
+Sfera: Guardia
+Raggio d'azione: Visuale del lanciatore
+Durata: 11 turni
+Tempo di lancio: 3
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Neg.
+
+Tutte i nemici nel raggio di 4,5 metri dal Simbolo di Dolore quando viene lanciato devono effettuare un tiro-salvezza contro Incantesimi. Coloro che falliscono sono sopraffatti dal dolore, subendo una penalità pari a -4 ai loro tiri per colpire e -2 alla Destrezza e alla Classe Armatura.~
+@8100 = ~Simbolo, Disperazione
+(Evocazione/Attrazione)
+Livello: 7
+Sfera: Guardia
+Raggio d'azione: Visuale del lanciatore
+Durata: 2 turni
+Tempo di lancio: 3
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Neg.
+
+Simbolo, Disperazione è un potente incantesimo che consente al personaggio di scrivere un simbolo sul suolo o su un'altra superficie. Il simbolo vi rimarrà finché un avversario non si avvicina troppo ad esso; a quel punto esploderà, costringendo tutti i nemici nell'area d'effetto ad effettuare con successo un tiro-salvezza contro Incantesimi con una penalità pari a -2 per non restare fermi, sopraffatti dallo scoramento e da una sensazione di abbandono. Le vittime dell'incantesimo non si sposteranno per difendersi dagli attacchi. Questo incantesimo annulla gli effetti di Emozione: Speranza se lanciato nell'area in cui esso ha effetto.~
+@8564 = ~Questa possente arma consta di un manico lungo circa un metro e mezzo con una lama molto pesante. L'ascia può essere anche a doppio taglio, con lame su entrambi i lati dell'attaccatura, oppure ad una sola lama. È un'arma poco maneggevole, ma un guerriero esperto può vibrare colpi di enorme potenza con essa.
+
+STATISTICHE:
+
+Danno: 1d10 (tagliente)
+Fattore-velocità: 9
+Tipo di Competenza: Ascia
+Tipo: A due mani
+
+Richiede:
+Forza 10
+
+Peso: 10~
+@8578 = ~Poi?~
+@8660 = ~Prosegui. Ti ascolto.~
+@9094 = ~Ho altre domande per te.~
+@9197 = ~Rocce Aguzze~
+@9211 = ~Simbolo, Dolore~
+@9785 = ~Ascia a Due Mani~
+@9786 = ~Ascia a Due Mani~
+@10064 = ~Questa potente tunica da mago offre protezione da tutte le forme di attacco fisico, aumentando allo stesso tempo la resistenza alla magia e i tiri-salvezza dell'individuo. In virtù della natura dei suoi incantamenti, può essere indossata soltanto dagli incantatori di allineamento malvagio.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: 5
+- Tiri-salvezza: +1
+- Resistenza alla Magia: +5%
+
+Peso: 6~
+@10242 = ~Questo sembra il teschio di un essere umano.
+
+STATISTICHE:
+
+Peso: 1~
+@10552 = ~Perché no?~
+@10717 = ~Il mio nome non importa.~
+@11053 = ~Scimitarra del Gelo~
+@11054 = ~La scimitarra è molto simile alla sciabola, una spada curva a taglio singolo con elsa di protezione. La lama ha una curvatura più accentuata e si assottiglia gradualmente fino a formare una punta molto aguzza. Le origini della scimitarra sono perlopiù sconosciute, sebbene sia molto diffusa nelle regioni meridionali dei Reami Dimenticati.
+
+STATISTICHE:
+
+Danno: 1d8 (tagliente)
+Fattore-velocità: 5
+Tipo di competenza: Scimitarra/Wakizashi/Ninjato
+Tipo: A una mano
+
+Richiede:
+Forza 8
+
+Peso: 4~
+@11055 = ~La scimitarra è molto simile alla sciabola, una spada curva a taglio singolo con elsa di protezione. La lama ha una curvatura più accentuata e si assottiglia gradualmente fino a formare una punta molto aguzza. Le origini della scimitarra sono perlopiù sconosciute, sebbene sia molto diffusa nelle regioni meridionali dei Reami Dimenticati. Questa è Mortegelida, la scimitarra del gelo.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Resistenza al Fuoco: +50%
+
+THAC0: +3
+Danno: 1d8+3 (tagliente)
+Fattore-velocità: 2
+Tipo di Competenza: Scimitarra/Wakizashi/Ninjato
+Tipo: A una mano
+
+Richiede:
+Forza 8
+
+Peso: 4~
+@11248 = ~Inferno Paradisiaco~
+@11440 = ~Alt! Non posso permetterti di proseguire.~
+@12052 = ~Scongiurazione Generica~
+@12064 = ~Creare Fuoco~
+@12093 = ~Sciame di Palle di Neve di Snilloc~
+@12130 = ~Sfera Congelante di Otiluke~
+@12139 = ~Lancia dell'Unicorno
+(Invocazione)
+Livello: 2
+Sfera: Combattimento
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 5
+Area d'effetto: 1 creatura
+Tiro-salvezza: Speciale
+
+Questo incantesimo crea una lancia parzialmente eterea con riflessi argentati dall'aspetto simile al corno di un unicorno. Il lanciatore sceglie un bersaglio e la lancia dell'unicorno viene immediatamente scagliata contro di esso, infliggendo 3d6 punti di danno perforante dimezzabili con un tiro-salvezza contro Incantesimi effettuato con successo. Sebbene la lancia dell'unicorno si dissolva dopo aver colpito, lascia sempre un alone argentato intorno al bersaglio che lo rende più facile da vedere e da colpire, infliggendogli una penalità pari a -2 alla sua Classe Armatura per 3 round.~
+@12180 = ~Dardo Incantato
+(Apparizione)
+Livello: 1
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 1
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Il lancio di Dardo Incantato, uno tra gli incantesimi più noti di 1° livello, crea sino a cinque proiettili di energia magica che partono dalla punta delle dita dell'incantatore e si dirigono direttamente sul bersaglio, il quale deve essere una creatura di qualsiasi tipo. Ciascun dardo provoca 1d4+1 punti di danno. Ogni due livelli di esperienza, l'incantatore ottiene un dardo aggiuntivo: ne ha due al 3° livello, tre al 5°, quattro al 7°, fino a un totale di cinque al 9° livello.~
+@14181 = ~Fabbro Martello di Tuono~
+@14183 = ~--NOTEXT--~
+@14233 = ~La versione più comune dell'ascia da battaglia è un grosso manico lungo circa 1,20 metri con una lama affilata da una parte montata su una estremità. Le asce da battaglia vengono chiamate anche asce larghe.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d8 (tagliente)
+Fattore-velocità: 7
+Tipo di Competenza: Ascia
+Tipo: A una mano
+
+Richiede:
+Forza 10
+
+Peso: 7~
+@14316 = ~Inceneritore~
+@14317 = ~Oltre alla sua superba manifattura, si possono vedere piccole rune di potere incise lungo tutta la superficie. È ovvio che molto tempo e molti sforzi sono stati dedicati per la sua creazione e, sebbene non sia evidente a prima vista, si può notare un bagliore bluastro emanato dalle rune.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Resistenza al Fuoco: +15%
+
+Abilità in combattimento:
+- 50% di possibilità di infliggere 1d8 punti di danno da fuoco
+- 10% di possibilità che il bersaglio venga stordito per 4 secondi
+
+THAC0: +3
+Danno: 2d4+3 (tagliente)
+Fattore-velocità: 8
+Tipo di Competenza: Spada Bastarda
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 10~
+@14319 = ~Ascia da Battaglia Caricata +2~
+@14321 = ~Oltre alla sua superba manifattura, si possono vedere piccole rune di potere incise lungo tutta la superficie. È ovvio che molto tempo e molti sforzi sono stati dedicati per la sua creazione e, sebbene non sia evidente a prima vista, si può notare un bagliore bluastro emanato dalle rune.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 50% di possibilità di infliggere 1d3 punti di danno da elettricità
+- 15% di possibilità che il bersaglio venga stordito per 4 secondi
+
+THAC0: +2
+Danno: 1d8+2 (tagliente)
+Fattore-velocità: 7
+Tipo di Competenza: Ascia
+Tipo: A una mano
+
+Richiede:
+Forza 10
+
+Peso: 7~
+@14362 = ~Mazzafrusto del Fuoco +3~
+@14363 = ~Il mazzafrusto è composto da una solida impugnatura di legno collegata a una palla di ferro chiodata oppure a una verga di ferro o di legno. Tra l'impugnatura e il resto si trova un perno o un anello di maglia. L'arma era in origine utilizzata come strumento per trebbiare il grano. Questo mazzafrusto è stato incantato magicamente. Si possono vedere rune che brillano lungo la superficie.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 50% di possibilità di infliggere 2d6 punti di danno da fuoco
+
+THAC0: +3
+Danno: 1d6+4 (contuntente)
+Fattore-velocità: 7
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 15~
+@14364 = ~Mazzafrusto della Scossa +4~
+@14365 = ~Il mazzafrusto è composto da una solida impugnatura di legno collegata a una palla di ferro chiodata oppure a una verga di ferro o di legno. Tra l'impugnatura e il resto si trova un perno o un anello di maglia. L'arma era in origine utilizzata come strumento per trebbiare il grano. Questo mazzafrusto è stato incantato magicamente. Si possono vedere rune che brillano lungo la superficie.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1
+
+Abilità in combattimento:
+- 50% di possibilità di infliggere 2d3 punti di danno da elettricità
+- 10% di possibilità che il bersaglio venga stordito per 4 secondi
+
+THAC0: +4
+Danno: 1d6+5 (contuntente)
+Fattore-velocità: 7
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 15~
+@14393 = ~Mummia Maggiore~
+@14406 = ~Maledetto~
+@14443 = ~Dardo d'Osso~
+@14444 = ~Pugno di Ferro~
+@14512 = ~Spada Lunga dell'Azione +4~
+@14513 = ~Queste spade sono spesso chiamate spade a doppia lama, spade da guerra o spade militari. Il più delle volte, la spada lunga ha una lama affilata soltanto da un lato. Non esiste una versione unica della spada lunga: l'aspetto e la lunghezza variano da cultura a cultura, e possono essere diverse anche nell'ambito della medesima cultura a seconda dell'epoca. Tuttavia, una delle caratteristiche più comuni delle spade lunghe è proprio la loro lunghezza, la quale varia dagli 87 ai 117 centimetri. In quest'ultimo caso, la lama occupa un metro della lunghezza totale. La maggior parte delle spade lunghe ha lama a doppio taglio e punta affilata. Nonostante la punta, la spada lunga è concepita per tagliare, non per infilzare. La lama di questa spada è ricoperta di ogni sorta di simbolo arcano.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1
+- Resistenza al danno tagliente: +15%
+
+Abilità in combattimento:
+- 1 attacco addizionale per round
+
+THAC0: +4
+Danno: 1d8+4 (tagliente)
+Fattore-velocità: 4
+Tipo di Competenza: Spada Lunga
+Tipo: A una mano
+
+Richiede:
+Forza 6
+
+Peso: 4~
+@14545 = ~Morning Star dell'Intermittenza Minore~
+@14548 = ~La morning star ha un'impugnatura in legno che termina con una punta di metallo realizzata con una guaina di ferro chiodata. La lunghezza complessiva delle morning star è di circa 1,2 metri. Quest'arma, in particolare, ha una testa dorata che è stata incantata magicamente per migliorarne l'efficienza e disperdere la malleabilità dell'oro.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 25% di possibilità di infliggere 1d3 punti di danno da freddo
+- 15% di possibilità che il bersaglio diventi In Fase (subisce 1 punti di danno al secondo) per 10 secondi
+
+THAC0: +2
+Danno: 2d4+2 (contundente)
+Fattore-velocità: 6
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 10~
+@14558 = ~Morning Star +4: Difensore~
+@14559 = ~La morning star ha un'impugnatura in legno che termina con una punta di metallo realizzata con una guaina di ferro chiodata. La lunghezza complessiva delle morning star è di circa 1,2 metri. Quest'arma, in particolare, ha una testa dorata che è stata incantata magicamente per migliorarne l'efficienza e disperdere la malleabilità dell'oro.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +2
+- Resistenza al danno tagliente: +20%
+- Resistenza al danno perforante: +20%
+- Resistenza alla Magia: +15%
+
+THAC0: +4
+Danno: 2d4+4 (contundente)
+Fattore-velocità: 6
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 11
+
+Peso: 10~
+@14629 = ~Anello di Trasfusione dell'Aura~
+@14630 = ~Un anello è una piccola fascia di metallo prezioso utilizzata come gioiello. Alcuni rari anelli hanno ricevuto incantamenti che conferiscono loro diverse abilità magiche. Questi anelli sono molto ricercati, soprattutto dagli avventurieri. Senza alcuna ragione apparente, questo anello è caldo al tocco.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Rigenerazione Potenziata (1 Punto Ferita ogni 3 secondi)
+- Resistenza alla Magia: -5%
+- Tiri-salvezza contro Incantesimi: -2
+
+Peso: 0~
+@14631 = ~Anello della Resistenza Maggiore~
+@14632 = ~Un anello è una piccola fascia di metallo prezioso utilizzata come gioiello. Alcuni rari anelli hanno ricevuto incantamenti che conferiscono loro diverse abilità magiche. Questi anelli sono molto ricercati, soprattutto dagli avventurieri. Senza alcuna ragione apparente, questo anello è caldo al tocco.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +2
+- Resistenza al danno contundente: +25% 
+- Tiri-salvezza contro Incantesimi: +3
+
+Peso: 0~
+@14640 = ~Scudo Grande Rinforzato +2~
+@14641 = ~Lo scudo grande, conosciuto anche come scudo ad aquilone o scudo a torre, è un enorme scudo di metallo o di legno la cui altezza va all'incirca dai piedi al mento di chi lo usa. Deve essere legato saldamente all'avambraccio. La mano che impugna lo scudo deve inoltre tenerlo con fermezza tutto il tempo. Ovviamente, questo preclude l'utilizzo di tale mano per qualsiasi cosa diversa dal mantenere lo scudo grande al suo posto.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +3, +4 contro attacchi a distanza
+- Resistenza al danno contundente: +15%
+- Resistenza al Fuoco: +15%
+
+Richiede:
+Forza 14
+
+Peso: 12~
+@14644 = ~Scudo Grande +3~
+@14646 = ~Lo scudo grande, conosciuto anche come scudo ad aquilone o scudo a torre, è un enorme scudo di metallo o di legno la cui altezza va all'incirca dai piedi al mento di chi lo usa. Deve essere legato saldamente all'avambraccio. La mano che impugna lo scudo deve inoltre tenerlo con fermezza tutto il tempo. Ovviamente, questo preclude l'utilizzo di tale mano per qualsiasi cosa diversa dal mantenere lo scudo grande al suo posto.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +4, +5 contro attacchi a distanza
+- THAC0: -2
+- Resistenza al danno tagliente: +15%
+- Resistenza al danno contundente: +15%
+- Resistenza al danno perforante: +15%
+- Resistenza al Fuoco: +15%
+
+Richiede:
+Forza 18
+
+Peso: 18~
+@14682 = ~Spada Corta dell'Azione +2~
+@14683 = ~La spada corta è il primo tipo di spada ad essere stata creata. Per dare un'idea della sua forma con parole semplici, la spada corta è simile ad un pugnale con una lama così lunga da non poter più essere considerato un pugnale. Il termine spada corta non esiste nella classificazione delle spade. Tuttavia, ha iniziato ad essere usato per definire una lama a doppio taglio di circa 60 centimetri. L'estremità della spada è in genere appuntita, l'ideale per trafiggere. Simboli di potere si possono vedere incisi lungo la superficie della lama.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Destrezza: +1
+
+THAC0: +2
+Danno: 1d6+2 (perforante)
+Fattore-velocità: 2
+Tipo di Competenza: Spada Corta
+Tipo: A una mano
+
+Richiede:
+Forza 5
+
+Peso: 3~
+@14696 = ~Pozione di Resistenza~
+@14698 = ~Le pozioni sono in genere conservate in fiaschette o fiale di ceramica, cristallo, vetro o metallo. Tali recipienti, di norma, contengono abbastanza liquido da consentire ad una persona di ottenere il pieno effetto della pozione con una dose.
+
+STATISTICHE:
+
+Resistenza al danno contundente: +5% 
+Durata: Permanente
+
+Peso: 1~
+@14699 = ~Pozione di Resistenza Maggiore~
+@14700 = ~Le pozioni sono in genere conservate in fiaschette o fiale di ceramica, cristallo, vetro o metallo. Tali recipienti, di norma, contengono abbastanza liquido da consentire ad una persona di ottenere il pieno effetto della pozione con una dose.
+
+STATISTICHE:
+
+Resistenza al danno tagliente: +5%
+Resistenza al danno perforante: +5%
+Durata: Permanente
+
+Peso: 1~
+@14706 = ~Coraggio~
+@14708 = ~Speranza~
+@14727 = ~Intermittente~
+@14728 = ~Dolore~
+@14805 = ~Pozione di Trasferimento Sacro~
+@14806 = ~Le pozioni sono in genere conservate in fiaschette o fiale di ceramica, cristallo, vetro o metallo. Tali recipienti, di norma, contengono abbastanza liquido da consentire ad una persona di ottenere il pieno effetto della pozione con una dose.
+
+STATISTICHE:
+
+Saggezza: +2
+Destrezza: -1
+Durata: Permanente
+
+Peso: 1~
+@14810 = ~Da un'occhiata ravvicinata a questa cotta di piastre, il suo metallo sembra essere di consistenza incorporea - da qui il suo aspetto ombreggiato. Una volta indossata, farà apparire chi la porta avvolto dalle ombre, proprio come l'armatura. Fornirà anche protezione addizionale contro le armi da lancio.
+
+STATISTICHE:
+
+Classe Armatura: 0 (-3 contro danno tagliente e da proiettile)
+
+Richiede:
+Forza 12
+
+Peso: 20~
+@14832 = ~Armatura di Cuoio Borchiato della Resistenza~
+@14833 = ~L'armatura di cuoio borchiato ha poco in comune con la normale armatura di cuoio. Mentre quest'ultima ha un rivestimento rigido, l'armatura di cuoio borchiato è morbida e flessibile grazie a centinaia di rivetti in metallo. I rivetti sono molto vicini l'uno all'altro, in modo da formare un rivestimento flessibile di duro metallo che devia gli attacchi taglienti. Il rivestimento in morbido cuoio è molto più di un semplice sostegno su cui attaccare i rivetti.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Resistenza al danno perforante: +15%
+- Resistenza al danno tagliente: +15%
+- Resistenza al Fuoco: +15%
+- Resistenza all'Elettricità: +15%
+- Tiri-salvezza contro Incantesimi: +2
+
+Classe Armatura: 4 (3 contro danno perforante e da proiettile, 2 contro danno tagliente)
+
+Richiede:
+Forza 6
+
+Peso: 15~
+@14834 = ~Armatura di Cuoio Borchiato d'Ombra~
+@14835 = ~L'armatura di cuoio borchiato ha poco in comune con la normale armatura di cuoio. Mentre quest'ultima ha un rivestimento rigido, l'armatura di cuoio borchiato è morbida e flessibile grazie a centinaia di rivetti in metallo. I rivetti sono molto vicini l'uno all'altro, in modo da formare un rivestimento flessibile di duro metallo che devia gli attacchi taglienti. Il rivestimento in morbido cuoio è molto più di un semplice sostegno su cui attaccare i rivetti.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Resistenza al danno perforante: +20%
+- Resistenza al danno tagliente: +20%
+- Resistenza al Fuoco: +20%
+- Resistenza all'Elettricità: +20%
+- Muoversi Silenziosamente: +30%
+- Nascondersi tra le Ombre: +30%
+
+Classe Armatura: 3 (2 contro danno perforante e da proiettile, 1 contro danno tagliente)
+
+Richiede:
+Forza 6
+
+Peso: 15~
+@14847 = ~Ascia a Due Mani +2: Rivitalizzante~
+@14848 = ~Questa possente arma consta di un manico lungo circa un metro e mezzo con una lama molto pesante. L'ascia può essere anche a doppio taglio, con lame su entrambi i lati dell'attaccatura, oppure ad una sola lama. È un'arma poco maneggevole, ma un guerriero esperto può vibrare colpi di enorme potenza con essa. Rune naniche sono state incise sulla grande lama per potenziare ulteriormente l'ascia.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 10% di possibilità che il personaggio venga curato di 2d3 Punti Ferita
+
+THAC0: +2
+Danno: 1d10+2 (tagliente)
+Fattore-velocità: 9
+Tipo di Competenza: Ascia
+Tipo: A due mani
+
+Richiede:
+Forza 10
+
+Peso: 10~
+@14855 = ~Queste scale sono collassate, prevenendo l'accesso al resto della torre.~
+@14954 = ~Martello da Guerra Santificato +2~
+@14955 = ~Come altri del suo genere, questo martello da guerra è fatto interamente d'acciaio, con una testa spaccaossa montata su un manico lungo 45 centimetri. Gli sono state conferite anche alcune proprietà magiche in modo da renderlo più efficace in combattimento.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Può memorizzare due incantesimi divini addizionali di 1° livello e uno di 2° livello
+
+THAC0: +2
+Danno: 1d4+3 (contundente)
+Fattore-velocità: 3
+Tipo di Competenza: Martello da Guerra
+Tipo: A una mano
+
+Richiede:
+Forza 9
+
+Peso: 6~
+@15409 = ~"Guardie!"~
+@15993 = ~...~
+@16261 = ~Le bacchette sono lunghe circa 35 cm e sono sottili. Sono fatte d'avorio, osso o legno e hanno normalmente la punta ricoperta di qualche materiale come metallo, cristallo, pietra, ecc. Sono fragili e si rompono facilmente, spesso vengono tenute in apposite custodie.
+
+Le bacchette sono alimentate da cariche e ogni utilizzo costa una o più cariche (a seconda dell'oggetto). Quando una bacchetta esaurisce le cariche, non è più possibile ricaricarla.~
+@16399 = ~In Fase~
+@16836 = ~"Il mio compito è chiaro".~
+@16907 = ~Non so chi tu sia, ma stammi lontano!~
+@16911 = ~Lasciami stare. Non ho nulla da dire.~
+@17094 = ~Vai via. Non sei uno di noi, e non ho nulla da dirti!~
+@17249 = ~Come si desume dal nome, l'Elmo di Protezione dallo Charme protegge il suo portatore da ogni tentativo magico di manipolazione emotiva. Come precauzione, alcuni gruppi mercenari di alto profilo forniscono regolarmente questi elmi ai loro membri, così da garantire che possano svolgere i compiti impartiti senza subire alcuna influenza esterna.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Immunità allo Charme
+- Protegge contro i colpi critici
+
+Peso: 4~
+@17386 = ~Creati dall'incantesimo Bacche della Salute, questi semplici mirtilli guariranno 5 Punti Ferita per ogni manciata di bacche mangiata.
+
+STATISTICHE:
+
+- Effetto: Curano 5 Punti Ferita
+
+Peso: 0~
+@17503 = ~La pietra di sole è un feldspato molto simile alla pietra di luna, più propriamente conosciuta come oligoclasio. Questa pietra può essere incolore o leggermente verdastra e sfaccettata, ma la varietà più comune è di gran lunga quella meno dura (cabochon). Questa varietà produce gemme con piccoli cristalli scintillanti di colore rosso o arancione acceso, sospesi gli uni accanto agli altri in uno spazio quasi incolore, donando alla pietra un colore marrone rossastro o dorato vivo.
+
+STATISTICHE:
+
+Peso: 0~
+@17505 = ~Agata di fuoco è il nome dato al calcedonio contenente sottili venature di goethite iridescente. Quando il taglio viene eseguito bene, l'iridescenza è rossa, marrone, dorata e verde. Gli esemplari migliori sono in parte trasparenti.
+
+STATISTICHE:
+
+Peso: 0~
+@17508 = ~Bentoite è il nome comune della tektite, materiale vetroso, trasparente o leggermente colorato di origine celeste (meteoritica) trovabile nelle sabbie mobili di Anauroch e altri deserti.
+
+STATISTICHE:
+
+Peso: 0~
+@17514 = ~La pietra di luna è una gemma feldspato bianca e opaca che, una volta lavorata, assume una lucentezza bluastra. Vecchie leggende raccontano che un licantropo si trasformerebbe nella sua forma animale alla vista di una pietra di luna. Non è noto se questa storia sia vera o meno, poiché chiunque fosse vicino a scoprirlo non è sopravvissuto per raccontarlo. Tuttavia, le pietre di luna sono state usate in incantesimi riguardanti questa particolare maledizione.
+
+STATISTICHE:
+
+Peso: 0~
+@17520 = ~Le perle constano di vari strati di aragonite formatisi attraverso un lungo e tormentoso processo attorno a granelli di sabbia o altri agenti irritanti all'interno di ostriche o altri molluschi. La perla risultante ha una profonda e ricca lucentezza. La maggior parte delle perle nei Reami è di color bianco, ma esistono varietà più rare come le perle nere e quelle arcobaleno.
+
+STATISTICHE:
+
+Peso: 0~
+@17526 = ~Il raggio di luna è una gemma opaca di un bianco perlaceo, in genere di colore blu pallido con screziature verdi e dorate. È dello stesso tipo degli opali di fuoco e neri, ma è leggermente più comune.
+
+STATISTICHE:
+
+Peso: 0~
+@17527 = ~Lo zaffiro a stella è una preziosa variante dello zaffiro. Tuttavia, è più trasparente, con una stella bianca al centro. È risaputo che lo zaffiro a stella viene utilizzato per ornare dispositivi che proteggono dalla magia.
+
+STATISTICHE:
+
+Peso: 0~
+@17529 = ~Il diamante è una gemma dura e trasparente che può essere di color bianco-azzurro, blu, gialla o rosa. È la più dura e la più preziosa tra le gemme. Di solito, i diamanti vengono trovati nelle montagne del nord dalle razze che vivono nel Sottosuolo e in seguito venduti nel mondo in superficie.
+
+STATISTICHE:
+
+Peso: 0~
+@17530 = ~Uno smeraldo è un berillo verde brillante con spaccature, mentre la gemma finita presenta un taglio rettangolare. Gli smeraldi sono spesso messi in relazione alla sfera della salute.
+
+STATISTICHE:
+
+Peso: 0~
+@17534 = ~Al momento della creazione, queste frecce sono state incantate con mezzi magici. Sono leggermente più dritte rispetto alle frecce normali e sembrano prendere vita quando vengono scagliate senza sforzo dal tuo arco, saettando contro il loro bersaglio con precisione mortale.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d6+2 (proiettile)
+Dispositivo: Arco
+
+Peso: 0~
+@17643 = ~L'arco lungo è simile a quello corto, eccetto per il fatto che il sostegno è alto quasi quanto l'arciere, di solito da 1,8 a 2 metri. Presenta due vantaggi rispetto all'arco corto: migliore gittata e maggiore precisione. Quest'arco è stato potenziato con proprietà magiche che lo rendono quasi perfetto.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: +1
+Fattore-velocità: 6
+Tipo di Competenza: Arco Lungo
+Tipo: A due mani
+
+Richiede:
+Forza 12
+
+Peso: 3~
+@17683 = ~Correnti magiche sono state incorporate dentro questo proiettile, tanto da sembrare un po' più bilanciato e più leggero quando viene scagliato contro un avversario.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d4+3 (proiettile)
+Dispositivo: Fionda
+
+Peso: 0~
+@17733 = ~Frastornante~
+@17735 = ~Una potente arma creata dal mago Retland di Westgate, Frastornante era in genere usata dai furfanti al servizio del detto mago. Nonostante l'elevato livello di educazione di Retland, egli era poco più di un capo della malavita e un criminale. La sua banda, i Ragazzi dei Ciottoli, intimidì e oppresse vari quartieri vicini a Westgate per un decennio finché un mago al servizio di Tyr, Alistar Lavell, riunì i suoi alleati contro gli "amici" di Retland. Quando Alistar sconfisse Retland e la sua banda, consegnò Frastornante alla chiesa di Tyr, la quale la affidò a un sacerdote pellegrino.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 5% di possibilità che il bersaglio venga stordito per 2 round
+
+THAC0: +1
+Danno: 1d6+1 (contundente)
+Fattore-velocità: 4
+Tipo di Competenza: Clava
+Tipo: A una mano
+
+Richiede:
+Forza 5
+
+Peso: 3~
+@17803 = ~Comprendo.~
+@17990 = ~"Ehi, sta' attento! Tieni le mani a posto, amico".~
+@17992 = ~"Non mi è piaciuto il tentativo di furto. Ti conviene comportarsi come si deve".~
+@17993 = ~"Sei fortunato che sono una persona disposta a lasciar correre. Non provare più a derubarmi".~
+@17994 = ~"Mantieni le distanze. Credi che non sappia cosa stavi cercando di fare?"~
+@17995 = ~"Che stavi cercando di fare? Ti chiedo cortesemente di starmi lontano, grazie".~
+@18048 = ~"Uccidili!"~
+@18056 = ~"Non ci proverei di nuovo. I ladri non sono i benvenuti da queste parti".~
+@18057 = ~"Sarebbe stato meglio se non fosse stata tua la mano che ho sentito nella mia tasca".~
+@18058 = ~"Brutta canaglia di un ladro. Ti lascio andare con un avvertimento questa volta, ma la prossima..."~
+@18059 = ~"Attento a te, straniero. Svuotare le tasche è un'attività rischiosa... specialmente quando si è goffi come te".~ ~"Attenta a te, straniera. Svuotare le tasche è un'attività rischiosa... specialmente quando si è goffi come te".~
+@18060 = ~"AAAAAAGH!"~
+@18615 = ~Armatura del Cigno Nero~
+@18617 = ~Fart Repellent for Bombardier Beetles.
+Do not translate~
+@18628 = ~Dolori Allucinanti~
+@18877 = ~Guardia Spettrale~
+@18881 = ~Guardia Spettrale~
+@18915 = ~Continua.~
+@18923 = ~Le fionde esistono sin dall'inizio delle prime documentazioni scritte. La fionda di base è composta da una banda di cuoio o di tessuto con una toppa destinata ad ospitare il proiettile. L'arma deve essere tenuta da entrambe le due estremità della banda e fatta roteare attorno alla testa di chi la impugna. Raggiunta la velocità di rotazione massima, il proiettile viene scagliato col il rilascio di una delle estremità della banda.
+
+STATISTICHE:
+
+THAC0: +1
+Danno: +1
+Fattore-velocità: 5
+Tipo di Competenza: Fionda
+Tipo: A una mano
+
+Richiede:
+Forza 3
+
+Peso: 0~
+@18926 = ~Borsa~
+@18927 = ~Questa borsa ha visto giorni migliori. La sporcizia e la fuliggine ne ricoprono la superficie esterna e la puzza che emana può essere avvertita anche da una certa distanza.~
+@19339 = ~Dardo d'Osso~
+@19358 = ~Quadrelli o dardi sono le munizioni lanciate dalle balestre, indipendentemente dalle dimensioni dell'arma. Questo quadrello è stato imbevuto di proprietà magiche che ne migliorano l'efficacia mentre saetta nell'aria, quasi come se fosse guidato verso il suo bersaglio.
+
+STATISTICHE:
+
+THAC0: +2
+Danno: 1d8+2 (proiettile)
+Dispositivo: Balestra
+
+Peso: 0~
+@21396 = ~Foschia di Eldath~
+@21398 = ~Turbine~
+@21401 = ~Interdizione ai Non morti~
+@21403 = ~Furia Sanguinaria~
+@21404 = ~Nube Pestilenziale~
+@21405 = ~Resistenza Infallibile~
+@21407 = ~Onda Devastante~
+@21409 = ~Raffica di Spine~
+@21410 = ~Muro di Luce Lunare~
+@21418 = ~Crescita di Spine~
+@21420 = ~Tocco della Muffa~
+@21421 = ~Lancia dell'Unicorno~
+@21422 = ~Guscio di Tempesta~
+@21424 = ~Causa Ferite Moderate~
+@21429 = ~Sette Occhi~
+@21430 = ~Soffocare~
+@21431 = ~Dardi d'Osso~
+@21432 = ~Divora Anima~
+@21435 = ~Proiettili di Forza di Mordenkainen~
+@21437 = ~Grido~
+@21438 = ~Sfera al Vetriolo~
+@21439 = ~Lancia di Distruzione~
+@21443 = ~Occhio di Pietra~
+@21444 = ~Occhio della Tempra~
+@21446 = ~Occhio dello Spirito~
+@21447 = ~Occhio del Veleno~
+@21448 = ~Occhio del Mago~
+@21449 = ~Occhio della Spada~
+@21450 = ~Occhio della Mente~
+@21458 = ~Tocco della Muffa
+(Alterazione)
+Livello: 3
+Sfera: Vegetale
+Raggio d'azione: Tocco
+Durata: Speciale
+Tempo di lancio: 6
+Area d'effetto: Raggio di 3 metri
+Tiro-salvezza: Speciale
+
+Questo incantesimo infetta una creatura toccata dal personaggio con una muffa marrone che si diffonde velocemente. Se la creatura infettata fallisce un tiro-salvezza contro Incantesimi, l'infezione è grave e la creatura subisce danno magico nel seguente modo:
+
+1° round: 4d6 punti di danno
+2° round: 3d6 punti di danno
+3° round: 2d6 punti di danno
+4° round: 1d6 punti di danno
+
+Se il tiro-salvezza viene effettuato con successo, i danni vengono ridotti nel seguente modo:
+
+1° round: 2d6 punti di danno
+2° round: 1d6 punti di danno
+3° round: 1d6 punti di danno
+
+Ad ogni round dopo il primo, la creatura più vicina in un raggio di 3 metri dalla vittima deve effettuare con successo un tiro-salvezza contro Incantesimi o essere infettata dalla muffa con la massima potenza. Questo processo continua fino a quando la muffa non fallisce nell'infettare una vittima adatta in tempo. Le creature già soggette agli effetti della muffa non possono contrarla di nuovo. La muffa marrone muore rapidamente una volta che l'incantesimo è terminato.~
+@21460 = ~Crescita di Spine
+(Alterazione)
+Livello: 3
+Sfera: Elementale (Terra)
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 turno
+Tempo di lancio: 6
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo trasforma il terreno circostante in un ammasso di piante spinose. Qualsiasi creatura che entri nell'area subisce 1d4 punti di danno perforante e 1d4 punti di danno tagliente ad ogni round fino al termine dell'incantesimo.~
+@21461 = ~Divora Anima
+(Necromanzia)
+Livello: 6
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 5
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo infligge 3d8 punti di danno da magia a tutte le creature viventi in un raggio di 3 metri. Qualsiasi creatura che muoia a causa di questi danni viene distrutta e il suo corpo viene trasformato in uno scheletro con 3 Dadi-vita agli ordini del lanciatore. Inoltre, per ogni creatura che muore in questa maniera, il personaggio riceve un bonus pari a +1 a Forza, Destrezza e Costituzione per 1 turno. Divora Anima non ha effetto su non morti, costrutti e creature elementali.~
+@21462 = ~Muro di Luce Lunare
+(Invocazione)
+Livello: 4
+Sfera: Protezione, Sole
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 turno
+Tempo di lancio: 7
+Area d'effetto: Un muro lungo 2,5 metri e largo mezzo metro
+Tiro-salvezza: Nessuno
+
+Questo incantesimo invoca uno scintillante arazzo di forza color bianco-blu. Questa parete non è tagliabile, non richiede agganci fisici e può essere facilmente attraversata. Le creature malvagie che la attraversano subiscono 2d10 punti di danno da magia; le creature non morte malvagie subiscono 5d10 punti di danno. Una creatura che attraversa il muro può subirne solo una volta i danni.~
+@21465 = ~Dardi d'Osso
+(Necromanzia)
+Livello: 6
+Raggio d'azione: 0
+Durata: 5 round
+Tempo di lancio: 5
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questo incantesimo crea nove dardi che possono essere utilizzati dal lanciatore e che non possono essere disarmati finché l'incantesimo è attivo. I dardi sono armi +3, infliggono 1d4+3 punti di danno da proiettile e qualsiasi creatura colpita da un dardo deve effettuare con successo un tiro-salvezza contro Morte o subire altri 2d6 punti di danno da magia e vedere la propria Forza ridotta di 3 punti per 5 round. La riduzione del punteggio di Forza non è cumulativa; fallire un altro tiro-salvezza mentre la riduzione è in atto non ne prolungherà la durata. La competenza del lanciatore nell'uso dei dardi (o la sua mancanza) non ha effetti sulla possibilità dei dardi di colpire un bersaglio.~
+@21466 = ~Sette Occhi
+(Scongiurazione)
+Livello: 7
+Raggio d'azione: 0
+Durata: 2 turni
+Tempo di lancio: 7
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questo incantesimo evoca sette sfere magiche che fluttuano intorno alla testa del lanciatore. Ogni occhio ha un'abilità offensiva e difensiva; se una volta che l'una o l'altra viene usata, l'occhio perde il suo potere. I poteri di ciascun occhio sono descritti di seguito.
+
+Occhio della Mente: Questo occhio protegge il personaggio dagli attacchi mentali come Charme, Emozione e Paura. L'occhio può essere impiegato come l'incantesimo arcano di 1° livello Charme, portando una creatura umanoide sotto il controllo del lanciatore (un tiro-salvezza contro Incantesimi nega l'effetto).
+
+Occhio della Spada: Questo occhio devia il primo attacco fisico che colpisce il lanciatore. L'occhio può essere impiegato come l'incantesimo arcano di 1° livello Dardo Incantato, creando sino a cinque dardi (uno ogni 2 livelli di esperienza dopo il 1°), ciascuno dei quali ingligge 1d4+1 punti di danno da magia.
+
+Occhio del Mago: Questo occhio assorbe una manifestazione di danno da fuoco, elettricità, freddo o acido. L'occhio può essere impiegato come l'incantesimo arcano di 3° Fulmine, infliggendo 1d6 punti di danno da elettricità per livello (sino a un massimo di 10d6) a tutte le creature lungo il suo percorso.
+
+Occhio del Veleno: Questo occhio blocca un attacco o un effetto che potrebbe avvelenare il lanciatore. L'occhio può essere impiegato come l'incantesimo divino di 4° livello Veleno, infliggendo 20 punti di danno ad una creature per 20 secondi (un tiro-salvezza contro Veleno effettuato con successo nega gli effetti).
+
+Occhio dello Spirito: Questo occhio blocca un attacco magico di morte istantanea (Incantesimo della Morte, Dito della Morte, Parola del Potere: Uccidere, Togliere la Vita, Distruzione). L'occhio può essere impiegato come l'incantesimo arcano di 2° livello Raggio di Indebolimento, riducendo la Forza del bersaglio a 5 (un tiro-salvezza contro Incantesimi nega gli effetti).
+
+Occhio della Tempra: Questo occhio blocca un effetto di Stordimento, Sordità, Cecità o Silenzio. L'occhio può essere impiegato come l'incantesimo arcano di 4° livello Grido, infliggendo 4d6 punti di danno da magia e assordando le creature in un cono di 9 metri (un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno e nega la sordità).
+
+Occhio di Pietra: Questo occhio protegge il lanciatore da un singolo attacco di Pietrificazione. L'occhio può essere impiegato come l'incantesimo arcano di 3° livello Blocca Persone, rendendo immobili umanoidi di taglia normale o più piccola per 1 round per livello (un tiro-salvezza contro Incantesimi effettuato con successo nega gli effetti).~
+@21468 = ~Grido
+(Invocazione)
+Livello: 4
+Raggio d'azione: 0
+Durata: Istantanea
+Tempo di lancio: 1
+Area d'effetto: Cono di 5 metri con arco di 15°
+Tiro-salvezza: Speciale
+
+Grido conferisce al lanciatore enormi poteri vocali, permettendogli di emettere dalla sua bocca un ruggito spaccatimpani in un'area d'effetto a cono. Qualsiasi creatura all'interno di quest'area viene assordata per 2d6 round e subisce 4d6 punti di danno da magia. Un tiro-salvezza contro Incantesimi effettuato con successo nega la sordità e dimezza i danni.~
+@21469 = ~Soffocare
+(Alterazione)
+Livello: 7
+Raggio d'azione: Visuale del lanciatore
+Durata: 4 round
+Tempo di lancio: 7
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Speciale
+
+Questo incantesimo toglie il respiro a tutte le creature all'interno dell'area d'effetto. Le creature che non respirano non sono influenzate. Le creature soffocate subiscono 4d8 punti di danno da magia per round e soffrono le seguenti penalità: -4 alla Classe Armatura, -4 ai tiri per colpire, -6 alla Destrezza, un attacco in meno per round e Fattore-movimento dimezzato. Un tiro-salvezza effettuato con successo nega tutti gli effetti tranne 2d8 punti di danno per 1 round. Gli effetti cominciamo a svanire quando la creatura si sposta al di fuori dell'area d'effetto, sebbene possa essere necessario 1 round perché un personaggio recuperi il fiato.~
+@21472 = ~Turbine
+(Invocazione)
+Livello: 6
+Sfera: Elementale (Aria)
+Raggio d'azione: Visuale del lanciatore
+Durata: Speciale
+Tempo di lancio: 9
+Area d'effetto: Speciale
+Tiro-salvezza: Speciale
+
+Questo incantesimo crea un piccolo turbine vicino al campo visivo del lanciatore. Il turbine si sposterà in maniera casuale in qualsiasi direzione, ferendo alleati e nemici allo stesso modo. Il lanciatore è immune al suo stesso incantesimo e gli elementali e le creature enormi lo sono altrettanto. Se una creatura entra nel percorso del ciclone, subisce 2d8 punti di danno contundente, 2d8 punti di danno tagliente e deve effettuare con successo un tiro-salvezza contro Soffio o rimanere stordita per 2 round. Le creature con 2 Dadi-vita o meno vengono uccise automaticamente da questo incantesimo. Un massimo di otto bersagli può essere soggetto all'incantesimo, dopodiché il turbine si dissiperà.~
+@21474 = ~Foschia di Eldath
+(Invocazione)
+Livello: 7
+Sfera: Elementale
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 9
+Area d'effetto: Raggio di 2 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo copre l'area di effetto con una foschia blu argentato: qualsiasi creatura all'interno della foschia sarà guarita da malattie, veleni e curata di 25 Punti Ferita.~
+@21478 = ~Causa Malattia
+(Necromanzia)
+Livello: 3
+Sfera: Guarigione
+Raggio d'azione: Tocco
+Durata: 8 ore
+Tempo di lancio: 9
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Questo incantesimo infligge ad una creatura toccata dal personaggio una malattia che sottrae al bersaglio 5d4 punti di Forza. Un tiro-salvezza contro Incantesimi effettuato con successo nega gli effetti. Non può essere lanciato dai personaggi di allineamento buono.~
+@21608 = ~Pugno di Ferro~
+@21646 = ~Circondato da un Alone Argentato (penalità alla CA di 2)~
+@21648 = ~Occhio di Pietra blocca l'effetto e si dissolve.~
+@21649 = ~Occhio della Tempra blocca l'effetto e si dissolve.~
+@21650 = ~Occhio dello Spirito blocca l'effetto e si dissolve.~
+@21651 = ~Occhio del Veleno blocca l'effetto e si dissolve.~
+@21652 = ~Occhio del Mago blocca l'effetto e si dissolve.~
+@21653 = ~Occhio della Spada blocca l'effetto e si dissolve.~
+@21654 = ~Occhio della Mente blocca l'effetto e si dissolve.~
+@22629 = ~Molto bene. Ti accompagneremo.~
+@23357 = ~Teletrasporto Senza Errore~
+@24061 = ~Molto bene.~
+@24245 = ~Sfera al Vetriolo
+(Evocazione)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: Speciale
+Tempo di lancio: 4
+Area d'effetto: Raggio di 1,5 metri
+Tiro-salvezza: Speciale
+
+Questo incantesimo evoca una sfera di un brillante acido smeraldino che il lanciatore può indirizzare per colpire qualsiasi bersaglio entro il raggio di azione. Quando raggiunge il suo bersaglio, la sfera esplode e ricopre la vittima di un potente acido. La vittima subisce 1d4 punti di danno da acido per livello del lanciatore, fino ad un massimo di 12d4 punti di danno. Dopo il danno iniziale, la vittima deve effettuare un tiro-salvezza contro Incantesimi per evitare ulteriori danni. Se non viene effettuato con successo, la vittima continua a subire danni da acido nei round seguenti, subendo due dadi in meno di danno ad ogni round. Per esempio, con questo incantesimo un personaggio di 8° livello infligge 8d4 punti di danno il primo round, 6d4 il secondo round, 4d4 il terzo round, 2d4 il quarto round; l'incantesimo termina al quinto round. Ogni round la vittima ha diritto ad un tiro-salvezza contro Incantesimi per evitare ulteriori punti di danno.
+La sfera al vetriolo spruzza inoltre acido in un raggio di 3 metri intorno al bersaglio primario. Qualsiasi creatura entro il raggio dello spruzzo deve effettuare con successo un tiro-salvezza contro Pietrificazione/Metamorfosi o subire 1d4 punti di danno ogni 5 livelli dell'incantatore. Lo spruzzo non causa danno continuativo.~
+@24246 = ~Proiettili di Forza di Mordenkainen
+(Invocazione)
+Livello: 4
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 4
+Area d'effetto: Raggio di mezzo metro
+Tiro-salvezza: Speciale
+
+Questo incantesimo crea una lucente sfera di energia magica che parte dalle mani del lanciatore per colpire un bersaglio, proprio come l'incantesimo Dardo Incantato. Il personaggio crea un proiettile al 7° livello e un proiettile addizionale ogni tre livelli dopo il 7° - in pratica, due proiettili al 10° livello, tre al 13°, quattro al 16° e così via, fino ad un massimo di sette proiettili al 25° livello. Ogni proiettile infligge 2d4 punti di danno ad un bersaglio e poi scoppia in un'esplosione concussiva dal raggio di mezzo metro, infliggendo 1 punto di danno per livello del lanciatore - per esempio, un personaggio di 12° livello potrebbe evocare 2 proiettili di forza, ognuno dei quali infliggerebbe 2d4+12 punti di danno. Le creature che subiscono danni possono tentare un tiro-salvezza contro Incantesimi per evitare il danno da concussione, ma l'impatto iniziale del proiettile non permette alcun tiro-salvezza. L'incantesimo di 1° livello da stregone "Scudo" assorbirà i proiettili di forza, compresi i danni da concussione.~
+@24247 = ~Interdizione ai Non morti
+(Necromanzia)
+Livello: 5
+Sfera: Guardia
+Raggio d'azione: 0
+Durata: 1 turno
+Tempo di lancio: 7
+Area d'effetto: Raggio di 3 metri
+Tiro-salvezza: Nessuno
+
+Questo incantesimo amplifica l'influenza che un personaggio ha sui non morti, sebbene sia legata all'area che lo circonda al momento del lancio e non si sposti. Qualsiasi creatura non morta che entri nell'area d'effetto viene scacciata come se lo avesse fatto il lanciatore dell'incantesimo. Se lo scacciare fallisce, la creatura è immune ad ulteriori tentativi di scacciare da parte dell'incantesimo a meno che non abbandoni e poi rientri nell'area d'effetto.~
+@24248 = ~Resistenza Infallibile
+(Necromanzia)
+Livello: 4
+Sfera: Necromanzia
+Raggio di azione: Tocco
+Durata: Istantanea
+Tempo di lancio: 9
+Area di effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Questo incantesimo ripristina le energie della creatura toccata, eliminando qualsiasi fatica.~
+@24250 = ~Nube Pestilenziale
+(Alterazione)
+Livello: 4
+Sfera: Combattimento, Elementale (Aria)
+Raggio d'azione: Visuale del lanciatore
+Durata: 4 round
+Tempo di lancio: 7
+Area d'effetto: Raggio di 3,5 metri
+Tiro-salvezza: Neg.
+
+Questo incantesimo trasforma l'aria in un raggio di 3,5 metri in una fetida nebbia grigiastra. Il lanciatore e le creature non viventi sono immuni agli effetti della nube. Per ogni round di esposizione a quest'aria carica di malattie, una creatura deve effettuare con successo un tiro-salvezza contro Soffio o subire 3 punti di danno da magia, cecità e la perdita di 3 punti di Forza e di Destrezza. Questi effetti durano 1 turno. Nube Pestilenziale può essere lanciato solo da personaggi di allineamento malvagio.~
+@24252 = ~Onda Devastante
+(Invocazione)
+Livello: 4
+Sfera: Elementale (Acqua)
+Raggio d'azione: 30 metri
+Durata: Istantanea
+Tempo di lancio: 9
+Area d'effetto: Speciale
+Tiro-salvezza: Speciale
+
+Questo incantesimo evoca una grande onda d'acqua di 1,5 metri che si muove nella direzione indicata dal lanciatore, colpendo con enorme potenza tutto ciò che si trova sulla sua strada. L'onda infligge 4d10 punti di danno contundente; in aggiunta a ciò, le creature colpite possono essere stordite (25% di possibilità) o rese prive di sensi (5% di possibilità) per 2 round. Se la creatura colpita effettua con successo un tiro-salvezza contro Soffio, i danni vengono dimezzati e la creatura evita di rimanere stordita o di perdere i sensi.~
+@24253 = ~Raffica di Spine
+(Alterazione)
+Livello: 4
+Sfera: Vegetale
+Raggio d'azione: 9 metri
+Durata: Istantanea
+Tempo di lancio: 3
+Area d'effetto: Cono di 5 metri con arco di 90°
+Tiro-salvezza: 1/2
+
+Mediante questo incantesimo, il lanciatore fa sì che una raffica di punte, aculei, rovi e spine scaturisca dalla sua mano. La raffica di spine copre un cono di 5 metri di lunghezza, infliggendo 2d10 punti di danno perforante a tutte le creature nell'area d'effetto o 1d10 punti di danno se un tiro-salvezza contro Morte viene effettuato con successo.~
+@24255 = ~Guscio di Tempesta
+(Scongiurazione)
+Livello: 3
+Sfera: Protezione, Tempo atmosferico
+Raggio d'azione: 0
+Durata: 1 turno
+Tempo di lancio: 6
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questo incantesimo circonda il lanciatore con una luminosa sfera di energia perturbante che si sposta con lui. Il Guscio di Tempesta aumenta la Resistenza al Fuoco, Freddo ed Elettricità del lanciatore del 50%.~
+@24294 = ~Farò come chiedi.~
+@24381 = ~Furia Sanguinaria~
+@24737 = ~Lamento lugubre~
+@24770 = ~Golem di Ghiaccio Sentinella~
+@24772 = ~Golem di Ghiaccio Sentinella~
+@24793 = ~Queste frecce sono più famose per il loro fastidioso potere di evocazione che per il danno che infliggono. Inventate da uno gnomo dal cuore nero di nome Turbar Talinbar, le Frecce del Goblin si trovano di solito nelle faretre di halfling e di elfi dispettosi. Diverse compagnie di avventurieri utilizzano le Frecce del Goblin prima di lanciare qualsiasi poderoso attacco.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- Ad ogni colpo messo a segno, un goblin viene evocato vicino al bersaglio per 17 round
+
+THAC0: +1
+Danno: 1d6+1 (proiettile)
+Dispositivo: Arco
+
+Peso: 0~
+@24794 = ~Freccia del Goblin~
+@24810 = ~Furia Sanguinaria
+(Alterazione)
+Livello: 4
+Sfera: Combattimento
+Raggio d'azione: Visuale del lanciatore
+Durata: 2 turni
+Tempo di lancio: 7
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Questo incantesimo funziona solo sui personaggi giocanti o sulle creature alleate. Quando viene lanciato, il bersaglio di questo incantesimo cade in preda ad una furia berserk, attaccando la creatura più vicina finché questa non muore e spostandosi in seguito verso il bersaglio successivo. Mentre Furia Sanguinaria è attiva, il bersaglio è immune a Charme, Sonno, Paura, Blocco, Stordimento, Confusione, Emozione, incantesimi di simbolo ed effetti simili. In aggiunta a ciò, il bersaglio riceve i seguenti bonus: +2 ai tiri per colpire, +3 al danno, +2 alla Forza, 10 Punti Ferita e +2 al Fattore-movimento. L'incantesimo ha tuttavia diversi svantaggi: i Punti Ferita del bersaglio sono coperti per la durata dell'incantesimo e il bersaglio non può beneficiare di nessun effetto che curi i Punti Ferita. Alla fine della durata dell'incantesimo, il bersaglio diventa affaticato e la sua Forza scende a 3 per 2 turni. Furia Sanguinaria non può avere effetto su creature di allineamento legale e non può essere lanciata da creature del suddetto allineamento.~
+@24812 = ~Lancia di Distruzione
+(Invocazione)
+Livello: 3
+Raggio d'azione: 30 metri
+Durata: Istantanea
+Tempo di lancio: 3
+Area di effetto: Speciale
+Tiro-salvezza: 1/2
+
+Questo incantesimo scaglia una lancia di forza che si estende dal lanciatore fino ad un punto a 30 metri di distanza. Qualsiasi creatura lungo il percorso della lancia subisce 5d4 punti di danno contundente più 2 punti di danno per livello del lanciatore (sino a un massimo di 30). Le vittime possono dimezzare il danno effettuando con successo un tiro-salvezza contro Incantesimi.~
+@24944 = ~"Non così in fretta, sorelle."~
+@24945 = ~"Cosa state facendo nella mia cucina? Guardie!"~
+@25321 = ~Dardi d'Osso~
+@25332 = ~Lancia di Distruzione~
+@25340 = ~Proiettili di Forza di Mordenkainen~
+@25343 = ~Sette Occhi~
+@25345 = ~Grido~
+@25348 = ~Divora Anima~
+@25354 = ~Soffocare~
+@25364 = ~Sfera al Vetriolo~
+@25784 = ~Ho bisogno di cure. Puoi aiutarmi?~
+@26218 = ~Tesoro di Hobart~
+@26233 = ~Questo pozzo di pietra sprofonda nelle tenebre.~
+@26250 = ~Ladro Mercenario~
+@26496 = ~Guerriero Mercenario~
+@26497 = ~Ladro Mercenario~
+@26500 = ~Affine all'elementale dell'acqua~
+@26504 = ~Affine all'elementale dell'acqua~
+@26505 = ~Guerriero Mercenario~
+@26701 = ~Sangue di Kossuth~
+@26702 = ~Il dio del fuoco, Kossuth, raramente assume forma fisica nei Reami Dimenticati. Tuttavia, nelle rare occasioni in cui lo fa, la distruzione regna sul suo cammino. Fu evocato nell'801 CV da un folto gruppo di fedeli seguaci che implorava l'aiuto del dio per sconfiggere una colossale piovra che minacciava un tempio sulla costa. Kossuth si manifestò in un gigantesco falò e si scontrò con l'enorme bestia soprannaturale. L'avatar del dio trionfò sulla piovra, ma il mostro riuscì a danneggiare l'essenza di Kossuth. Il fuoco divino percorse il corpo della creatura e si fermò in uno dei suoi occhi, trasformandolo rapidamente in una strana sfera nera illuminata dalle fiamme al suo interno.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- I tempi di lancio vengono ridotti di 2
+- Il danno da fuoco inflitto dal personaggio aumenta del 20%
+
+Peso: 0~
+@26847 = ~Sciacallo Maggiore~
+@26876 = ~Subisce Ferita Sanguinante~
+@26877 = ~Ferita Sanguinante~
+@26895 = ~Sciacallo Maggiore~
+@26896 = ~Signore dei Minotauri~
+@26897 = ~Signore dei Minotauri~
+@26898 = ~Minotauro Anziano~
+@26899 = ~Minotauro Anziano~
+@26900 = ~Una runa è incisa su questa pietra intarsiata. La runa viene spesso tradotta come il simbolo del Cielo.~
+@26901 = ~Una runa è incisa su questa pietra intarsiata. La runa viene spesso tradotta come il simbolo della Notte.~
+@26902 = ~Una runa è incisa su questa pietra intarsiata. La runa viene spesso tradotta come il simbolo della Terra.~
+@26903 = ~Una runa è incisa su questa pietra intarsiata. La runa viene spesso tradotta come il simbolo del Giorno.~
+@26904 = ~Una runa è incisa su questa pietra intarsiata. La runa viene spesso tradotta come il simbolo del Mare.~
+@26907 = ~Sciacallo Sciamano~
+@26908 = ~Sciacallo Sciamano~
+@26909 = ~Questa pagina strappata contiene una sola voce:
+
+"Sto studiando il portale, cercando di distinguere come il Maestro lo abbia cambiato. Se avrò successo, allora alla fine saremo liberi dalla sua tirannia. Gli unici indizi che ho sono nella forma di uno dei suoi stupidi indovinelli:
+
+Cielo di sopra, Terra e Mare di sotto
+Volo di giorno, il Giorno si tramuta in Notte
+Le stagioni cambiano tutto quello che sappiamo
+Cinque pietre riportano in vita il cancello
+A casa il passaggio porterà
+
+Da quello che riesco a capire, sono necessarie cinque gemme per attivare il congegno. Ogni gemma rappresenta una dei cinque aspetti del cancello: Cielo, Giorno, Terra, Mare e Notte. Solo ponendo la gemma corretta, nel punto appropriato, il cancello si aprirà.
+
+Sembra tutto troppo semplice ed è esattamente questo che mi preoccupa. Non ètipico del Maestro essere così diretto con le informazioni. Credo che le gemme, qualsiasi cosa siano, dovranno essere cambiate in qualche modo. Questo spiegherebbe la voce sulle stagioni. Dovrei pensarci ancora un po'..."~
+@26910 = ~Sciacallo Guerriero~
+@26911 = ~Sciacallo Guerriero~
+@26912 = ~Rikasha~
+@26913 = ~Rikasha~
+@26914 = ~Evocatore~
+@26915 = ~Evocatore~
+@26916 = ~Cumulo Strisciante~
+@26917 = ~Cumulo Strisciante~
+@26918 = ~Lapidazione~
+@26920 = ~Le stagioni cambiano tutto ciò che conosciamo.~
+@26922 = ~Lapidazione~
+@26923 = ~Orso Crudele~
+@26924 = ~Orso Crudele~
+@26925 = ~Sciacallo~
+@26926 = ~Sciacallo~
+@26927 = ~Sciacallo Capo Branco~
+@26928 = ~Sciacallo Capo Branco~
+@26929 = ~Arpia~
+@26930 = ~Arpia~
+@26931 = ~Arpia Immonda~
+@26932 = ~Arpia Immonda~
+@26933 = ~Arpia Infernale~
+@26934 = ~Arpia Infernale~
+@26935 = ~Questa pietra sembra pulsare di un potere sconosciuto. Come ti avvicini ad essa, ti si rizzano i capelli in testa.~
+@26936 = ~Canto dell'Arpia~
+@26937 = ~Arpia Regina~
+@26938 = ~Hobart Stubbletoes~
+@26939 = ~Sguardo dello Sciacallo mannaro~
+@26940 = ~Ah, eccovi qua. Stavo iniziando a chiedermi se ero nel posto giusto. Salve, ben incontrati e bla-bla-bla. Il mio nome è Stubbletoes... Hobart Stubbletoes. E a meno che non mi sbagli, voi dovete essere i leggendari eroi di Baldur's Gate. Vero?~
+@26941 = ~Sono giunto da molto lontano per trovarvi. Se siete davvero degli eroi, allora sono certo che sarete interessati ad intraprendere una pericolosa ma potenzialmente remunerativa missione. Dopotutto, è questo il tipo di cose che fate voi eroi, no?~
+@26942 = ~Forse? Forse?! Non ho tempo per i forse. O lo siete o non lo siete. Allora?~
+@26943 = ~Oh, davvero? Quindi voi non siete i famosi difensori di Baldur's Gate? Quelli che hanno ucciso Sarevok e sventato una guerra contro l'Amn? Hmm... Devo essermi rimbambito con l'età. Mi sembrate proprio degli eroi.~
+@26944 = ~Fate come vi pare. Ma se doveste incontrare qualche *vero* eroe, fatemelo sapere. Ho un'impresa da portare a termine, e se voi testoni non siete disponibili, dovrò trovare qualcun altro che lo sia.~
+@26945 = ~Pfeh! Un cesto di piccole mele e vino di goblin. Fatevi chiamare come vi pare. Io sto cercando gente dotata di astuzia e volontà straordinarie.~
+@26946 = ~C'è un castello in rovina di cui sono a conoscenza... non molto lontano da qui. Si dice che grandi tesori attendono al suo interno, protetti da bestie malvagie e perfide trappole. Tutti coloro che vi sono entrati... beh, sono morti.~
+@26947 = ~Pensate di essere furbi, vero? Beh, c'è un motivo per cui udite sempre storie del genere. Perché sono vere! La gente dice che il castello... *whoosh* fa scomparire al suo interno le persone. Non ne escono mai più.~
+@26948 = ~Eh... non posso dirvelo. Però posso mostrarvelo. Ascoltate, se venite con me, lo potrete vedere di persona. Fate un po' di soldi, salvate un po' di gente da una sorte terribile e magari qualche bravo bardo scriverà una bella canzone a riguardo. Che ne dite?~
+@26949 = ~Heh. Riesco a vedere le rotelle che girano nella vostra testa. Magari siete abbastanza intelligenti... Io sono qui solo per il guadagno. Un uomo parsimonioso può vivere piuttosto bene con gli scarti degli avventurieri. Non c'è nulla di male in questo, eh?~
+@26950 = ~*Sigh* Eh... Siete inutili. Trovatemi qualche vero eroe e potrebbe esserci un po' d'oro per voi.~
+@26951 = ~Meraviglioso. Vi porterò subito lì. Ora, datemi solo qualche istante... come funziona questa cosa? È questa la runa che...~
+@26952 = ~Beh... eccovi di nuovo qui. Avete trovato qualche eroe disposto ad affrontare la sfida, o state solo vendendo la pelle di un vecchio orsogufo?~
+@26953 = ~Hmm. Vedete, ve l'avevo detto che non era molto lontano. Heh, heh. Ora, eh... che la dannata fortuna di Tymora sia con voi e bla-bla-bla.~
+@26954 = ~Siamo ad Anauroch[An-o-rock]. È un deserto. Eccovi qui. Felici? Ora, date sfoggio del vostro eroismo. Io ho bisogno di far riposare queste vecchie ossa.~
+@26955 = ~*Sigh* Volevate venire qui, no? Avete accettato la sfida, no? Bene, eccola qui. Divertitevi.~
+@26956 = ~Bah! Cervello di orco.~
+@26960 = ~Sì, lo siamo.~
+@26961 = ~Un paladino non parla in maniera orgogliosa delle proprie imprese. Lascia che sia qualcun altro a fregiarsi del titolo di "eroe". Ho fatto solo ciò che richiede la mia fede.~
+@26962 = ~Non siamo eroi, piccoletto. Tuttavia, se sei alla ricerca di gente malvagia, siamo al tuo servizio.~
+@26963 = ~Non siamo eroi, fratello. Tuttavia, se sei alla ricerca di gente malvagia, siamo al tuo servizio.~
+@26964 = ~Un eroe sono, e di eroi canto. Io sono <GABBER>, famoso bardo e avventuriero.~ ~Un'eroina sono, e di eroi canto. Io sono <GABBER>, famoso bardo e avventuriera.~
+@26965 = ~Forse.~
+@26966 = ~Spiacente, ma devi averci confuso con qualcun altro.~
+@26967 = ~Certo. Cosa hai in mente?~
+@26968 = ~Spiacente, ma siamo occupati ora. Magari in un altro momento.~
+@26969 = ~Spiacente, non siamo interessati.~
+@26970 = ~Molto bene. Sì, siamo gli eroi di Baldur's Gate.~
+@26972 = ~Siamo le persone di cui parli.~
+@26973 = ~Spiacente, vecchio. Addio.~
+@26974 = ~Aspetta. Di cosa parli?~
+@26976 = ~Bene, siamo eroi. Perché è così importante per te?~
+@26977 = ~Spiacente, ma non siamo eroi.~
+@26978 = ~*Sigh* Che storia originale, amico. È anche infestato?~
+@26979 = ~Dove si trova il castello?~
+@26980 = ~Perché vuoi che *noi* veniamo con te?~
+@26992 = ~Hobart, non ci hai detto cosa riguarda questa sfida.~
+@26993 = ~Sì, siamo disposti ad accompagnarti.~
+@26994 = ~Spiacente di averti disturbato, Hobart. Addio.~
+@26995 = ~Cosa?! In che parte di Faerûn siamo?~
+@26996 = ~Cosa hai fatto, Hobart?~
+@26999 = ~Aspetta...~
+@27009 = ~Fanghiglia Olivastra~
+@27010 = ~Zombi della Fanghiglia~
+@27011 = ~Creatura della Cripta~
+@27012 = ~Viverna Matrona~
+@27014 = ~Arpia Regina~
+@27015 = ~Fanghiglia Olivastra~
+@27016 = ~Zombi della Fanghiglia~
+@27017 = ~Creatura della Cripta~
+@27018 = ~Viverna Matrona~
+@27020 = ~Harald~
+@27021 = ~Cortigiano Spettrale~
+@27024 = ~Cuoco Spettrale~
+@27027 = ~Harald~
+@27028 = ~Cuoco Spettrale~
+@27029 = ~Lord Maluradek~
+@27030 = ~Rilascia Nebbia Gelatinosa~
+@27031 = ~"Non uccidermi! Non uccidermi!"~
+@27032 = ~"Muori, sporco invasore!"~
+@27033 = ~Questa sezione della torre è caduta in rovina, lasciando una grossa apertura sul pavimento.~
+@27034 = ~Ascia del Signore dei Minotauri~
+@27035 = ~Un tempo, questa pregiata arma apparteneva al Signore dei Minotauri nelle catacombe del Maestro degli Inganni. L'ascia possiede una doppia lama montata su una solida asta di legno di quercia. È molto ben bilanciata e può essere utilizzata con una sola mano. L'ascia è incantata, fornendo a chi la usa un bonus pari a +4 ai tiri per colpire e al danno. Un colpo andato a segno ha anche il 25% di possibilità di stordire un avversario per 1d4 round.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 25% di possibilità che il bersaglio venga stordito
+
+THAC0: +4
+Danno: 1d12+4 (tagliente)
+Fattore-velocità: 8
+Tipo di Competenza: Ascia
+Tipo: A una mano
+
+Richiede:
+Forza 10
+
+Peso: 10~
+@27036 = ~Questa bella spada larga è di insolita costruzione. La lama è stata forgiata con uno sconosciuto metallo nero e leggero, ma la punta sembra essere del più puro argento. Rune rosse infuocate sono state incise lungo la lama. Quando vengono osservate da vicino, le rune sembrano animarsi di vita propria. L'impugnatura e la guardia della spada sono state scolpite da un massiccio rubino.
+
+Quest'arma è un flagello per certe creature dei Piani Inferiori. Contro i Baatezu e i Tanar'ri, la spada infligge il doppio del danno e conferisce a chi la impugna un bonus pari a +4 ai tiri per colpire e al danno. Quando è impugnata, la spada conferisce anche una certa protezione dal fuoco.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Resistenza al Fuoco: +20%
+
+THAC0: 0 (+4 contro baatezu e tanar'ri)
+Danno: 1d8 (2d8+4 contro baatezu e tanar'ri)
+Tipo di Danno: Tagliente
+Fattore-velocità: 5
+Tipo di Competenza: Spada Lunga
+Tipo: A una mano
+
+Richiede:
+Forza 6
+
+Peso: 5~
+@27037 = ~Flagello degli Inferi~
+@27038 = ~Hmm. Altre pedine che partecipano al gioco del Buffone, capisco... Oh, bene, come può servirvi Rikasha?~
+@27039 = ~Come hai detto che ti chiami?~
+@27040 = ~Gioco del Buffone? Di cosa stai parlando?~
+@27041 = ~Cerchiamo una via di fuga da queste caverne. Tu ne conosci una?~
+@27043 = ~Sono stanco e ho bisogno di un posto per riposare. Posso farlo qui?~ ~Sono stanca e ho bisogno di un posto per riposare. Posso farlo qui?~
+@27045 = ~Io sono Rikasha, guerriero degli Sciacalli a riposo.~
+@27046 = ~Guerriero a riposo?~
+@27047 = ~Trials of the Luremaster
+
+Abbiamo incontrato uno sciacallo guerriero di nome Rikasha nelle catacombe. Sembra sinceramente amichevole e ha risposto a tutte le domande che gli abbiamo posto.~
+@27048 = ~Sì. Sto invecchiando e mi sono stancato della violenza e del sangue. Desidero la pace per gli anni che mi restano.~
+@27049 = ~Hai menzionato gli Sciacalli. Chi sono?~
+@27050 = ~"Sciacalli" è il nome con cui la mia gente si definisce. Nasciamo sciacalli, ma in seguito possiamo assumere una forma di guerriero o forma umana. Ora mi vedete nella mia forma di guerriero.~
+@27051 = ~Ho sentito della tua razza. Penso che veniate chiamati sciacalli mannari.~
+@27052 = ~Siete una razza di licantropi?~
+@27053 = ~Preferiamo il termine "Sciacallo". Non siamo creature mannare.~
+@27054 = ~Così, ora potresti mutare dalla forma di un uomo a quella di uno sciacallo se volessi?~
+@27055 = ~No. La licantropia è una malattia che obbliga la vittima a mutare. Noi non siamo malati. È nella nostra natura compiere questa mutazione.~
+@27058 = ~Sono vecchio e stanco. La mutazione... è dolorosa e difficile. Preferisco restare come sono ora.~
+@27060 = ~Quando ci siamo incontrati, hai menzionato il gioco del Buffone. Di cosa stavi parlando?~
+@27064 = ~Penso che voi sappiate bene di cosa sto parlando. Non è stato il piccoletto ad attirarvi qui? Negate di star partecipando al gioco del suo padrone?~
+@27065 = ~Immagina che noi non sappiamo di cosa stai parlando. Spiegati meglio.~
+@27067 = ~D'accordo... Il piccoletto, Hobart, attira qui gli avventurieri con promesse di fama, gloria e ricchezza. Al loro arrivo, questi si ritrovano intrappolati e alla mercé del signore della fortezza.~
+@27069 = ~E così comincia il gioco. Il signore vi assegna un compito. Per completarlo dovete inoltrarvi sempre di più nel suo dominio. A che scopo, non lo so...~
+@27070 = ~Cosa sai dirmi di Hobart?~
+@27071 = ~Trials of the Luremaster
+
+Abbiamo chiesto a Rikasha dell'halfling, Hobart. Sostiene che è un lacchè del Maestro degli Inganni e che non ci si debba fidare di lui.~
+@27073 = ~Egli giunse qui molti anni fa. Cercò una via di fuga, ma non riuscì a trovarla. Alla fine, divenne il lacchè del padrone e ora gode di una libertà limitata. Non mi fiderei di quel piccoletto.~
+@27074 = ~Cosa sai dirci sul Maestro degli Inganni?~
+@27076 = ~Solo questo. Il suo potere qui è assoluto. Siamo tutti suoi prigionieri, suoi schiavi, o suoi servitori. Dipende solo dal tuo punto di vista.~
+@27077 = ~Trials of the Luremaster
+
+Abbiamo chiesto a Rikasha del Maestro degli Inganni, ma non ha saputo darci informazioni utili. Ci ha detto solo che il Maestro degli Inganni è il sovrano assoluto di questo luogo e che tutte le altre creature sono sue schiave.~
+@27082 = ~E qual è il tuo punto di vista, Rikasha?~
+@27083 = ~Quando ero giovane, ero suo servitore. Non sapevo far altro che servirlo. Nel fiore degli anni, ero suo schiavo. Lo conoscevo bene, ma non potevo sfidarlo. Ora, nei miei ultimi anni, sono suo prigioniero. Non lo servirò più, ma non posso reclamare la mia libertà...~
+@27088 = ~Allora non c'è modo di uscire da queste caverne?~
+@27089 = ~Forse... se il portale potesse essere aperto...~
+@27090 = ~Qui c'è un portale? Come è possibile?~
+@27091 = ~C'era un tempo in cui la mia gente viveva nel mondo di superficie. Un giorno dal cielo piovve fuoco e la terra si spaccò. La nostra città venne distrutta e parti di essa sprofondarono sotto terra. I pochi di noi che sopravvissero si ritrovarono intrappolati qui.~
+@27095 = ~Esplorammo ogni palmo di queste caverne, ma nessuna strada riportava alla superficie. Cercammo di scavare verso l'esterno, ma la pietra sopra di noi si era fusa in una massa solida. Disperati, decidemmo di costruire un portale.~
+@27100 = ~Doveva essere un macchinario semplice, in grado di raggiungere la superficie sopra di noi. Con una portata così limitata, i requisiti per alimentarlo sarebbero stati minimi. Ci vollero anni, ma alla fine ci riuscimmo. Sfortunatamente, fu la nostra rovina...~
+@27101 = ~Oh? Cosa è successo?~
+@27102 = ~Durante la nostra assenza, gli umani si erano stabiliti nelle nostre terre e avevano costruito la fortezza sopra di noi. Il portale si aprì nel cuore del loro santuario. Quando la mia gente ne uscì, gli umani ci scambiarono per invasori. Scoppiò una terribile battaglia e noi fummo respinti dentro il portale.~
+@27103 = ~Capisco. Cosa è successo poi?~
+@27104 = ~Gli umani ci inseguirono mentre fuggivamo e quasi ci decimarono. Soddisfatti che non fossimo più una minaccia, disattivarono il portale...~
+@27105 = ~Aspetta. Hanno distrutto il portale?~
+@27106 = ~Sì, ma ascoltatemi... Anni dopo, giunse il signore della fortezza. Egli studiò il portale per qualche tempo e riuscì a riattivarlo. Dopodiché, rimosse certi componenti chiave e li sparpagliò per le caverne...~
+@27108 = ~Sai quali sono questi componenti?~
+@27109 = ~No, mi dispiace. Questi eventi avvennero molto prima della mia nascita. Forse uno sciamano del mio popolo lo sa... ma non rivelerebbero mai tali segreti.~
+@27110 = ~Dove posso trovare uno sciamano?~
+@27112 = ~Ritornate da dove siete venuti. Cercate la stanza con le pietre erette. È lì che gli sciamani risiedono. State attenti però: non vi accoglieranno amichevolmente come ho fatto io.~
+@27113 = ~Un'ultima domanda, Rikasha. Dove si trova il portale?~
+@27114 = ~Trials of the Luremaster
+
+Abbiamo chiesto a Rikasha se conoscesse il modo per uscire dalle catacombe. Ci ha parlato di un portale all'interno di un tempio su un lago qui vicino. Il portale si apre nel cuore della fortezza sopra di noi. Sfortunatamente, il Maestro degli Inganni ha disattivato il portale rimuovendo i componenti chiave e spargendoli per le catacombe. Dobbiamo scoprire quali sono questi componenti. Rikasha ritiene che uno sciamano della sua gente possa conoscere le informazioni che cerchiamo, ma che non sia disposto a condividerle. Gli sciamani risiedono in una stanza con delle pietre erette. Forse lì potremo trovare un indizio per questo enigma.~
+@27115 = ~Continuate lungo questo passaggio e cercate il tempio del lago. Il portale giace al suo interno.~
+@27117 = ~Se volete, allora sentitevi liberi. Provvederò che non veniate disturbati.~
+@27118 = ~Ti sono grato.~ ~Ti sono grata.~
+@27119 = ~Rikasha vi dà di nuovo il benvenuto. Come posso servirvi?~
+@27121 = ~Quando abbiamo parlato l'ultima volta hai detto qualcosa a proposito di un gioco del Buffone. Di cosa stavi parlando?~
+@27124 = ~Zaffiro a Stella Perfetto~
+@27125 = ~Pietra di Sole Perfetta~
+@27126 = ~Diamante Perfetto~
+@27127 = ~Stella d'Acqua Perfetta~
+@27128 = ~Pietra di Luna Perfetta~
+@27129 = ~Bentoite Imperfetta~
+@27130 = ~Agata di Fuoco Imperfetta~
+@27131 = ~Smeraldo Imperfetto~
+@27132 = ~Perla Imperfetta~
+@27133 = ~Lingotto Lunare Imperfetto~
+@27134 = ~Non avete abbastanza da fare nel resto di questo luogo dimenticato dagli dèi che darmi fastidio?~
+@27135 = ~Heh. Così avete incontrato il Maestro degli Inganni, eh? State attenti a lui. È più astuto di una volpe in inverno.~
+@27136 = ~Riguardo il Maestro degli Inganni? Beh io... io non ne so molto più di voi. L'ho visto solo fluttuare intorno al cancello. Uh... Altri avventurieri mi hanno detto il suo nome. Questo è tutto.~
+@27137 = ~Già, datevi una mossa. Alla mia età, capirete che non vale la pena sprecare il tempo in chiacchiere.~
+@27138 = ~Questo? È il mio umile rifugio dalla sabbia e dal sole. Con il tempo ho raccolto un po' di tesori tra le rovine. La maggior parte è spazzatura, ma perlomeno mi tiene occupato.~
+@27139 = ~Eh... Come voi, ne ho sentito parlare da qualcun altro che venne qui. Ora è un bel po' che sto cercando di mettere le mani sul tesoro al suo interno. Però sono solo un vecchio halfling. Heh heh. Cosa posso fare contro un fantasma, hmm?~
+@27140 = ~Certo, perché no? Nessuna di quelle porcherie ha alcun valore sentimentale per me. Fatemi vedere cosa avete.~
+@27141 = ~Heh heh. Stupefacente. Siete riusciti ad entrare nella fortezza. Siete i primi. Forse il Maestro degli Inganni aveva ragione su di voi dop... oops. Voglio dire... uh... heh heh.~
+@27142 = ~Uh... volevo dire che... ugh. *Gulp*~
+@27143 = ~Per favore... per favore, non obbligatemi a dirvelo. L-lui può sentirci. *Gulp* Mi ucciderà se ve lo dico. Mi ucciderà!~
+@27144 = ~Guardate, io sono bloccato qui, proprio come voi. Mi dispiace di non aver detto tutta la verità quando ci siamo incontrati... spero che non morirete come gli altri. Oh! Ho detto troppo. Per favore non fatemi altre domande!~
+@27146 = ~Beh, visto che la mettete così... So chi è il Maestro degli Inganni. Lo so fin troppo bene. Sono decenni che sono suo ospite. Perlomeno, penso che siano decenni. Lasciate che torni indietro nel tempo e vi spieghi come stanno le cose.~
+@27147 = ~Ero un avventuriero, proprio come voi. Allora avevo un po' meno chili sulla pancia e qualche capello in più sulla mia stupida testa. I miei compagni volevano esplorare la Battaglia delle Ossa, a sud di Evereska. Beh, a me interessava qualcos'altro, un castello chiamato Maluradek.~
+@27148 = ~Già, proprio questo castello. Era in rovina allora proprio come adesso. Il deserto si espanse, inghiottendolo più di un secolo fa. Riuscii ad entrare abbastanza facilmente. Fu l'uscirne che si dimostrò difficile.~
+@27149 = ~Mentre stavo cercando un modo per entrare nella fortezza, il Maestro degli Inganni mi apparve nella sua gloria spettrale. Parlò nella sua solita maniera criptica, presentandomi la sua "sfida per gli eroi".~
+@27150 = ~Cosa feci? Scappai a gambe levate. Senza voltarmi, scalai il muro esterno dai parapetti orientali. Quando mi voltai per attraversare il deserto, mi ritrovai nel cortile. Non importa come tentassi di arrampicarmi, saltare o scavare per uscire da questo dannato castello, non riuscivo ad andare da nessuna parte.~
+@27151 = ~Dopo giorni di duro lavoro senza acqua o cibo, cominciai ad avere delle visioni. Credo di essere svenuto e di avere cominciato a sognare. È stato allora che ho visto di nuovo il Maestro degli Inganni. Mi chiese di nuovo di accettare la sua sfida. Gli dissi che ero venuto solo in cerca di tesori. Non ebbe pietà per un piccolo vecchietto come me.~
+@27152 = ~Mi disse che solo i veri eroi potevano lasciare il castello e che io, visto che ovviamente non ero tale, lo avrei dovuto servire per restare vivo. Mi diede un anello e mi disse che mi avrebbe trasportato dovunque volessi per un massimo di una giornata. All'alba, sarei sempre riapparso nel cortile. In cambio, avrei dovuto trovare avventurieri degni di affrontare la sua sfida.~
+@27153 = ~Già. E darei con piacere tutto l'oro che ho visto in vita mia per far sì che fosse solo un sogno. Ma quando mi svegliai, mi ritrovai questo dannato anello al dito. Se lo dovessi togliere, morirei. L'ho servito fin da allora.~
+@27154 = ~Mi dispiace di essere stato sgarbato con voi quando ci siamo incontrati. Cerco sempre di non legare troppo con coloro che sono obbligato a portare qui. Mi capite, vero?~
+@27155 = ~Nel corso degli anni, sono stati centinaia. Però voi siete stati i primi ad aprire i cancelli della fortezza. *Sigh* spero che riusciate a cancellare la maledizione che grava su questo dannato luogo.~
+@27156 = ~Beh, non sono un codardo, ma non ho il cervello di un orco. Non so come funziona dalle vostre parti, ma da dove vengo io, un halfling dovrebbe avere la zucca vuota per trafficare con gli spiriti.~
+@27157 = ~Hobart, cosa ne sai dello strano fantasma che è in agguato vicino al cancello settentrionale?~
+@27159 = ~Potremmo dare un'occhiata alle cose che hai trovato? Saresti interessato a fare qualche scambio?~
+@27161 = ~Come hai trovato questo posto, Hobart?~
+@27162 = ~Mi spiace di averti disturbato, Hobart. Addio.~
+@27164 = ~Cosa sai di lui?~
+@27166 = ~Addio, Hobart.~
+@27175 = ~Certo. Sei interessato a scambiare qualcuno degli oggetti che hai raccolto?~
+@27178 = ~Aspetta un momento... Cosa ti ha detto il Maestro degli Inganni su di noi?~
+@27179 = ~Hobart, cosa stai nascondendo?~
+@27180 = ~Ascoltami, Hobart, faresti meglio a dirci ciò che sai o altrimenti potremmo essere costretti ad essere un po' "rudi".~
+@27181 = ~Non avevo capito... non ti preoccupare, non ti obbligheremo a dirci nulla.~
+@27182 = ~Puoi darmi perlomeno un'idea di ciò che sta accadendo qui?~
+@27183 = ~Hobart, posso comandare le forze degli Inferi con una parola. Pensi che il Maestro degli Inganni mi faccia la minima paura? Parla... subito.~
+@27184 = ~Hobart, possiamo abbattere città con una sola parola. Pensi che il Maestro degli Inganni ci faccia la minima paura? Parla... subito.~
+@27185 = ~Parla ora o morirai subito. È semplice.~
+@27186 = ~Capisco, Hobart. Posso vedere cosa hai da scambiare?~
+@27187 = ~Piccolo bastardo. Dimmi tutto quello che sai prima che ti gonfi come una zampogna.~
+@27188 = ~Ho sentito abbastanza. Addio, Hobart.~
+@27189 = ~Vai avanti.~
+@27192 = ~Questo castello?~
+@27200 = ~Tutto qui?~
+@27202 = ~Cosa fece?~
+@27205 = ~Pensavo avessi detto che era solo un sogno.~
+@27206 = ~Trials of the Luremaster
+
+Abbiamo parlato con uno strano spirito vicino all'ingresso del castello. Lo spirito ci ha informati che esiste un solo modo per lasciare vivi le rovine. A quanto pare, dobbiamo dimostrargli di essere degni di portare il mantello degli eroi, qualsiasi cosa voglia dire. L'unico indizio che è stato disponibile a darci è stato questo indovinello:
+
+Nord, sud, est ed ovest,
+Ogni purificatore nelle quattro torri è giacente.
+Nutriteli dove si radunano gli spiriti,
+Oppure rimanete qui per sempre, nostri ospiti.
+Il sole sorge, la terra riceve calore,
+Quattro uomini giacciono freddi, da tutti dimenticati.
+"Lasciateli in pace!" grida il folle signore
+e dalla mia opera i loro nomi sono cancellati.
+
+Ci ha detto di tornare una volta compiuta l'impresa. Solo allora saremo ammessi all'interno del castello.~
+@27208 = ~Trials of the Luremaster
+
+Dopo essere entrati nella fortezza, abbiamo di nuovo ricevuto la visita dello spirito chiamato il Maestro degli Inganni. Sembra voler condividere con noi un racconto ma, anziché narrarcelo subito, vuole che lo scopriamo per conto nostro. Ancora una volta, l'unico indizio che ci ha offerto è stato un indovinello.
+
+Per comprendere questa triste storia,
+Contro guardie principesche trovate vittoria.
+Sotto armi intonse e cotte di maglia,
+Troverete il chiodo della bara spoglia.
+Sempre in giro il sole va,
+E un uomo lasciato lì sotto morrà.
+Il suo misfatto? Far sì che l'occhio del fattore
+Rifletta l'ignobile menzogna del suo signore.~
+@27209 = ~Trials of the Luremaster
+
+Abbiamo incontrato il Maestro degli Inganni nei dungeon sotto la fortezza. Questa volta, la sua sfida è stata abbastanza diretta: trovate un modo per uscire dal dungeon o arrenderci e morire. Forse il suo terzo indovinello contiene un indizio che ci aiuterà a trovare un modo per fuggire.
+
+Il vostro ospite era ingiustamente detenuto
+mentre il signore così pieno d'ira e assai arguto
+Richiedeva che questo bardo componesse
+Un racconto affinché la sua gente poi ridesse.
+Non subite del vostro ospite il crudele fato,
+scappate dalla sua stanza in men d'un fiato.
+Cani d'ombra si nascondono nell'oscurità
+E impediscono la fuga con la loro crudeltà.
+Se ci incontreremo per caso una volta ancora,
+Il vostro ospite avrà per voi un omaggio.
+Sconfiggete le nostre ombre in giusto scontro di coraggio,
+E noi non vi saremo più d'impaccio sin d'ora.~
+@27214 = ~Trials of the Luremaster
+
+Siamo riusciti ad estorcere una piena confessione a quello strambo halfling, Hobart. Sembra che fosse d'accordo con il Maestro degli Inganni fin dal principio. Sostiene di essere stato obbligato a servire il fantasma e che doveva continuamente condurre degli avventurieri al castello o lo spirito avrebbe trasformato in un fantasma anche lui.~
+@27215 = ~Quanti altri sono venuti qui?~
+@27216 = ~Giusto. Posso dare un'occhiata alle cose che hai raccolto?~
+@27217 = ~Grazie per avercelo detto. Addio, Hobart.~
+@27222 = ~Allora cosa hai fatto?~
+@27225 = ~Salve viaggiatori. Benvenuti al Castello Maluradek[Mah-loo-rah-dek]. Io sono il vostro avversario.~
+@27226 = ~Questo è l'argomento del nostro disaccordo.~
+@27231 = ~Ad un certo punto, comincerete a credere di dover lasciare il castello. Io resisterò a quest'azione con tutto il mio potere.~
+@27232 = ~Dovete entrare nella tentazione. Dovete dimostrare di essere degni di indossare il mantello degli eroi. Se avrete successo, vi sarà concesso di andarvene. Altrimenti, morirete qui.~
+@27234 = ~Il mio nome non è importante. Come si dice, sono le azioni, non l'attore, che sono importanti. Le vostre azioni in questa tentazione dimostreranno se siete attori di rango sufficientemente elevato per i ruoli che dovete recitare.~
+@27235 = ~Ci sarà tempo sufficiente per la distruzione nei giorni a venire. Nel frattempo, entrate in tentazione e accettate la mia sfida. È nei vostri migliori interessi, ve lo assicuro.~
+@27236 = ~Alcuni potrebbero chiamarlo così, ma farlo non allevierebbe la difficoltà del problema. Il vostro obiettivo è chiaro. Sta a voi raggiungerlo.~
+@27237 = ~Nord, sud, est ed ovest,
+Ogni purificatore nelle quattro torri è giacente.
+Nutriteli dove si radunano gli spiriti,
+Oppure rimanete qui per sempre, nostri ospiti.~
+@27240 = ~Il sole sorge, la terra riceve calore,
+Quattro uomini giacciono freddi, da tutti dimenticati.
+"Lasciateli in pace!" grida il folle signore
+e dalla mia opera i loro nomi sono cancellati.~
+@27242 = ~Ritornate qui quando avrete completato questa missione. Solo allora sarete ammessi a queste tragiche sale.~
+@27243 = ~Avete dimostrato di avere più risorse ed essere più adatti alla sopravvivenza di tutte le centinaia che sono venute qui prima di voi. Avete dimostrato coraggio e astuzia dove gli altri hanno tremato e hanno pianto per la frustrazione.~
+@27244 = ~No. Non potete andarvene fino a quando non avrete appreso la storia di ciò che è accaduto qui.~
+@27245 = ~È importante che voi apprendiate ciò che è accaduto qui. È importante che io sappia che siete in grado di capire il perché io sia qui.~
+@27246 = ~Io non posso raccontare la mia storia. Ho trascorso tutta la mia vita a raccontare le storie di altri. Gli spiriti che infestano questo luogo sono i leggii su cui furono registrate le mie transazioni.~
+@27247 = ~Non c'è modo di uscire se non per mia volontà. Se tentate di evitare la vostra responsabilità come eroi, non solo fallirete, ma non sarete neppure migliori dell'uomo che ha scritto questa tragedia grazie alla sua codardia.~
+@27248 = ~Per comprendere questa triste storia,
+Contro guardie principesche trovate vittoria.
+Sotto armi intonse e cotte di maglia,
+Troverete il chiodo della bara spoglia.~
+@27249 = ~Sempre in giro il sole va,
+E un uomo lasciato lì sotto morrà.
+Il suo misfatto? Far sì che l'occhio del fattore
+Rifletta l'ignobile menzogna del suo signore.~
+@27250 = ~Ora vi trovate dove una volta mi trovavo io. Dandovi abbastanza tempo, forse sederete dove io sedevo, dormirete dove io dormivo e morirete dove io sono morto. Tuttavia, a differenza mia, avrete il beneficio delle vostre mani e della vostra voce nei vostri ultimi giorni.~
+@27251 = ~Non c'è indovinello qui. C'è solo una scelta. Potete restare in questo dungeon fino a morire di fame, o potete cercare di trovare un modo per uscire.~
+@27252 = ~Così sarà. Sebbene non possa dire di essere ottimista riguardo le vostre possibilità, sono meno pessimista di quanto lo sia stato con chiunque altro.~
+@27253 = ~Il vostro ospite era ingiustamente detenuto
+mentre il signore così pieno d'ira e assai arguto
+Richiedeva che questo bardo componesse
+Un racconto affinché la sua gente poi ridesse.~
+@27254 = ~Non subite del vostro ospite il crudele fato,
+scappate dalla sua stanza in men d'un fiato.
+Cani d'ombra si nascondono nell'oscurità
+E impediscono la fuga con la loro crudeltà.~
+@27255 = ~Se ci incontreremo per caso una volta ancora,
+Il vostro ospite avrà per voi un omaggio.
+Sconfiggete le nostre ombre in giusto scontro di coraggio,
+E noi non vi saremo più d'impaccio sin d'ora.~
+@27256 = ~Ancora una volta, avete dimostrato di essere migliori dei precedenti ospiti del castello sia in coraggio che in astuzia. Non solo, ma siete anche sfuggiti alla morte nel miserabile dungeon in cui io morii molti decenni fa.~
+@27257 = ~Prima che andiate via, vorrei che facciate un ultimo favore ai residenti del castello.~
+@27258 = ~Date pace ai nostri spiriti. Liberate il castello dai suoi spettri in una battaglia degna della penna di un grande poeta. Dopo tutto quello che vi ho fatto passare, è giusto che ora abbiate una possibilità di vendicarvi su coloro che vi hanno fatto del male. Noi salutiamo il vostro coraggio, eroi.~
+@27259 = ~Alle armi!~
+@27260 = ~Non abbiamo nulla contro di te, spirito.~
+@27261 = ~L'avversario ha un nome?~
+@27262 = ~Fatti parte o ti distruggerò.~
+@27263 = ~Non ho tempo per parlare con uno come te. Addio.~
+@27264 = ~Di quale disaccordo parli?~
+@27265 = ~Addio, spirito.~
+@27266 = ~Perché faresti una cosa del genere?~
+@27267 = ~È un qualche tipo di scherzo?~
+@27268 = ~Molto bene. Accettiamo la tua sfida.~
+@27269 = ~Non ho tempo per parlare con uno come te. Addio.~
+@27270 = ~Cosa ci stai chiedendo di fare?~
+@27272 = ~Penso di no. Penso che sia meglio per te farti da parte.~
+@27275 = ~Puoi darci un'indicazione di ciò che dobbiamo fare?~
+@27277 = ~Pagherai per questo, spirito.~
+@27278 = ~Scusa?~
+@27279 = ~Questo è ridicolo.~
+@27280 = ~Indovinelli? Ho fatto tutta questa strada per degli indovinelli?~
+@27281 = ~Ma questo non ha senso.~
+@27284 = ~Vuol dire che possiamo andarcene?~
+@27285 = ~Lasciaci andar via.~
+@27286 = ~C'è qualcos'altro che possiamo fare?~
+@27287 = ~Perché stai facendo tutto ciò?~
+@27288 = ~Siamo entrati nella tua maledetta tentazione. Abbiamo dato riposo agli spiriti dei cavalieri. Ora perché non vuoi farci andar via?~
+@27289 = ~Ci dirai cosa è successo?~
+@27290 = ~Vedrai che troverò un modo per andarmene.~
+@27291 = ~Perché *tu* sei qui?~
+@27292 = ~Non mi importa del perché tu sia qui. Mi importa solo del modo per andarmene.~
+@27293 = ~Da dove dovremmo cominciare a guardare?~
+@27294 = ~Sono stanco dei tuoi giochi, enigmista.~ ~Sono stanca dei tuoi giochi, enigmista.~
+@27296 = ~Ho udito abbastanza da te. Addio.~
+@27297 = ~Non ho intenzione di morire qui. Qual è il tuo prossimo indovinello, bardo?~
+@27298 = ~Vedremo.~
+@27299 = ~Sono stanco dei tuoi indovinelli.~ ~Sono stanca dei tuoi indovinelli.~
+@27300 = ~Che razza di scelta è questa?~
+@27302 = ~Non ho nient'altro da dirti.~
+@27305 = ~Possiamo andare ora?~
+@27306 = ~È giusto, lo abbiamo fatto. Lasciaci andare.~
+@27307 = ~Cos'è questo?~
+@27308 = ~Non farò più nulla per te. Lasciaci andare!~
+@27309 = ~Chi siete?~
+@27310 = ~Sapete come fuggire da questa miserabile rovina? Come siete arrivati qui? Ditemelo subito o vi uccideremo.~
+@27311 = ~Io sono Crieck di Bane, e questi sono i miei compagni. Stiamo cercando un modo per uscire da questo castello. Se non ci aiuterete, vi seppelliremo nelle sabbie del deserto. Sono stato chiaro?~
+@27312 = ~Avete trovato guai, insetti! Adran, Shelhai, uccideteli. Se non hanno nulla di valore, allora useremo i loro cadaveri per far scattare le trappole.~
+@27313 = ~Vedo che parlare con voi è inutile. Alcune persone comprendono come lavorare con gli altri solo quando le loro teste si trovano sotto una mazza d'acciaio. Spero che ciò che avete con voi valga la pena di uccidervi. Adran, Shelhai... uccideteli.~
+@27314 = ~La fine della nostra discussione è la fine della vostra vita. Siete ovviamente inutili. Adran, Shelhai, uccideteli. Se non hanno nulla di valore, useremo i loro cadaveri per far scattare le trappole.~
+@27316 = ~Io sono <GABBER>. Ben incontrato, amico.~
+@27317 = ~*Tu* chi sei?~
+@27318 = ~Il mio nome non è per quelli come te. Fatti da parte.~
+@27319 = ~No, non conosco il modo per uscire. Siamo venuti qui con Hobart.~
+@27320 = ~Non ti dirò nulla. Faresti meglio a toglierti dalla mia strada.~
+@27321 = ~Frena la tua lingua, o te la freneremo noi.~
+@27322 = ~Guarda, amico, noi non vogliamo guai.~
+@27323 = ~Chiaro come le acque del Fiume dell'Unicorno. Ma ciò non vuol dire che ti aiuterò.~
+@27324 = ~Ho finito di parlare con te.~
+@27325 = ~Cosa? Altre ombre tormentano gli occhi stanchi di Harald? Chi va là? Sto parlando ad alta voce? Sono sveglio? Questo non è un sogno. O forse sì?~
+@27326 = ~Sono solo un uomo. Quando avevo un nome, gli altri mi chiamavano Harald. Sapete, ero un sacro guerriero. Ero un paladino di Tyr. Un tempo.~
+@27327 = ~Nel mio cuore, sapevo che era per i soldi. È per questo che siamo venuti, Dabath. Lo sapevo, lo sapevo. Mi convinsi che era per un nobile scopo. Non so se furono più grandi le menzogne che raccontai alla chiesa o quelle che dissi a me stesso.~
+@27328 = ~Povero Dabath. Penso fosse mio amico. Avevo degli amici? Era un mio compagno. Questo lo so. Morì in una trappola. Lo vidi lì morente insieme agli altri e... scappai. Avevo paura.~
+@27329 = ~Sapete cosa vuol dire avere paura? Pensavo che Tyr mi avesse abbandonato. Non l'aveva fatto. Ero stato io ad abbandonare lui. Ora non c'è più un dio per me. Non c'è nessun dio in questo deserto. È tutto morto. Capite?~
+@27330 = ~Bene, bene. Non voglio vederla arrivare, capite. Fate in fretta e in modo pulito, quando non me l'aspetto. Grazie, Dabath.~
+@27331 = ~ALLORA A COSA SERVITE?! A COSA SERVITE?! Perché non potete mettervi una maschera e fingere per un momento?! Mentirmi allo stesso modo in cui ho mentito a me stesso! Perché non potete farlo?! *Sob* PERCHÉ?! *Sob*~
+@27332 = ~Ho perso la strada. Mi sono perso nel deserto. Non sono sempre stato perso, sapete. Una volta, ero un sacro guerriero. Un paladino. Servivo Tyr. Chi porta la giustizia nel deserto? Ho avuto cibo e acqua di uomini morti per anni, ma non un singolo sorso di giustizia.~
+@27333 = ~Sì, sì... dovrebbero. Mi sono detto che non era per i soldi. E davvero, non lo era. Bramavo la fama, la gloria. Volevo essere *spettacolare* nella mia umiltà. Che sciocco che ero. La moneta per il mio pagamento fu coniata con il sangue dei miei compagni. Come Dabath.~
+@27334 = ~Tu devi essere il portatore d'acqua, e io colui che beve dalla tua brocca. È chiaro, no? Non mi importa se è solo un sogno. Lasciatemi morire. Per favore.~
+@27335 = ~Questa è la brocca sbagliata. Quella che io cerco contiene acqua rossa come il vino.~
+@27336 = ~Ben incontrato, vecchio. Sono <GABBER>. Chi sei?~
+@27337 = ~Qualcosa non va?~
+@27338 = ~Addio, Harald.~
+@27341 = ~Chi è Dabath?~
+@27342 = ~Ma i paladini non dovrebbero evitare l'avidità?~
+@27344 = ~Sì, capisco.~
+@27345 = ~No, non capisco.~
+@27347 = ~Vuoi che ti uccida? Non sono un boia.~
+@27349 = ~Uh, va bene Harald. Addio.~
+@27359 = ~Cosa ti è successo?~
+@27360 = ~Dicci di nuovo, vecchio. Cosa ti è successo?~
+@27361 = ~Giusto. Addio, Harald.~
+@27362 = ~Mantello dei Colori Scintillanti~
+@27363 = ~Le origini di questo mantello si perdono tra le nebbie del tempo. Per qualche tempo fu in possesso di Drosus, un mago di Waterdeep di non poco potere. Drosus cadde preda di un gruppo insolitamente grosso di lupi invernali durante una spedizione solitaria sulle Montagne del Dorso del Mondo, dopo essere stato forzato ad indossare un mantello più pesante a causa del freddo...
+
+A prima vista, questo mantello sembra essere di un colore bianco accecante. Si tratta in realtà di una composizione di migliaia di colori che danzano e riverberano sotto qualsiasi fonte di luce disponibile. Questo insieme di colori scintillanti tende a distrarre e accecare parzialmente chiunque fissi direttamente il portatore del mantello.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +3
+- Può essere indossato insieme ad altri oggetti di protezione
+
+Peso: 3~
+@27364 = ~Questo sottile arco irradia un'intensa quantità di calore, eppure sembra freddo al tocco, come se stesse risucchiando energia dal corpo di chi lo utilizza. Lo incantò un anziano necromante di Bryn Shander, dopo che il suo famiglio, un mephit di lava, fu ucciso da un alto sacerdote di Auril. L'arco venne dato ad un assassino, Teraven Docen, che ebbe piuttosto successo nell'abbattere molti dei figli della Vergine dei Ghiacci nel giro di tre anni. Tuttavia, l'assassino incontrò la sua fine quando provò a tendere un'imboscata ad uno gnomo vagabondo che aveva con sé una bacchetta delle palle di fuoco. Solo l'arco si salvò dalle ripetute esplosioni.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Costituzione: -2
+- Resistenza al Fuoco: -50%
+- Resistenza al Freddo: +30%
+
+Abilità in combattimento:
+- 25% di possibilità di infliggere 2d3 punti di danno da fuoco
+- 3 attacchi per round
+
+THAC0: +3
+Danno: +3
+Fattore-velocità: 2
+Tipo di Competenza: Arco Corto
+
+Richiede:
+Forza 6
+
+Peso: 3~
+@27365 = ~Arco Corto dell'Ebollizione~
+@27366 = ~Pensatore di Chautog~
+@27367 = ~Questo raro elmo deve la sua creazione ad un mago della guerra orco.
+
+L'insolita storia di Chautog comincia quando il suo villaggio venne distrutto dal fuoco incrociato di una battaglia tra due fazioni rivali di maghi. Uno dei vincitori, l'incantatore Shandellon, si sentì in colpa quando esaminò i danni derivanti dallo scontro e come espiazione prese con sé l'unico sopravvissuto del villaggio e crebbe il giovane orco come suo figlio.
+
+Sotto la tutela di Shandellon, Chautog si dimostrò portato alla magia nonostante il suo primitivo retaggio. Tuttavia, Chautog si trovava sempre a lavorare più duramente degli apprendisti umani di Shandellon e a produrre risultati inferiori. Mentre la gelosia lo attanagliava, Chautog si chiuse nella sua stanza e lavorò giorno e notte su un oggetto incantato che gli avrebbe permesso di competere con i suoi pari.
+
+Il frutto del suo lavoro, anche se abbastanza brutto, fu uno stupefacente elmo che aumenta drasticamente l'intelligenza del portatore. Chautog indossò subito il suo tesoro. Tuttavia, scoprì presto che l'ignoranza può essere un dono per coloro la cui esistenza è tanto patetica quanto quella di un orco geloso. Shandellon trovò i resti carbonizzati del suo figlio adottivo, con ancora indosso l'elmo divenuto color nero carbone, vicino ad una nota che diceva semplicemente: "Alcune cose è meglio non farle".
+
+Quando viene indossato, il Pensatore di Chautog conferisce un bonus alla Classe Armatura pari a 1 e incrementa l'Intelligenza del portatore di 2 punti. L'elmo però non è bello a vedersi ed è piuttosto pesante dal momento che è di fattura orchesca. Di conseguenza, il Carisma viene abbassato di 2 punti ed è necessaria una Forza pari a 17 per indossarlo senza problemi.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: +1
+- Intelligenza: +2
+- Carisma: -2
+- Protegge contro i colpi critici
+
+Richiede:
+Forza 17
+
+Peso: 5~
+@27368 = ~Bastone della Gioia dell'Impiccato~
+@27369 = ~Questo lugubre bastone, dotato di un'ignobile fama, fu originariamente scolpito dal legno dell'Albero dell'Uomo Morto: un antico salice nero che si ergeva al limitare di un dimenticato borgo delle Moonshae, albero al quale venivano impiccati i criminali. Ogni sorta di bandito, assassino, stupratore e altro individuo "degno" veniva lasciato a penzolare dai suoi rami nodosi, il tutto per la gioia del becchino Mordigan, un segreto praticante delle arti necromantiche che vide ampie opportunità per svolgere la sua attività. Seppellendo i resti degli uomini malvagi a poca distanza dall'albero, Mordigan evocava gli oscuri poteri del Piano Negativo per compiere un atto malevolo sul salice nero. L'albero fu dotato di una parvenza di intelligenza e la capacità di nutrirsi dei resti di chi era stato impiccato tra i suoi rami di recente. Radici nere affondavano nella carne in putrefazione e, in maniera abbastanza allarmante, i volti torturati degli individui uccisi iniziarono ad apparire sul tronco nodoso del salice nero prima che l'albero fosse bruciato. Tuttavia, sorprendendo gli abitanti del villaggio, il potente bastone intagliato dalle malvagie mani di Mordigan diede prova di essere la loro rovina. E così, le persone impiccate sull'Albero dell'Uomo Morto ebbero la loro vendetta.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Carisma: -2
+
+Abilità attivabili:
+- Animare Morti tre volte al giorno
+  Evoca 1d6 scheletri o zombi
+  Raggio d'azione: 6 metri
+  Durata: 8 ore
+
+THAC0: +1
+Danno: 1d6+1 (contundente)
+Fattore-velocità: 4
+Tipo di Competenza: Bastone Rinforzato
+Tipo: A due mani
+
+Richiede:
+Forza 5
+
+Peso: 2~
+@27370 = ~Bracciali di Perla delle Terre di Ghiaccio~
+@27371 = ~Si dice che questi magnifici bracciali vennero costruiti sulle Montagne del Dorso del Mondo non molto tempo fa. Lungo la costa del Mare del Ghiaccio Mobile, abitava uno scongiuratore di nome Prashnak, un individuo testardo. A quanto pare, Prashnak stava incontrando grandi difficoltà a respingere un'incessante orda di troll, i quali erano senza dubbio interessati in niente di più che la sua ben costruita e stabile dimora. Prashnak impiegò tempeste di acido per tenere i troll lontani. Tuttavia, il giovane mago si stava stancando di questi costanti attacchi e i troll stavano diventando più audaci.
+
+Dopo diversi mesi di studio dei vari effetti della magia di essiccamento, della convocazione elementale e dei metodi magici di congelamento, Prashnak era finalmente pronto a tentare un esperimento. Dopo avere evocato un elementale dell'acqua, Prashnak fece evaporare parti scelte del suo corpo e poi congelò la sfortunata creatura. Ciò portò alla creazione di una terrificante scultura di ghiaccio. I troll, sempliciotti quali erano, furono molto impressionati da questo totem e si dice che fuggirono dalla zona. L'esperimento fu un totale successo e il felice Prashnak continuò i suoi studi perversi fino ai giorni nostri. Che tipo di ladro riuscì a prendere i bracciali non è noto, ma si sa solo che sono scomparsi da diversi anni.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Classe Armatura: 6
+- Destrezza: -2
+
+Abilità attivabili:
+- Evoca Elementale dell'Acqua una volta al giorno
+  Raggio d'azione: 6 metri
+  Durata: 11 turni
+
+- Cono di Freddo una volta al giorno
+  Danno: 10d4+10 punti di danno da freddo (un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno)
+  Raggio d'azione: 0
+  Area d'effetto: Cono di 6 metri con arco di 60°
+
+- Orribile Avvizzimento di Abi-Dalzim una volta al giorno
+  Danno: 17d8 punti di danno da magia (un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno)
+  Raggio d'azione: 30 metri
+  Area d'effetto: Raggio di 9 metri
+
+Peso: 3~
+@27372 = ~Mazzafrusto del Teschio~
+@27373 = ~Mazzafrusto del Teschio, o "Il Mazzafrusto dei Denti" come è più comunemente conosciuto, venne costruito nel 1035 CV dal signore della guerra barbaro Wychgar. Durante una battaglia nelle distese nordiche che divennero note come il Passo Consacrato, Wychgar perse i suoi tre fratelli per mano dell'esercito orchesco guidato da Kraag il Possente. Wychgar era disperato e durante la notte vagava per il campo di battaglia alla ricerca dei loro corpi per dar loro una degna sepoltura. Li trovò e incontrò gli spiriti dei fratelli, intrappolati tra la terra dei vivi e quella dei morti. Incapace di aiutarli, raccolse le loro anime nel mazzafrusto con l'aiuto di uno sciamano.
+
+Le tre teste del mazzafrusto sono i teschi dei suoi fratelli, attaccati al manico con catene d'argento. Le tre teste-teschio godono in maniera maniacale della loro nuova vita. Quando il mazzafrusto viene impiegato in combattimento, le tre teste mordono il bersaglio, strappandone e lacerandone la carne.
+
+STATISTICHE:
+
+Abilità in combattimento:
+- 10% di possibilità di infliggere 1d6 punti di danno perforante
+
+THAC0: +4
+Danno: 1d6+4, +1d4 punti di danno perforante dai morsi dei teschi
+Tipo di Danno: Contundente
+Fattore-velocità: 5
+Tipo di Competenza: Mazzafrusto/Morning Star
+Tipo: A una mano
+
+Richiede:
+Forza 13
+
+Peso: 4~
+@27374 = ~Vento del Cielo~
+@27375 = ~Modellata da un potente stregone djinni sul Piano Elementale dell'Aria, il Vento del Cielo era un dono per il Califfo di Tamjuhk. Il Califfo sosteneva che fosse la più bella arma che avesse mai impugnato. Quando Tamjuhk venne saccheggiata da efreet, githyanki, salamandre e altre creature malvagie, l'Emiro efreeti Talmed portò l'arma al Gran Sultano nella Città di Ottone. Qualche tempo dopo, il Gran Sultano la diede a Memnon, l'efreeti che lottò contro il djinni Calim per l'attuale Calimshan. Memnon impiegò molto poco l'arma, degnandosi di darla a un suo potente sottotenente. Quando Memnon e Calim caddero davanti alla grande magia elfica, i loro servitori fuggirono o vennero respinti nei loro piani di origine. Si crede che il Vento del Cielo ritornò tra le mani dei djinn alla fine di quest'epica guerra.
+
+STATISTICHE:
+
+Abilità durante l'uso:
+- Immunità a Nube Assassina, Nebbia Mortale, Nube Maleodorante, Nube Pestilenziale e Nebbia Corrosiva di Malavon
+
+THAC0: +4, +5 contro elementali
+Danno: 1d8+4, +5 contro elementali
+Tipo di Danno: Tagliente
+Tipo di Competenza: Scimitarra/Wakizashi/Ninjato
+Fattore-velocità: 1
+Tipo: A una mano
+
+Richiede:
+Forza 8
+
+Peso: 4~
+@27376 = ~Sogno del Dio Morto~
+@27377 = ~La storia dell'ascesa di Bane, Bhaal e Myrkul, gli dèi del conflitto, dell'omicidio e della morte, è ben nota tra gli studiosi di tutto Faerûn. Nonostante ciò, la maggior parte dei teologi sa ben poco di ciò che accadde allo sfortunato dio morente che il malefico trio consumò prima del loro incontro con Jergal. Ciò che è noto è che una piccola porzione dell'essenza del dio morto trovò il modo di raggiungere il Piano Astrale, dove prese la forma di una delle più piccole isole originate da divinità morte. Questo piccolo pezzo di roccia e di strano metallo venne catturato centinaia di anni fa da un incantatore di nome Merdros. I servitori duergar di Merdros crearono questa lama per il più potente guerriero alleato del mago. I possessori di questa spada sostenevano di poter avvertire gli ultimi ricordi del dio morto fluire attraverso l'arma mentre la impugnavano.
+
+STATISTICHE:
+
+Abilità attivabili:
+- Emozione: Paura tre volte al giorno (un tiro-salvezza contro Incantesimi effettuato con successo nega gli effetti)
+  Raggio d'azione: 15 metri
+  Durata: 5 round
+  Area d'effetto: Raggio di 4,5 metri
+
+- Simbolo, Dolore una volta al giorno
+  -2 a Destrezza, -4 al THAC0 e -2 alla Classe Armatura (un tiro-salvezza contro Incantesimi effettuato con successo nega gli effetti)
+  Raggio d'azione: 11 metri
+  Durata: 11 turni
+  Area d'effetto: Raggio di 4,5 metri
+
+THAC0: +4, +6 contro personaggi di allineamento buono
+Danno: 2d4+4, +5 contro personaggi di allineamento buono
+Tipo di Danno: Tagliente
+Fattore-velocità: 2
+Tipo di Competenza: Spada Lunga
+Tipo: A una mano
+
+Richiede:
+Forza 6
+
+Peso: 4~
+@27379 = ~Bocca Magica~
+@27380 = ~Criek di Bane~
+@27381 = ~Shelhai~
+@27382 = ~Cortigiano Spettrale~
+@27383 = ~"Nessuno passerà."~
+@27384 = ~"L'accesso è proibito."~
+@27385 = ~"Sono votato al mio dovere."~
+@27386 = ~"Non abbandonerò il mio posto."~
+@27387 = ~"Mi sembra un po' folle da parte mia fare la guardia a lui che è una guardia."~
+@27388 = ~"Quanto devo attendere per avere un'udienza?"~
+@27389 = ~"Alcuni dicono che la sua mente è impazzita."~
+@27390 = ~"Sua signoria si è comportata in maniera strana di recente."~
+@27391 = ~"La follia tra i grandi non dovrebbe essere ignorata."~
+@27392 = ~"Dicono che si è rinchiuso nelle sue stanze."~
+@27393 = ~"Ho sentito che anche i sacerdoti di Helm sono caduti in disgrazia ai suoi
+occhi."~
+@27394 = ~"Zephalim, mio servo, io ti convoco!"~
+@27397 = ~"Ho sentito che Lord Maluradek non sta bene."~
+@27398 = ~Lord Maluradek~
+@27400 = ~Bocca Magica~
+@27401 = ~Hobart Stubbletoes~
+@27402 = ~Chiave del Dungeon~
+@27403 = ~Una chiave dall'aspetto intricato fatta di ferro freddo.~
+@27405 = ~Questo elegante simbolo sacro è consacrato al dio Helm. Il simbolo rappresenta un guanto da guerra con un occhio aperto sul palmo. Il guanto stesso è forgiato con il platino più puro, il bianco dell'occhio è fatto di madreperla, e uno zaffiro blu è stato impiegato per la pupilla.~
+@27406 = ~Simbolo Sacro di Helm~
+@27407 = ~Chiave di Platino~
+@27408 = ~Una chiave decorata fatta in platino.~
+@27409 = ~Una chiave decorata realizzata con argento.
+
+STATISTICHE:
+
+Peso: 0~
+@27410 = ~Chiave d'Argento~
+@27411 = ~Una chiave decorata fatta in rame.~
+@27412 = ~Chiave di Rame~
+@27413 = ~Una chiave decorata fatta in electrum.~
+@27414 = ~Chiave di Electrum~
+@27415 = ~Una chiave decorata fatta in bronzo.~
+@27416 = ~Chiave di Bronzo~
+@27417 = ~Chiave d'Oro~
+@27418 = ~Una chiave decorata fatta d'oro.~
+@27419 = ~Questo alto specchio sembra essere stato distrutto con violenza.~
+@27420 = ~Diverse parti di armi e armature sono disposte su questo tavolo. Sono tutte di ottima fattura, ma sembrano più adatte agli scopi cerimoniali che al combattimento.~
+@27421 = ~Questa struttura malandata ospita il macchinario che solleva e abbassa il cancello principale. Il macchinario sembra essere molto arrugginito e completamente irreparabile.~
+@27422 = ~Questo macchinario arrugginito sembra essere stato un tempo una canna d'organo funzionante.~
+@27423 = ~Una bottiglia vuota.~
+@27424 = ~Questa pagina ingiallita, sebbene sbiadita e rovinata ai bordi, è sorprendentemente resistente, essendo fatta in cuoio. Nonostante sia scritta in una lingua sconosciuta, le parole sulla pagina si modellano e trasformano mentre le guardi, traducendosi in lingua comune nella tua mente.
+
+... solo il Cavaliere della Guardia Giles non fu
+spaventato dall'improvvisa carica di Aehirglass.
+Determinato a proteggere la fuga di Lord Maluradek,
+si rifiutò di lasciare il campo alla belva
+furiosa. E fu così che, mantenendo i nervi saldi,
+il suo occhio acuto vide un altro modo per sconfiggere
+il drago.
+
+Con il sole alto sopra di lui e la mazza
+saldamente in mano, lasciò che gli artigli del drago
+lacerassero la sua cotta, esponendo la sua splendente
+cotta di piastre alla luce del sole. Non era stata
+versata una goccia di sangue, tanta fu l'abilità con cui
+aveva calcolato la velocità del rapido drago.
+
+Si voltò in modo che le piastre della sua
+armatura splendente riflettessero il sole e
+proiettassero lance di raggi di sole negli
+occhi del drago. Impreparati 
+per l'improvvisa luminosità, gli occhi della belva
+si chiusero e la sua carica si arrestò,
+la belva accecata!
+
+E così, grazie alla propria astuzia, Giles
+abbassò la sua grande mazza sul teschio
+di Aehirglass, spargendo il primo sangue della
+giornata...
+
+[Il frammento termina]~
+@27425 = ~Le porte di legno di questo cancello sono marcite molto tempo fa. Tuttavia, le sbarre di ferro della saracinesca chiusa sono intatte e sembrano alquanto resistenti.~
+@27427 = ~Eroe Spettrale~
+@27430 = ~Ombra di Sir Giles~
+@27431 = ~Adran Runeshadow~
+@27432 = ~Ombra di Sir Zierkki~
+@27433 = ~Ombra di Sir Erris~
+@27434 = ~Eroe Spettrale~
+@27435 = ~Ombra di Sir Geddian~
+@27436 = ~Chi osa entrare nelle mie stanze private senza permesso? Ho dato ordine di non essere disturbato! Oh... capisco. Dovete essere in combutta con loro. Già. Pensate che non lo sapessi, che non oda i sussurri negli angoli bui?~
+@27437 = ~Le voci sono diverse, ma la musica è la stessa. La musica del tradimento! Farò tacere per sempre quella musica! Io sono Lord Fallon Maluradek, Eroe dei Tumuli della Tempesta, Uccisore del Dragone Azzurro Aehirglass! E vi farò tacere tutti, cani traditori!~
+@27438 = ~Non potete passare.~
+@27439 = ~Possono oltrepassare questa porta solo coloro che hanno due teste senza occhi, un paio di bocche ma nessuna voce.~
+@27442 = ~Potete passare.~
+@27444 = ~Non abbiamo fatto tutta questa strada solo per essere fermati da una porta parlante.~
+@27446 = ~Cosa? Ma è ridicolo.~
+@27447 = ~Mi sono stancato di questi giochi. Apriti o sarai presto un cumulo di frammenti parlanti.~ ~Mi sono stancata di questi giochi. Apriti o sarai presto un cumulo di frammenti parlanti.~
+@27448 = ~Giusto. Addio.~
+@27449 = ~Dicci di nuovo, a chi permetterai di passare?~
+@27451 = ~Il Manoscritto del Gran Guardiano Ammal-Matis~
+@27452 = ~Diario di Maluradek~
+@27453 = ~Anello Ossidato~
+@27455 = ~Pagina Mancante~
+@27456 = ~La Storia di Sir Giles~
+@27457 = ~La Storia di Sir Erris~
+@27458 = ~La Storia di Sir Zierkki~
+@27459 = ~Il Manoscritto del Grande Guardiano~
+@27460 = ~Diario di Maluradek~
+@27461 = ~La Storia di Sir Geddian~
+@27462 = ~Questa pagina ingiallita, sebbene sbiadita e rovinata ai bordi, è sorprendentemente resistente, essendo fatta in cuoio. Nonostante sia scritta in una lingua sconosciuta, le parole sulla pagina si modellano e trasformano mentre le guardi, traducendosi in lingua comune nella tua mente.
+
+... e il terzo dei quattro Cavalieri della Guardia cadde,
+la sua lancia conficcata nel terreno contro
+la carica di Aehirglass. Le ali del drago
+erano lacerate, le sue ferite grandi,
+ma il drago sapeva di aver trionfato.
+
+Si voltò verso l'ultimo dei guerrieri,
+Erris, il quarto Cavaliere della Guardia. Non c'erano
+altri guerrieri in vista, perché Lord
+Maluradek non era ancora sceso in campo.
+Erris si lanciò all'attacco, ma venne afferrato
+dalla presa del drago e la testa della creatura
+si ritrasse per strappare la testa
+dal corpo del Cavaliere della Guardia.
+
+Aehirglass non aveva però fatto i conti con
+la forza di Erris. Lottando nella presa del drago,
+il Cavaliere della Guardia affondò nel suo collo la sua
+potente ascia, mentre la lama allargava lo squarcio
+tra le scaglie della gola del drago
+prodotto dalle numerose ferite di lancia e spada.
+
+Con un possente urlo rivolto ad Helm, sferrò due colpi
+con una sola mossa! Rivoltò il suo colpo per colpire il collo
+dall'altra parte mentre gli artigli lo stritolavano
+e ci fu un doppio scoppio come quello di un fulmine,
+mentre il corpo del cavaliere andava in pezzi nella presa del drago...
+
+... e la testa del drago penzolò dal collo
+come un albero abbattuto e poi cadde a terra,
+sollevando una nube di sabbia per tutti i Tumuli Tempestosi.
+
+La morte di un drago contro la morte di quattro
+Cavalieri della Guardia. Cosa può dirsi di questa valorosa battaglia,
+solo Lord Maluradek lo sa. Egli tornò molte ore
+dopo che sul campo era sceso il silenzio, ma neppure una lacrima
+fu sparsa per le guardie cadute: i suoi occhi brillavano solo
+per l'oro e per la gloria.
+
+"Il passato è polvere" fu il suo elogio ai cadaveri dei
+Cavalieri della Guardia, "la strada davanti a noi è lastricata d'oro".~
+@27463 = ~Questa pagina ingiallita, sebbene sbiadita e rovinata ai bordi, è sorprendentemente resistente, essendo fatta in cuoio. Nonostante sia scritta in una lingua sconosciuta, le parole sulla pagina si modellano e trasformano mentre le guardi, traducendosi in lingua comune nella tua mente.
+
+... la battaglia contro Aehirglass si prolungò
+e il cielo divenne rosso sangue al crepuscolo mentre
+i Cavalieri della Guardia continuavano a combattere. Forse
+un'altra lama avrebbe salvato le loro vite,
+ma Lord Maluradek non si vedeva.
+
+Il Cavaliere della Guardia Zierkki fu rapido a muoversi,
+affondò un colpo con la sua lancia, poi si ritirò,
+forzando il drago a voltarsi e ad attaccare,
+esponendo il fianco agli altri cavalieri. Anche
+se prossimo al collasso, Zierkki continuò a lottare, combattendo
+anche contro il tempo stesso.
+
+E anche contro un simile avversario, egli continuava.
+La forza non venne sprecata, non una goccia di sangue
+venne versata senza uno scopo, mentre il cavaliere continuava a
+lottare, dal mezzogiorno alle luci del crepuscolo,
+esaurendo le forze del drago,
+affaticandolo mentre conservava le proprie per
+un ultimo assalto finale contro la bestia...
+
+[Il frammento termina]~
+@27464 = ~Questa pagina ingiallita, sebbene sbiadita e rovinata ai bordi, è sorprendentemente resistente, essendo fatta in cuoio. Nonostante sia scritta in una lingua sconosciuta, le parole sulla pagina si modellano e trasformano mentre le guardi, traducendosi in lingua comune nella tua mente.
+
+... e fu allora che Aehirglass si levò dalla sua tana nel deserto,
+la sabbia che si agitava intorno al dragone azzurro come in una tempesta,
+le sue ali che battevano come le vele di un possente vascello marino,
+perlustrando la conca di polvere con migliaia di denti,
+ogni granello di sabbia, veloce e letale.
+
+La paura che aveva avvinghiato Lord Maluradek
+cadde anche sui nostri cuori, con un tale peso
+che desiderammo di volgere i nostri cavalli e fuggire con il nostro
+Signore verso Est, per cercare la salvezza tra le mura del castello.
+
+Ma allora giunse la furia del più coraggioso tra
+i Cavalieri della Guardia, Geddian, il suo spadone
+che risuonava contro il suo scudo. Il rumore ci fece
+arrestare e soppresse il ruggito del
+drago e del vento. Lo sbattere del metallo,
+un inno rivolto ad Helm, e il coraggio riempì i nostri cuori.
+
+"A me, fratelli miei" egli gridò. "Indurite i vostri
+cuori e alzate le vostre armi! Questa bestia
+non ci avrà: le nostre vite per il nostro Signore!"
+
+E così, incoraggiati dal battito della spada di Geddian,
+restammo fermi e la bestia girò in circolo nel cielo,
+sopra la nostra banda. Il terrore pioveva dal suo corpo,
+ma cadde innocuo su di noi come gocce d'acqua...
+
+[Il frammento termina]~
+@27466 = ~Mentre la copertina e il retro di questo libro rilegato sono fatti di bronzo ossidato, il suo dorso non è nulla più che una serie di lacci di canapa intrecciati tra le copertine e le spesse pagine al suo interno. Nonostante la superficie ossidata e il nugolo di ragnatele che copre questo manoscritto, lo scritto al suo interno sembra essere sopravvissuto al passare del tempo senza sbiadire.
+
+"La mia udienza con Lord Maluradek è andata male. Non avevo fatto in tempo a porre la mia richiesta che il Signore si adirò. Minacciò di farmi chiudere nel dungeon insieme al bardo traditore dovessi far di nuovo presente il soggetto dell'apertura delle cripte. Tornai scosso nella cappella e i miei occhi caddero sul simbolo di Helm che era sulla tavoletta. Temo di aver tradito il mio dio non avendo difeso la reputazione dei Cavalieri della Guardia.
+
+L'ira del mio Signore per la mia richiesta, da quel che io so, non ha basi, e ora sono sospettoso su ciò che è accaduto durante il suo scontro con il drago blu ai Tumuli Tempestosi. I quattro Cavalieri della Guardia che morirono aiutando il loro signore contro una simile bestia dovrebbero essere onorati, non nascosti alla vista come scheletri portatori di sventura. Un castello edificato su queste fragili fondamenta non può sopravvivere.
+
+Devo fare ammenda, onorare i Cavalieri della Guardia caduti, ma temo a farlo senza adirare sua signoria. Colui dall'Occhio Sempre Vigile, il Guardiano, Mio Signore e Dio Helm è il campione di tutti i guardiani; ma a chi faccio io la guardia: alla reputazione di quei coraggiosi Cavalieri della Guardia che hanno dato i loro spiriti al servizio di Helm, o agli interessi del mio Signore?
+
+E del bardo nei dungeon; che crimine ha commesso da far adirare... no, spaventare... così tanto il mio Signore? Il Signore è arrivato a tanto da proclamare un decreto per cui il nome del bardo non deve essere pronunciato o trascritto. Anche il solo indicare la presenza del menestrello nel dungeon è ora motivo sufficiente a scatenare la punizione di Maluradek sul trasgressore, come ha appreso una delle povere guardie due decadi fa. Sembra che il Signore volesse cancellare il bardo dalla storia. Cosa teme così tanto?
+
+Che storia avrebbero narrato i Cavalieri della Guardia se fossero sopravvissuti?"
+
+* * *
+
+"Si è discusso un piano d'azione con gli Adepti alla cappella, i nostri cuori sono d'accordo; costruiremo una cripta nascosta per onorare i cavalieri. Nasconderemo i nostri sforzi a Maluradek e proteggeremo la cripta con sei chiavi costruite grazie alle nostre corazze di piastre cerimoniali. Abbiamo fuso ogni armatura per ottenere sei chiavi: rame, bronzo, electrum, argento, oro e platino. Con queste chiavi, saremo in grado di entrare nelle cripte dei Cavalieri della Guardia e offrire loro omaggio, continuando ad obbedire all'ordine di Maluradek che la cripta rimanga sigillata.
+
+Ciononostante il mio cuore non è alleviato da questo atto; l'aderire alla parola ma non allo spirito del mio Signore non fa che portare alla luce la mia codardia. Però non sono in grado di capire quale sia la giusta strada tra la volontà di Maluradek e il difendere la reputazione dei Cavalieri della Guardia. Sento come se il mio spirito fosse diviso su di una strada biforcata e temo che la divisione mi spacchi in due."
+
+* * *
+
+"Oggi ho sentito di nuovo il canto del bardo provenire dai dungeon. Cantava, la sua voce forte e orgogliosa, durante le ore del mezzodì, fino al crepuscolo e fino al cuore della notte prima che il Signore alla fine radunasse le sue guardie reali e aprisse il dungeon. Non molto tempo dopo la loro discesa sotto il castello, il canto si interruppe e molte delle guardie avevano un viso pallido quando emersero dal dungeon. Lord Maluradek teneva un pugnale insanguinato tra le sue mani e il suo atteggiamento era quello di uno vicino alla follia.
+
+Avrei dovuto intervenire quando vidi il Signore e le sue guardie aprirsi la strada verso il dungeon. Ora un altro corpo giace insieme ai quattro Cavalieri della Guardia."
+
+* * *
+
+"Il terrore infesta le notti. Strani suoni, apparizioni spettrali e gli echi del canto del bardo sono stati uditi per tutto il castello. Qualsiasi cosa sia successa tra il bardo e Maluradek nel dungeon ha dannato questo castello e tutti i suoi abitanti. Il Signore si è rinchiuso nelle sue stanze e molti dei suoi servitori e guardie hanno lasciato il castello oppure sono scomparsi.
+
+Non ho nessun luogo dove andare, quindi sono rimasto. Ho un grosso peso nel cuore, in quanto Helm mi ha manifestato la sua disapprovazione. Mentre ero di fronte al vaso delle offerte che conteneva il simbolo di Helm e recitavo le preghiere delle sera, le acque divennero oscure e torbide. Posi la mia mano nell'acqua per recuperare il simbolo, ma le mie mani non trovarono nulla. Il simbolo era svanito.
+
+Avvertii una lancia trapassarmi il cuore; il Guardiano aveva visto la mia codardia. Mi aveva giudicato. Sono condannato, indegno di servire il Grande Guardiano: indegno di vivere.
+
+Ho fatto sì che le porte della cappella restino aperte. Qualsiasi oscurità che ora infesta la notte, ne attendo il giudizio."
+
+- Grande Guardiano Ammal-Matis~
+@27467 = ~Sembra che un tempo questo diario macchiato di rosso fosse rilegato in maniera professionale, ma le sue pagine zuppe suggeriscono che è stato di recente immerso nel vino o nel sangue e che ancora non si è asciugato. È repellente al tocco e le pagine si staccano l'una dall'altra con riluttanza per rivelare le parole confuse scritte al suo interno. 
+
+Al mattino cavalcheremo diretti verso i Tumuli della Tempesta - io, i quattro Cavalieri della Guardia di Helm e un bardo che narrerà la storia del nostro viaggio. Ci attende una gloriosa avventura e i miei pensieri corrono verso i tesori che otterremo! Mi è stato detto che da diverse estati la bestia ha stabilito la sua tana tra i Tumuli della Tempesta. Senza dubbio avrà ammassato parecchi tesori là dentro! È giusto che la morte della bestia riempia i miei forzieri e mi elevi agli occhi della gente comune. Niente più sguardi di diffidenza, niente più domande sui decreti reali, niente più lamentele sulle tasse, sulla politica, sulle battaglie di confine... Le mie imprese nei giorni a venire creeranno una nuova immagine di me agli occhi della mia gente e le parole di Lord Maluradek, Uccisore del Drago dei Tumuli della Tempesta, varranno oro!
+
+* * *
+
+La voce del mio ritorno si era diffusa in fretta: un benvenuto da eroe mi aspettava mentre cavalcavo attraverso i cancelli del castello. Ammirando la testa del drago alzata nelle mie mani, la folla dei contadini si inginocchiò in riverenza. Senza indugio, ordinai che venisse preparato un banchetto per onorare la mia vittoria e al bardo, il cronista del mio viaggio, assegnai il compito di scrivere il racconto della mia vittoria sul dragone. Gli dissi di sbrigarsi, perché volevo che il racconto fosse pronto in tempo per il banchetto. 
+
+Ci sono state alcune discussioni tra i contadini e gli Accoliti di Helm riguardo ciò che era accaduto ai defunti Cavalieri della Guardia (su richiesta del bardo, avevamo portato i loro cadaveri con noi, anche se la cosa ci aveva molto rallentato) e per impedire che questo proiettasse un velo di tristezza sulle prossime celebrazioni, ordinai che i corpi dei Cavalieri della Guardia venissero sigillati nelle cripte. Parlai del loro ardore contro il drago con parole toccanti e tutti parvero commossi dal loro coraggio. 
+
+A meno che i Cavalieri della Guardia non vengano seppelliti presto, temo che le molte ferite sui loro corpi sollevino domande su come mai io sia emerso dalla battaglia indenne. È meglio non approfondire l'argomento: come ho detto al bardo, il passato è polvere. La strada davanti a noi è lastricata d'oro!
+
+* * *
+
+Quel maledetto bardo mi ha tradito! Le sue parole hanno tagliato più a fondo di qualsiasi lama. Come ha osato proferire simili oscenità... simili menzogne?! Le sue terribili parole sulla battaglia ai Tumuli della Tempesta erano sediziose, elevando gli sforzi dei Cavalieri della Guardia sopra il mio coraggio e maledicendomi per avere dimostrato codardia in battaglia. Io! Il suo Lord! 
+
+Oh, ma le sue lame erano sottili. Pensava che non avessi notato il suo risentimento? Che non avessi udito le sue menzogne? Ho ordinato alle guardie di catturarlo prima che completasse il suo racconto e di strappargli dalle mani il suo malvagio poema. Ho ordinato di portarlo nel dungeon: lo vedrò marcire in catene prima che veda di nuovo la luce del sole! 
+
+Mentre veniva trascinato fuori dalla sala, ho ordinato alle guardie di tagliargli le mani per punizione. Una... dura lezione, sì, ma uno non può permettere all'inganno di vivere nel suo castello, altrimenti metterebbe il suo potere a rischio. 
+
+Fu solo quando ho bruciato le velenose pagine del poema di notte che scoprii che alcune erano scomparse! Ciò mi preoccupa molto: se dovessero cadere nelle mani di qualcun altro... ma, no, non ci devo pensare. Il racconto è concluso, il problema del destino del bardo risolto.
+
+* * *
+
+Il Sommo Guardiano di Helm mi ha fatto visita a mezzodì e, fingendo rispetto, mi ha chiesto di aprire la cripta dei Cavalieri della Guardia affinché "i morti possano essere onorati". L'ho fatto buttare fuori dalla sala: da quando le azioni di un eroe vengono messe in dubbio nella sua stessa sala del trono?! Che impresa ha mai compiuto quello sciocco prete nel nome del suo dio imperturbabile che meriti anche solo una noticina nella storia? Lo vedrò ai ceppi se oserà mettere in dubbio ancora una volta i miei decreti! 
+
+Però... anche se ha obbedito ai miei ordini, non mi fido di lui; i Cavalieri della Guardia erano di Helm e le simpatie del Guardiano sono per loro, non per me. Lo controllerò... DEVO controllarlo attentamente. Dovesse tentare di tradirmi, lo vedrò marcire insieme al bardo là sotto.
+
+* * *
+
+Oggi una delle guardie ha osato pronunciare il nome del bardo ed è stato come riaprire una ferita fresca nel mio spirito. Ho ordinato che lo sciocco dalla lingua lunga venisse frustato al palo, che la sua bocca venisse riempita di stracci piccanti e ho proibito a chiunque il solo parlare o menzionare il bardo da oggi in poi. Getterò nella polvere il nome del bardo, ne seppellirò le ceneri e farò sì che le sue sporche parole vengano dimenticate da tutti! Una giusta fine per una creatura dalla lingua così velenosa come lui! 
+
+Ho tenuto l'unica chiave dei dungeon con me. La terrò vicino a me anche quando dormo. Nessuno vedrà il bardo, nessuno lo nutrirà e alla fine morirà di fame! Strozzati con le tue stesse parole, traditore, e che la giustizia sia servita!
+
+* * *
+
+Canta! Il dannato bardo canta e il suo canto mi cerca anche tra le mura delle mie stanze! Non riesco a dormire. È così forte che temo che nessuno nel castello possa fare a meno di udirlo! Non mi torturare più, vile, o ti farò impiccare!
+
+* * *
+
+Non potevo più sopportare il suo canto: il bardo è morto. Gli ho tagliato la sua lingua velenosa e me ne sono andato mentre la vita usciva fuori dal suo corpo. Le mie guardie... loro... loro stanno zitte ora e mi temono. Bene! Che abbiano paura! Che mostrino rispetto: ora sanno che il loro signore non è persona priva di coraggio!
+
+* * *
+
+Il bardo è vivo... anche se non lo è! Il suo fantasma è venuto nella mia stanza, cantando, irridendomi con il suo racconto della mia codardia ai Tumuli della Tempesta! Mi chiama "eroe", ma le sue parole affondano nel mio petto come frecce. I miei servitori, le mie guardie: sono andati via... e questa bestia rimane qui a torturarmi! Silenzio e pace, desidero entrambi, zitto, spirito, stai zitto, stai ZITTO!
+
+* * *
+
+Temo di non farcela più; non posso fidarmi dei mie occhi o delle mie orecchie. Ancora oggi, l'istinto di porre fine al mio tormento minaccia di sopraffarmi. Cosa devo fare? Ho visto lo spettrale nodo dell'impiccato penzolare nella torre, con un'ombra che sembra troppo simile alla mia. Temo che sia la mia futura impiccagione alle travi della torre. L'abbraccerò? No, non devo! Ci deve essere un altro modo! Però non c'è modo di fuggire dal castello: tutti i corridoi riconducono alla torre. Non c'è libertà da questo inferno che non sia la morte?
+
+* * *
+
+La fine si avvicina. Questa notte è tornato lo spirito del bardo ed io non riesco più a sopportare la sua voce. Ora andrò alla torre ed incontrerò il mio futuro ad occhi aperti. Gli negherò il piacere di uccidermi lui stesso! Rimarrà solo con le sue parole in questo castello maledetto per tutta l'eternità! Vedremo se riuscirà  a sopportare il silenzio di queste sale: almeno avrò un po' di conforto nel sapere che nessuno udrà più la storia di Maluradek.
+
+Dall'oscurità sono venuto, all'oscurità tornerò.
+
+- Lord Fallon Maluradek, Eroe dei Tumuli della Tempesta, Uccisore del Dragone Azzurro Aehirglass~
+@27468 = ~Una cotta di maglia arrugginita pende da un gancio nel muro.~
+@27469 = ~Una piccola piastra di platino è stata attaccata alla fine di questa trave.~
+@27470 = ~Quest'anello è uguale a quello che Hobart portava al dito quando lo hai incontrato alle Colline di Umar. Una serie di rune indecifrabili sono incise sulla faccia opaca della banda di rame. La superficie interna della banda ha una semplice iscrizione: "La verità è eterna".
+
+STATISTICHE:
+
+Peso: 0~
+@27471 = ~Un assortimento di rifiuti riempie questo tavolo artigianale. Quasi tutti gli oggetti sono consumati dall'uso, e nessuno sembra di particolare valore.~
+@27472 = ~Prima di banchettare con questi graditi visitatori, mi piacerebbe conoscere i loro nomi. Allora... ditemi, miei succulenti bocconcini, chi siete?~
+@27474 = ~Coraggiosi, eh? Bene! Avrete bisogno di ogni briciola del vostro coraggio quando strapperemo la pelle dalle vostre ossa frantumate. Vi assicuro che non morirete subito. Ma *morirete*. Questo posso garantirvelo. Sorelle!~
+@27491 = ~Oh, per favore. È molto più facile quando non mi devo sforzare per udire le vostre parole sopra le urla dei vostri compagni morenti.~
+@27492 = ~Vorrei solo conoscere i nomi di questi cosiddetti eroi che sono tanto coraggiosi da avventurarsi nel regno di Mag, Regina delle Arpie!~
+@27493 = ~Non del tutto. Quello spettro chiacchierone e le sue bestie incantate reclamano il controllo sulle sale di questo castello. Ma è Mag che domina i cieli!~
+@27494 = ~Non dovete preoccuparvi di lui. È morto... proprio come lo sarete voi tra poco. La sola differenza è che, anche nella morte, la sua voce ha ancora potere sugli uomini e sulle bestie.~
+@27495 = ~Quei semplici rettili non sono altro che un piccolo fastidio. Sono deboli! Schiavi dei capricci di uno spirito folle, proprio come il resto delle bestie ottuse che sono imprigionate tra queste mura. Non sono come Mag! Io e le mie sorelle siamo aldilà del potere di simili sciocchi incantesimi!~
+@27496 = ~A chi importa? Fino a quando sciocchi come voi continueranno a venire qui in cerca di risposte, le mie sorelle e io ci terremo lontane da lui. Per la verità, gli siamo grate. Ci porta il cibo in tavola... per modo di dire.~
+@27497 = ~Il mio nome è <GABBER>. Spero che ti piaccia, perché è l'ultimo nome che udrai.~
+@27498 = ~Sapere il nostro nome non ti farà differenza nel luogo dove stiamo per spedirti, megera.~
+@27499 = ~Che importa se conosci o meno il nostro nome?~
+@27500 = ~Allora vieni, creatura. Vediamo chi morirà oggi.~
+@27501 = ~Ho sentito troppi lamenti di arpia per oggi. Preparati a incontrare lo stesso fato delle tue "sorelle" in cortile.~
+@27503 = ~Chiamati come ti pare, mucca-alata. Fra poco sarai solo un altro cadavere da saccheggiare.~
+@27504 = ~Beh. La prossima volta ci dirai che questo è il *tuo* castello.~
+@27505 = ~Ciò che vuoi non ci interessa. Presto sarai comunque morta.~
+@27506 = ~Cosa sai di questo Maestro degli Inganni?~
+@27507 = ~Vuoi dirmi che questo castello è governato da un fantasma?~
+@27508 = ~Che mi dici delle viverne? Di certo loro non riconoscono la tua rivendicazione del titolo di "Regina dei Cieli".~
+@27509 = ~Temo che il tuo regno sia giunto alla fine... vostra altezza.~
+@27510 = ~Cosa vuole?~
+@27511 = ~Basta con le tue minacce, avvoltoio. Vediamo se combatti bene quanto parli.~
+@27512 = ~Hai ragione. Ci preoccuperemo dopo del fantasma. Ora sono più interessato a scoprire se le arpie hanno lo stesso sapore del pollo.~ ~Hai ragione. Ci preoccuperemo dopo del fantasma. Ora sono più interessata a scoprire se le arpie hanno lo stesso sapore del pollo.~
+@27513 = ~Chi è questo spirito?~
+@27514 = ~Esattamente quante creature comanda questo fantasma?~
+@27515 = ~Ha poca importanza. Schiavi o no, ti elimineremo comunque.~
+@27516 = ~Pezzente! Non posso più sopportare la tua vile parlata.~
+@27517 = ~Non troverai facile preda qui, mostro.~
+@27518 = ~Vedremo quanto sei affamata dopo che ti avrò aperto la pancia e ti avrò nutrito delle tue stesse interiora.~
+@27519 = ~Si dice che la fortuna favorisca gli audaci. Vediamo se possedete il coraggio dei veri eroi.~
+@27520 = ~Il premio che cercate è contenuto in uno di questi sei forzieri. Gli altri contengono solo morte. Scegliete... se osate.~
+@27521 = ~La disperazione è un nemico terribile come qualsiasi altro nemico incontrato sul campo di battaglia. "Eroe" è il titolo che diamo a quelli che sopportano e sopravvivono dove molti uomini non sono riusciti. Vediamo se la perseveranza conta tra le tue virtù eroiche.~
+@27522 = ~Eccellente! Avete meritato la vostra ricompensa.~
+@27523 = ~La forza delle braccia è una virtù condivisa da tutti i veri eroi. Perché il combattimento è il crogiolo da cui le imprese eroiche sono forgiate. È ora di mettere alla prova la *vostra* capacità.~
+@27524 = ~Eccellente! Avete dimostrato la vostra forza. Ecco la ricompensa che cercate.~
+@27525 = ~Il mantello dei veri eroi è indossato solo da coloro che possiedono una mente tanto affilata quanto una lama. Rispondete a questo indovinello e sarete un altro passo più vicini alla vostra meta...~
+@27526 = ~Dagli elementi nasco,
+Il mio dono porta sia amore che dileggio.
+Il mio tocco può esser caldo o freddo,
+Ma non son fatto per essere tenuto da uomo.~
+@27527 = ~Dimmi chi sono... e avrai il tuo premio.~
+@27528 = ~Sbagliato!~
+@27533 = ~Avete risposto correttamente. Il premio è vostro.~
+@27534 = ~Eccellente. Proviamo di nuovo?~
+@27535 = ~Fuoco.~
+@27536 = ~Terra.~
+@27537 = ~Ghiaccio.~
+@27538 = ~Vento.~
+@27539 = ~Acqua.~
+@27540 = ~Ferro.~
+@27541 = ~Il mio onore è stato ripristinato. Addio... eroi.~
+@27542 = ~Infine posso riposare. Ricordatevi di me...~
+@27543 = ~Che Helm vi protegga. Addio...~
+@27544 = ~I miei fratelli conoscono la pace. Ora, anch'io mi unirò a loro. Andate avanti, eroi. Ora la via è aperta. E che le vostre imprese portino onore e pace a colui che ha scritto questa tragedia con il suo sangue. Addio...~
+@27545 = ~Ah, eccovi qui. Sono davvero felice di vedervi. Cominciavo a pensare che vi fosse accaduto qualcosa di terribile.~
+@27546 = ~Come ho fatto ad entrare? Facile. Sono entrato attraverso il passaggio segreto.~
+@27547 = ~Beh, se andassi in giro a dirlo, non sarebbe più segreto, no? Ma lasciamo stare questi piccoli dettagli. Ciò che importa ora è la missione.~
+@27548 = ~Esattamente. E penso di sapere dove si trovi la risposta.~
+@27549 = ~Prima dovete fare qualcosa per me. Sto cercando una chiave nascosta da qualche parte all'interno di questa fortezza. Credo che si trovi al piano di sopra, forse nelle stanze del defunto signore.~
+@27550 = ~Guardate, non ho tempo per le vostre ridicole domande. Ho *bisogno* di questa chiave. *Devo* averla. Ora, avete intenzione di procurarmela o no?~
+@27551 = ~*Growl* Sapevo che era una perdita di tempo! Bene! *Troveremo* la chiave. E se non ci aiuterete... morirete!~
+@27552 = ~Certo che lo sono. Siamo vecchi amici, no? Però ora non c'è tempo da perdere. Quello che importa è la missione.~
+@27553 = ~Aspettate! Non andate ancora. So come possiamo fuggire da questo luogo. Posso guidarvi fuori di qui.~
+@27554 = ~Cerco un modo per uscire, proprio come voi. E penso di averlo trovato.~
+@27555 = ~Certo che mi importa. È per questo che sono venuto qui... per cercare un modo di fuggire da questo posto malvagio.~
+@27556 = ~Come hai fatto ad entrare nella rocca?~
+@27557 = ~Sei *felice* di vederci?~
+@27558 = ~Cosa stai facendo qui?~
+@27559 = ~Quale passaggio segreto?~
+@27560 = ~Piccolo furfante. Perché non ci hai detto che c'era un passaggio segreto che portava dentro la rocca?~
+@27561 = ~Ti riferisci al risolvere il secondo indovinello del Maestro degli Inganni.~
+@27562 = ~Hai ragione... Meglio mettersi al lavoro. Addio, Hobart.~
+@27563 = ~Davvero? Dicci.~
+@27564 = ~Perché improvvisamente sei così disponibile? Poco fa non poteva importarti di meno della nostra sorte.~
+@27565 = ~Perché dovremmo aiutarti? Tu non hai dimostrato molto interesse nell'aiutare noi.~
+@27566 = ~Perché questa chiave è tanto importante per te?~
+@27567 = ~Non capisco. Se sai dov'è, perché non vai a prenderla da solo?~
+@27568 = ~No, per niente. Trovala da solo.~
+@27569 = ~Non andremo da nessuna parte se prima non ci darai qualche risposta.~
+@27570 = ~Non penso che mi piaccia il tuo tono.~
+@27575 = ~Bene, hai trovato un modo per uscire?~
+@27576 = ~Una piccola piastra d'oro è stata attaccata alla fine di questa trave.~
+@27577 = ~Una piccola piastra d'argento è stata attaccata alla fine di questa trave.~
+@27578 = ~Una piccola piastra di rame è stata attaccata alla fine di questa trave.~
+@27579 = ~Una piccola piastra di bronzo è stata attaccata alla fine di questa trave.~
+@27580 = ~Una piccola piastra di electrum è stata attaccata alla fine di questa trave.~
+@27581 = ~Maestro degli Inganni~
+@27584 = ~Rikasha~
+@27597 = ~Anello Ossidato~
+@27600 = ~Glabrezu~
+@27601 = ~Glabrezu~
+@27602 = ~Benvenuti. Dovrei affermare che sono con piacevolezza molto sorpreso dai vostri progressi.~
+@27603 = ~Per lo meno... sono sparito. Ho aspettato tanto per questo giorno. Sono grato che è da mano vostra che perisco per sempre.~
+@27605 = ~La vostra perseveranza e forza vi ha permesso di prevalere dove altri hanno trovato la morte e la sconfitta. Voi siete una luce splendente in un mondo scuro ed impaurito pieno di bestie terribili ed esseri maligni senza volto.~
+@27606 = ~Sono azioni come le vostre - azioni da eroi - che ispireranno i cuori e le menti delle generazioni a venire. Fate in modo che le vostre azioni non vengano dimenticate. Perché è il fato dell'uomo, dimenticare.~
+@27607 = ~Addio... Eroi.~
+@27920 = ~Accolito~
+@27934 = ~Accolito~
+@34527 = ~Emette Vapori Acidi~
+@34801 = ~Caverna~
+@34826 = ~Ai Bastioni Occidentali~
+@34827 = ~Ai Bastioni Orientali~
+@34828 = ~Capanno di Hobart~
+@34829 = ~Cerchio di Monoliti~
+@34830 = ~Stella Intarsiata~
+@40038 = ~Al Primo Livello~
+@40039 = ~Al Secondo Livello~
+@40040 = ~Al Terzo Livello~
+@40103 = ~Castello Maluradek~
+@40104 = ~Torre Nord-Est~
+@40105 = ~Torre Sud-Est~
+@40106 = ~Torre Nord-Ovest~
+@40107 = ~Torre Sud-Ovest~
+@40108 = ~Al Cortile~
+@40109 = ~Al Piano Terra~
+@40110 = ~Al Piano Superiore~
+@40111 = ~Ai Dungeon~
+@40112 = ~Al Tempio di Helm~
+@40113 = ~Alle Caverne dello Sciacallo~
+@40174 = ~Trials of the Luremaster~
+@40187 = ~Tombe dei Cavalieri della Guardia~
+@40195 = ~Planare esterno distrutto~
+@40240 = ~Nell'aria c'è un odore nauseante. Occasionalmente trovi grandi penne nere che devono essere state lasciate da qualche specie di bestia alata. In aggiunta, c'è dello sterco sul terreno che indica la presenza di viverne. Graffi sulle pareti suggeriscono che alcune zone di quest'area potrebbero anche essere popolate da insetti eccezionalmente grandi.~
+@40241 = ~Nell'aria c'è un odore nauseante. Occasionalmente trovi grandi penne nere che devono essere state lasciate da qualche specie di bestia alata.~
+@40242 = ~Lo sterco sul terreno indica la presenza di viverne in quest'area.~
+@40243 = ~Quali che fossero le creature che vivevano in quest'area, sono morte oppure andate via da tempo. Comunque trovi piccole quantità di pelo di animale sul pavimento, forse appartenente a qualche genere di creatura felina.~
+@40244 = ~Varie porte in quest'area sembrano essere state usate recentemente, ma non ci sono tracce che indichino se qualcuno sia effettivamente passato attraverso di esse. È come se le porte fossero state manipolate da qualche tipo di forza esterna.~
+@40245 = ~Quest'area puzza di polvere e decomposizione~
+@40246 = ~C'è uno strano odore di interiora nell'aria che indica la presenza di orog oppure di minotauri, o forse di entrambi. Graffi su alcune delle pareti suggeriscono che anche umber hulk e troll potrebbero essere nelle vicinanze. In aggiunta, percepisci un debole odore di funghi.~
+@40247 = ~C'è uno strano odore di interiora nell'aria che indica la presenza di orog oppure di minotauri, o forse di entrambi. Graffi su alcune delle pareti suggeriscono che anche alcuni umber hulk potrebbero essere nelle vicinanze. Occasionalmente, vedi anche escrementi di qualche genere di creatura simile alle viverne.~
+@40248 = ~La tua abilità di seguire le tracce rivela poco riguardo questo luogo. Comunque riesci vagamente a scorgere le tracce di una strana sostanza melmosa che sembra ricoprire le zone più scure del soffitto.~
+@40249 = ~Le tracce più comuni in questa zona probabilmente appartengono a grossi canidi. In molti punti sembrano mescolarsi con impronte umane. Tracce di ragnatele insolitamente grandi e di rifiuti delle stesse proporzioni ti portano a credere che potrebbero esserci ragni innaturalmente grandi nella parte nord-est delle caverne. In aggiunta, cumuli di vegetazione marcescente sono sparsi per tutta la parte nord dell'area. C'è anche un debole odore di zolfo nell'aria.~
+@40250 = ~Le tracce più comuni in questa zona assomigliano a quelle di grossi canidi. In molti punti sembrano mescolarsi con impronte umane. Tracce di ragnatele insolitamente grandi e di rifiuti delle stesse proporzioni ti portano a credere che potrebbero esserci ragni innaturalmente grandi nella parte nord delle caverne. Occasionalmente trovi grandi penne nere che devono essere state lasciate da qualche specie di bestia alata. In aggiunta, c'è uno strano odore di interiora nell'aria. Sembra essere sia umano sia animale. Potrebbe provenire da qualche genere di mostro ibrido.~
+@40294 = ~La stella d'acqua viene anche chiamata acroite o tormalina incolore ed è rara nei Reami.
+
+STATISTICHE:
+
+Peso: 0~
+@40323 = ~Occhio della Mente
+
+Questa sfera protegge l'incantatore da attacchi mentali come charme, emozione e paura.
+
+La sfera può essere usata come l'incantesimo arcano di livello 1 Charme, ponendo una creatura umanoide sotto il controllo dell'incantatore per 1 turno (tiro-salvezza contro Incantesimi nega gli effetti).~
+@40324 = ~Occhio della Spada
+
+Questa sfera deflette il primo attacco fisico andato a segno contro l'incantatore.
+
+La sfera può essere usata come l'incantesimo arcano di livello 1 Dardo Incantato, creando sino a cinque proiettili (uno ogni due livelli di esperienza dopo il primo) che causano ognuno 1d4+1 danni al bersaglio quando vanno a segno.~
+@40325 = ~Occhio del Mago
+
+Questa sfera assorbe un attacco d'energia da fuoco, elettricità, da freddo o acido.
+
+La sfera può essere usata come l'incantesimo arcano di livello 3 Fulmine, causando 1d6 danni elettrici per livello (fino a un massimo di 10d6) a tutte le creature sulla sua traiettoria.~
+@40326 = ~Occhio del Veleno
+
+Questa sfera blocca ogni attacco o azione che potrebbe avvelenare l'incantatore.
+
+La sfera può essere usata come l'incantesimo divino di livello 4 Veleno, causando 20 punti di danno a una creatura nell'arco di 20 secondi (Tiro-salvezza contro Veleno nega gli effetti).~
+@40327 = ~Occhio dello Spirito
+
+Questa sfera blocca gli attacchi magici che causano istantaneamente la morte (Incantesimo della Morte, Dito della Morte, Parola del Potere: Uccidere, Togliere la Vita, Disintegrazione).
+
+Alternativamente l'incantatore può anche scegliere di usare il potere della sfera come l'incantesimo arcano di livello 2 Raggio di Indebolimento, riducendo la forza del bersaglio al valore di 5 (tiro-salvezza contro Incantesimi nega gli effetti).~
+@40328 = ~Occhio della Forza d'Animo
+
+Questa sfera blocca per una sola volta gli effetti di stordimento, sordità, cecità o silenzio.
+
+Alternativamente può anche essere usata come incantesimo arcano di livello 4 Grido, causando 4d6 danni magici e assordando tutte le creature nel raggio di 11 metri dall'incantatore (tiro-salvezza contro Incantesimi dimezza i danni e nega la sordità).~
+@40329 = ~Occhio di Pietra
+
+Questa sfera difende l'incantatore da un singolo attacco di pietrificazione.
+
+Alternativamente può anche essere usata come incantesimo arcano di livello 3 Blocca Persone, immobilizzando creature umanoidi di taglia umana o più piccola per 1 round/livello (tiro-salvezza contro Incantesimi nega gli effetti).~
+@40373 = ~Pietra Intagliata~
+@40374 = ~Scrigno Magico~
+@40660 = ~Construct immunity item - do not translate~
+@40717 = ~Senti una porta aprirsi in lontananza.~
+@40718 = ~Senti una porta chiudersi in lontananza.~
+@40836 = ~Sguardo dell'Umber Hulk~
+
+
+// New strings
+@90000 = ~Trials of the Luremaster
+
+Siamo riusciti a sconfiggere il Maestro degli Inganni in un'imponente battaglia e a far riposare in pace il suo spirito. Ci ha lasciato un anello non molto diverso da quello che Hobart ha usato per portarci nel castello infestato. Ci ha teletrasportati indietro alle Colline di Umar ed è svanito senza lasciare traccia.~

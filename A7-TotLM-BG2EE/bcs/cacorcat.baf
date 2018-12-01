@@ -1,0 +1,55 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("HEAVEN")
+    ZoomLock(FALSE)
+    ForceSpellPoint([2790.1924],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    SmallWait(2)
+    CreateCreature("CORCAT",[2790.1924],14)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("DAY")
+    SmallWait(3)
+    ForceSpellPoint([2957.1837],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    SmallWait(2)
+    CreateCreature("CORCAT",[2957.1837],14)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("EARTH")
+    SmallWait(6)
+    ForceSpellPoint([2848.2084],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    SmallWait(2)
+    CreateCreature("CORCAT",[2848.2084],10)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("SEA")
+    SmallWait(9)
+    ForceSpellPoint([3453.1967],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    SmallWait(2)
+    CreateCreature("CORCAT",[3453.1967],2)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("NIGHT")
+    SmallWait(12)
+    ForceSpellPoint([3391.2134],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    SmallWait(2)
+    CreateCreature("CORCAT",[3391.2134],6)
+END
+

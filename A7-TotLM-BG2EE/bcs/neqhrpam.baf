@@ -1,0 +1,363 @@
+IF
+  HaveSpell(WIZARD_STONE_SKIN)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(Myself,WIZARD_STONE_SKIN)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Spell(LastSeenBy(Myself),WIZARD_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  HaveSpell(WIZARD_HASTE)
+  OR(3)
+    See("HRPCAT_2")
+    See("HRPCAT_1")
+    See("HRPCAT_0")
+  !StateCheck(LastSeenBy(Myself),STATE_HASTED)
+  Global("HASTED_HARPY","LOCALS",0)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("HASTED_HARPY","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_HASTE)
+    Wait(2)
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",4)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+  !HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",2)
+  !HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",2)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",3)
+  !HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",3)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",4)
+  !HaveSpell(WIZARD_BURNING_HANDS)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",4)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",4)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_4","LOCALS",5)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_4","LOCALS",5)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Continue()
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",4)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+  !HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",2)
+  !HaveSpell(WIZARD_BELTYNS_BURNING_BLOOD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_BELTYNS_BURNING_BLOOD)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",3)
+  !HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+  RESPONSE #100
+    IncrementGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",4)
+  !HaveSpell(WIZARD_BURNING_HANDS)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",4)
+  See(NearestEnemyOf(Myself))
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+    Wait(2)
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",4)
+THEN
+  RESPONSE #100
+    SetGlobal("NEQHRPAM_CASTING_SET_5","LOCALS",5)
+    Continue()
+END
+
+IF
+  Global("NEQHRPAM_CASTING_SET_5","LOCALS",5)
+  See(NearestEnemyOf(Myself))
+  GlobalLT("SPELL_SET_2","LOCALS",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SPELL_SET_2","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(WIZARD_HASTE)
+  OR(3)
+    See("HRPCAT_2")
+    See("HRPCAT_1")
+    See("HRPCAT_0")
+  !StateCheck(LastSeenBy(Myself),STATE_HASTED)
+  Global("HASTED_HARPY","LOCALS",1)
+  RandomNum(3,1)
+THEN
+  RESPONSE #100
+    SetGlobal("HASTED_HARPY","LOCALS",2)
+    Spell(LastSeenBy(Myself),WIZARD_HASTE)
+    Wait(2)
+END
+

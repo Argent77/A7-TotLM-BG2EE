@@ -1,0 +1,25 @@
+IF
+  !Global("ID9707_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9707_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  !Global("9707_MUSTARD_JELLY_SPAWN","GLOBAL",0)
+  !Global("SPRITE_IS_DEADCYSHAMB","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9707_MUSTARD_JELLY_SPAWN","GLOBAL",0)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

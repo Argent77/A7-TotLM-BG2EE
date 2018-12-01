@@ -1,0 +1,33 @@
+IF
+  OpenState("ID9700_STAIR1",TRUE)
+  Global("#_9700MS1_CAST","MYAREA",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#_9700MS1_CAST","MYAREA",1)
+    Deactivate(Myself)
+END
+
+IF
+  Global("BROKEN_STAIR_STATE","MYAREA",0)
+  Entered([PC])
+THEN
+  RESPONSE #100
+    PlaySound("AM9700A")
+    StaticSequence("9700MS1",1) // SEQ_AWAKE
+    SetGlobal("BROKEN_STAIR_STATE","MYAREA",1)
+    Wait(2)
+    OpenDoor("ID9700_STAIR1")
+    StaticSequence("9700MS1",2) // SEQ_CAST
+    SetGlobal("BROKEN_STAIR_STATE","MYAREA",2)
+END
+
+IF
+  Global("BROKEN_STAIR_STATE","MYAREA",1)
+THEN
+  RESPONSE #100
+    OpenDoor("ID9700_STAIR1")
+    StaticSequence("9700MS1",2) // SEQ_CAST
+    SetGlobal("BROKEN_STAIR_STATE","MYAREA",2)
+    Continue()
+END
+

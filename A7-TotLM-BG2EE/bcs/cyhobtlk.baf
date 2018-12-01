@@ -1,0 +1,17 @@
+IF
+  Trigger(0)
+THEN
+  RESPONSE #100
+    CutSceneId("HOBART")
+    MultiPlayerSync()
+    MultiPlayerSync()
+    Wait(2)
+    SmallWait(6)
+    MoveToPoint([1457.920])
+    FaceObject(Player1)
+    MultiPlayerSync()
+    MultiPlayerSync()
+    EndCutSceneMode()
+    StartDialogNoSet(Player1)
+END
+

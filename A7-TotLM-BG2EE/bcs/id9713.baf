@@ -1,0 +1,120 @@
+IF
+  Global("#close_door","ID9713",0)
+  OpenState("ID9713_Door1",FALSE)
+THEN
+  RESPONSE #100
+    SetGlobal("#close_door","ID9713",1)
+    TriggerActivation("To9714",FALSE)
+    Continue()
+END
+
+IF
+  Global("#close_door","ID9713",1)
+  OpenState("ID9713_Door1",TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("#close_door","ID9713",0)
+    TriggerActivation("To9714",TRUE)
+    Continue()
+END
+
+IF
+  !Global("ID9713_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9713_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_A","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_B","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_C","GLOBAL",0)
+    SetGlobal("9700_HARPY_ENCOUNTER_D","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_A","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_B","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_C","GLOBAL",0)
+    SetGlobal("9700_WYVERN_ENCOUNTER_D","GLOBAL",0)
+    SetGlobal("9700_RESET","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",1)
+  Global("SPRITE_IS_DEADHrpMat","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_A","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_B","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_C","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_HARPY_ENCOUNTER_D","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_RESET","GLOBAL",2)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",2)
+  Global("SPRITE_IS_DEADWyvMat","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_A","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_B","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_C","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("9700_WYVERN_ENCOUNTER_D","GLOBAL",1)
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+END
+
+IF
+  Global("9700_RESET","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("9700_RESET","GLOBAL",3)
+    Continue()
+END
+
+IF
+  !Global("ID9700_HANGING_MAN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9700_HANGING_MAN","GLOBAL",0)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

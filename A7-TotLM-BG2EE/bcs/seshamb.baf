@@ -1,0 +1,34 @@
+IF
+  HaveSpell(CLERIC_ENTANGLE)
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_ENTANGLE)
+    RemoveSpell(CLERIC_ENTANGLE)
+    Wait(2)
+END
+
+IF
+  HaveSpell(CLERIC_ENTANGLE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),CLERIC_ENTANGLE)
+    RemoveSpell(CLERIC_ENTANGLE)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

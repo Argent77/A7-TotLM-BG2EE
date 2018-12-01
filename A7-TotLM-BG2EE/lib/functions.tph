@@ -1,0 +1,96 @@
+// Reads all lines from the current text file into an array.
+DEFINE_PATCH_FUNCTION READ_TEXT_LINES
+INT_VAR upper = 0 // whether to upper-case the textual content
+RET lines         // number of array elements
+RET_ARRAY lines   // array containing text lines, numbered sequentially, starting at 0
+BEGIN
+  SET lines = 0
+  SET ofs1 = 0
+  CLEAR_ARRAY ~lines~
+  WHILE (ofs1 >= 0) BEGIN
+    SET ofs2 = INDEX_BUFFER(~[%WNL%]~ ofs1)
+    PATCH_IF (ofs2 < 0) BEGIN SET ofs2 = BUFFER_LENGTH END
+    READ_ASCII ofs1 line (ofs2 - ofs1)
+    PATCH_IF (upper) BEGIN TO_UPPER ~line~ END
+    TEXT_SPRINT $lines(~%lines%~) ~%line%~
+    SET lines += 1
+    SET ofs1 = INDEX_BUFFER(~[^%WNL%]~ ofs2)
+  END
+
+  // Workaround for WeiDU bug: return array must contain at least one element.
+  PATCH_IF (lines = 0) BEGIN
+    TEXT_SPRINT $lines(~%lines%~) ~~
+  END
+END
+
+
+// Returns the updated string reference for the given original strref.
+DEFINE_PATCH_FUNCTION GET_UPDATED_STRREF
+INT_VAR
+  old_strref = "-1"
+RET
+  new_strref
+BEGIN
+  SET new_strref = old_strref
+  PATCH_IF (old_strref >= 0 && TRA_ENTRY_EXISTS("old_strref")) BEGIN
+    SET new_strref = RESOLVE_STR_REF( (AT "old_strref") )
+  END
+END
+
+DEFINE_ACTION_FUNCTION GET_UPDATED_STRREF
+INT_VAR
+  old_strref = "-1"
+RET
+  new_strref
+BEGIN
+  OUTER_PATCH ~~ BEGIN
+    LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+  END
+END
+
+
+// Returns whether param1/param2/special of given opcode takes a strref as argument.
+DEFINE_PATCH_FUNCTION OPCODE_USE_STRREF
+INT_VAR
+  opcode = "-1"
+RET
+  param1 param2 special // returns non-zero if the respective parameter requires a strref
+BEGIN
+  SET param1 = 0
+  SET param2 = 0
+  SET special = 0
+  PATCH_MATCH opcode WITH
+    103 139 180 183 206 253 254 267 290 330 338  BEGIN SET param1 = 1 END
+    181 318 319 BEGIN SET special = 1 END
+    DEFAULT
+  END
+END
+
+
+// Returns resource type(s) supported by given opcode.
+DEFINE_PATCH_FUNCTION OPCODE_USE_RESREF
+INT_VAR
+  opcode = "-1"
+RET
+  type  // resource type (extension, multiple extensions separated by colon, no type as empty string)
+BEGIN
+  TEXT_SPRINT type ~~
+  PATCH_MATCH opcode WITH
+    67 135 151 BEGIN TEXT_SPRINT type ~CRE~ END
+    68 215 296 BEGIN TEXT_SPRINT type ~VEF:VVC:BAM~ END
+    153 154 155 156 157 158 BEGIN TEXT_SPRINT type ~VVC:BAM~ END
+    258 260 318 321 324 BEGIN TEXT_SPRINT type ~ITM:SPL~ END
+    78 146 147 148 171 172 200 201 206 207 223 226 227 228 232 251 252 256 259 266 313 326 333 335 340 341 361 366 BEGIN TEXT_SPRINT type ~SPL~ END
+    82 298 BEGIN TEXT_SPRINT type ~BCS~ END
+    107 BEGIN TEXT_SPRINT type ~BMP~ END
+    111 112 122 123 143 180 255 BEGIN TEXT_SPRINT type ~ITM~ END
+    127 214 273 331 BEGIN TEXT_SPRINT type ~2DA~ END
+    152 BEGIN TEXT_SPRINT type ~WBM~ END
+    174 BEGIN TEXT_SPRINT type ~WAV~ END
+    177 183 248 249 272 283 BEGIN TEXT_SPRINT type ~EFF~ END
+    186 BEGIN TEXT_SPRINT type ~ARE~ END
+    187 BEGIN TEXT_SPRINT type ~BAM~ END
+    336 BEGIN TEXT_SPRINT type ~VVC~ END
+    DEFAULT
+  END
+END

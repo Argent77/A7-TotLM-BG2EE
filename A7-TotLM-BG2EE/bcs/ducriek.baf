@@ -1,0 +1,460 @@
+IF
+  Global("OH_PREP","LOCALS",0)
+  !Global("SET_2","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("OH_PREP","LOCALS",1)
+    SetGlobal("SET_2","LOCALS",2)
+    ForceSpell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+    Wait(2)
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",2)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",4)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",5)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",6)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",7)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",8)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",9)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",10)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",11)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",12)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",1)
+  !HaveSpell(CLERIC_CAUSE_SERIOUS_WOUNDS)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CAUSE_SERIOUS_WOUNDS)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",1)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_CAUSE_SERIOUS_WOUNDS)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",2)
+  !HaveSpell(CLERIC_CLOUD_OF_PESTILENCE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CLOUD_OF_PESTILENCE)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_CLOUD_OF_PESTILENCE)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",3)
+  !HaveSpell(CLERIC_GREATER_COMMAND)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_GREATER_COMMAND)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_GREATER_COMMAND)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",4)
+  !HaveSpell(CLERIC_UNDEAD_WARD)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_UNDEAD_WARD)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",4)
+  See([GOODCUTOFF.UNDEAD])
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_UNDEAD_WARD)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",5)
+  !HaveSpell(CLERIC_POISON)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_POISON)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",5)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_POISON)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",6)
+  !HaveSpell(CLERIC_SLAY_LIVING)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_SLAY_LIVING)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",6)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_SLAY_LIVING)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",7)
+  !HaveSpell(CLERIC_FLAME_STRIKE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_FLAME_STRIKE)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",7)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",8)
+  !HaveSpell(CLERIC_SMASHING_WAVE)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_SMASHING_WAVE)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",8)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_SMASHING_WAVE)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",9)
+  !HaveSpell(CLERIC_SOL_SEARING_ORB)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_SOL_SEARING_ORB)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",9)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_SOL_SEARING_ORB)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",10)
+  !HaveSpell(CLERIC_FIRE_STORM)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_FIRE_STORM)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",10)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_FIRE_STORM)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",11)
+  !HaveSpell(CLERIC_THORN_SPRAY)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_THORN_SPRAY)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",11)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_THORN_SPRAY)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",12)
+  !HaveSpell(CLERIC_FIRE_SEEDS)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_FIRE_SEEDS)
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",12)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Spell(LastSeenBy(Myself),CLERIC_FIRE_SEEDS)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",12)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_1","LOCALS",13)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_1","LOCALS",13)
+  See(NearestEnemyOf(Myself))
+  GlobalGT("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SET_2","LOCALS",-1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_SILENCE_15_FOOT)
+  OR(2)
+    See([PC.0.0.CLERIC_ALL])
+    See([PC.0.0.MAGE_ALL])
+  !StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+  Global("SET_2","LOCALS",0)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2","LOCALS",2)
+    Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)
+    Wait(2)
+END
+
+IF
+  !Global("CASTING_FAILED","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CASTING_FAILED","LOCALS",0)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",1)
+    Continue()
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",2)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",1)
+  !HaveSpell(CLERIC_DISPEL_MAGIC)
+THEN
+  RESPONSE #100
+    IncrementGlobal("DUCRIEK_CASTING_SET_3","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",1)
+  HaveSpell(CLERIC_DISPEL_MAGIC)
+  See(NearestEnemyOf(Myself))
+  Global("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2","LOCALS",2)
+    Spell(LastSeenBy(Myself),CLERIC_DISPEL_MAGIC)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",0)
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",2)
+  !HaveSpell(CLERIC_INVISIBILITY_PURGE)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",1)
+    IncrementGlobal("CASTING_FAILED","LOCALS",1)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_INVISIBILITY_PURGE)
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",2)
+  See(NearestEnemyOf(Myself))
+  Global("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2","LOCALS",2)
+    Spell(LastSeenBy(Myself),CLERIC_INVISIBILITY_PURGE)
+    Wait(2)
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",0)
+END
+
+IF
+  Global("CASTING_FAILED","LOCALS",2)
+THEN
+  RESPONSE #100
+    SetGlobal("DUCRIEK_CASTING_SET_3","LOCALS",3)
+    Continue()
+END
+
+IF
+  Global("DUCRIEK_CASTING_SET_3","LOCALS",3)
+  See(NearestEnemyOf(Myself))
+  Global("SET_2","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("SET_2","LOCALS",2)
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

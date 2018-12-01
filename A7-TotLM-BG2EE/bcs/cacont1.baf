@@ -1,0 +1,62 @@
+IF
+  Global("HIDE_STATE","MYAREA",0)
+  Contains("DGEM02",Myself)
+THEN
+  RESPONSE #100
+    DestroyItem("DGEM02")
+    GiveItemCreate("DGEM02",[PC],0,0,0)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    StartCutScene("caCorCat")
+END
+
+IF
+  Global("HIDE_STATE","MYAREA",0)
+  Contains("DGEM09",Myself)
+THEN
+  RESPONSE #100
+    DestroyItem("DGEM09")
+    GiveItemCreate("DGEM09",[PC],0,0,0)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    StartCutScene("caCorCat")
+END
+
+IF
+  Global("HIDE_STATE","MYAREA",0)
+  Contains("DGEM05",Myself)
+THEN
+  RESPONSE #100
+    DestroyItem("DGEM05")
+    GiveItemCreate("DGEM05",[PC],0,0,0)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    StartCutScene("caCorCat")
+END
+
+IF
+  Global("HIDE_STATE","MYAREA",0)
+  Contains("DGEM04",Myself)
+THEN
+  RESPONSE #100
+    DestroyItem("DGEM04")
+    GiveItemCreate("DGEM04",[PC],0,0,0)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    StartCutScene("caCorCat")
+END
+
+IF
+  Global("DGEM08_PLACED","MYAREA",0)
+  Contains("DGEM08",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("DGEM08_PLACED","MYAREA",1)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+END
+
+IF
+  !Global("DGEM08_PLACED","MYAREA",0)
+  !Contains("DGEM08",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("DGEM08_PLACED","MYAREA",0)
+    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+END
+

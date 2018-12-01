@@ -1,0 +1,80 @@
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("MAP_GROUP_HOSTILE3","MYAREA",0)
+    SetGlobal("CYDUELHA_inactive","LOCALS",1)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  AttackedBy([0.0.WYVERN],DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_0")
+  See("WYVERN_0")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_1")
+  See("WYVERN_1")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_2")
+  See("WYVERN_2")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_3")
+  See("WYVERN_3")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_4")
+  See("WYVERN_4")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_5")
+  See("WYVERN_5")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  !Global("CYDUELHA_inactive","LOCALS",1)
+  !Dead("WYVERN_6")
+  See("WYVERN_6")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+

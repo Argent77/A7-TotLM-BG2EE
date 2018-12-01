@@ -1,0 +1,12 @@
+IF
+  !Global("spawned","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("spawned","LOCALS",1)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    FaceObject(NearestEnemyOf(Myself))
+    ApplySpellRES("dw#brkin",Myself)
+    Continue()
+END
+

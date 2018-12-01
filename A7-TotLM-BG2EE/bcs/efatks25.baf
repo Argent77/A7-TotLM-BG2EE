@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #25
+    ChangeAIScript("EFATKCM",RACE)
+  RESPONSE #25
+    ChangeAIScript("EFATKHM",RACE)
+  RESPONSE #25
+    ChangeAIScript("EFATKTM",RACE)
+  RESPONSE #225
+    ChangeAIScript("EFATKMEL",RACE)
+END
+

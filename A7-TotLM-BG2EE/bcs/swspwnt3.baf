@@ -1,0 +1,29 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    SetGlobal("SPRITE_IS_DEADCYFireE","GLOBAL",0)
+    SetGlobal("WATCH_GROUP","MYAREA",3)
+    CreateCreature("CYFIREE",[454.253],14)
+    CreateCreature("CYFIREE",[257.335],14)
+    CreateCreature("CYFIREE",[581.601],8)
+    CreateCreature("CYFIREE",[771.513],8)
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

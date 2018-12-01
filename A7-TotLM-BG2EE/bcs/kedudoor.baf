@@ -1,0 +1,17 @@
+IF
+  Unlocked(Myself)
+  PartyHasItem("KEYDUNG")
+THEN
+  RESPONSE #100
+    TakePartyItem("KEYDUNG")
+    DestroyItem("KEYDUNG")
+END
+
+IF
+  Unlocked(Myself)
+  !PartyHasItem("KEYDUNG")
+THEN
+  RESPONSE #100
+    Deactivate(Myself)
+END
+

@@ -1,0 +1,36 @@
+IF
+  !HasItem("CIFADE",Myself)
+THEN
+  RESPONSE #100
+    GiveItemCreate("CIFADE",Myself,1,1,1)
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_GILES","GLOBAL",1)
+THEN
+  RESPONSE #100
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    ApplySpellRES("dw#brkin",Myself)
+    FaceObject(NearestEnemyOf(Myself))
+    Continue()
+END
+
+IF
+  Global("ID#SPAWN_GILES","GLOBAL",2)
+THEN
+  RESPONSE #100
+    EquipItemEx("CIFADE",0)
+    SetGlobal("ID#SPAWN_GILES","GLOBAL",3)
+    Wait(2)
+    DestroySelf()
+END
+
+IF
+  Global("ID#SPAWN_GILES","GLOBAL",3)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+

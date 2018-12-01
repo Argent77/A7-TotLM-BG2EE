@@ -1,0 +1,29 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    SetGlobal("SPRITE_IS_DEADCYWaterE","GLOBAL",0)
+    SetGlobal("WATCH_GROUP","MYAREA",4)
+    CreateCreature("CYWATERE",[454.253],14)
+    CreateCreature("CYWATERE",[257.335],14)
+    CreateCreature("CYWATERE",[581.601],8)
+    CreateCreature("CYWATERE",[771.513],8)
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

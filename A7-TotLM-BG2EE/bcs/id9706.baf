@@ -1,0 +1,79 @@
+IF
+  !Global("ID9706_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9706_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  Global("ID9706_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OR(2)
+    OpenState("ID9706_HIDE_DOOR1",TRUE)
+    Global("#ID9706_DOOR","ID9706",0)
+THEN
+  RESPONSE #100
+    CloseDoor("ID9706_HIDE_DOOR1")
+    TriggerActivation("To9705",FALSE)
+    SetGlobal("#ID9706_DOOR","ID9706",1)
+    Continue()
+END
+
+IF
+  !Global("ID9706_HIDDEN_DOOR_STATE","GLOBAL",0)
+  OpenState("ID9706_HIDE_DOOR1",FALSE)
+THEN
+  RESPONSE #100
+    OpenDoor("ID9706_HIDE_DOOR1")
+    TriggerActivation("To9705",TRUE)
+    Continue()
+END
+
+IF
+  !Global("ID#RESET_VISIBLE_RANGE","GLOBAL",0)
+THEN
+  RESPONSE #100
+    ActionOverride("CUTSPY",DestroySelf())
+    SetGlobal("ID#RESET_VISIBLE_RANGE","GLOBAL",0)
+    MultiPlayerSync()
+    Continue()
+END
+
+IF
+  Global("AREA_CUTSCENE","MYAREA",2)
+THEN
+  RESPONSE #100
+    MultiPlayerSync()
+    MoveViewObject([PC],INSTANT)
+    SetGlobal("AREA_CUTSCENE","MYAREA",3)
+    Continue()
+END
+
+IF
+  Global("AREA_CUTSCENE","MYAREA",0)
+  LevelPartyLT(12)
+THEN
+  RESPONSE #100
+    ActionOverride("HRPFND_0",DestroySelf())
+    ActionOverride("HRPFND_1",DestroySelf())
+    Continue()
+END
+
+IF
+  Global("AREA_CUTSCENE","MYAREA",0)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    MultiPlayerSync()
+    SetGlobal("AREA_CUTSCENE","MYAREA",1)
+    StartCutScene("NEHRPCUT")
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

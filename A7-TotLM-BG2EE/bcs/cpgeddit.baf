@@ -1,0 +1,9 @@
+IF
+  Global("ID#SPAWN_GEDDIAN","GLOBAL",0)
+  Contains("Tale1",Myself)
+THEN
+  RESPONSE #100
+    SetGlobal("ID#SPAWN_GEDDIAN","GLOBAL",1)
+    DestroyItem("Tale1")
+END
+

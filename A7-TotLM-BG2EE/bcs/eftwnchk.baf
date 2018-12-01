@@ -1,0 +1,52 @@
+IF
+  !Global("EFTWNCHK_inactive","LOCALS",1)
+  StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobal("EFTWNCHK_inactive","LOCALS",1)
+END
+
+IF
+  !Global("EFTWNCHK_inactive","LOCALS",1)
+  !Allegiance(Myself,ENEMY)
+  !Global("AREA_HOSTILE","MYAREA",0)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  !Global("EFTWNCHK_inactive","LOCALS",1)
+  !Global("AREA_HOSTILE","MYAREA",0)
+  Allegiance(Myself,ENEMY)
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("EFTWNCHK_inactive","LOCALS",1)
+END
+
+IF
+  !Global("EFTWNCHK_inactive","LOCALS",1)
+  !Global("TOWNIE_HOSTILE","MYAREA",0)
+  Global("AREA_HOSTILE","MYAREA",0)
+  Help([ANYTHING])
+THEN
+  RESPONSE #100
+    SetGlobal("AREA_HOSTILE","MYAREA",1)
+    Continue()
+    Enemy()
+    Continue()
+END
+
+IF
+  !Global("EFTWNCHK_inactive","LOCALS",1)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("TOWNIE_HOSTILE","MYAREA",1)
+    Help()
+    Enemy()
+    Continue()
+END
+

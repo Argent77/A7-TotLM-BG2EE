@@ -1,0 +1,43 @@
+IF
+  !Global("CREATURE_STATE_VARBit1","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("CREATURE_STATE_VARBit1","LOCALS",1)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+  Detect([PC])
+THEN
+  RESPONSE #50
+    DisplayStringHead(Myself,@27397)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #50
+    DisplayStringHead(Myself,@27389)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #50
+    DisplayStringHead(Myself,@27390)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #50
+    DisplayStringHead(Myself,@27391)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #50
+    DisplayStringHead(Myself,@27392)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #50
+    DisplayStringHead(Myself,@27393)
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+  RESPONSE #350
+    SetGlobalTimer("#localtimer","LOCALS",7)
+    Continue()
+END
+

@@ -1,0 +1,29 @@
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MINOTAUR_TRAP","MYAREA",2)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("MINOTAUR_TRAP","MYAREA",3)
+    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SmallWait(8)
+    SetGlobal("MINOTAUR_TRAP","MYAREA",4)
+    Continue()
+END
+
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    Continue()
+END
+
+IF
+  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+

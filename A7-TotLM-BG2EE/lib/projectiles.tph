@@ -1,0 +1,136 @@
+// Installing and updating projectiles
+
+// Returns the updated projectile id for the given id.
+DEFINE_PATCH_FUNCTION GET_PROJECTILE_ID
+INT_VAR
+  from_missile = 1  // whether to use missile.ids values (ie. offset id by -1)
+  old_id = "-1"
+RET
+  new_id  // returns old_id if new id cannot be determined
+BEGIN
+  SET new_id = old_id
+  PATCH_IF (from_missile) BEGIN SET old_id -= 1 END
+  PATCH_IF (old_id >= 0) BEGIN
+    PATCH_IF (VARIABLE_IS_SET $map_projectl(~%old_id%~)) BEGIN
+      SET new_id = $map_projectl(~%old_id%~)
+      PATCH_IF (from_missile) BEGIN SET new_id += 1 END
+    END
+  END
+END
+
+DEFINE_ACTION_FUNCTION GET_PROJECTILE_ID
+INT_VAR
+  from_missile = 1
+  old_id = "-1"
+RET
+  new_id
+BEGIN
+  OUTER_PATCH ~~ BEGIN
+    LPF GET_PROJECTILE_ID INT_VAR from_missile old_id RET new_id END
+  END
+END
+
+
+// Returns whether param1/param2 of given opcode takes a projectile id as argument.
+DEFINE_PATCH_FUNCTION OPCODE_USE_PROJECTILE
+INT_VAR
+  opcode = "-1"
+RET
+  param1 param2 // returns nonzero if the respective parameter requires a projectile id
+BEGIN
+  SET param1 = 0
+  SET param2 = 0
+  PATCH_MATCH opcode WITH
+    83 197 339 BEGIN SET param2 = 1 END
+    DEFAULT
+  END
+END
+
+
+
+// Generate list of original projectile resref -> id mappings
+COPY - ~%MOD_FOLDER%/pro/projectl-iwd.ids~ ~override~
+  CLEAR_ARRAY ~pro_items~
+  READ_2DA_ENTRIES_NOW ~pro_items~ 2
+  FOR (row = 0; row < pro_items; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER ~pro_items~ row 0 id
+    READ_2DA_ENTRY_FORMER ~pro_items~ row 1 res
+    TO_UPPER ~res~
+    SET $projectl_old(~%res%~) = id
+  END
+
+// Translate old to new projectile IDs ($map_projectl(~old_id~) = new_id)
+ACTION_BASH_FOR ~%MOD_FOLDER%/pro~ ~^.+\.pro$~ BEGIN
+  OUTER_SET pro_id = IDS_OF_SYMBOL(~projectl~ ~%BASH_FOR_RES%~)
+  ACTION_IF (pro_id < 0) BEGIN
+    ADD_PROJECTILE ~%BASH_FOR_DIRECTORY%/%BASH_FOR_RES%.%BASH_FOR_EXT%~
+    OUTER_SET pro_id = EVAL ~%BASH_FOR_RES%~ - 1
+  END ELSE BEGIN
+    OUTER_TEXT_SPRINT res ~%BASH_FOR_RES%~
+    ACTION_TO_UPPER ~res~
+    OUTER_SET $projectl_old(~res~) = pro_id
+  END
+  ACTION_IF (pro_id >= 0) BEGIN
+    OUTER_TEXT_SPRINT pro_ref ~%BASH_FOR_RES%~
+    ACTION_TO_UPPER ~pro_ref~
+    ACTION_IF (VARIABLE_IS_SET $projectl_old(~%pro_ref%~)) BEGIN
+      OUTER_SET pro_id_old = $projectl_old(~%pro_ref%~)
+      OUTER_SET $map_projectl(~%pro_id_old%~) = pro_id
+    END
+  END
+END
+
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/pro~ ~^.+\.pro$~ BEGIN
+  COPY_EXISTING ~%BASH_FOR_FILE%~ ~override~
+    // updating strrefs
+    PATCH_IF ((LONG_AT 0x2c) & BIT20) BEGIN
+      READ_LONG 0x30 old_strref
+      LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+      WRITE_LONG 0x30 new_strref
+    END
+    // updating pro references
+    PATCH_IF ((SHORT_AT 8) >= 3) BEGIN
+      READ_SHORT 0x214 old_id
+      LPF GET_PROJECTILE_ID INT_VAR from_missile = 0 old_id RET new_id END
+      WRITE_SHORT 0x214 new_id
+      READ_SHORT 0x21a old_id
+      LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+      WRITE_SHORT 0x21a new_id
+    END
+  BUT_ONLY IF_EXISTS
+END
+
+
+// Update clearair.2da
+COPY - ~%MOD_FOLDER%/2da/clearair-append.2da~ ~override~
+  CLEAR_ARRAY ~src_table~
+  COUNT_2DA_COLS src_numCols
+  READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
+BUT_ONLY
+
+COPY_EXISTING - ~clearair.2da~ ~override~
+  CLEAR_ARRAY ~dst_table~
+  CLEAR_ARRAY ~dst_clearair~
+  COUNT_2DA_COLS dst_numCols
+  READ_2DA_ENTRIES_NOW ~dst_table~ dst_numCols
+  FOR (row = 0; row < dst_numCols; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER ~dst_table~ row 1 value
+    PATCH_IF (IS_AN_INT ~value~) BEGIN
+      SET $dst_clearair(~value~) = value
+    END
+  END
+BUT_ONLY
+
+OUTER_FOR (row = 0; row < src_numCols; ++row) BEGIN
+  OUTER_SET old_id = $src_table(~%row%~ ~1~)
+  LAF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+  ACTION_IF (NOT VARIABLE_IS_SET $dst_clearair(~%new_id%~)) BEGIN
+    OUTER_TEXT_SPRINT label $src_table(~%row%~ ~0~)
+    APPEND ~clearair.2da~ ~%label%  %new_id%~
+  END
+END
+
+COPY_EXISTING ~clearair.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY

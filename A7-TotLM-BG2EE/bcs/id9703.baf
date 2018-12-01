@@ -1,0 +1,16 @@
+IF
+  !Global("ID9703_visited","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9703_visited","GLOBAL",1)
+    Continue()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

@@ -1,0 +1,70 @@
+IF
+  OR(6)
+    See(Player6)
+    See(Player5)
+    See(Player4)
+    See(Player3)
+    See(Player2)
+    See(Player1)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+  RandomNum(6,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",9)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+    Wait(2)
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+    Wait(2)
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SOL_SEARING_ORB)
+    Wait(2)
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_FLAME_STRIKE)
+    Wait(2)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",12)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SOL_SEARING_ORB)
+    Wait(2)
+END
+

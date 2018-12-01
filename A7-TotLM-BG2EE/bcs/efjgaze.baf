@@ -1,0 +1,11 @@
+IF
+  !Global("EFJGAZE_inactive","LOCALS",1)
+  LOS([PC],25)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,INNATE_JACKALWERE_GAZE)
+    Wait(1)
+    SetGlobal("EFJGAZE_inactive","LOCALS",1)
+END
+

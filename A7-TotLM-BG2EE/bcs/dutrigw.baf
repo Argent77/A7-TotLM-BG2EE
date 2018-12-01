@@ -1,0 +1,27 @@
+IF
+  Global("ID#WEST_BLOCK","GLOBAL",0)
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    SetGlobal("ID#WEST_BLOCK","GLOBAL",1)
+END
+
+IF
+  !Global("ID#WEST_BLOCK","GLOBAL",0)
+  OpenState(Myself,FALSE)
+THEN
+  RESPONSE #100
+    Unlock(Myself)
+    OpenDoor(Myself)
+    Lock(Myself)
+END
+
+IF
+  !Global("ID#WEST_BLOCK","GLOBAL",0)
+  OpenState(Myself,TRUE)
+THEN
+  RESPONSE #100
+    Lock(Myself)
+    Deactivate(Myself)
+END
+

@@ -1,0 +1,162 @@
+// Various installation routines
+
+ADD_JOURNAL TITLE (@40174) @27047 @27071 @27077 @27114 @27206 @27208 @27209 @27214 @90000
+
+
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~7eyes.2da~) BEGIN
+  OUTER_FOR (strref = 21648; strref < 21655; ++strref) BEGIN
+    LAF GET_UPDATED_STRREF INT_VAR old_strref = strref RET new_strref END
+    OUTER_TEXT_SPRINT $strrefs(~%strref%~) ~%new_strref%~
+  END
+  COPY ~%MOD_FOLDER%/2da/7eyes.2da~ ~override~ EVAL
+    PRETTY_PRINT_2DA
+END
+
+ACTION_IF (NOT FILE_EXISTS_IN_GAME ~cwelemw.2da~) BEGIN
+  COPY ~%MOD_FOLDER%/2da/cwelemw.2da~ ~override~
+END
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^.+\.BAM$~ BEGIN
+  OUTER_TEXT_SPRINT res ~%BASH_FOR_RES%~
+  ACTION_TO_UPPER ~res~
+  ACTION_IF (VARIABLE_IS_SET $map_spellicon(~%res%~)) BEGIN
+    OUTER_TEXT_SPRINT new_res $map_spellicon(~%res%~)
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%new_res%.BAM~) BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override/%new_res%.BAM~
+    END
+  END ELSE BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+  END
+END
+
+COPY ~%MOD_FOLDER%/bmp~ ~override~
+COPY ~%MOD_FOLDER%/ini~ ~override~
+// COPY ~%MOD_FOLDER%/mos~ ~override~
+COPY ~%MOD_FOLDER%/tis~ ~override~
+
+ACTION_FOR_EACH type IN ~vvc~ ~wed~ ~wav~ BEGIN
+  ACTION_BASH_FOR ~%MOD_FOLDER%/%type%~ ~^.+\.%type%$~ BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_NAME%~) BEGIN
+      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    END
+  END
+END
+
+
+// adding Hobart
+COPY_EXISTING ~ar1105.are~ ~override~
+  LPF fj_are_structure
+  INT_VAR
+    fj_loc_x       = 755
+    fj_loc_y       = 546
+    fj_orientation = 14
+    fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
+  STR_VAR
+    fj_structure_type = ~actor~
+    fj_name           = ~ID#Hobart~
+    fj_cre_resref     = ~HOBART~
+    fj_bcs_override   = ~LWHOBART~
+    fj_bcs_class      = ~EFHEALI1~
+    fj_bcs_race       = ~EFATKMEL~
+    fj_bcs_specific   = ~EFTWNCHK~
+  END
+
+// TODO: Probably not needed. Transition seems to work even with a split party.
+// COPY_EXISTING ~ar1100.are~ ~override~
+  // READ_LONG 0x5c ofs_regions
+  // READ_SHORT 0x5a num_regions
+  // FOR (idx = 0; idx < num_regions; ++idx) BEGIN
+    // SET ofs = ofs_regions + (idx * 0xc4)
+    // READ_ASCII (ofs + 0x38) resref (8) NULL
+    // PATCH_IF (~%resref%~ STR_EQ ~AR1101~) BEGIN
+      // WRITE_LONG (ofs + 0x60) (THIS BOR BIT2) // Party required
+      // SET idx = num_regions
+    // END
+  // END
+// BUT_ONLY
+
+
+// adding areas to master list
+ACTION_CLEAR_ARRAY ~lines~
+COPY - ~%MOD_FOLDER%/2da/mastarea-iwd.2da~ ~override~
+  LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
+BUT_ONLY
+
+ACTION_PHP_EACH lines AS _ => line BEGIN
+  OUTER_PATCH_SAVE area ~%line%~ BEGIN REPLACE_TEXTUALLY ~^\([^ %TAB%]+\).+~ ~\1~ END
+  APPEND ~mastarea.2da~ ~%line%~ UNLESS ~%area%~
+END
+
+COPY_EXISTING ~mastarea.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// appending tooltips
+ACTION_FOR_EACH strref IN ~1863~ ~2693~ ~2938~ BEGIN
+  LAF GET_UPDATED_STRREF INT_VAR old_strref = strref RET new_strref END
+  OUTER_TEXT_SPRINT $strrefs(~%strref%~) ~%new_strref%~
+END
+
+ACTION_CLEAR_ARRAY ~lines~
+COPY - ~%MOD_FOLDER%/2da/tooltip-iwd.2da~ ~override~
+  LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
+BUT_ONLY
+
+ACTION_PHP_EACH lines AS _ => line BEGIN
+  OUTER_PATCH_SAVE item ~%line%~ BEGIN REPLACE_TEXTUALLY ~^\([^ %TAB%]+\).+~ ~\1~ END
+  OUTER_PATCH_SAVE line ~%line%~ BEGIN EVAL END
+  APPEND ~tooltip.2da~ ~%line%~ UNLESS ~%item%~
+END
+
+COPY_EXISTING ~tooltip.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// appending tracking info
+OUTER_FOR (strref = 40240; strref < 40251; ++strref) BEGIN
+  LAF GET_UPDATED_STRREF INT_VAR old_strref = strref RET new_strref END
+  OUTER_TEXT_SPRINT $strrefs(~%strref%~) ~%new_strref%~
+END
+
+ACTION_CLEAR_ARRAY ~lines~
+COPY - ~%MOD_FOLDER%/2da/tracking-iwd.2da~ ~override~
+  LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
+BUT_ONLY
+
+ACTION_PHP_EACH lines AS _ => line BEGIN
+  OUTER_PATCH_SAVE area ~%line%~ BEGIN REPLACE_TEXTUALLY ~^\([^ %TAB%]+\).+~ ~\1~ END
+  OUTER_PATCH_SAVE line ~%line%~ BEGIN EVAL END
+  APPEND ~tracking.2da~ ~%line%~ UNLESS ~%area%~
+END
+
+COPY_EXISTING ~tracking.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
+// expanding areas list for debug console
+ACTION_CLEAR_ARRAY ~lines~
+COPY - ~%MOD_FOLDER%/lua/bgee-append.lua~ ~override~
+  LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
+BUT_ONLY
+
+COPY_EXISTING ~bgee.lua~ ~override~
+  SET pos_start = INDEX_BUFFER(~^[ %TAB%]*cheatAreas[ %TAB%]*=[ %TAB%]*{[ %TAB%]*[%WNL%]~)
+  PATCH_IF (pos_start >= 0) BEGIN
+    SET pos_end = INDEX_BUFFER(~^[ %TAB%]*}[ %TAB%]*[%WNL%]~ pos_start)
+    PATCH_IF (pos_end > pos_start) BEGIN
+      SET pos = pos_end
+      PATCH_PHP_EACH lines AS _ => line BEGIN
+        TEXT_SPRINT line ~%TAB%%line%%WNL%~
+        SET len = STRING_LENGTH ~%line%~
+        INSERT_BYTES pos len
+        WRITE_ASCIIE pos ~%line%~ (len)
+        SET pos += len
+      END
+    END
+  END
+BUT_ONLY

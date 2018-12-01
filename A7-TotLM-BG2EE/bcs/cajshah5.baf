@@ -1,0 +1,908 @@
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_PACK_LEADER")
+  !Dead("JACKAL_PACK_LEADER")
+  HPPercentLT("JACKAL_PACK_LEADER",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_PACK_LEADER",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("GREATER_JACKAL_1")
+  !Dead("GREATER_JACKAL_1")
+  HPPercentLT("GREATER_JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_1",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("GREATER_JACKAL_2")
+  !Dead("GREATER_JACKAL_2")
+  HPPercentLT("GREATER_JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_2",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("GREATER_JACKAL_3")
+  !Dead("GREATER_JACKAL_3")
+  HPPercentLT("GREATER_JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_3",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_SHAMAN_1")
+  !Dead("JACKAL_SHAMAN_1")
+  HPPercentLT("JACKAL_SHAMAN_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_1",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_SHAMAN_2")
+  !Dead("JACKAL_SHAMAN_2")
+  HPPercentLT("JACKAL_SHAMAN_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_2",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_1")
+  !Dead("JACKAL_1")
+  HPPercentLT("JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_1",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_2")
+  !Dead("JACKAL_2")
+  HPPercentLT("JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_2",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_3")
+  !Dead("JACKAL_3")
+  HPPercentLT("JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_3",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_4")
+  !Dead("JACKAL_4")
+  HPPercentLT("JACKAL_4",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_4",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_5")
+  !Dead("JACKAL_5")
+  HPPercentLT("JACKAL_5",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_5",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_6")
+  !Dead("JACKAL_6")
+  HPPercentLT("JACKAL_6",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_6",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_7")
+  !Dead("JACKAL_7")
+  HPPercentLT("JACKAL_7",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_7",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_8")
+  !Dead("JACKAL_8")
+  HPPercentLT("JACKAL_8",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_8",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_9")
+  !Dead("JACKAL_9")
+  HPPercentLT("JACKAL_9",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_9",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("JACKAL_10")
+  !Dead("JACKAL_10")
+  HPPercentLT("JACKAL_10",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_10",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("jackal_warrior_11")
+  !Dead("jackal_warrior_11")
+  HPPercentLT("jackal_warrior_11",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_11",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_CRITICAL_WOUNDS)
+  See("jackal_warrior_12")
+  !Dead("jackal_warrior_12")
+  HPPercentLT("jackal_warrior_12",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_12",CLERIC_CURE_CRITICAL_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_PACK_LEADER")
+  !Dead("JACKAL_PACK_LEADER")
+  HPPercentLT("JACKAL_PACK_LEADER",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_PACK_LEADER",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("GREATER_JACKAL_1")
+  !Dead("GREATER_JACKAL_1")
+  HPPercentLT("GREATER_JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_1",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("GREATER_JACKAL_2")
+  !Dead("GREATER_JACKAL_2")
+  HPPercentLT("GREATER_JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_2",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("GREATER_JACKAL_3")
+  !Dead("GREATER_JACKAL_3")
+  HPPercentLT("GREATER_JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_3",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_SHAMAN_1")
+  !Dead("JACKAL_SHAMAN_1")
+  HPPercentLT("JACKAL_SHAMAN_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_1",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_SHAMAN_2")
+  !Dead("JACKAL_SHAMAN_2")
+  HPPercentLT("JACKAL_SHAMAN_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_2",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_1")
+  !Dead("JACKAL_1")
+  HPPercentLT("JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_1",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_2")
+  !Dead("JACKAL_2")
+  HPPercentLT("JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_2",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_3")
+  !Dead("JACKAL_3")
+  HPPercentLT("JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_3",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_4")
+  !Dead("JACKAL_4")
+  HPPercentLT("JACKAL_4",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_4",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_5")
+  !Dead("JACKAL_5")
+  HPPercentLT("JACKAL_5",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_5",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_6")
+  !Dead("JACKAL_6")
+  HPPercentLT("JACKAL_6",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_6",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_7")
+  !Dead("JACKAL_7")
+  HPPercentLT("JACKAL_7",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_7",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_8")
+  !Dead("JACKAL_8")
+  HPPercentLT("JACKAL_8",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_8",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_9")
+  !Dead("JACKAL_9")
+  HPPercentLT("JACKAL_9",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_9",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("JACKAL_10")
+  !Dead("JACKAL_10")
+  HPPercentLT("JACKAL_10",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_10",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("jackal_warrior_11")
+  !Dead("jackal_warrior_11")
+  HPPercentLT("jackal_warrior_11",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_11",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+  See("jackal_warrior_12")
+  !Dead("jackal_warrior_12")
+  HPPercentLT("jackal_warrior_12",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_12",CLERIC_CURE_SERIOUS_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_PACK_LEADER")
+  !Dead("JACKAL_PACK_LEADER")
+  HPPercentLT("JACKAL_PACK_LEADER",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_PACK_LEADER",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("GREATER_JACKAL_1")
+  !Dead("GREATER_JACKAL_1")
+  HPPercentLT("GREATER_JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_1",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("GREATER_JACKAL_2")
+  !Dead("GREATER_JACKAL_2")
+  HPPercentLT("GREATER_JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_2",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("GREATER_JACKAL_3")
+  !Dead("GREATER_JACKAL_3")
+  HPPercentLT("GREATER_JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_3",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_SHAMAN_1")
+  !Dead("JACKAL_SHAMAN_1")
+  HPPercentLT("JACKAL_SHAMAN_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_1",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_SHAMAN_2")
+  !Dead("JACKAL_SHAMAN_2")
+  HPPercentLT("JACKAL_SHAMAN_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_2",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_1")
+  !Dead("JACKAL_1")
+  HPPercentLT("JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_1",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_2")
+  !Dead("JACKAL_2")
+  HPPercentLT("JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_2",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_3")
+  !Dead("JACKAL_3")
+  HPPercentLT("JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_3",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_4")
+  !Dead("JACKAL_4")
+  HPPercentLT("JACKAL_4",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_4",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_5")
+  !Dead("JACKAL_5")
+  HPPercentLT("JACKAL_5",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_5",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_6")
+  !Dead("JACKAL_6")
+  HPPercentLT("JACKAL_6",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_6",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_7")
+  !Dead("JACKAL_7")
+  HPPercentLT("JACKAL_7",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_7",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_8")
+  !Dead("JACKAL_8")
+  HPPercentLT("JACKAL_8",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_8",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_9")
+  !Dead("JACKAL_9")
+  HPPercentLT("JACKAL_9",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_9",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("JACKAL_10")
+  !Dead("JACKAL_10")
+  HPPercentLT("JACKAL_10",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_10",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("jackal_warrior_11")
+  !Dead("jackal_warrior_11")
+  HPPercentLT("jackal_warrior_11",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_11",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)
+  See("jackal_warrior_12")
+  !Dead("jackal_warrior_12")
+  HPPercentLT("jackal_warrior_12",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_12",CLERIC_CURE_MEDIUM_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_PACK_LEADER")
+  !Dead("JACKAL_PACK_LEADER")
+  HPPercentLT("JACKAL_PACK_LEADER",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_PACK_LEADER",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  !StateCheck(Myself,STATE_REALLY_DEAD)
+  HPPercentLT(Myself,60)
+THEN
+  RESPONSE #100
+    Spell(Myself,CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("GREATER_JACKAL_1")
+  !Dead("GREATER_JACKAL_1")
+  HPPercentLT("GREATER_JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_1",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("GREATER_JACKAL_2")
+  !Dead("GREATER_JACKAL_2")
+  HPPercentLT("GREATER_JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_2",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("GREATER_JACKAL_3")
+  !Dead("GREATER_JACKAL_3")
+  HPPercentLT("GREATER_JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("GREATER_JACKAL_3",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_SHAMAN_1")
+  !Dead("JACKAL_SHAMAN_1")
+  HPPercentLT("JACKAL_SHAMAN_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_1",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_SHAMAN_2")
+  !Dead("JACKAL_SHAMAN_2")
+  HPPercentLT("JACKAL_SHAMAN_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_SHAMAN_2",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_1")
+  !Dead("JACKAL_1")
+  HPPercentLT("JACKAL_1",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_1",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_2")
+  !Dead("JACKAL_2")
+  HPPercentLT("JACKAL_2",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_2",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_3")
+  !Dead("JACKAL_3")
+  HPPercentLT("JACKAL_3",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_3",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_4")
+  !Dead("JACKAL_4")
+  HPPercentLT("JACKAL_4",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_4",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_5")
+  !Dead("JACKAL_5")
+  HPPercentLT("JACKAL_5",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_5",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_6")
+  !Dead("JACKAL_6")
+  HPPercentLT("JACKAL_6",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_6",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_7")
+  !Dead("JACKAL_7")
+  HPPercentLT("JACKAL_7",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_7",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_8")
+  !Dead("JACKAL_8")
+  HPPercentLT("JACKAL_8",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_8",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_9")
+  !Dead("JACKAL_9")
+  HPPercentLT("JACKAL_9",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_9",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("JACKAL_10")
+  !Dead("JACKAL_10")
+  HPPercentLT("JACKAL_10",60)
+THEN
+  RESPONSE #100
+    Spell("JACKAL_10",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("jackal_warrior_11")
+  !Dead("jackal_warrior_11")
+  HPPercentLT("jackal_warrior_11",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_11",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+
+IF
+  HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+  See("jackal_warrior_12")
+  !Dead("jackal_warrior_12")
+  HPPercentLT("jackal_warrior_12",60)
+THEN
+  RESPONSE #100
+    Spell("jackal_warrior_12",CLERIC_CURE_LIGHT_WOUNDS)
+    Wait(3)
+    Continue()
+END
+

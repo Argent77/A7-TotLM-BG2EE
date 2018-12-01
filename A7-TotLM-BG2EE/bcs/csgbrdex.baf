@@ -1,0 +1,22 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    EndCutSceneMode()
+    DestroySelf()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

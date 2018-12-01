@@ -1,0 +1,34 @@
+// Installing and updating stores
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/sto~ ~^.+\.sto$~ BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      // strrefs
+      READ_LONG 0x0c old_strref
+      LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+      WRITE_LONG 0x0c new_strref
+
+      // updating drinks
+      READ_LONG 0x4c ofs_drinks
+      READ_LONG 0x50 num_drinks
+      FOR (idx = 0; idx < num_drinks; ++idx) BEGIN
+        SET ofs = ofs_drinks + (idx * 0x14)
+        READ_LONG (ofs + 0x08) old_strref
+        LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+        WRITE_LONG (ofs + 0x08) new_strref
+      END
+
+      // updating cures
+      READ_LONG 0x70 ofs_cures
+      READ_LONG 0x74 num_cures
+      FOR (idx = 0; idx < num_cures; ++idx) BEGIN
+        SET ofs = ofs_cures + (idx * 0x0c)
+        READ_ASCII ofs resref (8) NULL
+        TO_UPPER ~resref~
+        PATCH_IF (NOT ~%resref%~ STR_EQ ~~ && VARIABLE_IS_SET $map_spell(~%resref%~)) BEGIN
+          TEXT_SPRINT new_resref $map_spell(~%resref%~)
+          WRITE_ASCIIE ofs ~%new_resref%~ (8)
+        END
+      END
+  END
+END

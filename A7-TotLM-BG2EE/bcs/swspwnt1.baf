@@ -1,0 +1,28 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("FORCE_TALK","LOCALS",0)
+    SetGlobal("SPRITE_IS_DEADCYIronG","GLOBAL",0)
+    SetGlobal("WATCH_GROUP","MYAREA",1)
+    CreateCreature("CYIRONG",[441.665],N)
+    CreateCreature("CYIRONG",[803.445],W)
+    CreateCreature("CYIRONG",[277.347],E)
+    UseItem("SPAWN",Myself)
+    SmallWait(10)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+

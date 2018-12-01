@@ -1,0 +1,29 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Myself)
+    StartCutSceneMode()
+    ClearAllActions()
+    MultiPlayerSync()
+    SetGlobal("SPRITE_IS_DEADCYSHAMB","GLOBAL",0)
+    SetGlobal("9707_MUSTARD_JELLY_SPAWN","GLOBAL",1)
+    CreateCreature("CYSHAMB",[379.683],14)
+    CreateCreature("CYMYCON",[108.574],12)
+    CreateCreature("CYMYCON",[747.679],8)
+    CreateCreature("CYMYCON",[220.718],10)
+    CreateCreature("CYMYCON",[555.764],8)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    Deactivate(Myself)
+    EndCutSceneMode()
+END
+
+IF
+  OnCreation()
+THEN
+  RESPONSE #100
+    NoAction()
+    Continue()
+END
+
