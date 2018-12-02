@@ -1,5 +1,6 @@
 IF
   Die()
+  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     ReallyForceSpellDeadRES("OHNOWHR",Myself)
@@ -7,6 +8,7 @@ END
 
 IF
   !Global("SEDJINNI_init","LOCALS",1)
+  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     SetGlobal("SEDJINNI_init","LOCALS",1)
@@ -19,8 +21,463 @@ THEN
 END
 
 IF
+  Global("bd_prebuff","LOCALS",0)
+  DifficultyGT(EASIEST)
+  Detect(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_BLUR)
+  !CheckStat(Myself,1,PUPPETTYPE)
+THEN
+  RESPONSE #100
+    RemoveSpell(WIZARD_BLUR)
+    ReallyForceSpell(Myself,WIZARD_BLUR)
+    Continue()
+END
+
+IF
+  Global("bd_prebuff","LOCALS",0)
+  DifficultyGT(EASY)
+  Detect(NearestEnemyOf(Myself))
+  HaveSpell(WIZARD_SHIELD)
+  !CheckStat(Myself,1,PUPPETTYPE)
+THEN
+  RESPONSE #100
+    RemoveSpell(WIZARD_SHIELD)
+    ReallyForceSpell(Myself,WIZARD_SHIELD)
+    Continue()
+END
+
+IF
+  Global("bd_prebuff","LOCALS",0)
+  Detect(NearestEnemyOf(Myself))
+  !CheckStat(Myself,1,PUPPETTYPE)
+THEN
+  RESPONSE #100
+    SetGlobal("bd_prebuff","LOCALS",1)
+END
+
+IF
+  OR(2)
+    StateCheck(Myself,STATE_IMMOBILE)
+    StateCheck(Myself,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  StateCheck(Myself,STATE_PANIC)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  Global("BD_Msld","LOCALS",0)
+  Detect([EVILCUTOFF.0.0.0.0.ILLUSIONARY])
+  Detect([EVILCUTOFF.GIANTHUMANOID.GENIE.GENIE_NOBLE_DJINNI.0.ILLUSIONARY.CHAOTIC_GOOD])
+  CheckStat(LastSeenBy(Myself),1,PUPPETMASTERTYPE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_Msld","LOCALS",1)
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("ID#MSLD",OVERRIDE))
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_MISLEAD)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    SetGlobal("BD_Msld","LOCALS",0)
+    RemoveSpell(WIZARD_MISLEAD)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    SetInterrupt(TRUE)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !CheckStat(Myself,1,PUPPETTYPE)
+  HPPercentLT(Myself,40)
+  HaveSpell(CLERIC_HEAL)
+  !StateCheck(Myself,STATE_SILENCED)
+  OR(2)
+    StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+    StateCheck(Myself,STATE_INVISIBLE)
+    StateCheck(Myself,STATE_MIRRORIMAGE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,CLERIC_HEAL)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !CheckStat(Myself,1,PUPPETTYPE)
+  HPPercentLT(Myself,25)
+  HaveSpell(CLERIC_HEAL)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,CLERIC_HEAL)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_MIRROR_IMAGE)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !StateCheck(Myself,STATE_MIRRORIMAGE)
+  !CheckStatGT(NearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SecondNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(ThirdNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(FourthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(FifthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SixthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SeventhNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(EighthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(NinthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(TenthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+  Global("BD_Cast","LOCALS",0)
+  HaveSpell(WIZARD_SHIELD)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  OR(2)
+    See([GOODCUTOFF.0.0.MAGE_ALL])
+    See([GOODCUTOFF.0.0.BARD_ALL])
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_SHIELD)
+  RESPONSE #25
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  Detect(Myself)
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !StateCheck(NearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !CheckSpellState(NearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !CheckSpellState(NearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !StateCheck(SecondNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !CheckSpellState(SecondNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !CheckSpellState(SecondNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !StateCheck(ThirdNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !CheckSpellState(ThirdNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !CheckSpellState(ThirdNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !StateCheck(FourthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !CheckSpellState(FourthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(FourthNearestEnemyOf(Myself))
+    !CheckSpellState(FourthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !StateCheck(FifthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !CheckSpellState(FifthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(FifthNearestEnemyOf(Myself))
+    !CheckSpellState(FifthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !StateCheck(SixthNearestEnemyOf(Myself),STATE_HASTED)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !CheckSpellState(SixthNearestEnemyOf(Myself),BUFF_PRO_WEAPONS)
+  OR(2)
+    !See(SixthNearestEnemyOf(Myself))
+    !CheckSpellState(SixthNearestEnemyOf(Myself),BUFF_PRO_EFFECTS)
+  False()
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_DISPEL_MAGIC)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  OR(3)
+    CheckSpellState(LastSeenBy,BUFF_PRO_WEAPONS)
+    CheckSpellState(LastSeenBy,BUFF_PRO_EFFECTS)
+    StateCheck(LastSeenBy,STATE_HASTED)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy,WIZARD_DISPEL_MAGIC)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_DETECT_ILLUSION)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  OR(7)
+    StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
+    StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
+    StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(NearestEnemyOfType([0.0.0.BARD_ALL]),STATE_INVISIBLE)
+    StateCheck(NearestEnemyOfType([0.0.0.BARD_ALL]),STATE_BLUR)
+    StateCheck(NearestEnemyOfType([0.0.0.BARD_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(NearestEnemyOfType([0.0.0.THIEF_ALL]),STATE_INVISIBLE)
+THEN
+  RESPONSE #80
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_DETECT_ILLUSION)
+  RESPONSE #20
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_DETECT_ILLUSION)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  OR(7)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_INVISIBLE)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_BLUR)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(SecondNearestEnemyOfType([0.0.0.THIEF_ALL]),STATE_INVISIBLE)
+THEN
+  RESPONSE #80
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_DETECT_ILLUSION)
+  RESPONSE #20
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_DETECT_ILLUSION)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  OR(7)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_INVISIBLE)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_BLUR)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.BARD_ALL]),STATE_MIRRORIMAGE)
+    StateCheck(ThirdNearestEnemyOfType([0.0.0.THIEF_ALL]),STATE_INVISIBLE)
+THEN
+  RESPONSE #80
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,WIZARD_DETECT_ILLUSION)
+  RESPONSE #20
+    Continue()
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast([GOODCUTOFF.0.0.MAGE_ALL],WIZARD_INCENDIARY_CLOUD)
+    SpellCast([GOODCUTOFF.0.0.MAGE_ALL],WIZARD_STINKING_CLOUD)
+    SpellCast([GOODCUTOFF.0.0.MAGE_ALL],WIZARD_CLOUDKILL)
+    SpellCast([GOODCUTOFF.0.0.MAGE_ALL],WIZARD_DEATH_FOG)
+    SpellCast([GOODCUTOFF.0.0.BARD_ALL],WIZARD_INCENDIARY_CLOUD)
+    SpellCast([GOODCUTOFF.0.0.BARD_ALL],WIZARD_STINKING_CLOUD)
+    SpellCast([GOODCUTOFF.0.0.BARD_ALL],WIZARD_CLOUDKILL)
+    SpellCast([GOODCUTOFF.0.0.BARD_ALL],WIZARD_DEATH_FOG)
+    SpellCast([GOODCUTOFF.0.0.SHAMAN],CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(SecondNearest([GOODCUTOFF.0.0.SHAMAN]),CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(ThirdNearest([GOODCUTOFF.0.0.SHAMAN]),CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(FourthNearest([GOODCUTOFF.0.0.SHAMAN]),CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(FifthNearest([GOODCUTOFF.0.0.SHAMAN]),CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  Global("BD_Cloud","LOCALS",0)
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  OR(9)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.MAGE_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_INCENDIARY_CLOUD)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_STINKING_CLOUD)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_CLOUDKILL)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.BARD_ALL]),WIZARD_DEATH_FOG)
+    SpellCast(SixthNearest([GOODCUTOFF.0.0.SHAMAN]),CLERIC_WRITHING_FOG)
+THEN
+  RESPONSE #100
+    SetGlobal("BD_Cloud","LOCALS",1)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
+  Global("BD_Cloud","LOCALS",1)
+  !CheckStat(Myself,1,PUPPETTYPE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    SetGlobal("BD_Cloud","LOCALS",0)
+    Spell(Myself,CLERIC_ZONE_OF_SWEET_AIR)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_BLUR)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !StateCheck(Myself,STATE_BLUR)
+  !CheckStatGT(NearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SecondNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(ThirdNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(FourthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(FifthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SixthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(SeventhNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(EighthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(NinthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+  !CheckStatGT(TenthNearestEnemyOf(Myself),0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    ForceSpell(Myself,WIZARD_BLUR)
+END
+
+IF
   Global("CAST_WHIRLWIND","LOCALS",0)
   See(NearestEnemyOf(Myself))
+  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     ForceSpell(NearestEnemyOf(Myself),CLERIC_WHIRLWIND)
@@ -28,5 +485,175 @@ THEN
     Wait(2)
   RESPONSE #200
     Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  DifficultyGT(EASIEST)
+  HaveSpell(CLERIC_STATIC_CHARGE)
+  See(NearestEnemyOf(Myself))
+  !CheckStat(Myself,1,PUPPETTYPE)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
+  CheckStatLT(LastSeenBy(Myself),50,RESISTELECTRICITY)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,CLERIC_STATIC_CHARGE)
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  DifficultyGT(EASY)
+  Detect(NearestEnemyOf(Myself))
+  HaveSpell(CLERIC_AERIAL_SERVANT)
+  !CheckStat(Myself,1,PUPPETTYPE)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(Myself,CLERIC_AERIAL_SERVANT)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  Detect(Myself)
+  OR(2)
+    HaveSpell(WIZARD_LIGHTNING_BOLT)
+    HaveSpell(WIZARD_MAGIC_MISSILE)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    RandomNumGT(4,2)
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    RandomNumGT(4,3)
+  !See(ThirdNearestEnemyOf(Myself))
+  !See(NearestEnemyOf(Myself))
+  !See(SecondNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_LIGHTNING_BOLT)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy,WIZARD_LIGHTNING_BOLT)
+  RESPONSE #25
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy,WIZARD_MAGIC_MISSILE)
+  RESPONSE #25
+    Continue()
+END
+
+IF
+  DifficultyGT(EASY)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !GlobalTimerNotExpired("BDINVIS","LOCALS")
+  Range([GOODCUTOFF],4)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
+END
+
+IF
+  DifficultyGT(EASY)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !GlobalTimerNotExpired("BDINVIS","LOCALS")
+  !See([GOODCUTOFF])
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("BDINVIS","LOCALS",ONE_ROUND)
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
+END
+
+IF
+  !DifficultyGT(EASY)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !GlobalTimerNotExpired("BDINVIS","LOCALS")
+  Range([GOODCUTOFF],4)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("BDINVIS","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
+END
+
+IF
+  !DifficultyGT(EASY)
+  !CheckStat(Myself,1,PUPPETTYPE)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  !GlobalTimerNotExpired("BDINVIS","LOCALS")
+  !See([GOODCUTOFF])
+  !StateCheck(Myself,STATE_INVISIBLE)
+  !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("BDINVIS","LOCALS",THREE_ROUNDS)
+    ForceSpell(Myself,WIZARD_INVISIBILITY)
 END
 
