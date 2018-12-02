@@ -1,4 +1,4 @@
-// Strings from IWD:EE
+// Original strings from IWD:EE
 @10 = ~Nashornkäfer~
 @12 = ~Bohrkäfer~
 @73 = ~Belebter Panzer~
@@ -2165,4 +2165,4 @@ Es kann auch einen Zauber 3. Grades *Person festhalten* wirken und humanoide Wes
 // New strings
 @90000 = ~Die Herausforderungen des Meisters der Verlockung
 
-Wir haben es geschafft, den Meister der Verlockung in einem epischen Kampf zu besiegen und damit seiner Seele etwas Frieden zu geben. Er hinterließ uns einen Ring, der dem Ring von Hobart, mit dem er uns zum Geisterschloss brachte, nicht unähnlich ist. Er transportierte uns zurück zu den Umarhügeln und verschwand danach spurlos.~
+Wir haben es geschafft, den Meister der Verlockung in einem epischen Kampf zu besiegen und damit seiner Seele etwas Frieden zu geben. Er hinterließ uns einen Ring, der dem Ring von Hobart nicht unähnlich ist, mit dem er uns zum Geisterschloss brachte. Er transportierte uns zurück zu den Umarhügeln und verschwand danach spurlos.~

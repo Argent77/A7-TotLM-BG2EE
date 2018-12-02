@@ -6,7 +6,7 @@
 
 This mod makes the Icewind Dale expansion "Trials of the Luremaster" available to BG2:EE (2.0 or higher) and EET (Enhanced Edition Trilogy).
 
-The quest starts by talking to the halfling Hobart Stubbletoes, who can be found in the Umar Hills Inn. In the course of the adventure you have the opportunity to explore a haunted castle, test your mettle in challenging battle and lift an ancient curse.
+The quest starts by talking to the halfling Hobart Stubbletoes, who can be found in the Umar Hills Inn. In the course of the adventure you have the opportunity to explore a haunted castle, test your mettle in challenging combat and lift an ancient curse.
 
 
 ## Components
