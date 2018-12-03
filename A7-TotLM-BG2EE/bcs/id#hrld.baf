@@ -1,0 +1,32 @@
+IF
+  !Allegiance(Myself,ENEMY)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  !Global("SPRITE_IS_DEADDABATH","GLOBAL",0)
+  !Allegiance(Myself,ENEMY)
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ID_FallenPaladin","GLOBAL",1)
+    FaceObject(LastSeenBy(Myself))
+    DisplayStringHead(Myself,@91003)  // I... I can't take it anymore. Grant me death and peace!
+    ChangeClass(Myself,FIGHTER)
+    Wait(2)
+    Enemy()
+    SetInterrupt(TRUE)
+END
+
+IF
+  !Allegiance(Myself,ENEMY)
+  AttackedBy("Dabath",DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),75)
+END

@@ -1,0 +1,97 @@
+// Thief Mercenary Dabath
+
+IF
+  Global("init","LOCALS",0)
+  !StateCheck(Myself,STATE_STONE_DEATH)
+  !StateCheck(Myself,STATE_DEAD)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    StartCutSceneMode()
+    SetGlobal("init","LOCALS",1)
+    DisplayStringHead(Myself,@91001)  // Aah...death! Death everywhere!
+    ApplySpell(Myself,FINAL_HEAL)
+    Wait(3)
+    Enemy()
+    EndCutSceneMode()
+    SetInterrupt(TRUE)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HasItem("POTN52",Myself)
+  HPPercentLT(Myself,50)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN52",Myself)
+    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #50
+    Continue()
+END  
+
+IF
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HasItem("POTN10",Myself)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  See("Harald")
+  !Dead("Harald")
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN10",Myself)
+    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #50
+    Continue()
+END  
+
+IF
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HasItem("POTN10",Myself)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN10",Myself)
+    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #50
+    Continue()
+END  
+
+IF
+  Allegiance(Myself,ENEMY)
+  See("Harald")
+  !Dead("Harald")
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),75)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  OR(2)
+    !See("Harald")
+    Dead("Harald")
+  !See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+  RESPONSE #100
+    RandomTurn()
+  RESPONSE #25
+    DisplayStringHead(Myself,@91002)  // So much death!
+    RandomWalkContinuous()
+  RESPONSE #25
+    DisplayStringHead(Myself,@91002)  // So much death!
+    RandomTurn()
+END
