@@ -9,6 +9,8 @@ END
 
 IF
   Entered([PC])
+  Global("ID#EAST_BLOCK","GLOBAL",0)
+  Global("ID#WEST_BLOCK","GLOBAL",0)
 THEN
   RESPONSE #100
     SetGlobal("ID#WEST_BLOCK","GLOBAL",1)
@@ -16,14 +18,3 @@ THEN
     StartCutScene("DUTRAPC")
     DisplayString(Myself,14381)
 END
-
-IF
-  Opened([PC])
-THEN
-  RESPONSE #100
-    SetGlobal("ID#WEST_BLOCK","GLOBAL",1)
-    SetGlobal("ID#EAST_BLOCK","GLOBAL",1)
-    StartCutScene("DUTRAPC")
-    DisplayString(Myself,14381)
-END
-
