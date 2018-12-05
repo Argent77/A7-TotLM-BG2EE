@@ -9,6 +9,7 @@ THEN
     SetInterrupt(FALSE)
     StartCutSceneMode()
     SetGlobal("init","LOCALS",1)
+    SetName(@91000)  // Dabath
     DisplayStringHead(Myself,@91001)  // Aah...death! Death everywhere!
     ApplySpell(Myself,FINAL_HEAL)
     Wait(3)
