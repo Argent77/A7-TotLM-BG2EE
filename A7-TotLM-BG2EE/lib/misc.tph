@@ -33,7 +33,6 @@ END
 
 COPY ~%MOD_FOLDER%/bmp~ ~override~
 COPY ~%MOD_FOLDER%/ini~ ~override~
-// COPY ~%MOD_FOLDER%/mos~ ~override~
 COPY ~%MOD_FOLDER%/tis~ ~override~
 
 ACTION_FOR_EACH type IN ~vvc~ ~wed~ ~wav~ BEGIN
@@ -63,19 +62,27 @@ COPY_EXISTING ~ar1105.are~ ~override~
     fj_bcs_specific   = ~EFTWNCHK~
   END
 
-// TODO: Probably not needed. Transition seems to work even with a split party.
-// COPY_EXISTING ~ar1100.are~ ~override~
-  // READ_LONG 0x5c ofs_regions
-  // READ_SHORT 0x5a num_regions
-  // FOR (idx = 0; idx < num_regions; ++idx) BEGIN
-    // SET ofs = ofs_regions + (idx * 0xc4)
-    // READ_ASCII (ofs + 0x38) resref (8) NULL
-    // PATCH_IF (~%resref%~ STR_EQ ~AR1101~) BEGIN
-      // WRITE_LONG (ofs + 0x60) (THIS BOR BIT2) // Party required
-      // SET idx = num_regions
-    // END
-  // END
-// BUT_ONLY
+
+// Making sure you can't leave Castle Maluradek with Pocket Plane ability
+ACTION_IF (GAME_IS ~eet~) BEGIN
+<<<<<<<< .../inlined/totlm-bg2ee/itpplane_top.baf
+IF
+  WalkedToTrigger([ANYONE])
+  Global("LeavingPocketPlane","AR4500",1)
+  GlobalGT("GavePocketPlane","GLOBAL",0)
+  GlobalGT("ID#Master_Quest","GLOBAL",0)
+  GlobalLT("ID#Master_Quest","GLOBAL",7)
+  !GlobalTimerNotExpired("Triggered","MYAREA")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    SetGlobalTimer("Triggered","MYAREA",TWO_MINUTES)
+    StartCutSceneMode()
+    StartCutScene("cut221a")
+END
+>>>>>>>>
+  EXTEND_TOP ~itpplane.bcs~ ~.../inlined/totlm-bg2ee/itpplane_top.baf~
+END
 
 
 // adding areas to master list
