@@ -33,7 +33,7 @@ PartyHasItem("Skull2")
   SAY @27442
   IF ~~ THEN DO ~TakePartyItem("skull1")
 TakePartyItem("skull2")
-AddXP2DA("Level_12_Hard")
+AddXP2DA("ID_Level_12_Hard")
 StartCutSceneMode()
 StartCutScene("duMMBye")
 ~ EXIT

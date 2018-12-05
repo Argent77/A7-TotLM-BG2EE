@@ -69,7 +69,7 @@ END
 IF ~~ THEN BEGIN 8
   SAY @27533
   IF ~~ THEN DO ~GiveItemCreate("Tale2",LastTalkedToBy,1,0,0)
-AddXP2DA("Level_10_Hard")
+AddXP2DA("ID_Level_10_Hard")
 StartCutSceneMode()
 StartCutScene("csGBrdEx")
 ~ EXIT

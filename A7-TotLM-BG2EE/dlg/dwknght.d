@@ -32,7 +32,7 @@ IF ~  Global("ID#Spirits_Freed","GLOBAL",3)
   SAY @27544
   IF ~~ THEN DO ~SetGlobal("ID#Spirits_Freed","GLOBAL",4)
 SetGlobal("ID#Master_Quest","GLOBAL",3)
-AddXP2DA("Level_12_Hard")
+AddXP2DA("ID_Level_12_Hard")
 StartCutSceneMode()
 StartCutScene("csGBrdEx")
 ~ EXIT

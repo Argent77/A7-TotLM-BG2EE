@@ -44,6 +44,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("ID#CHALLENGE_COURAGE","GLOBAL",2)
+    AddXP2DA("ID_Level_10_Hard")
     Continue()
 END
 
