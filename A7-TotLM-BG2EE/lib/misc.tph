@@ -101,6 +101,18 @@ COPY_EXISTING ~mastarea.2da~ ~override~
 BUT_ONLY
 
 
+// appending fog information
+COPY_EXISTING ~fogarea.2da~ ~override~
+  APPEND_FILE TEXT ~%MOD_FOLDER%/2da/fogarea-append.2da~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+COPY_EXISTING ~fogpt.2da~ ~override~
+  APPEND_FILE TEXT ~%MOD_FOLDER%/2da/fogpt-append.2da~
+  PRETTY_PRINT_2DA
+BUT_ONLY
+
+
 // appending tooltips
 ACTION_FOR_EACH strref IN ~1863~ ~2693~ ~2938~ BEGIN
   LAF GET_UPDATED_STRREF INT_VAR old_strref = strref RET new_strref END
