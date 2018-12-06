@@ -1,5 +1,5 @@
 BACKUP ~A7-TotLM-BG2EE/backup~
-AUTHOR ~Argent77 at Spellhold Studios~
+AUTHOR ~Argent77 at Spellhold Studios (http://www.shsforums.net/)~
 VERSION ~0.8-beta~
 
 ALWAYS
@@ -27,6 +27,12 @@ LANGUAGE ~Italiano (Traduzione: Aedan)~
          ~%MOD_FOLDER%/languages/english/mod.tra~
          ~%MOD_FOLDER%/languages/italian/setup.tra~
          ~%MOD_FOLDER%/languages/italian/mod.tra~
+LANGUAGE ~Russian (Translation: EugVV)~
+         ~russian~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/russian/setup.tra~
+         ~%MOD_FOLDER%/languages/russian/mod.tra~
 
 
 BEGIN @1000000 // Trials of the Luremaster for BG2:EE
