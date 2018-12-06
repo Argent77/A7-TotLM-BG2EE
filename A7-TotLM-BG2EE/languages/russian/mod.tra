@@ -2655,11 +2655,11 @@ THAC0: +4, +6 против добрых существ
 
 
 // New strings
-@90000 = ~Trials of the Luremaster
+@90000 = ~Испытания Повелителя Соблазнов
 
-We were able to defeat the Luremaster in a grand battle and put his spirit to rest. He left us a ring not unlike the one Hobart used to bring us to the haunted castle. It transported us back to the Umar Hills and vanished without a trace.~
+Нам удалось победить Повелителя Соблазнов в серьёзном сражении и упокоить его дух. Он оставил кольцо, точь-в-точь похожее на то, которым воспользовался Хобарт, когда отправлял нас в замок с привидениями. Кольцо вернуло нас в Холмы Умар и исчезло без следа.~
 
-@91000 = ~Dabath~
-@91001 = ~Aah...death! Death everywhere!~
-@91002 = ~So much death!~
-@91003 = ~I... I can't take it anymore. Grant me death and peace!~
+@91000 = ~Дабат~
+@91001 = ~А-а...смерть! Смерть повсюду!~
+@91002 = ~Так много смертей!~
+@91003 = ~Я... я больше не вынесу. Даруй мне смерть и покой!~
