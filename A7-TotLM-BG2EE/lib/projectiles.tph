@@ -37,10 +37,13 @@ INT_VAR
   opcode = "-1"
 RET
   param1 param2 // returns nonzero if the respective parameter requires a projectile id
+  from_missile  // whether to use missile.ids values
 BEGIN
   SET param1 = 0
   SET param2 = 0
+  SET from_missile = 1
   PATCH_MATCH opcode WITH
+    140 BEGIN SET param1 = 1 SET from_missile = 0 END
     83 197 339 BEGIN SET param2 = 1 END
     DEFAULT
   END

@@ -182,15 +182,15 @@ ACTION_PHP_EACH map_spell AS iwd_resref => bg2ee_resref BEGIN
         END
 
         // projectiles
-        LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 END
+        LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 from_missile END
         PATCH_IF (param1) BEGIN
           READ_LONG (ofs + 0x04) old_id
-          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
           WRITE_LONG (ofs + 0x04) new_id
         END
         PATCH_IF (param2) BEGIN
           READ_LONG (ofs + 0x08) old_id
-          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
           WRITE_LONG (ofs + 0x08) new_id
         END
 
@@ -269,15 +269,15 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/eff~ ~^.+\.eff$~ BEGIN
       END
 
       // projectiles
-      LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 END
+      LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 from_missile END
       PATCH_IF (param1) BEGIN
         READ_LONG 0x1c old_id
-        LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+        LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
         WRITE_LONG 0x1c new_id
       END
       PATCH_IF (param2) BEGIN
         READ_LONG 0x20 old_id
-        LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+        LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
         WRITE_LONG 0x20 new_id
       END
 

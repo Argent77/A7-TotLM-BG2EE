@@ -62,15 +62,15 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/itm~ ~^.+\.itm$~ BEGIN
         END
 
         // projectiles
-        LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 END
+        LPF OPCODE_USE_PROJECTILE INT_VAR opcode RET param1 param2 from_missile END
         PATCH_IF (param1) BEGIN
           READ_LONG (ofs + 0x04) old_id
-          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
           WRITE_LONG (ofs + 0x04) new_id
         END
         PATCH_IF (param2) BEGIN
           READ_LONG (ofs + 0x08) old_id
-          LPF GET_PROJECTILE_ID INT_VAR old_id RET new_id END
+          LPF GET_PROJECTILE_ID INT_VAR old_id from_missile RET new_id END
           WRITE_LONG (ofs + 0x08) new_id
         END
 
