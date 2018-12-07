@@ -1463,7 +1463,6 @@ Saving Throw: None
 This spell surrounds the caster with a bright sphere of disruptive energy that moves with <PRO_HIMHER>. The storm shell increases the caster's resistance to fire, cold, and electrical damage by 50%.~
 @24294 = ~I will do as you ask.~
 @24381 = ~Blood Rage~
-@24737 = ~Mournful Wail~
 @24770 = ~Ice Golem Sentry~
 @24772 = ~Ice Golem Sentry~
 @24793 = ~These arrows are known less for their damaging power than they are for their annoying summoning power. Invented by a black-hearted gnome named Turbar Talinbar, the Goblin Arrows are commonly found in the quivers of mischievous halflings and elves. Several adventuring companies use the Goblin Arrows before launching any major attacks.
@@ -2652,7 +2651,6 @@ It can also be used as the 3rd-level wizard spell Hold Person, rendering humanoi
 @40660 = ~Construct immunity item - do not translate~
 @40717 = ~You hear a door opening in the distance.~
 @40718 = ~You hear a door closing in the distance.~
-@40836 = ~Umber Hulk Gaze~
 
 
 // New strings

@@ -1123,7 +1123,6 @@ Rettungswurf: Nein
 Dieser Zauber umgibt den Anwender mit einer dunklen Sphäre zerschmetternder Energie, die sich mit ihm bewegt. Die Sturm-Schutzhülle reduziert jeglichen Schaden durch Feuer, Kälte oder Elektrizität für den Anwender um 50 %.~
 @24294 = ~Ich werde tun, was Ihr verlangt.~
 @24381 = ~Blutrausch~
-@24737 = ~Trauriges Klagen~
 @24770 = ~Eisgolem-Wache~
 @24772 = ~Eisgolem-Wache~
 @24793 = ~Diese Pfeile sind weniger für ihre schädigende Kraft als für ihre lästige Macht zum Herbeirufen bekannt. Die Goblinpfeile wurden von einem bösartigen Gnom namens Turbar Talinbar erfunden und finden sich in den Köchern hinterhältiger Halblinge und Elfen. Manche Abenteurergruppen verwenden die Goblinpfeile, bevor sie größere Angriffe starten.
@@ -2159,7 +2158,6 @@ Es kann auch einen Zauber 3. Grades *Person festhalten* wirken und humanoide Wes
 @40660 = ~Construct immunity item - do not translate~
 @40717 = ~Ihr hört, wie sich in der Ferne eine Tür öffnet.~
 @40718 = ~Ihr hört, wie sich in der Ferne eine Tür schließt.~
-@40836 = ~Erdkolossblick~
 
 
 // New strings

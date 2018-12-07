@@ -1446,7 +1446,6 @@ Tiro-salvezza: Nessuno
 Questo incantesimo circonda il lanciatore con una luminosa sfera di energia perturbante che si sposta con lui. Il Guscio di Tempesta aumenta la Resistenza al Fuoco, Freddo ed Elettricità del lanciatore del 50%.~
 @24294 = ~Farò come chiedi.~
 @24381 = ~Furia Sanguinaria~
-@24737 = ~Lamento lugubre~
 @24770 = ~Golem di Ghiaccio Sentinella~
 @24772 = ~Golem di Ghiaccio Sentinella~
 @24793 = ~Queste frecce sono più famose per il loro fastidioso potere di evocazione che per il danno che infliggono. Inventate da uno gnomo dal cuore nero di nome Turbar Talinbar, le Frecce del Goblin si trovano di solito nelle faretre di halfling e di elfi dispettosi. Diverse compagnie di avventurieri utilizzano le Frecce del Goblin prima di lanciare qualsiasi poderoso attacco.
@@ -2615,7 +2614,6 @@ Alternativamente può anche essere usata come incantesimo arcano di livello 3 Bl
 @40660 = ~Construct immunity item - do not translate~
 @40717 = ~Senti una porta aprirsi in lontananza.~
 @40718 = ~Senti una porta chiudersi in lontananza.~
-@40836 = ~Sguardo dell'Umber Hulk~
 
 
 // New strings
