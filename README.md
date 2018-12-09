@@ -15,7 +15,7 @@ The quest starts by talking to the halfling Hobart Stubbletoes, who can be found
 
 This is the main component. It installs many new areas, creatures, items, spells and everything else needed to enjoy the adventure.
 
-The mod makes a number of slight changes to the adventure to bring it more in line with BG2. Spells and items that are only available in Icewind Dale and have little or no relevance in the adventure have been replaced by similar BG2 spells or items. Moreover, a small number of creature animations and scripts have been adapted or slightly improved.
+The mod makes a number of slight changes to the adventure to bring it more in line with BG2. Spells and items that are only available in Icewind Dale and have little or no relevance in the adventure have been replaced by similar BG2 spells or items. Moreover, several events, scripts and creature animations have been expanded, improved or adapted to BG2 style.
 
 ### 2. Make IWD spells available to the player *(requires the main component)*
 
