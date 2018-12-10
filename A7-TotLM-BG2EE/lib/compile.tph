@@ -3,43 +3,7 @@
 COMPILE ~%MOD_FOLDER%/bcs~
 COMPILE ~%MOD_FOLDER%/dlg~
 
-// Installing new area type
-OUTER_SET type = "-1"
-OUTER_TEXT_SPRINT type_name ~~
-OUTER_SET type_fallback = "-1"
-OUTER_TEXT_SPRINT type_name_fallback ~~
-OUTER_FOR (bit = 8; bit < 16; ++bit) BEGIN
-  OUTER_PATCH ~~ BEGIN
-    SET value = 1 << bit
-    LOOKUP_IDS_SYMBOL_OF_INT symbol ~areatype~ value
-    PATCH_IF (~%symbol%~ STR_EQ ~%value%~) BEGIN  // unused?
-      SET type = value
-      TEXT_SPRINT type_name ~ID_TOTLM~
-      SET bit = 16
-    END ELSE PATCH_IF (~%symbol%~ STRING_MATCHES_REGEXP ~RUBI[CK]ON~ = 0) BEGIN // it's safe to reuse area type from "Test Your Mettle!"
-      SET type_fallback = value
-      TEXT_SPRINT type_name_fallback ~%symbol%~
-    END ELSE PATCH_IF (~%type_name_fallback%~ STRING_MATCHES_REGEXP ~RUBI[CK]ON~ != 0) BEGIN
-      SET type_fallback = value
-      TEXT_SPRINT type_name_fallback ~%symbol%~
-    END
-  END
-END
-ACTION_IF (type < 0) BEGIN
-  OUTER_SET type = type_fallback
-  OUTER_TEXT_SPRINT type_name ~%type_name_fallback%~
-END
-APPEND ~areatype.ids~ ~%type% %type_name%~ UNLESS ~%type_name%~
-
-ACTION_FOR_EACH are_resref IN ~id9700~ ~id9701~ ~id9702~ ~id9703~ ~id9704~ ~id9705~ ~id9706~
-                              ~id9707~ ~id9708~ ~id9709~ ~id9710~ ~id9711~ ~id9712~ ~id9713~
-                              ~id9714~ ~id9715~ ~id9716~ ~id9717~ ~id9718~ ~id9800~ ~id9801~ BEGIN
-  COPY_EXISTING ~%are_resref%.are~ ~override~
-    WRITE_SHORT 0x48 (THIS | type)
-  BUT_ONLY
-END
-
-// Prevent specific events from triggering during TotLM
+// Prevent specific events from triggering during TotLM quest
 ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN
   ~baldur~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
   ~aerie~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
@@ -56,11 +20,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN
   ~yoshimo~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
 END
 
-OUTER_TEXT_SPRINT bcs_area_check ~!AreaType(%type_name%)~
+OUTER_TEXT_SPRINT bcs_quest_check ~OR(2) GlobalLT("ID#Master_Quest","GLOBAL",1) GlobalGT("ID#Master_Quest","GLOBAL",6)~
 ACTION_PHP_EACH area_checks AS script => search BEGIN
   COPY_EXISTING ~%script%.bcs~ ~override~
     DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~%search%~ ~%bcs_area_check% \1~
+      REPLACE_TEXTUALLY ~%search%~ ~%bcs_quest_check% \1~
     END
   BUT_ONLY IF_EXISTS
 END
