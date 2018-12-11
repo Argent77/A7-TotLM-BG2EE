@@ -97,7 +97,7 @@ IF
   !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
   !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
   OR(2)
-    !See("Adran")
+    HPPercentLT(Myself,50)
     Dead("Adran")
 THEN
   RESPONSE #100
