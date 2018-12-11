@@ -19,7 +19,7 @@ The mod makes a number of slight changes to the adventure to bring it more in li
 
 ### 2. Make IWD spells available to the player *(requires the main component)*
 
-The mod installs a number of spells unique to Icewind Dale, which are used by the various creatures in the course of the adventure. This component makes these spells available to the player and adds them to a number of stores, creatures and containers. The component is superceded by similar components from IWDification or Sword Coast Stratagems (SCS).
+The mod installs a number of unique Icewind Dale spells, which are used by the various creatures in the course of the adventure. This component makes these spells available to the player and adds them to a number of stores, creatures and containers. The component is superceded by similar components from IWDification or Sword Coast Stratagems (SCS).
 
 ### 3. Rebalance weapons and equipment *(requires the main component)*
 
