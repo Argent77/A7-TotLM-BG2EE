@@ -21,18 +21,24 @@ LANGUAGE ~Deutsch~
          ~%MOD_FOLDER%/languages/english/mod.tra~
          ~%MOD_FOLDER%/languages/german/setup.tra~
          ~%MOD_FOLDER%/languages/german/mod.tra~
-LANGUAGE ~Italiano (Traduzione: Aedan)~
+LANGUAGE ~Italiano (by Aedan)~
          ~italian~
          ~%MOD_FOLDER%/languages/english/setup.tra~
          ~%MOD_FOLDER%/languages/english/mod.tra~
          ~%MOD_FOLDER%/languages/italian/setup.tra~
          ~%MOD_FOLDER%/languages/italian/mod.tra~
-LANGUAGE ~Russian (Translation: EugVV)~
+LANGUAGE ~Russian (by EugVV)~
          ~russian~
          ~%MOD_FOLDER%/languages/english/setup.tra~
          ~%MOD_FOLDER%/languages/english/mod.tra~
          ~%MOD_FOLDER%/languages/russian/setup.tra~
          ~%MOD_FOLDER%/languages/russian/mod.tra~
+LANGUAGE ~Espanol (by Chidojuan)~
+         ~spanish~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/spanish/setup.tra~
+         ~%MOD_FOLDER%/languages/spanish/mod.tra~
 
 
 BEGIN @1000000 // Trials of the Luremaster for BG2:EE
