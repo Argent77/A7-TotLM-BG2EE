@@ -1,7 +1,8 @@
 // Scripts and dialogs
 
 COMPILE ~%MOD_FOLDER%/bcs~
-COMPILE ~%MOD_FOLDER%/dlg~
+COMPILE EVAL ~%MOD_FOLDER%/dlg~
+COMPILE EVAL ~%MOD_FOLDER%/interjections~
 
 // Prevent specific events from triggering during TotLM quest
 ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN

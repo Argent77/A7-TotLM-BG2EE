@@ -124,3 +124,42 @@ END
 COPY_EXISTING ~statdesc.2da~ ~override~
   PRETTY_PRINT_2DA
 BUT_ONLY
+
+
+// Create custom autosave slot
+OUTER_SET savename_index = 0  // used later in DHOBART.DLG
+OUTER_SET savename_slot = 16
+COPY_EXISTING - ~savename.2da~ ~override~
+  COUNT_2DA_COLS numCols
+  COUNT_2DA_ROWS numCols numRows
+  SET savename_index = numRows
+  FOR (row = 0; row < numRows; ++row) BEGIN
+    READ_2DA_ENTRY row 1 numCols slot_name_strref
+    PATCH_IF (IS_AN_INT ~slot_name_strref~) BEGIN
+      GET_STRREF slot_name_strref slot_name
+      INNER_PATCH_SAVE slot_num ~%slot_name%~ BEGIN
+        REPLACE_TEXTUALLY ~^\([0-9]+\).*~ ~\1~
+        REPLACE_TEXTUALLY ~^0+~ ~~
+      END
+      PATCH_IF (IS_AN_INT ~slot_num~ && slot_num > savename_slot) BEGIN
+        SET savename_slot = slot_num
+      END
+    END
+  END
+BUT_ONLY
+
+OUTER_SET savename_slot += 1
+OUTER_SET strref = RESOLVE_STR_REF(@40174) // Trials of the Luremaster
+ACTION_GET_STRREF strref savename_title
+OUTER_TEXT_SPRINT savename ~000000000-%savename_title%~
+OUTER_PATCH_SAVE savename ~%savename%~ BEGIN
+  SET len = STRING_LENGTH ~%savename_slot%~
+  WRITE_ASCIIE (9 - len) ~%savename_slot%~ (len)
+END
+OUTER_SET savename_strref = RESOLVE_STR_REF(~%savename%~)
+OUTER_TEXT_SPRINT line ~%savename_index%  %savename_strref%  %savename_index%  1~
+APPEND ~savename.2da~ ~%line%~
+
+COPY_EXISTING ~savename.2da~ ~override~
+  PRETTY_PRINT_2DA
+BUT_ONLY
