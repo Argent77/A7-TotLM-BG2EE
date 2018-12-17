@@ -15,6 +15,12 @@ LANGUAGE ~English~
          ~english~
          ~%MOD_FOLDER%/languages/english/setup.tra~
          ~%MOD_FOLDER%/languages/english/mod.tra~
+LANGUAGE ~Francais (by Gwendolyne)~
+         ~french~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/french/setup.tra~
+         ~%MOD_FOLDER%/languages/french/mod.tra~
 LANGUAGE ~Deutsch~
          ~german~
          ~%MOD_FOLDER%/languages/english/setup.tra~

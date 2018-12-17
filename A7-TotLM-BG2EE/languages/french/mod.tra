@@ -1,0 +1,2506 @@
+// Original strings from IWD:EE
+@10 = ~Scarabée rhinocéros~
+@12 = ~Scarabée scolyte~
+@73 = ~Armure animée~
+@77 = ~Arme de troll~
+@267 = ~Armure de plates~
+@283 = ~Merci. Au revoir.~
+@288 = ~Adieu.~
+@540 = ~Que s'est-il passé ?~
+@757 = ~Imprécation~
+@764 = ~Armure animée~
+@768 = ~Scarabée scolyte~
+@771 = ~Scarabée bombardier~
+@774 = ~Scarabée bombardier~
+@777 = ~Élémentaire d'eau~
+@779 = ~Scarabée rhinocéros~
+@783 = ~Élémentaire d'eau~
+@788 = ~Squelette explosif~
+@827 = ~Squelette explosif~
+@832 = ~Gobelin d'élite~
+@843 = ~Myconide rouge~
+@846 = ~Maraudeur néo-orog~
+@854 = ~Squelette de garde~
+@863 = ~Myconide rouge~
+@866 = ~Maraudeur néo-orog~
+@873 = ~Squelette de garde~
+@913 = ~Ce sarcophage est scellé d'une manière indéfinissable. Son couvercle refuse de bouger.~
+@934 = ~Symbole sacré~
+@1412 = ~Pierres acérées~
+@1428 = ~Qui êtes-vous ?~
+@1711 = ~Je dois partir, au revoir.~
+@1785 = ~Comment ça ?~
+@1848 = ~Émotion : courage~
+@1863 = ~Émotion : terreur~
+@1864 = ~Émotion : espoir~
+@1865 = ~Sang brûlant de Beltyn~
+@1902 = ~Électricité statique~
+@1954 = ~Linceul de flammes~
+@1980 = ~"TUE !"~
+@2320 = ~Transparence des monstres
+Ne pas traduire~
+@2332 = ~Objet de transparence de monstre~
+@2556 = ~Qui êtes-vous déjà ?~
+@2693 = ~Conjuration d'un élémentaire d'eau~
+@2969 = ~Invisibilité
+(Illusion/Fantasme) 
+
+Niveau : 2
+Portée : contact 
+Durée : spéciale 
+Temps d'incantation : 2 
+Zone d'effet : 1 créature 
+Jet de sauvegarde : aucun
+
+La créature touchée par ce sort disparaît et devient indétectable à la vision normale ou à l'infravision. Les objets que la créature invisible fait tomber ou pose par terre deviennent visibles ; les objets qu'elle ramasse disparaissent si elle les glisse dans ses vêtements ou dans ses besaces. Le sort reste actif tant qu'il n'est pas rompu ou dissipé par magie, à moins que le magicien ou le bénéficiaire ne l'annule, que ce dernier n'attaque une créature, ou que 4 heures ne se soient écoulées. L'être invisible peut ouvrir les portes, parler, manger, monter les escaliers, etc. Mais s'il attaque, il devient immédiatement visible, bien que l'invisibilité lui permette d'attaquer en premier.~
+@2972 = ~L'Armure du Cygne Noir
+Cette armure a été fabriquée par l'armurier nain Karador et l'enchanteur elfe connu sous le nom d'Elameth des Cinq Arbres. De nombreux objets magiques datent de l'époque où la Main de la Seldarine et Profondorn collaboraient. Cette armure en fait partie. Exceptionnellement belle et légère, elle appartenait autrefois à un shérif elfe (une femme) de la Main Tranchée, ce qui explique que les orques ne l'aient pas prise en pillant les tours. Par la suite, l'armure a été volée à la Main par la Vierge Ilmadia.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- charisme +1
+- résistance au feu : +10%
+- résistance au froid : +10%
+- résistance à l'électricité : +10%
+- résistance à l'acide : +10%
+
+Classe d'armure  : 1 (-2 contre les armes tranchantes)
+Nécessite : 12 en force
+
+Poids : 20~
+@2976 = ~Épée large~
+@2977 = ~L'épée large est une arme de guerrier à deux tranchants. Sa lame, conçue pour découper plus que pour perforer, fait environ un mètre de long. La plupart des épées larges sont dotées d'une garde de sabre d'abordage. Cette arme de prédilection des cavaliers est connue dans diverses cultures sous de nombreux noms différents, qui dépendent justement de la forme de la garde. Sa lame plus lourde que celle de l'épée longue la rend plus lente, mais aussi plus dangereuse.
+
+PARAMÈTRES:
+
+Dégâts : 2d4 (tranchant)
+Facteur de vitesse : 5
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en force
+
+Poids : 4~
+@2983 = ~Flèches Immobilisantes
+Employées presque exclusivement par les rôdeurs eldathi du Mitan Occidental de Féérûne, les flèches immobilisantes sont appréciées pour leur faculté à retenir une proie sans lui faire trop mal. Bien que surtout utilisées contre les animaux incontrôlables, elles sont très efficaces contre les humanoïdes malfaisants. Elles s'ornent fréquemment de fleurs et rubans bleus et verts pour montrer qu'elles ont été créées par les prêtres pacifistes d'Eldath. Cela les rend moins efficaces au combat.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Enchevêtrement sur la cible pendant 4 rounds
+
+TAC0 : -1
+Dégâts : 1d6 -1 (projectile)
+Arme à distance : arc
+
+Poids : 0~
+@2984 = ~Flèches immobilisantes~
+@3070 = ~Symbole : désespoir~
+@3077 = ~Court extrait...
+
+"L'une des premières étapes à atteindre pour vivre en harmonie avec les animaux consiste à respecter le fait que la relation que l'on entretient avec eux change en permanence. Nombre de gens considèrent que les humains sont supérieurs aux animaux. Mais, comme je l'ai déjà dit, nos critères de supériorité sont très subjectifs. Il faut donc être conscient que la relation que nous entretenons avec les animaux sauvages évolue sans cesse. Il faut leur accorder le respect qu'ils méritent, mais sans jamais oublier que les prédateurs restent dangereux, même si l'on fait attention à leur territoire."~
+@3097 = ~Nos Amies les Bêtes~
+@3098 = ~Nos Amies les Bêtes~
+@3153 = ~Quel est cet endroit ?~
+@4380 = ~La Baguette de Détection des Pièges
+Cette baguette d'ébène appartenait autrefois au roublard-mage demi-elfe Illep le Vigilant. Natif de Myth Drannor, Illep s'en servait pour localiser les pièges auxquels les cambriolages qu'il multipliait l'exposaient fréquemment. La plupart des gens l'appréciaient mais, un soir, un guerrier humain du nom de Brammel s'offensa de ses manières de dandy. Malgré son don pour le maniement des dagues, il ne survécut pas au coup de hache en pleine gorge délivré par son meurtrier, qui fut ensuite arrêté par la garde. La baguette aurait dû être ramenée à la famille d'Illep, à Myth Drannor, mais la petite caravane qui la transportait fut attaquée par des brigands humains et l'on ignore ce qu'il est advenu de l'objet.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Détection des pièges (le personnage détecte les pièges comme s'il était un voleur)
+
+Nécessite : 9 en intelligence
+
+Poids : 1~
+@4381 = ~Baguette de détection des pièges~
+@4386 = ~Vaporise des spores~
+@4435 = ~Je vérifiais, c'est tout. Au revoir.~
+@6280 = ~De rien.~
+@6391 = ~Nuée de boules de neige de Snilloc~
+@6393 = ~Nuée de boules de neige de Snilloc
+(Invocation)
+
+Niveau : 2
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 2
+Zone d'effet : 4,50 mètres de rayon
+Jet de sauvegarde : demi-dégâts
+
+Ce sort fait apparaître un déluge de boules de neige à partir du point choisi par le magicien. Ces projectiles touchent toutes les créatures prises dans la zone d'effet et leur infligent 1d3 points de dégâts de froid par niveau du personnage, jusqu'à un maximum de 8d3 au niveau 8. Contre les créatures à base de feu (ou qui l'utilisent), le sort cause 1d6 points de dégâts de froid par niveau, jusqu'à un maximum de 8d6 au niveau 8.~
+@6512 = ~Sang brûlant de Beltyn~
+@6513 = ~Sang brûlant de Beltyn
+(Nécromancie)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : 1 round par 2 niveaux
+Temps d'incantation : 4
+Zone d'effet : 1 créature
+Jet de sauvegarde : annule
+
+Ce sort fait brûler le sang de la cible, ce qui lui inflige 3d4 points de dégâts par round et la rend folle de douleur. Chaque round, la victime a droit à un jet de sauvegarde contre les sorts (à -3). Dès qu'elle en réussit un, le sort cesse de faire effet. Il ne fonctionne pas contre les morts-vivants ou les créatures natives des autres plans qui n'ont pas de sang dans les veines (comme les élémentaires). Si la cible résiste au feu, cela réduit ou annule les dégâts provoqués par le sort.~
+@6650 = ~Les frondes existent depuis la nuit des temps. La fronde de base se compose d'une courroie en cuir ou en tissu comportant une bourse pouvant contenir un projectile. L'utilisateur fait tourner la courroie en la tenant par les 2 extrémités. Lorsque la vitesse maximale est atteinte, il suffit de relâcher l'une des extrémités de la courroie pour larguer le projectile. 
+
+PARAMÈTRES :
+
+Facteur de vitesse : 6
+Type de compétence : fronde
+Type : arme à une main
+Nécessite : 3 en force
+
+Poids : 0~
+@6652 = ~En dépit de la croyance populaire, l'armure de cuir n'est pas aussi souple que le cuir utilisé pour fabriquer les bottes de rôdeur ou une robe de druide et qui n'offre pas de meilleure protection que les vêtements traditionnels. 
+
+PARAMÈTRES :
+
+Classe d'armure : 8 (10 contre les armes perforantes et les projectiles)
+Nécessite : 4 en force
+
+Poids : 15~
+@6656 = ~La version la plus répandue de la hache d'armes est une grande hampe d'environ 1,20 mètre de long comportant une lame à un seul tranchant et en forme de trompette montée sur une extrémité. Les haches d'armes sont également appelées grandes haches. 
+
+PARAMÈTRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : hache
+Type : arme à une main
+Nécessite : 10 en force
+
+Poids : 7~
+@6663 = ~De prime abord, ceci ressemble à une armure de cuir ordinaire, mais il suffit de l'inspecter avec soin pour comprendre qu'elle a reçu des enchantements magiques. Les rivets tenant les diverses pièces brillent comme s'ils étaient polis. Le cuir est souple au toucher, mais devient rigide au moindre coup. Et il ne craque pas, contrairement à ce qui se produit avec les armures de cuir normales...
+
+PARAMÈTRES :
+
+Classe d'armure : 6 (8 contre les armes perforantes et les projectiles)
+Nécessite : 4 en force
+
+Poids : 5~
+@6664 = ~Besantine~
+@6667 = ~La besantine a peu de choses en commun avec une armure de cuir normale. L'armure de cuir est une protection renforcée, la besantine est souple et comporte des centaines de rivets. Ces derniers sont tellement rapprochés qu'ils forment une couche flexible de métal dur qui permet de contrer toute attaque cinglante et tranchante. Le renforcement de cuir souple n'est rien de plus qu'un moyen de maintenir les rivets en place. 
+
+PARAMÈTRES :
+
+Classe d'armure : 7 (6 contre les armes perforantes et les projectiles, 5 contre les armes tranchantes)
+Nécessite : 6 en force
+
+Poids : 25~
+@6669 = ~Armure de plates~
+@6673 = ~La cotte de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs.
+
+PARAMÈTRES :
+
+Classe d'armure : 5 (7 contre les armes contondantes, 3 contre les armes tranchantes)
+Nécessite : 8 en force
+
+Poids : 40~
+@6676 = ~La cotte de mailles est constituée d'anneaux métalliques imbriqués les uns dans les autres. Elle est toujours portée par-dessus une couche de tissu matelassé ou de cuir souple pour empêcher le frottement et réduire l'impact des chocs.
+
+PARAMÈTRES :
+
+Classe d'armure : 3 (5 contre les armes contondantes, 1 contre les armes tranchantes)
+Nécessite : 7 en force
+
+Poids : 10~
+@6696 = ~Les Échos de Profondorn
+Parmi les nombreuses armes forgées au pied de l'Épine Dorsale du Monde, plusieurs l'ont été par des artisans nains. Cette magnifique hache d'armes en fait partie. Son équilibrage et l'alliage qui la compose montrent qu'elle est l'œuvre d'un maître. Sa lame s'orne d'enchantements qui lui permettent de toucher les créatures surnaturelles. Comme bon nombre d'armes forgées par les nains, elle est très légère, ce qui permet de délivrer des coups plus rapides, et il n'est jamais nécessaire de l'affûter. Les runes naines gravées le long de la cognée indiquent "Dorn", sans doute pour préciser à quel endroit l'arme a été fabriquée. 
+
+PARAMÈTRES :
+
+TAC0: +2
+Dégâts : 1d8 +2 (tranchant)
+Facteur de vitesse : 5
+Type de compétence : hache
+Type : arme à une main
+Nécessite : 10 en force
+
+Poids : 5~
+@6703 = ~La plupart des gourdins sont de gros bâtons résistants, étroits à une extrémité et plus large à l'autre. Cette arme simple est utilisée depuis que l'on a découvert les outils. N'importe qui peut trouver un gros morceau de bois et le brandir, d'où l'utilisation très répandue du gourdin.
+
+PARAMÈTRES :
+
+Dégâts : 1d6 (contondant)
+Facteur de vitesse : 4
+Type de compétence : gourdin
+Type : arme à une main
+Nécessite : 5 en force
+
+Poids : 3~
+@6716 = ~Les cavaliers peuvent difficilement manier les armes longues. C'est pourquoi de nombreuses armes ont été munies de manches plus courts pouvant être portées d'une seule main. La masse d'armes et le fléau d'armes sont deux exemples d'armes longues qui ont suivi cette évolution ; le marteau de guerre en est un autre. Le marteau de guerre du cavalier est le descendant du marteau de Lucerne. Il est entièrement fabriqué en acier, avec des rondelles pour protéger et renforcer la prise. Les rondelles sont de petits disques métalliques, souvent en forme de motifs décoratifs. Le manche mesure environ 45 cm de long.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 +1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 9 en force
+
+Poids : 6~
+@6745 = ~Épée courte ~
+@6756 = ~Une bille est une pierre ronde et calibrée. 
+
+PARAMÈTRES :
+
+Dégâts : 1d4 +1 (projectile)
+Arme à distance : fronde
+
+Poids : 0~
+@6799 = ~Les Mains de rixe~
+@6807 = ~Cette catégorie de cabasset, fabriquée en cuir ou en métal renforcé, couvre presque l'ensemble de la tête, à l'exception du visage et du cou. Ces casques protègent bien le nez. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- protège contre les coups critiques
+
+Poids : 2~
+@6811 = ~Casque anti-charmes ~
+@6818 = ~La rondache est généralement ronde et se tient à bout de bras par la poignée. Comme elle est légère comparée à un écu, le combattant peut porter d'autres objets dans la même main, mais ne peut manier ou porter une autre arme. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +1
+- ne protège pas contre les projectiles
+
+Nécessite : 4 en force
+
+Poids : 3~
+@6820 = ~Le pavois est un bouclier massif en métal ou en bois couvrant le guerrier pratiquement du menton jusqu'aux doigts de pied. Il doit être bien attaché sur l'avant-bras et maintenu solidement. Naturellement, la main prise ne peut servir qu'à maintenir le pavois en place. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +1, bonus de +1 contre les projectiles
+
+Nécessite : 15 en force
+
+Poids : 15~
+@6823 = ~Bottes de rapidité~
+@6824 = ~Les bottes sont généralement fabriquées artisanalement par des cordonniers. Les bottes ordinaires sont fabriquées à l'aide d'un moule, mais les bottes de qualité supérieure sont faites sur mesure. 
+
+Poids : 4~
+@6835 = ~Anneau du voleur des sables~
+@6837 = ~Le Cadeau d'Edventar~
+@6855 = ~La morgenstern est un manche en bois couronné d'une tête en métal constituée d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Certaines de ces armes possèdent une tête de forme ronde, ovale ou cylindrique garnie de clous. Sur la plupart des têtes de morgenstern, quelle que soit leur forme, se trouve une longue pointe pour porter une attaque perforante. 
+
+PARAMÈTRES :
+
+Dégâts : 2d4 (contondant)
+Facteur de vitesse : 7
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 12~
+@6862 = ~L'arc long est similaire à l'arc court, sauf que la branche est pratiquement aussi grande que l'archer, généralement entre 1,80 m et 2 m. Sa portée est supérieure à celle de l'arc court mais sa rapidité de tir est inférieure.
+
+PARAMÈTRES :
+
+TAC0 : +1
+Facteur de vitesse : 7
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 12 en force
+
+Poids : 3~
+@6875 = ~Une arbalète est un arc monté en croix sur un manche en métal ou en bois, appelé alors un arbrier. L'arc est généralement fabriqué en bois de frêne ou d'if. L'arbalète décoche un carreau lourd (également appelé simplement carreau). 
+
+PARAMÈTRES :
+
+TAC0 : +2
+Facteur de vitesse : 5
+Type de compétence : arbalète
+Type : arme à deux mains
+Nécessite : 8 en force
+
+Poids : 7~
+@6888 = ~L'Armée scythe +1~
+@7347 = ~L'Épée qui Siffle
+Au milieu des plaines du Shaar Oriental, vivait un petit forgeron humain. La taille de cet homme, proche de celle des nains, ne reflétait pas sa grandeur d'âme. C'était un forgeron d'armes très adroit, mais il avait surtout le don de siffler une mélodie émouvante qui faisait pleurer les adultes comme des nouveau-nés. Seul un mage solitaire partageait son temps avec le petit homme et appréciait sa compagnie, car les autres ne voyaient dans sa petite taille qu'une source de moquerie. Les préjugés les rendaient sourds à la chanson du forgeron. Leurs railleries se transformèrent en un cruel supplice qui persuada finalement l'homme au cœur léger de quitter à tout jamais sa maison. Avant de partir, il forgea cette arme pour l'offrir à son vieil ami, qui lui jeta un sort pendant sa fabrication. À présent, la lame émet un sifflement doux à l'oreille de quiconque la dégaine. Peu après, le mage quitta également la petite ville, écœuré, emportant l'épée dans son voyage.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d6 +2 (perforant)
+Facteur de vitesse : 1
+Type de compétence : épée courte
+Type : arme à une main
+Nécessite : 4 en force
+
+Poids : 2~
+@7353 = ~Arbalète Légère de Vitesse : L'Armée Scythe
+Des humains qui occupèrent pour une brève période un avant-poste dans la Forêt Gelée découvrirent cette arme et de nombreuses autres dans les ruines d'un campement au cœur de ce pays froid. Sans jamais connaître le nom leurs bienfaiteurs disparus, les colonisateurs utilisèrent ces "outils" pour se tailler un territoire, bien que cela n'ait finalement servi à rien. Ecrasés par des hobgobelins supérieurs en nombre, ces malheureux esprits ont rejoint les anciens dans leur anonymat.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- une attaque supplémentaire par round
+
+TAC0 : +3
+Dégâts : +1
+Facteur de vitesse : 3
+Type de compétence : arbalète
+Type : arme à deux mains
+Nécessite : 8 en force
+
+Poids : 5~
+@7354 = ~Comme tous les autres sacs magiques, cet objet ressemble à un sac en toile normal. Il mesure à peu près 70 cm sur 1,4 m. Le sac sans fond s'ouvre sur un espace non dimensionnel : son volume intérieur est plus grand que ses dimensions extérieures ne le laissent penser. Le sac a toujours le même poids, indépendamment de ce qu'on met dedans.
+
+CARACTERISTIQUES :
+
+Poids : 5
+Non-utilisable par :
+~
+@7360 = ~Anneau d'Action Libre : Le Cadeau d'Edventar
+Cet anneau fut donné au naufrageur et chasseur des récifs, connu seulement sous le nom d'Edventar, par un groupe d'elfes aquatiques qui étaient depuis longtemps ses amis. En effet, en mettant en fuite la "Reine des Pirates", Yenandra de Dambrath, Edventar a contribué à leur survie, bien que Yenandra continue d'être redoutée partout où la terre rencontre la mer.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- Le porteur est immunisé contre toute action, magique ou autre, affectant sa mobilité, ce qui inclut les sorts de Hâte et de Lenteur.
+
+Poids : 0~
+@7363 = ~Anneau d'Invisibilité : L'Anneau du Voleur des Sables
+Entre les mains d'un maître voleur pendant une génération, cet anneau fut employé de manière audacieuse sur les marchés d'Eauprofonde. Traversant la foule en plein jour, le gredin soulageait les nobles d'un nombre incalculable de bourses et les remplaçait par des sacs remplis de sable afin de camoufler ses larcins. Son identité demeura à jamais inconnue ; on maudit alors le "Voleur des Sables". La rumeur prétend qu'il a pris sa retraite et qu'il vit aujourd'hui parmi les nobles qu'il détroussait.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Le porteur devient invisible, comme s'il était la cible d'un sort d'invisibilité.
+
+Poids : 0~
+@7375 = ~Les Bottes de rapidité
+Ces bottes enchantées permettent de se déplacer deux fois plus vite que la normale. Elles sont très prisées par ceux qui voyagent souvent.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- la vitesse de déplacement passe à 13 (au lieu de 9 normalement)
+
+Poids : 4~
+@7404 = ~Linceul de flammes~
+@7509 = ~Émotion : courage~
+@7510 = ~Émotion : courage
+(Enchantement/Charme)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : 1 heure
+Temps d'incantation : 4
+Zone d'effet : 4,5 mètres de rayon
+Jet de sauvegarde : aucun
+
+Ce sort génère un grand courage chez toutes les créatures situées dans la zone d'effet. Ces dernières bénéficient alors des bonus suivants : +1 à l'attaque, +3 aux dégâts et +5 points de vie temporaires (ce qui peut leur permettre de dépasser leur maximum). Enfin, le sort dissipe automatiquement la terreur dans la zone d'effet.~
+@7511 = ~Émotion : terreur~
+@7512 = ~Émotion : terreur
+(Enchantement/Charme)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : 5 rounds
+Temps d'incantation : 4
+Zone d'effet : 4,5 mètres de rayon
+Jet de sauvegarde : annule
+
+Ce sort terrifie les créatures situées dans la zone d'effet. En cas de jet de sauvegarde raté, elles s'enfuient pendant 5 rounds.~
+@7513 = ~Émotion : espoir~
+@7514 = ~Émotion : espoir
+(Enchantement/Charme)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : 1 heure
+Temps d'incantation : 4
+Zone d'effet : 4,5 mètres de rayon
+Jet de sauvegarde : aucun
+
+Ce sort génère l'espoir chez les créatures situées dans la zone d'effet. Leur moral s'en ressent, et elles bénéficient d'un bonus de 2 à tous leurs jets d'attaque, de dégâts et de sauvegarde.~
+@7516 = ~Linceul de flammes
+(Évocation)
+
+Niveau : 5
+Portée : champ visuel du lanceur
+Durée : 1 round par 2 niveaux (spécial)
+Temps d'incantation : 5
+Zone d'effet : rayon de 3,5 mètres
+Jet de sauvegarde : annule
+
+La créature affectée par ce sort s'enflamme si elle rate son jet de sauvegarde. Elle subit 2d6 points de dégâts de feu par round et des langues de feu projetées par la victime atteignent toutes les créatures distantes de moins de 3 mètres et leur infligent 1d4 points de dégâts de feu (si elles ratent leur jet de sauvegarde, ces dernières se retrouvent également dévorées par les flammes). Le linceul se dissipe si le jeteur de sorts et sa cible ne sont plus dans la même zone. Ce sort est particulièrement utile pour disperser un groupe de trolls ou de salamandres du givre.~
+@7533 = ~Blessures modérées
+(Nécromancie)
+
+Niveau : 2
+Sphère : Guérison
+Portée : toucher
+Durée : instantanée
+Temps d'incantation : 5
+Zone d'effet : 1 créature
+Jet de sauvegarde : demi-dégâts
+
+En lançant ce sort, le personnage peut, en touchant la créature ciblée, lui infliger 11 points de dégâts (jet de sauvegarde contre les sorts pour demi-dégâts). Il ne peut être lancé par des personnages d'alignement bon.~
+@7536 = ~Conjuration d'un élémentaire d'eau
+(Conjuration/Convocation)
+
+Niveau : 5
+Portée : champ visuel du lanceur
+Durée : 1 tour par niveau
+Temps d'incantation : 9
+Zone d'effet : spéciale
+Jet de sauvegarde : aucun
+
+Ce sort invoque un Élémentaire d'Eau de 8 DV au service du personnage en ouvrant un portail magique vers le Plan Élémentaire de l'Eau. L'élémentaire se battra pour le personnage jusqu'à sa destruction ou la fin du sort.~
+@7551 = ~Sphère glaciale d'Otiluke~
+@7552 = ~Sphère glaciale d'Otiluke
+(Transmutation, Invocation)
+
+Niveau : 6
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 6
+Zone d'effet : 1 créature
+Jet de sauvegarde : annule
+
+Ce sort projette un rayon glacé contre la cible. Il peut toucher toute créature située dans le champ de vision du magicien et inflige 1d4 +2 points de dégâts de froid par niveau de ce dernier. Si la victime réussit son jet de sauvegarde, elle évite totalement le rayon et ne subit pas le moindre dégât.~
+@7857 = ~Continuez.~
+@7903 = ~Imprécation
+(Conjuration/Convocation)
+
+Niveau : 1
+Sphère : Générale
+Portée : champ visuel du lanceur
+Durée : 6 rounds
+Temps d'incantation : 1 round
+Zone d'effet : rayon de 9 mètres
+Jet de sauvegarde : aucun
+
+Grâce à ce sort, le prêtre diminue le moral de ses adversaires et pénalise de -1 leurs jets de sauvegarde et d'attaque. Dès que l'incantation s'achève, le sort affecte toutes les créatures se trouvant dans un cube de 15 mètres d'arête, dont le centre est choisi par le prêtre (les créatures quittant la zone d'effet sont toujours affectées ; par contre, celles qui y entrent par la suite ne le sont pas).~
+@7913 = ~Flammes
+(Transmutation)
+
+Niveau : 4
+Sphère : Élémentaire (Feu)
+Portée : champ visuel du lanceur
+Durée : 1 round
+Temps d'incantation : 7
+Zone d'effet : rayon de 2,5 mètres
+Jet de sauvegarde : aucun
+
+Ce sort fait apparaître des flammes causant 1d4 points de dégâts plus 1 point par niveau du prêtre à toutes les créatures situées dans la zone d'effet.~
+@7914 = ~Électricité statique
+(Transmutation)
+
+Niveau : 4
+Sphère : Climat
+Portée : personnelle
+Durée : 1 tour par niveau
+Temps d'incantation : 9
+Zone d'effet : champ visuel du lanceur
+Jet de sauvegarde : demi-dégâts
+
+Électricité statique est similaire à Appel de la foudre, si ce n'est qu'il est possible de l'utiliser en intérieur. Le sort permet de générer une charge d'électricité statique dans la zone d'effet, ce qui inflige 2d8 points de dégâts plus 1d8 par niveau du prêtre. La charge se déclenche une fois par tour jusqu'à ce que le sort arrive à son terme.~
+@8040 = ~Pierres acérées
+(Transmutation, Enchantement)
+
+Niveau : 5
+Sphère : Élémentaire (Terre)
+Portée : champ visuel du lanceur
+Durée : 12 rounds
+Temps d'incantation : 6
+Zone d'effet : 5 mètres de rayon
+Jet de sauvegarde : spécial
+
+Ce sort déforme la roche pour faire apparaître des pointes camouflées et invisibles. Toute créature pénétrant dans la zone d'effet perd 2d4 points de vie par round et doit réussir un jet de sauvegarde contre les sorts ou voir sa vitesse de déplacement diminuer de 30 %.~
+@8065 = ~Pétrification
+(Transmutation)
+
+Niveau : 6
+Portée : champ visuel du lanceur
+Durée : permanente
+Temps d'incantation : 6
+Zone d'effet : 1 créature
+Jet de sauvegarde : annule
+
+Ce sort transforme une créature en pierre. La victime a droit à un jet de sauvegarde contre les sorts pour éviter la transformation. Les effets de ce sort peuvent être annulés avec le sort de magicien de niveau 6, Transformation de la pierre en chair.~
+@8099 = ~Symbole : douleur
+(Conjuration/Convocation)
+
+Niveau : 7
+Sphère : Garde
+Portée : champ visuel du lanceur
+Durée : 11 tours
+Temps d'incantation : 3
+Zone d'effet : 9 mètres de rayon
+Jet de sauvegarde : annule
+
+Toutes les créatures situées à moins de 9 mètres du symbole doivent effectuer un jet de sauvegarde contre les sorts. En cas d'échec, la douleur qu'elles ressentent se traduit par -4 aux jets d'attaque et -2 en Dextérité et à la CA.~
+@8100 = ~Symbole : désespoir
+(Conjuration/Convocation)
+
+Niveau : 7
+Sphère : Garde
+Portée : champ visuel du lanceur
+Durée : 2 tours
+Temps d'incantation : 3
+Zone d'effet : 9 mètres de rayon
+Jet de sauvegarde : annule
+
+Toutes les créatures situées à moins de 9 mètres du symbole doivent effectuer un jet de sauvegarde contre les sorts (à -2). En cas d'échec, elles sont tellement dépitées et découragées qu'elles ne se défendent même pas lorsqu'on les attaque.~
+@8564 = ~Cette arme puissante consiste en un manche de 1,20 mètre à 1,50 mètre de long, au bout duquel a été fixée une lourde lame, laquelle peut être simple ou double (une lame de chaque côté du manche). C'est une arme difficile à manier, mais un combattant aguerri peut délivrer des coups terribles avec.
+
+PARAMÈTRES :
+
+Dégâts : 1d10 (tranchant)
+Facteur de vitesse : 9
+Type de compétence : hache
+Type : arme à deux mains
+Nécessite : 10 en force
+
+Poids : 10~
+@8578 = ~Qu'est-il arrivé ensuite ? ~
+@8660 = ~Continuez. J'écoute.~
+@9094 = ~J'ai d'autres questions pour vous.~
+@9197 = ~Pierres acérées~
+@9211 = ~Symbole : douleur~
+@9785 = ~Hache à deux mains~
+@9786 = ~Hache à deux mains~
+@10064 = ~La Robe du Mauvais Archimage
+Cette robe de mage aux pouvoirs immenses protège son porteur contre toute forme d'attaque physique, tout en accroissant sa résistance à la magie et ses jets de sauvegarde. Étant donné la nature de ses enchantements, cette robe ne peut être portée que par les mages d'alignement mauvais.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : 5
+- jets de sauvegarde : +1
+- résistance à la magie : +5 %
+
+Poids : 6~
+@10242 = ~On dirait un crâne humain.
+
+Poids : 1~
+@10552 = ~Pourquoi cela ?~
+@10717 = ~Mon nom n'est pas important.~
+@11053 = ~Glacemort +3~
+@11054 = ~Le cimeterre est une arme qui s'apparente beaucoup au sabre, avec sa garde en coquille et sa lame à un seul tranchant, à la courbure accentuée, et terminée par une pointe. L'origine du cimeterre reste inconnue, mais c'est une arme répandue dans le sud des royaumes.
+
+PARAMÈTRES :
+
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 5
+Type de compétence : cimeterre / wakizashi / ninjatō
+Type : arme à une main
+Nécessite : 8 en force
+
+Poids : 4~
+@11055 = ~Glacemort
+Le cimeterre est très proche du sabre, puisqu'il s'agit d'une épée courbe à un tranchant et dotée d'une garde protégeant la main. Sa lame est plus courbe que celle du sabre et elle s'achève par une pointe. On ignore d'où provient exactement le cimeterre, très utilisé dans le sud des royaumes. Celui-ci est la légendaire Glacemort, un cimeterre +3.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- résistance au feu : +50 %
+
+TAC0 : +3
+Dégâts : 1d8 +3 (tranchant)
+Facteur de vitesse : 2
+Type de compétence : cimeterre / wakizashi / ninjatō
+Type : arme à une main
+Nécessite : 8 en force
+
+Poids : 4~
+@11248 = ~Enfer divin~
+@11440 = ~Halte. Je ne peux vous autoriser à continuer.~
+@12052 = ~Abjuration générique~
+@12064 = ~Flammes~
+@12093 = ~Nuée de boules de neige de Snilloc~
+@12130 = ~Sphère glaciale d'Otiluke~
+@12139 = ~Lance d'alicorne
+(Évocation)
+
+Niveau : 2
+Sphère : Combat
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 5
+Zone d'effet : 1 créature
+Jet de sauvegarde : spécial
+
+Ce sort fait apparaître une lance argentée et partiellement éthérée en forme d'alicorne (une corne de licorne). Le personnage choisit sa cible, et la lance d'alicorne va aussitôt la transpercer, lui infligeant 3d6 points de dégâts perforants (ou deux fois moins en cas de jet de sauvegarde réussi). Même si la lance se dissipe instantanément après l'impact, elle laisse une aura argentée autour de la cible, rendant celle-ci plus facile à toucher (-2 à la CA pendant 3 rounds).~
+@12180 = ~Projectile magique
+(Invocation)
+
+Niveau : 1
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 1 
+Zone d'effet : 1 créature
+Jet de sauvegarde : aucun
+
+Ce sort du 1er niveau est l'un des plus usités. Il fait apparaître jusqu'à cinq projectiles magiques jaillissant des doigts du magicien. Ils touchent automatiquement leur cible, qui doit être une créature (pas un objet). Chaque projectile inflige 1d4+1 points de dégâts. Le mage en lance un, plus un autre tous les 2 niveaux au-delà du 1er : deux projectiles au niveau 3, trois au niveau 5, quatre au niveau 7, et cinq (le maximum) à partir du niveau 9.~
+@14181 = ~Forge de Grondemarteau~
+@14183 = ~--NOTEXT--~
+@14233 = ~La version la plus répandue de la hache d'armes est une grande hampe d'environ 1,20 mètre de long comportant une lame à un seul tranchant et en forme de trompette montée sur une extrémité. Les haches d'armes sont également appelées grandes haches.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d8 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : hache
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 7~
+@14316 = ~Incinératrice +3~
+@14317 = ~Cette arme a été ouvragée par un maître-artisan et de minuscules runes magiques sont visibles à sa surface. Sa création a manifestement demandé beaucoup de temps et, même si cela n'est pas apparent au premier coup d'œil, une lueur bleutée semble émaner des runes.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 50% de chances d'infliger +1d8 points de dégâts de feu à chaque coup au but
+- 10% de chances d'étourdir la cible à chaque coup au but
+
+TAC0 : +3
+Dégâts : 2d4 +3 (tranchant)
+Facteur de vitesse : 8
+Type de compétence : épée bâtarde
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 10~
+@14319 = ~Hache d'armes électrique +2~
+@14321 = ~Hache d'Armes Électrique
+Cette arme a été ouvragée par un maître-artisan et de minuscules runes magiques sont visibles à sa surface. Sa création a manifestement demandé beaucoup de temps et, même si cela n'est pas apparent au premier coup d'œil, une lueur bleutée semble émaner des runes.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 50% de chances d'infliger +1d3 points de dégâts d'électricité à chaque coup au but
+- 15% de chances d'étourdir la cible pendant 4 secondes à chaque coup au but
+
+TAC0 : +2
+Dégâts : 1d8 +2 (tranchant)
+Facteur de vitesse : 7
+Type de compétence : hache
+Type : arme à une main
+Nécessite : 10 en force
+
+Poids : 7~
+@14362 = ~Fléau de feu +3~
+@14363 = ~Fléau de Feu
+Le fléau d'armes est une solide poignée en bois attachée à une tringle en fer, une baguette de bois comportant des pointes, ou une boule en fer pointue. La poignée et l'équipement qui l'accompagne sont reliés par une charnière ou une chaîne. Cette arme servait à l'origine à battre le grain. Ce fléau est enchanté ; on peut voir des runes en illuminer la surface.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 50% de chances d'infliger +2d6 dégâts de feu à chaque coup au but
+
+TAC0 : +3
+Dégâts : 1d6 +4 (contondant)
+Facteur de vitesse : 7
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 15~
+@14364 = ~Fléau électrique +4~
+@14365 = ~Fléau Électrique
+Le fléau d'armes est une solide poignée en bois attachée à une tringle en fer, une baguette de bois comportant des pointes, ou une boule en fer pointue. La poignée et l'équipement qui l'accompagne sont reliés par une charnière ou une chaîne. Cette arme servait à l'origine à battre le grain. Ce fléau est enchanté ; on peut voir des runes en illuminer la surface.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +1
+
+Capacités de combat :
+- 50% de chances d'infliger +2d3 dégâts électriques à chaque coup au but
+- 10% de chances d'étourdir la cible pendant 4 secondes à chaque coup au but
+
+TAC0 : +4
+Dégâts : 1d6 +5 (contondant)
+Facteur de vitesse : 7
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 15~
+@14393 = ~Momie royale~
+@14406 = ~Maudit(e)~
+@14443 = ~Dard d'os +3~
+@14444 = ~Poing de fer~
+@14512 = ~Épée longue de rapidité +4~
+@14513 = ~Épée Longue de Rapidité
+Cette arme reçoit parfois le nom d'épée à double tranchant, épée de guerre ou épée de bataille. Souvent, l'épée longue a une lame à simple tranchant. Il n'existe pas de version type : le modèle et la longueur de l'épée varient d'un peuple à un autre et parfois même d'une époque à une autre. Une des caractéristiques principales de l'épée longue est sa taille, qui varie entre 90 cm et 1,20 m. Dans ce second cas, la lame fait un bon mètre. La plupart des épées longues ont deux tranchants et une pointe acérée. Malgré cette dernière, l'arme est conçue pour frapper de taille, et non d'estoc. La lame de celle-ci est couverte de symboles magiques divers et variés.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +1
+- résistance aux dégâts tranchants : +15%
+
+Capacités de combat :
+- une attaque supplémentaire par round
+
+TAC0 : +4
+Dégâts : 1d8 +4 (tranchant)
+Facteur de vitesse : 4
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en force
+
+Poids : 4~
+@14545 = ~Morgenstern de moindre phase +2~
+@14548 = ~Morgenstern de Moindre Phase
+La morgenstern est un manche en bois couronné d'une tête en métal constituée d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Ce modèle possède une tête en or, renforcée par magie pour être moins malléable que le métal dont elle est issue.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 25% de chances d'infliger +1d3 dégâts de froid à chaque coup au but
+- 15% de chances de mettre la cible en état de phase pendant 10 secondes (1 point de dégâts par seconde) à chaque coup au but
+
+TAC0 : +2
+Dégâts : 2d4 +2 (contondant)
+Facteur de vitesse : 6
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 10~
+@14558 = ~Morgenstern gardiennne +4~
+@14559 = ~La Morgenstern Gardienne
+La morgenstern est un manche en bois couronné d'une tête en métal constituée d'une gaine de fer cloutée. Les morgensterns mesurent environ 1,20 m. Ce modèle possède une tête en or, renforcée par magie pour être moins malléable que le métal dont elle est issue.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +2
+- résistance aux dégâts tranchants : +20%
+- résistance aux dégâts perforants : +20%
+- résistance à la magie : +15%
+
+TAC0 : +4
+Dégâts : 2d4 +4 (contondant)
+Facteur de vitesse : 6
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 11 en force
+
+Poids : 10~
+@14629 = ~Anneau de transfusion d'aura~
+@14630 = ~L'Anneau de Transfusion d'Aura
+Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rares, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers. Sans raison particulière, cet anneau paraît chaud au toucher.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- résistance à la magie : -5%
+- jets de sauvegarde contre les sorts : -2
+
+Capacités de combat :
+- le porteur régénère un point de vie toutes les 3 secondes
+
+Poids : 0~
+@14631 = ~Anneau de résistance suprême~
+@14632 = ~L'Anneau de Résistance Suprême
+Un anneau est une fine lanière de métal précieux. Il sert en général d'ornement. Plus rares, certains sont enchantés et permettent à quiconque les porte d'user de la magie qu'ils contiennent. Ils sont de ce fait très recherchés par les aventuriers. Sans raison particulière, cet anneau paraît chaud au toucher.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +2
+- jets de sauvegarde contre les sorts : +3
+- résistance aux dégâts contondants : +25%
+
+Poids : 0~
+@14640 = ~Pavois renforcé +2~
+@14641 = ~Le pavois est un bouclier massif en métal ou en bois couvrant le guerrier pratiquement du menton jusqu'aux doigts de pied. Il doit être bien attaché sur l'avant-bras et maintenu solidement. Naturellement, la main prise ne peut servir qu'à maintenir le pavois en place.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +3, bonus de +1 contre les projectiles
+- résistance aux dégâts contondants : +15%
+- résistance au feu : +15%
+
+Nécessite : 14 en force
+
+Poids : 12~
+@14644 = ~Pavois +3~
+@14646 = ~Le pavois est un bouclier massif en métal ou en bois couvrant le guerrier pratiquement du menton jusqu'aux doigts de pied. Il doit être bien attaché sur l'avant-bras et maintenu solidement. Naturellement, la main prise ne peut servir qu'à maintenir le pavois en place.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- TAC0 : -2
+- classe d'armure : +4, bonus de +1 contre les projectiles
+- résistance aux dégâts tranchants : +15%
+- résistance aux dégâts perforants : +15%
+- résistance aux dégâts contondants : +15%
+- résistance au feu : +15%
+
+Nécessite : 18 en force
+
+Poids : 12~
+@14682 = ~Épée courte d'action +2~
+@14683 = ~Épée Courte d'Action
+L'épée courte est le premier type d'épée à être apparu. Grossièrement, on peut comparer une épée courte à une dague dont la lame serait si longue qu'on ne pourrait plus l'appeler dague. Le terme épée courte n'entre pas dans les catégories d'épées. Pourtant, il est utilisé pour décrire une lame à double tranchant longue d'environ 60 cm. L'estoc de l'épée est généralement pointu, et on la range donc parmi les armes perforantes. Des symboles magiques ont été gravés sur la lame.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- dextérité : +1
+
+TAC0 : +2
+Dégâts : 1d6 +2 (perforant)
+Facteur de vitesse : 2
+Type de compétence : épée courte
+Type : arme à une main
+Nécessite : 5 en force
+
+Poids : 3~
+@14696 = ~Potion de résistance~
+@14698 = ~Les potions se trouvent généralement dans des flasques ou des fioles en céramique, cristal, verre ou métal. Ces flasques ou autres récipients contiennent généralement suffisamment de liquide pour fournir à une personne une dose complète et ainsi obtenir les effets désirés.
+
+PARAMÈTRES :
+
+Résistance aux dégâts contondants : +5%
+Durée : permanente
+
+Poids : 1~
+@14699 = ~Potion de résistance supérieure~
+@14700 = ~Les potions se trouvent généralement dans des flasques ou des fioles en céramique, cristal, verre ou métal. Ces flasques ou autres récipients contiennent généralement suffisamment de liquide pour fournir à une personne une dose complète et ainsi obtenir les effets désirés.
+
+PARAMÈTRES :
+
+Résistance aux dégâts tranchants : +5%
+Résistance aux dégâts perforants : +5%
+Durée : permanente
+
+Poids : 1~
+@14706 = ~Courage~
+@14708 = ~Espoir~
+@14727 = ~En état de phase~
+@14728 = ~Douleur~
+@14805 = ~Potion de transfert sacré~
+@14806 = ~Les potions se trouvent généralement dans des flasques ou des fioles en céramique, cristal, verre ou métal. Ces flasques ou autres récipients contiennent généralement suffisamment de liquide pour fournir à une personne une dose complète et ainsi obtenir les effets désirés.
+
+PARAMÈTRES :
+
+Sagesse : +2
+Dextérité : -1
+Durée : permanente
+
+Poids : 1~
+@14810 = ~Armure de Plates d'Ombre
+En l'examinant bien, cette armure de plates ne semble pas totalement exister sur le plan physique, d'où son étrange apparence. Quiconque la porte peut se fondre dans l'ombre, ce qui procure une protection supplémentaire contre les armes à projectiles.
+
+PARAMÈTRES :
+
+Classe d'armure : 0 (-3 contre les armes tranchantes et les projectiles)
+Nécessite : 12 en force
+
+Poids : 20~
+@14832 = ~Besantine de résistance +3~
+@14833 = ~Besantine de Résistance
+La besantine a peu de choses en commun avec une armure de cuir normale. L'armure de cuir est une protection renforcée, la besantine est souple et comporte des centaines de rivets. Ces derniers sont tellement rapprochés qu'ils forment une couche flexible de métal dur qui permet de contrer toute attaque cinglante et tranchante. Le renforcement de cuir souple n'est rien de plus qu'un moyen de maintenir les rivets en place. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- jets de sauvegarde contre les sorts : +2
+- résistance aux dégâts tranchants : +15%
+- résistance aux dégâts perforants : +15%
+- résistance au feu : +15%
+- résistance à l'électricité : +15%
+
+Classe d'armure : 4 (3 contre les armes perforantes et les projectiles, 2 contre les armes tranchantes)
+Nécessite : 6 en force
+
+Poids : 15~
+@14834 = ~Besantine des ténèbres +4~
+@14835 = ~La Besantine des Ténèbres
+La besantine a peu de choses en commun avec une armure de cuir normale. L'armure de cuir est une protection renforcée, la besantine est souple et comporte des centaines de rivets. Ces derniers sont tellement rapprochés qu'ils forment une couche flexible de métal dur qui permet de contrer toute attaque cinglante et tranchante. Le renforcement de cuir souple n'est rien de plus qu'un moyen de maintenir les rivets en place. 
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- résistance aux dégâts tranchants : +20%
+- résistance aux dégâts perforants : +20%
+- résistance au feu : +20%
+- résistance à l'électricité : +20%
+- déplacement silencieux : +30%
+- se cacher dans l'ombre : +30%
+
+Classe d'armure : 3 (2 contre les armes perforantes et les projectiles, 1 contre les armes tranchantes)
+Nécessite : 6 en force
+
+Poids : 15~
+@14847 = ~Hache à deux mains de guérison +2~
+@14848 = ~Hache à Deux Mains de Guérison
+Cette arme puissante consiste en un manche de 1,20 mètre à 1,50 mètre de long, au bout duquel a été fixée une lourde lame, laquelle peut être simple ou double (une lame de chaque côté du manche). C'est une arme difficile à manier, mais un combattant aguerri peut s'en servir pour asséner de terribles coups. Des runes naines augmentent encore l'efficacité de la lame.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- le porteur a 10% de chances de récupérer 2d3 points de vie
+
+TAC0 : +2
+Dégâts : 1d10 +2 (tranchant)
+Facteur de vitesse : 9
+Type de compétence : hache
+Type : arme à deux mains
+Nécessite : 10 en force
+
+Poids : 10~
+@14855 = ~L'escalier a été sciemment détruit pour empêcher quiconque de progresser plus avant dans cette tour.~
+@14954 = ~Marteau de guerre consacré +2~
+@14955 = ~Marteau de Guerre Consacré
+Comme tous les autres marteaux, celui-ci est intégralement en acier. Sa tête capable de broyer les os de n'importe quelle créature a été montée sur un manche de 45 cm de long. Il bénéficie d'enchantements mineurs qui accroissent encore son efficacité.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- permet de mémoriser deux sorts de prêtre supplémentaires de niveau 1 et un sort de prêtre supplémentaire de niveau 2
+
+TAC0 : +2
+Dégâts : 1d4 +3 (contondant)
+Facteur de vitesse : 3
+Type de compétence : marteau de guerre
+Type : arme à une main
+Nécessite : 9 en force
+
+Poids : 6~
+@15409 = ~"Gardes !"~
+@15993 = ~...~
+@16261 = ~Les baguettes magiques sont fines et mesurent environ 50 centimètres. Elles sont fabriquées en ivoire, en os ou en bois et portent généralement un objet en métal, cristal ou pierre à leur extrémité. Elles sont fragiles et ont tendance à se briser facilement. Pour cette raison, on les conserve souvent dans des étuis. Les baguettes magiques possèdent des charges, chaque utilisation coûtant une ou plusieurs charges (en fonction de l'objet). Lorsqu'une baguette magique est à court de charges, elle se consume et est détruite.
+
+Poids : 1~
+@16399 = ~En état de phase~
+@16836 = ~"Je sais où est mon devoir."~
+@16907 = ~J'ignore qui vous êtes, mais éloignez-vous de moi !~
+@16911 = ~Laissez-moi tranquille, je n'ai rien à vous dire.~
+@17094 = ~Filez. Vous n'êtes pas des nôtres et je n'ai rien à vous dire.~
+@17249 = ~Le Casque Anti-Charmes
+Comme son nom l'indique, le casque anti-charmes protège celui qui le porte de toute tentative de manipulation magique de ses émotions. Souvent, des groupes de mercenaires de haut vol équipent leurs membres de tels casques afin de les protéger de toute ingérence extérieure.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- immunité contre les charmes
+- protège contre les coups critiques
+
+Poids : 4~
+@17386 = ~Créées par le sort de Baie magique, ces baies d'aspect ordinaire soignent un point de dégâts par poignée mangée.
+
+PARAMÈTRES :
+
+Spécial : guérit 5 points de vie
+
+Poids : 0~
+@17503 = ~La pierre de soleil est un feldspath très proche de la pierre de lune. Il serait plus juste de lui donner son vrai nom, l'oligoclase. La pierre de soleil peut être incolore ou vert tendre, et à facettes, mais il est plus courant de la trouver sous la forme arrondie d'un cabochon qui, une fois taillé, livre des pierres précieuses recèlant des paillettes d'un rouge (ou orange) vif disposées en parallèle dans un milieu incolore ; la teinte dominante est alors dorée ou brun rouge.
+
+Poids : 0~
+@17505 = ~L'agate de feu est le nom donné à la calcédoine lorsque celle-ci contient de fines rayures de goethite irisée. Si la pierre est taillée comme il convient, cette irisation prend des nuances rouges, brunes, dorées et vertes. Les plus beaux spécimens d'agate de feu sont toujours au moins en partie translucides.
+
+Poids : 0~
+@17508 = ~La larme de ciel est le nom donné à la tectite, roche vitreuse d'origine céleste (météoritique) que l'on trouve le plus souvent dans les sables d'Anauroch et d'autres déserts des Royaumes.
+
+Poids : 0~
+@17514 = ~La pierre de lune est un feldspath opaque poli jusqu'à prendre une teinte bleutée. Selon la légende, la seule vue de cette pierre force un lycanthrope à reprendre sa forme animale. Cela se peut, même si jamais un témoin s'étant approché assez près d'une telle scène pour attester de sa véracité n'a survécu pour en témoigner. Mais les pierres de lune entrent dans la préparation de divers sorts affectant cette malédiction.
+
+Poids : 0~
+@17520 = ~Une perle est constituée de couches superposées d'aragonite qui se forment lentement et laborieusement autour d'un grain de sable présent dans une huître ou un autre mollusque. Le résultat de ce processus a un bel aspect lustré. La plupart des perles des royaumes sont blanches, bien qu'il en existe des spécimens arc-en-ciel et même noirs.
+
+Poids : 0~
+@17526 = ~Le lingot de lune est une pierre d'un blanc bleuté et nacré, souvent pailletée d'or et de vert. Apparentée à l'opale de feu et à l'opale noire, elle est à peine plus répandue.
+
+Poids : 0~
+@17527 = ~Le saphir étoilé est une variante de saphir, une vraie pierre précieuse, plus translucide, avec une étoile blanche en son centre. On en voit ornant les objets qui protègent contre la magie.
+
+Poids : 0~
+@17529 = ~Le diamant est une pierre dure et transparente qui peut être bleue, blanc-bleu, jaune ou rose. C'est la plus dure de toutes les gemmes et l'une des plus précieuses. Ce sont souvent les races vivant sous terre qui trouvent les diamants dans les montagnes du nord et qui les négocient avec la surface.
+
+Poids : 0~
+@17530 = ~Une émeraude est un béryl d'un vert très vif, aux arêtes vives elles aussi, aux lignes droites, taillée en rectangle le plus souvent. On a l'habitude de l'associer à la santé.
+
+Poids : 0~
+@17534 = ~Ces flèches ont été enchantées à la fabrication. Elles paraissent un peu plus droites que les flèches usuelles et presque vivantes tandis qu'elles quittent votre arc sans effort pour filer vers leur cible avec une précision mortelle.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d6 +2 (projectile)
+Arme à distance : arc
+
+Poids : 0~
+@17643 = ~L'arc long est similaire à l'arc court, sauf que la branche est pratiquement aussi grande que l'archer, généralement entre 1,80 m et 2 m. Il a une plus grande portée que l'arc court, mais une rapidité de tir inférieure et une plus grande précision. Celui-ci est enchanté, ce qui le rapproche de la perfection en la matière.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : +1
+Facteur de vitesse : 6
+Type de compétence : arc long
+Type : arme à deux mains
+Nécessite : 12 en force
+
+Poids : 3~
+@17683 = ~L'énergie magique contenue dans ces billes les rendent plus précises et plus légères lorsqu'elles filent vers un adversaire.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d4 +3 (projectile)
+Arme à distance : fronde
+
+Poids : 0~
+@17733 = ~Chanceleuse +1~
+@17735 = ~Chanceleuse
+Cette arme puissante forgée par le magicien Retland de Port-Ponant était souvent utilisée par les fiers-à-bras qu'il employait. Malgré la haute éducation que Retland avait reçue, il n'était rien de plus qu'un racketteur. Ses hommes, les Gars du Pavé, intimidèrent et menacèrent les divers quartiers de Port-Ponant une décennie durant, jusqu'à ce qu'un magicien dévoué à Tyr, Alistar Lavell, rassemble ses alliés pour défaire le gang. Une fois Retland et ses hommes vaincus, Alistar fit don de Chanceleuse au clergé de Tyr, qui la confia à un prêtre errant.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 5% de chances d'étourdir la cible pendant 2 rounds à chaque coup au but
+
+TAC0 : +1
+Dégâts : 1d6 +1 (contondant)
+Facteur de vitesse :  4
+Type de compétence : gourdin
+Type : arme à une main
+Nécessite : 5 en force
+
+Poids :  3~
+@17803 = ~Je comprends.~
+@17990 = ~"Hé, attention ! On ne touche pas, l'ami !"~
+@17992 = ~"Je n'apprécie guère les voleurs. Vous avez intérêt à vous tenir tranquille".~
+@17993 = ~"Vous avez de la chance que je sois de nature à pardonner... mais ne recommencez pas".~
+@17994 = ~"Du large ! Vous croyez que je ne vois pas ce que vous essayez de faire ?"~
+@17995 = ~"Qu'est-ce que vous faites ? Écartez-vous, s'il vous plaît".~
+@18048 = ~"Tuez-les !"~
+@18056 = ~"À votre place, je ne recommencerais pas. Les voleurs ne sont pas les bienvenus, par ici".~
+@18057 = ~"J'espère que ce n'est pas votre main que j'ai sentie dans ma poche..."~
+@18058 = ~"Espèce de sale voleur. Ça ira pour cette fois, mais que je ne vous y reprenne pas..."~
+@18059 = ~"Attention, l'étranger. Faire les poches des gens peut s'avérer dangereux... surtout quand on est aussi inapte que vous".~ ~"Attention, l'étrangère. Faire les poches des gens peut s'avérer dangereux... surtout quand on est aussi inapte que vous".~
+@18060 = ~"AAAAAAGH !"~
+@18615 = ~Armure du cygne noir +2~
+@18617 = ~Pommade anti-scarabées bombardiers
+Do not translate~
+@18628 = ~Douleurs atroces~
+@18877 = ~Garde spectral~
+@18881 = ~Garde spectral~
+@18915 = ~Continuez.~
+@18923 = ~Les frondes existent depuis la nuit des temps. La fronde de base se compose d'une courroie en cuir ou en tissu comportant une bourse pouvant contenir un projectile. Toutefois celle-ci bénéficie d'un charme léger. L'utilisateur fait tourner la courroie en la tenant par les 2 extrémités. Lorsque la vitesse maximale est atteinte, il suffit de relâcher l'une des extrémités de la courroie pour larguer le projectile. 
+
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : +1 (projectile)
+Facteur de vitesse : 5
+Type de compétence : fronde
+Type : arme à une main
+Nécessite : 3 en force
+
+Poids : 0~
+@18926 = ~Sac~
+@18927 = ~Ce sac a vu  de meilleurs jours. Il est couvert de terre et de poussière et une odeur atroce en émane, que l'on sent même de loin.~
+@19339 = ~Dard d'os~
+@19358 = ~Les carreaux lourds et les carreaux légers sont les munitions tirées par les arbalètes quelle que soit la taille de l'arme. L'énergie contenue dans ce carreau accroît la précision de sa trajectoire, comme s'il était guidé vers sa cible.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d8 +2 (projectile)
+Arme à distance : arbalète
+
+Poids : 0~
+@21396 = ~Brume d'Eldath~
+@21398 = ~Tourbillon~
+@21401 = ~Vigilance contre les morts-vivants~
+@21403 = ~Rage sanguinaire~
+@21404 = ~Nuage de pestilence~
+@21405 = ~Endurance infaillible~
+@21407 = ~Vague destructrice~
+@21409 = ~Projection d'épines~
+@21410 = ~Mur de lune~
+@21418 = ~Croissance d'épines~
+@21420 = ~Moisissure~
+@21421 = ~Lance d'alicorne~
+@21422 = ~Protection anti-tempête~
+@21424 = ~Blessure modérée~
+@21429 = ~Cercle d'yeux~
+@21430 = ~Suffocation~
+@21431 = ~Dards d'os~
+@21432 = ~Destruction d'âme~
+@21435 = ~Projectiles de force de Mordenkainen~
+@21437 = ~Cri~
+@21438 = ~Sphère acide~
+@21439 = ~Lance de destruction~
+@21443 = ~Œil de la pierre~
+@21444 = ~Œil de la résistance~
+@21446 = ~Œil de l'âme~
+@21447 = ~Œil du venin~
+@21448 = ~Œil du mage~
+@21449 = ~Œil de l'épée~
+@21450 = ~Œil de l'esprit~
+@21458 = ~Moisissure
+(Transmutation)
+
+Niveau : 3
+Sphère : Flore
+Portée : toucher
+Durée : spéciale
+Temps d'incantation : 6
+Zone d'effet : rayon de 3 mètres
+Jet de sauvegarde : spécial
+
+Ce sort couvre rapidement la créature touchée par le lanceur d'une moisissure brune à même sa peau. La créature infectée a droit à un jet de sauvegarde contre les sorts. En cas d'échec, l'infection est sévère et les dégâts subis sont les suivants :
+1er round : 4d6 points
+2e round : 3d6 points
+3e round : 2d6 points
+4e round : 1d6 points
+Si le jet de sauvegarde est réussi, les dégâts sont moins importants :
+1er round : 2d6 points
+2e round : 1d6 points
+3e round : 1d6 points
+
+Chaque round après le premier, la plus proche créature (dans un rayon de 3 mètres) doit réussir un jet de sauvegarde sous peine d'être affectée à son tour. Le processus se poursuit jusqu'à ce que la moisissure soit incapable d'infecter un nouvel hôte dans le temps imparti. Les créatures déjà affectées ne peuvent l'être une nouvelle fois. La moisissure brune meurt rapidement au terme de la durée du sort.~
+@21460 = ~Croissance d'épines
+(Transmutation)
+
+Niveau : 3
+Sphère : Élémentaire (Terre)
+Portée : champ visuel du lanceur
+Durée : 1 tour
+Temps d'incantation : 6
+Zone d'effet : 5 mètres de rayon
+Jet de sauvegarde : aucun
+
+Ce sort transforme la végétation affectée en plantes épineuses. Toute créature pénétrant dans la zone d'effet subit 1d4 points de dégâts tranchants et 1d4 points de dégâts perforants par round, jusqu'au terme du sort.~
+@21461 = ~Destruction d'âme
+(Nécromancie)
+
+Niveau : 6
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 5
+Zone d'effet : 4 mètres de rayon
+Jet de sauvegarde : aucun
+
+Ce sort inflige 3d8 points de dégâts à toutes les créatures vivantes situées à moins de 4 mètres à la ronde. De plus, toute créature tuée par Destruction d'âme est aussitôt oblitérée, et son énergie vitale est transformée en squelette de 3 DV sous le contrôle du personnage. Pour chaque créature mourant de la sorte, le magicien gagne +1 en force, Dextérité et Constitution (pendant 1 tour).~
+@21462 = ~Mur de lune
+(Évocation)
+
+Niveau : 4
+Sphère : Protection, Soleil
+Portée : champ visuel du lanceur
+Durée : 1 tour
+Temps d'incantation : 7
+Zone d'effet : mur de 6 mètres de long sur 1,50 mètre d'épaisseur
+Jet de sauvegarde : aucun
+
+Ce sort fait apparaître un mur luisant d'énergie blanc-bleu. Il est intangible et n'a pas besoin d'être ancré à des points fixes. On peut passer librement au travers, mais les créatures d'alignement mauvais qui s'y risquent subissent 2d10 points de dégâts (5d10 pour les morts-vivants d'alignement mauvais). Une créature blessée par le mur ne peut être affectée une seconde fois, même si elle le retraverse. Plusieurs Murs de lune ne peuvent fonctionner en même temps.~
+@21465 = ~Dards d'os
+(Nécromancie)
+
+Niveau : 6
+Portée : personnelle
+Durée : 5 rounds
+Temps d'incantation : 5
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort crée 9 dards pouvant être lancés par le personnage (qui est obligé de les garder en main tant que l'enchantement fait effet). Les dards sont +3, infligent 1d4 points de dégâts chacun, et toute créature touchée doit réussir un jet de sauvegarde contre la mort magique sous peine de perdre 2d6 points de vie supplémentaires et de voir sa Force baisser de 3 points pendant 5 rounds. Le personnage n'a pas besoin de savoir manier les dards pour pouvoir utiliser ce sort.~
+@21466 = ~Cercle d'yeux
+(Abjuration)
+
+Niveau : 7
+Portée : personnelle
+Durée : 2 tours
+Temps d'incantation : 7
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort fait apparaître sept yeux magiques flottant en cercle autour de la tête du personnage. Chacun a une vertu défensive et une autre offensive, mais chaque œil perd tout pouvoir dès qu'on s'en sert une fois. On ne peut lancer ce sort une seconde fois tant que le premier continue de faire effet, et ce même si tous les yeux ont disparu. Voici quels sont les pouvoirs de chaque œil :
+- Œil de l'esprit : Cet œil protège contre les attaques mentales, telles que Charme, Émotion et Terreur. Il peut être dépensé pour lancer le sort de magicien de premier niveau Charme-personne (durée d'un tour, jet de sauvegarde contre les sorts pour annuler).
+- Œil de l'épée : Cet œil détourne la première attaque physique infligeant des dégâts au personnage. L'œil peut également être dépensé pour jeter le sort de magicien de premier niveau Projectile magique, créant un projectile tous les deux niveaux d'expérience après le premier (5 projectiles maximum) qui infligent 1d4 +1 dégâts magiques.
+- Œil du mage : Cet œil absorbe une attaque de type feu, électricité, froid ou acide. Il peut également être dépensé pour jeter le sort de magicien de troisième niveau Éclair, qui inflige 1d6 dégâts électriques par niveau (10d6 maximum) à toutes les créatures se trouvant sur son chemin.
+- Œil du venin : Cet œil bloque une attaque ou un sort pouvant empoisonner le personnage. Il peut à la place être dépensé pour empoisonner une créature (20 points de dégâts en 20 secondes, jet de sauvegarde contre le poison pour annuler).
+- Œil de l'âme : Cet œil annule un sort causant une mort instantanée (Sort de mort, Doigt de mort, Mot de pouvoir : mort, Mise à mort ou Destruction). Il peut également être transformé en un Rayon débilitant, similaire au sort de magicien de deuxième niveau, qui abaisse la force de la cible à 5 (jet de sauvegarde contre les sorts pour annuler).
+- Œil de la résistance : Cet œil bloque une attaque étourdissante, assourdissante, aveuglante ou de type silence. Il peut également être dépensé pour lancer le sort de magicien de quatrième niveau Cri, qui inflige 4d6 dégâts magiques et assourdit les créatures prises dans un cône de 10,5 mètres (jet de sauvegarde contre les sorts pour diviser les dégâts par deux et annuler la surdité).
+- Œil de la pierre : Cet œil protège le personnage contre une seule attaque pétrifiante. Il peut également être dépensé pour lancer le sort de magicien de troisième niveau Immobilisation des personnes, qui immobilise des créatures humanoïdes pendant un round par niveau (jet de sauvegarde contre les sorts pour annuler).~
+@21468 = ~Cri
+(Évocation)
+
+Niveau : 4
+Portée : personnelle
+Durée : instantanée
+Temps d'incantation : 1
+Zone d'effet : cône de 10,5 mètres de long et de 15 degrés d'angle
+Jet de sauvegarde : demi-dégâts
+
+Ce sort confère un pouvoir vocal terrifiant au personnage, lequel peut laisser fuser un cri à déchirer les tympans affectant un cône de 10,5 mètres de long pour un angle de 15 degrés. Toute créature prise dans la zone d'effet perd 4d6 points de vie et se retrouve assourdie pendant 2d6 rounds. Un jet de sauvegarde réussi contre les sorts annule la surdité et réduit les dégâts de moitié.~
+@21469 = ~Suffocation
+(Transmutation)
+
+Niveau : 7
+Portée : champ visuel du lanceur
+Durée : 4 rounds
+Temps d'incantation : 7
+Zone d'effet : 4 mètres de rayon
+Jet de sauvegarde : demi-dégâts
+
+Ce sort vide les poumons de toutes les créatures se trouvant dans la zone d'effet. Les êtres qui ne respirent pas sont immunisés contre cette attaque. Les autres subissent les effets suivants : -4 à la CA, -4 à l'attaque, -6 en Dextérité, une attaque de moins par round, vitesse de déplacement réduite de moitié, et 4d8 points de dégâts par round. Un jet de sauvegarde réussi annule les effets sauf 2d8 points de dégâts pour le round en cours. Les effets se dissipent lentement quand la cible quitte la zone d'effet, mais un round est parfois nécessaire avant de trouver son second souffle.~
+@21472 = ~Tornade
+(Évocation)
+
+Niveau : 6
+Sphère : Élémentaire (Air)
+Portée : champ visuel du lanceur
+Durée : spéciale
+Temps d'incantation : 9
+Zone d'effet : spéciale
+Jet de sauvegarde : spécial
+
+Ce sort génère un petit tourbillon à proximité du personnage, lequel peut l'envoyer en n'importe quel point de son champ de vision. Une fois que le tourbillon atteint sa destination, le prêtre peut cesser de le contrôler et le tourbillon se déplace alors au hasard, affectant toutes les créatures qu'il touche. Le personnage est immunisé contre l'effet du sort, de même que les élémentaires et les créatures énormes ou plus. Toute autre créature prise dans le tourbillon subit 2d8 points de dégâts contondant et 2d8 points de dégâts tranchants. Elle doit également réussir un jet de sauvegarde contre les souffles pour ne pas être étourdie pendant 2 rounds. Les créatures de 2 DV ou moins sont automatiquement tuées par ce sort. Le tourbillon peut affecter un maximum de 8 cibles, après quoi il se dissipe.~
+@21474 = ~Brume d'Eldath
+(Évocation)
+
+Niveau : 7
+Sphère : Élémentaire
+Portée : champ visuel du lanceur
+Durée : 1 round
+Temps d'incantation : 9
+Zone d'effet : 4 mètres de rayon
+Jet de sauvegarde : aucun
+
+Une brume bleutée parée de reflets d'argent baigne la zone d'effet. Elle soigne toutes les maladies, vient à bout de tous les empoisonnements et rend 25 points de vie à chaque créature qu'elle effleure.~
+@21478 = ~Contagion
+(Nécromancie)
+
+Niveau : 3
+Sphère : Guérison
+Portée : toucher
+Durée : 8 heures
+Temps d'incantation : 9
+Zone d'effet : 1 créature
+Jet de sauvegarde : annule
+
+La créature touchée par le prêtre contracte une maladie qui lui fait perdre 5d4 points de Force si elle rate son jet de sauvegarde contre les sorts. Ce sort ne peut être lancé par les personnages d'alignement bon.~
+@21608 = ~Poing de fer~
+@21646 = ~Entouré d'une aura argentée (-2 à la CA)~
+@21648 = ~L'Œil de la pierre bloque un effet magique et se dissipe.~
+@21649 = ~L'Œil de la résistance bloque un effet magique et se dissipe.~
+@21650 = ~L'Œil de l'âme bloque un effet magique et se dissipe.~
+@21651 = ~L'Œil du venin bloque un effet magique et se dissipe.~
+@21652 = ~L'Œil du mage bloque un effet magique et se dissipe.~
+@21653 = ~L'Œil de l'épée bloque un effet magique et se dissipe.~
+@21654 = ~L'Œil de l'esprit bloque un effet magique et se dissipe.~
+@22629 = ~Très bien. Nous allons vous accompagner.~
+@23357 = ~Téléportation sans erreur~
+@24061 = ~Très bien.~
+@24245 = ~Sphère acide
+(Conjuration)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : spéciale
+Temps d'incantation : 4
+Zone d'effet : rayon de 3 mètres
+Jet de sauvegarde : spécial
+
+Cette incantation fait apparaître une sphère d'acide vert émeraude, que le personnage peut lancer sur la cible de son choix. La sphère explose et inonde d'acide la créature choisie. Celle-ci perd 1d4 points de vie par niveau du magicien, jusqu'à un maximum de 12d4. Une fois les premiers dégâts encaissés, la victime doit réussir un jet de sauvegarde contre les sorts si elle ne veut pas en subir davantage. En cas d'échec, l'acide continue de la ronger round après round, les dégâts diminuant de deux dés par round. Par exemple, un magicien de niveau 8 inflige 8d4 points de dégâts grâce à ce sort. Si la victime rate son jet de sauvegarde, elle perd 6d4 points de vie lors du deuxième round, 4d4 pendant le troisième, et 2d4 au cours du quatrième. À chaque round, elle a droit à un nouveau jet de sauvegarde contre les sorts ; dès qu'elle en réussit un, les dégâts s'arrêtent.
+L'acide asperge toutes les créatures situées à moins de 1,50 mètre de la cible. Toutes doivent réussir un jet de sauvegarde contre la pétrification/métamorphose si elles ne veulent pas subir 1d4 points de dégâts par cinq niveaux du lanceur. Ces dégâts d'aspersion ne sont pas continus.~
+@24246 = ~Projectiles de force de Mordenkainen
+(Évocation)
+
+Niveau : 4
+Portée : champ visuel du lanceur
+Durée : instantanée
+Temps d'incantation : 4
+Zone d'effet : 1,5 mètres de rayon
+Jet de sauvegarde : spécial
+
+Ce sort fait apparaître un petit globe d'énergie magique filant de la main tendue du mage pour aller frapper à coup sûr la cible désignée. Le personnage crée un projectile au niveau 7, plus un autre tous les trois niveaux supplémentaires (deux au niveau 10, trois au niveau 13, quatre au niveau 16, et ainsi de suite jusqu'à un maximum de sept au niveau 25). Chaque projectile cause 2d4 points de dégâts, puis explose, la détonation infligeant 1 point de dégâts par niveau du magicien dans un rayon de 1,50 mètre. Par exemple, un mage de niveau 12 fait apparaître deux projectiles de force, infligeant chacun 2d4+12 points de dégâts. Les créatures touchées ont droit à un jet de sauvegarde contre les sorts pour éviter les dégâts de l'explosion (elles subissent automatiquement les 2d4 points dus au projectile lui-même). Le sort Bouclier protège totalement contre les projectiles.~
+@24247 = ~Vigilance contre les morts-vivants
+(Nécromancie)
+
+Niveau : 5
+Sphère : Glyphes
+Portée : personnelle
+Durée : 1 tour
+Temps d'incantation : 7
+Zone d'effet : 6 mètres de rayon
+Jet de sauvegarde : aucun
+
+Ce sort amplifie l'influence que le prêtre a sur les morts-vivants, mais il est lié à une zone statique. Tout mort-vivant pénétrant dans la zone d'effet est automatiquement affecté comme si le prêtre venait d'essayer de le repousser. En cas d'échec, le mort-vivant est immunisé contre le sort, sauf s'il quitte la zone d'effet pour y revenir par la suite.~
+@24248 = ~Endurance infaillible
+(Nécromancie)
+
+Niveau : 4
+Sphère : Nécromancie
+Portée : toucher
+Durée : instantanée
+Temps d'incantation : 9
+Zone d'effet : 1 créature
+Jet de sauvegarde : aucun
+
+Ce sort permet à la créature touchée de recouvrer les forces perdues au cours des 36 dernières heures (par une succession d'efforts physiques). Notez qu'il n'est pas forcément suffisant pour sortir d'un état fatigué.~
+@24250 = ~Nuage de pestilence
+(Transmutation)
+
+Niveau : 4
+Sphère : Combat, Élémentaire (Air)
+Portée : champ visuel du lanceur
+Durée : 4 rounds
+Temps d'incantation : 7
+Zone d'effet : 7,5 mètres de rayon
+Jet de sauvegarde : annule
+
+Ce sort transforme l'air en brume gris-vert à 7,5 mètres à la ronde. Le personnage est immunisé contre l'effet des vapeurs, de même que les créatures qui ne respirent pas. Quant aux autres, elles perdent la vue, 3 points de Dextérité et 3 points de vie par round. Ces effets durent 1 tour. Nuage de pestilence ne peut être lancé que par les personnages mauvais.~
+@24252 = ~Vague destructrice
+(Évocation)
+
+Niveau : 4
+Sphère : Élémentaire (Eau)
+Portée : 30 mètres
+Durée : instantanée
+Temps d'incantation : 1 round
+Zone d'effet : spéciale
+Jet de sauvegarde : spécial
+
+Le sort appelle une vague d'eau qui se dirige dans la direction déterminée par le personnage, occasionnant de terribles ravages sur son passage. Toute créature touchée subit 4d10 points de dégâts contondants et a 25 % de chances de se retrouver étourdie pour 2 rounds, ainsi que 5 % de chances de perdre connaissance. En cas de jet de sauvegarde réussi contre les souffles, les dégâts sont réduits de moitié et il n'y a aucun risque d'étourdissement ou de perte de connaissance.~
+@24253 = ~Projection d'épines
+(Transmutation)
+
+Niveau : 4
+Sphère : Flore
+Portée : 9 mètres
+Durée : instantanée
+Temps d'incantation : 3
+Zone d'effet : cône de 9 mètres de long et de 90 degrés d'angle
+Jet de sauvegarde : demi-dégâts
+
+Ce sort fait jaillir un grand nombre d'épines, pics, barbillons et pointes de la main tendue du personnage. Les projectiles couvrent une zone conique de 9 mètres de long et de 90 degrés d'angle. Ils infligent 2d10 points de dégâts perforants à toutes les créatures touchées, ou 1d10 en cas de jet de sauvegarde réussi contre la mort magique.~
+@24255 = ~Protection anti-tempête
+(Abjuration)
+
+Niveau : 3
+Sphère : Climat, Protection
+Portée : personnelle
+Durée : 1 tour
+Temps d'incantation : 6
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Le personnage se retrouve entouré d'une sphère d'énergie noire qui se déplace avec lui. Toutes les attaques de type feu, froid ou électricité lui infligent automatiquement des dégâts réduits de moitié.~
+@24294 = ~Je ferai ce que vous me demandez.~
+@24381 = ~Rage sanguinaire~
+@24770 = ~Golem de glace~
+@24772 = ~Golem de glace~
+@24793 = ~Flèches à Gobelin
+Ces flèches sont moins connues pour les dégâts qu'elles infligent que pour les possibilités de convocation qu'elles offrent à leur utilisateur. Créées par un inventeur gnome au cœur noir, Turbar Talinbar, les flèches à gobelin se retrouvent généralement dans le carquois des elfes et petites-gens aimant semer le chaos et la confusion. Plusieurs compagnies d'aventuriers aiment s'en servir avant de se ruer au combat.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- en cas de coup au but, un gobelin apparaît à côté de la cible pendant 17 rounds
+
+TAC0 : +1
+Dégâts : 1d6 +1 (projectile)
+Arme à distance : arc
+
+Poids : 0~
+@24794 = ~Flèches à gobelin +1~
+@24810 = ~Rage sanguinaire
+(Transmutation)
+
+Niveau : 4
+Sphère : Combat
+Portée : champ visuel du lanceur
+Durée : 2 tours
+Temps d'incantation : 7
+Zone d'effet : 1 créature
+Jet de sauvegarde : aucun
+
+Ce sort ne fonctionne que sur les personnages et leurs alliés. Le sujet est aussitôt pris d'une rage meurtrière : il s'acharne sur la créature la plus proche jusqu'à la tuer, puis passe à la suivante. Sous l'emprise de ce sort, le sujet est immunisé contre l'étourdissement et les effets de type Charme, Sommeil, Terreur, Immobilisation, Confusion, Émotion et Symbole. De plus, il gagne +2 à l'attaque, +3 aux dégâts, +2 en force, 10 points de vie et un bonus à sa vitesse de déplacement. Cela étant, le sort présente également certains inconvénients : les points de vie du sujet sont masqués jusqu'au terme de la durée indiquée, et il ne peut bénéficier d'aucun effet permettant de récupérer des points de vie. Quand le sort s'achève, le personnage se sent pris d'une grande fatigue et tombe à 3 de Force pendant 2 tours. Les créatures d'alignement loyal ne peuvent ni avoir recours à Rage sanguinaire, ni être affecté par ce sort.~
+@24812 = ~Lance de destruction
+(Évocation)
+
+Niveau : 3
+Portée : 30 mètres
+Durée : instantanée
+Temps d'incantation : 3
+Zone d'effet : spéciale
+Jet de sauvegarde : demi-dégâts
+
+Ce sort fait apparaître une lance de force partant du doigt du personnage et pouvant être lancée jusqu'à 30 mètres. Toute créature touchée par le rayon d'énergie subit 5d4 points de dégâts, +2 par niveau du magicien (jusqu'à un maximum de +30). Un jet de sauvegarde réussi contre les sorts réduit les dégâts de moitié.~
+@24944 = ~"Mes sœurs, pas si vite !"~
+@24945 = ~"Que faites-vous dans ma cuisine ? Gardes !"~
+@25321 = ~Dards d'os~
+@25332 = ~Lance de destruction~
+@25340 = ~Projectiles de force de Mordenkainen~
+@25343 = ~Cercle d'yeux~
+@25345 = ~Cri~
+@25348 = ~Destruction d'âme~
+@25354 = ~Suffocation~
+@25364 = ~Sphère acide~
+@25784 = ~J'ai besoin de soins ; pouvez-vous m'aider ?~
+@26218 = ~Le Trésor de Hobart~
+@26233 = ~Ce puits en pierre s'enfonce dans l'obscurité.~
+@26250 = ~Voleur mercenaire~
+@26496 = ~Guerrier mercenaire~
+@26497 = ~Voleur mercenaire~
+@26500 = ~Élémentaire d'eau~
+@26504 = ~Élémentaire d'eau~
+@26505 = ~Guerrier mercenaire~
+@26701 = ~Sang de Kossuth~
+@26702 = ~Le Sang de Kossuth
+Kossuth, le dieu du Feu, prend rarement forme physique dans les royaumes mais, quand cela se produit, son arrivée est toujours synonyme de destruction massive. Il fut convoqué en 801 CV par un grand rassemblement de fidèles qui disaient avoir besoin de lui pour défendre un temple côtier menacé par une pieuvre monstrueuse. Kossuth apparut au cœur d'un terrifiant brasier et affronta le monstre surnaturel. L'avatar triompha de la pieuvre, mais cette dernière parvint à affaiblir l'essence de Kossuth. Le feu divin remonta le long du corps de la créature et vint se loger dans un de ses yeux, le transformant instantanément en une étrange sphère noire éclairée de l'intérieur par une flamme permanente.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- les temps d'incantation sont réduits de 2
+- les dégâts de type feu infligés par le personnage augmentent de 20%
+
+Poids : 0~
+@26847 = ~Chacal Majeur~
+@26876 = ~Souffre de blessures saignantes~
+@26877 = ~Blessures saignantes~
+@26895 = ~Chacal Majeur~
+@26896 = ~Seigneur Minotaure~
+@26897 = ~Seigneur Minotaure~
+@26898 = ~Ancien Minotaure~
+@26899 = ~Ancien Minotaure~
+@26900 = ~Sur cette pierre a été gravée une rune qui symbolise généralement les Cieux.~
+@26901 = ~Sur cette pierre a été gravée une rune qui symbolise généralement la Nuit.~
+@26902 = ~Sur cette pierre a été gravée une rune qui symbolise généralement la Terre.~
+@26903 = ~Sur cette pierre a été gravée une rune qui symbolise généralement le Jour.~
+@26904 = ~Sur cette pierre a été gravée une rune qui symbolise généralement la Mer.~
+@26907 = ~Chaman Chacal~
+@26908 = ~Chaman Chacal~
+@26909 = ~Ce petit livre relié en cuir ne contient qu'un unique texte :
+Sous les Cieux, sur la Terre et la Mer.
+Le parcours du Soleil, le Jour devient Nuit,
+Les saisons, ce que nous connaissons altèrent.
+Les cinq pierres la porte à la vie ramènent.
+Le passage est libre, à nos foyers il mène.~
+@26910 = ~Guerrier Chacal~
+@26911 = ~Guerrier Chacal~
+@26912 = ~Rikasha~
+@26913 = ~Rikasha~
+@26914 = ~Conjurateur~
+@26915 = ~Conjurateur~
+@26916 = ~Bossu~
+@26917 = ~Bossu~
+@26918 = ~Peste Pétrifiante~
+@26920 = ~Les saisons, ce que nous connaissons altèrent.~
+@26922 = ~Peste Pétrifiante~
+@26923 = ~Ours-garou~
+@26924 = ~Ours-garou~
+@26925 = ~Chacal~
+@26926 = ~Chacal~
+@26927 = ~Commandant de la Meute Chacal~
+@26928 = ~Commandant de la Meute Chacal~
+@26929 = ~Harpie~
+@26930 = ~Harpie~
+@26931 = ~Harpie Abominable~
+@26932 = ~Harpie Abominable~
+@26933 = ~Harpie Diabolique~
+@26934 = ~Harpie Diabolique~
+@26935 = ~Une force inconnue semble palpiter à l'intérieur de cette pierre. En vous approchant, vous sentez vos cheveux se dresser sur votre tête.~
+@26936 = ~Cri de Harpie~
+@26937 = ~Reine Harpie~
+@26938 = ~Hobart Piévelu~
+@26939 = ~Regard de Chacal-Garou~
+@26940 = ~Ah, vous voilà enfin ! Je commençais à me demander si je ne m'étais pas trompé d'endroit. Enchanté de faire votre connaissance. Je m'appelle Piévelu, Hobart Piévelu. Vous devez être les héros légendaires de la Porte de Baldur, si je ne m'abuse ?~
+@26941 = ~J'ai fait un long voyage pour vous trouver. Si vous êtes vraiment des héros, je suis certain que vous serez intéressés par ma proposition. J'ai une mission dangereuse à vous confier, mais qui pourrait se révéler très gratifiante. C'est le genre de défis qui intéresse les héros, il me semble. Qu'en pensez-vous ?~
+@26942 = ~Peut-être ? Peut-être ? Mais voyons, soyez raisonnables. C'est le genre de proposition qui ne se refuse pas... Alors, qu'en dites-vous ?~
+@26943 = ~Oh vraiment ? Alors si je comprends bien, vous n'êtes pas les mythiques sauveurs de la Porte de Baldur ? Ceux qui ont tué Sarevok et ont empêché une guerre avec l'Amn ? Hmm... Il faut croire que je deviens sénile avec l'âge. J'aurais pourtant juré... Mais je n'ai plus toute ma tête, sans doute...~
+@26944 = ~Soit, tant pis. Ah, si jamais vous veniez à rencontrer de *vrais* héros, faites-le moi savoir. J'aurai une tâche à leur confier, puisque vous n'êtes pas en mesure de m'aider.~
+@26945 = ~Pff ! Vous n'êtes que des bons à rien, des sacs à vinasse. Vous ne m'impressionnez pas le moins du monde et sachez que je suis à la recherche de personnes d'exception.~
+@26946 = ~Il y a un château en ruines, non loin d'ici. Certaines rumeurs prétendent qu'un trésor inestimable y est conservé, protégé par d'étranges gardiens qui parcourent des couloirs infestés de pièges diaboliques. De tous ceux qui y sont entrés... comment dire... aucun n'en est revenu...~
+@26947 = ~Vous pensez être très futés, n'est-ce pas ? Je vais vous dire pourquoi on entend aussi souvent ce genre d'histoires : c'est parce qu'elles sont vraies ! Il paraît même que le château... heu... *attire* les aventuriers, d'une façon inexplicable. Personne n'en est jamais revenu.~
+@26948 = ~Je ne peux rien vous dire de plus, mais je peux toutefois vous indiquer le chemin. Écoutez, venez avec moi, vous pourrez constater par vous-même. Et qui sait, richesses et honneurs vous y attendent peut-être ! Sans compter qu'un barde pourrait même composer une ballade pour relater votre périple ! Qu'en pensez-vous ?~
+@26949 = ~Ah ! Je vois que mon offre vous intrigue. En ce qui me concerne, seul l'or m'intéresse. Un pauvre hère de mon espèce vit fort bien des choses laissées par les aventuriers. J'espère que cela ne vous dérange pas au moins ?~
+@26950 = ~*soupirs* Je perds mon temps. Trouvez-moi de vrais héros et je vous donnerai une pièce pour vous dédommager.~
+@26951 = ~Parfait ! Je vais vous y emmener. Laissez-moi juste un peu de temps. Alors, comment est-ce que ça marche ? Est-ce cette rune qui...~
+@26952 = ~Tiens, vous êtes de retour ? Avez-vous trouvé quelqu'un qui soit intéressé par ma proposition ou êtes-vous simplement venus pour narguer un vieil homme dans mon genre ?~
+@26953 = ~Ah, vous voyez, je vous avais bien dit que ce n'était pas loin. Hé hé... Euh bon, bien... Que Tymora vous protège, et tout ce genre de choses, hein !~
+@26954 = ~Nous sommes à Anauroch, et c'est un désert. Bon, voilà, j'espère que vous êtes satisfaits. Maintenant, à vous de me prouver votre courage. Je dois ménager ma vieille carcasse.~
+@26955 = ~*soupirs* C'est vous qui vouliez venir n'est-ce pas ? Et vous avez accepté ma proposition, non ? Et bien, vous y êtes. Amusez-vous bien.~
+@26956 = ~Peuh ! Vous n'êtes qu'une bande de bons à rien.~
+@26960 = ~C'est bien nous.~
+@26961 = ~Un paladin ne tire aucune gloire de ce qu'il a fait. Il laisse à d'autres le titre de "héros". Ce que j'ai fait, je l'ai fait par foi, uniquement.~
+@26962 = ~Je n'ai rien d'un héros, petit homme. Cependant, si tu cherches un puissant aventurier, je suis ton homme.~ ~Je n'ai rien d'une héroïne, petit homme. Cependant, si tu cherches une puissante aventurière, je suis à ton service.~
+@26963 = ~Je n'ai rien d'un héros, mon frère. Cependant, si tu cherches un puissant aventurier, je suis ton homme.~ ~Je n'ai rien d'une héroïne, mon frère. Cependant, si tu cherches une puissante aventurière, je suis à ton service.~
+@26964 = ~Je suis un héros qui chante la vie des héros. Je suis <GABBER>, barde et aventurier... assez célèbre, au demeurant.~ ~Je suis une héroïne qui chante la vie des héros. Je suis <GABBER>, barde et aventurière... assez célèbre, au demeurant.~
+@26965 = ~Cela se peut.~
+@26966 = ~Désolé, vous avez dû nous prendre pour d'autres personnes.~ ~Désolée, vous avez dû nous prendre pour d'autres personnes.~
+@26967 = ~Bien sûr. À quoi pensiez-vous ?~
+@26968 = ~Je regrette, mais nous n'avons pas le temps pour le moment. Une autre fois peut-être.~
+@26969 = ~Je regrette, cela ne nous intéresse pas.~
+@26970 = ~Fort bien. Oui, nous sommes bien les héros de la Porte de Baldur.~
+@26972 = ~Nous sommes ceux dont vous parlez.~
+@26973 = ~Je regrette, mon ami. Adieu.~
+@26974 = ~Attendez... Dites-nous en plus.~
+@26976 = ~Pas de problème, nous sommes des héros. Pourquoi est-ce si important à vos yeux ?~
+@26977 = ~Je regrette, mais nous ne sommes pas les héros que vous cherchez.~
+@26978 = ~*soupir* Quelle originalité ! J'imagine qu'en plus il est hanté ?~
+@26979 = ~Où se trouve ce château ?~
+@26980 = ~Pourquoi avez-vous besoin de NOUS ?~
+@26992 = ~Hobart, vous ne nous avez pas expliqué la nature de ce... défi.~
+@26993 = ~Très bien, nous acceptons de vous suivre.~
+@26994 = ~Excusez-nous pour le dérangement, Hobart. Adieu.~
+@26995 = ~Quoi ? Mais où sommes-nous ?~
+@26996 = ~Qu'avez-vous fait, Hobart ?~
+@26999 = ~Attendez...~
+@27009 = ~Limon olivâtre~
+@27010 = ~Zombie limoneux~
+@27011 = ~Cryptique~
+@27012 = ~Matrone Wiverne~
+@27014 = ~Reine Harpie~
+@27015 = ~Limon olivâtre~
+@27016 = ~Zombie limoneux~
+@27017 = ~Cryptique~
+@27018 = ~Matrone Wiverne~
+@27020 = ~Harald~
+@27021 = ~Courtisan spectral~
+@27024 = ~Cuisinier spectral~
+@27027 = ~Harald~
+@27028 = ~Cuisinier spectral~
+@27029 = ~Seigneur Maluradek~
+@27030 = ~Libère de la vapeur gélatineuse~
+@27031 = ~"Pas tuer ! Pas tuer !"~
+@27032 = ~"Meurs, vermine !"~
+@27033 = ~Cette partie de la tour s'est effondrée, laissant un grand trou dans le sol.~
+@27034 = ~Hache du seigneur minotaure +4~
+@27035 = ~La Hache du Seigneur Minotaure
+Cette arme magnifique a appartenu au seigneur Minotaure qui vivait dans les catacombes du Maître des Leurres. Elle se compose d'une lame à double tranchant montée sur un robuste manche en bois de chêne. Parfaitement équilibrée, elle peut être maniée à une main. Cette hache est magique et donne à celui qui l'utilise un bonus de +4 au toucher et aux dégâts. Un toucher réussi a également 25% de chance d'étourdir un adversaire pendant 1d4 rounds.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 25% de chances d'étourdir l'adversaire pendant 1d4 rounds à chaque coup au but
+
+TAC0 : +4
+Dégâts : 1d12 +4 (tranchant)
+Facteur de vitesse : 8
+Type de compétence : hache
+Type : arme à une main
+Nécessite : 10 en force
+
+Poids : 10~
+@27036 = ~L'Enfer de Baine
+Cette superbe épée large est de facture assez spéciale : la lame a été réalisée dans un métal noir opaque d'origine inconnu, mais le tranchant semble être d'argent pur. Des runes d'un rouge flamboyant ont été gravées sur toute la longueur de la lame. La poignée et la garde ont été sculptées dans un rubis de belle taille. Cette arme est redoutable contre les créatures des plans inférieurs. Elle inflige des dégâts doublés aux Baatezu et aux Tanar'ri et donne à celui qui l'utilise un bonus +4 au toucher et aux dégâts. De plus, cette arme protège également du feu.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- résistance au feu : +20%
+
+TAC0 : +4 contre les Baatezu et les Tanar'ri
+Dégâts : 1d8, 2d8 +4 contre les Baatezu et les Tanar'ri
+Type de dégâts : tranchant
+Facteur de vitesse : 5
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en force
+
+Poids : 5~
+@27037 = ~Enfer de Baine~
+@27038 = ~Hum. D'autres pions pris au jeu du Fou, à ce que je vois... En quoi puis-je vous être utile ?~
+@27039 = ~Quel est votre nom, déjà ?~
+@27040 = ~Le jeu du Fou ? Mais de quoi parlez-vous ?~
+@27041 = ~Je voudrais sortir de ces cavernes. Savez-vous comment faire ?~
+@27043 = ~Je suis fatigué et je cherche un lieu où me reposer. Puis-je rester ici ?~ ~Je suis fatiguée et je cherche un lieu où me reposer. Puis-je rester ici ?~
+@27045 = ~Je suis Rikasha, guerrier Chacal... à la retraite.~
+@27046 = ~Un guerrier à la retraite ?~
+@27047 = ~Les Épreuves du Maître des Leurres
+
+Nous avons rencontré un guerrier Chacal dans les catacombes, du nom de Rikasha. Il avait l'air réellement amical et a répondu à toutes les questions que nous lui avons posées.~
+@27048 = ~Et oui, avec l'âge viennent la raison et la lassitude de la violence et des effusions de sang. J'aimerais connaître la paix au crépuscule de ma vie.~
+@27049 = ~Qui sont ces Chacals dont vous avez parlé ?~
+@27050 = ~Mon peuple s'est donné ce nom de "Chacal". Chacals de naissance, nous pouvons plus tard prendre la forme d'humains ou de guerriers. Vous remarquerez que j'ai pris ma forme de guerrier, pour l'heure.~
+@27051 = ~J'ai entendu parler de votre race. On vous appelle les chacals-garous, n'est-ce pas ?~
+@27052 = ~Vous êtes une sorte de lycanthrope ?~
+@27053 = ~Nous préférons le terme de "Chacal". Nous ne sommes pas des créatures-garous.~
+@27054 = ~Alors, vous pourriez vous changer en humain ou en chacal, là, maintenant ?~
+@27055 = ~Non. La lycanthropie est une maladie qui ne laisse pas le choix à la personne qui en est atteinte. Nous ne sommes pas malades, ni infectés. Notre transformation est naturelle.~
+@27058 = ~Je suis vieux et fatigué. Le processus de transformation m'est douloureux et difficile. J'ai décidé de conserver la forme que j'ai prise actuellement.~
+@27060 = ~Lorsque nous nous sommes rencontrés pour la première fois, vous avez mentionné un jeu du Fou. De quoi vouliez-vous parler ?~
+@27064 = ~Je pense que vous savez parfaitement de quoi je veux parler. Le petit homme ne vous a-t-il pas attiré dans cet endroit ? Ne pensez-vous pas être à la merci de son maître, désormais ?~
+@27065 = ~Supposons que je ne sache pas de quoi vous voulez parler. Dites-m'en plus.~
+@27067 = ~Fort bien... Ce petit homme, Hobart, attire les aventuriers ici en leur promettant richesses et gloire. En fait, les pauvres diables se retrouvent piégés et à la merci du maître du donjon.~
+@27069 = ~Et c'est ici que tout commence. Le maître vous confie une tâche que vous ne pouvez accomplir qu'en pénétrant au plus profond de sa demeure. Mais dans quel but, je l'ignore...~
+@27070 = ~Que pouvez-vous me dire au sujet de Hobart ?~
+@27071 = ~Les Épreuves du Maître des Leurres
+
+Nous avons demandé à Rikasha son avis sur le petit-homme, Hobart. Il nous a dit que Hobart est le serviteur du Maître des Leurres et qu'on ne pouvait pas lui faire confiance.~
+@27073 = ~Il est venu ici il y a bien longtemps de cela. Il a longtemps cherché un moyen de sortir, qu'il n'a jamais trouvé. Il est alors devenu le laquais du maître des lieux et profite désormais d'une certaine forme de liberté. À votre place, je ne ferais pas confiance au petit homme.~
+@27074 = ~Que savez-vous sur le maître ?~
+@27076 = ~Je ne sais qu'une chose : son pouvoir ici est illimité. Nous sommes tous ses prisonniers, ses esclaves ou ses serviteurs. Tout dépend de votre façon de voir les choses.~
+@27077 = ~Les Épreuves du Maître des Leurres
+
+Nous avons interrogé Rikasha à propos du Maître des Leurres, mais il n'avait aucune information intéressante à nous fournir. Il nous a seulement dit que le Maître des Leurres est le maître absolu ici, et que toutes les autres créatures sont ses esclaves.~
+@27082 = ~Et vous, Rikasha, qu'en pensez-vous ?~
+@27083 = ~J'étais son serviteur, plus jeune, et cela me semblait idéal. Puis j'ai compris que j'étais son esclave, et cela me plaisait déjà beaucoup moins. Je sais désormais que je suis son prisonnier, et il ne me reste que les yeux pour pleurer.~
+@27088 = ~Ne peut-on pas sortir de ces cavernes ?~
+@27089 = ~Peut-être... Si on parvenait à ouvrir le portail...~
+@27090 = ~Un portail ? Ici ? Comment est-ce possible ?~
+@27091 = ~Il fut un temps où mon peuple vivait heureux à la surface de la terre. Puis une tempête de feu a éclaté et la terre s'est fendue. Notre cité a été ravagée et une partie a été enfouie. Ceux qui ont survécu se sont retrouvés piégés dans cet endroit.~
+@27095 = ~Nous avons exploré les moindres recoins de ces cavernes, mais aucun chemin ne mène vers la surface. Nous avons essayé de creuser un tunnel pour sortir, mais les rochers à la surface sont trop compacts pour être cassés. C'est par désespoir que nous avons décidé de construire un portail.~
+@27100 = ~Ce ne devait être qu'un simple appareil destiné à nous permettre d'atteindre la surface. Avec une si courte portée, la consommation d'énergie devait être minime. Cela nous a pris des années, mais nous y sommes arrivés. C'est malheureusement ce qui a causé notre perte...~
+@27101 = ~Oh, et que s'est-il passé ?~
+@27102 = ~Pendant notre absence, les humains ont colonisé nos terres et construit le donjon qui est au-dessus. Le portail s'est ouvert sur le sanctuaire intérieur. Lorsque mon peuple s'est aventuré à l'extérieur, les humains nous ont pris pour des envahisseurs. Nous les avons combattus, mais nous avons ensuite été repoussés jusqu'au portail.~
+@27103 = ~Oh, je vois. Et ensuite ?~
+@27104 = ~Les humains nous ont pourchassés, alors que nous fuyions, et ils nous ont pratiquement tous tués. Nous n'étions alors plus une menace, mais ils démontèrent tout de même le portail...~
+@27105 = ~Quoi ? Ils ont démonté le portail ?~
+@27106 = ~Oui, mais écoutez ce qui suit... Des années plus tard, le maître du donjon est arrivé. Il a étudié le portail pendant un temps et a réussi à le réactiver. Il en a ensuite ôté les éléments indispensables qu'il a disséminés dans les cavernes...~
+@27108 = ~Et savez-vous quels sont ces éléments ?~
+@27109 = ~Je suis navré de ne pouvoir vous donner une réponse positive. Ces événements se sont déroulés bien avant que je naisse... Un des chamans de mon peuple en sait peut-être davantage, mais il ne dévoilera certainement pas un tel secret.~
+@27110 = ~Et où pourrais-je trouver un chaman ?~
+@27112 = ~Rebroussez chemin et inspectez la pièce où se trouvent les pierres dressées. C'est là que vous les trouverez. Soyez cependant sur vos gardes, car ils ne vous accueilleront pas comme je l'ai fait.~
+@27113 = ~Une dernière question, Rikasha. Où peut-on trouver le portail ?~
+@27114 = ~Nous avons demandé à Rikasha s'il connaissait un moyen de sortir des catacombes. Il nous a parlé d'un portail situé dans un temple au bord d'un lac. Le portail permet d'accéder au donjon, qui est certainement le sanctuaire intérieur. Malheureusement, le Maître des Leurres a mis le portail hors d'état en retirant des éléments indispensables et en les disséminant dans les catacombes. Nous devons trouver quels sont ces éléments. Rikasha pense qu'un chaman de son peuple pourrait connaître leurs emplacements mais ne serait pas disposé à nous les révéler. Les chamans vivent dans une pièce où se trouvent des pierres dressées. Peut-être pourrons-nous y trouver un indice.~
+@27115 = ~Prenez ce passage et rejoignez le temple du lac. Le portail se trouve à cet endroit.~
+@27117 = ~Si c'est ce que vous voulez, alors libre à vous de le faire. Je vais m'assurer que vous ne soyez pas dérangés.~
+@27118 = ~Je vous suis si reconnaissant.~ ~Je vous suis si reconnaissante.~
+@27119 = ~Rikasha vous salue de nouveau. En quoi puis-je vous être utile ?~
+@27121 = ~La dernière fois que nous nous sommes rencontrés, vous avez parlé d'un jeu du Fou. Quel est ce jeu ?~
+@27124 = ~Saphir étoilé parfait~
+@27125 = ~Gemme Pierre de soleil parfaite~
+@27126 = ~Diamant parfait~
+@27127 = ~Gemme Etoile d'eau parfaite~
+@27128 = ~Gemme Pierre de lune parfaite~
+@27129 = ~Gemme Larme de ciel imparfaite~
+@27130 = ~Gemme d'Agate de feu imparfaite~
+@27131 = ~Emeraude imparfaite~
+@27132 = ~Perle imparfaite~
+@27133 = ~Gemme Lingot de lune imparfaite~
+@27134 = ~N'avez-vous rien de mieux à faire dans cet endroit que de me déranger ?~
+@27135 = ~Ainsi vous avez rencontré le Maître des Leurres, hein ? Faites attention à lui. Il est encore plus rusé qu'un renard en hiver.~
+@27136 = ~Le Maître des Leurres ? Et bien, je dois avouer que je n'en sais pas plus que vous à son sujet. Je le vois juste flotter du côté de la porte. D'autres aventuriers que vous m'ont communiqué son nom, mais c'est tout ce que je sais.~
+@27137 = ~Allez, on se dépêche. Vous savez, à mon âge, on apprend à ne pas perdre de temps en bavardages.~
+@27138 = ~Ceci ? C'est mon humble demeure, où je me protège du soleil et du sable. J'ai récupéré quelques trésors au fil du temps, mais ce ne sont que des babioles pour la plupart. Ça me passe le temps, si on peut dire.~
+@27139 = ~Euh... tout comme vous, j'en ai entendu parler par une autre personne venue ici naguère. Cela fait longtemps que j'essaie d'atteindre le trésor, mais je suis vieux et fatigué, alors je n'ai pas la force de combattre un fantôme. Vous comprenez ?~
+@27140 = ~Oui, pourquoi pas ! Ce n'est pas comme si ces babioles avaient une quelconque valeur sentimentale à mes yeux. Je vais regarder ce que vous avez.~
+@27141 = ~Hé hé. Étonnant. Vous avez réussi à pénétrer dans le donjon. Laissez-moi vous dire que vous êtes les premiers à l'avoir fait. Peut-être que le Maître des Leurres avait raison à votre... heu... je veux dire, euh... Hé hé.~
+@27142 = ~Euh... je voulais dire que... euh...~
+@27143 = ~S'il vous plaît, je vous en prie, ne m'obligez pas à vous le dire. Il... il pourrait nous entendre. Il va me tuer si je vous en parle. Vous comprenez... il me tuera !~
+@27144 = ~Écoutez, je suis coincé ici, tout comme vous. Je suis désolé de ne pas avoir été honnête avec vous lors de notre rencontre... J'espère que vous ne mourrez pas comme les autres. Oh ! Je crois que j'en ai trop dit. Par pitié, ne me demandez plus rien !~
+@27146 = ~Soit, si vous le prenez ainsi... Je sais qui est le Maître des Leurres. Je ne le sais que trop bien. Je suis son hôte depuis des décennies maintenant. Du moins, je crois que cela fait des dizaines d'années. Je vais tout vous expliquer.~
+@27147 = ~Dans le temps, j'étais un aventurier comme vous. Puis j'ai commencé à prendre du ventre et à perdre mes cheveux. Mes compagnons de route voulaient faire un tour du côté de la Bataille des Ossements, au sud d'Evéreska. Ce qui m'intéressait moi, c'était plutôt un château appelé Maluradek.~
+@27148 = ~Oui, ce même château. Il était autant en ruines qu'il l'est de nos jours. Le désert s'est étendu et a englouti le château il y a un siècle. J'ai réussi à entrer assez facilement. C'est pour en ressortir que j'ai eu des problèmes.~
+@27149 = ~Alors que je cherchais un moyen d'entrer dans le donjon, le Maître des Leurres m'est apparu dans toute sa splendeur fantomatique. Il a parlé de cette façon si envoûtante qui est la sienne, et m'a soumis le "défi des héros".~
+@27150 = ~Ce que j'ai fait ? Je suis parti en courant, sans me retourner. J'ai escaladé le mur extérieur des parapets, à l'Est. Lorsque je me suis retourné pour traverser le désert, je me suis rendu compte que je me trouvais de nouveau dans la cour. Quoi que j'aie essayé de faire, que ce soit escalader, sauter ou creuser un tunnel menant vers l'extérieur du château, je me suis à chaque fois retrouvé dans ce maudit château.~
+@27151 = ~Après de longues journées de labeur sans nourriture, ni eau, j'ai commencé à avoir des visions. Je pense que je me suis évanoui et que j'ai dû commencer à délirer. C'est alors que j'ai revu le Maître des Leurres et il m'a de nouveau mis au défi. Je lui ai dit que je n'étais venu ici que pour trouver un trésor, mais il n'eut aucune pitié pour moi.~
+@27152 = ~Il m'a dit que seuls les vrais héros pouvaient quitter le château et que je n'étais vraiment pas à la hauteur. Il m'a dit ensuite que je devrais le servir si je voulais rester en vie. Il m'a alors donné une bague et m'a dit qu'elle me permettrait de me rendre où je voulais pendant la journée, mais que je reviendrai toujours dans la cour une fois l'aube venue. En retour, je devais trouver des aventuriers susceptibles d'accepter son défi.~
+@27153 = ~Oui. Je donnerais tout l'or du monde pour que cette aventure ne fut qu'un rêve. Lorsque je me suis réveillé, j'ai constaté que je portais cette maudite bague au doigt. Je mourrai si je l'enlève. Je suis son serviteur depuis ce temps-là.~
+@27154 = ~Je suis désolé d'avoir été odieux lors de notre première rencontre. J'essaie de ne pas m'attacher à ceux que j'envoie en ce lieu. Vous comprenez, n'est-ce pas ?~
+@27155 = ~Des centaines d'aventuriers sont venus ici ces dernières années. Mais vous êtes les premiers à pénétrer dans le donjon. *soupirs* J'espère que vous réussirez à lever la malédiction qui pèse sur cet endroit.~
+@27156 = ~Je ne suis pas un lâche, mais je ne suis pas stupide non plus. Je ne sais pas d'où vous venez, mais de là où je viens, même le plus grand des crétins ne serait pas assez fou pour jouer avec les esprits.~
+@27157 = ~Hobart, que savez-vous de cet étrange fantôme qui erre près de la porte Nord ?~
+@27159 = ~Est-ce que je peux jeter un coup d'œil à ces quelques babioles que vous avez trouvées ? Ça vous dirait d'en vendre quelques-unes ?~
+@27161 = ~Comment êtes-vous arrivé ici, Hobart ?~
+@27162 = ~Excusez-nous pour le dérangement, Hobart. Adieu.~
+@27164 = ~Que savez-vous de lui ?~
+@27166 = ~Adieu, Hobart.~
+@27175 = ~En effet. Voudriez-vous vendre certaines de ces babioles ?~
+@27178 = ~Pardon ? Que vous a dit le Maître des Leurres à notre sujet ?~
+@27179 = ~Hobart, vous nous cachez quelque chose ?~
+@27180 = ~Écoutez-moi bien, Hobart, vous avez intérêt à nous dire ce que vous savez ou nous nous verrions dans l'obligation d'avoir recours à la force.~
+@27181 = ~Excusez-moi. Ne vous inquiétez pas, nous ne vous forcerons pas à parler.~
+@27182 = ~Dites-nous au moins ce qui se trame ici.~
+@27183 = ~Hobart, d'un mot je peux déchaîner les enfers. Croyez-vous vraiment que j'aie peur du Maître des Leurres ? Racontez-moi... tout !~
+@27184 = ~Hobart, d'un mot je peux anéantir des villes entières. Croyez-vous vraiment que j'aie peur du Maître des Leurres ? Racontez-moi... tout !~
+@27185 = ~Vous n'avez que deux options, Hobart, me parler ou mourir. C'est aussi simple que ça.~
+@27186 = ~Je comprends bien, Hobart. Est-ce que je peux regarder ce que vous avez à vendre ?~
+@27187 = ~Il m'amuse... Vous allez me dire tout ce que vous savez ou je vous réduis en bouillie !~
+@27188 = ~J'en ai assez entendu. Adieu, Hobart.~
+@27189 = ~Continuez.~
+@27192 = ~Ce château ?~
+@27200 = ~C'est tout ?~
+@27202 = ~Et qu'a-t-il fait ?~
+@27205 = ~Je croyais qu'il s'agissait d'un rêve.~
+@27206 = ~Les Épreuves du Maître des Leurres
+
+Nous avons parlé avec un spectre étrange près de l'entrée du donjon. Il nous a indiqué qu'il n'y avait qu'un seul moyen de sortir en vie de ces ruines. Apparemment, nous devons lui prouver que nous avons l'étoffe des héros. Pour ce faire, le seul indice qu'il ait daigné nous donner est cette curieuse énigme :
+
+Nord, Sud, Est et Ouest, elles se tiennent,
+Les tours. En leur sein, quatre rédempteurs, elles détiennent.
+Nourrissez-les là où les esprits sont terrés,
+Ou restez en ces lieux à jamais nos invités.
+
+La terre se réchauffe car du soleil c'est l'heure,
+Quatre hommes morts étendus que personne ne pleure.
+"Laissez-les !" menace le seigneur fou, enragé.
+Pourtant, par mon œuvre, leurs louanges seront chantées.
+
+Il nous a dit de ne revenir qu'une fois la mission accomplie et qu'alors nous serions autorisés à entrer dans le donjon.~
+@27208 = ~Les Épreuves du Maître des Leurres
+
+Au moment de pénétrer dans le donjon, l'étrange spectre appelé Maître des Leurres est revenu nous visiter. Il semblait vouloir nous raconter une histoire ; toutefois, au lieu de nous la livrer telle quelle, il préfère que nous la découvrions par nous-mêmes. Cette fois encore, le seul indice qu'il nous ait soumis est une énigme :
+
+Pour mieux comprendre cette tragique mélopée,
+À vaincre les gardes princiers vous vous destinez.
+Sous des bras inutiles et des mailles jamais rouillées,
+Sans aucun doute, le clou du cercueil, vous trouverez.
+
+Encore et encore, le soleil toujours est présent,
+Et un homme, sous son œil, la mort attend.
+Son crime ? Que l'œil du paysan, du moins que rien,
+Du déshonneur de son seigneur soit le témoin.~
+@27209 = ~Les Épreuves du Maître des Leurres
+
+Dans les catacombes situées sous le donjon, nous avons rencontré le Maître des Leurres. Cette fois-ci, son défi était plutôt direct : il faut trouver un moyen de sortir du donjon ou abandonner et mourir. Peut-être que sa troisième énigme contient des indices permettant de trouver un moyen de sortir.
+
+Votre hôte fut retenu fort injustement
+Tandis que le seigneur, si empli de colère sans jugement,
+Demanda à son barde de vite composer
+Un bien joli conte qu'à son peuple il a raconté.
+
+Le sort tragique de votre hôte, évitez,
+Pour fuir de cette pièce, votre temps comptez.
+Les molosses des ténèbres sont tapis dans les ombres,
+En l'absence de fuite, votre sort sera bien sombre.
+
+Si d'aventure, nous devions nous revoir,
+Un présent vous offrir, serait notre devoir.
+Que nos ombres soient défaites en combat régulier,
+Et ces lieux maudits, nous ne viendrons plus hanter.~
+@27214 = ~Les Épreuves du Maître des Leurres
+
+Nous avons réussi à soutirer une confession saisissante de ce drôle de petit-homme qu'est Hobart. Il semble qu'il ait toujours été de mèche avec le Maître des Leurres. Il affirme avoir été obligé de coopérer avec le spectre et de lui envoyer régulièrement des aventuriers au château, faute de quoi il serait transformé lui-même en fantôme.~
+@27215 = ~Et combien en avez-vous vu par ici ?~
+@27216 = ~Très bien. Puis-je regarder ces objets que vous avez trouvés ?~
+@27217 = ~Merci pour vos renseignements. Adieu, Hobart.~
+@27222 = ~Et qu'avez-vous fait ?~
+@27225 = ~Mes salutations, voyageurs. Bienvenue au Château de Maluradek. Je suis votre adversaire.~
+@27226 = ~Voici le point sur lequel nous sommes en désaccord.~
+@27231 = ~Lorsque l'envie vous viendra de quitter le château, sachez que je ferai tout ce qui est en mon pouvoir pour vous en empêcher.~
+@27232 = ~Vous devez entrer... et prouver que vous avez l'étoffe des héros. Si vous réussissez, vous serez autorisés à partir. Sinon, vous mourrez ici.~
+@27234 = ~Mon nom n'a aucune importance. Comme le veut la sagesse populaire, peu importe l'acteur, c'est l'action qui prime. Vos actes détermineront votre aptitude à endosser les rôles que l'on vous demande de jouer.~
+@27235 = ~Vous aurez tout le temps d'assouvir vos pulsions dans les jours à venir. En attendant, venez donc relever mon défi. Je vous assure que c'est dans votre intérêt.~
+@27236 = ~D'aucuns seraient effectivement tentés d'appeler ça une plaisanterie, mais vous allez vite comprendre que c'est loin d'être le cas. Votre objectif est clair. C'est à vous de tout faire pour l'atteindre.~
+@27237 = ~Nord, Sud, Est et Ouest, elles se tiennent,
+Les tours. En leur sein, quatre rédempteurs, elles détiennent.
+Nourrissez-les là où les esprits sont terrés,
+Ou restez en ces lieux à jamais nos invités.~
+@27240 = ~La terre se réchauffe car du soleil c'est l'heure,
+Quatre hommes morts étendus que personne ne pleure.
+"Laissez-les !" menace le seigneur fou, enragé.
+Pourtant, par mon œuvre, leurs louanges seront chantées.~
+@27242 = ~Ne revenez pas ici avant d'avoir accompli votre mission. Alors seulement vous pourrez pénétrer dans ces sinistres salles.~
+@27243 = ~Vous avez prouvé votre ingéniosité et votre résistance là où des centaines ont échoué. Votre courage et votre intelligence vous ont sauvés de la folie et du désespoir.~
+@27244 = ~Je suis navré, mais vous ne pouvez pas partir avant d'avoir appris ce qui s'est passé ici.~
+@27245 = ~Il est important que vous appreniez ce qui s'est passé ici. Il est important que je sache si vous êtes capables de saisir la raison de ma présence ici.~
+@27246 = ~Je ne peux raconter ma propre histoire. J'ai passé ma vie à narrer les aventures des autres. Les esprits qui hantent ces lieux sont comme le grand livre dans lequel ont été transcrites mes actions.~
+@27247 = ~Il n'y a d'autre issue que par ma bonne grâce. Les héros que vous êtes ne peuvent échapper à leurs responsabilités. Vous échoueriez, de toute façon, et ne vaudriez alors guère mieux que l'homme qui, par sa lâcheté, a engendré cette tragédie.~
+@27248 = ~Pour mieux comprendre cette tragique mélopée,
+À vaincre les gardes princiers vous vous destinez.
+Sous des bras inutiles et des mailles jamais rouillées,
+Sans aucun doute, le clou du cercueil, vous trouverez.~
+@27249 = ~Encore et encore, le soleil toujours est présent,
+Et un homme, sous son œil, la mort attend.
+Son crime ? Que l'œil du paysan, du moins que rien,
+Du déshonneur de son seigneur soit le témoin.~
+@27250 = ~J'ai été là où vous vous tenez. Avec le temps, peut-être vous assiérez-vous où je me suis assis, peut-être vous coucherez-vous où je me suis couché, peut-être trouverez-vous la mort, là où moi-même, je l'ai trouvé. Mais vous, vous pourrez vous servir de vos mains ou pourrez chanter avant de mourir.~
+@27251 = ~Je n'ai aucune énigme à vous soumettre. Libre à vous de rester dans ce donjon jusqu'à mourir de faim, ou de chercher une issue.~
+@27252 = ~Qu'il en soit ainsi ! Bien sûr, vos chances de survie sont infimes, mais sachez que je crois plus en vous qu'en aucun de vos prédécesseurs.~
+@27253 = ~Votre hôte fut retenu fort injustement
+Tandis que le seigneur, si empli de colère sans jugement,
+Demanda à son barde de vite composer
+Un bien joli conte qu'à son peuple il a raconté.~
+@27254 = ~Le sort tragique de votre hôte, évitez,
+Pour fuir de cette pièce, votre temps comptez.
+Les molosses des ténèbres sont tapis dans les ombres,
+En l'absence de fuite, votre sort sera bien sombre.~
+@27255 = ~Si d'aventure, nous devions nous revoir,
+Un présent vous offrir, serait notre devoir.
+Que nos ombres soient défaites en combat régulier,
+Et ces lieux maudits, nous ne viendrons plus hanter.~
+@27256 = ~Tant de fois, vous avez montré plus de courage et d'ingéniosité que tous les précédents visiteurs du château. Mais surtout, vous avez survécu dans les sinistres geôles où j'ai péri il y a si longtemps.~
+@27257 = ~J'aimerais que vous rendiez un dernier service aux hôtes de ce château avant de partir.~
+@27258 = ~Apportez le repos éternel à nos âmes. Livrez une bataille digne de la plume du plus grand poète et débarrassez ce château de ses spectres. Après tout ce que je vous ai fait subir, je vous donne l'occasion de vous venger de tous ceux qui vous ont calomniés. Nous saluons votre courage.~
+@27259 = ~Aux armes !~
+@27260 = ~Nous n'avons pourtant aucun différend avec vous, esprit.~
+@27261 = ~Notre adversaire a-t-il un nom ?~
+@27262 = ~Restez à l'écart ou vous mourrez.~
+@27263 = ~Je n'ai pas de temps à perdre. Adieu.~
+@27264 = ~De quoi parlez-vous ?~
+@27265 = ~Adieu, spectre.~
+@27266 = ~Pourquoi feriez-vous cela ?~
+@27267 = ~Est-ce une sorte de plaisanterie ?~
+@27268 = ~Très bien. Nous relevons votre défi.~
+@27269 = ~Je n'ai pas de temps à perdre. Adieu.~
+@27270 = ~Que devons-nous faire ?~
+@27272 = ~Je ne crois pas. Je pense plutôt que c'est dans votre intérêt de rester à l'écart.~
+@27275 = ~Éclairez-nous un tant soit peu sur l'objectif qui est le nôtre !~
+@27277 = ~Spectre, vous nous payerez ça.~
+@27278 = ~Pardon ?~
+@27279 = ~C'est ridicule !~
+@27280 = ~Des énigmes ? J'ai parcouru tout ce chemin pour écouter des énigmes ?~
+@27281 = ~Cela n'a aucun sens.~
+@27284 = ~Est-ce que cela veut dire qu'on peut partir ?~
+@27285 = ~Laissez-nous partir.~
+@27286 = ~Vous avez besoin d'autre chose ?~
+@27287 = ~Pourquoi faites-vous cela ?~
+@27288 = ~On est allé dans votre fichu truc. Nous avons renvoyé les âmes des chevaliers dans l'au-delà. Pourquoi ne nous laissez-vous pas enfin partir ?~
+@27289 = ~Que s'est-il passé ?~
+@27290 = ~Je trouverais un moyen de sortir d'ici, vous verrez.~
+@27291 = ~Pourquoi êtes-vous ici ?~
+@27292 = ~Peu m'importe la raison de votre présence ici. Je veux simplement savoir comment je peux sortir.~
+@27293 = ~Par où devons-nous commencer ?~
+@27294 = ~Vos petites devinettes commencent à me fatiguer, le troubadour.~
+@27296 = ~J'en ai assez entendu. Adieu.~
+@27297 = ~Je n'ai pas l'intention de mourir ici. Quelle est l'énigme suivante, barde ?~
+@27298 = ~Nous verrons bien.~
+@27299 = ~J'en ai assez de vos énigmes.~
+@27300 = ~A-t-on vraiment le choix ?~
+@27302 = ~Je n'ai plus rien à vous dire.~
+@27305 = ~Pouvons-nous partir maintenant ?~
+@27306 = ~C'est bien vrai. Laissez-nous partir.~
+@27307 = ~Qu'est-ce que c'est ?~
+@27308 = ~Il n'en est pas question. Laissez-nous partir !~
+@27309 = ~Qui êtes-vous ?~
+@27310 = ~Connaissez-vous un moyen de sortir de ces maudites ruines ? Comment êtes-vous venus jusqu'ici ? Dites-le moi ou nous vous tuons !~
+@27311 = ~Je suis Crieck de Baine, et voici mes associés. Nous cherchons un moyen de sortir de ce château. Si vous ne nous aidez pas, nous allons être dans l'obligation de vous tailler en pièces. Me suis-je bien fait comprendre ?~
+@27312 = ~Mais... vous avez un gros problème, misérables ! Adran, Shelhai, tuez-moi ça ! S'ils n'ont rien de valeur sur eux, nous pourrons au moins utiliser leurs dépouilles pour déclencher les pièges.~
+@27313 = ~Je vois qu'il ne sert à rien de discuter avec vous. Certaines personnes ne comprennent pas l'intérêt de coopérer tant que leur tête est sur leurs épaules. J'espère que vous avez sur vous de quoi nous payer pour le dérangement. Adran, Shelhai... tuez-les.~
+@27314 = ~La fin de notre conversation est aussi la fin de votre vie. Vous ne servez apparemment à rien. Adran, Shelhai, tuez-les. S'ils n'ont rien de valeur sur eux, nous pourrons au moins utiliser leurs dépouilles pour déclencher les pièges.~
+@27316 = ~Je suis <GABBER>. Bien le bonjour, mon ami.~
+@27317 = ~Mais qui êtes-vous ?~
+@27318 = ~Je ne vous dirai pas mon nom. Ecartez-vous.~
+@27319 = ~Non, je ne connais pas d'issue. C'est Hobart qui nous a emmenés ici.~
+@27320 = ~Je vous ne dirai rien. Il vaudrait mieux que vous débarrassiez le plancher, d'ailleurs.~
+@27321 = ~Retenez votre langue ou je vous la cloue au plafond !~
+@27322 = ~Écoutez, mon bon ami, nous ne voulons pas de problèmes.~
+@27323 = ~C'est clair comme les eaux de la Descente de la Licorne. Mais je ne vais pas vous aider pour autant.~
+@27324 = ~Ça suffit, je m'en vais.~
+@27325 = ~Quoi ? Quelles sont ces nouvelles ombres qui viennent troubler les pauvres yeux d'Harald ? Qui va là ? Est-ce que je parle tout seul ? Est-ce un rêve, la réalité ?~
+@27326 = ~Je ne suis qu'un homme. Lorsqu'un nom pouvait me servir à quelque chose, on m'appelait Harald. J'étais un chevalier vertueux, vous savez. J'étais un paladin de Tyr. C'était il y a bien longtemps...~
+@27327 = ~En mon for intérieur, je savais que c'était pour l'or. C'était pour ça qu'on est venu, avec Dabath. Je le savais, je le savais. Je me suis persuadé que notre motivation était noble et vertueuse. Je ne sais pas qui j'ai le plus dupé, l'Eglise ou moi-même...~
+@27328 = ~Pauvre Dabath. Je le croyais mon ami. Mais ai-je jamais eu d'ami ? Il était mon compagnon d'armes. Je le sais bien. Il est tombé dans l'un des pièges. J'ai vu son sang couler, se mélanger avec celui des autres... et j'ai couru. J'étais terrifié.~
+@27329 = ~Vous connaissez la peur ? La vraie terreur ? Je pensais que Tyr m'avait abandonné. Mais non, c'est moi qui l'avais abandonné. Maintenant, plus aucun dieu ne m'habite. Il n'y a aucun dieu dans ce désert. Il n'y a plus aucune vie. Est-ce que vous comprenez ?~
+@27330 = ~C'est parfait. Je veux juste ne rien voir venir. Faites ça rapidement et proprement, au moment où je m'y attendrais le moins. Merci, Dabath.~
+@27331 = ~Mais alors, vous ne voulez pas m'aider ? Faites semblant, juste un instant ! Mentez-moi comme je me suis menti ! Pourquoi ne voulez-vous pas faire ça pour moi ? (snif) POURQUOI ? (snif)~
+@27332 = ~Je me suis perdu. Je me suis perdu dans le désert. Je n'ai pas toujours été perdu, vous savez. Avant, j'étais un chevalier vertueux. Un paladin. Le serviteur de Tyr. Qui rend la justice dans le désert ? Seules les vivres des cadavres me permettent de survivre, et je cherche toujours un peu de justice ici-bas.~
+@27333 = ~Oui, c'est vrai. Je me suis répété que cela n'avait rien à voir avec l'or. Mais j'étais avide de gloire, je voulais que mon nom soit reconnu. Je voulais être GRANDIOSE dans mon humilité. J'étais un pauvre fou ! Malheureusement, mes amis ont payé ma folie de leur vie. Comme Dabath.~
+@27334 = ~Vous devez être le porteur d'eau, et moi celui qui boit à votre broc. Vous comprenez ? Peu importe que ce ne soit qu'un rêve. Laissez-moi mourir. S'il vous plaît.~
+@27335 = ~Ce n'est pas le bon broc. Celui que je cherche est rempli d'eau rouge comme le vin.~
+@27336 = ~Enchanté, l'ancien. Je suis <GABBER>. Qui êtes-vous ?~ ~Enchantée, l'ancien. Je suis <GABBER>. Qui êtes-vous ?~
+@27337 = ~Quel est le problème ?~
+@27338 = ~Adieu, Harald.~
+@27341 = ~Qui est Dabath ?~
+@27342 = ~Les paladins ne sont-ils pas à l'abri de l'avidité ?~
+@27344 = ~Oui, je comprends.~
+@27345 = ~Non, je ne comprends pas.~
+@27347 = ~Pourquoi voudriez-vous que je vous tue ? Je ne suis pas un bourreau.~
+@27349 = ~Bon, d'accord Harald. Adieu.~
+@27359 = ~Que vous est-il arrivé ?~
+@27360 = ~Racontez-nous à nouveau ce qu'il vous est arrivé.~
+@27361 = ~Bien. Adieu, Harald.~
+@27362 = ~Cape scintillante~
+@27363 = ~La Cape Scintillante
+L'origine de cette cape a été perdue dans la nuit des temps. Cependant, elle a longtemps appartenu à Drosus, un mage relativement puissant d'Eauprofonde. Drosus périt lors de l'attaque d'une meute de loups des glaces plus nombreuse que de coutume, alors qu'il menait une expédition en solitaire à travers l'Épine Dorsale du Monde : il avait dû revêtir une cape plus épaisse pour se protéger du froid... De prime abord, cette cape semble être de couleur blanche. En fait, elle est composée de milliers de couleurs, qui scintillent sous la moindre source de lumière, ce qui a pour effet de distraire et d'aveugler partiellement les personnes regardant directement le porteur de la cape.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +3
+- peut être combinée avec tout autre enchantement de protection
+
+Poids : 3~
+@27364 = ~L'Arc Court d'Exubérance
+Cet arc élancé irradie de chaleur, et pourtant il semble froid au toucher, comme s'il tirait son énergie du corps de son utilisateur. Un vieux nécromancien l'enchanta après que son méphite de magma préféré fut tué par un grand prêtre d'Aurile. L'arc fut ensuite confié à un tueur à gages, Teraven Docen, qui, en trois années de contrat, réussit à tuer une grande partie des enfants de la Dame des glaces. Le chasseur de primes périt lors d'une embuscade tendue contre un gnome errant qui possédait une baguette tirant des boules de feu. Seul l'arc est sorti indemne des immolations répétées.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- constitution : -2
+- résistance au feu : -50%
+- résistance au froid : +30%
+
+Capacités de combat :
+- 25% de chances d'infliger 2d3 de dégâts du feu supplémentaires à chaque coup au but
+- 3 attaques par round
+
+TAC0 : +3
+Dégâts : +3
+Facteur de vitesse :  7
+Type de compétence : arc court
+Type : arme à deux mains
+Nécessite : 6 en force
+
+Poids :  3~
+@27365 = ~Arc court d'exubérance +3~
+@27366 = ~Penseur de Chautog~
+@27367 = ~Le Penseur de Chautog
+Ce précieux heaume fut créé par un guerrier/magicien orque. L'étrange histoire de Chautog commence avec la destruction de son village, pris dans les tirs croisés d'une bataille entre deux bandes rivales de magiciens. L'un des vainqueurs, l'enchanteur Shandellon, éprouvant une certaine culpabilité devant les dommages collatéraux occasionnés, décida d'élever le petit orque, seul survivant de son village, comme son fils. Sous la tutelle de Shandellon, Chautog se révéla compétent en magie malgré ses origines modestes. Cependant, il devait toujours travailler plus dur que ses camarades humains et n'obtenait que des résultats inférieurs. Rongé par la jalousie, il décida de s'enfermer dans sa chambre et travailla jour et nuit à l'élaboration d'un objet enchanté lui permettant de rivaliser avec ses pairs. Le fruit de son labeur, bien que fort laid, était un heaume étonnant qui augmente de façon spectaculaire l'intelligence de quiconque le porte. Chautog le mit immédiatement mais se rendit aussitôt compte que l'ignorance est une aubaine pour celui dont l'existence est aussi pitoyable que celle d'un orque jaloux. Shandellon trouva les restes carbonisés de son fils adoptif et le casque noir de suie, à côté d'une note où n'était écrite qu'une simple phrase : "toute découverte n'est pas bonne à faire". La Sagesse de Chautog donne un bonus +1 à la classe d'armure de celui qui le porte et augmente son intelligence de +2. Le heaume étant toutefois fort laid et assez lourd, puisque de facture orque, il diminue le charisme de -2 et nécessite une force de 17 pour être porté.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : +1
+- intelligence : +2
+- charisme : -2
+- protège contre les coups critiques
+
+Nécessite : 17 en force
+
+Poids : 5~
+@27368 = ~Bâton de la jubilation des pendus +1~
+@27369 = ~Le Bâton de la Jubilation des Pendus
+Ce sinistre bâton, de sinistre réputation, fut sculpté dans le bois de l'Arbre du Mort : un vieux peuplier noir situé en marge d'un hameau perdu des Sélénae auquel les criminels étaient pendus. Toute sorte de bandits, meurtriers, voleurs et autres se balancèrent à ses grosses branches noueuses, pour le plus grand plaisir de Mordigan, le fossoyeur. Ce dernier se livrait en secret à la nécromancie, et profitait allègrement de toute occasion qui se présentait de pratiquer son art. Il enterrait les cadavres des criminels à proximité du peuplier et invoquait les sombres puissances du Plan Négatif pour accomplir un acte funeste à l'encontre du peuplier noir. Il lui a octroyé une sorte de semi-conscience et la capacité de se nourrir des restes de ceux qui se balancèrent à ses branches. Des racines noires descendirent jusque dans les chairs putréfiées et, de façon assez alarmante, les visages torturés des macchabées apparurent peu à peu dans les nœuds tortueux du tronc... À la plus grande surprise des villageois, le puissant bâton magique sculpté par le vil Mordigan finit par causer leur perte. Et c'est ainsi que les pendus de l'Arbre du Mort eurent leur vengeance.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- charisme : -2
+
+Capacités de charge :
+- Animation des morts trois fois par jour (invoque 1d6 squelettes ou zombies)
+  Portée : 6 mètres
+  Durée : 8 heures
+
+TAC0 : +1
+Dégâts : 1d6 +1 (contondant)
+Facteur de vitesse : 4
+Type de compétence : bâton
+Type : arme à deux mains
+Nécessite : 5 en force
+
+Poids : 2~
+@27370 = ~Bracelets de perles islandaises~
+@27371 = ~Les Bracelets de Perles Islandaises
+On dit que ces superbes bracelets furent façonnés dans l'Épine Dorsale du Monde, il n'y a pas si longtemps. Au bord de la Mer des Glaces Mouvantes résidait un abjurateur assez têtu du nom de Prashnak. On dit également qu'il avait énormément de mal à repousser les attaques incessantes d'une bande de trolls qui montraient le plus grand intérêt envers la chaumière si bien placée de Prashnak. Il dut utiliser des quantités impressionnantes d'acide pour les garder à distance, et cependant les trolls s'enhardissaient de plus en plus et le jeune mage commençait à se fatiguer de ces attaques incessantes. Après de longs mois d'études des différents effets de la magie flétrissante, d'invocations d'élémentaires et de sorts givrants, Prashnak fut totalement prêt à expérimenter ses théories. Après avoir invoqué un élémentaire d'eau, il fit s'évaporer certaines parties de son corps et gela sur place l'infortunée créature. Cette expérimentation fut répétée à de multiple reprises, ce qui mena à la création de statues de glace absolument horribles. Les trolls, bien que pas très intelligents, furent extrêmement intimidés par ces totems d'un goût douteux et quittèrent la région. Son expérience étant un brillant succès, Prashnak continue aujourd'hui encore ces cruelles études. On ne sait pas comment les bracelets furent dérobés, mais le fait est qu'ils ont disparu depuis plusieurs années.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- classe d'armure : 6
+- dextérité : -2
+
+Capacités de charge :
+- Conjuration d'un élémentaire d'eau une fois par jour
+  Portée : 6 mètres
+  Durée : 11 tours
+
+- Cône de froid une fois par jour (10d4 +10 dégâts de froid ; jet de sauvegarde contre les sorts pour demi-dégâts)
+  Portée : personnelle
+  Zone d'effet : cône de 6 mètres formant un arc de cercle de 60 degrés
+
+- Flétrissure abominable d'Abi-Dalzim une fois par jour (17d8 dégâts magiques ; jet de sauvegarde contre les sorts pour demi-dégâts)
+  Portée : 30 mètres
+  Zone d'effet : rayon de 9 mètres
+
+Poids : 3~
+@27372 = ~Fléau aux trois crânes +4~
+@27373 = ~Le Fléau aux Trois Crânes
+Le Fléau aux Trois Crânes, ou "Fléau à Dents" comme on l'appelle plus couramment fut construit en 1035 CV pour Wychgar, seigneur de guerre barbare. Au cours d'une bataille dans les déserts du Nord, passée à la postérité sous le nom de bataille de la Passe Sacrée, Wychgar perdit ses trois frères, tués par l'armée orque conduite par Kraag le Magnifique. Une fois la nuit tombée, l'inconsolable Wychgar retourna sur le champ de bataille pour chercher leurs dépouilles afin de leur offrir une sépulture convenable. Lorsqu'il les retrouva, il fut visité par les esprits de ses trois frères qui étaient "bloqués" entre le monde des vivants et celui des morts. Comme il ne pouvait les aider à regagner leur dernière demeure, il demanda à un chaman de les faire entrer dans le fléau. Les trois têtes du fléau sont les crânes de ses frères reliés au manche par des chaînes en argent. Les trois crânes arborent un rictus démoniaque à l'idée de cette nouvelle vie. Lorsque le fléau est utilisé en combat, les trois têtes mordent l'ennemi et lui arrachent des morceaux de chair.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 10% de chances d'infliger +1d6 dégâts perforants à chaque coup au but
+
+TAC0 : +4
+Dégâts : 1d6 +4 (contondant), +1d4 (perforant) infligés par les morsures
+Facteur de vitesse : 5
+Type de compétence : fléau d'armes / morgenstern
+Type : arme à une main
+Nécessite : 13 en force
+
+Poids : 4~
+@27374 = ~Vent du paradis +4, +5 contre les élémentaires~
+@27375 = ~Le Vent du Paradis
+Créé par un sorcier djinn très puissant sur le Plan Élémentaire de l'Air, le Vent du Paradis fut ensuite offert au Calife de Tamjuhk, qui le considéra alors comme la plus belle arme qu'il ait jamais eue en sa possession. Lorsque, plus tard, Tamjuhk fut saccagée par des éfrits, githyankis, salamandres et autres créatures malveillantes, l'éfrit Amir Talmed ramena l'arme au Grand Sultan de la Cité d'Airain. Un peu plus tard, le Vent du Paradis échut à Memnon, l'éfrit qui partit combattre le djinn Calim pour le contrôle de ce qui est aujourd'hui le Calimshan. Memnon ne l'utilisa que très peu et daigna même la laisser à son plus puissant lieutenant. Lorsque Memnon et Calim furent battus par la haute-magie elfe, leurs serviteurs prirent la fuite ou furent reconduits jusqu'à leur plan d'origine. On dit que, après la guerre épique, le Vent du Paradis retourna vers le djinn qui l'avait créé.
+
+PARAMÈTRES :
+
+Capacités d'équipement :
+- immunité aux sorts de Nuage Mortel, Brume Mortelle, Nuage Puant, Nuage de Pestilence et Brume Corrosive de Malavon.
+
+Dégâts : 1d8 +4, +5 contre les élémentaires
+TAC0 : +4, +5 contre les élémentaires
+Type de dégâts : tranchant
+Facteur de vitesse : 1
+Type de compétence : cimeterre / wakizashi / ninjatō
+Type : arme à une main
+Nécessite : 8 en force
+
+Poids : 4~
+@27376 = ~Songe du dieu mort +4, +6 contre le bien~
+@27377 = ~Le Songe du Dieu Mort
+L'histoire de l'ascension de Baine, Bhaal et Myrkul, dieux respectifs de la haine et des querelles, du meurtre et de la mort, est connue par nombre d'érudits dans tout Féérûne. Malgré cela, les théologiens n'ont que peu d'informations quant à ce qui est arrivé au malheureux dieu perdu anéanti par le trio avant leur rencontre avec Jergal. On sait seulement qu'une infime partie de son essence réussit à rejoindre le Plan Astral, où elle se cristallisa pour former un minerai divin. Des centaines d'années plus tard, Merdros l'enchanteur trouva cet étrange minerai. Les serviteurs duergars de Medros s'en servirent pour faire une épée, qu'ils donnèrent à l'allié guerrier le plus puissant du magicien. Tous ceux qui par la suite ont manié l'épée ont déclaré pouvoir ressentir les dernières pensées du Dieu Mort.
+
+PARAMÈTRES :
+
+Capacités de charge :
+- Émotion, peur trois fois par jour (jet de sauvegarde contre les sorts pour annuler)
+  Portée : 15 mètres
+  Durée : 5 rounds
+  Zone d'effet : rayon de 2,4 mètres
+
+- Symbole de douleur une fois par jour
+  -2 à la dextérité, -4 au TAC0 et -2 à la classe d'armure (jet de sauvegarde contre les sorts pour annuler)
+  Portée : 10,5 mètres
+  Durée : 11 tours
+  Zone d'effet : rayon de 4,5 mètres
+
+TAC0 : +4, +6 contre les créatures d'alignement bon
+Dégâts : 2d4 +4, +5 contre les créatures d'alignement bon
+Type de dégâts : tranchant
+Facteur de vitesse : 2
+Type de compétence : épée longue
+Type : arme à une main
+Nécessite : 6 en force
+
+Poids : 4~
+@27379 = ~Bouche Magique~
+@27380 = ~Crieck de Baine~
+@27381 = ~Shelhai~
+@27382 = ~Courtisan spectral~
+@27383 = ~"Personne ne passe."~
+@27384 = ~"Entrée interdite."~
+@27385 = ~"Je dois accomplir mon devoir."~
+@27386 = ~"Je ne peux abandonner mon poste."~
+@27387 = ~"Il me semble un peu insensé de garder un garde."~
+@27388 = ~"Dois-je attendre longtemps pour une audience ?"~
+@27389 = ~"D'aucuns disent que son esprit est malade."~
+@27390 = ~"Monseigneur se comporte étrangement depuis peu."~
+@27391 = ~"La folie des grands hommes doit être surveillée."~
+@27392 = ~"Il se serait enfermé dans ses appartements."~
+@27393 = ~"J'ai entendu dire que même les prêtres de Heaum n'avaient plus sa faveur."~
+@27394 = ~"Zephalim, mon esclave, au pied !"~
+@27397 = ~"J'ai entendu dire que le Seigneur Maluradek était malade."~
+@27398 = ~Seigneur Maluradek~
+@27400 = ~Bouche magique~
+@27401 = ~Hobart Piévelu~
+@27402 = ~Clef du donjon~
+@27403 = ~Une clef d'aspect complexe en fer blanc.
+
+Poids : 0~
+@27405 = ~Ce superbe objet est un symbole sacré du dieu Heaum. Il représente un gantelet dressé sur lequel se trouve un œil grand ouvert. Le gantelet en lui-même est en fait du plus fin platine, le blanc de l'œil a été sculpté dans de la nacre et la pupille est un saphir bleu.
+
+Poids : 0~
+@27406 = ~Symbole sacré de Heaum~
+@27407 = ~Clef en platine~
+@27408 = ~Une clef ornée en platine.
+
+Poids : 0~
+@27409 = ~Une clef ornée en argent.
+
+Poids : 0~
+@27410 = ~Clef en argent~
+@27411 = ~Une clef ornée en cuivre.
+
+Poids : 0~
+@27412 = ~Clef en cuivre~
+@27413 = ~Une clef ornée en électrum.
+
+Poids : 0~
+@27414 = ~Clef en électrum~
+@27415 = ~Une clef ornée en bronze.
+
+Poids : 0~
+@27416 = ~Clef en bronze~
+@27417 = ~Clef en or~
+@27418 = ~Une clef ornée en or.
+
+Poids : 0~
+@27419 = ~Ce grand miroir semble avoir été brisé violemment.~
+@27420 = ~Sur la table sont disposées des armes et armures de toutes sortes. Elles semblent toutes être d'excellente facture, mais pourraient être utilisées à des fins rituelles plutôt que martiales.~
+@27421 = ~Dans cette ruine se trouve le mécanisme qui fait monter et descendre la grille à l'entrée. Ce mécanisme semble être extrêmement rouillé et hors d'usage.~
+@27422 = ~Cet amas rouillé informe semble avoir été des grandes orgues.~
+@27423 = ~Une bouteille vide.
+
+Poids : 0~
+@27424 = ~Cette page jaunie, bien que flétrie et abîmée sur les bords, est étrangement résistante, à la façon d'un morceau de cuir. Bien qu'ils soient rédigés dans une langue inconnue, les mots couchés sur le papier se tordent et s'altèrent à mesure qu'ils sont lus et se traduisent en langue ordinaire dans votre esprit.
+
+... seule la sentinelle Giles ne fut pas décontenancée
+par l'attaque soudaine du fabuleux dragon Aehirglass.
+Résolu à protéger la fuite de Maluradek, son seigneur bien-aimé,
+il refusa de reculer face au monstre pourtant coriace.
+C'est ainsi que, gardant tout son sang froid,
+Giles trouva une faille dans la défense de l'ennemi
+avant que d'un coup de griffe, il ne le broie.
+Sous le soleil ardent, sa puissante masse brandie,
+le preux guerrier laissa le dragon déchirer son tabard
+de ses griffes acérées, exposant son armure aux rayons enflammés.
+Pas une seule goutte de sang ne fut versée car
+la sentinelle parvint sans peine aucune à esquiver
+les attaques répétées de son effroyable adversaire.
+Il se tourna afin que son plastron scintillant
+accroche les rayons de l'astre solaire
+et foudroie les yeux du monstre malveillant.
+Surpris par cet éclair aveuglant,
+ébloui et ne pouvant réagir,
+le dragon ferma les paupières un instant
+et de stupeur, il se laissa étourdir  !
+Et c'est ainsi que, de toute sa taille se tenant droit,
+sur le crâne d'un Aehirglass impotent,
+la sentinelle un coup de masse asséna,
+et ainsi, fit couler le premier sang...
+[Illisible]~
+@27425 = ~Les panneaux en bois de cette porte se sont décomposés depuis longtemps. Cependant, les barreaux en fer de cette herse baissée sont intacts et semblent bien solides.~
+@27427 = ~Héros spectral~
+@27430 = ~Ombre de Sire Giles~
+@27431 = ~Adran Ombrune~
+@27432 = ~Ombre de Sire Zierkki~
+@27433 = ~Ombre de Sire Erris~
+@27434 = ~Héros spectral~
+@27435 = ~Ombre de Sire Geddian~
+@27436 = ~Qui ose pénétrer dans ma chambre sans y avoir été invité ? J'ai donné des ordres pour qu'on ne me dérange pas ! Oh... je vois. Vous devez être avec eux. Oui. Vous pensez que je ne sais pas, que je ne peux pas entendre les murmures dans les coins sombres ?~
+@27437 = ~Les voix sont différentes, mais l'air est le même. C'est l'air de la trahison ! Je vais faire taire cette chanson à tout jamais ! Je suis le seigneur Fallon Maluradek, héros de Storm-Barrows, tueur du dragon Aehirglass ! Et je vais tous vous réduire au silence, vils traîtres !~
+@27438 = ~Vous ne pouvez pas passer.~
+@27439 = ~Seuls ceux qui ont deux têtes sans yeux, une paire de bouches mais pas de voix, peuvent franchir cette porte.~
+@27442 = ~Vous pouvez passer.~
+@27444 = ~Nous n'avons pas fait tout ce chemin pour s'arrêter devant une porte qui parle.~
+@27446 = ~Quoi ? Mais ça n'a aucun sens !~
+@27447 = ~Ces petits jeux me fatiguent. Alors maintenant on s'ouvre ou nous on se fait du petit bois pour l'hiver !~
+@27448 = ~Bien. Adieu.~
+@27449 = ~Vous pouvez nous répéter qui vous allez laisser passer ?~
+@27451 = ~Manuscrit de Ammal-Matis, Sentinelle Suprême~
+@27452 = ~Journal de Maluradek~
+@27453 = ~Anneau terni~
+@27455 = ~Page manquante~
+@27456 = ~Légende de Sire Giles~
+@27457 = ~Légende de Sire Erris~
+@27458 = ~Légende de Sire Zierkki~
+@27459 = ~Manuscrit de Ammal-Matis, Sentinelle Suprême~
+@27460 = ~Journal de Maluradek~
+@27461 = ~Légende de Sire Geddian~
+@27462 = ~Cette page jaunie, bien que flétrie et abîmée sur les bords, est étrangement résistante, à la façon d'un morceau de cuir. Bien qu'ils soient rédigés dans une langue inconnue, les mots couchés sur le papier se tordent et s'altèrent à mesure qu'ils sont lus et se traduisent en langue ordinaire dans votre esprit.
+
+... et la troisième des quatre Sentinelles succomba,
+sa lance plantée dans le sol, répondant courageusement
+à l'assaut d'Aehirglass. Ses ailes en bien piteux état,
+ses blessures nombreuses et profondes, le monstre agonisant
+savait malgré tout que du combat, il sortirait victorieux.
+Il se tourna alors vers le dernier combattant, Erris,
+la quatrième Sentinelle. Il ne restait que ce preux,
+car le seigneur Maluradek n'était pas entré en lice.
+Sans faillir, Erris se lança à l'attaque mais par la créature
+fut happé. L'ignoble monstre releva la tête et s'apprêta
+à déchiqueter le corps de sa proie pourtant en armure.
+C'était sans compter sur l'incroyable force du soldat.
+Se débattant entre les serres acérées du dragon,
+la Sentinelle lui déchira la gorge de sa hache puissante,
+la lame s'enfonçant entre les écailles au plus profond
+des plaies laissées par des coups de lance et d'épée tranchantes.
+Dans un cri pour Heaum, il donnait à un coup la force de deux !
+Il brandit sa hache pour s'attaquer à l'autre côté
+de la gorge sans défense du monstre belliqueux,
+tandis que les griffes du dragon le broyaient tout entier,
+puis dans un terrible bruissement, un double craquement
+plus terrible encore que le tonnerre de l'enfer,
+le corps du chevalier se brisa entre les griffes du ver géant...
+...Et la tête du dragon vacilla et tomba à terre,
+tel un arbre centenaire abattu par une tempête déchaînée,
+recouvrant Storm-Barrows d'un nuage de sable tournoyant.
+La mort du dragon coïncidait avec le sacrifice résigné
+des quatre Sentinelles. Que dire d'un combat si vaillant,
+seul le seigneur Maluradek le sait. Il revint bien plus tard
+sur le champ de bataille désormais silencieux.
+Seules l'avidité et la renommée brillaient dans son regard
+car pas une larme il ne versa pour ses gardes valeureux...
+"Le passé n'est que poussière" dit-il pour toute oraison
+"l'avenir s'annonce radieux. À présent, partons."~
+@27463 = ~Cette page jaunie, bien que flétrie et abîmée sur les bords, est étrangement résistante, à la façon d'un morceau de cuir. Bien qu'ils soient rédigés dans une langue inconnue, les mots couchés sur le papier se tordent et s'altèrent à mesure qu'ils sont lus et se traduisent en langue ordinaire dans votre esprit.
+
+... le combat contre Aehirglass dura de longues heures,
+le crépuscule naissant se voila de teintes rouges et fauves
+tandis que les Sentinelles poursuivaient la lutte avec cœur.
+Une lame de plus aurait suffi à ce qu'ils aient la vie sauve,
+mais le seigneur Maluradek s'était malencontreusement éclipsé.
+la Sentinelle Zierkki fut prompte à passer à l'attaque,
+frappant le dragon de sa lance acérée pour ensuite s'éloigner,
+afin que son redoutable adversaire se tourne et le traque,
+exposant ainsi son flanc aux autres chevaliers. Face à tant de haine,
+au bord de l'épuisement, le noble Zierkki se battit comme un lion,
+luttant avec acharnement contre le temps et une mort certaine.
+Même contre un ennemi d'une telle envergure, il tint bon.
+Le preux chevalier ménagea ses forces, pas une goutte de sang
+ne fut versée sans cause. Jamais il ne s'avoua vaincu,
+il lutta de l'aube au crépuscule et dans ses derniers retranchements
+parvint à pousser le dragon, l'épuisant tant qu'il put.
+Il s'efforça une dernière fois à chercher au plus profond de son être
+et à trouver la force d'asséner un dernier coup, l'ultime peut-être...
+[Illisible]~
+@27464 = ~Cette page jaunie, bien que flétrie et abîmée sur les bords, est étrangement résistante, à la façon d'un morceau de cuir. Bien qu'ils soient rédigés dans une langue inconnue, les mots couchés sur le papier se tordent et s'altèrent à mesure qu'ils sont lus et se traduisent en langue ordinaire dans votre esprit.
+
+... et c'est alors qu'Aehirglass surgit de son antre stérile,
+des volutes de sable se soulevèrent autour du monstre bleu azur,
+ses ailes battaient telles les voiles d'un navire en péril,
+balayant le bassin désertique de milliers de crocs impurs,
+chaque grain de sable tranchant et meurtrier.
+La terreur qui s'était emparée du seigneur Maluradek
+se saisit également de nos cœurs, et tétanisés
+nous faillîmes rebrousser chemin et fuir aussi sec
+dans l'enceinte du château nous réfugier.
+Mais c'est alors que retentit un bruit lourd de sens et de rage ;
+Geddian, la plus courageuse des Sentinelles, de sa grande épée
+battait le fer de son bouclier et nous emplit de courage
+et couvrit les rugissements du dragon et les hurlements du vent.
+Les battements du métal rythmaient l'hymne à la gloire
+d'Heaum, et un courage sans bornes emplit nos cœurs vaillants.
+"Mes frères", cria-t-il. "Ne cédez pas au désespoir
+et brandissez vos armes ! Ce monstre périra dans le sang !
+Nous donnerons nos vies pour notre bien aimé seigneur !"
+Et c'est ainsi que, encouragés par les battements de Geddian,
+nous fîmes face au monstre qui s'élevait dans toute sa splendeur,
+décrivant des cercles autour de nous. La peur perlait lentement
+de son corps et tombait sur nous, présage d'un grand malheur...
+[Illisible]~
+@27466 = ~La couverture de ce recueil si volumineux est d'un cuivre terni et sa reliure n'est plus que fils de chanvre pourris reliant tant bien que mal la couverture et les pages épaisses qu'elle renferme. Bien que ce manuscrit terni par le temps soit couvert de toiles d'araignée, les écrits qu'il contient semblent avoir résistés aux années sans s'estomper.
+
+Mon audience auprès du Seigneur Maluradek ne s'est pas déroulée sous les meilleurs auspices. À peine avais-je formulé ma requête, qu'il se mit dans une colère noire. Il menaça de m'emprisonner dans le donjon aux côtés du barde qui l'a trahi, si je parlais une nouvelle fois d'ouvrir la crypte. Tremblant de frayeur, je rentrais à la chapelle et mon regard se posait sur le symbole d'Heaum sur la tablette. Je craignais d'avoir trahi mon dieu car je ne m'étais pas élevé pour protéger la réputation des Sentinelles.
+
+Autant que je sache, la colère de mon seigneur suite à ma requête n'a aucun fondement et je commence à m'interroger quant à ce qui s'est réellement passé lors du combat contre le dragon bleu de Storm-Barrows. Les quatre Sentinelles, mortes au service de leur seigneur, doivent être dignement honorées pour leur haut fait et non pourrir tels des traîtres. Un fief bâti sur des fondations aussi fragiles ne saurait perdurer.
+
+Il me faut me repentir et honorer dignement les Sentinelles décédées mais je crains de n'y parvenir sans subir le courroux du seigneur. Heaum, les yeux sans sommeil, le Vigilant, mon Dieu et maître est le champion de tous les gardiens... et pourtant, j'hésite, dois-je honorer la réputation de ces courageuses Sentinelles qui ont rendu l'âme au service d'Heaum ou protéger les intérêts de mon seigneur ?
+
+Et le barde prisonnier du donjon, quel crime si terrible a-t-il pu commettre pour courroucer... que dis-je, terrifier... ainsi le seigneur ? Ce dernier a même émis un décret selon lequel il est interdit de prononcer ou d'écrire le nom du barde. Il suffit aujourd'hui de parler, ne serait-ce qu'à demi-mot, de la présence du ménestrel dans le donjon pour que Maluradek punisse le fautif sans autre forme de procès, comme l'a appris à ses dépens un pauvre garde avant hier. Il semblerait que le seigneur souhaite effacer toute trace de l'existence du barde. Mais que craint-il donc tant ?
+
+Quels terribles récits les Sentinelles nous auraient-elles conté si elles avaient vécu ?
+* * *
+Les adeptes ont discuté d'un plan d'action dans la chapelle ; nos esprits se sont rencontrés. Nous bâtirons un caveau secret afin d'honorer les chevaliers. Nous n'en dévoilerons rien à Maluradek et confectionnerons six clefs avec nos plastrons de cérémonie. Nous avons fondu chaque pièce de nos armures pour forger ces clefs, une de cuivre, une de bronze, une d'électrum, une d'argent, une d'or et une de platine. Grâce à ces clefs, nous pourrons pénétrer dans les cryptes des Sentinelles pour les honorer tout en respectant l'ordre du Seigneur Maluradek selon lequel la crypte elle-même doit rester scellée.
+
+Et pourtant mon esprit n'est pas en paix à l'idée de passer à l'acte. Obéir aux ordres de mon seigneur sans adhérer à ses propos ne fait que lever le voile sur ma propre lâcheté. Et pourtant je ne parviens pas à trouver un juste milieu entre les souhaits de Maluradek et la défense de la réputation des Sentinelles. J'ai la sensation que mon esprit est partagé entre deux voies antagonistes et je crains que ce dilemme ne fasse ma perte.
+* * *
+J'ai une nouvelle fois entendu la complainte du barde aujourd'hui. Il chantait, sa voix fière et vibrante d'émotion, de l'aube au crépuscule, et du crépuscule à l'aube, jusqu'à ce que le seigneur appelle enfin sa garde et ouvre les portes du donjon. Peu après leur entrée dans les profondeurs du château, le chant se tut et nombre des gardes faisaient pâle figure en ressortant. Le seigneur Maluradek tenait une dague ensanglantée dans ses mains et dans son regard luisait une folie naissante.
+
+J'aurais dû réagir lorsque j'ai vu le seigneur et ses gardes se rendre vers le donjon. À présent, une nouvelle dépouille repose aux côtés des quatre Sentinelles.
+* * *
+La nuit se voile de terreur. D'étranges bruits, des silhouettes fantomatiques et les échos de la chanson du barde résonnent à travers le château. Quoi qu'il ait pu se passer entre le barde et Maluradek dans les profondeurs du donjon, une lourde malédiction pèse à présent sur le château et tous ses habitants. Le seigneur se terre dans ses appartements et nombreux sont ses serviteurs et gardes qui ont fui ou disparu.
+
+Je n'avais nulle part où aller et suis donc resté. Mon cœur est lourd de peine car Heaum m'a fait connaître sa déception. Au moment où je me tenais devant la vasque aux offrandes qui contenait le symbole d'Heaum et récitais les prières du soir, les eaux de la vasque devinrent troubles. Je plongeais la main dans la vasque pour récupérer le symbole, mais n'y trouvais rien. Le symbole avait disparu.
+
+À cette constatation, je sentis comme une lance me transpercer le cœur. Le Vigilant avait vu ma lâcheté. Il m'avait jugé... et condamné, me pensant indigne de servir comme Sentinelle Suprême, indigne de vivre.
+
+Je m'assurais que les portes de la chapelle étaient ouvertes. Quel que soit le spectre qui hante à présent les ténèbres, j'attends son châtiment.
+
+- Ammal-Matis, Sentinelle Suprême~
+@27467 = ~Ce journal rougi a dû être, à une époque lointaine, protégé par une solide reliure. Cependant, ses pages tâchées et encore humides font penser qu'il a été plongé dans du vin ou du sang. La sensation au toucher est extrêmement désagréable et, pour tenter de déchiffrer les lettres brouillées qu'il porte sur ses pages, il faut les séparer une à une, avec un bruit de succion écœurant.
+
+"Nous partons à l'aube pour les Storm-Barrows, les quatre Sentinelles de Heaum, moi-même et un barde chargé de prendre note de nos aventures. Car elles nous attendent, ces aventures, et mes pensées sont occupées par les trésors et la gloire à venir. Il paraît que cela fait plusieurs années que la créature s'est installée dans les Storm-Barrows. Son antre doit être plein à craquer des richesses qu'elle n'a pas pu manquer d'amasser. Cela ne sera que juste retour des choses que la mort de cette créature remplisse mes coffres et m'élève dans l'estime du peuple. Plus de regards maussades, des décrets royaux à respecter, plus de plaintes sur les impôts, la politique extérieure, les escarmouches à la frontière... Les exploits que je vais accomplir vont changer à jamais l'image que mes sujets ont de moi, et je serai connu sous le nom de Maludarek, tueur du dragon de Storm-Barrows !"
+* * *
+"Mon retour avait été annoncé à l'avance, et je reçus un accueil de héros. Je passai triomphalement sous les portes du château, la tête du dragon levée au-dessus de ma tête, les paysans à genoux, et sur leurs visages pouvait se lire un mélange d'admiration et de crainte... J'organisai aussitôt un festin pour célébrer ce haut fait d'arme et j'ordonnai au barde de composer un poème sur mon combat. Je lui dis de se hâter, car je voulais l'entendre être déclamé pour la première fois au cours du festin."
+
+Les paysans et les acolytes de Heaum se sont interrogés sur ce qui était arrivé aux Sentinelles (j'avais ramené les corps, sur les conseils du barde, ce qui nous avait valu de prendre plusieurs jours de retard). Pour éviter que des doutes ne viennent gâcher l'atmosphère de fête, j'ordonnai de les placer dans des cryptes scellées. Je parlai de leur courage au cours du combat, la voix vibrante d'émotion... Tout le monde fut impressionné...
+
+Je m'inquiète néanmoins : s'ils ne sont pas enterrés bientôt, le fait que les corps soient couverts de blessures va faire peser le doute sur le fait que je sois sorti du combat sans une égratignure. C'est un sujet sur lequel je préfère ne pas m'attarder. Comme je l'ai dit au barde, il faut laisser le passé en paix. C'est le futur qui m'intéresse !"
+* * *
+"Ce maudit barde m'a trahi ! Ses mots acérés m'ont meurtri plus profondément que ne l'a jamais fait une épée ! Comment a-t-il pu oser répandre de telles calomnies ? Son récit de la bataille n'a fait que mettre en avant le courage et les faits d'armes des Sentinelles, mais il n'a pas oublié de me mentionner, comme exemple de lâcheté au combat ! Moi ! Son seigneur !
+
+Mais il a su rester subtil, le fourbe ! Il s'imaginait peut-être que je ne verrais pas sa traîtrise, que je ne pourrais pas déceler ses mensonges ? J'ai ordonné aux gardes de s'emparer de lui avant qu'il n'ait pu terminer et je lui ai arraché ce torchon d'infamie. Je l'ai envoyé au donjon : il pourrira couvert de chaînes avant de revoir la lumière du soleil !
+
+Alors qu'ils l'emmenaient aux oubliettes, j'ai donné l'ordre aux gardes de lui couper les mains. Une dure leçon, certes, mais personne ne peut se permettre de tolérer des traîtres dans sa demeure, à moins de vouloir mettre en péril tout son domaine.
+
+Ce n'est que lorsque j'ai voulu brûler les pages emplies d'insultes de ce poème impie que je me suis rendu compte qu'il en manquait. Cela m'inquiète... Si jamais elles tombaient entre des mains malintentionnées... Non, je ne dois pas y penser ! Cette histoire est terminée, le compte de ce barde est définitivement réglé."
+* * *
+"La Sentinelle Suprême de Heaum est venue me voir. Sous des abords d'obséquiosité, elle a réclamé l'ouverture de la crypte de ses hommes pour que "les morts soient honorés comme ils doivent l'être". Je l'ai jeté hors de la salle d'audience : depuis quand les actions des héros sont-elles contestées ? Qu'a donc accompli ce vieux prêtre au nom de son dieu borgne ? Qu'a-t-il fait pour mériter une place dans l'histoire ? Il finira sur un pal s'il ose questionner mes actes à nouveau ! De plus... Même s'il a dit qu'il obéirait, je ne lui fais pas confiance ; les Sentinelles appartenaient au clergé de Heaum, tout comme ce prêtre... Rien ne le lie à moi ! Je dois le surveiller... Je dois surveiller ses moindres faits et gestes. S'il fait ne serait-ce qu'une esquisse de tentative de trahison, il ira pourrir aux côtés de ce satané barde !"
+* * *
+"Aujourd'hui, l'un de mes gardes a osé prononcer le nom du barde... Ce fut comme du plomb incandescent sur une blessure mal refermée ! J'ai envoyé cet idiot se faire fouetter dans les galères, avec la bouche pleine de détritus pimentés. J'ai ensuite interdit à quiconque de prononcer ce nom honni, voire de mentionner l'existence de ce barde. Son nom disparaîtra à jamais de l'histoire, et ses mots injurieux iront rejoindre ses cendres, dispersées par le vent de l'oubli ! Sort légitime pour une créature à la bouche emplie de venin !
+
+J'ai pris possession de l'unique clef du donjon. Elle restera toujours près de moi, même pendant mon sommeil. Nul ne verra le barde, nul ne le nourrira ; qu'il meure de faim, comme la vermine qu'il est ! Qu'il se nourrisse de ses mots empoisonnés, et qu'il s'étouffe avec !"
+* * *
+"Il chante ! Ce satané barde ose chanter ! Et ses paroles impies me parviennent même à travers les murs de ma chambre ! J'en perds le sommeil ! Il chante si fort que personne dans le château ne peut l'ignorer ! Arrête de me torturer, manant, ou tu finiras au bout d'une corde !"
+* * *
+"Je ne pouvais plus supporter ses chansons ; il est mort ! Je lui ai coupé la langue, et je l'ai laissé, agonisant, dans sa cellule. Mes gardes... Ils... Ils n'osent plus parler maintenant, ils ont peur de moi. C'est parfait ! Qu'ils tremblent ! Qu'ils fassent preuve d'un peu de respect, il sera grand temps ! Ils savent que leur seigneur est un grand héros, maintenant !"
+* * *
+"Le barde est encore en vie... malgré sa mort ! Son fantôme vient chanter toutes les nuits dans ma chambre, il vient me narguer avec le récit de ma lâcheté dans le combat contre le dragon ! Il m'appelle 'héros', mais ses mots vengeurs me touchent au cœur tels des flèches acérées. Mes serviteurs, mes gardes ; ils sont tous partis... Et pourtant cette ombre est restée pour me tourmenter ! Le silence, la paix, je connais les mots, mais j'ai oublié leur signification... Le silence, esprit, le silence... Tais-toi, esprit, TAIS-TOI !"
+* * *
+"Je n'en peux plus ; je n'ose plus faire confiance à mes sens. Aujourd'hui à nouveau, le besoin de mettre un terme définitif à cet enfer sur terre a failli me submerger. Que dois-je faire ? J'aperçois dans la tour la sinistre silhouette fantomatique d'un pendu, il me ressemble... Est-ce mon futur, une vision prémonitoire de ma fin ? Vais-je l'accepter ? Non ! C'est hors de question ! Il doit y avoir une autre issue, il y a une autre issue ! Mais je ne peux toujours pas sortir du château, tous les couloirs me ramènent à la tour. Oui, peut-être la mort est-elle la seule porte de sortie..."
+* * *
+"La fin est proche. Le fantôme du barde va revenir cette nuit... Je ne pourrai pas supporter d'entendre à nouveau sa voix. Je vais me rendre dans la tour et affronter ma destinée, la regarder en face. Je ne lui laisserai pas le plaisir de me tuer ! Qu'il reste seul dans ce château maudit pour l'éternité ! Nous verrons bien s'il arrive à supporter le silence pesant de ces pièces vides. Le seul réconfort qui me reste est que plus personne n'entendra la triste histoire de Maludarek. Elle sombrera dans l'oubli, comme tout le reste. De l'obscurité je suis sorti, et maintenant, je dois y retourner."
+
+- Seigneur Fallon Maluradek, Héros de Storm-Barrows, Vainqueur du dragon Aehirglass~
+@27468 = ~Une cotte de mailles rouillée est accrochée au mur.~
+@27469 = ~Une petite plaque de platine est fixée à l'extrémité de cette poutre.~
+@27470 = ~Cet anneau est identique à celui que portait Hobart quand vous l'avez rencontré dans les Collines d'Umar. Une série de runes indéchiffrables est gravée sur la surface de cuivre terne. À l'intérieur de l'anneau, se trouve une simple inscription : « La vérité est éternelle ».
+
+Poids : 0~
+@27471 = ~Cette table branlante est recouverte d'un assortiment de détritus divers. La plupart de ces objets sont très usés et aucun ne semble avoir de valeur particulière.~
+@27472 = ~Avant de festoyer de ces gracieux visiteurs, j'aimerais connaître leurs noms. Alors... dites-moi, mes *chairs* amis, qui êtes-vous ?~
+@27474 = ~Courageux, avec ça ! Bien ! Vous aurez besoin de courage lorsque l'on arrachera la chair de vos os brisés. Je vous assure que vous ne mourrez pas tout de suite. Mais vous mourrez. Je vous le garantis. Mes soeurs !~
+@27491 = ~Oh, je vous en prie, parlez plus fort, vos amis crient tellement fort que je n'entends pas ce que vous me dites.~
+@27492 = ~Je veux simplement connaître l'identité de ces soi-disant héros qui ont osé s'aventurer dans le royaume de Mag, Reine des Harpies !~
+@27493 = ~Pas vraiment. Ce sale spectre bavard et ses petites bestioles prétendent être les maîtres des salles de ce château. Mais c'est bien Mag qui règne dans les airs !~
+@27494 = ~Ne vous inquiétez pas pour lui. Il est mort... et vous le suivrez très bientôt. Seulement, même mort, sa voix a toujours un certain pouvoir sur les hommes et les animaux.~
+@27495 = ~Ces petits reptiles ne sont pas très dangereux, juste importuns. Esclaves des caprices d'un esprit dérangé, comme toutes les autres bêtes sans cervelle qui errent entre ces murs. Elles ne peuvent rien contre Mag ! Mes soeurs et moi sommes bien au-dessus de ces... tours de passe-passe !~
+@27496 = ~Qui s'en soucie ? Nous resterons hors de son chemin tant que des fous de votre espèce continueront à venir ici pour y chercher des réponses. Nous lui sommes même plutôt reconnaissantes. Après tout, c'est lui qui nous fournit notre pain quotidien...~
+@27497 = ~Mon nom est <GABBER>. J'espère qu'il vous plaît car c'est le dernier que vous entendrez.~
+@27498 = ~Là où nous allons vous envoyer, connaître nos noms ne vous servira en rien.~
+@27499 = ~Pourquoi voulez-vous connaître nos noms ?~
+@27500 = ~Venez donc, ignoble créature. Nous verrons bien qui va périr, aujourd'hui.~
+@27501 = ~J'ai entendu assez de vagissements de harpie pour aujourd'hui. Préparez-vous à connaître le même destin que vos "soeurs" ont connu dans la cour.~
+@27503 = ~Votre nom importe peu, vous n'êtes qu'une vache avec des ailes. Et j'ai bien envie de vous équarrir, en toute amitié bien sûr.~
+@27504 = ~Mais, bien sûr. Et bientôt, vous nous direz que ce château est le vôtre.~
+@27505 = ~Tout cela ne nous intéresse pas. De toute façon, vous allez bientôt passer de vie à trépas.~
+@27506 = ~Que savez-vous à propos du Maître des Leurres ?~
+@27507 = ~Vous essayez de me dire que c'est un fantôme qui contrôle ce château ?~
+@27508 = ~Et que faites-vous des Wivernes ? Je suis sûr qu'elles ne vous reconnaissent pas le titre de "Reine des Airs".~
+@27509 = ~Je suis désolé mais votre règne touche à sa fin... Majesté.~ ~Je suis désolée mais votre règne touche à sa fin... Majesté.~
+@27510 = ~Que veut-il ?~
+@27511 = ~Vos menaces ne me font pas peur, vieille buse. Voyons voir si vous vous défendez aussi bien que vous parlez...~
+@27512 = ~Vous avez raison. Nous nous occuperons du spectre plus tard. Pour le moment, je voudrais que vous m'aidiez à vérifier une théorie, qui prétend que la harpie a un petit arrière-goût de poulet...~
+@27513 = ~Qui est ce spectre ?~
+@27514 = ~Mais dites-moi, savez-vous combien de créatures sont contrôlées par ce spectre ?~
+@27515 = ~Cela n'a que peu d'importance. Esclaves ou pas, nous allons bientôt vous envoyer dans l'au-delà.~
+@27516 = ~Vieille folle ! Je ne veux plus rien entendre !~
+@27517 = ~Désolé, vile créature, votre repas est loin d'être assuré.~ ~Désolée, vile créature, votre repas est loin d'être assuré.~
+@27518 = ~Nous verrons bien si vous avez encore faim après que je vous aurai nourrie de vos propres entrailles.~
+@27519 = ~On dit que la chance sourit aux audacieux. Voyons si vous avez le courage des vrais héros.~
+@27520 = ~Ce que vous cherchez se trouve dans l'un de ces six coffres. Les autres ne renferment que la mort. Faites votre choix... si vous en avez le courage.~
+@27521 = ~Perdre espoir est le plus dangereux de tous les ennemis. Ne devient héros que celui qui a survécu là où la plupart seraient morts. Voyons si la persévérance fait partie de vos vertus.~
+@27522 = ~Félicitations ! Vous avez mérité votre récompense.~
+@27523 = ~La vaillance au combat est une vertu que seuls les vrais héros partagent. Car c'est dans le combat que les actes deviennent héroïques. Il est temps d'éprouver VOTRE courage.~
+@27524 = ~Bravo ! Vous avez prouvé votre vaillance. Voici la récompense que vous cherchiez.~
+@27525 = ~Seul un esprit affûté comme une lame peut prétendre avoir l'étoffe d'un vrai héros. Résolvez cette énigme et vous vous rapprocherez un peu plus du but de votre quête.~
+@27526 = ~Des éléments je proviens,
+Amour et haine sont entre mes mains.
+Mon toucher peut être de glace ou de feu,
+Et jamais l'homme, me posséder ne peut.~
+@27527 = ~Donnez mon nom... et vous recevrez votre récompense.~
+@27528 = ~C'est une mauvaise réponse.~
+@27533 = ~C'est la bonne réponse. La récompense est à vous.~
+@27534 = ~Félicitations. Voulez-vous réessayer ?~
+@27535 = ~Feu.~
+@27536 = ~Terre.~
+@27537 = ~Glace.~
+@27538 = ~Vent.~
+@27539 = ~Eau.~
+@27540 = ~Fer.~
+@27541 = ~Vous m'avez rendu mon honneur. Vous êtes de vrais héros, adieu.~
+@27542 = ~Je peux enfin trouver le repos. Souvenez-vous de moi...~
+@27543 = ~Que Heaum vous garde ! Adieu.~
+@27544 = ~Mes frères sont en paix et je peux enfin les rejoindre. Continuez votre quête, car le chemin vous est maintenant ouvert. Et que vos actes amènent paix et honneur à celui qui a engendré de son sang cette tragédie. Adieu...~
+@27545 = ~Ah, vous voilà. Je suis si content de vous voir. Je commençais à craindre qu'il ne vous soit arrivé un malheur.~
+@27546 = ~Comment je suis rentré ? C'est très simple. J'ai emprunté le passage secret.~
+@27547 = ~Ah, mais il ne serait plus secret si je vous le disais, n'est-ce pas ? Mais peu importent ces détails. Concentrons-nous plutôt sur le problème qui est le nôtre.~
+@27548 = ~Exactement. Et je crois savoir où se trouve la réponse.~
+@27549 = ~Mais tout d'abord, j'aimerais que vous me rendiez un service. Je suis à la recherche d'une clef qui est cachée quelque part dans ce donjon. Je pense qu'elle est en haut, peut-être même dans la chambre du défunt seigneur.~
+@27550 = ~Écoutez-moi bien, je n'ai pas le temps de répondre à vos questions ineptes. J'ai BESOIN de cette clef. Je dois ABSOLUMENT l'avoir. Alors est-ce que vous allez me la retrouver, oui ou non ?~
+@27551 = ~*grr* Je savais que c'était une perte de temps ! Très bien, je trouverai cette clef tout seul ! Mais puisque vous refusez de m'aider... vous allez mourir !~
+@27552 = ~C'est évident ! Ne sommes-nous pas de vieux amis ? Cela dit, nous n'avons pas de temps à perdre en conversations stériles. Seule importe la mission qui est la nôtre.~
+@27553 = ~Attendez ! Ne partez pas comme ça ! Je connais un moyen de sortir d'ici. Je peux vous y emmener si vous voulez.~
+@27554 = ~Moi aussi, je cherche un moyen de sortir d'ici. Et je crois en avoir trouvé un.~
+@27555 = ~Bien sûr que cela m'importe. C'est la raison de ma présence ici : je cherche moi aussi un moyen de quitter cet endroit sordide.~
+@27556 = ~Comment êtes-vous entré dans le donjon ?~
+@27557 = ~Vous êtes CONTENT de nous voir ?~
+@27558 = ~Mais, que faites-vous ici ?~
+@27559 = ~Quel passage secret ?~
+@27560 = ~Petit faux jeton ! Pourquoi ne nous avez-vous pas dit plus tôt qu'il y avait un passage secret pour accéder au donjon ?~ ~Petit faux jeton ! Pourquoi ne nous avez-vous pas dit plus tôt qu'il y avait un passage secret ?~
+@27561 = ~Vous parlez de la deuxième énigme du Maître des Leurres ?~
+@27562 = ~Vous avez raison... allons-y. Adieu, Hobart.~
+@27563 = ~Vraiment ? Dites-nous tout !~
+@27564 = ~Quelle est la raison de cette soudaine prévenance ? Il n'y a pas si longtemps, peu vous importait que nous survivions ou pas.~
+@27565 = ~Et pourquoi nous porterions vous assistance ? Vous n'avez à aucun moment montré de l'entrain à nous aider.~
+@27566 = ~Pourquoi est-ce que cette clef est si importante à vos yeux ?~
+@27567 = ~Je ne comprends pas. Si vous savez où elle est, pourquoi ne la récupérez-vous pas vous-même ?~
+@27568 = ~Il n'en est pas question. Trouvez-la tout seul !~
+@27569 = ~Nous n'irons nulle part tant que vous ne nous aurez pas répondu.~
+@27570 = ~Je n'aime pas trop votre ton...~
+@27575 = ~Bon, vous avez trouvé une issue ou pas ?~
+@27576 = ~Une petite plaque d'or est fixée à l'extrémité de cette poutre.~
+@27577 = ~Une petite plaque d'argent est fixée à l'extrémité de cette poutre.~
+@27578 = ~Une petite plaque de cuivre est fixée à l'extrémité de cette poutre.~
+@27579 = ~Une petite plaque de bronze est fixée à l'extrémité de cette poutre.~
+@27580 = ~Une petite plaque d'électrum est fixée à l'extrémité de cette poutre.~
+@27581 = ~Maître des Leurres~
+@27584 = ~Rikasha~
+@27597 = ~Anneau terni~
+@27600 = ~Glabrezu~
+@27601 = ~Glabrezu~
+@27602 = ~Bienvenue. Je dois dire que vos progrès m'ont agréablement surpris.~
+@27603 = ~Enfin... je suis vaincu. J'attendais ce jour depuis si longtemps. Je suis heureux de mourir de votre main.~
+@27605 = ~Votre persévérance et votre force d'arme vous ont permis de prévaloir là où tous les autres ont échoué. Vous apportez la lumière dans un monde sombre et terrifiant, rempli de monstres horribles et de démons sans visage.~
+@27606 = ~De tels actes de bravoure inspireront les cœurs et les esprits des générations futures. Que vos actes ne soient jamais oubliés ou l'homme ira à sa perte.~
+@27607 = ~Adieu... héros.~
+@27920 = ~Acolyte~
+@27934 = ~Acolyte~
+@34527 = ~Libère des vapeurs acides~
+@34801 = ~Grotte~
+@34826 = ~Vers les remparts ouest~
+@34827 = ~Vers les remparts est~
+@34828 = ~Cabane de Hobart~
+@34829 = ~Cercle de monolithes~
+@34830 = ~Étoile gravée~
+@40038 = ~Vers le premier niveau~
+@40039 = ~Vers le deuxième niveau~
+@40040 = ~Vers le troisième niveau~
+@40103 = ~Forteresse de Maluradek~
+@40104 = ~Tour nord-est~
+@40105 = ~Tour sud-est~
+@40106 = ~Tour nord-ouest~
+@40107 = ~Tour sud-ouest~
+@40108 = ~Vers la cour~
+@40109 = ~Vers le rez-de-Chaussée~
+@40110 = ~Vers l'étage~
+@40111 = ~Vers les donjons~
+@40112 = ~Vers le temple de Heaum~
+@40113 = ~Vers la caverne du Chacal~
+@40174 = ~Les Épreuves du Maître des Leurres~
+@40187 = ~Tombes du chevalier vigilant~
+@40195 = ~Créature extra-planaire détruite~
+@40240 = ~L'air empeste. De temps en temps, vous trouvez une grande plume noire qui a sans doute été abandonnée par une sorte de bête ailée. En outre, des traces sur le sol indiquent la présence de wivernes. Des éraflures sur les murs font également penser que cette partie de la zone est aussi peuplée d'insecte de taille exceptionnelle.~
+@40241 = ~L'air empeste. De temps en temps, vous trouvez une grande plume noire qui a sans doute été abandonnée par une sorte de bête ailée.~
+@40242 = ~Des traces sur le sol indiquent la présence de wivernes.~
+@40243 = ~Quelles que furent les créatures qui vivaient dans cette zone, elles sont mortes ou parties depuis longtemps. Néanmoins, vous trouvez quelques poils d'animaux sur le sol qui pourraient avoir appartenu à une créature féline.~
+@40244 = ~Certaines des portes de cet endroit ont été récemment utilisées, mais aucune trace ne peut prouver que quelqu'un les a traversées. C'est presque comme si les portes ont été manipulées par une sorte de force extérieure.~
+@40245 = ~Une forte odeur de poussière et de pourriture se fait sentir ici : il s'agissait sans doute d'une crypte, d'un tertre ou de quelque chose s'en approchant. De temps en temps, vous repérez quelques os dispersés ou des lambeaux de tissus sur le sol.~
+@40246 = ~Une étrange odeur d'ordures flotte dans l'air, indiquant la présence d'orogs, de minotaures, ou bien des deux. Des griffures sur certains murs suggèrent la présence proche d'ombres des roches et de trolls. Vous détectez également une très faible odeur de champignon.~
+@40247 = ~Une étrange odeur d'ordures flotte dans l'air, indiquant la présence d'orogs, de minotaures, ou bien des deux. Des griffures sur certains murs suggèrent la présence proche de quelques ombres des roches. De temps à autres, vous repérez également des déjections provenant de créatures ressemblant à des wivernes.~
+@40248 = ~Vos compétences de pistage ne révèlent que peu de choses sur cet endroit. Néanmoins, vous discernez des traces d'une étrange substance visqueuse qui semble couvrir les zones les plus sombres du plafond.~
+@40249 = ~Les traces les plus communes dans cet endroit semblent appartenir à de grandes créatures canines. À quelques endroits, elles semblent se fondre dans des empreintes de pas humaines. Des traces de toiles gigantesques et de nombreux déchets vous font penser que des araignées de très grande taille se trouvent dans la zone nord-est des cavernes. Également, des monceaux de végétation en décomposition parsèment les sols au nord de la zone. Il y a enfin une faible odeur de soufre dans l'air.~
+@40250 = ~Les traces les plus communes dans cet endroit semblent appartenir à de grandes créatures canines. À quelques endroits, elles semblent se fondre dans des empreintes de pas humaines. Des traces de toiles gigantesques et de nombreux déchets vous font penser que des araignées de très grande taille se trouvent dans la zone nord des cavernes. De temps en temps, vous trouvez une grande plume noire qui a sans doute été abandonnée par une sorte de bête ailée. À cela s'ajoute une étrange odeur dans l'air, qui semble à la fois humaine et animale. Elle pourrait provenir d'une sorte d'hybride.~
+@40294 = ~Également appelée tourmaline incolore, l'étoile d'eau est rare dans les royaumes.
+
+PARAMÈTRES :
+
+Poids : 0~
+@40323 = ~Œil de l'esprit
+Cet œil protège contre les attaques mentales, telles que Charme, Émotion et Terreur.
+Il peut être dépensé pour lancer le sort de magicien de premier niveau Charme-personne (durée d'un tour, jet de sauvegarde contre les sorts pour annuler).~
+@40324 = ~Œil de l'épée
+Cet œil détourne la première attaque physique infligeant des dégâts au personnage.
+L'œil peut également être dépensé pour jeter le sort de magicien de premier niveau Projectile magique, créant un projectile tous les deux niveaux d'expérience après le premier (5 projectiles maximum) qui infligent 1d4 +1 points de dégâts magiques.~
+@40325 = ~Œil du mage
+Cet œil absorbe une attaque de type feu, électricité, froid ou acide.
+Il peut également être dépensé pour jeter le sort de magicien de troisième niveau Éclair, qui inflige 1d6 dégâts électriques par niveau (10d6 maximum) à toutes les créatures se trouvant sur son chemin.~
+@40326 = ~Œil du venin
+Cet œil bloque une attaque ou un sort pouvant empoisonner le personnage.
+Il peut à la place être dépensé pour empoisonner une créature (20 points de dégâts en 20 secondes, jet de sauvegarde contre le poison pour annuler).~
+@40327 = ~Œil de l'âme
+Cet œil annule un sort causant une mort instantanée (Sort de mort, Doigt de mort, Mot de pouvoir mortel, Mise à mort ou Destruction).
+Il peut également être transformé en un Rayon débilitant, similaire au sort de magicien de deuxième niveau, qui abaisse la force de la cible à 5 (jet de sauvegarde contre les sorts pour annuler).~
+@40328 = ~Œil de la résistance
+Cet œil bloque une attaque étourdissante, assourdissante, aveuglante ou de type silence.
+Il peut également être dépensé pour lancer le sort de magicien de quatrième niveau Cri, qui inflige 4d6 points de dégâts magiques et assourdit les créatures prises dans un cône de 10,5 mètres (jet de sauvegarde contre les sorts pour diviser les dégâts par deux et annuler la surdité).~
+@40329 = ~Œil de la pierre
+Cet œil protège le personnage contre une seule attaque pétrifiante.
+Il peut également être dépensé pour lancer le sort de magicien de troisième niveau Immobilisation des personnes, qui immobilise des créatures humanoïdes pendant un round par niveau (jet de sauvegarde contre les sorts pour annuler).~
+@40373 = ~Pierre incrustée~
+@40374 = ~Coffre magique~
+@40660 = ~Objet d'immunité des créatures artificielles. Ne pas traduire.~
+@40717 = ~Vous entendez une porte s'ouvrir au loin.~
+@40718 = ~Vous entendez une porte se fermer au loin.~
+
+
+// New strings
+@90000 = ~Les Épreuves du Maître des Leurres
+
+Nous avons pu vaincre le Maître des Leurres au cours d'une grande bataille et permettre à son esprit de reposer en paix. Il nous a laissés un anneau différent de celui utilisé par Hobart pour nous emmener dans le château hanté. Celui-ci nous a ramenés dans les Collines d'Umar avant de disparaître sans laisser de traces.~
+
+@91000 = ~Dabath~
+@91001 = ~Ah... La mort ! La mort partout !~
+@91002 = ~Tant de morts !~
+@91003 = ~Je... Je n'en peux plus. Accordez-moi la mort et la paix !~
