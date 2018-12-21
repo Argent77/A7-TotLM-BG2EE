@@ -37,7 +37,7 @@ COPY ~%MOD_FOLDER%/tis~ ~override~
 
 ACTION_FOR_EACH type IN ~vvc~ ~wed~ ~wav~ BEGIN
   ACTION_BASH_FOR ~%MOD_FOLDER%/%type%~ ~^.+\.%type%$~ BEGIN
-    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_NAME%~) BEGIN
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
       COPY ~%BASH_FOR_FILESPEC%~ ~override~
     END
   END

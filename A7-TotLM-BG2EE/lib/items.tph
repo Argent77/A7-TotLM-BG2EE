@@ -1,7 +1,7 @@
 // Installing and updating items
 
 ACTION_BASH_FOR ~%MOD_FOLDER%/itm~ ~^.+\.itm$~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_NAME%~) BEGIN
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
       // updating strrefs
       PATCH_FOR_EACH ofs IN ~0x08~ ~0x0c~ ~0x50~ ~0x54~ BEGIN
