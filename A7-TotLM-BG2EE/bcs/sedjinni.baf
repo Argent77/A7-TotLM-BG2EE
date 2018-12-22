@@ -1,31 +1,10 @@
-IF
-  Die()
-  !CheckStat(Myself,1,PUPPETTYPE)
-THEN
-  RESPONSE #100
-    ReallyForceSpellDeadRES("OHNOWHR",Myself)
-END
-
-IF
-  !Global("SEDJINNI_init","LOCALS",1)
-  !CheckStat(Myself,1,PUPPETTYPE)
-THEN
-  RESPONSE #100
-    SetGlobal("SEDJINNI_init","LOCALS",1)
-    SmallWait(8)
-    UseItem("SPAWN",Myself)
-    SmallWait(14)
-    FaceObject(NearestEnemyOf(Myself))
-    ApplySpellRES("dw#brkin",Myself)
-    Continue()
-END
+// Combat script: Djinni
 
 IF
   Global("bd_prebuff","LOCALS",0)
   DifficultyGT(EASIEST)
   Detect(NearestEnemyOf(Myself))
   HaveSpell(WIZARD_BLUR)
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     RemoveSpell(WIZARD_BLUR)
@@ -38,7 +17,6 @@ IF
   DifficultyGT(EASY)
   Detect(NearestEnemyOf(Myself))
   HaveSpell(WIZARD_SHIELD)
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     RemoveSpell(WIZARD_SHIELD)
@@ -49,7 +27,6 @@ END
 IF
   Global("bd_prebuff","LOCALS",0)
   Detect(NearestEnemyOf(Myself))
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     SetGlobal("bd_prebuff","LOCALS",1)
@@ -72,47 +49,8 @@ THEN
 END
 
 IF
-  Global("BD_Msld","LOCALS",0)
-  Detect([EVILCUTOFF.0.0.0.0.ILLUSIONARY])
-  Detect([EVILCUTOFF.GIANTHUMANOID.GENIE.GENIE_NOBLE_DJINNI.0.ILLUSIONARY.CHAOTIC_GOOD])
-  CheckStat(LastSeenBy(Myself),1,PUPPETMASTERTYPE)
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobal("BD_Msld","LOCALS",1)
-    ActionOverride(LastSeenBy(Myself),ChangeAIScript("ID#MSLD",OVERRIDE))
-    SetInterrupt(TRUE)
-END
-
-IF
-  !GlobalTimerNotExpired("BD_Cast","LOCALS")
-  HaveSpell(WIZARD_MISLEAD)
-  !CheckStat(Myself,1,PUPPETTYPE)
-  !CheckStatGT(Player1,0,TRUE_SIGHT)
-  !CheckStatGT(Player2,0,TRUE_SIGHT)
-  !CheckStatGT(Player3,0,TRUE_SIGHT)
-  !CheckStatGT(Player4,0,TRUE_SIGHT)
-  !CheckStatGT(Player5,0,TRUE_SIGHT)
-  !CheckStatGT(Player6,0,TRUE_SIGHT)
-  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
-  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
-  OR(2)
-    HPPercentLT(Myself,50)
-    Dead("Adran")
-THEN
-  RESPONSE #100
-    SetInterrupt(FALSE)
-    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
-    SetGlobal("BD_Msld","LOCALS",0)
-    RemoveSpell(WIZARD_MISLEAD)
-    ForceSpell(Myself,WIZARD_MISLEAD)
-    SetInterrupt(TRUE)
-END
-
-IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_IMPROVED_INVISIBILITY)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
   !CheckSpellState(Myself,CANNOT_TURN_INVISIBLE)
   !CheckStatGT(Player1,0,TRUE_SIGHT)
@@ -131,7 +69,6 @@ END
 
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
-  !CheckStat(Myself,1,PUPPETTYPE)
   HPPercentLT(Myself,40)
   HaveSpell(CLERIC_HEAL)
   !StateCheck(Myself,STATE_SILENCED)
@@ -147,7 +84,6 @@ END
 
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
-  !CheckStat(Myself,1,PUPPETTYPE)
   HPPercentLT(Myself,25)
   HaveSpell(CLERIC_HEAL)
   !StateCheck(Myself,STATE_SILENCED)
@@ -160,7 +96,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_MIRROR_IMAGE)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !StateCheck(Myself,STATE_MIRRORIMAGE)
   !CheckStatGT(NearestEnemyOf(Myself),0,TRUE_SIGHT)
   !CheckStatGT(SecondNearestEnemyOf(Myself),0,TRUE_SIGHT)
@@ -181,7 +116,6 @@ END
 IF
   Global("BD_Cast","LOCALS",0)
   HaveSpell(WIZARD_SHIELD)
-  !CheckStat(Myself,1,PUPPETTYPE)
   OR(2)
     See([GOODCUTOFF.0.0.MAGE_ALL])
     See([GOODCUTOFF.0.0.BARD_ALL])
@@ -260,7 +194,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_DISPEL_MAGIC)
-  !CheckStat(Myself,1,PUPPETTYPE)
   See(LastSeenBy)
   !Range(LastSeenBy,0)
   !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
@@ -279,7 +212,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_DETECT_ILLUSION)
-  !CheckStat(Myself,1,PUPPETTYPE)
   OR(7)
     StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
     StateCheck(NearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
@@ -299,7 +231,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_DETECT_ILLUSION)
-  !CheckStat(Myself,1,PUPPETTYPE)
   OR(7)
     StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
     StateCheck(SecondNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
@@ -319,7 +250,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_DETECT_ILLUSION)
-  !CheckStat(Myself,1,PUPPETTYPE)
   OR(7)
     StateCheck(ThirdNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_INVISIBLE)
     StateCheck(ThirdNearestEnemyOfType([0.0.0.MAGE_ALL]),STATE_BLUR)
@@ -448,7 +378,6 @@ IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)
   Global("BD_Cloud","LOCALS",1)
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
@@ -459,7 +388,6 @@ END
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   HaveSpell(WIZARD_BLUR)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !StateCheck(Myself,STATE_BLUR)
   !CheckStatGT(NearestEnemyOf(Myself),0,TRUE_SIGHT)
   !CheckStatGT(SecondNearestEnemyOf(Myself),0,TRUE_SIGHT)
@@ -479,8 +407,8 @@ END
 
 IF
   Global("CAST_WHIRLWIND","LOCALS",0)
+  !Gender(Myself,ILLUSIONARY)
   See(NearestEnemyOf(Myself))
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     ForceSpell(NearestEnemyOf(Myself),CLERIC_WHIRLWIND)
@@ -492,10 +420,43 @@ END
 
 IF
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  Detect(Myself)
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  OR(2)
+    !See(NearestEnemyOf(Myself))
+    !TriggerOverride(NearestEnemyOf(Myself),Range(NearestAllyOf(Myself),13))
+  OR(2)
+    !See(SecondNearestEnemyOf(Myself))
+    !TriggerOverride(SecondNearestEnemyOf(Myself),Range(NearestAllyOf(Myself),13))
+  OR(2)
+    !See(ThirdNearestEnemyOf(Myself))
+    !TriggerOverride(ThirdNearestEnemyOf(Myself),Range(NearestAllyOf(Myself),13))
+  False()
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  HaveSpell(WIZARD_CHAIN_LIGHTNING)
+  See(LastSeenBy)
+  !Range(LastSeenBy,0)
+  !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
+  TriggerOverride(LastSeenBy,Range(NearestAllyOf(Myself),13))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy,WIZARD_CHAIN_LIGHTNING)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
   DifficultyGT(EASIEST)
   HaveSpell(CLERIC_STATIC_CHARGE)
   See(NearestEnemyOf(Myself))
-  !CheckStat(Myself,1,PUPPETTYPE)
   CheckStatLT(LastSeenBy(Myself),50,RESISTMAGIC)
   CheckStatLT(LastSeenBy(Myself),50,RESISTELECTRICITY)
 THEN
@@ -509,7 +470,6 @@ IF
   DifficultyGT(EASY)
   Detect(NearestEnemyOf(Myself))
   HaveSpell(CLERIC_AERIAL_SERVANT)
-  !CheckStat(Myself,1,PUPPETTYPE)
 THEN
   RESPONSE #100
     SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
@@ -544,7 +504,6 @@ IF
   HaveSpell(WIZARD_LIGHTNING_BOLT)
   See(LastSeenBy)
   !Range(LastSeenBy,0)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -559,7 +518,6 @@ IF
   HaveSpell(WIZARD_MAGIC_MISSILE)
   See(LastSeenBy)
   !Range(LastSeenBy,0)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !StateCheck(LastSeenBy,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -571,7 +529,6 @@ END
 
 IF
   DifficultyGT(EASY)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   !GlobalTimerNotExpired("BDINVIS","LOCALS")
   Range([GOODCUTOFF],4)
@@ -593,7 +550,6 @@ END
 
 IF
   DifficultyGT(EASY)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   !GlobalTimerNotExpired("BDINVIS","LOCALS")
   !See([GOODCUTOFF])
@@ -616,7 +572,6 @@ END
 
 IF
   !DifficultyGT(EASY)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   !GlobalTimerNotExpired("BDINVIS","LOCALS")
   Range([GOODCUTOFF],4)
@@ -639,7 +594,6 @@ END
 
 IF
   !DifficultyGT(EASY)
-  !CheckStat(Myself,1,PUPPETTYPE)
   !GlobalTimerNotExpired("BD_Cast","LOCALS")
   !GlobalTimerNotExpired("BDINVIS","LOCALS")
   !See([GOODCUTOFF])

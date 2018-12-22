@@ -2657,6 +2657,12 @@ It can also be used as the 3rd-level wizard spell Hold Person, rendering humanoi
 @90000 = ~Trials of the Luremaster
 
 We were able to defeat the Luremaster in a grand battle and put his spirit to rest. He left us a ring not unlike the one Hobart used to bring us to the haunted castle. It transported us back to the Umar Hills and vanished without a trace.~
+@90001 = ~Spell Trigger—Mirror Image~
+@90002 = ~Spell Trigger—Improved Invisibility~
+@90003 = ~Spell Trigger—Immunity: Divination~
+@90004 = ~Chain Contingency—Invisibility~
+@90005 = ~Chain Contingency—Immunity: Divination~
+@90006 = ~Chain Contingency—Globe of Invulnerability~
 
 @91000 = ~Dabath~
 @91001 = ~Aah...death! Death everywhere!~

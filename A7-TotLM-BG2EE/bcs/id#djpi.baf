@@ -1,0 +1,19 @@
+// Special script: Djinni PI clone
+
+IF
+  Global("init","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+  SetInterrupt(FALSE)
+  SetGlobal("init","LOCALS",1)
+  SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+  DisplayString(Myself,39968)  // Spell Trigger—Fired
+  DisplayString(Myself,@90001)  // Spell Trigger—Mirror Image
+  ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+  DisplayString(Myself,@90002)  // Spell Trigger—Improved Invisibility
+  ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+  DisplayString(Myself,@90003)  // Spell Trigger—Immunity: Divination
+  ReallyForceSpell(Myself,WIZARD_SPELL_IMMUNITY_DIVINATION)
+  SetInterrupt(TRUE)
+END

@@ -1,0 +1,114 @@
+// Special script: Djinni
+
+IF
+  Die()
+THEN
+  RESPONSE #100
+    ReallyForceSpellDeadRES("OHNOWHR",Myself)
+END
+
+IF
+  !Global("SEDJINNI_init","LOCALS",1)
+THEN
+  RESPONSE #100
+    SetGlobal("SEDJINNI_init","LOCALS",1)
+    SmallWait(8)
+    UseItem("SPAWN",Myself)
+    SmallWait(14)
+    FaceObject(NearestEnemyOf(Myself))
+    ApplySpellRES("dw#brkin",Myself)
+    Continue()
+END
+
+IF
+  Global("init","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("init","LOCALS",1)
+    SetGlobalTimerRandom("BD_CloneTimer","LOCALS",ONE_ROUND,FOUR_ROUNDS)
+    Continue()
+END
+
+IF
+  Global("BD_Clone","LOCALS",1)
+  Detect([EVILCUTOFF.GIANTHUMANOID.GENIE.GENIE_NOBLE_DJINNI.0.ILLUSIONARY.CHAOTIC_GOOD])
+  CheckStat(LastSeenBy(Myself),2,PUPPETMASTERTYPE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_Clone","LOCALS",2)
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("ID#DJPI",OVERRIDE))
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("SEDJINNI",CLASS))
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("EFATKMEL",RACE))
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("GNT1MOVE",GENERAL))
+    DisplayString(Myself,36936) // A contingency spell has been triggered
+    DisplayString(Myself,@90004) // Chain Contingency—Invisibility
+    ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+    DisplayString(Myself,@90005) // Chain Contingency—Immunity: Divination
+    ReallyForceSpell(Myself,WIZARD_SPELL_IMMUNITY_DIVINATION)
+    DisplayString(Myself,@90006) // Chain Contingency—Globe of Invulnerability
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_Clone","LOCALS",1)
+  Detect([EVILCUTOFF.GIANTHUMANOID.GENIE.GENIE_NOBLE_DJINNI.0.ILLUSIONARY.CHAOTIC_GOOD])
+  CheckStat(LastSeenBy(Myself),1,PUPPETMASTERTYPE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_Clone","LOCALS",2)
+    ActionOverride(LastSeenBy(Myself),ChangeAIScript("ID#MSLD",OVERRIDE))
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_Clone","LOCALS",0)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  GlobalTimerExpired("BD_CloneTimer","LOCALS")
+  HaveSpell(WIZARD_PROJECT_IMAGE)
+  DifficultyGT(EASY)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_Clone","LOCALS",1)
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_PROJECT_IMAGE)
+    ForceSpell(Myself,WIZARD_PROJECT_IMAGE)
+    SetInterrupt(TRUE)
+END
+
+IF
+  Global("BD_Clone","LOCALS",0)
+  !GlobalTimerNotExpired("BD_Cast","LOCALS")
+  GlobalTimerExpired("BD_CloneTimer","LOCALS")
+  HaveSpell(WIZARD_MISLEAD)
+  !DifficultyGT(EASY)
+  !CheckStatGT(Player1,0,TRUE_SIGHT)
+  !CheckStatGT(Player2,0,TRUE_SIGHT)
+  !CheckStatGT(Player3,0,TRUE_SIGHT)
+  !CheckStatGT(Player4,0,TRUE_SIGHT)
+  !CheckStatGT(Player5,0,TRUE_SIGHT)
+  !CheckStatGT(Player6,0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.PLANATAR],0,TRUE_SIGHT)
+  !CheckStatGT([GOODCUTOFF.0.DARKPLANATAR],0,TRUE_SIGHT)
+  !StateCheck(Myself,STATE_SILENCED)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("BD_Clone","LOCALS",1)
+    SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
+    RemoveSpell(WIZARD_MISLEAD)
+    ForceSpell(Myself,WIZARD_MISLEAD)
+    SetInterrupt(TRUE)
+END

@@ -2620,6 +2620,12 @@ Alternativamente può anche essere usata come incantesimo arcano di livello 3 Bl
 @90000 = ~Trials of the Luremaster
 
 Siamo riusciti a sconfiggere il Maestro degli Inganni in un'imponente battaglia e a far riposare in pace il suo spirito. Ci ha lasciato un anello non molto diverso da quello che Hobart ha usato per portarci nel castello infestato. Ci ha teletrasportati indietro alle Colline di Umar ed è svanito senza lasciare traccia.~
+@90001 = ~Attivatore d'Incantesimo - Immagini Illusorie~
+@90002 = ~Attivatore d'Incantesimo - Invisibilità Potenziata~
+@90003 = ~Attivatore d'Incantesimo - Immunità agli Incantesimi, Divinazione~
+@90004 = ~Contingenza Concatenata - Invisibilità~
+@90005 = ~Contingenza Concatenata - Immunità agli Incantesimi, Divinazione~
+@90006 = ~Contingenza Concatenata - Globo d'Invulnerabilità~
 
 @91000 = ~Dabath~
 @91001 = ~Aah... Morte! Morte ovunque!~
