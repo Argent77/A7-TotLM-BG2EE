@@ -309,3 +309,36 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/eff~ ~^.+\.eff$~ BEGIN
       END
   END
 END
+
+
+// Updating "Shield" spell
+OUTER_SET shield_num = IDS_OF_SYMBOL(~spell~ ~WIZARD_SHIELD~)
+ACTION_IF (shield_num > 0) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME
+    STR_VAR spell_name = ~WIZARD_SHIELD~
+    RET shield_num = spell_num shield_res = spell_res
+  END
+  COPY_EXISTING ~%shield_res%.SPL~ ~override~
+    SET mfm_num = IDS_OF_SYMBOL(~spell~ ~WIZARD_MORDENKAINENS_FORCE_MISSILES~)
+    SET mm_num = IDS_OF_SYMBOL(~spell~ ~MAGIC_MISSILE_SURE_HIT~)
+    PATCH_IF (mfm_num > 0 && mm_num > 0) BEGIN
+      LPF RES_NUM_OF_SPELL_NAME
+        STR_VAR spell_name = ~WIZARD_MORDENKAINENS_FORCE_MISSILES~
+        RET mfm_num = spell_num mfm_res = spell_res
+      END
+      LPF RES_NUM_OF_SPELL_NAME
+        STR_VAR spell_name = ~MAGIC_MISSILE_SURE_HIT~
+        RET mm_num = spell_num mm_res = spell_res
+      END
+      LPF CLONE_EFFECT
+        INT_VAR
+          check_globals = 0
+          check_headers = 1
+          match_opcode = 206  // Immunity to spell
+        STR_VAR
+          match_resource = EVAL ~%mm_res%~
+          resource = EVAL ~%mfm_res%~
+      END
+    END
+  BUT_ONLY
+END
