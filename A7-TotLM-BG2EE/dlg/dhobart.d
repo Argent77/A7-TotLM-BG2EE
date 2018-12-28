@@ -279,7 +279,7 @@ IF WEIGHT #4 ~GlobalGT("ID#Master_Quest","GLOBAL",2) Global("ID#Hobart_Keep","GL
 END
 
 IF ~~ THEN BEGIN Hobart.LevelCheck
-  SAY @91100 /* Well, it's not really any of my business, but you look a little inexperienced to me. I haven't much use for a hero, who doesn't even survive the first battle. */
-  IF ~~ THEN REPLY @91101 /* I'm up to the task. */ DO ~SaveGame(%savename_index%)~ GOTO 11
-  IF ~~ THEN REPLY @91102 /* You are right. I'll come back later. */ EXIT
+  SAY @91101 /* Well, it's not really any of my business, but you look a little inexperienced to me. I haven't much use for a hero, who doesn't even survive the first battle. */
+  IF ~~ THEN REPLY @91102 /* I'm up to the task. */ DO ~SaveGame(%savename_index%)~ GOTO 11
+  IF ~~ THEN REPLY @91103 /* You are right. I'll come back later. */ EXIT
 END
