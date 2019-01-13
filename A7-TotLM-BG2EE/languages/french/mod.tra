@@ -2510,3 +2510,116 @@ Nous avons pu vaincre le Maître des Leurres au cours d'une grande bataille et p
 @91001 = ~Ah... La mort ! La mort partout !~
 @91002 = ~Tant de morts !~
 @91003 = ~Je... Je n'en peux plus. Accordez-moi la mort et la paix !~
+
+// DLURE
+@91004 = ~Quelle audace d'oser vous proclamer comme tel ! J'imagine que je devrais être reconnaissant de me faire savoir exactement dans quel camp vous êtes.~
+@91005 = ~Anny adore ça, quand les méchants viennent s'annoncer comme tel.~
+@91006 = ~Bah ! Imoen, je vous en prie. Ne m'appelez pas ainsi !~
+@91007 = ~Oh, bien sûr, Anomy. (petit rire)~
+@91008 = ~Mrpmh...~
+@91009 = ~Voilà exactement ce dont je n'avais pas besoin en ce moment. Disparais, esprit, nous n'avons que faire de tes « épreuves ».~
+@91010 = ~Mais Minsc et Bouh sont déjà des héros ! Vous n'en avez pas entendu parler ? Peu importe, vous allez bientôt le constater !~
+@91011 = ~Il semble que cet esprit cherche à diriger une pièce dans laquelle nos rôles ont déjà été définis. (soupir) Voilà un scénario bien ennuyeux dans lequel nous dansons.~
+@91012 = ~Oh, oh ! Avons-nous gagné une étoile d'or ? Que diriez-vous d'une vignette ? Ou d'un certificat portant l'inscription « Meilleur héros de la classe » que j'enverrais à ma mère pour qu'elle puisse le placarder sur le garde-manger ?~
+@91013 = ~Si ça ne tenait qu'à moi, nous aurions décapité ce foutu spectre. Sa tête ferait un trophée parfait.~
+@91014 = ~Oublie ça. Ma mère a suffisamment remis en cause mes choix de vie pour que je lui envoie des têtes bizarres décapitées par mes amis.~
+@91015 = ~Nous continuons donc à jouer sa pièce à partir d'un script le plus basique qui soit. Fort bien, ce moineau a toujours eu un penchant pour l'improvisation.~
+@91016 = ~Je commence à percevoir la logique dans la folie de cet esprit. Il avait besoin de quelqu'un pour colporter l'histoire de ce lieu. Mais, il semble toujours résolu à nous rendre la tâche difficile.~
+@91017 = ~Ça me convient parfaitement. Le discours décousu de cet esprit cinglé commençait à me fatiguer sérieusement. Bien sûr, on continue de tuer, on va faire une montagne de cadavres sur lesquels on va grimper.~
+@91018 = ~Je ne me suis pas senti comme ça depuis la fois où je m'étais perdu dans la ferme de navets de ma grande tante. Elle les faisait pousser très gros, avec des tiges si hautes qu'on ne pouvait en voir le sommet. Et pour un jeune gnome intrépide qui avait les crocs en milieu de journée, il n’était pas difficile de se perdre au beau milieu de tout ce fatras quand on avait envie d'une petite friandise. Bien sûr, ce n'est pas de mourir de faim dont il fallait s'inquiéter, mais plutôt des brûlures d'estomac pour avoir trop mangé. La faim a au moins le mérite d'aiguiser votre esprit... trop de navets rendent votre esprit et votre corps lents comme de la mélasse. En parlant de... quelqu'un d'autre a un petit creux ?~
+@91019 = ~Non. Réponds-lui juste non. Nous avons satisfait aux caprices de ce fantôme suffisamment longtemps. (soupir) Si c'était si facile...~
+@91020 = ~Et malgré vos commentaires, je doute fort que vous nous laissiez le choix en la matière.~
+@91021 = ~Pourquoi cela doit-il toujours être fait de manière violente ? N'y a-t-il pas un meilleur moyen d'apporter le repos aux esprits qu'en les combattant ?~
+@91022 = ~Ce serait bien, n'est-ce pas ? Il est vraiment dommage que cela ne se passe généralement pas ainsi.~
+@91023 = ~Ne craignez rien ! Les contes parleront de Minsc et de Bouh, et de leurs amis, pour l'éternité !~
+@91024 = ~Oui. Génial. PARFAIT. Nous avons cédé assez longtemps à cette nostalgie dénuée de sens ! Faites-nous sortir d'ici.~
+@91025 = ~Les grands exploits parlent d'eux-mêmes. Il ne nous revient pas de nous assurer qu’on s'en souvienne, mais de faire ce qu’il convient pour que d'autres s'en inspirent.~
+
+// DHARALD
+@91026 = ~C'est aussi ce que je me demande toujours... Mais non, on peut toujours se réveiller d'un rêve et, généralement, les choses se passent alors toujours bien. Du moins, parfois...~
+@91027 = ~Un simple moment de faiblesse et d'indécision suffit à vous détourner du droit chemin. Vous auriez dû avoir conservé les enseignements de Tyr au plus profond de votre cœur.~
+@91028 = ~Oui... J'en suis conscient désormais. Si douloureusement conscient.~
+@91029 = ~Il y a toujours de l'espoir, frère. Tyr est un dieu juste. Il comprendra... Il vous suffit d'essayer.~
+@91030 = ~Demander pardon, c'est purifier son âme aux yeux des dieux. Vous devez rechercher la force qui reste en vous, et chercher à l'obtenir.~
+@91031 = ~Bah, si vous ne souhaitez pas en finir avec ce misérable éloignez-vous. Je ne le supporterai pas plus longtemps ses braillements.~
+@91032 = ~Quelqu'un d'autre a-t-il soif ? Hum... tout bien réfléchi, ses veines sont pratiquement vides. Je n'en tirerais même pas une gorgée.~
+@91033 = ~Il se pourrait que nous nous éloignons de la civilisation pendant un certain temps. Je me demande à quel moment nous devrons nous inquiéter pour notre propre cou, lorsque tu deviendras assoiffée.~
+@91034 = ~Vous n'avez rien à craindre, bien évidemment. Je préférerais mourir une seconde fois plutôt que de trahir la confiance que vous m'avez accordée.~
+@91035 = ~Pour que tu puisses trahir ma confiance, il faudrait d'abord que je t'en accorde ne serait-ce qu'une once.~
+@91036 = ~Je... ne suis pas certaine de savoir quelle ligne de conduite adopter ici. Il mérite assurément de trouver la paix... mais la mort est-elle vraiment le seul moyen ?~
+@91037 = ~Certainement pas. Cela ne devrait pas. Nous devons essayer de trouver un autre moyen d'aider ce pauvre homme.~
+
+// DHARPY
+@91038 = ~Le loup ne demande pas son nom au faon avant de l'attaquer. Si vous avez l'intention de nous dévorer, alors cette diversion de façade est inutile.~
+@91039 = ~Mords-toi la langue, druide. Je ne suis pas un faon. Que ces harpies sachent que je m'appelle Dorn pour qu'elles puissent hurler mon nom lorsque je les renverrai dans les Abysses !~
+@91040 = ~Le seul nom que vous devez connaître est celui de mon arme, immonde créature. Comme vous pouvez le constater, je l’ai gravé dessus pour pouvoir en marquer ceux qui nous défient.~
+@91041 = ~(chuchote) Son nom, c'est Justine ! C'est plutôt mignon, tu ne trouves pas ? (glousse)~
+@91042 = ~Vous ne réalisez même pas que vous êtes dans une cage... vous n'êtes rien d'autre que des vautours qui ne voient que les restes qui leur sont jetés en pâture.~
+@91043 = ~(Pas si différents de ces parasites en fin de chaîne alimentaire qui se nourrissent de mes restes...)~
+
+// DCRIECK
+@91044 = ~Manifestement, vous ne connaissez pas l'expression « on attire plus de mouches avec du miel qu'avec du vinaigre ». Peut-être souhaiteriez-vous reformuler vos questions de manière plus amicale ?~
+@91045 = ~Nous ne vous aiderons pas, prêtre. Rejoignez votre dieu mort dans les Neuf Enfers !~
+
+// DRAKSH
+@91046 = ~Reste sur tes gardes : Ce n'est pas le même petit-homme lâche que nous avons rencontré à l'extérieur.~
+@91047 = ~Cela ne peut pas être Hobart. Je vous en supplie, ne croyez pas ce qu'il dit.~
+@91048 = ~Continue donc à questionner cette créature, et elle finira par nous révéler sa véritable nature, quoi qu’elle soit.~
+@91049 = ~Faites attention, <CHARNAME> ! Quelque chose ne va pas. Je perce clairement une intention malveillante derrière ses mots.~
+@91050 = ~Oh oui, nous sommes vraiment de vieux copains. Recule-toi ! Tu te souviens de la fois où tu nous as piégés dans ce désert quelques minutes après que nous t'ayons rencontré ? C'était le bon temps.~
+@91051 = ~Vous ne pouvez ne peux donc jamais prendre quelque chose au sérieux, Neera ?~
+@91052 = ~Eh bien, il faut bien que quelqu'un contrebalance ton humeur déprimante.~
+
+// DRIKASHA
+@91053 = ~Au moins avons-nous trouvé un être amical dans ces profondeurs. Votre aide serait bien accueillie, mon ami.~
+@91054 = ~Cela s'apparente donc davantage à mon statut druidique. J'ai en effet constaté que vos semblables contrôlaient un peu plus leur transformation que les loups-garous ordinaires.~
+@91055 = ~Un portail pour quitter cet endroit ? Parle, tout de suite. Je ne peux pas me permettre de rester dans ce trou fétide un moment de plus !~
+@91056 = ~Il fait allusion à la chute de Néthéril, je pense. Ils seraient donc piégés ici depuis des siècles.~
+@91057 = ~Néthéril ? Ça se pourrait. Ou bien il pourrait aussi faire référence à la fois où mon oncle Scratchy a inventé la catapulte de navets brevetée Jansen. Pour la tester, nous avons utilisé la récolte pourrie (après tout, ça ne sert à rien de gaspiller un bon navet) et nous les avons lancés en flammes à l'horizon, riant en cœur alors qu'ils traversaient le ciel. Tiens, on ne s'est jamais vraiment demandé où ils avaient atterri... peut-être que c'était ici ! Oh, je frémis rien que d'imaginer l’horreur que ces gens ont dû ressentir lorsque des navets enflammés ont plu sur eux !~
+@91058 = ~Ferait-il allusion à la fois où mon oncle Scratchy a inventé la catapulte de navets brevetée Jansen ? Pour la tester, nous avons utilisé la récolte pourrie (après tout, ça ne sert à rien de gaspiller un bon navet) et nous les avons lancés en flammes à l'horizon, riant en cœur alors qu'ils traversaient le ciel. Tiens, on ne s'est jamais vraiment demandé où ils avaient atterri... peut-être que c'était ici ! Oh, je frémis rien que d'imaginer l’horreur que ces gens ont dû ressentir lorsque des navets enflammés ont plu sur eux !~
+@91059 = ~Je suis... à peu près certaine que ce n'était pas ça.~
+@91060 = ~(renifle) Tu en es sure ? Mille fois merci, jeune Nalia. Tu as évité à ce vieux gnome fragile une existence entière de regrets !~
+@91061 = ~Je... de rien.~
+@91062 = ~Il s'agit donc d'une chasse au trésor, alors ? (soupir) Quelle meilleure façon de passer le temps dans une si belle grotte froide et humide ?~
+
+// DHOBART
+@91063 = ~Des héros, oui ! Nous écrasons le mal, conduits par la juste fureur d'un hamster ! Indiquez-nous la direction, petit-homme, et Minsc et Bouh chargeront !~
+@91064 = ~Le lion rusé ne saute pas sur la première antilope qui traverse son chemin, car il sait que les sabots d'une antilope peuvent lui briser le cou. Il préfère faire le tour du troupeau, invisible à l'abri des hautes herbes, et choisit la meilleure proie après avoir mûrement réfléchi. Nous faisons également très attention au choix des missions que nous acceptons.~
+@91065 = ~Vous avez donc entendu parler de nous ? Oui, je dirais que nous sommes des héros confirmés et que nous ne craignons aucun des dangers que vous pourriez nous proposer. Je vous écoute.~
+@91066 = ~Anomen, veille à ce que votre orgueil ne tresse pas la bride par laquelle les autres pourraient te guider par le bout du nez.~
+@91067 = ~Bah, ce n'est pas de l'orgueil que de dire la vérité.~
+@91068 = ~Har, har ! Je l'aime bien, celui-là. Suffisamment pour empêcher ma hache de lui couper la tête, le temps d'entendre son offre.~
+@91069 = ~Bien que les notions d'hospitalité et de courtoisie des autres races puissent parfois être oppressantes, vous pourriez en apprendre quelques-unes, mon ami.~
+@91071 = ~(soupir) Et, bien entendu, le fait que tous ceux qui y sont entrés sont morts est censé être une perspective plus séduisante ? La folie des surfaciens ne cessera jamais de m'étonner.~
+@91072 = ~Tout cela commence à être désagréablement familier...~
+@91073 = ~Fascinant. Je crois bien que c'est notre spécialité.~
+@91074 = ~Eh bien, au moins mon château n'a pas produit *cela*.~
+@91075 = ~Oui, chaque histoire comporte toujours au moins une once de vérité ! Mais ce moineau serait beaucoup plus riche si chaque spectateur croyait que toutes les histoires étaient toutes aussi vraies.~
+@91076 = ~Pour ma part, je ne vois pas très bien ce qu'il y a de si étrange dans un château qui attire les gens. Tiens, j’avais autrefois une ferme de navets qui faisait la même chose ! Vous voyez, pour rester au frais pendant les chauds mois d’été, j’avais convoqué un élémentaire de l’air pour produire une belle brise apaisante. Le problème, c'est que Jeremy (c'était le nom de l'élémentaire) alternait souvent, pour un oui ou pour un non, souffle et aspiration ; et le vortex qui en résultait faisait s'envoler les badauds à travers la ferme. Bien entendu, comme chaque expérience représente aussi une opportunité, avec un peu d’esprit d’entreprise, j’en ai profité pour créer le parc d’attractions le plus excitant de Féérûne, sur la thématique du navet !~
+@91077 = ~Malheureusement, cette entreprise n'a pas duré longtemps, à cause d'une série d'accidents mortels qui ont été franchement un peu gonflés par les visiteurs. Hé, gonflés, vous avez compris ?... (soupir) Ça aurait fait rire Jeremy.~
+@91078 = ~Cela ne me semble pas prudent. Non seulement cet homme nous cache quelque chose, mais il nous demande également de prendre sa parole comme argent comptant. Ah, mais fais comme tu voudras.~
+@91079 = ~Ainsi, vous admettez n'être qu'un vulgaire profiteur ? Alors prenez garde à cet avertissement : à la moindre tentative de duperie, vous n'échapperez pas au bras de la justice.~
+@91080 = ~Si je te vois traîner entre mes jambes, tu finiras écrasé sous mes bottes.~
+@91081 = ~Euh... alors c'est un piège, n'est-ce pas ? Écoute, je ne veux pas être celle qui rabâche « je te l'avais bien dit », mais...~
+@91082 = ~Je te l'avais bien dit. En fait, j'aime vraiment bien dire ça. Mais bien plus sérieusement, ça craint.~
+@91083 = ~Encore une fois, nous sommes pris au piège d'une sorcellerie maléfique. Je semble condamné à endurer ces tourments, bien au-delà du cadre familial.~
+@91084 = ~Ne vous inquiétez pas, mon bon Valygar. Tant que nous resterons unis, nous n'aurons aucun mal à surmonter ces épreuves.~
+@91085 = ~Je te trouve très désinvolte, pour quelqu'un sur le point d'être découpé en morceaux sanglants.~
+@91086 = ~Sakpul iblith ! Dire qu'il pourrait même exister des lieux encore plus désagréables à la surface.~
+@91087 = ~Cela expliquerait pourquoi l'air est si sec. Finalement, j'ai bien fait de glisser ce baume à lèvres dans mon paquetage...~
+@91088 = ~Nous nous retrouvons loin de tout, sans chemin de retour... pour le moment. Nous devrions entrer dans le château rapidement. Si nous devons trouver une issue, elle s'y trouvera. Et puis, le soleil sera particulièrement désagréable à l'extérieur.~
+@91089 = ~...~
+@91090 = ~Tu nous as dit beaucoup de choses, mon ami, sauf une : la vérité. Que nous caches-tu ?~
+@91091 = ~Je... je ne sais pas de quoi vous parlez.~
+@91092 = ~Garder tes secrets ne peut que te nuire, mon ami.~
+@91093 = ~J'en ai assez de ce petit-homme qui joue avec la vérité. S'il ne se met pas à table immédiatement, j'userai de mes pouvoirs pour le forcer à coopérer.~
+@91094 = ~Peut-être est-il sous l'influence d'une sorte de quête ? Ce n'est pas vraiment ma spécialité, mais j'ai entendu parler de tels enchantements lors de mes voyages.~
+@91095 = ~Ce qui s'apparente à être pris au piège dans l'un des labyrinthes de la Dame. En général, seul le bon sens permet de s'échapper de ce type de pièges.~
+@91096 = ~Puis-je voir cet anneau ? Peut-être que quelque chose dans son enchantement pourrait me permettre de...~
+@91097 = ~Je crains que ce ne soit pas possible, mon amie. Mon âme est liée à l'anneau... si je l'enlève, ça me tuera. Aucun des mages que j'ai rencontrés n'a été capable de comprendre comment il fonctionne.~
+@91098 = ~Oui, je vous comprends. Je ne vous en veux pas. Mais ne vous inquiétez pas, nous sommes vraiment à la hauteur. Nous allons trouver une solution, et vous serez libre en un rien de temps.~
+@91099 = ~C'est gentil de dire ça, mais j'ai vu trop d'aventuriers engloutis par ce lieu pour que j'en tire quelque espoir.~
+@91100 = ~Oui, mais vous n'en avez rencontré aucun de notre trempe.~
+@91101 = ~Eh bien, ça ne me regarde pas vraiment, mais vous me semblez un peu inexpérimenté. Je n'ai que faire d'un héros qui ne survivrait même pas à la première bataille.~ ~Eh bien, ça ne me regarde pas vraiment, mais vous me semblez un peu inexpérimentée. Je n'ai que faire d'une héroïne qui ne survivrait même pas à la première bataille.~
+@91102 = ~Je suis à la hauteur.~
+@91103 = ~Vous avez raison. Je reviendrai plus tard.~

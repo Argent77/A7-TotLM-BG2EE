@@ -1,9 +1,9 @@
 // -*- coding: us-ascii -*- 
 // Setup (index >= 1000000)
+
 @1000000 = ~Les Epreuves du Maitre des Leurres pour BG2:EE~
 @1000050 = ~Mettre les sorts de IWD a disposition du joueur~
-@1000100 = ~Reequilibrer les armes et l'équipement~
-
+@1000100 = ~Reequilibrer les armes et l'equipement~
 
 @1100000 = ~Necessite l'installation de BG2:EE ou EET.~
 @1100001 = ~Necessite BG2:EE beneficiant du patch 2.0 ou plus recent.~
