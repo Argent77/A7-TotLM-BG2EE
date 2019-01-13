@@ -21,7 +21,8 @@ IF
   OnCreation()
 THEN
   RESPONSE #100
-    NoAction()
+    SetGlobal("FOG_TYPE","GLOBAL",0)
+    Weather(FOG)
     Continue()
 END
 

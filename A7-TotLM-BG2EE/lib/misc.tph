@@ -102,14 +102,34 @@ BUT_ONLY
 
 
 // appending fog information
+OUTER_SET fog_idx_max = 0 // stores highest available fog entry index
+ACTION_FOR_EACH table IN ~fogarea~ ~fogpt~ BEGIN
+  COPY_EXISTING - ~%table%.2da~ ~override~
+    COUNT_2DA_ROWS 1 numRows
+    FOR (row = 3; row < numRows; ++row) BEGIN
+      READ_2DA_ENTRY row 0 1 cur_idx
+      PATCH_IF (IS_AN_INT ~cur_idx~ && cur_idx > fog_idx_max) BEGIN
+        SET fog_idx_max = cur_idx
+      END
+    END
+  BUT_ONLY
+END
+OUTER_SET fog_id9800_idx = fog_idx_max + 1
+
 COPY_EXISTING ~fogarea.2da~ ~override~
-  APPEND_FILE TEXT ~%MOD_FOLDER%/2da/fogarea-append.2da~
+  APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/2da/fogarea-append.2da~
   PRETTY_PRINT_2DA
 BUT_ONLY
 
 COPY_EXISTING ~fogpt.2da~ ~override~
-  APPEND_FILE TEXT ~%MOD_FOLDER%/2da/fogpt-append.2da~
+  APPEND_FILE_EVALUATE TEXT ~%MOD_FOLDER%/2da/fogpt-append.2da~
   PRETTY_PRINT_2DA
+BUT_ONLY
+
+COPY_EXISTING ~id9800.bcs~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+    REPLACE_TEXTUALLY ~SetGlobal("FOG_TYPE","GLOBAL",0)~ ~SetGlobal("FOG_TYPE","GLOBAL",%fog_id9800_idx%)~
+  END
 BUT_ONLY
 
 
