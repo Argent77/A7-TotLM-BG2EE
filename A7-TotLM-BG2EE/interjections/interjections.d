@@ -2,10 +2,10 @@
 
 I_C_T DLURE 0 DLURE0Anomen
 == ANOMENJ IF ~IsValidForPartyDialogue("Anomen")~ THEN @91004 /* And you'd be so bold to proclaim as such? I suppose I should be thankful to know exactly where you stand. */
-== IMOEN2J IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen")~ THEN @91005 /* Anny just loves it when the bad guys just come out and announce as such. */
-== ANOMENJ IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen")~ THEN @91006 /* Bah! Imoen please, do not call me that! */
-== IMOEN2J IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen")~ THEN @91007 /* Oh, sure thing Anomy *giggle* */
-== ANOMENJ IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen")~ THEN @91008 /* Mrpmh... */
+== IMOEN2J IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen2")~ THEN @91005 /* Anny just loves it when the bad guys just come out and announce as such. */
+== ANOMENJ IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen2")~ THEN @91006 /* Bah! Imoen please, do not call me that! */
+== IMOEN2J IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen2")~ THEN @91007 /* Oh, sure thing Anomy *giggle* */
+== ANOMENJ IF ~IsValidForPartyDialogue("Anomen") IsValidForPartyDialogue("Imoen2")~ THEN @91008 /* Mrpmh... */
 END
 
 I_C_T DLURE 0 DLURE0Jaheira
@@ -52,7 +52,7 @@ END
 
 I_C_T DLURE 25 DLURE25Aerie
 == AERIEJ IF ~IsValidForPartyDialogue("Aerie")~ THEN @91021 /* Why must such things always be done with violence. Isn't there a better way to put the spirits to rest than by fighting them? */
-== IMOEN2J IF ~IsValidForPartyDialogue("Aerie") IsValidForPartyDialogue("Imoen")~ THEN @91022 /* That would be nice, wouldn't it? Shame it doesn't usually go that way. */
+== IMOEN2J IF ~IsValidForPartyDialogue("Aerie") IsValidForPartyDialogue("Imoen2")~ THEN @91022 /* That would be nice, wouldn't it? Shame it doesn't usually go that way. */
 END
 
 I_C_T DLURE 30 DLURE30Minsc
@@ -69,7 +69,7 @@ END
 
 
 I_C_T DHARALD 0 DHARALD0Imoen
-== IMOEN2J IF ~IsValidForPartyDialogue("Imoen") GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%) GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)~ THEN @91026 /* I still wonder that myself... But no, a dream is something you can wake up from and usually things will still be alright. Well, sometimes, at least. */
+== IMOEN2J IF ~IsValidForPartyDialogue("Imoen2") GlobalGT("Chapter","GLOBAL",%bg2_chapter_3%) GlobalLT("Chapter","GLOBAL",%bg2_chapter_8%)~ THEN @91026 /* I still wonder that myself... But no, a dream is something you can wake up from and usually things will still be alright. Well, sometimes, at least. */
 END
 
 I_C_T DHARALD 2 DHARALD2Anomen
@@ -301,7 +301,7 @@ I_C_T DHOBART 36 DHOBART36Nalia
 END
 
 I_C_T DHOBART 38 DHOBART38Imoen
-== IMOEN2J IF ~IsValidForPartyDialogue("Imoen")~ THEN @91098 /* Yeah, I think I do. No hard feelings. But don't worry, we're really good. We'll figure this whole thing out and you'll be free in no time. */
+== IMOEN2J IF ~IsValidForPartyDialogue("Imoen2")~ THEN @91098 /* Yeah, I think I do. No hard feelings. But don't worry, we're really good. We'll figure this whole thing out and you'll be free in no time. */
 == DHOBART @91099 /* You're sweet to say, but I've seen too many adventurers destroyed by this place to give me any hope. */
-== IMOEN2J IF ~IsValidForPartyDialogue("Imoen")~ THEN @91100 /* Yeah, but you haven't seen nothin' like us. */
+== IMOEN2J IF ~IsValidForPartyDialogue("Imoen2")~ THEN @91100 /* Yeah, but you haven't seen nothin' like us. */
 END
