@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>MOD: Die Herausforderungen des Meisters der Verlockung für BG2:EE</title>
+    <meta name="description" content="Die Icewind Dale-Erweiterung &quot;Die Herausforderungen des Meisters der Verlockung&quot; bereitgestellt für BG2:EE und EET (Enhanced Edition Trilogy)." />
+    <meta name="keywords" content="bg2ee, eet, mod, adventure, dungeon crawler" />
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: default;
+        text-align: center;
+        color: #000;
+        background-image: linear-gradient(#ccc7ba, #e8e6e1);
+        /*background-color: #ccc7ba;*/
+      }
+
+      #wrap {
+        border: 2px solid #66451f;
+        background: #e8e8e0;
+
+        text-align: left;
+        margin: 20px auto;
+        width: 80%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #222;
+      }
+
+      #header {
+        text-align: center;
+        background: #e8e8e0;
+        border-bottom: 2px solid #66451f;
+        padding: 5px 0 13px 0;
+        margin: 0 auto;
+      }
+
+      #header .about {
+        margin: 7px 0 0 0;
+        padding: 0;
+        /*font-style: italic;*/
+        font-size: 120%;
+        color: #222;
+      }
+
+      #header .menu {
+        font-weight: bold;
+        margin: 0;
+      }
+
+      #header .menu a:link,
+      #header .menu a:visited {
+        color: #222;
+      }
+
+      #maindiv {
+        margin: 10px auto 0px auto;
+      }
+
+      #maindiv .content {
+        background-color: #e8e8e0;
+        padding: 0 0 25px 0;
+        position: relative;
+        display: block;
+      }
+
+      h2 {
+        display: block;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        text-align: left;
+        text-indent: 30px;
+        padding: 0px;
+        margin: 0;
+        font-size: 160%;
+      }
+
+      #maindiv p {
+        font-size: 100%;
+        font-style: normal;
+        line-height: 150%;
+        padding: 0px;
+        margin: 10px auto;
+        width: 90%;
+        display: block;
+      }
+
+      #maindiv p.boxed {
+        border-style: inset;
+        border-width: 1px;
+        border-color: #66451f;
+        margin-top: 32px;
+        padding: 6px;
+      }
+
+      #maindiv address a:link,
+      #maindiv address a:visited {
+        margin-right: 5px;
+      }
+
+      #maindiv address {
+        font-size: 95%;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: #bbb;
+        padding: 3px 0px 3px;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        display: block;
+        text-align: right;
+      }
+
+      #maindiv .important {
+        font-size: 95%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        text-align: left;
+        background-color: #f5f5f0;
+        border: solid 2px #888;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        line-height: 160%;
+      }
+
+      #maindiv .important::before {
+        display: none;
+      }
+
+      #maindiv .important p {
+        font-size: 100%;
+        text-indent: 0px;
+        margin: 5px 0 10px 0;
+      }
+
+      #maindiv ul {
+        margin: -10px 0 0 40px;
+        *margin-left: 65px;
+      }
+
+      #maindiv ol {
+        margin: -10px 0 0 35px;
+        *margin-left: 70px;
+      }
+
+      #maindiv .important ul {
+        margin: -10px 0 0 15px;
+      }
+
+      #maindiv .important ol {
+        margin: -10px 0 0 20px;
+      }
+
+      #maindiv ul li {
+        list-style-type: square;
+        line-height: 150%;
+      }
+
+      #maindiv ol li {
+        line-height: 150%;
+      }
+
+      #portrait {
+        float: left;
+        margin: 10px 10px 0px 30px;
+      }
+
+      .t1 {
+        font-weight: bold;
+        width: 26%;
+        text-align: right;
+        clear: right;
+        float: left;
+        *float: none;
+        *margin-left: 65px;
+        line-height: 22px;
+      }
+
+      .t2 {
+        text-align: left;
+        width: 73%;
+        float: right;
+        *float: none;
+        line-height: 22px;
+      }
+
+      .t3 {
+        font-weight: bold;
+        width: 25px;
+        float: left;
+        clear: left;
+      }
+
+      .code {
+        font-family: monospace;
+        border-width: 1px;
+        border-color: black;
+        border-style: solid;
+        padding: 1px 2px 0px 2px;
+      }
+
+      hr {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        height: 1px;
+        border: 0;
+        color: #aaa;
+        background-color: #aaa;
+      }
+
+      hr.floatfix {
+        clear: both;
+        color: #e8e8e6;
+        background-color: #e8e8e6;
+        *margin: 0;
+        *padding: 0;
+      }
+
+      h1 {
+        font-size: 250%;
+        color: #222;
+        padding: 5px 0 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      h3,
+      h4,
+      h5 {
+        margin: 10px 40px 10px 40px;
+        padding: 0;
+      }
+
+      h3 {
+        font-size: 125%;
+        font-style: italic;
+      }
+
+      h4 {
+        font-size: 125%;
+      }
+
+      h5 {
+        font-size: 100%;
+      }
+
+      h6 {
+        width: 100%;
+        margin: 10px 0 15px 0;
+        text-align: left;
+        text-indent: 30px;
+        font-size: 100%;
+        font-style: italic;
+        padding-top: 1px;
+        padding-bottom: 1px;
+      }
+
+      a:link,
+      a:visited {
+        color: #804000;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: #222;
+        border-bottom: 1px solid black;
+      }
+
+      hr.divider {
+        background-color: #66451f;
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><a name="top" id="top"></a></div>
+    <div id="wrap">
+      <div id="header">
+        <h1>Die Herausforderungen des Meisters der Verlockung für BG2:EE</h1>
+        <em>Die Icewind Dale-Erweiterung &quot;Die Herausforderungen des Meisters der Verlockung&quot; bereitgestellt für BG2:EE und EET (Enhanced Edition Trilogy).</em>
+        <hr />
+        <p class="about"><strong>Autor: Argent77</strong></p>
+        <p class="about">
+          <strong>Download</strong> (<a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">SHS</a>) &#8226;
+          <strong>Download</strong> (<a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>) &#8226;
+          <strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>) &#8226;
+          <strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>) &#8226;
+          <a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a> &#8226;
+          Version: 1.0
+        </p>
+        <hr />
+        <p class="menu">
+          <a href="#overview">Übersicht</a> &middot;
+          <a href="#installation">Installation</a> &middot;
+          <a href="#component">Komponenten</a> &middot;
+          <a href="#credits">Danksagungen</a> &middot;
+          <a href="#version">Versionshistorie</a>
+        </p>
+      </div>
+      <div id="maindiv">
+
+        <!-- ================== I N T R O D U C T I O N ================== -->
+        <a name="overview" id="overview"></a>
+        <div class="content">
+          <h2>Übersicht</h2>
+          <p>Diese Mod stellt die Icewind Dale-Erweiterung &quot;Die Herausforderungen des Meisters der Verlockung&quot; für BG2:EE (Version 2.0 oder später) und EET (Enhanced Edition Trilogy) bereit.</p>
+          <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh im Wirtshaus in den Umarhügeln ansprecht. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
+          <hr class="floatfix" />
+          <p>Schaut im <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forum</a> oder <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forum</a> vorbei, wenn ihr Fragen habt, oder besucht <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> oder <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>, um die aktuellste Modversion herunterzuladen.</p>
+          <address>
+            <a href="#top">ZURÜCK ZUM ANFANG</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== I N S T A L L A T I O N ================== -->
+        <a name="installation" id="installation"></a>
+        <div class="content">
+          <h2>Installation</h2>
+          <p>Dies ist eine WeiDU-Mod. Das bedeutet, sie ist sehr einfach zu installieren. Entpackt die Zipdatei in euer Spielverzeichnis (wo ihr die Datei "chitin.key" finden könnt) und startet entweder <em>&quot;setup-A7-TotLM-BG2EE.exe&quot;</em> (Windows) oder <em>&quot;setup-A7-TotLM-BG2EE.command&quot;</em> (macOS). Folgt den Anweisungen im Textfenster und die Mod ist startbereit.</p>
+          <p>Es ist nicht nötig ein neues Spiel zu starten. Allerdings muss sie installiert werden, bevor ihr zum ersten Mal die Herberge in den Umarhügeln betretet.</p>
+          <p>Um die Mod zu deinstallieren, startet <em>&quot;setup-A7-TotLM-BG2EE.exe&quot;</em> oder <em>&quot;setup-A7-TotLM-BG2EE.command&quot;</em> erneut und folgt den Anweisungen.<br /><br /></p>
+          <h5>Kompatibilität</h5>
+          <p>Es sind keine Kompatibilitätsprobleme mit anderen Mods bekannt.</p>
+          <p>Diese Mod sollte vor Sword Coast Stratagems (SCS) installiert werden.</p>
+          <address>
+            <a href="#top">ZURÜCK ZUM ANFANG</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== C O M P O N E N T S ================== -->
+        <a name="component" id="component"></a>
+        <div class="content">
+          <h2>Modkomponenten</h2>
+          <hr class="floatfix" />
+          <ol style="margin-right: 50px">
+            <li><strong>Die Herausforderungen des Meisters der Verlockung für BG2:EE</strong> <em>(benötigt BG2:EE oder EET ab Patchversion 2.0)</em><br />Das ist die Hauptkomponente der Mod. Sie installiert alle notwendigen Gebiete, Kreaturen, Gegenstände, Zauber und vieles mehr, um das Abenteuer zu genießen. (Empfohlene Gruppenstärke: Stufe 11 oder höher.)<br /><br />Die Mod führt einige kleinere Veränderungen durch, um das Abenteuer besser an BG2 anzupassen. Zauber und Gegenstände aus Icewind Dale, die keine oder nur eine geringe Bedeutung haben, wurden durch BG2-Zauber und -Gegenstände ersetzt. Außerdem wurden einige Ereignisse, Skripte und Monsteranimationen erweitert, verbessert oder an BG2 angepasst.<br /><br /></li>
+            <li><strong>Dem Spieler vorhandene IWD-Zauber zur Verfügung stellen</strong> <em>(benötigt die Hauptkomponente)</em><br />Diese Mod kommt mit einigen speziellen Icewind Dale Zaubern daher, die von den Akteuren des Abenteuers benutzt werden. Diese Komponente stellt diese Zauber auch dem Spieler zur Verfügung. Sie können in Shops, Containern oder von Monstern erworben bzw. erlangt werden.<br /><strong>Hinweis:</strong> Diese Komponente sollte nicht installiert werden, falls ihr Icewind Dale-Zauber mit IWDification oder Sword Coast Stratagems (SCS) installieren wollt.<br /><br /></li>
+            <li><strong>Waffen und Ausrüstung anpassen</strong> <em>(benötigt die Hauptkomponente)</em><br />Viele Gegenstände aus Icewind Dale sind überaus mächtig. Sie würden den weiteren Verlauf des Spiels sehr vereinfachen und dadurch den Spielspaß mindern. Diese Komponente ersetzt diese Gegenstände durch weniger starke Varianten aus BG2.</li>
+          </ol>
+          <address>
+            <a href="#top">ZURÜCK ZUM ANFANG</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== C R E D I T S ================== -->
+        <a name="credits" id="credits"></a>
+        <div class="content">
+          <h2>Credits</h2>
+          <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+          <p><strong>Additional dialog content:</strong> AWizardDidIt</p>
+          <p><strong>French translation:</strong> Gwendolyne</p>
+          <p><strong>Italian translation:</strong> Aedan and improbabile</p>
+          <p><strong>Russian translation:</strong> Eugene Vlasov (aka EugVV)</p>
+          <!--<p><strong>Spanish translation:</strong> Chidojuan</p>-->
+          <p><strong>Additional help:</strong> typo_tilly, jastey</p>
+          <hr class="floatfix" />
+          <h5>Copyright Notice:</h5>
+          <div class="important">
+            <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />The mod &quot;Trials of the Luremaster for BG2:EE&quot; is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            <p>Baldur's Gate II: Enhanced Edition and Icewind Dale: Enhanced Edition &copy; Beamdog.</p>
+          </div>
+          <address>
+            <a href="#top">ZURÜCK ZUM ANFANG</a>
+          </address>
+        </div>
+
+        <hr class="divider" />
+
+        <!-- ================== V E R S I O N   H I S T O R Y ================== -->
+        <a name="version" id="version"></a>
+        <div class="content">
+          <h2>Version History</h2>
+          <h6>Version 1.0:</h6>
+          <ul>
+            <li>Initial release</li>
+          </ul>
+          <address>
+            <a href="#top">ZURÜCK ZUM ANFANG</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
