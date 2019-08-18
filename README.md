@@ -1,6 +1,11 @@
 # Trials of the Luremaster for BG2:EE
 *The Icewind Dale expansion "Trials of the Luremaster" made available to BG2:EE and EET (Enhanced Edition Trilogy).*
 
+**Author:** Argent77
+
+**Website:** https://argent77.github.io/A7-TotLM-BG2EE/index.html
+
+**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/73701/) or [Spellhold Studios Forums](http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/)
 
 ## Overview
 
