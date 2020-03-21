@@ -93,3 +93,13 @@ THEN
     Continue()
 END
 
+IF
+  Dead("LUREMASTER")
+  Global("CastleSafe","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("CastleSafe","MYAREA",1)
+    SetRestEncounterProbabilityDay(0)
+    SetRestEncounterProbabilityNight(0)
+    SetAreaRestFlag(1)
+END
