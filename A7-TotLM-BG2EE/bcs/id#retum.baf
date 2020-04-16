@@ -1,5 +1,34 @@
+// Return to SoD - Coalition Camp
 IF
   Global("ID#LURE","GLOBAL",1)
+  Global("ID#Master_Quest_Location","GLOBAL",2)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    DisplayString(LastSummonerOf(Myself),23357)
+    StartCutSceneMode()
+    StartCutScene("KERTRNCC")
+    DestroySelf()
+END
+
+// Return to ToB - Amkethran
+IF
+  Global("ID#LURE","GLOBAL",1)
+  Global("ID#Master_Quest_Location","GLOBAL",3)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    DisplayString(LastSummonerOf(Myself),23357)
+    StartCutSceneMode()
+    StartCutScene("KERTRNAM")
+    DestroySelf()
+END
+
+// Return to SoA - Umar Hills
+IF
+  Global("ID#LURE","GLOBAL",1)
+  !Global("ID#Master_Quest_Location","GLOBAL",2)
+  !Global("ID#Master_Quest_Location","GLOBAL",3)
 THEN
   RESPONSE #100
     ClearAllActions()
@@ -8,3 +37,4 @@ THEN
     StartCutScene("KERTRNUH")
     DestroySelf()
 END
+

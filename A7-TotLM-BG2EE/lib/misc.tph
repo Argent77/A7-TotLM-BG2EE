@@ -33,38 +33,142 @@ END
 
 COPY ~%MOD_FOLDER%/bmp~ ~override~
 COPY ~%MOD_FOLDER%/ini~ ~override~
-COPY ~%MOD_FOLDER%/tis~ ~override~
 
-ACTION_FOR_EACH type IN ~vvc~ ~wed~ ~wav~ BEGIN
-  ACTION_BASH_FOR ~%MOD_FOLDER%/%type%~ ~^.+\.%type%$~ BEGIN
-    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
-      COPY ~%BASH_FOR_FILESPEC%~ ~override~
+
+// Installing tilesets
+ACTION_BASH_FOR ~%MOD_FOLDER%/tis~ ~^.+\.tis$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+    LPF UPDATE_PVRZ_INDICES RET original_base_index new_base_index END
+
+  // Installing associated PVRZ files
+  ACTION_IF (new_base_index >= 0) BEGIN
+    LAF TIS_RES_TO_PVRZ STR_VAR tis_res = EVAL ~%BASH_FOR_FILESPEC%~ RET prefix END
+    ACTION_BASH_FOR ~%MOD_FOLDER%/tis~ ~^%prefix%.*\.pvrz$~ BEGIN
+      LAF INSTALL_PVRZ
+        INT_VAR original_base_index new_base_index
+        STR_VAR source_file = EVAL ~%BASH_FOR_FILESPEC%~
+        RET success
+      END
+      ACTION_IF (NOT success) BEGIN
+        FAIL ~Could not install %BASH_FOR_FILESPEC%.~
+      END
+    END
+  END ELSE BEGIN
+    FAIL ~Could not install file %BASH_FOR_FILESPEC%.~
+  END
+END
+
+
+ACTION_FOR_EACH type IN ~vvc~ ~wed~ ~wav~ ~wav/english~ ~wav/%LANGUAGE%~ BEGIN
+  ACTION_IF (DIRECTORY_EXISTS ~%MOD_FOLDER%/%type%~) BEGIN
+    ACTION_BASH_FOR ~%MOD_FOLDER%/%type%~ ~^.+\.%type%$~ BEGIN
+      ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+        COPY ~%BASH_FOR_FILESPEC%~ ~override~
+      END
     END
   END
 END
 
 
 // adding Hobart
-COPY_EXISTING ~ar1105.are~ ~override~
-  LPF fj_are_structure
-  INT_VAR
-    fj_loc_x       = 755
-    fj_loc_y       = 546
-    fj_orientation = 14
-    fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
-  STR_VAR
-    fj_structure_type = ~actor~
-    fj_name           = ~ID#Hobart~
-    fj_cre_resref     = ~HOBART~
-    fj_bcs_override   = ~LWHOBART~
-    fj_bcs_class      = ~EFHEALI1~
-    fj_bcs_race       = ~EFATKMEL~
-    fj_bcs_specific   = ~EFTWNCHK~
-  END
+OUTER_SET hobart_checks = 0
+OUTER_TEXT_SPRINT hobart_trigger ~~
+ACTION_IF (GAME_INCLUDES ~soa~) BEGIN
+  // Umar Hills
+  COPY_EXISTING ~ar1105.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x       = 755
+      fj_loc_y       = 546
+      fj_orientation = 14
+      fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
+    STR_VAR
+      fj_structure_type = ~actor~
+      fj_name           = ~ID#Hobart~
+      fj_cre_resref     = ~HOBART~
+      fj_bcs_override   = ~LWHOBART~
+      fj_bcs_class      = ~EFHEALI1~
+      fj_bcs_race       = ~EFATKMEL~
+      fj_bcs_specific   = ~EFTWNCHK~
+    END
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("AR1105")~
+END
+
+ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
+  // Amkethran
+  COPY_EXISTING ~ar5501.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x       = 316
+      fj_loc_y       = 455
+      fj_orientation = 6
+      fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
+    STR_VAR
+      fj_structure_type = ~actor~
+      fj_name           = ~ID#Hobart~
+      fj_cre_resref     = ~HOBART~
+      fj_bcs_override   = ~LWHOBART~
+      fj_bcs_class      = ~EFHEALI1~
+      fj_bcs_race       = ~EFATKMEL~
+      fj_bcs_specific   = ~EFTWNCHK~
+    END
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("AR5501")~
+END
+
+ACTION_IF (GAME_INCLUDES ~sod~) BEGIN
+  // Coalition Camp
+  COPY_EXISTING ~bd3000.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x       = 2310
+      fj_loc_y       = 1518
+      fj_orientation = 2
+      fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
+    STR_VAR
+      fj_structure_type = ~actor~
+      fj_name           = ~ID#Hobart~
+      fj_cre_resref     = ~HOBART~
+      fj_bcs_override   = ~LWHOBART~
+      fj_bcs_class      = ~EFHEALI1~
+      fj_bcs_race       = ~EFATKMEL~
+      fj_bcs_specific   = ~EFTWNCHK~
+    END
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("BD3000")~
+
+  // Hobart leaves the camp with the crowd
+<<<<<<<< .../inlined/totlm-bg2ee/lwhobart_camp.baf
+IF
+  GlobalGT("bd_plot","GLOBAL",394)
+  AreaCheck("BD3000")  // Allied Siege Camp
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+>>>>>>>>
+  EXTEND_TOP ~lwhobart.bcs~ ~.../inlined/totlm-bg2ee/lwhobart_camp.baf~
+END
+
+// Hobart isn't needed anymore after the quest is completed
+ACTION_IF (hobart_checks > 1) BEGIN
+  OUTER_TEXT_SPRINT hobart_trigger ~OR(%hobart_checks%) %hobart_trigger%~
+END
+<<<<<<<< .../inlined/totlm-bg2ee/lwhobart_checks.baf
+IF
+  !Global("ID#Master_Quest","GLOBAL",0)
+  %hobart_trigger%
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+>>>>>>>>
+EXTEND_TOP ~lwhobart.bcs~ ~.../inlined/totlm-bg2ee/lwhobart_checks.baf~ EVAL
 
 
 // Making sure you can't leave Castle Maluradek with Pocket Plane ability
-ACTION_IF (GAME_IS ~eet~) BEGIN
+ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
 <<<<<<<< .../inlined/totlm-bg2ee/itpplane_top.baf
 IF
   WalkedToTrigger([ANYONE])
@@ -87,16 +191,22 @@ END
 
 // adding areas to master list
 ACTION_CLEAR_ARRAY ~lines~
-COPY - ~%MOD_FOLDER%/2da/mastarea-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/mastarea-iwd.2da~ ~%MOD_FOLDER%/2da/mastarea-iwd.2da~
   LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
 BUT_ONLY
 
-ACTION_PHP_EACH lines AS _ => line BEGIN
-  OUTER_PATCH_SAVE area ~%line%~ BEGIN REPLACE_TEXTUALLY ~^\([^ %TAB%]+\).+~ ~\1~ END
-  APPEND ~mastarea.2da~ ~%line%~ UNLESS ~%area%~
+ACTION_IF (GAME_IS ~bgee~ && GAME_INCLUDES ~sod~) BEGIN
+  OUTER_TEXT_SPRINT mastarea ~sodmarea~
+END ELSE BEGIN
+  OUTER_TEXT_SPRINT mastarea ~mastarea~
 END
 
-COPY_EXISTING ~mastarea.2da~ ~override~
+ACTION_PHP_EACH lines AS _ => line BEGIN
+  OUTER_PATCH_SAVE area ~%line%~ BEGIN REPLACE_TEXTUALLY ~^\([^ %TAB%]+\).+~ ~\1~ END
+  APPEND ~%mastarea%.2da~ ~%line%~ UNLESS ~%area%~
+END
+
+COPY_EXISTING ~%mastarea%.2da~ ~override~
   PRETTY_PRINT_2DA
 BUT_ONLY
 
@@ -104,7 +214,7 @@ BUT_ONLY
 // appending fog information
 OUTER_SET fog_idx_max = 0 // stores highest available fog entry index
 ACTION_FOR_EACH table IN ~fogarea~ ~fogpt~ BEGIN
-  COPY_EXISTING - ~%table%.2da~ ~override~
+  COPY_EXISTING ~%table%.2da~ ~override~
     COUNT_2DA_ROWS 1 numRows
     FOR (row = 3; row < numRows; ++row) BEGIN
       READ_2DA_ENTRY row 0 1 cur_idx
@@ -140,7 +250,7 @@ ACTION_FOR_EACH strref IN ~1863~ ~2693~ ~2938~ BEGIN
 END
 
 ACTION_CLEAR_ARRAY ~lines~
-COPY - ~%MOD_FOLDER%/2da/tooltip-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/tooltip-iwd.2da~ ~%MOD_FOLDER%/2da/tooltip-iwd.2da~
   LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
 BUT_ONLY
 
@@ -162,7 +272,7 @@ OUTER_FOR (strref = 40240; strref < 40251; ++strref) BEGIN
 END
 
 ACTION_CLEAR_ARRAY ~lines~
-COPY - ~%MOD_FOLDER%/2da/tracking-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/tracking-iwd.2da~ ~%MOD_FOLDER%/2da/tracking-iwd.2da~
   LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
 BUT_ONLY
 
@@ -179,12 +289,17 @@ BUT_ONLY
 
 // expanding areas list for debug console
 ACTION_CLEAR_ARRAY ~lines~
-COPY - ~%MOD_FOLDER%/lua/bgee-append.lua~ ~override~
+COPY ~%MOD_FOLDER%/lua/bgee-append.lua~ ~%MOD_FOLDER%/lua/bgee-append.lua~
   LPF READ_TEXT_LINES RET lines RET_ARRAY lines END
 BUT_ONLY
 
 COPY_EXISTING ~bgee.lua~ ~override~
-  SET pos_start = INDEX_BUFFER(~^[ %TAB%]*cheatAreas[ %TAB%]*=[ %TAB%]*{[ %TAB%]*[%WNL%]~)
+  PATCH_IF (GAME_IS ~bgee~ && GAME_INCLUDES ~sod~) BEGIN
+    TEXT_SPRINT cheatAreas ~cheatAreasExpansion~
+  END ELSE BEGIN
+    TEXT_SPRINT cheatAreas ~cheatAreas~
+  END
+  SET pos_start = INDEX_BUFFER(~^[ %TAB%]*%cheatAreas%[ %TAB%]*=[ %TAB%]*{[ %TAB%]*[%WNL%]~)
   PATCH_IF (pos_start >= 0) BEGIN
     SET pos_end = INDEX_BUFFER(~^[ %TAB%]*}[ %TAB%]*[%WNL%]~ pos_start)
     PATCH_IF (pos_end > pos_start) BEGIN

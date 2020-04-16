@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOD : Les Épreuves du Maître des Leurres pour BG2:EE</title>
-    <meta name="description" content="The Icewind Dale expansion &quot;Trials of the Luremaster&quot; made available to BG2:EE and EET (Enhanced Edition Trilogy)." />
+    <title>MOD : Les Épreuves du Maître des Leurres pour Baldur's Gate</title>
+    <meta name="description" content="L'extension &quot;Les Épreuves du Maître des Leurres&quot; de Icewind Dale jouable dans BG2:EE Siege of Dragonspear et EET (Enhanced Edition Trilogy)." />
     <meta name="keywords" content="bg2ee, eet, mod, adventure, dungeon crawler" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -20,8 +20,8 @@
     </div>
 
     <header>
-      <h1 class="title">Les Épreuves du Maître des Leurres pour BG2:EE</h1>
-      <div class="subtitle">L'extension de Icewind Dale « Les Épreuves du Maître des Leurres » jouable dans BG2:EE et EET (Trilogie pour les versions améliorées).</div>
+      <h1 class="title">Les Épreuves du Maître des Leurres pour Baldur's Gate</h1>
+      <div class="subtitle">L'extension de Icewind Dale « Les Épreuves du Maître des Leurres » jouable dans BG2:EE, Siege of Dragonspear et EET (Trilogie pour les versions améliorées).</div>
       <hr />
       <p class="about"><strong>Auteur : Argent77</strong></p>
       <ul id="globalnav" class="about">
@@ -48,8 +48,8 @@
       <!-- ================== O V E R V I E W ================== -->
       <section id="overview">
         <h2>Présentation</h2>
-        <p>Ce mod permet de jouer l'extension de Icewind Dale « Les Épreuves du Maître des Leurres » dans BG2:EE (2.0 ou supérieur) et EET (Enhanced Edition Trilogy).</p>
-        <p>Pour initier la quête, parlez au petit-homme Hobart Piévelu, que vous trouverez dans l'auberge des Collines d'Umar. Au cours de l'aventure, vous aurez l'opportunité d'explorer un château hanté, de tester votre courage et de faire vos preuves dans des combats difficiles et de lever une ancienne malédiction.</p>
+        <p>Ce mod permet de jouer l'extension de Icewind Dale « Les Épreuves du Maître des Leurres » dans BG2:EE (version 2.0 ou supérieure), Siege of Dragonspear et EET (Enhanced Edition Trilogy).</p>
+        <p>Pour initier la quête, parlez au petit-homme Hobart Piévelu, que vous trouverez soit dans les auberges des Collines d'Umar (SoA) et d'Amkethran (ToB) soit au sud ouest du Camp de la Coalition (SoD). Au cours de l'aventure, vous aurez l'opportunité d'explorer un château hanté, de tester votre courage et de faire vos preuves dans des combats difficiles et de lever une ancienne malédiction.</p>
         <hr class="spacer" />
         <p>Si vous avez des questions, veuillez consulter les forums <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a> ou <a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>. Vous pouvez télécharger la dernière version sur les sites <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> ou <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>.</p>
         <div class="back">
@@ -62,11 +62,15 @@
       <div class="content">
         <h2>Installation</h2>
         <p>Il s'agit d'un mod WeiDU, donc très facile à installer. Il suffit de décompresser l'archive téléchargée dans votre répertoire de jeu (le dossier qui contient le fichier CHITIN.KEY), d'exécuter <em>"setup-A7-TotLM-BG2EE.exe"</em> (Windows) ou <em>"setup-A7-TotLM-BG2EE.command"</em> (macOS), et de suivre les instructions.</p>
-        <p>Il n'est pas nécessaire de commencer une nouvelle partie pour bénéficier de son contenu. Cependant, vous devez l'installer avant d'entrer de vous rendre dans les Collines d'Umar.</p>
+        <p>Il n'est pas nécessaire de commencer une nouvelle partie pour bénéficier de son contenu. Cependant, vous devez l'installer avant d'entrer dans la zone ou vous pouvez rencontrer Hobart pour la première fois.</p>
         <p>Pour le désinstaller, relancez <em>"setup-A7-TotLM-BG2EE.exe"</em> ou <em>"setup-A7-TotLM-BG2EE.command"</em> et suivez les instructions à l'écran.</p>
         <hr class="spacer" />
         <h3>Compatibility</h3>
-        <p>Ce mod est conçu pour fonctionner avec BG2:EE doté du patch v2.0 ou supérieur, et EET. Pour l'instant, aucun problème de compatibilité avec d'autres mods 'a été identifié. Je vous recommande de l'installer avant Stratagems (SCS) et après IWDification.</p>
+        <p>L'installation des sorts d'Icewind Dale sera ignorée si l'un des mods suivants est déjà installé :</p>
+        <ul>
+          <li><strong>Sword Coast Statagems (SCS):</strong> Composant <em>"Inclure les sorts profanes d'IWD:EE"</em></li>
+          <li><strong>IWDification:</strong> Composant <em>"Pack de sortilèges profanes d'IWD"</em></li>
+        </ul>
         <div class="back">
           <a class="novisit" href="#top">HAUT DE PAGE</a>
         </div>
@@ -77,19 +81,26 @@
         <h2>Composants</h2>
         <ol class="gappedlist">
           <li>
-            <p><strong>Les Épreuves du Maître des Leurres pour BG2:EE</strong> <em>(nécessite BG2:EE ou EET et un jeu bénéficiant d'un patch 2.0 ou plus récent)</em></p>
+            <p><strong>Les Épreuves du Maître des Leurres pour Baldur's Gate</strong> <em>(nécessite BG2:EE, SoD ou EET et un jeu bénéficiant d'un patch 2.0 ou plus récent)</em></p>
             <p>Il s'agit du composant principal. Il installe de nombreuses nouvelles cartes, créatures, des objets et tout le nécessaire pour jouer cette aventure. (Niveau du groupe recommandé : 11 ou supérieur)</p>
-            <p>Ce mod apporte de légères modifications à l’extension pour la rendre plus conforme à BG2. Les sorts et les objets qui ne sont disponibles que dans Icewind Dale et qui ont peu ou pas de pertinence dans l’extension ont été remplacés par des sorts ou des objets de BG2 équivalents. De plus, quelques animations et scripts de créatures ont été adaptés ou légèrement améliorés.</p>
+            <p>Ce mod apporte de légères modifications à l’extension pour la rendre plus conforme à l'univers de Baldur's Gate. Les sorts et les objets qui ne sont disponibles que dans Icewind Dale et qui ont peu ou pas de pertinence dans l’extension ont été remplacés par des sorts ou des objets de Baldur's Gate 2 équivalents. De plus, plusieurs événements, animations et scripts de créatures ont été légèrement améliorés ou adaptés au style de Baldur's Gate.</p>
+            <p>Ce composant met aussi à la disposition du joueur bon nombre de sorts propres à Icewind Dale. On peut les trouver dans un certain nombre de magasins, de créatures et de conteneurs.
           </li>
           <li>
-            <p><strong>Mettre les sorts de IWD à disposition du joueur</strong> <em>(nécessite le composant principal, ignoré si IWDification est installé)</em></p>
-            <p>Le mod installe certains sorts propres à Icewind Dale, qui sont utilisés par les différentes créatures au cours de l'aventure. Ce composant met ces sorts à la disposition du joueur et les ajoute à un certain nombre de magasins, de créatures et de conteneurs.</p>
-            <p><strong>Important :</strong> Je vous recommande de ne pas installer ce composant en même temps que IWDification, ni avec le composant « Sorts de IWD » du mod Sword Coast Stratagems (SCS).</p>
-          </li>
-          <li>
-            <p><strong>Rééquilibrer les armes et l'équipement</strong> <em>(nécessite le composant principal)</em></p>
+            <p><strong>Rééquilibrer les armes et l'équipement</strong> <em>(nécessite le composant principal, pas disponible pour SoD)</em></p>
             <p>Dans Icewind Dale, de nombreux objets sont exceptionnellement puissants. Puisque ce mod vous permet de récupérer un bon nombre d’armes, armures et équipements puissants, il peut rendre la suite de la partie plus facile, et donc beaucoup moins intéressante à jouer. Ce composant remplace ces objets par des variantes moins puissantes.</p>
+            <p><strong>Note :</strong> Pour des raisons d'équilibre, ce composant est automatiquement installé par le composant principal <em>"Les Épreuves du Maître des Leurres pour Baldur's Gate"</em> dans SoD.</p>
           </li>
+          <li>
+            <p><strong>Réduire les points d'expérience des monstres et des quêtes</strong> <em>(nécessite le composant principal)</em></p>
+            <p>Jouer l'ensemble de l'aventure rapporte entre 300 000 et 400 000 XP, ce qui peut être beaucoup trop selon le lieu et le moment ou vous commencez la quête. Ce composant vous permet de réduire le montant d'expérience obtenu en tuant des monstres ou en accomplissant des parties de quête. Vous avez le choix entre les options suivantes :</p>
+            <ol>
+              <li>Réduction de 25 pour cent</li>
+              <li>Réduction de 50 pour cent</li>
+              <li>Réduction de 75 pour cent <em>(recommandé si vous débutez l'aventure dans le Camp de la Coalition - Campagne Siege of Dragonspear)</em></li>
+              <li>Ne gagner aucun point d'expérience</li>
+            </ol>
+         </li>
         </ol>
         <div class="back">
           <a class="novisit" href="#top">HAUT DE PAGE</a>
@@ -99,24 +110,24 @@
       <!-- ================== C R E D I T S ================== -->
       <section id="credits">
         <h2>Crédits et remerciements</h2>
-        <p><strong>Writing, coding &amp; testing:</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
-        <p><strong>Additional dialog content:</strong> AWizardDidIt</p>
-        <p><strong>French translation:</strong> Gwendolyne</p>
-        <p><strong>Italian translation:</strong> Aedan and improbabile</p>
-        <p><strong>Russian translation:</strong> Eugene Vlasov (aka EugVV)</p>
-        <!--<p><strong>Spanish translation:</strong> Chidojuan</p>-->
-        <p><strong>Additional help:</strong> typo_tilly, jastey</p>
+        <p><strong>Écriture, code &amp; test :</strong> <a href="http://www.shsforums.net/user/14985-argent77/">Argent77</a></p>
+        <p><strong>Dialogues supplémentaires :</strong> AWizardDidIt</p>
+        <p><strong>Traduction française :</strong> Gwendolyne</p>
+        <p><strong>Traduction italienne :</strong> Aedan and improbabile</p>
+        <p><strong>Traduction russe :</strong> Eugene Vlasov (aka EugVV)</p>
+        <p><strong>Traduction espagnole :</strong> Chidojuan</p>
+        <p><strong>Aides diverses :</strong> typo_tilly, jastey</p>
         <hr class="spacer" />
-        <h5>Copyright Notice:</h5>
+        <h5>Informations sur les droits d'auteur:</h5>
         <div class="important">
           <div>
             <a rel="license" id="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
               <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
             </a>
           </div>
-          <p>"Trials of the Luremaster for BG2:EE" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          <p>"Les Épreuves du Maître des Leurres pour Baldur's Gate" est déposé sous la licence <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
           <hr class="spacer" />
-          <p>Baldur's Gate II: Enhanced Edition and Icewind Dale: Enhanced Edition &copy; Beamdog.</p>
+          <p>Baldur's Gate II: Enhanced Edition et Icewind Dale: Enhanced Edition &copy; Beamdog.</p>
         </div>
         <div class="back">
           <a class="novisit" href="#top">HAUT DE PAGE</a>
@@ -126,9 +137,17 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Historique des versions</h2>
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Aventure rendue possible dans Siege of Dragonspear.</li>
+          <li>Ajout de multiples points de départ de l'aventure (SoD: Camp de la Coalition - SoA : Collines d'Umar - ToB : Amkethran).</li>
+          <li>Fusion du sous-composant "Mettre les sorts de IWD à disposition du joueur" au composant principal pour résoudre des problèmes de compatibilité.</li>
+          <li>Ajout de la traduction partielle espagnole (merci à Chidojuan).</li>
+          <li>Ajout de la traduction partielle polonaise.</li>
+        </ul>
         <h6>Version 1.0</h6>
         <ul>
-          <li>Initial release</li>
+          <li>Sortie initiale.</li>
         </ul>
         <div class="back">
           <a class="novisit" href="#top">HAUT DE PAGE</a>

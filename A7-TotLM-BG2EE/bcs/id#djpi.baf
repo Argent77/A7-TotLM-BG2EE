@@ -8,7 +8,7 @@ RESPONSE #100
   SetInterrupt(FALSE)
   SetGlobal("init","LOCALS",1)
   SetGlobalTimer("BD_Cast","LOCALS",ONE_ROUND)
-  DisplayString(Myself,39968)  // Spell Trigger—Fired
+  DisplayString(Myself,@39968)  // Spell Trigger—Fired
   DisplayString(Myself,@90001)  // Spell Trigger—Mirror Image
   ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
   DisplayString(Myself,@90002)  // Spell Trigger—Improved Invisibility

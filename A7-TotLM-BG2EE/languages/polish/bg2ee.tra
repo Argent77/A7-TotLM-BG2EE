@@ -1,0 +1,308 @@
+// Strings from BG2:EE
+@334 = ~Oplątanie~
+@1121 = ~Minotaur~
+@1122 = ~Minotaur~
+@1280 = ~Ogłuszenie~
+@2613 = ~Zmora~
+@2614 = ~Zmora~
+@2619 = ~Strach~
+@2624 = ~Zadawanie poważnych ran~
+@2628 = ~Dezintegracja~
+@2662 = ~Obserwator~
+@2663 = ~Obserwator~
+@2665 = ~Promień śmierci~
+@2826 = ~Żelazny golem~
+@2827 = ~Żelazny golem~
+@2867 = ~Żywiołak ziemi~
+@2871 = ~Żywiołak ziemi~
+@2873 = ~Żywiołak ognia~
+@2874 = ~Żywiołak ognia~
+@2881 = ~Dżinn~
+@2882 = ~Dżinn~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Umbrowy kolos~
+@3021 = ~Umbrowy kolos~
+@7618 = ~Ulepszona opończa 
+(Odrzucanie)
+
+Poziom: 8
+Zasięg: 0
+Czas działania: 4 rundy
+Czas rzucania: 1
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Czar ten zapewnia całkowitą niewrażliwość na działanie broni o umagicznieniu +3 lub niższym. Zaklęcie to jest niezwykle potężne, lecz ma krótki czas działania, co w połączeniu z bardzo krótkim czasem rzucania, czyni je użytecznym jedynie podczas zaciekłej walki. Czar ten nie będzie działał w połączeniu z Ochroną przed magicznymi broniami. Efekt ten będzie się utrzymywał, dopóki nie upłynie czas działania czaru lub dopóki nie zostanie on rozproszony.~
+@7621 = ~Zabójcza mgła~
+@7622 = ~Zabójcza mgła 
+(Wywoływanie)
+
+Poziom: 6
+Zasięg: 10 metrów
+Czas działania: 1 tura
+Czas rzucania: 6
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Rzucenie tego czaru tworzy gęsty obłok mgły, która posiada silnie żrące właściwości. Wszystkie nieodporne na kwas zwierzęta otrzymują 8 obrażeń w każdej rundzie, w której narażone są na działanie oparów zabójczej mgły. Mgła zabija ponadto wszystkie przywołane istoty, niezależnie od ilości posiadanych Kostek i odporności.~
+@7665 = ~Palec śmierci~
+@7672 = ~Palec śmierci 
+(Nekromancja)
+
+Poziom: 7
+Zasięg: pole widzenia rzucającego czar
+Czas działania: stały
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Palec śmierci wysysa z ofiary siły życiowe. Po wyrecytowaniu zaklęcia czarujący wskazuje palcem ofiarę i dosłownie wyrywa z niej życie, chyba że uda się jej wykonać rzut obronny przeciw czarom z modyfikatorem -2. Istota, której udało się odeprzeć czar i tak otrzymuje 2k8 +1 obrażeń.~
+@7782 = ~Słowo mocy: ogłuszenie 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 7
+Zasięg: pole widzenia rzucającego czar
+Czas działania: specjalny
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Korzystając z tego czaru, czarodziej wskazuje na wybraną istotę i wypowiada słowo mocy. Ofiara zostaje ogłuszona na czas zależny od jej aktualnych punktów życia:
+1-29 punkty życia: ogłuszenie na 4k4 rundy
+30-59 punkty życia: ogłuszenie na 2k4 rundy,
+60-89 punkty życia: ogłuszenie na 1k4 rundy. 
+
+Istoty z 90 lub więcej punktami życia są odporne na efekty zaklęcia.
+Należy pamiętać, że liczy się ilość punktów w chwili rzucenia czaru, a nie maksymalna.~
+@8364 = ~Dominacja~
+@10554 = ~Nieumarły zniszczony~
+@10685 = ~Flasza geniusza~
+@10872 = ~Odbicie czaru 
+(Odrzucanie)
+
+Poziom: 7
+Zasięg: 0
+Czas działania: 3 rundy/poziom
+Czas rzucania: 7
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+To potężne zaklęcie sprawia, że czary rzucone na maga są odbijane w kierunku istoty, która je rzuciła. Dotyczy to czarów, których suma poziomów wynosi dwanaście, w tym tych rzucanych za pomocą zwojów i wrodzonych zdolności czaropodobnych, ale nie dotyczy następujących przypadków: gdy obszar działania czaru nie jest skupiony na magu oraz gdy obszar działania jest nieruchomy (np. Zabójcza chmura lub Śmierdząca chmura).
+
+Dopóki dostępne będą jakiekolwiek poziomy, rzucony czar zostanie odbity. Przykładowo, pozostał tylko jeden poziom, a na czarodzieja zostaje rzucone zaklęcie 3. poziomu. W takim wypadku zostanie ono wchłonięte, anulując jednocześnie działanie Odbicia czaru.
+
+Zaklęcie to nie chroni czarującego przed Rozproszeniem magii, lecz nie zostanie też przez nie rozproszone.~
+@14665 = ~Petryfikacja~
+@15326 = ~Flasza geniusza~
+@16109 = ~Teleport~
+@17352 = ~Brama 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 9
+Zasięg: 10 metrów
+Czas działania: 33 rundy
+Czas rzucania: 9
+Obszar działania: specjalny
+Rzut obronny: brak
+
+Za pomocą tego zaklęcia czarujący przyzywa pozaplanarne stworzenie, Biesa z Czeluści, które atakuje jego wrogów oraz, jeśli nie okaże się on ostrożny, również jego samego. Aby ukryć się przed wzrokiem diabła, czarujący musi rzucić zaklęcie Ochrona przed złem na siebie i na członków swojej drużyny. Jeśli bowiem nie zabezpieczy się skutecznie w ten sposób, bies rozerwie go na strzępy, a następnie uczyni to samo z jego towarzyszami.~
+@17361 = ~Przyzwanie biesa 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 8
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 15 rund
+Czas rzucania: 9
+Obszar działania: specjalny
+Rzut obronny: brak
+
+Jest to potężniejsza wersja 7. poziomowego zaklęcia Wielobies. Przywołuje oszalałego biesa, który atakuje każdego, kto znajduje się w obszarze działania czaru, z wyjątkiem osób chronionych zaklęciem Ochrona przed złem. Tylko zdesperowani lub mający skłonności samobójcze czarodzieje używają Przyzwania biesa.~
+@18140 = ~Słowo mocy: giń 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 9
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Kiedy zostanie wypowiedziane Słowo mocy: giń, zginie jedna istota w obszarze działania zaklęcia. Za pomocą tego czaru można zabić istotę posiadającą w danej chwili maksymalnie 60 punktów życia. Przed działaniem zaklęcia nie chroni rzut obronny.~
+@25946 = ~Rubinowy promień odwrócenia 
+(Przemiany)
+
+Poziom: 7
+Zasięg: 13 metrów
+Czas działania: natychmiastowy
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Czar ten rozprasza jedno zaklęcie ochronne dowolnego poziomu, działające w danej chwili na wyznaczona istotę. Rozproszy on zawsze zaklęcie najwyższego poziomu, a w przypadku, gdy istota chroniona jest przez więcej niż jedno zaklęcie tego samego poziomu, rozproszy losowo jedno z nich. Posiadana przez cel odporność na magię nie ma wpływu na działanie tego czaru.
+
+Rubinowy promień odwrócenia działa na następujące zaklęcia: Mniejsze odbicie czaru, Mniejsze odchylenie czaru, Klosz niewrażliwości mniejszej, Niepodatność na czary, Odbicie czaru, Odchylenie czaru, Klosz niewrażliwości, Tarcza przeciw czarom oraz Pułapka na czary.~
+@25961 = ~Tęczowe kolory 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 7
+Zasięg: 20 metrów
+Czas działania: natychmiastowy
+Czas rzucania: 7
+Obszar działania: stożek długości 4,5 metra
+Rzut obronny: specjalny
+
+Po rzuceniu tego zaklęcia, z dłoni czarodzieja wyzwolonych zostaje siedem iskrzących się promieni światła. Wśród nich są wszystkie kolory widzialnego spektrum, a każdy promień ma inną moc i przeznaczenie. Każda istota trafiona przez promień i posiadająca mniej niż 8 Kostek zostaje oślepiona na pięć rund, niezależnie od dodatkowych skutków. Wszystkie istoty znajdujące się w obszarze działania zaklęcia zostają trafione przez jeden lub dwa promienie. Kolory tychże promieni działają następująco:
+
+– czerwony: zadaje 20 obrażeń, połowa po rzucie obronnym przeciw czarom
+– pomarańczowy: zadaje 40 obrażeń, połowa po rzucie obronnym przeciw czarom
+– żółty: zadaje 80 obrażeń, połowa po rzucie obronnym przeciw czarom
+– zielony: rzut obronny przeciw truciźnie lub śmierć (ci, którym uda się przeżyć i tak otrzymują 20 obrażeń od trucizny)
+– niebieski: rzut obronny przeciw petryfikacji lub zamiana w kamień
+– indygo: rzut obronny przeciw różdżkom lub ogłupienie
+– fioletowy: rzut obronny przeciw czarom lub dezintegracja.~
+@26330 = ~Łańcuch czarów 
+(Wywoływanie)
+
+Poziom: 9
+Zasięg: 0
+Czas działania: stały do momentu aktywacji
+Czas rzucania: 9
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Łańcuch czarów skupia magiczną energię czarodzieja, by następnie wyzwolić ją w określonych okolicznościach. Mag wybiera po prostu trzy czary, które zostaną uwolnione w pewnych sytuacjach (np. zauważenie wroga, czy też otrzymanie ciosu). Kiedy zdarzenie to nastąpi, wszystkie trzy zaklęcia zostają natychmiast rzucone. W łańcuch czarów można wpleść zaklęcia z poziomów 1-8.~
+@33146 = ~Mumia~
+@33147 = ~Mumia~
+@34594 = ~Odbicie czaru~
+@34597 = ~Rubinowy promień odwrócenia~
+@34606 = ~Tęczowe kolory~
+@34607 = ~Słowo mocy: ogłuszenie~
+@34618 = ~Przyzwanie biesa~
+@34619 = ~Ulepszona opończa~
+@34631 = ~Brama~
+@34634 = ~Łańcuch czarów~
+@34638 = ~Słowo mocy: giń~
+@36936 = ~Warunkowanie zostało wyzwolone~
+@37621 = ~Większa mumia~
+@37688 = ~Większa mumia~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~zapada na ciężką chorobę~
+@39957 = ~Symbol: ogłuszenie 
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 8
+Zasięg: 30 metrów
+Czas działania: specjalny
+Czas rzucania: 9
+Obszar działania: w promieniu 4 metrów
+Rzut obronny: neguje
+
+Symbol: ogłuszenie to potężne zaklęcie. Dzięki niemu mag może wyrysować na ziemi czy innej powierzchni magiczny symbol. Symbol pozostanie w tym miejscu, dopóki ktoś się do niego nie zbliży. Wtedy wybucha i wszystkie istoty będące w zasięgu jego działania muszą wykonać rzut obronny przeciw czarom z modyfikatorem -4 lub zostają ogłuszone na dwie rundy plus jedną rundę na trzy poziomy czarującego.~
+@46150 = ~*pije miksturę*~
+@49103 = ~Symbol: ogłuszenie~
+@54337 = ~Chory~
+@56859 = ~Torba przechowywania~
+@56861 = ~Torba przechowywania~
+@56862 = ~Torba przechowywania~
+@60376 = ~Dużo jeszcze zostało do zrobienia.~ [ELHAN101]
+@60377 = ~Elfy nie będą łatwym celem!~ [ELHAN103]
+@60380 = ~Giń od ostrza z elfiej stali!~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~Witaj. Twoja moc wzbudza szacunek.~ [EPRIM01]
+@61615 = ~Czego szukasz pomiędzy wiernymi?~ [EPRIM02]
+@61616 = ~Skłoń się przed bogami i błagaj o litość!~ [EPRIM03]
+@61617 = ~Bogowie nie wybaczają, głupcze!~ [EPRIM04]
+@61618 = ~Gdy z tobą skończę, będziesz modlić się o śmierć!~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~Litości! Miej litość!~ [EPRIM08]
+@61643 = ~Zazwyczaj nie rozmawiam z takimi jak ty, ale witaj.~ [NOBFE03]
+@61644 = ~Czy to ważne, wieśniaku?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~Odejdź! Nie dotykaj mnie!~ [NOBFE09]
+@61710 = ~Miło mi cię widzieć.~ [GPRIF01]
+@61711 = ~Pozdrawiam was, o wierni.~ [GPRIF02]
+@61712 = ~Chroni mnie mój Bóg. On strzeże nas wszystkich.~ [GPRIF03]
+@61713 = ~Jestem tu by służyć.~ [GPRIF04]
+@61715 = ~Obrażasz sobą wszystko, w co wierzę!~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~Demon! Bies!~ [GPRIF08]
+@61724 = ~Witam cię z otwartymi ramionami.~ [GPRIM01]
+@61725 = ~Ufam, że przybywasz tu w dobrej wierze.~ [GPRIM02]
+@61726 = ~Oby Bogowie spojrzeli na ciebie przychylnie.~ [GPRIM03]
+@61727 = ~Wszyscy wierni są tutaj mile widziani.~ [GPRIM04]
+@61729 = ~Dosięgnie was sprawiedliwy gniew bogów!~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~Ochrońcie mnie, Bogowie!~ [GPRIM08]
+@61766 = ~Znam sposoby na takich jak ty!~ [HVILLF01]
+@61767 = ~Nie przeżyjesz tego dnia!~ [HVILLF02]
+@61768 = ~Wystarczająco długo już cię oglądam!~ [HVILLF03]
+@61769 = ~Zaraz dostaniesz to, na co zasługujesz.~ [HVILLF04]
+@61770 = ~Zginiesz!~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~Zatem do zobaczenia.~ [HVILLF08]
+@61808 = ~Czy to ważne?~ [PEASM203]
+@61809 = ~Skoro nie jesteś poborcą podatków...~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~Mam mało czasu więc się streszczaj, prostaku.~ [NOBMA03]
+@61836 = ~Jam jest szlachetnie urodzony.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~Muszę... muszę uciekać!~ [NOBMA09]
+@61862 = ~Przedstaw się!~ [SOLM01]
+@61863 = ~Przeszkadzasz mi w wypełnianiu obowiązków.~ [SOLM02]
+@61864 = ~Spokojnie, obywatelu.~ [SOLM03]
+@61865 = ~Mam nadzieję, że nie masz wrogich zamiarów.~ [SOLM04]
+@61866 = ~Sprawdzimy twoją wytrzymałość na ciosy mieczem!~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~Odwrót!~ [SOLM08]
+@61871 = ~Dzień dobry.~ [SOLF02]
+@61872 = ~Służę i bronię.~ [SOLF03]
+@61873 = ~Nie zrób nic głupiego, a wszystko będzie w porządku.~ [SOLF04]
+@61874 = ~Skrzyżuj ze mną ostrza i zgiń!~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~Do tyłu... muszę się wycofać!~ [SOLF08]
+@61883 = ~Mów, jeśli chcesz.~ [STHMA02]
+@61884 = ~Szukasz czegoś?~ [STHMA03]
+@61885 = ~Wytłumacz się, i lepiej, żeby to miało sens!~ [STHMA04]
+@61886 = ~Błagaj mnie o szybką śmierć!~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~Muszę... wrócić do cienia!~ [STHMA09]
+@61901 = ~Nie podchodź bo pożałujesz.~ [RUFFIA01]
+@61902 = ~Za miedziaka mogę komuś połamać ręce.~ [RUFFIA02]
+@61903 = ~E tam, spadaj.~ [RUFFIA03]
+@61904 = ~Twardziel z ciebie.~ [RUFFIA04]
+@61905 = ~No dobra! Jeden na jednego! Dawaj!~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~Poddaję się! Poddaję się!~ [RUFFIA08]
+@61993 = ~Cała przyjemność po mojej stronie, jak zwykle.~ [GNFEM01]
+@61994 = ~Nie denerwuj mnie.~ [GNFEM02]
+@61995 = ~Zapłacisz za to... i to drogo.~ [GNFEM03]
+@61996 = ~Cierp!~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06]
+@64285 = ~Uderzenie vorpalne~
+@68099 = ~Kornugon~
+@68100 = ~Kornugon~
+@73062 = ~Witajcie! Miło was poznać.~ [GORCAM01]
+@73063 = ~Sami się o to prosiliście!~ [GORCAM02]
+@73064 = ~Ech, błahostka.~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~Nie możesz rzucić tego zaklęcia, póki nie skończysz rzucać obecnego czaru.~
+@93789 = ~Topór bojowy +2~
+@93792 = ~Zbroja skórzana +2~

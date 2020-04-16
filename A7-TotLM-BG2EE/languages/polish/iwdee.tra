@@ -1,0 +1,2726 @@
+// Original strings from IWD:EE
+@10 = ~Żukorożec~
+@12 = ~Nudnożuk~
+@73 = ~Ożywiona zbroja płytowa~
+@77 = ~Broń trolli~
+@267 = ~Zbroja płytowa~
+@283 = ~Dziękuję. Żegnaj.~
+@288 = ~Żegnaj.~
+@540 = ~Co się wydarzyło?~
+@757 = ~Klątwa~
+@764 = ~Ożywiona zbroja płytowa~
+@768 = ~Nudnożuk~
+@771 = ~Żuk kanonier~
+@774 = ~Żuk kanonier~
+@777 = ~Żywiołak wody~
+@779 = ~Żukorożec~
+@783 = ~Żywiołak wody~
+@788 = ~Wybuchowy szkielet~
+@827 = ~Wybuchowy szkielet~
+@832 = ~Goblin gwardzista~
+@843 = ~Czerwony mykonid~
+@846 = ~Neo orog opryszek~
+@854 = ~Szkielet strażnik~
+@863 = ~Czerwony mykonid~
+@866 = ~Neo orog opryszek~
+@873 = ~Szkielet strażnik~
+@913 = ~Ten sarkofag został zamknięty w jakiś nieznany sposób. Wieko nie chce się ruszyć nawet o milimetr.~
+@934 = ~Święty symbol~
+@1412 = ~Raniące kamienie~
+@1428 = ~Kim jesteś?~
+@1711 = ~Muszę iść. Żegnaj.~
+@1785 = ~Jak to?~
+@1848 = ~Emocje: odwaga~
+@1863 = ~Emocje: strach~
+@1864 = ~Emocje: nadzieja~
+@1865 = ~Płonąca krew Beltyna~
+@1902 = ~Ładunek statyczny~
+@1954 = ~Całun płomieni~
+@1980 = ~„ZABIĆ!”~
+@2320 = ~[.]~
+@2332 = ~Przedmiot przezroczystości potworów~
+@2556 = ~Możesz powtórzyć, kim jesteś?~
+@2693 = ~Sprowadzenie żywiołaka wody~
+@2969 = ~Niewidzialność 
+(Iluzje/Urojenia)
+
+Poziom: 2
+Zasięg: dotyk
+Czas działania: specjalny
+Czas rzucania: 2
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Zaklęcie to powoduje, że wybrana istota znika i staje się niewykrywalna dla normalnego wzroku oraz infrawizji. Przedmioty upuszczone przez niewidzialne stworzenie stają się widzialne, zaś przedmioty podniesione z ziemi stają się niewidzialne w momencie schowania pod ubranie lub włożenia do noszonej przez nie sakwy. Czar pozostaje aktywny, dopóki nie zostanie przerwany lub rozproszony, dopóki istota, na którą został rzucony, nie rozpocznie rozmowy lub nie zaatakuje, lub dopóki nie miną dwadzieścia cztery godziny. W związku z tym niewidzialna istota może otwierać drzwi, jeść, wchodzić po schodach itp., lecz jeśli zaatakuje lub rzuci zaklęcie, natychmiast staje się widzialna (choć niewidzialność sprawia, że atakuje jako pierwsza).~
+@2972 = ~Zbroja ta została wykonana przez krasnoludzkiego kowala o imieniu Karador. Potem elfi mistrz zauroczeń o imieniu Elemeth z Pięciu Drzew obdarzył ją mocą magiczną. W czasie, kiedy Dłoń Seldarine i Głębia Dorna ze sobą współpracowały, powstało wiele wspaniałych przedmiotów, a ta zbroja jest właśnie jednym z nich. Niezwykle lekka i piękna, zbroja ta była początkowo noszona przez elfkę, która pełniła funkcję dowódcy w Odciętej Dłoni, dlatego osada nie padła, kiedy orkowie dokonywali grabieży wież. Potem zbroja ta została ukradziona przez Pannę Ilmadię.
+
+PARAMETRY:
+
+Specjalne:
+– Charyzma: +1
+– Odporność na ogień: +10%
+– Odporność na zimno: +10%
+– Odporność na elektryczność: +10%
+– Odporność na kwas: +10%
+
+Klasa Pancerza: 1 (-2 przeciw broniom siecznym)
+
+Wymagania:
+– Siła: 12
+
+Waga: 20~
+@2976 = ~Szeroki miecz~
+@2977 = ~Szeroki miecz to ciężka broń o podwójnym ostrzu używana najczęściej do zadawania cięć. Długość głowni wraz z rękojeścią wynosi ponad metr. Większość takich mieczy ma przy rękojeści osłonę na dłoń. Jako ulubiona broń konnicy, szeroki miecz w różnych kulturach jest znany pod różnymi nazwami, które zazwyczaj zależą od ułożenia i kształtu rękojeści. Ponieważ miecz ten jest cięższy od miecza długiego, dlatego zadawanie ciosów jest wolniejsze, choć za to są one bardziej skuteczne.
+
+PARAMETRY:
+
+Obrażenia: 2k4
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 4~
+@2983 = ~Strzały powstrzymania, używane niemal wyłącznie przez eldathyńskich łowców w Zachodnich Ziemiach Centralnych Faerûnu, są niezwykle cenione za to, że potrafią unieruchomić cel, nie zadając mu przy tym zbyt wielu obrażeń. Często używa się ich przeciwko szarżującej zwierzynie, ale są one równie skuteczne w walce z niebezpiecznymi humanoidami. Zazwyczaj są one ozdobione czerwono zielonymi wstążkami i kwiatami, co jest symbolem tego, że zostały wykonane przez strażników pokoju Eldath. Strojenia te powodują jednak, że strzały stają się trochę mniej efektywne w czasie walki.
+
+PARAMETRY:
+
+Specjalne:
+– Cel zostaje oplątany na cztery rundy, po trafieniu
+
+Obrażenia: 1k6 -1
+TraK0: -1
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+@2984 = ~Strzała powstrzymania +1~
+@3070 = ~Symbol beznadziejności~
+@3077 = ~Fragment...
+
+„Jednym z pierwszych kroków ku osiągnięciu harmonii ze zwierzętami jest to, aby nauczyć się szacunku dla kontaktów z nimi. Wśród wielu ludzi panuje przekonanie, że ludzie i półludzie są lepsi od zwierząt. Jednakże, jak to już nadmieniłem, kryteria tej 'wyższości' są bardzo subiektywne. Właśnie dlatego musimy spojrzeć na nasz stosunek do dzikich zwierząt w sposób osobisty. Obdarzajmy te stworzenia szacunkiem, na jaki zasługują, ale zawsze pamiętajmy, że drapieżca zawsze pozostanie drapieżcą, bez względu na to, jak bardzo będziemy respektowali jego terytorium”.~
+@3097 = ~Zwierzęta to twoi przyjaciele~
+@3098 = ~Zwierzęta to twoi przyjaciele~
+@3153 = ~Co to za miejsce?~
+@4380 = ~Różdżka ta należała niegdyś do półelfiego łotrzyka i maga o imieniu Illep Ostrożny. Pochodził on z Myth Drannor, a przyrząd ten służył mu do wyszukiwania wnyków i ostrz sprężynowych, na które często natrafiał, kiedy włamywał się do domostw, zamków i grobowców. Illep cieszył się dość dużą sympatią znajomych, ale pewien człowiek, wojownik o imieniu Brammel poczuł się obrażony, kiedy łotrzyk potrącił go jednego wieczoru w gospodzie. Pomimo tego, że Illep doskonale posługiwał się sztyletami, to nie był w stanie przeżyć uderzenia toporem. Brammel został aresztowany przez straż miejską, zaś różdżka miała wrócić do rodziny Illepa, do Myth Drannor. Orszak kupiecki, który ją przewoził, został jednak napadnięty przez bandytów i od tego czasu słuch po niej zaginął.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Znajdowanie pułapek
+Użytkownik wykrywa pułapki, jakby był złodziejem
+
+Wymagania:
+– Inteligencja: 9
+
+Waga: 1~
+@4381 = ~Różdżka szukania pułapek~
+@4386 = ~Wypuszcza chmurę sporów~
+@4435 = ~Tylko sprawdzałem. Żegnaj.~ ~Tylko sprawdzałam. Żegnaj.~
+@6280 = ~Proszę bardzo.~
+@6391 = ~Lawina śnieżnych kul Snilloca~
+@6393 = ~Lawina śnieżnych kul Snilloca 
+(Wywoływanie)
+
+Poziom: 2
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 2
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: 1/2
+
+Po rzuceniu tego zaklęcia, z wybranego miejsca, znajdującego się w obrębie  działania czaru, wystrzeliwuje chmara kul śniegowych. Trafiają one we wszystko, co znajduje się w zasięgu funkcjonowania efektu, zadając 1k3 obrażeń od zimna na poziom czarującego, aż do maksymalnie 8k3 obrażeń na 8. poziomie. Przeciw istotom posługującym się ogniem lub zrodzonym z ognia, czar ten zadaje 1k6 obrażeń na poziom czarującego, aż do maksymalnie 8k6 obrażeń na 8. poziomie.~
+@6512 = ~Płonąca krew Beltyna~
+@6513 = ~Płonąca krew Beltyna
+(Nekromancja)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 runda/2 poziomy
+Czas rzucania: 4
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Czar ten sprawia, że krew wybranej istoty wybucha żywym ogniem, sprawiając, że otrzymuje ona 3k4 obrażeń co rundę, a także wpada w berserk będący wynikiem odczuwanego bólu. Ofiara musi co rundę wykonywać rzut obronny przeciw czarom; udany pozwala uniknąć obrażeń oraz wpadnięcia w szał. Zaklęcie to nie działa na nieumarłych oraz istoty pozaplanarne nie posiadające krwi (takie jak żywiołaki). Jeśli stworzenie jest odporne na ogień, odporność ta obniży lub całkowicie zredukuje obrażenia otrzymane w wyniku działania tego czaru.~
+@6650 = ~Proce istnieją od początków zapisywanej historii. Proca w podstawowej wersji składa się ze skórzanego paska lub rzemienia z woreczkiem, w który wkłada się pocisk. Procarz trzyma za dwa końce rzemienia i kręci procą nad swoją głową. Po osiągnięciu maksymalnej prędkości pocisk zostaje wyrzucony w wyniku puszczenia końca jednego z rzemieni.
+
+PARAMETRY:
+
+Opóźnienie: 6
+Rodzaj biegłości: proca
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+@6652 = ~Zbroja skórzana, wbrew obiegowym opiniom, nie jest miękka i elastyczna, jak skóra służąca do wyrobu butów łowcy czy szaty druida. Taki rodzaj materiału nie daje lepszej ochrony przed atakami niż zwykłe ubranie.
+
+PARAMETRY:
+
+Klasa Pancerza: 8 (10 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 4
+
+Waga: 15~
+@6656 = ~Najpowszechniejsza wersja topora bojowego składa się z solidnego trzonka o ponad metrowej długości, na którego końcu osadzono jednosieczne ostrze o zakrzywionym kształcie. Topory bojowe są również nazywane toporami szerokimi.
+
+PARAMETRY:
+
+Obrażenia: 1k8
+Typ obrażeń: sieczne
+Opóźnienie: 7
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 7~
+@6663 = ~Na pierwszy rzut oka ten pancerz wygląda jak zwykła zbroja skórzana, jednak baczniejsza obserwacja ujawnia ślady różnych magicznych ulepszeń. Nity łączące poszczególne części błyszczą jak wypolerowane. Skóra jest miękka i elastyczna w dotyku, ale pod mocnym uderzeniem natychmiast twardnieje. Pancerz jest dodatkowo wolny od trzeszczących odgłosów, normalnych dla zbroi skórzanych.
+
+PARAMETRY:
+
+Klasa Pancerza: 6 (8 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 4
+
+Waga: 5~
+@6664 = ~Zbroja skórzana ćwiekowana~
+@6667 = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Zamiast przypominać utwardzony pancerz, jest ona bowiem nabijana setkami metalowych nitów, stanowiących miękkie podbicie. Liczne ćwieki tworzą elastyczną powłokę z metalu, która odbija ataki sieczne i kłute, podczas gdy warstwa skórzana służy jedynie do utrzymywania nitów na miejscu.
+
+PARAMETRY:
+
+Klasa Pancerza: 7 (6 przeciw broniom kłutym i pociskom, 5 przeciw bronim siecznym)
+
+Wymagania:
+– Siła: 6
+
+Waga: 25~
+@6669 = ~Zbroja płytowa~
+@6673 = ~Kolczuga jest wykonana ze splecionych ze sobą metalowych kółeczek. Zakłada się ją zawsze na ochronną warstwę z watowanego materiału lub miękkiej skóry, co ma zapobiec otarciom i złagodzić siłę ciosów.
+
+PARAMETRY:
+
+Klasa Pancerza: 5 (3 przeciw broniom siecznym, 7 przeciw broniom obuchowym)
+
+Wymagania:
+– Siła: 8
+
+Waga: 40~
+@6676 = ~Kolczuga jest wykonana ze splecionych ze sobą metalowych kółeczek. Zakłada się ją zawsze na ochronną warstwę z watowanego materiału lub miękkiej skóry, co ma zapobiec otarciom i złagodzić siłę ciosów.
+
+PARAMETRY:
+
+Klasa Pancerza: 3 (1 przeciw broniom siecznym, 5 przeciw broniom obuchowym)
+
+Wymagania:
+– Siła: 7
+
+Waga: 10~
+@6696 = ~Topór bojowy +2: „Echa z Głębi Dorna”
+
+Spośród licznego oręża wykutego w cieniu gór Grzbietu Świata, wiele nosi na sobie znak krasnoludzkich kowali. Ten wspaniały topór bojowy jest właśnie jednym z nich. Stal, z której został wykonany, oraz doskonałe wyważenie potwierdzają tylko mistrzostwo doskonałego płatnerza. Dodatkowo jego ostrze zostało magicznie zaklęte, dzięki czemu bronią tą można teraz zadawać obrażenia także istotom nadnaturalnym. Tak jak w przypadku wielu broni krasnoludzkiego pochodzenia, jego żeleźce jest lekkie, dzięki czemu może nim wykonywać zamachy z większą częstotliwością, a odporne na stępienie się ostrze zawsze zadaje czyste uderzenie. Wzdłuż trzonka wyryto krasnoludzkie runy, która składają się na słowo „Głębia Dorna”. Nie ma wątpliwości, że twórca topora chciał w ten sposób oznaczyć miejsce jego wytworzenia.
+
+PARAMETRY:
+
+Obrażenia: 1k8 +2
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 5~
+@6703 = ~Większość maczug to po prostu kawałki mocnego i twardego drewna, wąskie przy samym uchwycie, a szersze na końcu. Ta prosta broń była używana od czasów, gdy człowiek zaczął stosować narzędzia. Każdy może znaleźć mocny kawałek drewna i nim machać, stąd też powszechność maczug.
+
+PARAMETRY:
+
+Obrażenia: 1k6
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: maczuga
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+@6716 = ~Konni rycerze nie są w stanie skutecznie używać długich broni drzewcowych, siedząc na końskim grzbiecie, 
+w związku z czym wiele broni zostało zaopatrzonych w krótsze styliska, aby można się było nimi posługiwać jednorącz. Doskonałym tego przykładem są wekiery i cepy bojowe, kolejnym zaś, młot bojowy. Jeździecki młot bojowy wywodzi się od młota używanego przez lansjerów. Jest on wykonany w całości ze stali, z rondelkami chroniącymi i wzmacniającymi uchwyt. Rondelki te są małymi dyskami z metalu, o najczęściej dekoracyjnych kształtach. Stylisko młota bojowego ma około pół metra długości.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +1
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: młot bojowy
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 9
+
+Waga: 6~
+@6745 = ~Miecz krótki~
+@6756 = ~Pocisk jest zwykłym, okrągłym i dobrze wyważonym kamieniem.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +1
+Typ obrażeń: pocisk
+Wyrzutnia: proca
+
+Waga: 0~
+@6799 = ~Rękawice zręczności~
+@6807 = ~Ten rodzaj otwartego hełmu, wykonywany z metalu lub wzmocnionej skóry, stanowi ochronę dla głowy, jednak zwykle bez osłaniania twarzy i karku. Zazwyczaj jest również wyposażony w ochronę nosa.
+
+PARAMETRY:
+
+Specjalne:
+– Chroni przed trafieniami krytycznymi
+
+Waga: 2~
+@6811 = ~Hełm ochrony przed urokami~
+@6818 = ~Tarcza mała jest zazwyczaj okrągła. Mocuje się ją na przedramieniu, przytrzymując dodatkowo dłonią. W odróżnieniu od tarczy średniej, jej lekka waga pozwala na noszenie w zajętej ręce innych przedmiotów, chociaż nie może być to broń.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Nie chroni przed pociskami
+
+Wymagania:
+– Siła: 4
+
+Waga: 3~
+@6820 = ~Jest to masywna, metalowa lub drewniana tarcza, sięgająca od ziemi aż do podbródka wojownika. Musi być solidnie przymocowana do przedramienia i cały czas przytrzymywana, co oznacza, że w ręce, na której opiera się tarcza, nie można trzymać niczego innego.
+
+PARAMETRY:
+
+Klasa Pancerza: +1 (+2 przeciw pociskom)
+
+Wymagania:
+– Siła: 15
+
+Waga: 15~
+@6823 = ~Buty szybkości~
+@6824 = ~Buty są zwykle ręcznie wyrabiane przez szewców. Zwykłe buty są robione z użyciem jakiegoś ogólnego modelu stopy, ale te dobre wykonywane są na zamówienie i dopasowywane do stóp zamawiającego.
+
+PARAMETRY:
+
+Waga: 4~
+@6835 = ~Pierścień niewidzialności~
+@6837 = ~Pierścień swobody ruchów~
+@6855 = ~Morgensztern składa się z drewnianego styliska, zwieńczonego żelazną głowicą nabitą licznymi szpiczastymi ćwiekami. Broń ta ma od około stu dwudziestu do stu trzydziestu centymetrów długości. Różne jej rodzaje posiadają głowicę kulistą, owalną lub cylindryczną. Bez względu jednak na rodzaj, większość morgenszternów zakończona jest długim szpikulcem, przeznaczonym do kłucia.
+
+PARAMETRY:
+
+Obrażenia: 2k4
+Typ obrażeń: obuchowe
+Opóźnienie: 7
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 12~
+@6862 = ~Długi łuk jest podobny do krótkiego, z wyjątkiem tego, że długość łęczyska wynosi prawie tyle, ile wzrost łucznika, zwykle jest to od metra osiemdziesięciu do dwóch metrów wysokości. Ma lepszy zasięg i celność niż łuk krótki, ale mniejszą szybkostrzelność.
+
+PARAMETRY:
+
+TraK0: +1
+Opóźnienie: 7
+Rodzaj biegłości: długi łuk
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 12
+
+Waga: 3~
+@6875 = ~Kusza jest łukiem, który zamocowano poprzecznie na drewnianym lub metalowym trzonku nazwanym później łożem. Łuczysko wykonane jest zazwyczaj z jesionu lub cisu. Kusza strzela pociskami zwanymi również bełtami.
+
+PARAMETRY:
+
+TraK0: +2
+Opóźnienie: 5
+Rodzaj biegłości: kusza
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 8
+
+Waga: 7~
+@6888 = ~Kusza lekka szybkości~
+@7347 = ~Miecz krótki +2: „Gwiżdżący miecz”
+
+Pośród równin Wschodniego Shaar żył pewien człowiek, kowal o małym wzroście, ale wielkim sercu. Choć doskonale umiał on wytwarzać broń, to jego prawdziwym darem było to, że potrafił zagwizdać taką melodię, przy której nawet dorosły mężczyzna płakał jak dziecko. Kowal ten miał jednak tylko jednego przyjaciela, maga, gdyż inni ludzie potrafili się tylko naigrywać z jego niskiego wzrostu, a własne uprzedzenia czyniły ich głuchymi na gwizdanie kowala. Ich szyderstwa powoli przerodziły się w udręki, przez które kowal musiał na zawsze opuścić swoją rodzinną wioskę. Przed wyruszeniem w drogę wykuł ten miecz jako prezent dla swojego jedynego przyjaciela, który dodatkowo obdarzył ją zdolnościami magicznymi. Od tego czasu ostrze miecza gwiżdże swojemu właścicielowi, kiedy tylko dobędzie je z pochwy. Niedługo potem obdarowany mag także opuścił wioskę, zabierając ze sobą otrzymany miecz.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +2
+TraK0: +2
+Typ obrażeń: kłute
+Opóźnienie: 1
+Rodzaj biegłości: miecz krótki
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 4
+
+Waga: 2~
+@7353 = ~Kusza lekka szybkości: „Wojskowa kosa”
+
+Tę broń, jak i wiele innych, odkryli ludzie mieszkający w krótko istniejącym osiedlu w Zamarzniętym Lesie. Znaleziono je w starożytnych ruinach w głębi tej mroźnej ziemi. Nie znając imion dawno zmarłych dobroczyńców, osadnicy używali tych „narzędzi” do wyrwania większego obszaru krainy dla siebie, ale próby te i tak spełzły na niczym. Te nieszczęsne dusze, zmiażdżone przez przeważające siły hobgoblinów, dołączyły do umarłych przed wiekami mieszkańców tej chłodnej ziemi.
+
+PARAMETRY:
+
+Specjalne:
+– Jeden dodatkowy atak na rundę
+
+Obrażenia: +1
+TraK0: +3
+Typ obrażeń: pocisk
+Opóźnienie: 3
+Rodzaj biegłości: kusza
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 8
+
+Waga: 5~
+@7354 = ~Podobnie jak w przypadku innych magicznych toreb, ta również wygląda jak zwykły zgrzebny worek o wymiarach pięćdziesięciu centymetrów na metr. Wewnątrz sakwy istnieje jednak przestrzeń pozawymiarowa, dzięki czemu wewnątrz jest znacznie większa, niż wskazywałyby na to jej zewnętrzne wymiary. Niezależnie co włoży się do wnętrza, sakwa zawsze waży tyle samo.
+
+PARAMETRY:
+
+Waga: 5~
+@7360 = ~Pierścień swobody ruchów: „Dar Edventara”
+
+Ten pierścień otrzymał badacz raf i myśliwy, znany jedynie jako Edventar, od grupy morskich elfów, które przez długi czas były jego przyjaciółmi. Pomoc Edventara przy unikaniu „Królowej Piratów” z Dambrath była podstawą przetrwania elfów. Mimo to Yenandry wciąż obawiano się wszędzie tam, gdzie woda spotykała się z lądem.
+
+PARAMETRY:
+
+Specjalne:
+– Noszący pierścień jest odporny na każde magiczne, jak i naturalne działanie, które w jakikolwiek sposób wpływa na swobodę ruchów. Wciąż może być jednak przyspieszony, lub uzyskać premię do prędkości ruchu, dzięki butom szybkości. 
+
+Waga: 0~
+@7363 = ~Pierścień niewidzialności: „Pierścień Piaskowego Złodzieja”
+
+Ten pierścień, znajdujący się przez niemal pokolenie w posiadaniu pewnego mistrza złodziei, był wiele razy używany na targach Waterdeep. Korzystający z mocy pierścienia łotrzyk pracował nad tłumem w jasnym świetle dnia i ukradł szlachetnie urodzonym niezliczone ilości sakiewek, zastępując je woreczkami z piaskiem, dzięki czemu kradzież przez pewien czas pozostawała niezauważona. Personaliów złodzieja nigdy nie odkryto, ale przylgnęło do niego, głośno przeklinane, miano „Piaskowy Złodziej”. Powiadają, że teraz przeszedł on na emeryturę i żyje pośród szlachty, którą niegdyś okradał.
+
+PARAMETRY:
+
+Specjalne:
+– Użytkownik staje się niewidzialny, dopóki nie wykona pierwszego ataku. W takim wypadku, pierścień należy zdjąć i założyć ponownie, by znów stać się niewidzialnym.
+
+Waga: 0~
+@7375 = ~Te buty zostały magicznie ulepszone dając użytkownikowi możliwość poruszania się z dwa razy większą szybkością. Są bardzo cenne dla wszystkich, których profesja wymaga pokonywania długich dystansów.
+
+PARAMETRY:
+
+Specjalne:
+– Prędkość poruszania się przyjmuje wartość 13 (bazowa wartość wynosi 9)
+
+Waga: 4~
+@7404 = ~Całun płomieni~
+@7509 = ~Emocje: odwaga~
+@7510 = ~Emocje: odwaga
+(Zaczarowania/Zauroczenia)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 godzina
+Czas rzucania: 4
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: brak
+
+Czar ten wywołuje uczucie odwagi na całym obszarze działania. Wszystkie istoty znajdujące się pod jego wpływem otrzymują premię +1 do testów trafienia, +3 do testów obrażeń oraz +5 tymczasowych punktów życia (punkty te mogą przekroczyć maksymalną dla danej istoty ilość). Zaklęcie to niweluje wszelkie efekty strachu, aktywne na obszarze jego działania w momencie rzucenia.~
+@7511 = ~Emocje: strach~
+@7512 = ~Emocje: strach
+(Zaczarowania/Zauroczenia)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 5 rund
+Czas rzucania: 4
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: neguje
+
+Czar ten wywołuje uczucie strachu na całym obszarze działania. Wszyscy wrogowie, którzy nie wykonają rzutu obronnego przeciw czarom, uciekają w panice przez pięć rund. W momencie rzucenia, zaklęcie to niweluje działanie czaru Emocje: odwaga.~
+@7513 = ~Emocje: nadzieja~
+@7514 = ~Emocje: nadzieja
+(Zaczarowania/Zauroczenia)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 godzina
+Czas rzucania: 4
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: brak
+
+Czar ten wywołuje uczucie nadziei na całym obszarze działania. Wszystkie istoty znajdujące się pod jego wpływem otrzymują premię +2 do rzutów obronnych, testów ataku oraz obrażeń, a ponadto wzrasta ich morale. W momencie rzucenia, zaklęcie to niweluje działanie czaru Emocje: beznadziejność.~
+@7516 = ~Całun płomieni
+(Inwokacje)
+
+Poziom: 5
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 runda/2 poziomy (specjalny)
+Czas rzucania: 5
+Obszar działania: w promieniu 1,5 metra
+Rzut obronny: neguje
+
+Czar ten sprawia, że będąca pod jego wpływem istota wybucha płomieniami, jeśli nie wykona rzutu obronnego przeciw czarom. Ofiara będzie płonąć, otrzymując co rundę 2k6 obrażeń od ognia i wypluwając przy tym z siebie jęzory ognia, zadające 1k4 obrażeń od ognia każdemu stworzeniu, które znajduje się nie dalej, niż 1,5 metra od niej. Każdy, kto zostanie zraniony płomieniami buchającymi od ofiary, musi również wykonać rzut obronny przeciw czarom lub sam zajmie się ogniem. Całun ognia wygasza się, jeśli rzucający zaklęcie i ofiara nie znajdują się już na tym samym obszarze. Czar ten jest szczególnie użyteczny podczas potyczek z grupami trolli i lodowych salamander.~
+@7533 = ~Zadawanie umiarkowanych ran
+(Nekromancja)
+
+Poziom: 2
+Sfera: Leczenie
+Zasięg: dotyk
+Czas działania: natychmiastowy
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: 1/2
+
+Po rzuceniu tego zaklęcia i dotknięciu ofiary, kapłan zadaje jej 11 obrażeń (połowę po rzucie obronnym przeciw czarom). Czar nie działa na nieumarłych, konstrukty oraz istoty pozaplanarne. Ponadto, nie może zostać rzucony przez postacie o dobrym charakterze.~
+@7536 = ~Sprowadzenie żywiołaka wody
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 5
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 tura/poziom
+Czas rzucania: 9
+Obszar działania: specjalny
+Rzut obronny: brak
+
+Czar ten pozwala na przyzwanie ze Sfery Żywiołu Wody żywiołaka o 8 KW, a następnie spętanie go, by wykonywał polecenie czarującego. Żywiołak ten będzie walczył w imieniu osoby rzucającej czar przez cały czas działania zaklęcia lub dopóki nie zostanie zniszczony.~
+@7551 = ~Zamrażająca sfera Otiluke'a~
+@7552 = ~Zamrażająca sfera Otiluke'a
+(Przemiany, Wywoływanie)
+
+Poziom: 6
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 6
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Czar ten wystrzeliwuje w kierunku wybranej istoty kulę zimna, zadającą 1k4 +2 obrażenia od zimna na poziom czarującego. Jeśli cel wykona rzut obronny przeciw czarom, uchyla się przed kulą, unikając całkowicie obrażeń.~
+@7857 = ~Kontynuuj.~
+@7903 = ~Przekleństwo
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 1
+Sfera: wszystkie
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 6 rund
+Czas rzucania: 9
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Po wypowiedzeniu słów Przekleństwa, rzucający czar obniża morale wrogich istot o 1. Ponadto, otrzymują one modyfikator -1 do rzutów obronnych i testów ataku. Przekleństwo działa na wszystkie istoty w promieniu 5 metrów wokół wskazanego punktu (tak więc znajdujące się pod jego wpływem stworzenia, które opuszczą ten obszar, w dalszym ciągu będą odczuwać jego efekty, natomiast istoty, które wejdą na ów obszar po rzuceniu czaru, już nie).~
+@7913 = ~Podpalenie 
+(Przemiany)
+
+Poziom: 4
+Sfera: Żywioły (ogień)
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 runda
+Czas rzucania: 7
+Obszar działania: w promieniu 1 metra
+Rzut obronny: brak
+
+Po rzuceniu tego czaru, w punkcie wyznaczonym przez rzucającego pojawiają się płomienie, które zadają wszystkim istotom, znajdującym się w obszarze działania zaklęcia, 1k4 obrażeń od ognia, plus 1 obrażenie na poziom czarującego. Istoty te będą otrzymywać obrażenia co rundę bez względu na to, kiedy znalazły się wewnątrz obszaru zaklęcia.~
+@7914 = ~Ładunek statyczny 
+(Przemiany)
+
+Poziom: 4
+Sfera: Pogoda
+Zasięg: 0
+Czas działania: 1 tura/poziom
+Czas rzucania: 9
+Obszar działania: pole widzenia rzucającego czar
+Rzut obronny: 1/2
+
+Ładunek statyczny jest podobny do czaru Wezwanie błyskawic, z tym, że może być on rzucany wewnątrz budynków. Czar ten pozwala rzucającemu na stworzenie ładunku statycznego, wokół dowolnej istoty znajdującej się w obszarze jego działania, zadając jej tym samym 2k8 obrażeń od elektryczności oraz dodatkowo 1k8 obrażeń na poziom czarującego. Ładunek zadaje obrażenia raz na turę przez cały czas działania zaklęcia.~
+@8040 = ~Raniące kamienie 
+(Przemiany, Zaczarowania)
+
+Poziom: 5
+Sfera: Żywioły (ziemia)
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 12 rund
+Czas rzucania: 6
+Obszar działania: w promieniu 2,5 metra
+Rzut obronny: specjalny
+
+Czar ten zmienia znajdujące się w polu widzenia kamienie w kolczaste twory, które zlewają się z tłem. Każda istota, która wejdzie w obszar działania czaru, otrzymuje 2k4 obrażeń kłutych na rundę i musi wykonać rzut obronnym przeciw czarom lub jej prędkość poruszania się zostanie obniżona o 30%.~
+@8065 = ~Zamiana ciała w kamień 
+(Przemiany)
+
+Poziom: 6
+Zasięg: pole widzenia rzucającego czar
+Czas działania: stały
+Czas rzucania: 6
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Czar ten przemienia wskazaną istotę w kamień. Ofiara może wykonać rzut obronny przeciw czarom, aby uniknąć działania zaklęcia. Petryfikację można odwrócić rzucając 6. poziomowy czar maga o nazwie Zamiana kamienia w ciało. Zaklęcie to działa na żywiących się ciałem nieumarłych (np. zombie czy ghule), lecz nie bezcielesnych i szkieletowych nieumarłych.~
+@8099 = ~Symbol bólu
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 7
+Sfera: Strażnicza
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 11 tur
+Czas rzucania: 3
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: neguje
+
+Wszyscy wrogowie znajdujący się w promieniu 5 metrów od symbolu bólu, w momencie jego utworzenia, muszą wykonać rzut obronny przeciw czarom. Niepowodzenie oznacza, że ogarnia ich obezwładniający ból, w związku z czym otrzymują oni karę -4 do testów ataku, -2 do Zręczności oraz -2 do Klasy Pancerza.~
+@8100 = ~Symbol beznadziejności
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 7
+Sfera: Strażnicza
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 2 tury
+Czas rzucania: 3
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: neguje
+
+Symbol beznadziejności jest potężnym zaklęciem, które pozwala kapłanowi na umieszczeniu inskrypcji na ziemi lub innej powierzchni. Symbol pozostaje tam, dopóki jakiś przeciwnik nie zbliży się do niego zanadto, wywołując tym samym wybuch, po którym wszyscy wrogowie znajdujący się w zasięgu działania zaklęcia muszą wykonać rzut obronny przeciw czarom z modyfikatorem -2, lub będą stali w miejscu, przytłoczeni chęcią bezwarunkowej kapitulacji. Nie będą mogli wykonać żadnego ruchu, aby bronić się przed nadchodzącymi atakami. W momencie rzucenia, zaklęcie to niweluje działanie czaru Emocje: odwaga.~
+@8564 = ~Ta potężna broń składa się z trzonka o długości od stu dwudziestu do stu pięćdziesięciu centymetrów i bardzo ciężkiego ostrza. Topór ten może mieć jedno żeleźce z jednej strony trzonka lub dwa, po obu stronach. Jest to nieporęczna broń, ale doświadczony wojownik może nim zadawać straszliwe ciosy.
+
+PARAMETRY:
+
+Obrażenia: 1k10
+Typ obrażeń: sieczne
+Opóźnienie: 9
+Rodzaj biegłości: topór
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 10~
+@8578 = ~Co stało się potem?~
+@8660 = ~Mów dalej. Słucham.~
+@9094 = ~Mam do ciebie kilka innych pytań.~
+@9197 = ~Kolczaste kamienie~
+@9211 = ~Symbol bólu~
+@9785 = ~Topór oburęczny~
+@9786 = ~Topór oburęczny~
+@10064 = ~Ta potężna magiczna szata zapewnia ochronę przed wszystkimi formami fizycznych ataków, zwiększając jednocześnie odporność na magię oraz rzuty obronne. Ze względu na naturę rzuconych na nią zaklęć, mogą ją nosić tylko magowie o złym charakterze.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: 5
+– Rzuty obronne: +1
+– Odporność na magię: +5%
+
+Waga: 6~
+@10242 = ~To wygląda na czaszkę jakiejś istoty ludzkiej.
+
+PARAMETRY:
+
+Waga: 1~
+@10552 = ~Dlaczego nie?~
+@10717 = ~Moje imię jest nieważne.~
+@11053 = ~Sejmitar +3: „Żagiew mrozu”~
+@11054 = ~Sejmitar to miecz o jednosiecznym zakrzywionym ostrzu i rękojeści chronionej koszem. Jest blisko spokrewniony z szablą, jednak w porównaniu do niej ma bardziej zakrzywione ostrze, zakończone wydłużonym, ostrym szpicem. Pochodzenie sejmitara jest w dużej mierze nieznane, aczkolwiek jest on bardzo popularny w południowych regionach Krain.
+
+PARAMETRY:
+
+Obrażenia: 1k8
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: sejmitar/wakizashi/ninja-to
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 8
+
+Waga: 4~
+@11055 = ~Sejmitar to miecz o jednosiecznym zakrzywionym ostrzu i rękojeści chronionej koszem. Jest blisko spokrewniony z szablą, jednak w porównaniu do niej ma bardziej zakrzywione ostrze, zakończone wydłużonym, ostrym szpicem. Pochodzenie sejmitara jest w dużej mierze nieznane, aczkolwiek jest on bardzo popularny w południowych regionach Krain. Ten egzemplarz to magiczny sejmitar +3, znany pod nazwą Żagiew mrozu.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na ogień: +50%
+
+Obrażenia: 1k8 +3
+TraK0: +3
+Typ obrażeń: sieczne
+Opóźnienie: 2
+Rodzaj biegłości: sejmitar/wakizashi/ninja-to
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 8
+
+Waga: 4~
+@11248 = ~Niebiańskie piekło~
+@11440 = ~Stać. Nie mogę pozwolić wam iść dalej.~
+@12052 = ~Pospolite odrzucenie~
+@12064 = ~Podpalenie~
+@12093 = ~Lawina śnieżnych kul Snilloca~
+@12130 = ~Zamrażająca sfera Otiluke'a~
+@12139 = ~Lanca jednorożca
+(Inwokacje)
+
+Poziom: 2
+Sfera: Walka
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: specjalny
+
+Czar ten tworzy częściowo eteryczną lancę o srebrnym odcieniu i kształcie rogu jednorożca. Gdy czarujący namierzy ofiarę, lanca natychmiast wystrzeli, zadając 3k6 obrażeń kłutych (połowę po rzucie obronnym przeciw czarom). Mimo, iż po uderzeniu lanca ulega rozproszeniu, pozostawia wokół ofiary srebrzystą poświatę, czyniąc ją tym samym łatwym celem. Ofiara otrzymuje w związku z tym karę -2 do Klasy Pancerza na trzy rundy.~
+@12180 = ~Magiczny pocisk 
+(Wywoływanie)
+
+Poziom: 1
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Jest to jeden z najpopularniejszych czarów pierwszego poziomu. Dzięki niemu mag tworzy z magicznej energii do pięciu pocisków, które wylatują z jego palca i bezbłędnie trafiają w wybraną istotę. Każdy pocisk zadaje 1k4 +1 obrażeń. Na każde dwa poziomy doświadczenia mag otrzymuje jeden dodatkowy pocisk, tzn. na trzecim ma dwa, na piątym – trzy, na siódmym – cztery i maksymalnie pięć na dziewiątym i wyższych poziomach.~
+@14181 = ~Kowal Grzmiący Młot~
+@14183 = ~[.]~
+@14233 = ~Najpowszechniejsza wersja topora bojowego składa się z solidnego trzonka o ponad metrowej długości, na którego końcu osadzono jednosieczne ostrze o zakrzywionym kształcie. Topory bojowe są również nazywane toporami szerokimi.
+
+PARAMETRY:
+
+Obrażenia: 1k8
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 7
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 7~
+@14316 = ~Miecz półtoraręczny +3: „Piec”~
+@14317 = ~Broń jest wspaniale wykonana i pokryta runami. Widać, że w jej wykonanie włożono wiele wysiłku i czasu. Po uważnym przyjrzeniu się widać, że runy emanują delikatną, niebieską poświatą.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na ogień: +15%
+– 50% szans na dodatkowe 1k8 obrażeń od ognia, po trafieniu
+– 10% szans na ogłuszenie celu, po trafieniu
+
+Obrażenia: 2k4 +3
+TraK0: +3
+Typ obrażeń: sieczne
+Opóźnienie: 8
+Rodzaj biegłości: miecz półtoraręczny
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 10~
+@14319 = ~Naładowany topór bojowy +2~
+@14321 = ~Broń jest wspaniale wykonana i pokryta runami. Widać, że w jej wykonanie włożono wiele wysiłku i czasu. Po uważnym przyjrzeniu się widać, że runy emanują delikatną, niebieską poświatą.
+
+PARAMETRY:
+
+Specjalne:
+– 50% szans na dodatkowe 1k3 obrażeń od elektryczności, po trafieniu
+– 15% szans na ogłuszenie celu na cztery sekundy, po trafieniu
+
+Obrażenia: 1k8 +2
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 7
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 7~
+@14362 = ~Ognisty cep bojowy +3~
+@14363 = ~Cep bojowy składa się z solidnego drzewca, służącego za uchwyt, do którego przymocowany jest gruby metalowy pręt, nabijany ostrymi kawałkami metalu lub kamieni drąg, lub też żelazna kula ze szpikulcami. Te dwa elementy są zwykle połączone krótkim łańcuchem lub mocnymi rzemieniami. Broń ta była początkowo używana jako narzędzie do młócenia ziarna. Ten egzemplarz został wzmocniony zaklęciami, a na jego powierzchni widać żarzące się runy.
+
+PARAMETRY:
+
+Specjalne:
+– 50% szans na dodatkowe 2k6 obrażeń od ognia, po trafieniu
+
+Obrażenia: 1k6 +4
+TraK0: +3
+Typ obrażeń: obuchowe
+Opóźnienie: 7
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 15~
+@14364 = ~Cep bojowy szoku +4~
+@14365 = ~Cep bojowy składa się z solidnego drzewca, służącego za uchwyt, do którego przymocowany jest gruby metalowy pręt, nabijany ostrymi kawałkami metalu lub kamieni drąg, lub też żelazna kula ze szpikulcami. Te dwa elementy są zwykle połączone krótkim łańcuchem lub mocnymi rzemieniami. Broń ta była początkowo używana jako narzędzie do młócenia ziarna. Ten egzemplarz został wzmocniony zaklęciami, a na jego powierzchni widać żarzące się runy.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– 50% szans na dodatkowe 2k3 obrażeń od elektryczności, po trafieniu
+– 10% szans na ogłuszenie celu na cztery sekundy, po trafieniu 
+
+Obrażenia: 1k6 +5
+TraK0: +4
+Typ obrażeń: obuchowe
+Opóźnienie: 7
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 15~
+@14393 = ~Większa mumia~
+@14406 = ~Przekleństwo~
+@14443 = ~Kościana strzałka +3~
+@14444 = ~Żelazna pięść~
+@14512 = ~Miecz długi działania +4~
+@14513 = ~Miecze te nazywa się zwykle mieczami obusiecznymi, wojennymi lub wojskowymi. W wielu wypadkach miecz długi posiada jedną krawędź tnącą. Nie istnieje jedna wersja miecza długiego, jego konstrukcja i długość mogą się bowiem różnić w zależności od kultury, a nawet w obrębie tej samej społeczności, jeśli weźmie się pod uwagę różne epoki. Jedną z najbardziej charakterystycznych cech mieczy długich jest ich długość, która waha się od dziewięćdziesięciu do stu dwudziestu centymetrów. W tym ostatnim przypadku samo ostrze może mierzyć nawet do stu centymetrów. Większość mieczy długich jest obusiecznych i ma ostre zakończenie. Pomimo posiadania sztychu, miecz długi przeznaczony jest do cięcia, a nie do wyprowadzania pchnięć. Ostrze tego miecza pokryte jest różnorakimi tajemnymi symbolami.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Odporność na obrażenia sieczne: +15%
+– Jeden dodatkowy atak na rundę
+
+Obrażenia: 1k8 +4
+TraK0: +4
+Typ obrażeń: sieczne
+Opóźnienie: 4
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 4~
+@14545 = ~Morgensztern pomniejszego przenikania +2~
+@14548 = ~Morgensztern składa się z drewnianego styliska, zwieńczonego żelazną głowicą nabitą licznymi szpiczastymi ćwiekami. Broń ta ma od około stu dwudziestu do stu trzydziestu centymetrów długości. Ten egzemplarz posiada złotą głowicę, która została wzmocniona przy użyciu magii, ze względu na zbyt wysoką kowalność złota.
+
+PARAMETRY:
+
+Specjalne:
+– 25% szans na dodatkowe 1k3 obrażeń od zimna, po trafieniu
+– 15% szans na przeniknięcie ofiary (1 obrażenie co sekundę przez dziesięć sekund), po trafieniu
+
+Obrażenia: 2k4 +2
+TraK0: +2
+Typ obrażeń: obuchowe
+Opóźnienie: 6
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 10~
+@14558 = ~Morgensztern +4: „Obrońca”~
+@14559 = ~Morgensztern składa się z drewnianego styliska, zwieńczonego żelazną głowicą nabitą licznymi szpiczastymi ćwiekami. Broń ta ma od około stu dwudziestu do stu trzydziestu centymetrów długości. Ten egzemplarz posiada złotą głowicę, która została wzmocniona przy użyciu magii, ze względu na zbyt wysoką kowalność złota.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Odporność na obrażenia sieczne: +20%
+– Odporność na obrażenia kłute: +20%
+– Odporność na magię: +15%
+
+Obrażenia: 2k4 +4
+TraK0: +4
+Typ obrażeń: obuchowe
+Opóźnienie: 6
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 11
+
+Waga: 10~
+@14629 = ~Pierścień wymiany aury~
+@14630 = ~Pierścień to mały pasek drogocennego metalu używany jako biżuteria. Niektóre, rzadsze okazy mają własności magiczne. Są one mocno poszukiwane, przede wszystkim przez łowców przygód. Bez jakiejś widocznej przyczyny, ten pierścień jest ciepły w dotyku.
+
+PARAMETRY:
+
+Specjalne:
+– Zwiększenie właściwości regeneracyjnych (1 PŻ co trzy sekundy)
+– Odporność na magię: -5%
+– Rzuty obronne: -2 przeciw czarom
+
+Waga: 0~
+@14631 = ~Pierścień większej odporności~
+@14632 = ~Pierścień to mały pasek drogocennego metalu używany jako biżuteria. Niektóre, rzadsze okazy mają własności magiczne. Są one mocno poszukiwane, przede wszystkim przez łowców przygód. Bez jakiejś widocznej przyczyny, ten pierścień jest ciepły w dotyku.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Odporność na obrażenia obuchowe: +25%
+– Rzuty obronne: +3 przeciw czarom
+
+Waga: 0~
+@14640 = ~Wzmocniony pawęż +2~
+@14641 = ~Jest to masywna, metalowa lub drewniana tarcza, sięgająca od ziemi aż do podbródka wojownika. Musi być solidnie przymocowana do przedramienia i cały czas przytrzymywana, przez co w ręce, na której opiera się tarcza, nie można trzymać niczego innego.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +3 (+4 przeciw pociskom)
+– Odporność na obrażenia obuchowe: +15%
+– Odporność na ogień: +15%
+
+Wymagania:
+– Siła: 14
+
+Waga: 12~
+@14644 = ~Pawęż +3~
+@14646 = ~Jest to masywna, metalowa lub drewniana tarcza, sięgająca od ziemi aż do podbródka wojownika. Musi być solidnie przymocowana do przedramienia i cały czas przytrzymywana, przez co w ręce, na której opiera się tarcza, nie można trzymać niczego innego.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +4 (+5 przeciw pociskom)
+– TraK0: -2
+– Odporność na obrażenia sieczne: +15%
+– Odporność na obrażenia obuchowe: +15%
+– Odporność na obrażenia kłute: +15%
+– Odporność na ogień: +15%
+
+Wymagania:
+– Siła: 18
+
+Waga: 18~
+@14682 = ~Miecz krótki działania +2~
+@14683 = ~Miecze krótkie pojawiły się jako pierwsze w tej grupie broni. W najprostszych słowach jest to sztylet o ostrzu tak długim, że nie może być dłużej traktowany jak sztylet. Termin „miecz krótki” nie istnieje w żadnych klasyfikacjach mieczy. Jednakże jest tu używany do opisania dwusiecznego ostrza o długości około sześćdziesięciu centymetrów. Czubki tych mieczy są zazwyczaj ostre, co czyni je doskonałymi do zadawania ran kłutych. Na ostrzu tego miecza wyryto magiczne inskrypcje.
+
+PARAMETRY:
+
+Specjalne:
+– Zręczność: +1
+
+Obrażenia: 1k6 +2
+TraK0: +2
+Typ obrażeń: kłute
+Opóźnienie: 2
+Rodzaj biegłości: miecz krótki
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+@14696 = ~Mikstura odporności~
+@14698 = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Odporność na obrażenia obuchowe: +5%
+Czas działania: stały
+
+Waga: 1~
+@14699 = ~Mikstura większej odporności~
+@14700 = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Odporność na obrażenia sieczne: +5%
+Odporność na obrażenia kłute: +5%
+Czas działania: stały
+
+Waga: 1~
+@14706 = ~Odwaga~
+@14708 = ~Nadzieja~
+@14727 = ~Przenikanie~
+@14728 = ~Ból~
+@14805 = ~Mikstura świętego przeniesienia~
+@14806 = ~Mikstury są zazwyczaj przechowywane w ceramicznych, kryształowych, szklanych albo metalowych buteleczkach. Zawierają one wystarczająco dużo płynu, aby objąć swym działaniem jedną osobę.
+
+PARAMETRY:
+
+Mądrość: +2
+Zręczność: -1
+Czas działania: stały
+
+Waga: 1~
+@14810 = ~Po bliższym przyjrzeniu się tej zbroi płytowej widać, że wykonano ją z jakiegoś nieznanego, mrocznego metalu. Materiał ten sprawia, że osoba nosząca ten pancerz wydaje się wyglądać równie mrocznie. Oprócz tego, zbroja zapewnia dodatkową ochronę przed pociskami.
+
+PARAMETRY:
+
+Klasa Pancerza: 0 (-3 przeciw broniom siecznym i pociskom)
+
+Wymagania:
+– Siła: 12
+
+Waga: 20~
+@14832 = ~Zbroja skórzana ćwiekowana odporności +3~
+@14833 = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Zamiast przypominać utwardzony pancerz, jest ona bowiem nabijana setkami metalowych nitów, stanowiących miękkie podbicie. Liczne ćwieki tworzą elastyczną powłokę z metalu, która odbija ataki sieczne i kłute, podczas gdy warstwa skórzana służy jedynie do utrzymywania nitów na miejscu.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na obrażenia sieczne: +15%
+– Odporność na obrażenia kłute: +15%
+– Odporność na ogień: +15%
+– Odporność na elektryczność: +15%
+– Rzuty obronne: +2 przeciw czarom
+
+Klasa Pancerza: 4 (3 przeciw broniom kłutym i pociskom, 2 przeciw broniom siecznym)
+
+Wymagania:
+– Siła: 6
+
+Waga: 15~
+@14834 = ~Zacieniona zbroja skórzana ćwiekowana +4~
+@14835 = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Zamiast przypominać utwardzony pancerz, jest ona bowiem nabijana setkami metalowych nitów, stanowiących miękkie podbicie. Liczne ćwieki tworzą elastyczną powłokę z metalu, która odbija ataki sieczne i kłute, podczas gdy warstwa skórzana służy jedynie do utrzymywania nitów na miejscu.
+
+PARAMETRY:
+
+Specjalne:
+– Ciche chodzenie: +30%
+– Krycie się w cieniu: +30%
+– Odporność na obrażenia kłute: +20%
+– Odporność na obrażenia sieczne: +20%
+– Odporność na ogień: +20%
+– Odporność na elektryczność: +20%
+
+Klasa Pancerza: 3 (2 przeciw broniom kłutym i pociskom, 1 przeciw broniom siecznym)
+
+Wymagania:
+– Siła: 6
+
+Waga: 15~
+@14847 = ~Topór oburęczny +2: „Dający życie”~
+@14848 = ~Ta potężna broń składa się z trzonka o długości od stu dwudziestu do stu pięćdziesięciu centymetrów i bardzo ciężkiego ostrza, które może znajdować się z jednej strony trzonka, lub dwóch takich ostrzy, po obu stronach. Jest to nieporęczna broń, ale doświadczony wojownik może nim zadawać straszliwe ciosy. Na olbrzymim ostrzu wyryto krasnoludzkie runy, dzięki czemu broń została silnie umagiczniona.
+
+PARAMETRY:
+
+Specjalne:
+– 10% szans na przywrócenie samemu sobie 2k3 punktów życia, po trafieniu
+
+Obrażenia: 1k10 +2
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 9
+Rodzaj biegłości: topór
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 10~
+@14855 = ~Schody rozpadły się, powstrzymując każdego, kto chciałby wejść dalej.~
+@14954 = ~Uświęcony młot bojowy +2~
+@14955 = ~Ten młot bojowy, podobnie jak inne rodzaje młotów, został wykonany w całości ze stali, a na jego niemal półmetrowym trzonku osadzono miażdżący kości obuch. Został on również obdarzony pewnymi właściwościami magicznymi, co czyni go skuteczniejszym w walce.
+
+PARAMETRY:
+
+Specjalne:
+– Pozwala zapamiętać dwa dodatkowe zaklęcia kapłańskie 1. poziomu oraz jedno dodatkowe zaklęcie kapłańskie 2. poziomu
+
+Obrażenia: 1k4 + 3
+TraK0: +2
+Typ obrażeń: obuchowe
+Opóźnienie: 3
+Rodzaj biegłości: młot bojowy
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 9
+
+Waga: 6~
+@15409 = ~„Straże!”~
+@15993 = ~...~
+@16261 = ~Różdżki mają zazwyczaj około czterdziestu pięciu centymetrów długości. Wykonuje się je z kości słoniowej, kości i drewna; zazwyczaj na ich końcu umieszcza się metalowy, kryształowy lub kamienny element. Są delikatne i łatwo się łamią. Z tego też powodu trzyma się je w futerałach.
+
+Zawierają magiczne ładunki; każde ich użycie kosztuje jeden lub więcej ładunków (zależnie od przedmiotu). W momencie, gdy zostaną wyczerpane zostają zniszczone.
+
+PARAMETRY:
+
+Waga: 1~
+@16399 = ~Przenikanie~
+@16836 = ~„Moje powinności jawią mi się jasno”.~
+@16907 = ~Nie wiem kim jesteście, ale trzymajcie się ode mnie z daleka!~
+@16911 = ~Zostawcie mnie w spokoju. Nie mam wam nic do powiedzenia.~
+@17094 = ~Odejdźcie. Nie jesteście od nas i nie mam wam nic do powiedzenia!~
+@17249 = ~Jak to sugeruje jego nazwa, hełm ochrony przed urokami, chroni noszącą go osobę przed wszystkimi próbami manipulowania jej emocjami. W ramach zachowania ostrożności, niektóre grupy najemników wyposażają swoich ludzi w hełmy tego typu, aby zapobiec zakłóceniu wykonywanych przez nich obowiązków przez zewnętrzne wpływy.
+
+PARAMETRY:
+
+
+Specjalne:
+– Chroni przed trafieniami krytycznymi
+– Niewrażliwość na zauroczenie
+
+Waga: 4~
+@17386 = ~Każdy ze stworzonych przez czar Dobre jagody owoców przywraca 5 punktów życia.
+
+PARAMETRY:
+
+Specjalne: 
+– Przywraca 5 punktów życia
+
+Waga: 0~
+@17503 = ~Słoneczny kamień należy do skaleni i jest spokrewniony z księżycowym kamieniem. Jego fachowa nazwa to oligoklaz. Może być bezbarwny lub lekko zielonkawy i jest bardzo twardy, jednak bardziej powszechna jest jego mniej twarda odmiana (kaboszon). Klejnoty tej odmiany mają jasnoczerwone lub pomarańczowe skazy (malutkie kryształki), zawieszone w bezbarwnym kamieniu, co nadaje im przyjemny złotawy lub czerwonobrązowy kolor.
+
+PARAMETRY:
+
+Waga: 0~
+@17505 = ~Agat ognisty to nazwa nadawana chalcedonowi, który zawiera tęczowe żyłki. Jeżeli zostanie odpowiednio oszlifowany, ukazują się bogate czerwienie, brązy, zielenie i złocistości. Najszlachetniejsze okazy są lekko przezroczyste.
+
+PARAMETRY:
+
+Waga: 0~
+@17508 = ~Kamień z nieba to popularna nazwa nadawana przezroczystym lub lekko zabarwionym odłamkom szkła niebiańskiego (meteorycznego) pochodzenia. Znajdowane są w ruchomych piaskach Anauroch i innych pustyń.
+
+PARAMETRY:
+
+Waga: 0~
+@17514 = ~Kamień księżycowy to nieprzejrzysty biały skaleń, polerowany w celu uzyskania błękitnawego poblasku. Legendy mówią, że widok tego klejnotu zmusza likantropa do przybrania zwierzęcej postaci. Nie wiadomo czy to jest prawda, albowiem nikt, kto był dostatecznie blisko, by się o tym przekonać, nie przeżył, aby móc o tym opowiedzieć. Jednak używa się tych kamieni przy rzucaniu czarów, które działają na tę właśnie klątwę.
+
+PARAMETRY:
+
+Waga: 0~
+@17520 = ~Perły złożone są z warstw aragonitu boleśnie ułożonego wokół kawałeczka pyłku lub innej substancji drażniącej w ostrygach, lub innych mięczakach. Powstająca w ten sposób perła daje bogate, głębokie lśnienie. Większość pereł w tych królestwach jest koloru białego, choć istnieją też rzadsze odmiany, zarówno w kolorach tęczy czy też czerni.
+
+PARAMETRY:
+
+Waga: 0~
+@17526 = ~Chalcedon to perłowo biały nieprzejrzysty kamień zwykle o zabarwieniu bladoniebieskim lub bladozielonym ze złocistymi plamkami. Spokrewniony z ognistym i czarnym opalem jest od nich trochę częściej spotykany.
+
+PARAMETRY:
+
+Waga: 0~
+@17527 = ~Gwiezdny szafir to rzadka odmiana szafiru, bardziej przejrzysta, z białą gwiazdą widoczną w środku. Używany jest do ozdabiania przedmiotów chroniących przed magią.
+
+PARAMETRY:
+
+Waga: 0~
+@17529 = ~Diament jest twardym, przezroczystym klejnotem, może być biało niebieski, błękitny, żółty lub różowy. Jest najtwardszym ze wszystkich klejnotów i jednym z najcenniejszych. Większość diamentów pochodzi z północnych gór, gdzie wydobywane są przez podziemne rasy, w ten sposób dostając się na powierzchnię.
+
+PARAMETRY:
+
+Waga: 0~
+@17530 = ~Szmaragd jest lśniącym zielonym berylem, oszlifowanym według ustalonego wzoru. Jest on często kojarzony ze zdrowiem i bywa używany do ozdabiania przedmiotów ze zdrowiem związanych.
+
+PARAMETRY:
+
+Waga: 0~
+@17534 = ~Te strzały zostały obdarzone magią podczas tworzenia. Wyglądają na troszkę prostsze od zwykłych i wydają się niemal żyć własnym życiem, kiedy zostają wystrzelone i zbliżają się do celu z zabójczą celnością.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +2
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+@17643 = ~Długi łuk jest podobny do krótkiego, z wyjątkiem tego, że długość łęczyska wynosi prawie tyle, ile wzrost łucznika, zwykle jest to od metra osiemdziesięciu do dwóch metrów wysokości. Ma lepszy zasięg i celność niż łuk krótki, ale mniejszą szybkostrzelność. Ten łuk obdarzono magicznymi właściwościami, co czyni go niemal doskonałym.
+
+PARAMETRY:
+
+Obrażenia: +1
+TraK0: +2
+Typ obrażeń: pocisk
+Opóźnienie: 6
+Rodzaj biegłości: długi łuk
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 12
+
+Waga: 3~
+@17683 = ~Wewnątrz tego pocisku zawarta jest magiczna energia, która sprawia, że wydaje się on bardziej stabilny i lżejszy, gdy podąża w kierunku celu.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +3
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: proca
+
+Waga: 0~
+@17733 = ~Oszałamiacz~
+@17735 = ~Potężna broń stworzona przez maga Retlanda z Wrót Zachodu. Oszałamiacz był zazwyczaj używany przez zbirów będących na służbie u wspomnianego maga. Pomimo posiadania wyższego wykształcenia, Retland nie bardzo różnił się od zwykłego gangstera i zbira. Jego banda, znana jako Brukarze, prześladowała i najeżdżała na różne osady w sąsiedztwie Wrót Zachodu przez dziesięć lat, aż wreszcie czarodziej w służbie Tyra, Alistar Lavell, zebrał sojuszników przeciwko chłopcom Retlanda. Po zwycięstwie nad nimi Alistar przekazał Oszałamiacza kościołowi Tyra, gdzie z kolei dano go pewnemu podróżującemu kapłanowi.
+
+PARAMETRY:
+
+Specjalne:
+– 5% szans na ogłuszenie celu na dwie rundy, po trafieniu
+
+Obrażenia: 1k6 + 1
+TraK0: + 1
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: maczuga
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+@17803 = ~Rozumiem.~
+@17990 = ~„Hej, uważaj! Trzymaj ręce przy sobie”.~
+@17992 = ~„Nie pochwalam usiłowania kradzieży. Lepiej zważaj na swoje zachowanie”.~
+@17993 = ~„Masz szczęście, że lubię wybaczać. Nie próbuj mnie ponownie okraść”.~
+@17994 = ~„Nie zbliżaj się. Myślisz, że nie wiem, co tutaj robisz?”~
+@17995 = ~„Co tutaj robisz? Odejdź ode mnie, jeśli łaska”.~
+@18048 = ~„Zabić ich!”~
+@18056 = ~„Nie radzę znowu próbować. W tych stronach złodzieje nie są mile widziani”.~
+@18057 = ~„Lepiej, żeby to nie twoja ręka myszkowała mi po kieszeniach przed chwilą”.~
+@18058 = ~„Ty złodziejska wywłoko. Tym razem puszczę cię wolno z ostrzeżeniem, ale następnym razem...”~
+@18059 = ~„Lepiej uważaj, co robisz. Bycie kieszonkowcem to ryzykowne zajęcie, zwłaszcza kiedy ktoś jest taki niezgrabny, jak ty”.~
+@18060 = ~„AAAAAAGH!”~
+@18615 = ~Zbroja czarnego łabędzia +2~
+@18617 = ~[.]~
+@18628 = ~Bóle zniszczenia~
+@18877 = ~Widmowy strażnik~
+@18881 = ~Widmowy strażnik~
+@18915 = ~Kontynuuj.~
+@18923 = ~Proce istnieją od początków zapisywanej historii. Proca w podstawowej wersji składa się ze skórzanego paska lub rzemienia z woreczkiem, w który wkłada się pocisk. Procarz trzyma za dwa końce rzemienia i kręci procą nad swoją głową. Po osiągnięciu maksymalnej prędkości pocisk zostaje wyrzucony w wyniku puszczenia końca jednego z rzemieni. Ten egzemplarz został dodatkowo wzmocniony pomniejszymi zaklęciami.
+
+PARAMETRY:
+
+Obrażenia: +1
+TraK0: +1
+Typ obrażeń: pocisk
+Opóźnienie: 5
+Rodzaj biegłości: proca
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+@18926 = ~Torba~
+@18927 = ~Torba ta pamięta lepsze czasy. Nawet, jeśli ogląda się ją z oddali, wciąż można wyczuć bijący od niej potworny smród. Zewnętrzną stronę torby pokrywa brud i sadza.
+
+PARAMETRY:
+
+Waga: 1~
+@19339 = ~Strzałka kostna~
+@19358 = ~Bełty to amunicja wystrzeliwana przez kusze, niezależnie od wielkości broni. Ten szczególny bełt jest magiczny, lecąc w kierunku celu sprawia wrażenie, jakby sam nakierowywał się na cel.
+
+PARAMETRY:
+
+Obrażenia: 1k8 +2
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: kusza
+
+Waga: 0~
+@21396 = ~Mgła Eldath~
+@21398 = ~Trąba powietrzna~
+@21401 = ~Osłona przed nieumarłymi~
+@21403 = ~Łaknienie krwi~
+@21404 = ~Chmura morowego powietrza~
+@21405 = ~Niewyczerpana wytrzymałość~
+@21407 = ~Miażdżąca fala~
+@21409 = ~Wachlarz cierniowy~
+@21410 = ~Ściana księżycowej poświaty~
+@21418 = ~Kolce~
+@21420 = ~Dotyk pleśni~
+@21421 = ~Lanca jednorożca~
+@21422 = ~Osłona przed burzą~
+@21424 = ~Zadawanie umiarkowanych ran~
+@21429 = ~Siedem oczu~
+@21430 = ~Duszenie~
+@21431 = ~Kościane strzałki~
+@21432 = ~Pożeracz dusz~
+@21435 = ~Pociski mocy Mordenkainena~
+@21437 = ~Okrzyk~
+@21438 = ~Kula z witriolem~
+@21439 = ~Lanca zmącenia~
+@21443 = ~Oko kamienia~
+@21444 = ~Oko hartu ducha~
+@21446 = ~Oko duchowe~
+@21447 = ~Oko jadowe~
+@21448 = ~Oko maga~
+@21449 = ~Oko miecza~
+@21450 = ~Oko umysłu~
+@21458 = ~Dotyk pleśni 
+(Przemiany)
+
+Poziom: 3
+Sfera: Rośliny
+Zasięg: dotyk
+Czas działania: specjalny
+Czas rzucania: 6
+Obszar działania: w promieniu 3 metrów
+Rzut obronny: specjalny
+
+Czar ten zaraża pojedynczą istotę, której ciało pokrywa się szybko rozprzestrzeniającą się brązową pleśnią. Zakażona istota wykonuje rzut obronny przeciw czarom. Jeżeli zakończy się on niepowodzeniem, wówczas zakażenie staje się bardzo poważne, a dotknięta nim istota otrzymuje następujące obrażenia:
+
+1. runda: 4k6 obrażeń
+2. runda: 3k6 obrażeń
+3. runda: 2k6 obrażeń
+4. runda: 1k6 obrażeń
+
+Jeżeli rzut obronny się powiedzie, wówczas obrażenia ulegają zmniejszeniu:
+
+1. runda: 2k6 obrażeń
+2. runda: 1k6 obrażeń
+3. runda: 1k6 obrażeń
+
+Po upłynięciu pierwszej rundy, w każdej następnej istota znajdująca się w odległości 3 metrów od ofiary musi wykonać rzut obronny przeciwko czarom lub zostanie zarażona pleśnią. Sytuacja taka powtarza się do chwili, aż pleśń nie zdąży na czas zakazić nowego gospodarza, tracąc tym samym swoje właściwości. Istoty znajdujące się już pod wpływem pleśni nie mogą się nią zarazić ponownie. Po upłynięciu czasu działania zaklęcia, brązowa pleśń szybko obumiera.~
+@21460 = ~Kolce 
+(Przemiany)
+
+Poziom: 3
+Sfera: Żywioły (ziemia)
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 tura
+Czas rzucania: 6
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Zaklęcie to pokrywa teren wokół kolczastymi roślinami. Każda istota, wkraczająca na ten obszar, otrzymuje 1k4 obrażeń kłutych i 1k4 obrażeń siecznych w każdej rundzie działania czaru.~
+@21461 = ~Pożeracz dusz
+(Nekromancja)
+
+Poziom: 6
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 5
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: brak
+
+Czar ten zadaje 3k8 magicznych obrażeń wszystkim żywym stworzeniom znajdującym się w promieniu 4 metrów. Każda istota, która umrze w wyniku działania tych obrażeń, zostaje unicestwiona, a jej esencja zostaje przekształcona w szkielet o 3 KW, znajdujący się pod kontrolą czarującego. Ponadto, za każdą zabitą w ten sposób istotę czarujący otrzymuje na jedną turę premię +1 do Siły, Zręczności i Kondycji. Zaklęcie to nie działa na nieumarłych, konstrukty i żywiołaki.~
+@21462 = ~Ściana księżycowej poświaty 
+(Inwokacje)
+
+Poziom: 4
+Sfera: Ochrona, Słońce
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 1 tura
+Czas rzucania: 7
+Obszar działania: ściana o długości 2,5 metra i szerokości 0,5 metra
+Rzut obronny: brak
+
+Czar ten powołuje do istnienia migoczący gobelin błękitno-białej energii. Powstała w ten sposób ściana jest niematerialna i nie wymaga fizycznego puntu zaczepienia, przez co można przez nią z łatwością przejść. Istoty o złym charakterze, które przekroczą ścianę, otrzymują 2k10 magicznych obrażeń, zaś nieumarli 5k10 magicznych obrażeń. Istota przechodząca przez ścianę może otrzymać obrażenia tylko raz.~
+@21465 = ~Kościane strzałki
+(Nekromancja)
+
+Poziom: 6
+Zasięg: 0
+Czas działania: 5 rund
+Czas rzucania: 5
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Czar ten tworzy dziewięć strzałek, które mogą być użyte przez czarującego. Nie można ich odłożyć dopóki nie upłynie czas działania zaklęcia. Powstałe strzałki posiadają umagicznienie +3, zadają 1k4 +3 obrażeń od pocisków, a trafiona nimi istota musi wykonać rzut obronny przeciw śmierci lub otrzyma 2k6 magicznych obrażeń, a jej Siła zostanie obniżona o 3 na okres pięciu rund. Utrata siły nie jest kumulatywna, a nieudany rzut obronny nie spowoduje, że będzie ona trwała dłużej. Biegłość czarującego w posługiwaniu się strzałkami (lub jej brak) nie wpływa na szansę trafienia w cel.~
+@21466 = ~Siedem oczu
+(Odrzucanie)
+
+Poziom: 7
+Zasięg: 0
+Czas działania: 2 tury
+Czas rzucania: 7
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Zaklęcie to powołuje do istnienia siedem magicznych kul w kształcie oka, które unoszą się nad głową maga, tworząc coś w rodzaju pierścienia. Każde oko posiada zdolności obronne i ofensywne, ale z chwilą użycia traci swą moc. Każda kolejna próba zastosowania tego czaru nie powiedzie się, jeżeli czas trwania poprzedniego zaklęcia nie dobiegł końca, bez względu na to, czy pozostały jeszcze jakieś magiczne oczy, czy też nie. Poniżej przedstawiona została charakterystyka każdego oka:
+
+Oko umysłu – chroni rzucającego przed przez atakami mentalnymi, takimi jak zauroczenie, emocje, czy strach. Może być wykorzystane jako 1. poziomowy czar maga Zauroczenie osoby, sprawiając że jedna humanoidalna istota znajdzie się przez jedną turę pod kontrolą rzucającego (rzut obronny przeciw czarom neguje).
+
+Oko miecza – odbija najbliższy atak fizyczny skierowany na rzucającego. Może być wykorzystane jako 1. poziomowy czar maga Magiczny pocisk, tworząc maksymalnie pięć pocisków (jeden na każde dwa poziomy doświadczenia powyżej pierwszego), z których każdy zadaje 1k4 +1 magicznych obrażeń.
+
+Oko maga – pochłania jednorazowo obrażenia zadane przez ogień, elektryczność, zimno lub kwas. Może być również wykorzystane  jako 3. poziomowy czar maga Błyskawica, zadając 1k6 obrażeń od elektryczności na poziom (maksymalnie 10k6) wszystkim istotom stojącym jej na drodze.
+
+Oko jadowe – zatrzymuje jeden atak lub efekt, który mógłby spowodować zatrucie rzucającego. Może być również wykorzystane jako 4. poziomowy czar kapłański Trucizna, zadając jednej istocie 20 obrażeń w przeciągu dwudziestu sekund (rzut obronny przeciw truciznom neguje).
+
+Oko duchowe – blokuje jeden magiczny atak powodujący natychmiastową śmierć (Zaklęcie śmierci, Palec śmierci, Słowo mocy: giń, Zabijanie żyjących, Zniszczenie). Zamiast tego, czarodziej może wykorzystać drzemiącą w oku moc jako 2. poziomowy czar maga Promień osłabienia, obniżając Siłę celu o 5 (rzut obronny przeciw czarom neguje).
+
+Oko hartu ducha – blokuje jeden efekt powodujący ogłoszenie, głuchotę, ślepotę lub ciszę. Może być zamiast tego wykorzystane jako 4. Poziomowy czar maga Okrzyk, zadając 4k6 magicznych obrażeń i wywołując głuchotę u istot znajdujących się na obszarze stożka o promieniu 15 metrów (połowa obrażeń i uniknięcie głuchoty po rzucie obronnym przeciw czarom).
+
+Oko kamienia – chroni rzucającego przed pojedynczym atakiem powodującym petryfikację. Może być również wykorzystane jako 3. poziomowy czar maga Unieruchomienie osoby, uniemożliwiając poruszanie się humanoidom o rozmiarze człowieka lub mniejszym przez jedną rundę/poziom (rzut obronny przeciw czarom neguje).~
+@21468 = ~Okrzyk
+(Inwokacje)
+
+Poziom: 4
+Zasięg: 0
+Czas działania: natychmiastowy
+Czas rzucania: 1
+Obszar działania: 15° stożek o promieniu 5,5 metra
+Rzut obronny: specjalny
+
+Zaklęcie to obdarza czarującego nieprawdopodobnymi zdolnościami wokalnymi, pozwalając mu na emitowanie rozdzierającego uszy krzyku na obszarze przyjmującym kształt stożka. Każda istota znajdująca się objęta działaniem tego czaru staje się głucha przez dziewięć rund, a także otrzymuje 4k6 magicznych obrażeń. Rzut obronny przeciw czarom neguje głuchotę i obniża otrzymane obrażenia o połowę.~
+@21469 = ~Duszenie
+(Przemiany)
+
+Poziom: 7
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 4 rundy
+Czas rzucania: 7
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: specjalny
+
+Czar ten pozbawia oddechu wszystkie istoty znajdujące się w obszarze jego działania. Istoty nie muszące oddychać są niepodatne na jego wpływ. Duszące się stworzenia otrzymują karę -4 do Klasy Pancerza, -4 do testów trafienia i -6 do Zręczności. Ponadto, mogą wykonywać w ciągu rundy o jeden atak mniej, ich prędkość poruszania zostaje zmniejszona o połowę, a także otrzymują co rundę 4k8 magicznych obrażeń. Rzut obronny neguje wszystkie efekty, poza 2k8 obrażeniami otrzymywanymi przez jedną rundę. Efekt zaczyna słabnąć w chwili, w której istota opuści obszar działania czaru, aczkolwiek może minąć runda, zanim złapie oddech.~
+@21472 = ~Trąba powietrzna 
+(Inwokacje)
+
+Poziom: 6
+Sfera: Żywioły (powietrze)
+Zasięg: pole widzenia rzucającego czar
+Czas działania: specjalny
+Czas rzucania: 9
+Obszar działania: specjalny
+Rzut obronny: specjalny
+
+Czar ten tworzy w zasięgu wzroku rzucającego niewielką trąbę powietrzną, która przemieszcza się w losowym kierunku, raniąc zarówno wrogów, jak i sojuszników. Czarujący jest niewrażliwy na działanie własnego zaklęcia, podobnie jak żywiołaki i inne istoty dużych rozmiarów. Stworzenie złapane przez trąbę powietrzną otrzymuje 2k8 obrażeń obuchowych i 2k8 obrażeń siecznych, a ponadto musi wykonać rzut obronny przeciw zionięciom lub zostanie ogłuszone na dwie rundy. Istoty posiadające 2 lub mniej Kostek Wytrzymałości, giną automatycznie. Trąba powietrzna może wpłynąć na maksymalnie osiem istot, po czym rozpływa się, bez dalszej szkody dla innych.~
+@21474 = ~Mgła Eldath
+(Inwokacje)
+
+Poziom: 7
+Sfera: Żywioły
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 9
+Obszar działania: w promieniu 2 metrów
+Rzut obronny: brak
+
+Zaklęcie to pokrywa cały obszar działania srebrzystoniebieską mgłą. Każda istota, która znajdzie się w obrębie mgły, zostaje uleczona z chorób i zatrucia, a także odzyskuje 25 punktów życia.~
+@21478 = ~Wywołanie choroby
+(Nekromancja)
+
+Poziom: 3
+Sfera: Leczenie
+Zasięg: dotyk
+Czas działania: 8 godzin
+Czas rzucania: 9
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Zaklęcie to wywołuje u dotkniętej przez kapłana istoty chorobę, która osłabia ją, obniżając jej Siłę o 5k4 punktów. Rzut obronny przeciw czarom neguje ten efekt. Zaklęcie to nie działa na nieumarłych, konstrukty oraz istoty pozaplanarne. Nie może być używane przez istoty o dobrym charakterze.~
+@21608 = ~Żelazna pięść~
+@21646 = ~Otoczony srebrzystą poświatą (kara -2 do KP)~
+@21648 = ~Oko kamienia blokuje działanie efektu, po czym zanika.~
+@21649 = ~Oko hartu ducha blokuje działanie efektu, po czym zanika.~
+@21650 = ~Oko duchowe blokuje działanie efektu, po czym zanika.~
+@21651 = ~Oko jadowe blokuje działanie efektu, po czym zanika.~
+@21652 = ~Oko maga blokuje działanie efektu, po czym zanika.~
+@21653 = ~Oko miecza blokuje działanie efektu, po czym zanika.~
+@21654 = ~Oko umysłu blokuje działanie efektu, po czym zanika.~
+@22629 = ~Dobrze. Pójdziemy z tobą.~
+@23357 = ~Bezbłędna teleportacja~
+@24061 = ~Dobrze.~
+@24245 = ~Kula z witriolem
+(Sprowadzanie)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: specjalny
+Czas rzucania: 4
+Obszar działania: w promieniu 1,5 metra
+Rzut obronny: specjalny
+
+Czar ten przywołuje kulę migoczącego szmaragdowego kwasu, którą można skierować w stronę dowolnego celu znajdującego się w zasięgu wzroku. Kiedy kula dotrze do ofiary, wybucha, oblewając ją żrącym kwasem. Istota otrzymuje 1k4 obrażeń od kwasu na poziom czarującego; maksymalnie 12k4 obrażeń. Po początkowych obrażeniach, ofiara musi wykonać rzut obronny przeciw czarom celem uniknięcia kolejnych obrażeń. Jeśli zakończy się on niepowodzeniem, istota otrzymuje obrażenia od kwasu w kolejnych rundach, lecz z każdą rundą maleją one o 2 kostki. Przykładowo, czarodziej 8. poziomu zadaje 8k4 obrażeń w pierwszej rundzie, 6k4 w drugiej rundzie, 4k4 w trzeciej, 2k4 w czwartej, a działanie czaru kończy się w rundzie piątej. W każdej rundzie ofiara ataku może wykonać rzut obronny przeciw czarom, aby uniknąć dalszych obrażeń. 
+
+Kula z witriolem rozpryskuje kwas w promieniu 1,5 metra wokół istoty będącej celem ataku. Wszystkie stworzenia znajdujące się w obszarze rozprysku muszą wykonać rzut obronny przeciw polimorfii/paraliżowi, bądź otrzymają 1k4 obrażeń na każde pięć poziomów czarującego. Rozprysk nie powoduje ciągłych obrażeń.~
+@24246 = ~Pociski mocy Mordenkainena
+(Inwokacje)
+
+Poziom: 4
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 4
+Obszar działania: w promieniu 0,5 metra
+Rzut obronny: specjalny
+
+Zaklęcie to powołuje do istnienia połyskującą kulę magicznej energii, która wystrzeliwuje z dłoni czarodzieja, trafiając bezbłędnie ofiarę. Można tutaj dostrzec duże podobieństwo do czaru Magiczny pocisk. Czarodziej tworzy jeden pocisk na 7. poziomie oraz kolejny pocisk, co każde trzy poziomy po poziomie siódmym (czyli dwa pociski na 10. poziomie, trzy na 13. poziomie, cztery na 16. poziomie itd., aż do maksymalnej ilości siedmiu pocisków na 25. poziomie. Każdy pocisk zadaje ofierze 2k4 obrażeń, a następnie wywołuje falę uderzeniową o promieniu 0,5 metra, zadającą 1 obrażenie na poziom czarującego. Przykładowo, czarodziej 12. poziomu może stworzyć dwa pociski, z których każdy zadaje 2k4 +12 magicznych obrażeń. Zaatakowane istoty mogą wykonać rzut obronny przeciw czarom, aby uniknąć obrażeń pochodzących od fali uderzeniowej, lecz nie od samego pocisku. Zaklęcie maga 1. poziomu o nazwie Tarcza unieszkodliwia pociski mocy, w tym obrażenia wywołane falą udrzeniową.~
+@24247 = ~Osłona przed nieumarłymi
+(Nekromancja)
+
+Poziom: 5
+Sfera: Osłony
+Zasięg: 0
+Czas trwania: 1 tura
+Czas rzucania: 7
+Obszar działania: w promieniu 3 metrów
+Rzut obronny: brak
+
+Czar ten wzmacnia wpływ kapłana na nieumarłych, choć jest ograniczony do obszaru, na którym ten obecnie przebywa. Dodatkowo kapłan nie może się w trakcie jego trwania poruszać. Każdy nieumarły, który wejdzie na obszar działania zaklęcia, będzie poddany odpędzaniu, jak w przypadku zdolności kapłana, który je rzucił. Jeśli odpędzanie zakończy się niepowodzeniem, nieumarły staje się niewrażliwy na kolejne próby poczynione za pomocą tego czaru, chyba że opuści obszar jego działania i wejdzie doń ponownie.~
+@24248 = ~Niewyczerpana wytrzymałość 
+(Nekromancja)
+
+Poziom: 4
+Sfera: Nekromancja
+Zasięg: dotyk
+Czas działania: natychmiastowy
+Czas rzucania: 9
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Zaklęcie to przywraca wybranej istocie wytrzymałość, eliminując tym samym ciążace na niej efekty zmęczenia.~
+@24250 = ~Chmura morowego powietrza 
+(Przemiany)
+
+Poziom: 4
+Sfera: Walka, Żywioły (powietrze)
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 4 rundy
+Czas rzucania: 7
+Obszar działania: w promieniu 4 metrów
+Rzut obronny: neguje
+
+Czar ten przekształca powietrze w promieniu 4 metrów w wywołującą mdłości szarą mgłę. Rzucający, oraz istoty nieżywe, są niewrażliwe na efekty działania chmury. Istota narażona na wpływ tego pełnego chorób powietrza musi co rundę wykonywać rzut obronny przeciw zionięciom lub odniesie 3 magiczne obrażenia, straci 3 punkty Siły i Zręczności oraz zostanie oślepiona. Utrata cech i ślepota trwają przez jedną turę. Chmurę morowego powietrza mogą rzucać jedynie postacie o złym charakterze.~
+@24252 = ~Miażdżąca fala 
+(Inwokacje)
+
+Poziom: 4
+Sfera: Żywioły (woda)
+Zasięg: 33 metry
+Czas działania: natychmiastowy
+Czas rzucania: 9
+Obszar działania: specjalny
+Rzut obronny: specjalny
+
+Czar ten przywołuje szeroką na 1,5 metra falę, która porusza się w kierunku wyznaczonym przez czarującego, uderzając z miażdżącą siłą wszystkich, którzy staną jej na drodze. Fala zadaje 4k10 obrażeń obuchowych, a ponadto trafione przez nią istoty mają 25% szans na to, że zostaną ogłuszone lub 5% szans, że stracą przytomność na dwie rundy. Rzut obronny przeciw zionięciom zmniejsza obrażenia o połowę i pozwala uniknąć efektów ogłuszenia lub utraty przytomności.~
+@24253 = ~Wachlarz cierniowy 
+(Przemiany)
+
+Poziom: 4
+Sfera: Rośliny
+Zasięg: 10 metrów
+Czas działania: natychmiastowy
+Czas rzucania: 3
+Obszar działania: 90° stożek o promieniu 5,5 metra
+Rzut obronny: 1/2
+
+Czar ten tworzy wachlarz kolców, gwoździ i cierni, które wystrzeliwują z dłoni czarującego. Pokrywają one obszar stożka o promieniu 5,5 metra, zadając 2k10 obrażeń kłutych wszystkim istotom, znajdującym się w obszarze działania zaklęcia (rzut obronny przeciw śmierci zmniejsza obrażenia do 1k10).~
+@24255 = ~Osłona przed burzą 
+(Odrzucanie)
+
+Poziom: 3
+Sfera: Ochrona, Pogoda
+Zasięg: 0
+Czas działania: 1 tura
+Czas rzucania: 6
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Dzięki temu zaklęciu, czarujący zostaje otoczony kulą energii, która porusza się wraz z nim, zwiększając jego odporność na ogień, zimno i elektryczność do 50%.~
+@24294 = ~Zrobię, co każesz.~
+@24381 = ~Łaknienie krwi~
+@24770 = ~Lodowy golem strażnik~
+@24772 = ~Lodowy golem strażnik~
+@24793 = ~Te strzały nie tyle znane są ze swojej mocy niszczącej, co z irytującej mocy przywoływania. Goblinowe strzały zostały wynalezione przez złego gnoma o imieniu Turbar Talinbar i nie trudno o nie w kołczanach psotnych niziołków i elfów. Kilka grup poszukiwaczy przygód używa Goblinowych strzał, zanim przypuści jakikolwiek większy atak.
+
+PARAMETRY:
+
+Specjalne:
+– Przyzywa na goblina w pobliże celu na siedemnaście rund, po trafieniu
+
+Obrażenia: 1k6 +1
+TraK0: +1
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+@24794 = ~Goblinowe strzały +1~
+@24810 = ~Łaknienie krwi 
+(Przemiany)
+
+Poziom: 4
+Sfera: Walka
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 2 tury
+Czas rzucania: 7
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Czar ten działa jedynie na postać gracza lub sprzymierzone z nią istoty. Po jego rzuceniu, wyznaczona istota wpada w szał, atakując nieustannie najbliższe stworzenie, dopóki nie padnie ono martwe, a następnie wybiera kolejny cel. Będąc pod wpływem Łaknienia krwi staje się ona niewrażliwa na zauroczenie, sen, strach, unieruchomienie, ogłuszenie, zamęt, emocje, zaklęcia symboli i podobne efekty. Ponadto, otrzymuje premię +2 do testów trafienia, +3 do testów obrażeń, +2 do Siły, +10 do maksymalnej wartości punktów życia, a także +2 do prędkości poruszania się. Czar ten ma jednakże kilka wad: na czas jego działania punkty życia będącej pod jego wpływem istoty są zakryte, a sama istota nie może korzystać z dobrodziejstw żadnego efektu, który by je przywracał. Po zakończeniu działania czaru, istota jest zmęczona, a jej Siła spada do 3 na okres dwóch tur. Czar Łaknienie krwi nie działa na stworzenia o charakterze praworządnym, jak również nie może być przez nie używany.~
+@24812 = ~Lanca zmącenia
+(Inwokacje)
+
+Poziom: 3
+Zasięg: 33 metry
+Czas działania: natychmiastowy
+Czas rzucania: 3
+Obszar działania: specjalny
+Rzut obronny: 1/2
+
+Czar ten tworzy lancę mocy, która wystrzeliwuje z ręki czarującego w kierunku wybranego przezeń punktu, znajdującego się w odległości nie większej, niż 33 metry. Każda istota znajdująca się na drodze lancy otrzymuje 5k4 obrażeń obuchowych plus 2 obrażenia na poziom czarującego (maksymalnie +30). Rzut obronny przeciw czarom obniża obrażenia połowę.~
+@24944 = ~„Nie tak szybko, siostrzyczki”.~
+@24945 = ~„Co robicie w mojej kuchni? Straże!”~
+@25321 = ~Kościane strzałki~
+@25332 = ~Lanca zmącenia~
+@25340 = ~Pociski mocy Mordenkainena~
+@25343 = ~Siedem oczu~
+@25345 = ~Okrzyk~
+@25348 = ~Pożeracz dusz~
+@25354 = ~Duszenie~
+@25364 = ~Kula z witriolem~
+@25784 = ~Muszę zaleczyć swoje rany. Możesz to zrobić?~
+@26218 = ~Rozmaitości Hobarta~
+@26233 = ~Z tej kamiennej studni wyziera czarna otchłań.~
+@26250 = ~Złodziej najemnik~
+@26496 = ~Wojownik najemnik~
+@26497 = ~Złodziej najemnik~
+@26500 = ~Żywiołak wody~
+@26504 = ~Żywiołak wody~
+@26505 = ~Wojownik najemnik~
+@26701 = ~Krew Kossutha~
+@26702 = ~Bóg ognia, Kossuth, w Krainach rzadko przybiera fizyczną postać. W tych rzadkich przypadkach, gdy to się zdarza, konsekwencją zawsze jest destrukcja. Został przyzwany w 801 roku KD przez dużą liczbę wiernych wyznawców, którzy tłumaczyli, że potrzebują jego pomocy do pokonania ogromnej ośmiornicy, która zagrażała świątyni na wybrzeżu. Kossuth zjawił się w słupie ogromnego ognia i stoczył walkę z potężną nadprzyrodzoną bestią. Wcielenie boga pokonało ośmiornicę, jednak potwór zdołał zadać Kossuthowi obrażenia. Boski ogień szalał po ciele istoty i utkwił w jednym z oczu, szybko przekształcając się w dziwaczną czarną kulę rozświetloną od środka płomieniem.
+
+PARAMETRY:
+
+Specjalne:
+– Czasy rzucania zaklęć zostają obniżone o 2
+– Obrażenia od ognia, zadawane przez użytkownika, wzrastają o 20%
+
+Waga: 0~
+@26847 = ~Większy szakal~
+@26876 = ~Ma krwawiącą ranę~
+@26877 = ~Rana krwawiąca~
+@26895 = ~Większy szakal~
+@26896 = ~Władca minotaurów~
+@26897 = ~Władca minotaurów~
+@26898 = ~Minotaur starszy~
+@26899 = ~Minotaur starszy~
+@26900 = ~Na tym kamieniu wyryto run, często tłumaczony jako symbol nieba.~
+@26901 = ~Na tym kamieniu wyryto run, często tłumaczony jako symbol nocy.~
+@26902 = ~Na tym kamieniu wyryto run, często tłumaczony jako symbol ziemi.~
+@26903 = ~Na tym kamieniu wyryto run, często tłumaczony jako symbol dnia.~
+@26904 = ~Na tym kamieniu wyryto run, często tłumaczony jako symbol morza.~
+@26907 = ~Szakal szaman~
+@26908 = ~Szakal szaman~
+@26909 = ~Na tej podartej stronie znajdują się następujące słowa:
+
+„Dokładnie badam portal i próbuję odkryć, w jaki sposób Mistrz go zmienił. Jeśli mi się uda, nareszcie będziemy wolni od jego tyranii. Jedyne wskazówki, którymi dysponuję, mają formę jakichś głupich zagadek:
+
+Niebo u góry, Ziemia i Morze u dołu
+Lot słońca, Dzień w Noc się zmienia
+Pory roku zmieniają wszystko, co znamy
+Pięć kamieni z numerami do życia bramę woła
+Do domu przejście popłynie
+
+Z tego, co udało mi się wywnioskować, do uruchomienia portalu potrzeba pięciu szlachetnych kamieni. Każdy z nich symbolizuje jeden z pięciu aspektów bramy: Niebo, Dzień, Ziemię, Morze i Noc. Portal otworzy się tylko wówczas, gdy odpowiednie kamienie umieści się w odpowiednim miejscu.
+
+Wszystko wydaje się dość proste, ale to mnie właśnie martwi. Takie jasne i przejrzyste informacje nie pasują do Mistrza. Podejrzewam, że trzeba jakoś zmienić te kamienie, gdziekolwiek są. To by się zgadzało z wersem o porach roku. Muszę się nad tym jeszcze trochę zastanowić...”~
+@26910 = ~Szakal wojownik~
+@26911 = ~Szakal wojownik~
+@26912 = ~Rikasha~
+@26913 = ~Rikasha~
+@26914 = ~Przywoływacz~
+@26915 = ~Przywoływacz~
+@26916 = ~Niemrawiec~
+@26917 = ~Niemrawiec~
+@26918 = ~Kamienny utrapieniec~
+@26920 = ~Pory roku zmieniają wszystko, co znamy.~
+@26922 = ~Kamienny utrapieniec~
+@26923 = ~Wściekły niedźwiedź~
+@26924 = ~Wściekły niedźwiedź~
+@26925 = ~Szakal~
+@26926 = ~Szakal~
+@26927 = ~Przywódca hordy szakali~
+@26928 = ~Przywódca hordy szakali~
+@26929 = ~Harpia~
+@26930 = ~Harpia~
+@26931 = ~Czarcia harpia~
+@26932 = ~Czarcia harpia~
+@26933 = ~Piekielna harpia~
+@26934 = ~Piekielna harpia~
+@26935 = ~Ten kamień pulsuje jakąś nieznaną mocą. Kiedy się do niego zbliżasz, czujesz, że włosy stają ci dęba.~
+@26936 = ~Zawodzenie harpii~
+@26937 = ~Królowa harpii~
+@26938 = ~Hobart Szczeciniastostopy~
+@26939 = ~Spojrzenie szakalołaka~
+@26940 = ~Ach, tu jesteście. Zaczynałem już się zastanawiać, czy czekam w dobrym miejscu. Witajcie, bądźcie pozdrowieni i takie tam inne bzdury. Nazywam się Szczeciniastostopy... Hobart Szczeciniastostopy. Jeśli się nie mylę, jesteście legendarnymi bohaterami z Doliny Lodowego Wichru, prawda?~
+@26941 = ~Przeszedłem długą drogę, żeby was odszukać. Jeśli naprawdę jesteście bohaterami, to na pewno będziecie zainteresowani podjęciem niebezpiecznej, choć niezwykle interesującej misji. W końcu przecież tym właśnie zajmują się bohaterowie, prawda?~
+@26942 = ~Może? Może!? Nie mam czasu na żadne może. Albo jesteście zainteresowani, albo nie. No to jak w końcu będzie?~
+@26943 = ~Naprawdę? Więc to nie wy jesteście słynnymi obrońcami Kuldahar? Jedynymi, którzy wyszli cało z ekspedycji do Easthaven? Hmm... Chyba zaczynam się starzeć. Jak dla mnie, wyglądacie na bohaterów.~
+@26944 = ~Jak chcecie. Ale jeśli przypadkowo spotkacie *prawdziwych* bohaterów, dajcie mi znać. Mam dla nich zadanie, a jeśli wy nie chcecie się tym zająć, to będę musiał znaleźć kogoś innego.~
+@26945 = ~Phi! Parę malutkich jabłek i goblińskie wino. Nazywajcie się jak chcecie. Szukam kogoś, komu nie brakuje oleju w głowie i inicjatywy.~
+@26946 = ~Znam pewne ruiny zamku... niedaleko stąd. Ludzie gadają między sobą, że gdzieś tam jest schowany wielki skarb, którego strzegą różne bestie i wymyślne pułapki. Wszyscy, którzy się tam zapuścili... jakby to powiedzieć... zginęli.~
+@26947 = ~Wydaje się wam, że pozjadaliście wszystkie rozumy, co? Wiecie, dlaczego ciągle się słyszy o takich rzeczach? Bo to prawda! Ludzie mówią, że zamek po prostu... *siuuup* wsysa wszystkich do środka. Nikt jeszcze stamtąd nie wyszedł.~
+@26948 = ~Ech... Nie mogę wam powiedzieć. Ale mogę pokazać. Posłuchajcie, jak ze mną pójdziecie, to sami się przekonacie. Zarobicie trochę złota, uratujecie kilku nieszczęśników, a może kiedyś jakiś bard napisze o waszych czynach pieśń. Co wy na to?~
+@26949 = ~Heh. Widzę, jak się wam kręcą trybiki w głowie. Może jednak macie wystarczająco dużo oleju w mózgownicy... Zajmuję się tą sprawą wyłącznie dla zysku. Przedsiębiorczy niziołek może wyżyć z okruchów, które spadają ze stołu poszukiwaczy przygód. Nie ma w tym nic złego, no nie?~
+@26950 = ~*wzdycha* Ech... nic mi po was. Znajdźcie mi jakichś prawdziwych bohaterów, to może też zarobicie trochę złota.~
+@26951 = ~Wspaniale. Zaraz was tam zabiorę. Tylko poczekajcie chwilę... jak to było... Czy to ten run...~
+@26952 = ~No cóż... znowu się widzimy. Znaleźliście jakichś bohaterów, którzy są gotowi podjąć wyzwanie, czy tylko tak wpadliście?~
+@26953 = ~Hmm. Widzicie. Mówiłem, że to niedaleko. Hi, hi. A teraz... Niech Tymora wam sprzyja i tak dalej.~
+@26954 = ~Jesteśmy na Anauroch. To pustynia. Zadowoleni? Teraz zabierajcie się do dzieła. Ja muszę dać trochę odpocząć swoim starym kościom.~
+@26955 = ~*wzdycha* Chcieliście tu przybyć, prawda? Zgodziliście się podjąć wyzwanie, tak? No to macie. Bawcie się dobrze.~
+@26956 = ~Phi! Orkowe móżdżki.~
+@26960 = ~Tak, to prawda.~
+@26961 = ~Paladyn nie mówi z dumą o swoich czynach. Niech ktoś inny przyjmie tytuł „bohatera”. Ja zrobiłem tylko to, czego wymagała ode mnie moja wiara.~ ~Paladyn nie mówi z dumą o swoich czynach. Niech ktoś inny przyjmie tytuł „bohatera”. Ja zrobiłam tylko to, czego wymagała ode mnie moja wiara.~
+@26962 = ~Nie jestem bohaterem, mały człowieczku. Ale jeśli potrzebujesz złoczyńcy, to jestem do twoich usług.~
+@26963 = ~Nie jestem bohaterem, bracie. Ale jeśli potrzebujesz złoczyńcy, jestem do twoich usług.~
+@26964 = ~Jestem bohaterem i śpiewam o bohaterach. Jestem <CHARNAME>, znany bard i poszukiwacz przygód.~
+@26965 = ~Może.~
+@26966 = ~Wybacz, musiałeś nas pomylić z kimś innym.~
+@26967 = ~No pewnie. Co masz na myśli?~
+@26968 = ~Wybacz, ale jesteśmy teraz zajęci. Może innym razem.~
+@26969 = ~Wybacz, nie jesteśmy zainteresowani.~
+@26970 = ~Tak. Jesteśmy bohaterami z Doliny Lodowego Wichru.~
+@26972 = ~Tak, jesteśmy nimi.~
+@26973 = ~Wybacz, przyjacielu. Do zobaczenia.~
+@26974 = ~Poczekaj. O co w tym wszystkim chodzi?~
+@26976 = ~Dobrze, jesteśmy bohaterami. Dlaczego to dla ciebie takie ważne?~
+@26977 = ~Przykro mi, ale nie jesteśmy bohaterami.~
+@26978 = ~*westchnienie* To bardzo oryginalna historia, przyjacielu. Pewnie jest też nawiedzony?~
+@26979 = ~Gdzie jest ten zamek?~
+@26980 = ~Dlaczego chcesz, żebyśmy to akurat *my* poszli z tobą?~
+@26992 = ~Hobart, nie powiedziałeś nam jeszcze, o co w tym chodzi.~
+@26993 = ~Tak, chętnie dotrzymamy ci towarzystwa.~
+@26994 = ~Wybacz, że zajęliśmy ci czas, Hobart. Do zobaczenia.~
+@26995 = ~Co?! Co to za część Faerûnu?~
+@26996 = ~Coś ty zrobił, Hobart?~
+@26999 = ~Poczekaj...~
+@27009 = ~Oliwkowy szlam~
+@27010 = ~Szlamowy zombie~
+@27011 = ~Stwór z krypty~
+@27012 = ~Władczyni wiwern~
+@27014 = ~Królowa harpii~
+@27015 = ~Oliwkowy szlam~
+@27016 = ~Szlamowy zombie~
+@27017 = ~Stwór z krypty~
+@27018 = ~Władczyni wiwern~
+@27020 = ~Harald~
+@27021 = ~Widmowy dworzanin~
+@27024 = ~Widmowy kucharz~
+@27027 = ~Harald~
+@27028 = ~Widmowy kucharz~
+@27029 = ~Lord Maluradek~
+@27030 = ~Wypuszcza galaretowatą chmurę~
+@27031 = ~„Nie zabijać mnie! Nie zabijać!”~
+@27032 = ~„Gińcie, najeźdźcy!”~
+@27033 = ~Ta część wieży rozpadła się, zostawiając w podłodze ziejącą dziurę.~
+@27034 = ~Topór władcy minotaurów +4~
+@27035 = ~Ta wspaniała broń należała kiedyś do władcy minotaurów, zamieszkującego katakumby Mistrza Wabienia. Topór ma podwójne ostrze osadzone na solidnym, dębowym trzonku. Jest doskonale wyważony i można nim władać jedną ręką. Jest to zaczarowana broń, w związku z czym jej użytkownik zyskuje premię +4 do testów trafienia i zadawanych obrażeń. Poza tym, przy każdym celnym trafieniu istnieje 25% szans na ogłuszenie przeciwnika na 1k4 rundy.
+
+PARAMETRY:
+
+Specjalne:
+– 25% szans na ogłuszenie celu na 1k4 rundy, po trafieniu
+
+Obrażenia: 1k12 +4
+TraK0: +4
+Typ obrażeń: sieczne
+Opóźnienie: 8
+Rodzaj biegłości: topór
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 10
+
+Waga: 10~
+@27036 = ~Ten wspaniały szeroki miecz charakteryzuje się niezwykłą budową. Klingę wykonano z nieznanego, matowego, czarnego metalu, choć samo ostrze wygląda, jakby do jego produkcji użyto doskonałej jakości srebra. Na całej długości klingi wyryto ognistoczerwone runy. Kiedy się im dokładniej przyjrzeć, wiją się, jakby żyły własnym życiem. Głownia i garda miecza zostały wykonane z rubinu.
+
+Broń ta sieje postrach wśród niektórych istot z niższych sfer. W walce z baatezu i tanar'ri miecz ten zadaje podwójne obrażenia, a ten, kto nim włada, zyskuje premię +4 zarówno do testów ataku, jak i do zadawanych obrażeń. Użytkownik tego miecza uzyskuje także dodatkową ochronę przed ogniem.
+
+PARAMETRY:
+
+Specjalne: 
+– Odporność na ogień: +20%
+
+Obrażenia: 1k8, 2k8 +4 przeciw baatezu i tanar'ri
+TraK0: 0, +4 przeciw baatezu i tanar'ri
+Typ obrażeń: sieczne
+Opóźnienie: 5
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 5~
+@27037 = ~Postrach piekieł~
+@27038 = ~Hmm. Widzę, że jest więcej pionków gotowych do udziału w grze głupców... No cóż, w czym Rikasha może wam pomóc?~
+@27039 = ~Powiedziałeś, że jak masz na imię?~
+@27040 = ~Grze głupców? O czym ty mówisz?~
+@27041 = ~Szukam wyjścia z tych jaskiń. Wiesz jak się stąd wydostać?~
+@27043 = ~Jestem zmęczony. Mogę tutaj odpocząć?~ ~Jestem zmęczona. Mogę tutaj odpocząć?~
+@27045 = ~Jestem Rikasha, wojownik Szakali w stanie spoczynku.~
+@27046 = ~W stanie spoczynku?~
+@27047 = ~Próby Mistrza Wabienia
+
+W katakumbach napotkaliśmy wojownika szakali o imieniu Rikasha. Wydawał się być nastawiony przyjacielsko. Chętnie odpowiadał na wszystkie zadawane mu pytania.~
+@27048 = ~Tak. Zestarzałem się. Przemoc i rozlew krwi już mi się znudziły. Lata, które mi pozostały, pragnę przeżyć w pokoju.~
+@27049 = ~Wspomniałeś coś o Szakalach. Co to za jedni?~
+@27050 = ~Mój lud nazywa samych siebie „Szakalami”. Rodzimy się jako szakale, a potem, dorastając, stajemy się wojownikami i przybieramy ludzką postać. Teraz widzisz mnie pod postacią wojownika.~
+@27051 = ~Słyszałem o twojej rasie. Jeśli się nie mylę, nazywają was szakalołakami.~ ~Słyszałam o twojej rasie. Jeśli się nie mylę, nazywają was szakalołakami.~
+@27052 = ~Jesteście rasą likantropów?~
+@27053 = ~Wolimy nazwę „Szakale”. Nie jesteśmy łako-istotami.~
+@27054 = ~Zatem mógłbyś zmienić się w człowieka lub szakala nawet teraz, gdybyś tylko chciał?~
+@27055 = ~Nie. Likantropia to choroba, powodująca zmianę postaci. My nie jesteśmy chorzy. Ta zmiana jest zgodna z naszą naturą.~
+@27058 = ~Zestarzałem się już i zmęczyłem. Zmiana... jest bolesna i trudna. Wolę zostać taki, jaki jestem teraz.~
+@27060 = ~Wspominałeś coś o grze głupców. Co miałeś na myśli?~
+@27064 = ~Myślę, że doskonale wiecie, o czym mówię. Czy to ten mały was tu zwabił? Twierdzicie, że nie bierzecie udziału w grze jego pana?~
+@27065 = ~Załóżmy, że nie wiem, o czym mówisz. Wyjaśnij to dokładniej.~
+@27067 = ~Dobrze... Ten mały, Hobart, sprowadza tutaj poszukiwaczy przygód, zwabionych obietnicą sławy, chwały i bogactwa. Jak już są na miejscu, okazuje się, że to pułapka, a oni zdani są na łaskę pana twierdzy.~
+@27069 = ~Wtedy rozpoczyna się gra. Pan twierdzy przydziela zadania. Aby ukończyć zadanie, musicie zagłębić się dalej w jego królestwo. Choć nie wiem, po co...~
+@27070 = ~Co wiesz o Hobarcie?~
+@27071 = ~Próby Mistrza Wabienia
+
+Zapytaliśmy Rikashę o tego niziołka, Hobarta. Szakal powiedział, że Hobart służy Mistrzowi Wabienia i nie należy mu ufać.~
+@27073 = ~Przybył tutaj wiele lat temu. Szukał wyjścia, ale nie mógł go odnaleźć. W końcu został sługą pana twierdzy, dlatego teraz może się cieszyć ograniczoną wolnością. Ja bym mu nie ufał.~
+@27074 = ~Co wiesz o panie twierdzy?~
+@27076 = ~Tylko to, że ma tutaj władzę absolutną. Wszyscy jesteśmy jego więźniami, niewolnikami albo sługami. To zależy jedynie od punktu widzenia.~
+@27077 = ~Próby Mistrza Wabienia
+
+Zapytaliśmy Rikashę o Mistrza Wabienia, ale wojownik nie udzielił nam żadnych przydatnych informacji. Powiedział tylko, że Mistrz Wabienia jest tutaj władcą absolutnym, a wszystkie pozostałe stwory są jego niewolnikami.~
+@27082 = ~A jaki jest twój punkt widzenia, Rikasho?~
+@27083 = ~Za młodu byłem jego sługą. Nie wiedziałem nic, potrafiłem tylko mu służyć. Potem byłem jego niewolnikiem. Zacząłem zdawać sobie sprawę ze swojej sytuacji, ale nie mogłem mu się przeciwstawić. Teraz, kiedy mój czas ma się już ku końcowi, jestem jego więźniem. Nie będę mu już służyć, ale nie mogę zdobyć wolności...~
+@27088 = ~Zatem nie ma wyjścia z tych jaskiń?~
+@27089 = ~Może... Gdyby można było otworzyć portal...~
+@27090 = ~Jest tu portal? Jak to możliwe?~
+@27091 = ~Kiedyś mój lud żył na powierzchni. Pewnego dnia z nieba spadł ogień, a ziemia rozstąpiła się pod naszymi stopami. Nasze miasto zostało zniszczone, częściowo zapadło się pod powierzchnię. Ci, którzy przeżyli, zostali tu uwięzieni.~
+@27095 = ~Przeszukaliśmy te groty centymetr po centymetrze, ale nie znaleźliśmy wyjścia na powierzchnię. Potem próbowaliśmy wykopać tunel, ale skała nad naszymi głowami stopiła się w litą masę. Potem, w akcie desperacji, postanowiliśmy zbudować portal.~
+@27100 = ~Miało to być proste urządzenie, umożliwiające nam jedynie wydostanie się na powierzchnię. Dzięki takiemu małemu zasięgowi, pobór mocy byłby minimalny. Budowa zabrała wiele lat, ale w końcu nam się udało. Niestety, okazało się, że zrobiliśmy to na własną zgubę...~
+@27101 = ~Naprawdę? Co się stało?~
+@27102 = ~Pod naszą nieobecność na naszych ziemiach osiedlili się ludzie, którzy wybudowali nad nami twierdzę. Portal prowadził do jej wewnętrznej komnaty. Kiedy moi ziomkowie przenieśli się tam, ludzie wzięli nas za najeźdźców. Rozpętała się okropna bitwa, aż w końcu zostaliśmy zepchnięci z powrotem przez portal.~
+@27103 = ~Rozumiem. Co było potem?~
+@27104 = ~Ludzie ruszyli za nami w pościg i niemal nas zdziesiątkowali. Kiedy już się upewnili, że nie stanowimy dla nich zagrożenia, rozebrali portal na części...~
+@27105 = ~Poczekaj. Rozebrali portal na części?~
+@27106 = ~Tak, ale wysłuchajcie mnie... Wiele lat później, przybył pan twierdzy. Przez jakiś czas badał dokładnie portal, aż w końcu udało mu się go uaktywnić. Potem usunął kluczowe elementy i porozrzucał je po grotach...~
+@27108 = ~Wiesz, gdzie są te części?~
+@27109 = ~Przykro mi, ale nie. Te wydarzenia miały miejsce na długo przed moimi narodzinami. Może szaman mojego ludu wie coś o tym... ale nie wyjawi wam takich tajemnic.~
+@27110 = ~Gdzie znajdę szamana?~
+@27112 = ~Wróćcie tam, skąd przyszliście. Przeszukajcie pomieszczenie ze stojącymi kamieniami. Właśnie tam mieszkają. Ale strzeżcie się, bo oni powitają was inaczej niż ja.~
+@27113 = ~Jeszcze tylko ostatnie pytanie. Gdzie jest ten portal?~
+@27114 = ~Próby Mistrza Wabienia
+
+Zapytaliśmy Rikashę, czy wie, jak można wydostać się z tych katakumb. Wojownik powiedział nam o portalu, znajdującym się w świątyni na jeziorze. Portal prowadzi do twierdzy na górze, najprawdopodobniej do jej wewnętrznej komnaty. Niestety, Mistrz Wabienia unieruchomił go, usuwając pewne kluczowe elementy i rozrzucając je po całych katakumbach. Musimy dowiedzieć się, co to za części. Rikasha twierdzi, że szaman z jego plemienia może coś o tym wiedzieć, ale na pewno nie będzie się chciał podzielić z nami tymi informacjami. Szaman przebywa w pomieszczeniu ze stojącymi kamieniami. Może tam odnajdziemy jakąś wskazówkę, która pomoże w rozwikłaniu tej zagadki.~
+@27115 = ~Idźcie wzdłuż tego tunelu i odszukajcie świątynię jeziora. Portal znajduje się w jej wnętrzu.~
+@27117 = ~Jeśli macie ochotę, to proszę bardzo. Dopilnuję, żeby nikt wam nie przeszkadzał.~
+@27118 = ~Jestem ci wdzięczny.~ ~Jestem ci wdzięczna.~
+@27119 = ~Rikasha wita was ponownie. W czym może wam pomóc?~
+@27121 = ~Kiedy rozmawialiśmy zeszłym razem, wspomniałeś o grze głupców. Co miałeś na myśli?~
+@27124 = ~Nieskazitelny szafir gwiaździsty~
+@27125 = ~Nieskazitelny kamień słoneczny~
+@27126 = ~Nieskazitelny diament~
+@27127 = ~Nieskazitelna wodna gwiazda~
+@27128 = ~Nieskazitelny kamień księżycowy~
+@27129 = ~Kamień z nieba ze skazą~
+@27130 = ~Agat ognisty ze skazą~
+@27131 = ~Szmaragd ze skazą~
+@27132 = ~Perła ze skazą~
+@27133 = ~Chalcedon ze skazą~
+@27134 = ~Nie macie nic lepszego do roboty w tym zapomnianym przez bogów miejscu, niż zamęczanie mnie ciągłymi pytaniami?~
+@27135 = ~Ha. Zatem spotkaliście już Mistrza Wabienia, co? Uważajcie na niego. Ma więcej sprytu i przebiegłości, niż lis w zimie.~
+@27136 = ~O Mistrzu Wabienia? No cóż, ja... szczerze mówiąc wiem o nim tyle, co wy. Widzę, jak lata wokół wrót. Ee... inni poszukiwacze przygód powiedzieli mi, jak się nazywa. To wszystko.~
+@27137 = ~No pewnie, zabierajcie się do dzieła. Kiedy będziecie mieli tyle lat co ja, zrozumiecie, że nie warto tracić czasu na czcze pogawędki.~
+@27138 = ~To? To moje skromne schronienie przed piaskiem i słońcem. Przez te wszystkie lata udało mi się zebrać wśród ruin części skarbu. Większość to śmieci, ale przynajmniej mam co robić.~
+@27139 = ~Ee... tak jak i wy, usłyszałem o tym od kogoś innego, kto już tu był. Już od dłuższego czasu próbuję się dostać do skarbu wewnątrz. Ale jestem tylko starym niziołkiem. He he. Czy ja wyglądam na kogoś, kto może walczyć z duchem?~
+@27140 = ~No pewnie, czemu nie? Nie mam do tych śmieci żadnego sentymentu. Zobaczmy, co my tu mamy.~
+@27141 = ~He he. Zadziwiające. Naprawdę udało się wam dostać do twierdzy. Jesteście pierwsi. Może Mistrz Wabienia jednak się co do was nie myli... Chciałem powiedzieć... ee... he he.~
+@27142 = ~Uch... Chciałem powiedzieć, że... uch. *przełyka ślinę*~
+@27143 = ~Błagam... nie zmuszajcie mnie, żebym wam powiedział. O-on nas słyszy. Zabije mnie, jeśli wam powiem. Zabije mnie!~
+@27144 = ~Posłuchajcie, utkwiłem tu, dokładnie tak jak wy. Przepraszam, że nie powiedziałem wam całej prawdy, kiedy się spotkaliśmy... Mam nadzieję, że nie zginiecie, tak jak wszyscy inni. Och! Za dużo powiedziałem. Tylko nie pytajcie o nic więcej!~
+@27146 = ~No cóż, jeśli w ten sposób stawiacie tę sprawę... Wiem, kto jest Mistrzem Wabienia. I to doskonale. Już od dziesiątków lat jestem jego gościem. Przynajmniej wydaje mi się, że to były dziesiątki lat. Zaraz wam wszystko wyjaśnię.~
+@27147 = ~Kiedyś byłem poszukiwaczem przygód, tak jak wy. Wtedy jeszcze nie miałem tak rozbudowanego mięśnia piwnego, a na głupiej głowie rosło mi trochę więcej włosów. Moi towarzysze chcieli zbadać miejsce, gdzie odbyła się Bitwa Kości, na południe od Evereski. No cóż, mnie interesowało co innego, zamek o nazwie Maluradek.~
+@27148 = ~Tak, to właśnie ten zamek. Był tak samo zrujnowany jak teraz. Pustynia wciąż się powiększa, pochłonęła go jakieś sto lat temu. Z łatwością dostałem się do środka. Okazało się, że wydostanie się na zewnątrz będzie o wiele trudniejsze.~
+@27149 = ~Kiedy szukałem sposobu, żeby wejść do twierdzy, ukazał mi się Mistrz Wabienia w całej swojej spirytualnej chwale. Mówił zagadkami, co dla niego typowe. Zaprezentował mi swoje „próby bohaterów”.~
+@27150 = ~Co zrobiłem? Podwinąłem ogon i uciekłem. Nie oglądając się za siebie, skoczyłem ze wschodniej części muru. Kiedy się podniosłem, żeby ruszyć na pustynię, okazało się, że jestem z powrotem na dziedzińcu. Próbowałem wszystkiego: wspinałem się, skakałem, kopałem tunele, ale zawsze kończyłem w tym samym miejscu.~
+@27151 = ~Po wielu dniach ciężkiej pracy bez jedzenia i picia zacząłem mieć halucynacje. Musiałem stracić przytomność. Zacząłem śnić. Wtedy znowu zobaczyłem Mistrza Wabienia. Znowu zachęcał, żebym stawił czoła próbom. Powiedziałem mu, że przyszedłem tu tylko po to, żeby poszukać skarbu. Ale on nie chciał się nade mną zlitować.~
+@27152 = ~Powiedział, że tylko prawdziwi bohaterowie mogą wyjść z zamku, i że ponieważ ja oczywiście się do nich nie zaliczam, będę musiał mu służyć, jeśli chcę ocalić życie. Dał mi pierścień i powiedział, że za jego pomocą będę mógł przenieść się, gdzie tylko zechcę. Ale tylko na jeden dzień. O świcie pojawię się z powrotem na dziedzińcu. W zamian miałem szukać poszukiwaczy przygód, którzy byliby warci podjęcia prób.~
+@27153 = ~Ano. A ja chętnie oddałbym całe złoto, jakie widziałem w swoim życiu, żeby to był tylko sen. Ale kiedy się obudziłem, okazało się, że na palcu mam ten przeklęty pierścień. Jeśli go zdejmę, umrę. Od tego czasu jestem sługą Mistrza Wabienia.~
+@27154 = ~Wybaczcie, że byłem dla was taki nieprzyjemny, kiedy się spotkaliśmy. Staram się nie przywiązywać do tych, których jestem zmuszony tu przyprowadzać. Rozumiecie to, prawda?~
+@27155 = ~Przez te wszystkie lata były ich setki. Ale wam pierwszym udało się otworzyć bramę do twierdzy *wzdycha* Mam nadzieję, że uda się wam zdjąć klątwę z tego przeklętego miejsca.~
+@27156 = ~No cóż, nie jestem tchórzem, ale też nie postradałem rozumu. Nie wiem, jak to jest tam, skąd pochodzicie, ale w mojej ojczyźnie niziołek musiałby mieć rodzynki zamiast mózgu, żeby zadawać się z duchami.~
+@27157 = ~Hobart, wiesz coś o dziwnym duchu, który straszy w pobliżu północnej bramy?~
+@27159 = ~Mógłbym rzucić okiem na rzeczy, które znalazłeś? Może chciałbyś pohandlować?~ ~Mogłabym rzucić okiem na rzeczy, które znalazłeś? Może chciałbyś pohandlować?~
+@27161 = ~Jak tu trafiłeś, Hobart?~
+@27162 = ~Wybacz, że cię niepokoiliśmy, Hobart. Do zobaczenia.~
+@27164 = ~Co o nim wiesz?~
+@27166 = ~Do zobaczenia, Hobart.~
+@27175 = ~To prawda. Może sprzedałbyś mi niektóre z przedmiotów, które udało ci się znaleźć?~
+@27178 = ~Zaczekaj... co Mistrz Wabienia powiedział ci o nas?~
+@27179 = ~Hobart, co ty ukrywasz?~
+@27180 = ~Posłuchaj, Hobart, lepiej powiedz wszystko co wiesz, bo inaczej staniemy się „nieprzyjemni”.~
+@27181 = ~Nie miałem pojęcia... nie martw się, nie będziemy cię zmuszali do mówienia.~ ~Nie miałam pojęcia... nie martw się, nie będziemy cię zmuszali do mówienia.~
+@27182 = ~Możesz nam przynajmniej ogólnie powiedzieć, co się tu dzieje?~
+@27183 = ~Hobart, moich rozkazów słuchają siły piekieł. Myślisz, że boję się Mistrza Wabienia? Gadaj... i to już.~
+@27184 = ~Hobart, potrafię jednym zaklęciem zrównać całe miasta z ziemią. Myślisz, że boję się Mistrza Wabienia? Gadaj... i to już.~
+@27185 = ~Powiesz mi teraz albo zginiesz. Wybór jest prosty.~
+@27186 = ~Rozumiem. Mogę zobaczyć, co masz do sprzedania?~
+@27187 = ~Ty mały łobuzie. Powiedz mi wszystko co wiesz, zanim zrobię z ciebie miazgę.~
+@27188 = ~Dość już usłyszałem. Żegnaj, Hobart.~ ~Dość już usłyszałam. Żegnaj, Hobart.~
+@27189 = ~Mów dalej.~
+@27192 = ~Ten zamek?~
+@27200 = ~To wszystko?~
+@27202 = ~Co zrobił?~
+@27205 = ~Mówiłeś zdaje się, że to był tylko sen?~
+@27206 = ~Próby Mistrza Wabienia
+
+W pobliżu wejścia do zamkowej twierdzy spotkaliśmy dziwnego ducha. Powiedział nam, że jest tylko jeden sposób, by wydostać się z tych ruin cało. Musimy dowieść, że jesteśmy godni noszenia opończy bohaterów, cokolwiek to znaczy. Jedyną wskazówką, którą zaoferował duch, była ta zagadka:
+
+Północ, wschód, południe i zachód,
+W wieżach czterech oczyszczacze leżą.
+Nakarm je, gdzie duchy gniazdo mają,
+Albo na zawsze pozostań w tych murach.
+Słońce wschodzi, ziemia rozgrzewać się zaczyna,
+Czterech leży zimnych, choć nikt żałoby nie wszczyna.
+„Nie ruszajcie ich!” lord ostrzega szalony,
+i z mego dzieła oni chwały pozbawieni.
+
+Duch powiedział też, że kiedy wykonamy zadanie, zostaniemy wpuszczeni do wnętrza zamkowej twierdzy.~
+@27208 = ~Próby Mistrza Wabienia
+
+Kiedy weszliśmy do twierdzy, jeszcze raz nawiedził nas duch, zwany Mistrzem Wabienia. Wygląda na to, że on chce podzielić się z nami jakąś opowieścią, ale zamiast po prostu ją opowiedzieć, woli, żebyśmy odkryli ją sami. Znowu jedyną wskazówką, jaką nam zostawił, była zagadka.
+
+By tę pełną wstydu opowieść zrozumieć,
+Książęce straże pokonać musicie.
+Pod nieużywanym orężem i nietkniętą zbroją,
+Gwóźdź do trumny odnaleźć zdołacie.
+Wkoło słońce niebo przemierza,
+A człowiek na dole zostawion umrze wnet niechybnie.
+Jego zbrodnią, że wieśniaczym oczom
+Niegodziwe kłamstwo swego pana okazał.~
+@27209 = ~Próby Mistrza Wabienia
+
+W lochach pod twierdzą spotkaliśmy Mistrza Wabienia. Tym razem dał nam konkretne zadanie: mamy odnaleźć wyjście z lochów albo poddać się i umrzeć. Może jego trzecia zagadka zawiera jakąś wskazówkę, która pomoże nam wydostać się z tych przeklętych lochów.
+
+Gospodarz wasz schwycon był nieprawnie,
+A jego pan o sercu gniewu i przebiegłości pełnym
+Zażądał, by bard jego opowieść sfasował,
+Od której by ludziom uśmiech na twarzy wywołał.
+Gospodarza losu nie podzielcie,
+By uciec z tej sali, czasu użyjcie.
+Cieniste psy w mroku się czają,
+I ucieczkę na swym krośnie tkają.
+Jeśli spotkać nam się jeszcze przyjdzie,
+Gospodarz was prezentem tu obdarzy.
+Pokonajcie nasze cienie w słusznej wojnie,
+A nie będziemy już kłopotać was ponownie.~
+@27214 = ~Próby Mistrza Wabienia
+
+Udało się nam skłonić tego dziwaka, niziołka Hobarta, do szokującego wyznania. Wygląda na to, że przez cały czas był w zmowie z Mistrzem Wabienia. Hobart twierdzi, że duch zmusił go do służby i że cały czas musi przyprowadzać do zamku nowych poszukiwaczy przygód, bo inaczej Mistrz Wabienia zamieni go w ducha.~
+@27215 = ~Ilu innych było tu przed nami?~
+@27216 = ~Masz rację. Mogę zobaczyć przedmioty, które udało ci się znaleźć?~
+@27217 = ~Dzięki za informacje. Żegnaj, Hobart.~
+@27222 = ~Co zatem zrobiłeś?~
+@27225 = ~Witajcie, wędrowcy. Witajcie w zamku Maluradek. Jestem waszym przeciwnikiem.~
+@27226 = ~Chodzi o nasz spór.~
+@27231 = ~W którymś momencie przekonacie się, że powinniście opuścić ten zamek. Ja będę starał się zrobić wszystko, żeby wam w tym przeszkodzić.~
+@27232 = ~Musicie podjąć próbę. Musicie udowodnić, że jesteście godni nosić opończe bohaterów. Jeśli się wam uda, pozwolę wam odejść. Jeśli nie, zginiecie tutaj.~
+@27234 = ~Moje imię nie jest ważne. Jak powiadają niektórzy, ważne są czyny, a nie to, kto ich dokonuje. Wasze czyny pokażą, czy dorośliście do roli, którą będziecie tu musieli zagrać.~
+@27235 = ~Będziecie mieli wystarczająco dużo czasu na niszczenie. W międzyczasie podejmijcie moją próbę. Zapewniam was, to leży w waszym najlepszym interesie.~
+@27236 = ~Ktoś mógłby tak powiedzieć, ale nie zmienia to faktu, że sprawa, którą się zajmujemy jest poważna. Wasz cel jest oczywisty. Od was zależy, czy go osiągniecie.~
+@27237 = ~Północ, wschód, południe i zachód,
+W wieżach czterech oczyszczacze leżą.
+Nakarm je, gdzie duchy gniazdo mają,
+Albo na zawsze pozostań w tych murach.~
+@27240 = ~Słońce wschodzi, ziemia rozgrzewać się zaczyna,
+Czterech leży zimnych, choć nikt żałoby nie wszczyna.
+„Nie ruszajcie ich!” lord ostrzega szalony,
+i z mego dzieła oni chwały pozbawieni.~
+@27242 = ~Powróćcie tu, kiedy ukończycie to zadanie. Tylko wtedy zostaniecie wpuszczeni do tych przerażających komnat.~
+@27243 = ~Dowiedliście, że jesteście sprytniejsi i umiecie sobie radzić lepiej niż setki innych, którzy przybyli tu przed wami. Wykazaliście się odwagą i sprytem tam, gdzie inni tchórzyli i zaczynali wątpić w swoje umiejętności.~
+@27244 = ~Nie. Nie możecie stąd odejść, dopóki nie usłyszycie opowieści o tym, co się tu stało.~
+@27245 = ~Musicie się dowiedzieć, co tu zaszło. Muszę wiedzieć, że jesteście w stanie zrozumieć,  po co tu jestem.~
+@27246 = ~Nie mogę być narratorem opowieści o samym sobie. Całe życie, opowiadałem historie innych. Duchy, które mieszkają w tym miejscu, są księgami handlowymi, w których zapisywałem swoje transakcje.~
+@27247 = ~Nie wyjdziecie stąd, dopóki ja tak nie zdecyduję. Jeśli spróbujecie uniknąć odpowiedzialności, nie tylko zawiedziecie jako bohaterowie, ale okażecie się nie lepsi od tego, który jest autorem tej tragedii przez swoje tchórzostwo.~
+@27248 = ~By tę pełną wstydu opowieść zrozumieć,
+Książęce straże pokonać musicie.
+Pod nieużywanym orężem i nietkniętą zbroją,
+Gwóźdź do trumny odnaleźć zdołacie.~
+@27249 = ~Wkoło słońce niebo przemierza,
+A człowiek na dole zostawion umrze wnet niechybnie.
+Jego zbrodnią, że wieśniaczym oczom
+Niegodziwe kłamstwo swego pana okazał.~
+@27250 = ~Teraz stoicie tam, gdzie ja kiedyś stałem. Z czasem może usiądziecie tam, gdzie ja siedziałem, położycie się tam, gdzie ja złożyłem głowę i umrzecie, tam gdzie ja umarłem. Ale w przeciwieństwie do mnie, w ostatnich chwilach będziecie mogli zrobić użytek z waszych rąk i głosu.~
+@27251 = ~To nie zagadka. To sprawa prostego wyboru. Możecie zostać w tym lochu, aż zginiecie z głodu albo możecie spróbować znaleźć wyjście.~
+@27252 = ~Dokładnie. Nie mogę powiedzieć, żebym wierzył w wasze powodzenie, ale w każdym razie macie więcej szans niż wszyscy, którzy byli tu przed wami.~
+@27253 = ~Gospodarz wasz schwycon był nieprawnie,
+A jego pan o sercu gniewu i przebiegłości pełnym
+Zażądał, by bard jego opowieść sfasował,
+Od której by ludziom uśmiech na twarzy wywołał.~
+@27254 = ~Gospodarza losu nie podzielcie,
+By uciec z tej sali czasu użyjcie.
+Cieniste psy w mroku się czają,
+I ucieczkę na swym krośnie tkają.~
+@27255 = ~Jeśli spotkać się nam jeszcze przyjdzie,
+Gospodarz was prezentem tu obdarzy.
+Pokonajcie nasze cienie w słusznej wojnie,
+A nie będziemy już kłopotać was ponownie.~
+@27256 = ~Po raz kolejny udowodniliście, że przewyższacie poprzednich gości tego zamku zarówno męstwem, jak i sprytem. Co więcej, udało się wam uciec z lochów, w których zginąłem wiele lat temu.~
+@27257 = ~Zanim odejdziecie, chcę byście zrobili jeszcze jedną rzecz dla mieszkańców tego zamku.~
+@27258 = ~Sprawcie, by nasze dusze mogły spocząć w pokoju. Oczyśćcie zamek ze wszystkich widm, stawiając im czoła w walce godnej mistrzowskiego pióra poety. Po tym wszystkim, przez co kazałem wam przejść, w końcu będziecie mieli okazję odpłacić się wszystkim tym, którzy was dręczyli. Oddajemy cześć waszemu męstwu, bohaterowie.~
+@27259 = ~Do broni!~
+@27260 = ~Nic do ciebie nie mamy, duchu.~
+@27261 = ~Czy ten wróg ma jakieś imię?~
+@27262 = ~Zejdź mi z drogi, bo cię zniszczę.~
+@27263 = ~Nie mam czasu na rozmowy z takimi jak ty. Żegnaj.~
+@27264 = ~O jakim sporze mówisz?~
+@27265 = ~Żegnaj, duchu.~
+@27266 = ~Dlaczego miałbyś robić coś takiego?~
+@27267 = ~Czy to jakiś żart?~
+@27268 = ~Zgoda. Przyjmujemy twoje wyzwanie.~
+@27269 = ~Nie mam czasu na rozmowy z takimi jak ty. Żegnaj.~
+@27270 = ~Co mamy zrobić?~
+@27272 = ~Nie sądzę. Dobrze ci radzę, lepiej zejdź nam z drogi.~
+@27275 = ~Możesz nam przynajmniej w przybliżeniu powiedzieć, co mamy zrobić?~
+@27277 = ~Zapłacisz za to, duchu.~
+@27278 = ~Co proszę?~
+@27279 = ~To śmieszne.~
+@27280 = ~Zagadki? Przeszedłem taki szmat drogi, żeby rozwiązywać jakieś zagadki?~ ~Zagadki? Przeszłam taki szmat drogi, żeby rozwiązywać jakieś zagadki?~
+@27281 = ~To nie ma sensu.~
+@27284 = ~Czy to znaczy, że możemy odejść?~
+@27285 = ~Pozwól nam odejść.~
+@27286 = ~Czy chcesz od nas jeszcze czegoś?~
+@27287 = ~Dlaczego to robisz?~
+@27288 = ~Mamy już tę przeklętą próbę za sobą. Dzięki nam duchy rycerzy mogą w końcu odpocząć. Dlaczego nie chcesz nas puścić?~
+@27289 = ~Powiesz nam, co się stało?~
+@27290 = ~Zobaczysz, znajdę stąd jakieś wyjście.~
+@27291 = ~Dlaczego w ogóle tu *jesteś*?~
+@27292 = ~Nie obchodzi mnie, dlaczego tu jesteś. Interesuje mnie tylko to, jak się stąd wydostać.~
+@27293 = ~Gdzie mamy zacząć poszukiwania?~
+@27294 = ~Mam już dość twoich gierek, panie zagadkowiczu.~
+@27296 = ~Dość już usłyszałem. Żegnaj.~ ~Dość już usłyszałam. Żegnaj.~
+@27297 = ~Nie mam zamiaru tu umierać. Czekam na twoją następną zagadkę, bardzie?~
+@27298 = ~Przekonamy się.~
+@27299 = ~Dość już mam twoich zagadek.~
+@27300 = ~Co to za wybór?~
+@27302 = ~Nie mam ci nic więcej do powiedzenia.~
+@27305 = ~Możemy już iść?~
+@27306 = ~To prawda. Puść nas.~
+@27307 = ~Co masz na myśli?~
+@27308 = ~Nic więcej dla ciebie nie zrobię. Puść nas!~
+@27309 = ~Kim jesteście?~
+@27310 = ~Wiecie, w jaki sposób wydostać się z tych przeklętych ruin? Jak się tu dostaliście? Gadajcie, albo was zabijemy.~
+@27311 = ~Jestem Crieck, kapłan Bane'a, a to są moi towarzysze. Szukamy wyjścia z tego zamku. Jeśli nam nie pomożecie, wdepczemy was w piach pustyni. Wyrażam się jasno?~
+@27312 = ~Znaleźliście kłopoty, słabeusze! Adran, Shelhai, zabić ich. Jeśli nie będą mieli przy sobie nic cennego, to użyjemy ich ciał, żeby rozbroić pułapki.~
+@27313 = ~Widzę, że nie ma sensu z wami rozmawiać. Niektórzy potrafią współpracować z innymi tylko wtedy, kiedy nad ich głową wisi porządna wekiera. Mam nadzieję, że to, co macie w sakwach, jest warte zachodu. Adran, Shelhai... zabić ich.~
+@27314 = ~Koniec naszej dyskusji to koniec waszego życia. Nie ma z was pożytku. Adran, Shelhai, zabić ich. Jeśli nie będą mieli przy sobie nic cennego, to użyjemy ich ciał, żeby rozbroić pułapki.~
+@27316 = ~Jestem <CHARNAME>. Witaj, przyjacielu.~
+@27317 = ~A kim *ty* jesteś?~
+@27318 = ~Moje imię nie powinno cię interesować. Zejdź mi z drogi.~
+@27319 = ~Nie, nie wiem jak stąd wyjść. Przybyliśmy tutaj z Hobartem.~
+@27320 = ~Nic ci nie powiem. Lepiej zejdź mi z drogi.~
+@27321 = ~Powstrzymaj swój język, bo możesz go stracić.~
+@27322 = ~Posłuchaj, przyjacielu, nie chcemy żadnych kłopotów.~
+@27323 = ~Jasno jak jasne są wody Rzeki Jednorożca. Ale to nie znaczy, że ci pomogę.~
+@27324 = ~Nie mam zamiaru dalej z tobą rozmawiać.~
+@27325 = ~Co? Kolejne cienie, które przyszły dręczyć zmęczone oczy Haralda? Kto to? Mówię na głos? Czy ja śnię? Nie, to nie sen. Czy to sen?~
+@27326 = ~Jestem tylko człowiekiem. Kiedy jeszcze był sens używać imienia, mówili na mnie Harald. Jestem świętym wojownikiem. Kiedyś byłem paladynem Tyra.~
+@27327 = ~W głębi serca wiedziałem, że chodziło o pieniądze. Dlatego przyszliśmy, Dabath. Wiedziałem, wiedziałem. Oszukiwałem się, próbując sobie wmówić, że robię to dla jakiegoś szlachetnego celu. Nie wiem, co było gorsze, okłamywanie kościoła, czy samego siebie.~
+@27328 = ~Biedny Dabath. Chyba był moim przyjacielem. Czy ja miałem jakichś przyjaciół? Był moim towarzyszem. Wiem o tym. Zginął w jednej z pułapek. Widziałem, jak wykrwawia się tam, wraz z innymi i... uciekłem. Bałem się.~
+@27329 = ~Wiecie, co to strach? Wydawało mi się, że Tyr mnie opuścił. Ale to nieprawda. To ja od niego odszedłem. Nie ma już we mnie boga. Nie ma żadnego boga na tej pustyni. Wszystko tu jest martwe. Rozumiecie?~
+@27330 = ~Dobrze, dobrze. Nie chcę widzieć, jak przychodzi. Zróbcie to szybko i porządnie, kiedy nie będę się spodziewał. Dziękuję ci, Dabath.~
+@27331 = ~W TAKIM RAZIE CO MI PO WAS?! CO MI PO WAS?! Dlaczego nie możecie po prostu założyć maski i przez chwilę udawać?! Okłamujcie mnie, tak jak ja sam siebie okłamywałem! Dlaczego nie możecie tego zrobić?! *chlip* DLACZEGO?! *chlip*~
+@27332 = ~Zgubiłem swoją drogę. Zagubiłem się na tej pustyni. Ale kiedyś wiedziałem, jaką drogą kroczę. Kiedyś byłem świętym wojownikiem. Paladynem. Służyłem Tyrowi. Po co komu sprawiedliwość na pustyni? Od wieków jem pożywienie umarłych i piję ich wodę, ale nie ma tu nawet łyczka sprawiedliwości.~
+@27333 = ~Tak, tak... Wmawiałem sobie, że to nie dla pieniędzy. I faktycznie nie było. Byłem chciwy sławy i chwały. Chciałem, żeby moja pokora była *widowiskowa*. Ależ byłem głupi. Szkoda, że walutą, w której otrzymałem zapłatę, byli moi towarzysze. Tak jak Dabath.~
+@27334 = ~Musisz stać się nosiwodą, a ja tym, który pije z twego dzbana. Rozumiesz już? Nie obchodzi mnie, czy to tylko sen. Po prostu pozwól mi umrzeć. Proszę.~
+@27335 = ~To zły dzban. Ten, którego ja szukam, zawiera wodę czerwoną niczym wino.~
+@27336 = ~Witaj, starcze. Jestem <CHARNAME>. A kim ty jesteś?~
+@27337 = ~W czym tkwi problem?~
+@27338 = ~Do zobaczenia, Haraldzie.~
+@27341 = ~Kto to jest Dabath?~
+@27342 = ~Myślałem, że paladyni potrafią oprzeć się pokusie chciwości.~
+@27344 = ~Tak, rozumiem.~
+@27345 = ~Nie, nie rozumiem.~
+@27347 = ~Chcesz, żebym cię zabił? Nie jestem katem.~ ~Chcesz, żebym cię zabiła? Nie jestem katem.~
+@27349 = ~Ee, dobrze, Haraldzie. Do zobaczenia.~
+@27359 = ~Co ci się przydarzyło?~
+@27360 = ~Powiedz nam jeszcze raz, co ci się przydarzyło.~
+@27361 = ~Dobrze. Do zobaczenia, Haraldzie.~
+@27362 = ~Płaszcz błyskotliwych kolorów~
+@27363 = ~Pochodzenie tego płaszcza ginie w mroku dziejów. Od pewnego czasu znajdował się on w posiadaniu Drosusa, potężnego maga z Waterdeep. Drosus został pożarty przez ogromną watahę zimowych wilków, kiedy wybrał się na samotną wyprawę w Góry Grzbietu Świata. Zabrał ze sobą gruby płaszcz, który miał go chronić przed zimnem... 
+
+Na pierwszy rzut oka płaszcz wydaje się mieć oślepiająco biały kolor. Tak naprawdę, jest to efekt nałożenia się tysięcy barw, które tańczą i igrają w dowolnym świetle. Te iskrzące się i mieniące kolory rozpraszają uwagę, a nawet częściowo oślepiają każdego, kto patrzy prosto na osobę odzianą w Płaszcz błyskotliwych kolorów.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +3 
+– Można go założyć razem z innymi przedmiotami zapewniającymi ochronę
+ 
+Waga: 3 ~
+@27364 = ~Ten wysmukły łuk emanuje ciepłem, choć w dotyku wydaje się być zimny, jak gdyby wysysał energię z ciała swojego użytkownika. Magicznymi właściwościami obdarzył go pewien starzejący się nekromanta z Bryn Shander, po tym jak jego chowaniec, lawowy mefit, został zabity przez arcykapłana Auril. Nekromanta podarował łuk płatnemu zabójcy, Teravenowi Docenowi, któremu przez kolejne trzy lata udało się zabić wiele dzieci Lodowej Panny. Jednak zabójca spotkał w końcu godnego siebie przeciwnika. Próbował zaatakować z zasadzki pewnego gnoma, uzbrojonego w różdżkę ognistych kul. Z wielokrotnych ognistych wybuchów ocalał tylko ten łuk.
+
+PARAMETRY:
+
+Specjalne:
+– Kondycja: -2
+– Odporność na ogień: -50%
+– Odporność na zimno: +30%
+– 25% szans na dodatkowe 2k3 obrażeń od ognia, po trafieniu
+– Trzy ataki na rundę
+
+Obrażenia: +3
+TraK0: +3
+Opóźnienie: 2
+Rodzaj biegłości: krótki łuk
+
+Wymagania:
+– Siła: 6
+
+Waga: 3~
+@27365 = ~Krótki łuk tryskającej energii +3~
+@27366 = ~Myśliciel Chautoga~
+@27367 = ~Ten niezwykle rzadki hełm zawdzięcza swoje istnienie pewnemu orkowi, który był zarazem magiem i wojownikiem.
+
+Niezwykła historia Chautoga zaczęła się, kiedy jego rodzinna wioska została zniszczona w walce pomiędzy dwoma zwalczającymi się frakcjami czarodziejów. Jeden ze zwycięzców, mistrz zauroczeń imieniem Shandellon, poczuł wyrzuty sumienia, ujrzawszy zniszczenia, będące skutkiem ubocznym walki. Skruszony, przygarnął do siebie jedynego ocalałego orka i wychował go jak własnego syna.
+
+Pod okiem Shandellona, Chautog poznał tajniki magii i pomimo swego pochodzenia, wykazał się dość dużym talentem. Choć jednak pracował o wiele ciężej, niż pozostali czeladnicy Shandellona, wciąż osiągał gorsze od nich rezultaty. Wreszcie zazdrosny ork zawziął się, zamknął w swej komnacie i tam pracował bez wytchnienia nad zaczarowanym przedmiotem, który ułatwiłby mu konkurowanie z rówieśnikami.
+
+Owocem owej pracy był ten zadziwiający hełm który, choć nie wygląda okazale, potrafi znacząco zwiększyć inteligencję tego, kto go nosi. Chautog przywdział natychmiast swoje dzieło, szybko jednak przekonał się, że nadmiar inteligencji może być niebezpieczny – szczególnie w przypadku kogoś, kto wiedzie żałosną egzystencję zazdrosnego orka. Shandellon odnalazł nadpalonego trupa swego przybranego syna, na którego głowie wciąż spoczywał nieszczęsny hełm. Obok leżała kartka z jednym zdaniem: „Niektórych rzeczy lepiej nie kończyć”.
+
+Myśliciel Chautoga podwyższa Klasę Pancerza o 1, a także o 2 punkty zwiększa Inteligencję. Hełm ten jest brzydki i ciężki, co wiąże się z faktem, że został zaprojektowany przez orka. W związku z tym Charyzma właściciela zostaje obniżona o 2 punkty. Poza tym hełm mogą nosić jedynie istoty dysponujące co najmniej 17 punktami Siły.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Inteligencja: +2
+– Charyzma: -2
+– Chroni przed trafieniami krytycznymi
+
+Wymagania:
+– Siła: 17
+
+Waga: 5~
+@27368 = ~Kij radości wisielca +1~
+@27369 = ~Ten posępny kij o niezwykle złej sławie został wykonany z drewna Drzewa Wisielca – prastarej czarnej wierzby, rosnącej na obrzeżach zapomnianej wioski na wyspach Moonshae. Na poskręcanych gałęziach wierzby kończyli swój żywot różnoracy bandyci, mordercy, gwałciciele i inni przestępcy, a wszystko to ku uciesze grabarza Mordigana. To właśnie Mordigan, praktykujący potajemnie nekromancję, dojrzał wspaniałą sposobność na wykorzystanie swych zdolności. Chowając szczątki złych ludzi w pobliżu drzewa, wezwał mroczne moce sfery negatywnej, by odprawić nad czarną wierzbą złowrogi rytuał. Dzięki temu drzewo zyskało częściowo zdolność odczuwania i żywienia się tym, co pozostało z bandytów, którzy jeszcze niedawno zwisali z jego gałęzi. Czarne korzenie zapuszczały się w gnijące ciała, a na poskręcanym pniu wierzby zaczęły się pojawiać wykrzywione w bolesnych spazmach oblicza złoczyńców. Niektórzy powiadają, że mimo tych znaków, bandyci grzebani w pobliżu drzewa mogli zaznać ostatniej w życiu radości.
+
+PARAMETRY:
+
+Specjalne:
+– Charyzma: -2
+
+Właściwości ładunków:
+– Animacja martwego, trzy razy dziennie
+Przyzywa 1k6 szkieletów lub zombie
+Zasięg: 6 metrów
+Czas działania: 8 godzin
+
+Obrażenia: 1k6 +1
+TraK0: +1
+Typ obrażeń: obuchowe
+Opóźnienie: 4
+Rodzaj biegłości: kij
+Typ broni: 2-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 2~
+@27370 = ~Bransolety lodowej perły~
+@27371 = ~Powiadają, że te wspaniałe bransolety wykonano nie tak dawno temu w górach Grzbietu Świata. Na wybrzeżu Morza Ruchomego Lodu żył pewien mistrz odrzucania o imieniu Prashnak, który znany był z niezwykłego uporu. Mawiano, iż wiele kłopotów sprawiały mu wałęsające się po okolicy trolle, które musiał nieustannie odpędzać od swej dobrze zaopatrzonej chaty. Czarodziej wykorzystywał do walki z nimi kwasowe burze, lecz te nieustanne ataki zaczęły go w końcu męczyć. W dodatku, trolle poczęły robić się coraz bardziej bezczelne.
+
+Po kilku miesiącach studiowania magii uwiądu, przywoływania żywiołaków oraz magicznych metod zamrażania, Prashnak był w końcu gotowy do przeprowadzenia eksperymentu. Po sprowadzeniu żywiołaków wody, mistrz odrzucania odparował niektóre składniki ciał potworów, po czym je zamroził. W ten sposób powstały przerażające lodowe rzeźby. Nie grzeszące lotnością umysłu trolle poczuły się tymi rzeźbami niezwykle urażone i przestały podobno nękać okolicę. Ponieważ eksperyment się powiódł, Prashnak kontynuuje swoje badania do dziś. Nie wiadomo co prawda, kto odważył się ukraść mu bransolety, wiadomo jedynie, że od kilku lat nikt o nich nie słyszał.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: 6
+– Zręczność: -2
+
+Właściwości ładunków:
+– Sprowadzenie żywiołaka wody, raz dziennie
+Zasięg: 6 metrów
+Czas działania: 11 tur
+
+– Stożek zimna, raz dziennie
+Obrażenia: 10k4 +10 obrażeń od zimna (połowa po rzucie obronnym przeciw czarom)
+Zasięg: 0
+Obszar działania: 60° stożek o promieniu 6 metrów
+
+– Plugawy uwiąd Abi-Dalzima, raz dziennie
+Obrażenia: 17k8 magicznych obrażeń (połowa po rzucie obronnym przeciw czarom)
+Zasięg: 33 metry
+Obszar działania: w promieniu 10 metrów
+
+Waga: 3~
+@27372 = ~Cep bojowy czaszki +4~
+@27373 = ~Cep bojowy czaszki, znany bardziej jako „Cep bojowy zębów”, powstał w 1035 KD. Wykonano go specjalnie dla wielkiego barbarzyńskiego wojownika o imieniu Wychgar. Podczas bitwy na północnych pustkowiach, która przeszła do historii jako Święte Przejście, Wychgar stracił trzech braci, zabitych przez hordy orków pod dowództwem Kraaga Potężnego. Wychgar oszalał z rozpaczy, a gdy zapadła noc, poszedł na pole bitwy w poszukiwaniu ich ciał, chciał bowiem sprawić im godny pochówek. Kiedy odnalazł trupy, nawiedziły go duchy trzech braci, uwięzione pomiędzy światami żyjących i zmarłych. Wychgar nie był w stanie im pomóc, kazał więc szamanowi zamknąć ich dusze w cepie bojowym.
+
+Trzy kule tego korbacza, przymocowane do trzonka srebrnymi łańcuchami, zrobiono z czaszek braci Wychgara, szczerzących zęby w szaleńczym grymasie. Barbarzyńcy powiadają, że tak oto bracia cieszą się z nowo darowanego życia. Podczas walki czaszki gryzą swą ofiarę, rozdzierając jej ciało.
+
+PARAMETRY:
+
+Specjalne:
+– 10% szans na dodatkowe 1k6 kłutych obrażeń, po trafieniu
+
+Obrażenia: 1k6 +4, +1k4 obrażeń kłutych od ugryzień czaszek
+TraK0: +4
+Typ obrażeń: obuchowe
+Opóźnienie: 5
+Rodzaj biegłości: cep bojowy/morgensztern
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 13
+
+Waga: 4~
+@27374 = ~Niebiański wicher +4, +5 przeciw żywiołakom~
+@27375 = ~Niebiański wicher wyszedł spod ręki potężnego czarownika, z rasy zamieszkujących Sferę Żywiołu Powietrza dżinnów. Podarował on następnie tę broń kalifowi z Tamdżuk, według którego, była to najlepsza broń, jakiej kiedykolwiek używał. Kiedy Tamdżuk zostało złupione przez ifryty, githyanki, salamandry i inne podłe stwory, ifryt Amir Talmed podarował tę broń Wielkiemu Sułtanowi z Mosiężnego Miasta. Kilka lat później, Wielki Sułtan podarował miecz Memnonowi, ifrytowi, który walczył z dżinnem o imieniu Calim w miejscu, które dziś nosi nazwę Calimshan. Memnon używał broni bardzo oszczędnie, chciał bowiem sprezentować miecz któremuś ze swoich oficerów. Kiedy Memnona i Calima zabiła elfia wysoka magia, ich słudzy rozpierzchli się w popłochu lub zostali zepchnięci z powrotem do swoich sfer. Podobno Niebiański wicher ma powrócić do rąk dżinnów dopiero po wielkiej wojnie.
+
+PARAMETRY:
+
+Specjalne:
+– Niewrażliwość na Zabójczą chmurę, Zabójczą mgłę, Śmierdzącą chmurę, Chmurę morowego powietrza i Niszczącą mgłę Malavona
+
+Obrażenia: 1k8 +4, +5 przeciw żywiołakom
+TraK0: +4, +5 przeciw żywiołakom
+Typ obrażeń: sieczne
+Opóźnienie: 1
+Rodzaj biegłości: sejmitar/wakizashi/ninja-to
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 8
+
+Waga: 4~
+@27376 = ~Sen umarłego boga +4, +6 przeciw istotom dobrym~
+@27377 = ~Uczeni z całego Faerûnu dobrze znają historię wniebowstąpienia Bane'a, Bhaala i Myrkula, bogów walki, mordu i śmierci. Pomimo tego, większość teologów dysponuje jedynie szczątkowymi informacjami na temat pechowego umierającego boga, którego pożarła wyżej wspomniana trójka, zanim spotkała się z Jergalem. Wiadomo tylko tyle, że niewielka część esencji umarłego boga przedostała się do Sfery Astralnej, gdzie stworzyła jedną z najmniejszych wysp boskości. Setki lat później ta dziwna ruda metalu dostała się w ręce pewnego mistrza zauroczeń o imieniu Merdros. Duergarscy słudzy Merdrosa wykuli z niej miecz dla pewnego wojownika, najpotężniejszego sprzymierzeńca swego pana. Właściciele Snu Umarłego Boga twierdzili, że trzymając go w rękach, czuli jak ostatnie wspomnienia umarłego boga przepływały przez jego głownię.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Emocje: strach, trzy razy dziennie (rzut obronny przeciw czarom neguje)
+Zasięg: 16 metrów
+Czas działania: 5 rund
+Obszar działania: w promieniu 2,5 metra
+
+– Symbol bólu, raz dziennie
+-2 do Zręczności, -4 do TraK0 i -2 do Klasy Pancerza (rzut obronny przeciw czarom neguje)
+Zasięg: 11 metrów
+Czas działania: 11 tur
+Obszar działania: w promieniu 5 metrów
+
+Obrażenia: 2k4 +4, +5 przeciw istotom o charakterze dobrym
+TraK0: +4, +6 przeciw istotom o charakterze dobrym
+Typ obrażeń: sieczne
+Opóźnienie: 2
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 6
+
+Waga: 4~
+@27379 = ~Magiczne usta~
+@27380 = ~Crieck~
+@27381 = ~Shelhai~
+@27382 = ~Widmowy dworzanin~
+@27383 = ~„Nikt tędy nie przejdzie”.~
+@27384 = ~„Wejście wzbronione”.~
+@27385 = ~„Przysięgałem wiernie służyć”.~
+@27386 = ~„Nie opuszczę swojego posterunku”.~
+@27387 = ~„Trochę głupio pełnić przy nim straż, skoro on sam jest strażnikiem”.~
+@27388 = ~„Jak długo będę musiał czekać na audiencję?”~
+@27389 = ~„Niektórzy powiadają, że jest niespełna rozumu”.~
+@27390 = ~„Jego lordowska mość dziwnie się ostatnio zachowuje”.~
+@27391 = ~„Szaleństwo wielkich nie powinno pozostać bez opieki”.~
+@27392 = ~„Powiadają, że zamknął się w swoich komnatach”.~
+@27393 = ~„Podobno kapłani Helma też popadli u niego w niełaskę”.~
+@27394 = ~„Zephalimie, niewolniku mój, przyzywam cię!”~
+@27397 = ~„Podobno lord Maluradek nie czuje się dobrze”.~
+@27398 = ~Lord Maluradek~
+@27400 = ~Magiczne usta~
+@27401 = ~Hobart Szczeciniastostopy~
+@27402 = ~Klucz do lochu~
+@27403 = ~Skomplikowany klucz z zimnego żelaza.
+
+PARAMETRY:
+
+Waga: 0~
+@27405 = ~Ten misternej roboty święty symbol jest poświęcony Helmowi. Przedstawia on stojącą rękawicę z patrzącym okiem. Sama rękawica wykonana jest z przedniej jakości platyny, białko oka zrobiono z macicy perłowej, a do wykonania źrenicy użyto niebieskiego szafiru.
+
+PARAMETRY:
+
+Waga: 0~
+@27406 = ~Święty symbol Helma~
+@27407 = ~Platynowy klucz~
+@27408 = ~Zdobiony klucz wykonany z platyny.
+
+PARAMETRY:
+
+Waga: 0~
+@27409 = ~Zdobiony klucz wykonany ze srebra.
+
+PARAMETRY:
+
+Waga: 0~
+@27410 = ~Srebrny klucz~
+@27411 = ~Zdobiony klucz wykonany z miedzi.
+
+PARAMETRY:
+
+Waga: 0~
+@27412 = ~Miedziany klucz~
+@27413 = ~Zdobiony klucz wykonany z elektrum.
+
+PARAMETRY:
+
+Waga: 0~
+@27414 = ~Klucz z elektrum~
+@27415 = ~Zdobiony klucz wykonany z brązu.
+
+PARAMETRY:
+
+Waga: 0~
+@27416 = ~Klucz z brązu~
+@27417 = ~Złoty klucz~
+@27418 = ~Zdobiony klucz wykonany ze złota.
+
+PARAMETRY:
+
+Waga: 0~
+@27419 = ~Wygląda na to, że to wysokie zwierciadło zostało brutalnie rozbite.~
+@27420 = ~Na stole ułożono różne fragmenty zbroi i oręża. Widać, że są doskonałej roboty, ale nie służą do walki – raczej do odprawiania ceremonii.~
+@27421 = ~Ta rozpadająca się struktura kryje w sobie machinę, służącą do podnoszenia i opuszczania głównej bramy. Wygląda na to, że mechanizm jest zardzewiały i nie da się go już naprawić.~
+@27422 = ~To zardzewiałe urządzenie wygląda jak stare organy piszczałkowe.~
+@27423 = ~Pusta butelka.
+
+PARAMETRY:
+
+Waga: 0~
+@27424 = ~Ten pożółkły pergamin, choć wyblakły i nadpalony na obrzeżach, jest zadziwiająco wytrzymały. Mimo że zapisano go nieznanym pismem, kiedy zaczniesz czytać, twój umysł natychmiast przełoży niezrozumiałe słowa na Wspólny.
+
+...jedynie Rycerza Straży Gilesa
+nie odstraszyła nagła szarża Aehirglassa.
+Zdecydowany chronić odwrót lorda Maluradka,
+Giles postanowił nie ustąpić atakującej bestii
+nawet na krok. I tak, wytężywszy umysł,
+dostrzegł inny sposób, by
+pokonać smoka.
+
+Z wekierą w dłoni i słońcem wysoko za plecami,
+Giles pozwolił, by szpony smoka rozdarły jego
+opończę i odsłoniły błyszczący
+napierśnik zbroi. Nie polała się nawet
+kropla krwi – z taką wprawą dzielny rycerz
+ocenił szybkość atakującego smoka.
+
+Potem Giles odwrócił się tak, by słońce
+odbiło się w napierśniku, i wysłał włócznie
+słonecznych promieni prosto w oczy smoka.
+Zaskoczona bestia zamknęła
+ślepia, powstrzymała atak. Tak oto została
+oślepiona!
+
+I tak, zachowując trzeźwy umysł, Giles
+opuścił swą wekierę prosto na
+czaszkę Aehirglassa, by polała się pierwsza
+tego dnia krew...
+
+[Koniec fragmentu]~
+@27425 = ~Drewniana brama dawno już zbutwiała, ale żelazna krata pozostała nienaruszona i wydaje się być dość mocna.~
+@27427 = ~Widmowy bohater~
+@27430 = ~Cień sir Gilesa~
+@27431 = ~Adran Runiczny Cień~
+@27432 = ~Cień sir Zierkki'ego~
+@27433 = ~Cień sir Errisa~
+@27434 = ~Widmowy bohater~
+@27435 = ~Cień sir Geddiana~
+@27436 = ~Kto ośmiela się wchodzić do moich prywatnych komnat bez zaproszenia? Rozkazałem, żeby mi nie przeszkadzano! Ach... rozumiem. Musicie być z nimi w zmowie. Tak. Myślicie, że ja nie wiem, że nie słyszę szeptów w ciemnych kątach?~
+@27437 = ~Głosy są różne, ale to ta sama pieśń. Pieśń zdrady! Uciszę tę pieśń na zawsze! Jestem lord Fallon Maluradek, Bohater Kurhanów Burzy, Pogromca Lazurowego Smoka Aehirglassa! Uciszę was wszystkich, zdradzieckie psy!~
+@27438 = ~Nie możecie tędy przejść.~
+@27439 = ~Przez te drzwi mogą przejść tylko ci, którzy mają dwie głowy bez oczu i parę ust, które nie wydają głosu.~
+@27442 = ~Możecie przejść.~
+@27444 = ~Nie po to przeszliśmy taki szmat drogi, żeby dać się zatrzymać przez jakieś gadające drzwi.~
+@27446 = ~Co? To śmieszne.~
+@27447 = ~Dość już mam tych gierek. Otwieraj, albo za chwilę zamienisz się w kupkę gadających drzazg.~
+@27448 = ~Masz rację. Do zobaczenia.~
+@27449 = ~Możesz jeszcze raz powtórzyć, komu pozwolisz przejść?~
+@27451 = ~Manuskrypt najwyższego strażnika Ammal-Matisa~
+@27452 = ~Dziennik Maluradka~
+@27453 = ~Zmatowiony pierścień~
+@27455 = ~Brakująca strona~
+@27456 = ~Opowieść o sir Gilesie~
+@27457 = ~Opowieść o sir Errisie~
+@27458 = ~Opowieść o sir Zierkkim~
+@27459 = ~Manuskrypt najwyższego strażnika~
+@27460 = ~Dziennik Maluradka~
+@27461 = ~Opowieść o sir Geddianie~
+@27462 = ~Ten pożółkły pergamin, choć wyblakły i nadpalony na obrzeżach, jest zadziwiająco wytrzymały. Mimo że zapisano go nieznanym pismem, kiedy zaczniesz czytać, twój umysł natychmiast przełoży niezrozumiałe słowa na Wspólny.
+
+...i padł trzeci z czterech Rycerzy Straży,
+jego włócznia legła wbita w ziemię przed
+Aehirglassem. Ze skrzydeł smoka zostały tylko
+strzępy, na całym ciele miał same rany.
+Ale bestia wiedziała, że ten dzień należy do niej.
+
+Aehirglass zwrócił się ku ostatniemu z wojowników,
+Errisowi,. Nie było już innych Rycerzy Straży,
+Bo lord Maluradek wciąż nie zajął pola.
+Erris podniósł rękę do ciosu, ale szpony smoka
+porwały go w powietrze, a głowa bestii
+zwróciła się ku niemu, by odgryźć głowę
+od reszty ciała.
+
+Ale Aehirglass źle ocenił siłę Errisa.
+Opierając się potężnemu uściskowi smoka,
+Rycerz Straży ciął swym potężnym toporem
+bestię w szyję – tak, że ostrze trafiło
+w wielką ranę ziejącą pomiędzy łuskami.
+
+Wydając potężny okrzyk sławiący Helma, Erris włożył
+w ten cios siłę dwóch! Potem wziął zamach, by trafić
+smoka z drugiej strony. Wtedy to dały się słyszeć dwa
+uderzenia. Ciało rycerza zostało zgniecione
+w uścisku smoka...
+
+...a głowa bestii oderwała się od szyi,
+jak obalone drzewo, by potoczyć się po ziemi,
+wznosząc chmurę piachu w Kurhanach Burzy.
+
+A śmierć smoka równa była śmierci czterech
+Rycerzy Straży. Tylko lord Maluradek wie, co
+można rzec o tej wielkiej bitwie. Powrócił on
+na pole bitwy wiele godzin po tym, jak zapadła
+cisza, ale nie uronił nawet jednej łzy nad
+swymi poległymi strażnikami – w jego oczach
+widać było tylko złoto i chwałę.
+
+„Przeszłość to marny proch,” rzekł w mowie pożegnalnej
+nad ciałami Rycerzy Straży, „przyszłość jest bita złotem”.~
+@27463 = ~Ten pożółkły pergamin, choć wyblakły i nadpalony na obrzeżach, jest zadziwiająco wytrzymały. Mimo, że zapisano go nieznanym pismem, kiedy zaczniesz czytać, twój umysł natychmiast przełoży niezrozumiałe słowa na Wspólny.
+
+...walka z Aehirglassem przeciągała się. Niebo
+spowiło się krwawą łuną zmierzchu, ale
+Rycerze Straży walczyli dalej. Może gdyby
+pomógł im jeszcze jeden wojownik,
+wyszliby z tego cało – ale lord Maluradek
+wciąż nie nadciągał.
+
+Rycerz Zierkki był najszybszy, zadał cios
+piką, a potem cofnął się, zmuszając
+smoka do zmiany pozycji i ataku, a tym samym
+do odsłonienia boków na ataki pozostałych
+rycerzy. Choć Zierkki był bliski wyczerpania,
+walczył dalej, zmagając się z czasem.
+
+Bił się wytrwale, nawet w obliczu tak
+potężnego wroga. Nie tracił sił ni krwi bez
+potrzeby. Walczył od południa do zmroku,
+starając się, by smoka opuściły siły, a
+jednocześnie zachowując swoje, by
+zadać bestii ostateczne uderzenie...
+
+[Koniec fragmentu]~
+@27464 = ~Ten pożółkły pergamin, choć wyblakły i nadpalony na obrzeżach, jest zadziwiająco wytrzymały. Mimo że zapisano go nieznanym pismem, kiedy zaczniesz czytać, twój umysł natychmiast przełoży niezrozumiałe słowa na Wspólny.
+
+...wtedy to Aehirglass powstał ze swej pustynnej
+kryjówki, wznosząc tumany piachu jak podczas burzy.
+Jego skrzydła były jak żagle ogromnego okrętu,
+przemierzającego morze piasku, którego każde
+ziarenko niosło śmierć z szybkością wichru.
+
+Strach, który ogarnął lorda Maluradka,
+udzielił się też pozostałym, jakby 
+chciał zawrócić nasze konie i uciec wraz z naszym panem
+na wschód, by szukać schronienia w zamkowych murach.
+
+Ale wtedy dało się słyszeć dźwięk uderzenia. To
+najmężniejszy z Rycerzy Straży, Geddian, uderzył swym
+mieczem o tarczę. Dźwięk obudził nas i zagłuszył ryk
+smoka i wycie wiatru. Metaliczne uderzenia wygrywały
+hymn Helma, a odwaga napełniła nasze serca.
+
+„Do mnie, bracia moi,” zakrzyknął.  „Nie trwóżcie
+się i unieście swój oręż! Nie damy się tej bestii –
+damy życie za naszego lorda!”
+
+I tak, wzmocnieni Geddianowymi zachętami,
+staliśmy na polu walki, gdy bestia wzniosła się
+w powietrze i krążyła nad naszą drużyną. Strach bił od jej cielska, ale dla nas, nieczułych na trwogę,
+był niczym krople wody...
+
+[Koniec fragmentu.]~
+@27466 = ~Okładki tej księgi zostały wykonane ze zmatowionego brązu, ale z grzbietu zostały tylko zbutwiałe konopne sznurki, łączące ciężkie okładki z grubymi stronami. Pomimo podniszczonej powierzchni i draperii pajęczyn, pokrywającej manuskrypt, wygląda na to, że pismo przetrwało próbę czasu w dość dobrym stanie.
+
+Moja audiencja u lorda Maluradka nie przyniosła pożądanych efektów. Kiedy tylko przedstawiłem moją prośbę, lord wpadł w furię. Zagroził, że jeśli jeszcze raz poruszę temat otwarcia krypt, zamknie mnie w lochu razem ze zdradzieckim bardem. Powróciłem do kaplicy roztrzęsiony, a moje oczy spoczęły na symbolu Helma, leżącym na stoliku. Obawiam się, że rezygnując z walki w obronie Rycerzy Straży, zawiodłem mojego boga.
+
+Nie mogę zrozumieć, dlaczego lord tak bardzo się rozwścieczył, gdy przedstawiłem mu swoją prośbę. Zaczynam podejrzewać, że bitwa z niebieskim smokiem pod Kurhanami Burzy wyglądała inaczej niż twierdzi lord. Czterej Rycerze Straży, którzy polegli, pomagając swojemu panu w walce z bestią, powinni być sławieni jako bohaterowie, a nie pozostać w zapomnieniu, niczym szkielety złego omenu. Zamek zbudowany na takich podstawach nie wytrzyma długo.
+
+Muszę to naprawić, oddać honor poległym Rycerzom Straży, ale boję się wściekłości lorda. Pan Czuwającego Oka, Strażnik, mój Pan i Bóg, Helm, jest czempionem wszystkich obrońców – ale czego ja chcę bronić: reputacji tych dzielnych Rycerzy Straży, którzy oddali dusze w służbie Helma, czy interesów lorda Maluradka?
+
+I jeszcze ten bard w lochach; jaką zbrodnię popełnił, że tak rozgniewał... nie, przeraził... mojego pana? Lord Maluradek posunął się nawet do tego, że wydał specjalny dekret, zabraniający wymawiania i zapisywania imienia nieszczęsnego barda. Już nawet samo wspomnienie o obecności barda w lochu jest teraz dla Maluradka powodem, by ukarać winowajcę, o czym przekonali się pechowi strażnicy dwa tygodnie temu. Wygląda na to, że lord Maluradek pragnie zniszczyć pamięć o bardzie. Czego się tak obawia?
+
+Jakie historie mogliby opowiedzieć czterej Rycerze Straży, gdyby wciąż żyli?
+
+* * *
+Przedyskutowaliśmy plan działania z Adeptami w kaplicy i ustaliliśmy, że zbudujemy ukrytą kryptę, by uczcić pamięć poległych Rycerzy. Ukryjemy to przed Maluradkiem, a wstęp do krypty będzie zabezpieczony sześcioma kluczami, które zrobimy ze swoich ceremonialnych napierśników. Przetopiliśmy nasze zbroje i wykuliśmy sześć kluczy: miedziany, brązowy, srebrny, złoty, platynowy i z elektrum. Dzięki tym kluczom będziemy mogli wejść do krypt Rycerzy Straży i oddać im hołd, nie łamiąc przy tym rozkazu Maluradka, by właściwa krypta pozostała zapieczętowana.
+
+Ale moje serce nie zaznało dzięki temu spokoju. To, że trzymam się słowa, a nie jestem wierny duszy mego lorda, potwierdza tylko moje tchórzostwo. Ale nie potrafię znaleźć prawdziwej ścieżki, jestem rozdarty pomiędzy wolą Maluradka, a pragnieniem obrony reputacji Rycerzy Straży. Jestem jak rozdarte drzewo. Obawiam się, że to rozdarcie może się pogłębić i doprowadzić do mojej zguby.
+
+* * *
+Dzisiaj słyszałem pieśń barda, dochodzącą z lochów. Śpiewał przez całe południe, aż do zmroku, kiedy to Maluradek w końcu zwołał swoich królewskich strażników, by otworzyć lochy. Niedługo po tym, jak zeszli pod zamek, śpiew zamilkł, a kiedy strażnicy wyszli z podziemi, wielu z nich miało na twarzach niezwykłą bladość. Lord Maluradek trzymał w dłoni zakrwawiony sztylet i wyglądał jakby stał na skraju szaleństwa.
+
+Powinienem był coś zrobić. Widziałem, że lord i strażnicy schodzą do lochów. Teraz do czterech Rycerzy Straży dołączył kolejny trup.
+
+* * *
+W nocy dzieją się rzeczy straszne. W całym zamku słyszano dziwne dźwięki i echa pieśni barda, a w dodatku widziano zjawy. Cokolwiek wydarzyło się w lochu pomiędzy lordem Maluradkiem, a bardem, stało się przekleństwem dla całego zamku i wszystkich jego mieszkańców. Lord zamknął się w swoich komnatach, a wielu z jego strażników opuściło zamek, albo zniknęło w tajemniczych okolicznościach.
+
+Ja nie mam gdzie się schronić, więc zostałem. Wielki kamień leży mi na sercu, bo Helm dał mi znać, że jest ze mnie niezadowolony. Kiedy stałem przed misą ofiarną, w której znajdował się symbol Helma, i recytowałem poranne modlitwy, woda w misie zmętniała. Włożyłem do niej rękę, żeby wyjąć symbol, ale nic nie znalazłem. Symbol zniknął.
+
+Wtedy poczułem, jak moje serce przenika włócznia, Ten, Który Czuwa przejrzał moje tchórzostwo i wydał na mnie wyrok. Jestem skazany, nie jestem godzien, by służyć jako Wielki Strażnik. Nie jestem godzien żyć.
+
+Upewniłem się, że drzwi do kaplicy są otwarte. Bez względu na to, jakie widma i zjawy czają się w ciemnościach, oczekuję kary.
+
+– Wielki Strażnik Ammal-Matis~
+@27467 = ~Ten poplamiony na czerwono dziennik musiał mieć kiedyś bardzo solidną oprawę, ale wygląd jego stronic wskazuje na to, że całkiem niedawno ktoś zmoczył je winem albo krwią. Papier wygląda ohydnie,  stronice trudno odlepić od siebie, by przeczytać to, co zawierają.
+
+Jutro wyruszamy do Kurhanów Burzy – ja, czterech Rycerzy Straży Helma i bard, który przygotuje balladę o naszej wyprawie. Czeka nas wspaniała przygoda – bez przerwy myślę o skarbach, które zdobędziemy! Powiadają, że bestia mieszka w Kurhanach Burzy już od kilku lat. Z pewnością zgromadziła w swojej kryjówce wielkie łupy! Zabijając ją, zapełnię mój skarbiec, a przy okazji zdobędę szacunek w oczach kmieci. Nikt już nie będzie na mnie spoglądał z ukosa, nikt nie odważy się kwestionować królewskich dekretów czy narzekać na podatki i przygraniczne utarczki... Czyny, których dokonam w ciągu kilku następnych dni, sprawią, że zyskam szacunek w oczach mojego ludu, a słowa lorda Maluradka, Pogromcy Smoka z Kurhanów Burzy, będą święte!
+
+* * *
+
+Wieść o moim powrocie rozeszła się lotem błyskawicy. Kiedy przejeżdżałem przez bramy zamku, czekało mnie powitanie godne bohatera. Kiedy wieśniacy i kmiecie zobaczyli mnie z głową smoka, padli na kolana. Bez zwłoki zażądałem, by przygotowano wielką ucztę na cześć mego zwycięstwa – a bardowi, który był kronikarzem mojej wyprawy, zleciłem napisanie ballady o wiktorii nad Wielkim Gadem. Powiedziałem, żeby się śpieszył, bo ballada ma być gotowa na ucztę.
+
+Kmiecie i Akolici Helma szemrali o tym, co się stało z Rycerzami Straży (na prośbę barda przywieźliśmy ze sobą ich ciała do zamku, choć to bardzo zwolniło naszą jazdę). Nie chciałem by ich śmierć rzuciła ponury cień na nadchodzące święto, zarządziłem więc by ciała Rycerzy Straży zapieczętowano w kryptach. Opowiadałem o tym, jak mężnie walczyli ze smokiem. Opowieść poruszyła wszystkich do głębi.
+
+Obawiam się, że jeśli wkrótce nie pochowamy Rycerzy Straży, to liczne rany na ich ciałach mogą sprowokować pytania o to, w jaki sposób mnie udało się wyjść z tej bitwy bez żadnych obrażeń. Najlepiej uciąć tej sprawie łeb – jak już powiedziałem bardowi, przeszłość to tylko marny proch. Przyszłość ma kolor złota!
+
+* * *
+
+Ten przeklęty bard mnie zdradził! Jego słowa cięły głębiej niż jakiekolwiek ostrze. Jak on śmiał rzucać te oszczerstwa... te kłamstwa?! Jego ballada o bitwie pod Kurhanami Burzy pełna była zdradzieckich słów. Jak on śmiał wychwalać czyny Rycerzy Straży ponad moje męstwo? Jak śmiał przeklinać mnie za tchórzostwo na polu bitwy? Mnie! Swojego pana!
+
+Ale ciernie, które wrażał w moje ciało, były bardzo subtelne. Czyżby wydawało mu się, że nie zauważę jego pogardy? Że nie usłyszę jego kłamstw? Jeszcze zanim zdążył skończyć balladę, rozkazałem strażnikom, żeby go pojmali i wyrwali z jego rąk przeklętą pieśń. Kazałem wtrącić niegodziwca do lochu – prędzej sczeźnie w kajdanach, niż znowu zobaczy promienie słońca!
+
+Kiedy wyprowadzali go z sali, rozkazałem, by za karę ucięto mu ręce. To sroga nauczka, zaiste, ale nie mogę przyzwalać na zdradę we własnym zamku, bo naraziłbym na niepotrzebne ryzyko całe królestwo.
+
+O zgrozo, dopiero kiedy paliłem przepełnione jadem stronice ballady, zorientowałem się, że niektórych stron brakuje! Bardzo mnie to trapi -- gdyby tak dostały się w ręce innego... ale nie, nie mogę o tym myśleć. Opowieść dobiegła końca, sprawa barda jest już zamknięta.
+
+* * *
+
+Dzisiaj w południe przyszedł do mnie Wielki Strażnik Helma, by ze mną porozmawiać. Udając szacunek, zażądał bym odpieczętował krypty Rycerzy Straży, tak, by można było „oddać cześć poległym”. Wyrzuciłem go z komnaty – od kiedy to czyny bohatera poddaje się w wątpliwość w jego własnej komnacie tronowej?! Czy ten głupiec dokonał kiedykolwiek czynu, który odnotowano by w historii choćby najmniejszymi zgłoskami? Jeśli jeszcze raz ośmieli się zakwestionować moje dekrety, każę go łamać kołem!
+
+Powiedział, że zrobi tak, jak mówię, ale nie ufam mu. Rycerze Straży służyli Helmowi, a Wielki Strażnik bardziej przejmuje się nimi niż mną. Będę go dobrze obserwował. Jeśli zrobi choćby jeden fałszywy ruch, by mnie zdradzić, to skończy w lochach razem z bardem.
+
+* * *
+
+Dzisiaj jeden ze strażników ośmielił się wymówić przy mnie imię barda. Poczułem, jakby ktoś nasypał mi soli na rany. Rozkazałem wysmagać tego głupca biczami i wetknąć mu w usta posypane pieprzem sukno. Od tego dnia zabroniłem wymawiać imienia barda ani w ogóle go wspominać. Zetrę imię tego drania na proch, spalę na popiół i dopilnuję, żeby wszyscy zapomnieli o nim i o jego plugawych słowach! To los w sam raz dla takiego przepełnionego jadem drania jak on!
+
+Sam zabrałem jedyny klucz do lochów. Będę go miał przy sobie nawet podczas snu. Nikt go nie zobaczy, nikt nie przyniesie mu strawy – niech w końcu zdechnie z głodu! Niech własne słowa staną ci kością w gardle, zdrajco, i niech sprawiedliwości w końcu stanie się zadość!
+
+* * *
+
+On śpiewa! Ten przeklęty bard śpiewa, a jego pieśń dociera do mych uszu nawet przez mury moich komnat! Nie mogę spać. Jest tak głośna, że chyba wszyscy w zamku ją słyszą! Nie torturuj mnie więcej, zdrajco, bo każę cię powiesić!
+
+* * *
+
+Nie mogłem znieść tego śpiewu – bard nie żyje. Odciąłem jego jadowity język i zostawiłem, by życie uszło z ciała razem z posoką. Moi strażnicy.. oni... teraz będą już trzymać język za zębami, bo się mnie boją! To dobrze! Niech się boją! Niech mnie szanują – teraz wiedzą, że ich panu nie brakuje odwagi!
+
+* * *
+
+Bard żyje... a przecież umarł! Moją komnatę nawiedza jego duch, wciąż śpiewa o moim tchórzostwie pod Kurhanami Burzy! Nazywa mnie „bohaterem”, ale to słowo rani moją pierś jak zatruta strzała. Moi słudzy, strażnicy – odeszli... ale ta bestia wciąż przychodzi, by mnie dręczyć! Tęsknię za ciszą i spokojem. Cisza, duchu, przestań mnie męczyć, UCISZ się!
+
+* * *
+
+Obawiam się, że dłużej tego nie zniosę. Nie mogę ufać mym oczom i uszom. Dzisiaj znowu naszła mnie chęć, żeby zakończyć tę udrękę. Co mam robić? Widziałem pętlę szubienicy zwisającą w wieży, a na niej sylwetkę, do złudzenia przypominającą mnie samego. Boję się, że to moja przyszłość zwisa z wieży. Czy ją przyjmę? Nie, nie mogę! Musi być jakieś inne wyjście! Ale z zamku nie ma ucieczki – wszystkie korytarze prowadzą z powrotem do wieży. Czy z tego piekła nie ma żadnej innej ucieczki, niż przez śmierć?
+
+* * *
+
+Zbliża się koniec. Dzisiaj w nocy znowu przyszedł do mnie duch barda, a ja znowu nie mogłem znieść jego głosu. Teraz idę do wieży. Stawię czoło swej przyszłości. Pozbawię go przyjemności, jaką z pewnością dałoby mu zabicie mnie! Zostanie w tym zamku na całą wieczność – sam na sam ze swoimi słowami! Zobaczymy, czy zniesie ciszę panująca w tych komnatach – przynajmniej nikt więcej nie usłyszy opowieści o lordzie Maluradku.
+
+Byłem nikim, teraz znów stanę się nikim.
+
+–  Lord Fallon Maluradek, Bohater z Kurhanów Burzy, Pogromca Lazurowego Smoka Aehirglassa~
+@27468 = ~Na kołku wisi zardzewiała kolczuga.~
+@27469 = ~Do końca tej belki przybito małą platynową tabliczkę.~
+@27470 = ~To dokładnie taki sam pierścień jak ten, który miał na palcu Hobart, gdy spotkaliście go w Samotnej Kniei. Na miedzianej powierzchni wyryto ciąg niemożliwych do odczytania runów. Wewnątrz pierścienia znajduje się prosty napis: „Prawda jest wieczna”.
+
+PARAMETRY:
+
+Waga: 0~
+@27471 = ~Na tym skleconym naprędce stole leżą różne rupiecie. Prawie wszystkie przedmioty są bardzo zużyte. Żaden z nich nie ma dużej wartości.~
+@27472 = ~Zanim pożywimy się tymi mile widzianymi gośćmi, chętnie poznam ich imiona. Zatem... powiedzcie mi, soczyste kąski, kim jesteście?~
+@27474 = ~Dzielni, co? To dobrze! Przyda się wam wasze męstwo, kiedy będziemy obierać mięso z waszych potrzaskanych kości. Zapewniam was, nie umrzecie od razu. Ale jednak *umrzecie*. To wam mogę zagwarantować. Siostry!~
+@27491 = ~Ach, proszę. Nie chciałabym, żeby krzyki twoich umierających towarzyszy zagłuszyły twoje słowa.~
+@27492 = ~Po prostu chcę znać imiona niedoszłych bohaterów, którzy mieli na tyle odwagi, żeby zapuścić się do królestwa Mag, królowej harpii!~
+@27493 = ~Niezupełnie. To gadatliwe widmo i jego magiczne bestie twierdzą, że są panami komnat tego zamku. Ale to Mag rządzi przestworzami!~
+@27494 = ~Nie musisz się nim przejmować. On nie żyje... niebawem to samo spotka i was. Różnica jest taka, że nawet po śmierci jego głos ciągle ma władzę nad człowiekiem i bestią.~
+@27495 = ~Te gady nie są dla nas groźne. Są słabe! Służą szalonemu duchowi, tak jak reszta głupich bestii, uwięzionych w tych murach. Gdzie im do Mag! Jesteśmy odporne na moc tak banalnych czarów!~
+@27496 = ~Kogo to obchodzi! Dopóki głupcy, tacy jak wy, będą tu przychodzić w poszukiwaniu odpowiedzi, moje siostry i ja nie będziemy wchodzić mu w drogę. Prawdę mówiąc, jesteśmy mu wdzięczne. Dzięki niemu jedzenie wchodzi nam prosto na stół... że się tak wyrażę...~
+@27497 = ~Nazywam się <CHARNAME>. Mam nadzieję, że moje imię ci się podoba, bo to ostatnie imię, jakie usłyszysz.~
+@27498 = ~Znajomość naszych imion nie będzie ci potrzebna w miejscu, do którego cię zaraz wyślemy, wiedźmo.~
+@27499 = ~Co to za różnica, czy będziesz wiedzieć, jak się nazywamy, czy nie?~
+@27500 = ~No, dalej, stworze. Zobaczymy, kto dzisiaj wyzionie ducha.~
+@27501 = ~Mam już dość zawodzenia harpii jak na jeden dzień. Przygotuj się na los, który spotkał twoje „siostrzyczki” na dziedzińcu.~
+@27503 = ~Nazywaj się jak chcesz, skrzydlata krowo. Za chwilę będziesz tylko kolejnym trupem, którego będzie można oskubać.~
+@27504 = ~Pewnie. Zaraz nam powiesz, że to *twój* zamek.~
+@27505 = ~Twoje zachcianki nic nas nie obchodzą. I tak już niedługo będziesz martwa.~
+@27506 = ~Co wiesz o tym Mistrzu Wabienia?~
+@27507 = ~Chcesz mi powiedzieć, że tym zamkiem rządzi duch?~
+@27508 = ~A co z wiwernami? Na pewno nie uznają twojego prawa do tytułu „Królowej Przestworzy”.~
+@27509 = ~Obawiam się, że twoje panowanie dobiegło końca... wasza wysokość.~
+@27510 = ~Czego on chce?~
+@27511 = ~Dość już tych gróźb, sępie. Zobaczymy, czy walczysz równie dobrze, jak rozmawiasz.~
+@27512 = ~Masz rację. Później będziemy się martwili o ducha. Teraz bardziej ciekawi mnie, czy harpie faktycznie smakują jak kurczaki.~
+@27513 = ~Kim jest ten duch?~
+@27514 = ~Ilu stworzeniom rozkazuje ten duch?~
+@27515 = ~Niewiele mnie to obchodzi. Niewolnicy czy nie, i tak się was pozbędziemy.~
+@27516 = ~Ohydna jędzo! Dość mam twojego gadania.~
+@27517 = ~Nie znajdziesz tutaj łatwego posiłku, potworze.~
+@27518 = ~Przekonamy się, czy nadal będziesz głodna, kiedy rozetnę ci brzuch i nakarmię własnymi bebechami.~
+@27519 = ~Powiadają, że fortuna sprzyja mężnym. Zobaczymy, czy macie w sobie odwagę prawdziwych bohaterów.~
+@27520 = ~Nagroda, której szukacie, znajduje się w jednej z tych sześciu skrzyń. Inne kryją w sobie jedynie śmierć. Wybierajcie... jeśli starczy wam odwagi.~
+@27521 = ~Rozpacz może być równie groźna, jak przeciwnik spotkany na polu walki. „Bohater” to tytuł nadawany przez nas komuś, kto potrafi przeżyć tam, gdzie większość innych nie poradziłaby sobie. Przekonajmy się, czy wytrwałość jest jedną z waszych cnót.~
+@27522 = ~Doskonale! Zasłużyliście na nagrodę!~
+@27523 = ~Siła jest cnotą, którą szczycą się wszyscy prawdziwi bohaterowie. To właśnie dzięki niej można dokonywać heroicznych czynów. Nadszedł czas, żebyście i *wy* się wykazali.~
+@27524 = ~Doskonale! Wykazaliście się swoją siłą. Oto nagroda, której szukacie.~
+@27525 = ~Opończę prawdziwych bohaterów mogą nosić tylko ci, których umysł jest równie ostry jak miecz. Rozwiążcie tę zagadkę, a znajdziecie się o krok bliżej waszego celu...~
+@27526 = ~Z żywiołów się rodzę,
+Miłość i pogardę me dary przynoszą.
+Gorący lub zimny mój dotyk,
+Choć człowiekowi trzymać mnie nie pisano.~
+@27527 = ~Wymów moje imię... a otrzymasz swoją nagrodę.~
+@27528 = ~Źle!~
+@27533 = ~Udało ci się rozwiązać zagadkę. Nagroda należy do ciebie.~
+@27534 = ~Doskonale. Spróbujemy jeszcze raz?~
+@27535 = ~Ogień.~
+@27536 = ~Ziemia.~
+@27537 = ~Lód.~
+@27538 = ~Wiatr.~
+@27539 = ~Woda.~
+@27540 = ~Żelazo.~
+@27541 = ~Odzyskałem swój honor. Żegnajcie... bohaterowie.~
+@27542 = ~Wreszcie mogę odpocząć. Pamiętajcie o mnie...~
+@27543 = ~Niech Helm was strzeże. Żegnajcie...~
+@27544 = ~Moi bracia spoczywają już w pokoju. Teraz i ja przyłączę się do nich. Dalej, bohaterowie. Droga stoi przed wami otworem. Niech wasze czyny pomogą odzyskać honor i pokój temu, który zapisał tę tragedię własną krwią. Żegnajcie...~
+@27545 = ~Ach, tu jesteście. Cieszę się, że was widzę. Już się martwiłem, że spotkało was coś złego.~
+@27546 = ~Jak się tu dostałem? To proste. Wszedłem tajemnym wejściem.~
+@27547 = ~Gdybym wam powiedział, nie byłoby już tajemne, prawda? Ale zapomnijmy o nieważnych szczegółach. Ważne jest to, co macie teraz zrobić.~
+@27548 = ~Dokładnie. Wydaje mi się, że wiem, gdzie leży odpowiedź.~
+@27549 = ~Najpierw musicie coś dla mnie zrobić. Szukam klucza, który jest ukryty gdzieś we wnętrzu tej twierdzy. Podejrzewam, że musi być gdzieś na górze, możliwe że nawet w komnatach sypialnych świętej pamięci lorda.~
+@27550 = ~Nie mam czasu na wasze głupie pytania. *Muszę* mieć ten klucz. *Potrzebuję* go. Przyniesiecie mi go, czy nie?~
+@27551 = ~*wrr* Wiedziałem, że to tylko strata czasu! Dobrze! *My* odnajdziemy klucz. A jeśli wy nam nie pomożecie... zginiecie!~
+@27552 = ~Oczywiście. W końcu jesteśmy starymi przyjaciółmi, no nie? Ale teraz nie ma czasu na nadrabianie zaległości. Ważne jest to, co mamy zrobić.~
+@27553 = ~Czekajcie! Jeszcze nie odchodźcie! Wiem, w jaki sposób uciec z tego miejsca. Mogę was stąd wyprowadzić.~
+@27554 = ~Szukam wyjścia, tak jak i wy. I wydaje mi się, że je znalazłem.~
+@27555 = ~Oczywiście że mi zależy. Właśnie dlatego tutaj jestem... aby odnaleźć sposób na ucieczkę z tego miejsca.~
+@27556 = ~W jaki sposób dostałeś się do tej twierdzy?~
+@27557 = ~*Cieszysz się*, że nas widzisz?~
+@27558 = ~Co tu robisz?~
+@27559 = ~Jakim tajemnym wejściem?~
+@27560 = ~Ty mały gnojku. Dlaczego nie powiedziałeś nam, że do twierdzy prowadzi tajemne przejście?~
+@27561 = ~Chodzi ci o rozwiązanie drugiej zagadki Mistrza Wabienia.~
+@27562 = ~Masz rację... lepiej będzie, jeśli się tym zajmiemy. Do zobaczenia, Hobart.~
+@27563 = ~Naprawdę? Powiedz nam.~
+@27564 = ~Skąd ta nagła chęć do pomocy? Jeszcze niedawno zupełnie cię nie obchodziło, czy będziemy żyli, czy umrzemy.~
+@27565 = ~Dlaczego mielibyśmy ci pomagać? Ty jakoś nie paliłeś się, żeby pomagać nam.~
+@27566 = ~Dlaczego ten klucz jest dla ciebie taki ważny?~
+@27567 = ~Nie rozumiem. Jeśli wiesz, gdzie jest, to dlaczego sam go nie weźmiesz?~
+@27568 = ~Nie. Sam się o tym przekonaj.~
+@27569 = ~Nigdzie nie pójdziemy, dopóki nie odpowiesz nam na kilka pytań.~
+@27570 = ~Nie podoba mi się ton twojego głosu.~
+@27575 = ~I co, udało ci się znaleźć wyjście?~
+@27576 = ~Do końca tej belki przybito małą złotą tabliczkę.~
+@27577 = ~Do końca tej belki przybito małą srebrną tabliczkę.~
+@27578 = ~Do końca tej belki przybito małą miedzianą tabliczkę.~
+@27579 = ~Do końca tej belki przybito małą tabliczkę z brązu.~
+@27580 = ~Do końca tej belki przybito małą tabliczkę z elektrum.~
+@27581 = ~Mistrz Wabienia~
+@27584 = ~Rikasha~
+@27597 = ~Zmatowiony pierścień~
+@27600 = ~Glabrezu~
+@27601 = ~Glabrezu~
+@27602 = ~Witajcie. Muszę przyznać, że wasze postępy mile mnie zaskakują.~
+@27603 = ~Nareszcie... ktoś mnie pokonał. Długo czekałem na ten dzień. Cieszę się, że ginę właśnie z twojej ręki.~
+@27605 = ~Dzięki wytrwałości i sile oręża udało wam się przetrwać tam, gdzie inni znajdowali tylko własną śmierć. Jesteście światłem rozświetlającym mroczny i przerażający świat, pełen potwornych bestii i zła pozbawionego oblicza.~
+@27606 = ~Czyny takie jak wasze — czyny heroiczne — będą inspiracją dla następnych pokoleń. Postarajcie się, by nie poszły w zapomnienie. Bo przekleństwem człowieka jest to, że zapomina.~
+@27607 = ~Żegnajcie... bohaterowie.~
+@27920 = ~Akolita~
+@27934 = ~Akolita~
+@34527 = ~Wypuszcza chmurę kwasu~
+@34801 = ~Jaskinia~
+@34826 = ~Na zachodnie blanki~
+@34827 = ~Na wschodnie blanki~
+@34828 = ~Chata Hobarta~
+@34829 = ~Krąg monolitów~
+@34830 = ~Inkrustowana gwiazda~
+@40038 = ~Na pierwszy poziom~
+@40039 = ~Na drugi poziom~
+@40040 = ~Na trzeci poziom~
+@40103 = ~Zamek Maluradek~
+@40104 = ~Północno-wschodnia wieża~
+@40105 = ~Południowo-wschodnia wieża~
+@40106 = ~Północno-zachodnia wieża~
+@40107 = ~Południowo-zachodnia wieża~
+@40108 = ~Na dziedziniec~
+@40109 = ~Na parter~
+@40110 = ~Na piętro ~
+@40111 = ~Do Lochów~
+@40112 = ~Do Świątyni Helma ~
+@40113 = ~Do Jaskiń Szakali~
+@40174 = ~Próby Mistrza Wabienia~
+@40187 = ~Grobowce rycerzy-strażników~
+@40195 = ~Mieszkaniec zewnętrznych sfer zniszczony ~
+@40240 = ~W powietrzu unosi się obrzydliwy smród. Od czasu do czasu znajdujesz duże czarne pióra, zrzucone najprawdopodobniej przez jakąś ptasią bestię. Na ziemi leżą ponadto odchody, wskazujące na obecność wiwern. Ślady zadrapań na murach sugerują, że niektóre partie tego obszaru mogą być również zamieszkałe przez wyjątkowo duże owady.~
+@40241 = ~W powietrzu unosi się obrzydliwy smród. Od czasu do czasu znajdujesz duże czarne pióra, zrzucone najprawdopodobniej przez jakąś ptasią bestię. ~
+@40242 = ~Na ziemi leżą odchody, wskazujące na obecność wiwern w okolicy.~
+@40243 = ~Jakiekolwiek istoty żyły niegdyś w tej okolicy, albo wyginęły, albo dawno już stąd odeszły. Znajdujesz jednakże na ziemi kosmyki zwierzęcej sierści, należące prawdopodobnie do jakiegoś kotowatego stworzenia.~
+@40244 = ~Kilkoro drzwi na tym obszarze wydaje się być niedawno używanych, ale nie widać w pobliżu żadnych śladów świadczących, by ktoś przez nie tak naprawdę przechodził. Wygląda to niemal tak, jak gdyby drzwi były otwierane i zamykane przez jakąś zewnętrzną siłę.~
+@40245 = ~Okolica cuchnie stęchlizną i zepsuciem, sugerując, iż był to swego czasu jakiś grobowiec. Od czasu do czasu dostrzegasz na ziemi kilka poniewierających się kości czy podartych łachów. ~
+@40246 = ~W powietrzu unosi się dziwny zapach podrobów, wskazujący na obecność orogów lub minotaurów, a być może i obu tych stworzeń. Zadrapania na niektórych ścianach świadczą, że w pobliżu mogą przebywać także trolle i umbrowe kolosy. Czujesz ponadto bardzo delikatną grzybową nutę. ~
+@40247 = ~W powietrzu unosi się dziwny zapach podrobów, wskazujący na obecność orogów lub minotaurów, a być może i obu tych stworzeń. Zadrapania na niektórych ścianach świadczą, że w pobliżu może przebywać także kilka trolli i umbrowych kolosów. Sporadycznie dostrzegasz też łajno, pochodzące od przypominających wiwerny istot.~
+@40248 = ~Twoje zdolności tropiciela niewiele mówią ci o tej lokacji. Z trudem jednak rozróżniasz ślady dziwnej śluzowatej substancji, zdającej się pokrywać ciemniejsze fragmenty sufitu. ~
+@40249 = ~Najczęściej napotykane w okolicy tropy zdają się należeć do dużych psowatych. Wygląda na to, że w kilku miejscach mieszają się one z odciskami ludzkich stóp. Zwisające resztki niespotykanie dużych pajęczyn i walające się wszędzie odpadki pozwalają sądzić, że północno-wschodnie części jaskiń mogą być zamieszkiwane przez nienaturalnie wyrośnięte pająki. Ponadto, północna część tego obszaru pełna jest gnijącej roślinności. W powietrzu unosi się też słaby zapach siarki.~
+@40250 = ~Najczęściej napotykane w okolicy tropy zdają się należeć do dużych psowatych. Wygląda na to, że w kilku miejscach mieszają się one z odciskami ludzkich stóp. Zwisające resztki niespotykanie dużych pajęczyn i walające się wszędzie odpadki pozwalają sądzić, że północne części jaskiń mogą być zamieszkiwane przez nienaturalnie wyrośnięte pająki. Od czasu do czasu znajdujesz duże czarne pióra, zrzucone najprawdopodobniej przez jakąś ptasią bestię. Ponadto, w powietrzu unosi się dziwny zapach podrobów, jednocześnie ludzki i zwierzęcy. Może on pochodzić od jakiegoś mieszańca.~
+@40294 = ~Rzadko spotykany w Krainach achroit zwany jest także bezbarwnym turmalinem.
+
+PARAMETRY:
+
+Waga: 0~
+@40323 = ~Oko umysłu
+
+Kula ta chroni rzucającego przez atakami mentalnymi, takimi jak zauroczenie, emocje, czy strach.
+
+Oko może być wykorzystane jako 1. poziomowy czar maga Zauroczenie osoby, sprawiając że jedna humanoidalna istota znajdzie się przez jedną turę pod kontrolą rzucającego (rzut obronny przeciw czarom neguje).~
+@40324 = ~Oko miecza
+
+Oko to odbija najbliższy atak fizyczny skierowany na rzucającego. 
+
+Może być wykorzystane  jako 1. poziomowy czar maga Magiczny pocisk, tworząc maksymalnie pięć pocisków (jeden na każde dwa poziomy doświadczenia powyżej pierwszego), z których każdy zadaje 1k4 +1 magicznych obrażeń.~
+@40325 = ~Oko maga
+
+Oko to pochłania jednorazowo obrażenia zadane przez ogień, elektryczność, zimno lub kwas.
+
+Może być również wykorzystane jako 3. poziomowy czar maga Błyskawica, zadając 1k6 obrażeń od elektryczności na poziom (maksymalnie 10k6) wszystkim istotom stojącym jej na drodze.~
+@40326 = ~Oko jadowe
+
+Oko to zatrzymuje jeden atak lub efekt, który mógłby spowodować zatrucie rzucającego.
+
+Może być również wykorzystane  jako 4. poziomowy czar kapłański Trucizna, zadając jednej istocie 20 obrażeń w przeciągu dwudziestu sekund (rzut obronny przeciw truciznom neguje).~
+@40327 = ~Oko duchowe
+
+Oko to blokuje jeden magiczny atak powodujący natychmiastową śmierć (Zaklęcie śmierci, Palec śmierci, Słowo mocy: giń, Zabijanie żyjących, Zniszczenie).
+
+Zamiast tego, czarodziej może wykorzystać drzemiącą w oku moc jako 2. poziomowy czar maga Promień osłabienia, obniżając Siłę celu o 5 (rzut obronny przeciw czarom neguje).~
+@40328 = ~Oko hartu ducha
+
+Oko to blokuje jeden efekt powodujący ogłoszenie, głuchotę, ślepotę lub ciszę.
+
+Może być zamiast tego wykorzystane jako 4. poziomowy czar maga Okrzyk, zadając 4k6 magicznych obrażeń i wywołując głuchotę u istot znajdujących się na obszarze stożka o promieniu 15 metrów (połowa obrażeń i uniknięcie głuchoty po rzucie obronnym przeciw czarom).~
+@40329 = ~Oko kamienia
+
+Oko to chroni rzucającego przed pojedynczym atakiem powodującym petryfikację.
+
+Może być również wykorzystane jako 3. poziomowy czar maga Unieruchomienie osoby, uniemożliwiając poruszanie się humanoidom o rozmiarze człowieka lub mniejszym przez jedną rundę/poziom (rzut obronny przeciw czarom neguje).~
+@40373 = ~Inkrustowany kamień~
+@40374 = ~Magiczna skrzynia~
+@40660 = ~Construct immunity item – do not translate~
+@40717 = ~W oddali słyszysz odgłos otwieranych drzwi.~
+@40718 = ~W oddali słyszysz odgłos zamykanych drzwi.~
+@40880 = ~Szaman~

@@ -1,6 +1,6 @@
 // Installing soundtracks
 
-COPY - ~%MOD_FOLDER%/music/songlist-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/music/songlist-iwd.2da~ ~%MOD_FOLDER%/music/songlist-iwd.2da~
   COUNT_2DA_COLS numCols
   READ_2DA_ENTRIES_NOW ~src_table~ numCols
   FOR (row = 0; row < src_table; ++row) BEGIN
@@ -11,7 +11,7 @@ COPY - ~%MOD_FOLDER%/music/songlist-iwd.2da~ ~override~
 BUT_ONLY
 
 ACTION_PHP_EACH mus_files AS id => mus_file BEGIN
-  COPY - ~%MOD_FOLDER%/music/%mus_file%~ ~override~
+  COPY ~%MOD_FOLDER%/music/%mus_file%~ ~%MOD_FOLDER%/music/%mus_file%~
     READ_2DA_ENTRY 0 0 1 folder
   BUT_ONLY
   COPY ~%MOD_FOLDER%/music/%folder%~ ~music/%folder%~

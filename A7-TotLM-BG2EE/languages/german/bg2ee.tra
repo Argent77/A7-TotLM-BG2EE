@@ -1,0 +1,302 @@
+// Strings from BG2:EE
+@334 = ~Verstrickt~
+@1121 = ~Minotaurus~
+@1122 = ~Minotaurus~
+@1280 = ~Betäubt~
+@2613 = ~Gruftschrecken~
+@2614 = ~Gruftschrecken~
+@2619 = ~Furcht~
+@2624 = ~Schwere Wunden verursachen~
+@2628 = ~Auflösung~
+@2662 = ~Betrachter~
+@2663 = ~Betrachter~
+@2665 = ~Todesstrahl~
+@2826 = ~Eisengolem~
+@2827 = ~Eisengolem~
+@2867 = ~Erdelementar~
+@2871 = ~Erdelementar~
+@2873 = ~Feuerelementar~
+@2874 = ~Feuerelementar~
+@2881 = ~Dschinn~
+@2882 = ~Dschinn~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Erdkoloss~
+@3021 = ~Erdkoloss~
+@7618 = ~Verbesserter Schutzmantel
+
+Grad: 8
+Schule: Bannzauber
+Reichweite: Anwender
+Dauer: 4 Runden
+Zeitaufwand: 1
+Bereich: Anwender
+Rettungswurf: Nein
+
+Während der Zauber wirkt, kann der Anwender nur noch von magischen Waffen +4 oder besseren verwundet werden. Der Zauber ist zwar äußerst mächtig, hat dafür aber auch nur eine sehr geringe Wirkungsdauer. Da der Zeitaufwand für das Wirken des Zaubers sehr gering ist, ist er gerade in der Hitze des Gefechts äußerst nützlich. Dieser Zauber bedeutet für einen Magier oft den Unterschied zwischen Leben und Tod. Der verbesserte Schutzmantel funktioniert nicht in Verbindung mit „Schutz vor magischen Waffen“. Der Schutz hält an, bis die Wirkungsdauer endet oder der Zauber gebannt wird.~
+@7621 = ~Tödlicher Nebel~
+@7622 = ~Tödlicher Nebel
+
+Grad: 6
+Schule: Hervorrufung
+Reichweite: 9 m
+Dauer: 1 Phase
+Zeitaufwand: 6
+Bereich: 4,5 m Radius
+Rettungswurf: Nein
+
+Der Zauber erzeugt eine Wolke dichten Nebels, der stark säurehaltig ist. Alles tierische Leben, das nicht gegen Säure immun ist, erleidet in jeder Runde, in der das betreffende Wesen dem Nebel ausgesetzt ist, 8 Schadenspunkte. Außerdem tötet der Zauber alle beschworenen Wesen unabhängig von ihren Trefferwürfeln und Immunitäten.~
+@7665 = ~Finger des Todes~
+@7672 = ~Finger des Todes
+
+Grad: 7
+Schule: Nekromantie
+Reichweite: 9 m (Sichtfeld)
+Dauer: Permanent
+Zeitaufwand: 5
+Bereich: 1 Wesen
+Rettungswurf: Ja (gg. Zauber)
+
+Der Finger des Todes bringt den Lebensfunken des Opfers zum Erlöschen. Nachdem die Formel ausgesprochen wurde, zeigt der Anwender auf sein Opfer und versucht, ihm die Seele aus dem Leib zu reißen. Dem Opfer steht ein Rettungswurf -2 gegen Zauber zu, um das zu verhindern. Scheitert das Opfer, stirbt es. Andernfalls erleidet es 2W8 +1 Schadenspunkte.~
+@7782 = ~Wort der Macht: Betäubung
+
+Grad: 7
+Schule: Beschwörung
+Reichweite: 9 m (Sichtfeld)
+Dauer: Speziell
+Zeitaufwand: 1
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Durch dieses Wort der Macht wird ein ausgewähltes Wesen in Sichtweite des Anwenders betäubt. Die genauen Auswirkungen hängen von den Trefferpunkten des Wesens ab:
+  1–29 Trefferpunkte: betäubt für 4W4 Runden
+  30–59 Trefferpunkte: betäubt für 2W4 Runden
+  60–89 Trefferpunkte: betäubt für 1W4 Runden
+  90+ Trefferpunkte: nicht betroffen
+Es werden immer die aktuellen Trefferpunkte des Opfers und nicht dessen maximale Trefferpunkte zur Kalkulation verwendet.~
+@8364 = ~Beherrscht~
+@10554 = ~Untoter zerstört~
+@10685 = ~Die Flasche des Flaschengeistes~
+@10872 = ~Zauber zurückwerfen
+
+Grad: 7
+Schule: Bannzauber
+Reichweite: Anwender
+Dauer: 3 Runden pro Stufe
+Zeitaufwand: 7
+Bereich: Anwender
+Rettungswurf: Nein
+
+Dieser mächtige Zauber reflektiert Magie, die auf das geschützte Wesen gerichtet wird. Der Zauber wirft insgesamt 12 Zaubergrade zurück. Das betrifft auch Zauber von Schriftrollen und zauberähnliche Fähigkeiten. Flächendeckende Zauber, die nicht auf das geschützte Wesen zentriert werden, und flächendeckende Zauber, die stationär sind, so wie „Todeswolke“ und „Stinkende Wolke“, sind nicht betroffen. „Zauber zurückwerfen“ wirkt so lange, wie der Schutz nicht völlig aufgebraucht wurde. Wenn beispielsweise nur noch 1 Grad an Zaubern zurückgeworfen werden kann, wird dennoch ein Zauber des 3. Grades zurückgeworfen. Der Zauber schützt nicht vor „Magie bannen“, kann dadurch aber auch nicht aufgehoben werden.~
+@14665 = ~Versteinert~
+@15326 = ~Die Flasche des Flaschengeistes~
+@16109 = ~Teleportieren~
+@17352 = ~Tor
+
+Grad: 9
+Schule: Beschwörung
+Reichweite: 9 m
+Dauer: 33 Runden
+Zeitaufwand: 9
+Bereich: Speziell
+Rettungswurf: Nein
+
+Der Anwender ruft ein mächtiges Wesen von einer anderen Ebene herbei, das alle Feinde angreift und, wenn der Anwender nicht vorsichtig ist, auch ihn und seine Freunde. Bei dem beschworenen Wesen handelt es sich um ein Höllenschlundscheusal, einen der mächtigsten Teufel. Das Höllenschlundscheusal greift jedes Wesen an, das nicht durch „Schutz vor Bösem“ geschützt ist. Wenn der Anwender es versäumt, sich auf diese Weise zu schützen, wird das Höllenschlundscheusal ihn und seine Gefährten Stück für Stück auseinanderreißen und sich an den Überresten ergötzen.~
+@17361 = ~Scheusal beschwören
+
+Grad: 8
+Schule: Beschwörung
+Reichweite: 9 m (Sichtfeld)
+Dauer: 15 Runden
+Zeitaufwand: 9
+Bereich: Speziell
+Rettungswurf: Nein
+
+Dies ist eine mächtigere Variante des Zaubers „Caco-Scheusal beschwören“ des 7. Grades. Er beschwört ein tobendes Scheusal, das jedes Wesen in Reichweite angreift, das nicht durch „Schutz vor Bösem“ geschützt ist. Nur verzweifelte oder lebensmüde Magier setzen diesen Zauber ein.~
+@18140 = ~Wort der Macht: Tod
+
+Grad: 9
+Schule: Beschwörung
+Reichweite: 9 m (Sichtfeld)
+Dauer: Sofort
+Zeitaufwand: 1
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Wird dieses Wort der Macht ausgesprochen, tötet es ein Wesen in Reichweite augenblicklich. Es sind nur Wesen mit maximal 60 Trefferpunkten betroffen, wobei die aktuellen Trefferpunkte und nicht die maximalen Trefferpunkte des Wesens herangezogen werden. Hat das Ziel mehr als 60 Trefferpunkte, hat der Zauber keine Auswirkungen. Es gibt keinen Rettungswurf.~
+@25946 = ~Rubinroter Strahl der Aufhebung
+
+Grad: 7
+Schule: Veränderung
+Reichweite: 12 m
+Dauer: Sofort
+Zeitaufwand: 5
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Der rubinrote Strahl der Aufhebung zerstört einen Zauberschutz beliebigen Grades. Die Zauber, die durch den Strahl gebannt werden, sind: „Geringere Zauber zurückwerfen“, „Kleinere Kugel der Unverwundbarkeit“, „Immunität gegen Zauber“, „Kugel der Unverwundbarkeit“, „Geringere Zauberabwehr“, „Zauber zurückwerfen“, „Zauberschild“, „Zauberabwehr“ und „Zauberfalle“. Es wird automatisch der Zauberschutz des höchsten Grades zerstört. Liegen zwei verschiedene Zauber des gleichen Grades auf dem Ziel, wird der betroffene Zauber zufällig ausgewählt. Magiewiderstand schützt nicht gegen diesen Zauber.~
+@25961 = ~Regenbogenstrahlen
+
+Grad: 7
+Schule: Beschwörung
+Reichweite: 18,5 m
+Dauer: Sofort
+Zeitaufwand: 7
+Bereich: 4,5 m Kegel
+Rettungswurf: Speziell
+
+Wird der Zauber gewirkt, schießen sieben glitzernde Energiestrahlen aus den Fingerspitzen des Anwenders, die in den Farben des Regenbogens leuchten. Jeder Strahl hat eine andere Auswirkung. Alle Wesen mit 8 oder weniger Trefferwürfeln, die von den Strahlen getroffen werden, sind zusätzlich zu den anderen Auswirkungen 5 Runden lang geblendet. Jedes Wesen im Wirkungsbereich wird von 1 oder 2 zufällig ermittelten Strahlen getroffen. Die Auswirkungen sind wie folgt:
+  Rot: 20 Schadenspunkte, 10 bei erfolgreichem Rettungswurf gegen Zauber
+  Orange: 40 Schadenspunkte, 20 bei erfolgreichem Rettungswurf gegen Zauber
+  Gelb: 80 Schadenspunkte, 40 bei erfolgreichem Rettungswurf gegen Zauber
+  Grün: Tod, 20 Schadenspunkte bei erfolgreichem Rettungswurf gegen Gift
+  Blau: Rettungswurf gegen Versteinerung oder „Fleisch zu Stein“
+  Indigo: Rettungswurf gegen Zauberstäbe oder „Schwachsinn“
+  Violett: Rettungswurf gegen Zauber oder „Auflösung“
+
+Hinweis: Die Gruppenmitglieder des Anwenders sind nicht von den Auswirkungen betroffen.~
+@26330 = ~Kombinierter Notfall
+
+Grad: 9
+Schule: Hervorrufung
+Reichweite: Anwender
+Dauer: Permanent (bis ausgelöst)
+Zeitaufwand: 9
+Bereich: Anwender
+Rettungswurf: Nein
+
+Der kombinierte Notfall kanalisiert einen Teil der magischen Energie des Anwenders und setzt diese unter bestimmten Bedingungen frei. Der Anwender wählt 3 Zauber aus und setzt dann eine Bedingung fest, wann diese 3 Zauber ausgelöst werden. Eine Bedingung wäre beispielsweise, wenn der Anwender von einem Feind verletzt wird. Alle 3 Zauber werden augenblicklich gewirkt, wenn die Bedingung eintritt. Die 3 Zauber müssen den 8. oder einen niedrigeren Grad haben.~
+@33146 = ~Mumie~
+@33147 = ~Mumie~
+@34594 = ~Zauber zurückwerfen~
+@34597 = ~Rubinroter Strahl der Aufhebung~
+@34606 = ~Regenbogenstrahlen~
+@34607 = ~Wort der Macht: Betäubung~
+@34618 = ~Scheusal beschwören~
+@34619 = ~Verbesserter Schutzmantel~
+@34631 = ~Tor~
+@34634 = ~Kombinierter Notfall~
+@34638 = ~Wort der Macht: Tod~
+@36936 = ~Ein Notfallzauber wurde ausgelöst.~
+@37621 = ~Höhere Mumie~
+@37688 = ~Höhere Mumie~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~Von einer üblen Krankheit befallen~
+@39957 = ~Symbol der Betäubung
+
+Grad: 8
+Schule: Beschwörung
+Reichweite: 27,5 m
+Dauer: Speziell
+Zeitaufwand: 9
+Bereich: 3,5 m Radius
+Rettungswurf: Ja (gg. Zauber)
+
+Mithilfe dieses mächtigen Zaubers kann der Anwender ein Symbol auf den Erdboden oder eine beliebige andere Oberfläche zeichnen. Das Symbol bleibt an diesem Ort, bis sich jemand nähert. Dann entlädt sich seine magische Energie explosionsartig. Jeder im Wirkungsbereich muss einen Rettungswurf -4 gegen Zauber bestehen, oder er wird für 2 Runden + 1 Runde je 3 Stufen des Anwenders betäubt.~
+@46150 = ~trinkt einen Trank~
+@49103 = ~Symbol der Betäubung~
+@54337 = ~Krank~
+@56859 = ~Nimmervoller Beutel~
+@56861 = ~Nimmervoller Beutel~
+@56862 = ~Nimmervoller Beutel~
+@60376 = ~Es gibt noch viel zu tun!~ [ELHAN101]
+@60377 = ~Die Elfen werden kein leichtes Opfer für Euch sein!~ [ELHAN103]
+@60380 = ~Sterbt durch das Schwert eines Elfen!~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~Ich grüße Euch. Eure Macht ist beeindruckend.~ [EPRIM01]
+@61615 = ~Was wollt Ihr bei den wahren Gläubigen?~ [EPRIM02]
+@61616 = ~Verneigt Euch vor den Göttern und bettelt um Gnade!~ [EPRIM03]
+@61617 = ~Die Götter vergeben niemals!~ [EPRIM04]
+@61618 = ~Wenn ich mit Euch fertig bin, werdet Ihr um einen schnellen Tod winseln.~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~Gnade! Lasst Gnade walten!~ [EPRIM08]
+@61643 = ~Ich mag Leute wie Euch eigentlich nicht, aber … guten Tag trotzdem.~ [NOBFE03]
+@61644 = ~Ist es denn wichtig, Bauer?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~Verschwindet! Rührt mich nicht an!~ [NOBFE09]
+@61710 = ~Ihr seid mir mehr als willkommen.~ [GPRIF01]
+@61711 = ~Seid mir gegrüßt, und fest im Glauben.~ [GPRIF02]
+@61712 = ~Mein Gott wacht über uns und beschützet uns alle, in Ewigkeit.~ [GPRIF03]
+@61713 = ~Ich bin hier, um zu dienen.~ [GPRIF04]
+@61715 = ~Ihr seid eine Beleidigung all des Guten, an das ich glaube!~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~Hinfort! Weiche von mir!~ [GPRIF08]
+@61724 = ~Ich strecke Euch die Hand zum Gruße entgegen.~ [GPRIM01]
+@61725 = ~Ich nehme an, Ihr seid hier, um Euren Glauben zu festigen.~ [GPRIM02]
+@61726 = ~Mögen die Götter Euch gnädig gesonnen sein.~ [GPRIM03]
+@61727 = ~Hier sind alle willkommen, die stark im Glauben sind.~ [GPRIM04]
+@61729 = ~Die Gerechtigkeit kommt schnell und endgültig über Euch!~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~Mögen die Götter mich beschützen!~ [GPRIM08]
+@61766 = ~Es gibt viele Arten, mit Leuten wie Euch fertig zu werden.~ [HVILLF01]
+@61767 = ~Ihr werdet den Sonnenuntergang nicht mehr erleben!~ [HVILLF02]
+@61768 = ~Ich habe genug von Euch!~ [HVILLF03]
+@61769 = ~Ihr werdet bekommen, was Ihr verdient habt!~ [HVILLF04]
+@61770 = ~Ihr werdet jetzt sterben!~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~Dann eben ein anderes Mal!~ [HVILLF08]
+@61808 = ~Ist es wichtig?~ [PEASM203]
+@61809 = ~Solange Ihr kein Steuereintreiber seid …~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~Meine Zeit ist knapp bemessen, also fasst Euch kurz.~ [NOBMA03]
+@61836 = ~Mein blaues Blut gibt mir das Recht.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~Ich … Ich muss fliehen!~ [NOBMA09]
+@61862 = ~Sagt, was Ihr von mir wollt.~ [SOLM01]
+@61863 = ~Stört mich nicht bei der Ausübung meiner Pflichten.~ [SOLM02]
+@61864 = ~Steht bequem, Bürger.~ [SOLM03]
+@61865 = ~Ich gehe davon aus, dass Ihr keine feindlichen Absichten hegt.~ [SOLM04]
+@61866 = ~Mal sehen, wie Euch kalter Stahl gefällt!~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~Rückzug!~ [SOLM08]
+@61871 = ~Einen guten Tag.~ [SOLF02]
+@61872 = ~Ich diene mit meinem Schwert.~ [SOLF03]
+@61873 = ~Stellt nichts Blödes an, dann kriegt Ihr auch keinen Ärger.~ [SOLF04]
+@61874 = ~Kreuzt die Klinge mit mir und sterbt!~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~Zurückziehen … ich muss mich zurückziehen!~ [SOLF08]
+@61883 = ~Sprecht, wenn Ihr mögt.~ [STHMA02]
+@61884 = ~Sucht Ihr etwas Bestimmtes?~ [STHMA03]
+@61885 = ~Sagt, was Ihr wollt, aber macht es kurz.~ [STHMA04]
+@61886 = ~Bettelt ein wenig, dann gönne ich Euch einen schnellen Tod.~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~Ich muss … zurück in den Schatten!~ [STHMA09]
+@61901 = ~Bleibt zurück, oder Ihr werdet es bereuen!~ [RUFFIA01]
+@61902 = ~Für ein Kupferstück breche ich jemandem einen Arm oder ein Bein.~ [RUFFIA02]
+@61903 = ~Ah, verzieht Euch bloß!~ [RUFFIA03]
+@61904 = ~Ihr seid ganz schön hartnäckig.~ [RUFFIA04]
+@61905 = ~Na gut, Ihr gegen mich! Na los, kommt schon!~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~Ich ergeb mich! Hört auf!~ [RUFFIA08]
+@61993 = ~Die Freude ist wie üblich ganz meinerseits.~ [GNFEM01]
+@61994 = ~Verärgert mich nicht.~ [GNFEM02]
+@61995 = ~Dafür werdet Ihr bezahlen, teuer bezahlen!~ [GNFEM03]
+@61996 = ~Kostet den Schmerz!~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06]
+@64285 = ~Scharfer Schnitt~
+@68099 = ~Cornugon~
+@68100 = ~Cornugon~
+@73062 = ~Seid gegrüßt! Wie geht es Euch?~ [GORCAM01]
+@73063 = ~Das habt Ihr Euch selbst zuzuschreiben!~ [GORCAM02]
+@73064 = ~Ach Quatsch!~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~Ihr könnt diesen Zauber nicht auslösen, bevor die Wirkung des aktuellen Zaubers aufgehört hat.~
+@93789 = ~Streitaxt +2~
+@93792 = ~Lederrüstung +2~

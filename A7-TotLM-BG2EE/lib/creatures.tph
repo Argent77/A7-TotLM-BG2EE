@@ -9,6 +9,15 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/cre~ ~^.+\.cre$~ BEGIN
         LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
         WRITE_LONG ofs new_strref
       END
+      // sound slot strrefs
+      FOR (i = 0; i < 100; ++i) BEGIN
+        SET ofs = 0xa4 + i*4
+        READ_LONG ofs old_strref
+        PATCH_IF (old_strref > 0) BEGIN
+          LPF GET_UPDATED_STRREF INT_VAR old_strref RET new_strref END
+          WRITE_LONG ofs new_strref
+        END
+      END
 
       // updating known spells
       READ_LONG 0x2a0 ofs_known

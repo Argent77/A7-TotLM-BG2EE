@@ -2,30 +2,37 @@
 
 COMPILE ~%MOD_FOLDER%/bcs~
 COMPILE EVAL ~%MOD_FOLDER%/dlg~
-COMPILE EVAL ~%MOD_FOLDER%/interjections~
 
-// Prevent specific events from triggering during TotLM quest
-ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN
-  ~baldur~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~aerie~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~anomen~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~cernd~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~edwin~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~jaheira~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~jan~       => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~keldorn~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~korgan~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~mazzy~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~minsc~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~nalia~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-  ~yoshimo~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
-END
+ACTION_IF (GAME_IS ~bgee~ && GAME_INCLUDES ~sod~) BEGIN
+  // SoD only
+  COMPILE EVAL ~%MOD_FOLDER%/interjections/interjections_sod.d~
+END ELSE BEGIN
+  COMPILE EVAL ~%MOD_FOLDER%/interjections/interjections.d~
 
-OUTER_TEXT_SPRINT bcs_quest_check ~OR(2) GlobalLT("ID#Master_Quest","GLOBAL",1) GlobalGT("ID#Master_Quest","GLOBAL",6)~
-ACTION_PHP_EACH area_checks AS script => search BEGIN
-  COPY_EXISTING ~%script%.bcs~ ~override~
-    DECOMPILE_AND_PATCH BEGIN
-      REPLACE_TEXTUALLY ~%search%~ ~%bcs_quest_check% \1~
-    END
-  BUT_ONLY IF_EXISTS
+  // Prevent specific events from triggering during TotLM quest
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY area_checks BEGIN
+    ~baldur~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~aerie~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~anomen~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~cernd~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~edwin~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~jaheira~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~jan~       => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~keldorn~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~korgan~    => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~mazzy~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~minsc~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~nalia~     => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+    ~yoshimo~   => ~\(!Global("Chapter","GLOBAL",%bg2_chapter_4%)\)~
+  END
+
+  OUTER_TEXT_SPRINT bcs_quest_check ~OR(2) GlobalLT("ID#Master_Quest","GLOBAL",1) GlobalGT("ID#Master_Quest","GLOBAL",6)~
+  ACTION_PHP_EACH area_checks AS script => search BEGIN
+    COPY_EXISTING ~%script%.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY ~%search%~ ~%bcs_quest_check% \1~
+      END
+    BUT_ONLY IF_EXISTS
+  END
+
 END

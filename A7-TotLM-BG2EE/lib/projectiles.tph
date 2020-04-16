@@ -52,7 +52,7 @@ END
 
 
 // Generate list of original projectile resref -> id mappings
-COPY - ~%MOD_FOLDER%/pro/projectl-iwd.ids~ ~override~
+COPY ~%MOD_FOLDER%/pro/projectl-iwd.ids~ ~%MOD_FOLDER%/pro/projectl-iwd.ids~
   CLEAR_ARRAY ~pro_items~
   READ_2DA_ENTRIES_NOW ~pro_items~ 2
   FOR (row = 0; row < pro_items; ++row) BEGIN
@@ -61,6 +61,7 @@ COPY - ~%MOD_FOLDER%/pro/projectl-iwd.ids~ ~override~
     TO_UPPER ~res~
     SET $projectl_old(~%res%~) = id
   END
+BUT_ONLY
 
 // Translate old to new projectile IDs ($map_projectl(~old_id~) = new_id)
 ACTION_BASH_FOR ~%MOD_FOLDER%/pro~ ~^.+\.pro$~ BEGIN
@@ -106,13 +107,13 @@ END
 
 
 // Update clearair.2da
-COPY - ~%MOD_FOLDER%/2da/clearair-append.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/clearair-append.2da~ ~%MOD_FOLDER%/2da/clearair-append.2da~
   CLEAR_ARRAY ~src_table~
   COUNT_2DA_COLS src_numCols
   READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
 BUT_ONLY
 
-COPY_EXISTING - ~clearair.2da~ ~override~
+COPY_EXISTING ~clearair.2da~ ~override~
   CLEAR_ARRAY ~dst_table~
   CLEAR_ARRAY ~dst_clearair~
   COUNT_2DA_COLS dst_numCols

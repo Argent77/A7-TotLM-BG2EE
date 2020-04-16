@@ -28,7 +28,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     UseItem("POTN52",Myself)
-    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
     SetInterrupt(TRUE)
   RESPONSE #50
     Continue()
@@ -46,7 +46,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     UseItem("POTN10",Myself)
-    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
     SetInterrupt(TRUE)
   RESPONSE #50
     Continue()
@@ -63,7 +63,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     UseItem("POTN10",Myself)
-    DisplayStringHead(Myself,46150)  // *quaffs a potion*
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
     SetInterrupt(TRUE)
   RESPONSE #50
     Continue()

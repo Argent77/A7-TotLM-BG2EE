@@ -1,0 +1,302 @@
+// Strings from BG2:EE
+@334 = ~Entangled~
+@1121 = ~Minotaur~
+@1122 = ~Minotaur~
+@1280 = ~Stunned~
+@2613 = ~Wight~
+@2614 = ~Wight~
+@2619 = ~Fear~
+@2624 = ~Cause Serious Wounds~
+@2628 = ~Disintegrate~
+@2662 = ~Beholder~
+@2663 = ~Beholder~
+@2665 = ~Death Ray~
+@2826 = ~Iron Golem~
+@2827 = ~Iron Golem~
+@2867 = ~Earth Elemental~
+@2871 = ~Earth Elemental~
+@2873 = ~Fire Elemental~
+@2874 = ~Fire Elemental~
+@2881 = ~Djinni~
+@2882 = ~Djinni~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Umber Hulk~
+@3021 = ~Umber Hulk~
+@7618 = ~Improved Mantle
+(Abjuration) 
+
+Level: 8
+Range: 0
+Duration: 4 rounds
+Casting Time: 1
+Area of Effect: The caster
+Saving Throw: None 
+
+When the spell is cast, it confers complete invulnerability to all weapons of +3 or lower enchantment. This spell is incredibly powerful, yet has a very short duration, and this, combined with its very short casting time, makes Improved Mantle useful only in the thick of intense combat. This spell will not work in conjunction with Protection From Magical Weapons. This effect lasts for the duration of the spell or until dispelled.~
+@7621 = ~Death Fog~
+@7622 = ~Death Fog
+(Evocation)
+
+Level: 6
+Range: 30 ft.
+Duration: 1 turn
+Casting Time: 6
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+The casting of a Death Fog spell creates an area of solid fog that has the additional property of being highly acidic. All animal life not immune to acid suffers 8 points of damage for each round they are exposed to the vapors of the Death Fog. Death Fog will also instantly kill all summoned creatures, regardless of their Hit Dice and immunities.~
+@7665 = ~Finger of Death~
+@7672 = ~Finger of Death
+(Necromancy)
+
+Level: 7
+Range: Visual range of the caster 
+Duration: Permanent
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: Neg.
+
+The Finger of Death spell snuffs out the victim's life force. The caster points <PRO_HISHER> finger at the victim after the incantation is complete, effectively ripping the life out of its body unless a Save vs. Spell is made with a -2 penalty. A creature that successfully saves still receives 2d8+1 points of damage.~
+@7782 = ~Power Word, Stun
+(Conjuration/Summoning)
+
+Level: 7
+Range: Visual range of the caster 
+Duration: Special
+Casting Time: 1 
+Area of Effect: 1 creature 
+Saving Throw: None
+
+When a Power Word, Stun spell is uttered, any creature of the Mage's choice within visual range is stunned for the duration depending on its current Hit Points: 
+ 1 to 29 Hit Points: Stunned for 4d4 rounds; 
+ 30 to 59 Hit Points: Stunned for 2d4 rounds; 
+ 60 to 89 Hit Points: Stunned for 1d4 rounds; 
+ 90 or more Hit Points: unaffected.
+Note that if a creature is weakened so that its Hit Points are below its usual maximum, the current number of Hit Points is used to determine this spell's effects.~
+@8364 = ~Dominated~
+@10554 = ~Undead destroyed~
+@10685 = ~The Genie's Flask~
+@10872 = ~Spell Turning
+(Abjuration)
+
+Level: 7
+Range: 0
+Duration: 3 rounds/level
+Casting Time: 7
+Area of Effect: The caster
+Saving Throw: None
+
+This powerful Abjuration spell causes the spells cast against the wizard to rebound upon the original caster. This affects a total of 12 spell levels—including spells cast from scrolls and innate spell-like abilities—but excludes the following: area effects that are not centered directly upon the wizard, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wizard, it will be reflected back upon the caster as long as there are levels remaining. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be reflected while canceling the Spell Turning. This spell will not protect the caster from Dispel Magic, but it will not be dispelled by Dispel Magic either.~
+@14665 = ~Petrified~
+@15326 = ~The Genie's Flask~
+@16109 = ~Teleport~
+@17352 = ~Gate
+(Conjuration/Summoning) 
+
+Level: 9
+Range: 30 ft.
+Duration: 33 rounds
+Casting Time: 9
+Area of Effect: Special 
+Saving Throw: None 
+
+By means of this spell, the caster calls an outer-planar creature—the pit fiend—to attack <PRO_HISHER> foes as well as <PRO_HIMHER>self, if <PRO_HESHE>'s not careful. The caster must use a Protection From Evil spell on <PRO_HIMHER>self (and comrades) to keep the devil from noticing <PRO_HIMHER>. If the caster fails to protect <PRO_HIMHER>self in this manner, the pit fiend will tear the caster and <PRO_HISHER> companions apart piece by piece, then feast on the remains.~
+@17361 = ~Summon Fiend
+(Conjuration/Summoning) 
+
+Level: 8
+Range: Visual range of the caster 
+Duration: 15 rounds
+Casting Time: 9
+Area of Effect: Special
+Saving Throw: None 
+
+More powerful than the 7th-level variant, casting this Cacofiend spell summons a frenzied demon or devil. This fiend will attack everyone in the area who is not protected by a Protection From Evil spell. Only desperate or suicidal wizards use this spell.~
+@18140 = ~Power Word, Kill
+(Conjuration/Summoning) 
+
+Level: 9
+Range: Visual range of the caster 
+Duration: Instant
+Casting Time: 1 
+Area of Effect: 1 creature 
+Saving Throw: None
+
+When a Power Word, Kill spell is uttered, one creature within the spell range is slain. The creature must have 60 or fewer current Hit Points, otherwise the spell has no effect. There is no Saving Throw.~
+@25946 = ~Ruby Ray Of Reversal
+(Alteration)
+
+Level: 7
+Range: 40 ft.
+Duration: Instant
+Casting Time: 5
+Area of Effect: 1 creature
+Saving Throw: None
+
+When this spell is cast, it dispels one spell protection of any level affecting the target creature. The spells affected by Ruby Ray Of Reversal are Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Globe Of Invulnerability, Minor Spell Deflection, Spell Turning, Spell Shield, Spell Deflection, and Spell Trap. This will always remove the highest-level spell protection affecting the target; if more than one same-level protection is active on the target simultaneously, one of them will be randomly chosen and dispelled. The target's Magic Resistance, if any, does not affect this spell.~
+@25961 = ~Prismatic Spray
+(Conjuration/Summoning)
+
+Level: 7
+Range: 60 ft.
+Duration: Instant
+Casting Time: 7
+Area of Effect: 14-ft.-long cone 
+Saving Throw: Special
+
+When casting this spell, the wizard causes seven shimmering multicolored rays of light to flash from <PRO_HISHER> hand, portraying all colors of the visible spectrum. Any creature with fewer than 8 Hit Dice struck by a ray is blinded for 5 rounds, regardless of any other effect. All creatures caught within the area of effect will be touched by 1 or 2 of the rays, each of which has a different power and purpose:
+
+  Red — Inflicts 20 points of damage; Save vs. Spell for half.
+  Orange — Inflicts 40 points of damage; Save vs. Spell for half.
+  Yellow — Inflicts 80 points of damage; Save vs. Spell for half.
+  Green — Save vs. Poison or die; survivors take 20 points of poison damage.
+  Blue — Save vs. Petrification or be turned to stone.
+  Indigo — Save vs. Wand or be feebleminded.
+  Violet — Save vs. Spell or be disintegrated.~
+@26330 = ~Chain Contingency
+(Evocation) 
+
+Level: 9
+Range: 0
+Duration: Permanent until triggered
+Casting Time: 9
+Area of Effect: The caster
+Saving Throw: None 
+
+Chain Contingency channels some of the magical energy of the wizard and releases it only under certain circumstances. The wizard chooses three spells that will be released under certain conditions, such as being hit by an enemy. When this condition occurs, all three spells are cast immediately. Spells of 8th level or lower may be used in the contingency.~
+@33146 = ~Mummy~
+@33147 = ~Mummy~
+@34594 = ~Spell Turning~
+@34597 = ~Ruby Ray of Reversal~
+@34606 = ~Prismatic Spray~
+@34607 = ~Power Word, Stun~
+@34618 = ~Summon Fiend~
+@34619 = ~Improved Mantle~
+@34631 = ~Gate~
+@34634 = ~Chain Contingency~
+@34638 = ~Power Word, Kill~
+@36936 = ~A contingency spell has been triggered~
+@37621 = ~Greater Mummy~
+@37688 = ~Greater Mummy~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~Stricken by a foul disease~
+@39957 = ~Symbol, Stun
+(Conjuration/Summoning)
+
+Level: 8
+Range: 90 ft. 
+Duration: Special
+Casting Time: 9
+Area of Effect: 12-ft. radius
+Saving Throw: Neg.
+
+Symbol, Stun is a powerful enchantment that allows the wizard to inscribe a symbol on the ground or any other surface. The symbol will remain there until someone comes too close, at which point it will explode, causing all those within the area to make a Save vs. Spell at a -4 penalty or be stunned for 2 rounds + 1 round for every 3 levels of the caster.~
+@39968 = ~Spell Trigger—Fired~
+@46150 = ~*quaffs a potion*~
+@49103 = ~Symbol, Stun~
+@54337 = ~Diseased~
+@56859 = ~Bag of Holding~
+@56861 = ~Bag of Holding~
+@56862 = ~Bag of Holding~
+@60376 = ~There is much to be done yet.~ [ELHAN101]
+@60377 = ~You shall not find the elves a simple target!~ [ELHAN103]
+@60380 = ~Die on the edge of elven steel!~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~Greetings. Your power impresses.~ [EPRIM01]
+@61615 = ~What do you want amongst the faithful?~ [EPRIM02]
+@61616 = ~Bow down before the gods and beg for mercy!~ [EPRIM03]
+@61617 = ~The gods are unforgiving, fool!~ [EPRIM04]
+@61618 = ~You will pray for death when I am done with you!~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~Mercy! Have mercy!~ [EPRIM08]
+@61643 = ~I don't usually speak to the likes of you, but... hello!~ [NOBFE03]
+@61644 = ~Is it important, peasant?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~Away with you! Do not touch me!~ [NOBFE09]
+@61710 = ~You are more than welcome in my sight.~ [GPRIF01]
+@61711 = ~You have my greetings, faithful one.~ [GPRIF02]
+@61712 = ~My god protects me and watches us all.~ [GPRIF03]
+@61713 = ~I am here to serve.~ [GPRIF04]
+@61715 = ~You are an affront to all I believe in!~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~Fiend! Fiend!~ [GPRIF08]
+@61724 = ~I welcome you with outstretched hand.~ [GPRIM01]
+@61725 = ~I trust you are here in good faith.~ [GPRIM02]
+@61726 = ~May the gods look upon you kindly.~ [GPRIM03]
+@61727 = ~All of the faithful are welcome here.~ [GPRIM04]
+@61729 = ~Justice shall be swift and final!~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~May the gods protect me!~ [GPRIM08]
+@61766 = ~There are many ways of dealing with such as you.~ [HVILLF01]
+@61767 = ~You won't outlive the day.~ [HVILLF02]
+@61768 = ~I've seen just about enough of you.~ [HVILLF03]
+@61769 = ~You'll get what you deserve right quick.~ [HVILLF04]
+@61770 = ~I'll have you dead!~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~Another time, then.~ [HVILLF08]
+@61808 = ~Is this important?~ [PEASM203]
+@61809 = ~As long as ye're not the taxman...~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~My time is quick, so be brief, commoner.~ [NOBMA03]
+@61836 = ~By my blood, I possess the right.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~I... I must flee!~ [NOBMA09]
+@61862 = ~Declare yourself!~ [SOLM01]
+@61863 = ~Do not disturb my duties.~ [SOLM02]
+@61864 = ~At ease, citizen.~ [SOLM03]
+@61865 = ~I trust you have no hostile intentions.~ [SOLM04]
+@61866 = ~I'll test your mettle with cold steel!~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~Retreat!~ [SOLM08]
+@61871 = ~Good day to you.~ [SOLF02]
+@61872 = ~I serve with my blade.~ [SOLF03]
+@61873 = ~Do nothing stupid and there'll be no problems.~ [SOLF04]
+@61874 = ~Cross blades with me and die!~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~Back... I must fall back!~ [SOLF08]
+@61883 = ~Speak, if you will.~ [STHMA02]
+@61884 = ~Is there something you seek?~ [STHMA03]
+@61885 = ~Explain your intent, and make it good!~ [STHMA04]
+@61886 = ~Beg for death, and I'll make it quick!~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~Must... return to the shadows!~ [STHMA09]
+@61901 = ~Stay back, or you'll regret it.~ [RUFFIA01]
+@61902 = ~I can break an arm or a leg fer a copper or two.~ [RUFFIA02]
+@61903 = ~Ahhh, be off with ya.~ [RUFFIA03]
+@61904 = ~Ye're a piece o' iron, you are.~ [RUFFIA04]
+@61905 = ~All right! You and me! Let's go!~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~I give! I give!~ [RUFFIA08]
+@61993 = ~As always, the pleasure is mine.~ [GNFEM01]
+@61994 = ~Do not anger me.~ [GNFEM02]
+@61995 = ~You shall pay for this, and pay dearly.~ [GNFEM03]
+@61996 = ~Suffer!~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06]
+@64285 = ~Vorpal Hit~
+@68099 = ~Cornugon~
+@68100 = ~Cornugon~
+@73062 = ~Greetings! How do you do?~ [GORCAM01]
+@73063 = ~You brought this on yourselves!~ [GORCAM02]
+@73064 = ~Oh, piffle.~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~You cannot cast this spell until the current casting has run out.~
+@93789 = ~Battle Axe +2~
+@93792 = ~Leather Armor +2~

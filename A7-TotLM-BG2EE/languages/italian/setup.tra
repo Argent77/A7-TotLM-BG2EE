@@ -1,12 +1,15 @@
 // -*- coding: us-ascii -*- 
 // Setup (index >= 1000000)
-@1000000 = ~Trials of the Luremaster per BG2:EE~
-@1000050 = ~Rendi gli incantesimi di IWD disponibili per il giocatore~
+@1000000 = ~Trials of the Luremaster per Baldur's Gate~
 @1000100 = ~Riequilibra armi ed equipaggiamento~
+@1000200 = ~Riduci esperienza ottenuta da mostri e missioni~
+@1000201 = ~Reduci del 25 percento~
+@1000202 = ~Reduci del 50 percento~
+@1000203 = ~Reduci del 75 percento~
+@1000204 = ~Non conferire esperienza~
 
-
-@1100000 = ~Richiede BG2:EE o EET.~
-@1100001 = ~Richiede BG2:EE con patch 2.0 o successive.~
+@1100000 = ~SoD, BG2:EE or EET.~
+@1100001 = ~Richiede che il gioco sia aggiornato alla patch 2.0 o successive.~
 @1100002 = ~Richiede che la componente principale sia installata.~
 @1100003 = ~Caratteristica installata da un'altra mod.~
 @1100004 = ~Impossibile trovare la lista degli incantesimi di IWD installati. Nessuna modifica apportata.~

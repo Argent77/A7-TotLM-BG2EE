@@ -1,3 +1,4 @@
+// Return to SoA - Umar Hills
 IF
   True()
 THEN
@@ -5,7 +6,7 @@ THEN
     CutSceneId(Player1)
     MultiPlayerSync()
     SetGlobal("ID#LURE","GLOBAL",2)
-    SetGlobal("ID#RETURN_TO_UMARHILLS","GLOBAL",0)
+    // SetGlobal("ID#RETURN_TO_UMARHILLS","GLOBAL",0)
     SetGlobal("ID#Master_Quest","GLOBAL",7)
     EraseJournalEntry(@27047)
     EraseJournalEntry(@27071)

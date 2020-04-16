@@ -81,7 +81,9 @@ END
 
 IF ~~ THEN BEGIN 11
   SAY @26951
-  IF ~~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("cyHobTel")~ EXIT
+  IF ~AreaCheck("BD3000")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutScene("cyHobTel")~ EXIT
+  IF ~AreaCheck("AR5501")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutScene("cyHobTel")~ EXIT
+  IF ~!AreaCheck("BD3000") !AreaCheck("AR5501")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("cyHobTel")~ EXIT
 END
 
 IF WEIGHT #0 ~NumTimesTalkedToGT(0) Global("ID#Master_Quest","GLOBAL",0)~ THEN BEGIN 12

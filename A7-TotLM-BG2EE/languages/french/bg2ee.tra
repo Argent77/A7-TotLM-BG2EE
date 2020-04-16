@@ -1,0 +1,297 @@
+// Strings from BG2:EE
+@334 = ~Enchevêtré(e)~
+@1121 = ~Minotaure~
+@1122 = ~Minotaure~
+@1280 = ~Étourdi(e)~
+@2613 = ~Nécrophage~
+@2614 = ~Nécrophage~
+@2619 = ~Peur~
+@2624 = ~Blessures graves~
+@2628 = ~Désintégration~
+@2662 = ~Spectateur~ [elder]
+@2663 = ~Spectateur~ [elder]
+@2665 = ~Rayon de mort~
+@2826 = ~Golem de fer~
+@2827 = ~Golem de fer~
+@2867 = ~Élémentaire de terre~
+@2871 = ~Élémentaire de terre~
+@2873 = ~Élémentaire de feu~
+@2874 = ~Élémentaire de feu~
+@2881 = ~Djinn~
+@2882 = ~Djinn~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Ombre des roches~
+@3021 = ~Ombre des roches~
+@7618 = ~Manteau amélioré
+(Abjuration)
+
+Niveau : 8
+Portée : personnelle
+Durée : 4 rounds 
+Temps d'incantation : 1
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce sort confère une invulnérabilité totale contre les armes à l'exception des armes enchantées ayant un bonus supérieur ou égal à +4. Ce sort étant incroyablement puissant, sa durée est très limitée dans le temps. Le temps d'incantation est par contre très court permettant ainsi de gagner quelques précieuses secondes de répit pendant un combat. Il convient également de noter qu'il est impossible de combiner ce sort avec une Protection contre les armes magiques. Ses effets se prolongent jusqu'à son expiration naturelle ou sa dissipation par une source extérieure.~
+@7621 = ~Brume mortelle~
+@7622 = ~Brume mortelle
+(Invocation)
+
+Niveau : 6
+Portée : 9 mètres
+Durée : 1 tour 
+Temps d'incantation : 6
+Zone d'effet : rayon de 9 mètres 
+Jet de sauvegarde : aucun 
+
+Ce sort crée une zone de brouillard opaque hautement acide. Toute vie animale non immunisée contre l'acide subit 8 points de dégâts par round passé dans la Brume mortelle. Ce sort tue instantanément toutes les créatures convoquées, quels que soient leurs dés de vie ou leurs immunités.~
+@7665 = ~Doigt de mort~
+@7672 = ~Doigt de mort
+(Nécromancie)
+
+Niveau : 7
+Portée : champ visuel du lanceur
+Durée : permanente
+Temps d'incantation : 5
+Zone d'effet : 1 créature
+Jet de sauvegarde : annule
+
+Le Doigt de mort absorbe la force vitale de la victime. Le lanceur doit pointer son doigt en direction de la victime une fois l'incantation terminée. Si la cible rate son jet de sauvegarde contre les sorts à -2, elle est tuée instantanément. Si elle le réussit, elle subit malgré tout 2d8+1 points de dégâts.~
+@7782 = ~Mot de pouvoir : étourdissement
+(Conjuration/Convocation)
+
+Niveau : 7
+Portée : champ visuel du lanceur
+Durée : spéciale
+Temps d'incantation : 1
+Zone d'effet : 1 créature
+Jet de sauvegarde : aucun
+
+Lorsqu'un Mot de pouvoir, étourdissement est prononcé, la créature ciblée par ce sort est étourdie. La durée est fonction du nombre de points de vie de la cible. Les créatures ayant de 1 à 29 points de vie sont étourdies pendant 4d4 rounds, celles ayant de 30 à 59 points pendant 2d4 rounds et celles ayant de 60 à 89 points pendant 1d4 rounds. Au-delà de 90 points de vie, les créatures sont immunisées contre ce sort. Note : on utilise le nombre de points de vie actuel pour déterminer les effets du sort.~
+@8364 = ~Dominé(e)~
+@10554 = ~Mort-vivant détruit~
+@10685 = ~Fiole du Génie~
+@10872 = ~Renvoi des sorts
+(Abjuration)
+
+Niveau : 7
+Portée : personnelle
+Durée : 3 rounds par niveau
+Temps d'incantation : 7
+Zone d'effet : le lanceur
+Jet de sauvegarde : aucun
+
+Ce puissant sort d'abjuration fait "rebondir" les sorts lancés sur le magicien et les renvoie à leur expéditeur, y compris ceux provenant de parchemins ou de compétences semblables aux sorts. Il peut au total renvoyer jusqu'à 12 niveaux de sorts, par exemple : 4 sorts de 3ème niveau, ou 1 sort de 6ème et un sort de 7ème, etc. Les sorts de zone stationnaires ou non-centrés sur le magicien protégé, comme le Nuage puant ou le Nuage mortel par exemple, ne sont pas renvoyés. Le sort doit être lancé spécifiquement sur le magicien pour qu'il soit retourné à son expéditeur. Notez que même s'il ne reste qu'un seul niveau et qu'un sort de niveau 3 - par exemple - est lancé sur le magicien, il sera repoussé en même temps que la dissipation de la protection. Ce sort ne protège pas son lanceur d'une dissipation magique.~
+@14665 = ~Pétrifié(e)~
+@15326 = ~Fiole du Génie~
+@16109 = ~Téléportation~
+@17352 = ~Portail
+(Conjuration, Convocation)
+
+Niveau : 9
+Portée : champ visuel du magicien 
+Durée : 33 rounds
+Temps d'incantation : 9
+Zone d'effet : spéciale
+Jet de sauvegarde : aucun
+
+Grâce à ce sort, le magicien invoque un monstre des plans extérieurs - le diantrefosse, l'un des plus puissants démons connus - afin qu'il attaque ses ennemis. S'il ne s'abrite pas derrière un sort de Protection contre le mal, le démon risque de se retourner contre le magicien et ses camarades.~
+@17361 = ~Convocation de fiélon
+(Conjuration/Convocation)
+
+Niveau : 8
+Portée : champ visuel du magicien
+Durée : 15 rounds
+Temps d'incantation : 9
+Zone d'effet : spéciale
+Jet de sauvegarde : aucun 
+
+Ce sort est une version plus musclée du sort de niveau 7, Cacofiélon. Il invoque un démon fou de rage détruisant tout sur son passage. Il attaquera tous ceux qui se trouvent à proximité à l'exception des créatures protégées contre le mal. Seuls les magiciens suicidaires ou vraiment désespérés font appel à ce sort.~
+@18140 = ~Mot de pouvoir mortel
+(Conjuration/Convocation)
+
+Niveau : 9
+Portée : champ visuel du magicien 
+Durée : instantanée
+Temps d'incantation : 1 
+Zone d'effet : 1 créature
+Jet de sauvegarde : aucun
+
+Lorsqu'un Mot de pouvoir mortel est prononcé, une créature située dans la zone d'effet du sort est brusquement abattue. Ce mot de pouvoir est capable de tuer toute créature ayant 60 points de vie ou moins (on se base sur le nombre de points de vie ACTUELS de la créature pour évaluer les effets de ce sort). Aucun jet de sauvegarde n'est autorisé. Si la cible à plus de 60 points de vie, ce mot de pouvoir n'a aucun effet sur elle.~
+@25946 = ~Rayon rubis d'inversion
+(Altération)
+
+Niveau : 7
+Portée : champ visuel du lanceur
+Durée : Instantanée
+Temps d'incantation : 5
+Zone d'effet : Cible
+Jet de Sauvegarde : aucun
+
+Ce sort annule l'un des sorts de protection de la cible. Les sorts affectés sont les suivants : Déviation de sorts mineure, Globe mineur d'invulnérabilité, Immunité aux sorts, Globe d'invulnérabilité, Renvoi de sorts mineurs, Renvoi de sorts, Bouclier de sorts, Bouclier des archontes, Déviation de sorts et Piège à sorts. La résistance magique de la cible est ignorée. Le sort annulé sera toujours celui du plus haut niveau (s'il y en a plusieurs, le sort est choisi au hasard).~
+@25961 = ~Vaporisation prismatique
+(Convocation/Conjuration)
+
+Niveau : 7
+Portée : 20 m
+Durée : Instantanée
+Temps d'incantation : 7
+Zone d'effet : cône long de 25 m
+Jet de Sauvegarde : spécial
+
+Ce sort crée 7 rayons de lumière colorée à partir de sa main. Chaque rayon a une couleur et un effet déterminé. Toute créature de moins de 8 Dés de vie touchée par un rayon est aveuglée pour 5 rounds, sans compter les autres effets. Toute créature dans la zone d'effet sera touchée par un ou deux rayons.
+
+Rouge	- 20 points de dégâts, Jet de Sauvegarde contre les sorts pour la moitié
+Orange	- 40 points de dégâts, Jet de Sauvegarde contre les sorts pour la moitié
+Jaune	- 80 points de dégâts, Jet de Sauvegarde contre les sorts pour la moitié
+Vert	- Jet de Sauvegarde contre les poisons pour 20 points de dégâts, sinon, mort
+Bleu	- Jet de Sauvegarde contre pétrification ou transformation en pierre
+Indigo	- Jet de Sauvegarde contre baguettes ou débilité mentale
+Violet	- Jet de Sauvegarde contre sorts ou désintégration~
+@26330 = ~Chaîne de contingence
+(Évocation)
+
+Niveau : 9
+Portée : 0
+Durée : spéciale
+Temps d'incantation : 1 tour
+Zone d'effet : lanceur
+Jet de sauvegarde : non
+
+Ce sort stocke l'énergie magique du lanceur et ne la relâche que sous certaines conditions. Le magicien choisit trois sorts, qui ne sont activés que lorsque la condition spécifiée est remplie. Tous les sorts jusqu'au niveau 8 peuvent être utilisés.~
+@33146 = ~Momie~
+@33147 = ~Momie~
+@34594 = ~Renvoi des sorts~
+@34597 = ~Rayon rubis d'inversion~
+@34606 = ~Vaporisation prismatique~
+@34607 = ~Mot de pouvoir étourdissant~
+@34618 = ~Convocation d'un fiélon~
+@34619 = ~Manteau amélioré~
+@34631 = ~Portail~
+@34634 = ~Chaîne de contingence~
+@34638 = ~Mot de pouvoir mortel~
+@36936 = ~Un sort de contingence a été déclenché~
+@37621 = ~Momie majeure~
+@37688 = ~Momie majeure~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~Victime d'une grave maladie~
+@39957 = ~Symbole : étourdissement
+(Conjuration/Convocation)
+
+Niveau : 8
+Portée : 27 mètres 
+Durée : spéciale
+Temps d'incantation : 1 round
+Zone d'effet : spéciale
+Jet de sauvegarde : annule
+
+Symbole, étourdissement est un puissant enchantement qui permet au magicien d'inscrire un symbole sur le sol ou tout autre surface. Ce symbole explosera si quelqu'un s'en approche trop près, l'obligeant à réussir un jet de sauvegarde contre les sorts avec un malus de 4, sous peine d'être étourdi pendant 2 rounds + 1 round par tranche de 3 niveaux du magicien.~
+@39968 = ~Déclencheur de sorts - Lancé~
+@46150 = ~avale une potion~
+@49103 = ~Symbole Étourdissement~
+@54337 = ~Malade~
+@56859 = ~Sac de contenance~
+@56861 = ~Sac de contenance~
+@56862 = ~Sac de contenance~
+@60376 = ~ Beaucoup reste à faire.~ [ELHAN101] ~[ELHAN1 01] Beaucoup reste à faire.~ [ELHAN101]
+@60377 = ~ Vous verrez que les elfes ne sont pas des cibles faciles !~ [ELHAN103] ~[ELHAN1 03] Vous verrez que les elfes ne sont pas des cibles faciles !~ [ELHAN103]
+@60380 = ~ Goûtez à l'acier elfe !~ [ELHAN104] ~[ELHAN1 04] Goûtez à l'acier elfe !~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~ Bien le bonjour. Votre puissance est impressionnante.~ [EPRIM01] ~[EVIL PRIEST MALE 01] Bien le bonjour. Votre puissance est impressionnante.~ [EPRIM01]
+@61615 = ~ Que venez-vous chercher parmi les croyants ?~ [EPRIM02] ~[EVIL PRIEST MALE 02] Que venez-vous chercher parmi les croyants ?~ [EPRIM02]
+@61616 = ~À genoux devant les dieux, et priez pour votre vie !~ [EPRIM03]
+@61617 = ~ Fous, nos dieux sont impitoyables !~ [EPRIM04] ~[EVIL PRIEST MALE 04] Fous, nos dieux sont impitoyables !~ [EPRIM04]
+@61618 = ~ Vous me supplierez de vous achever quand j'en aurai fini avec vous !~ [EPRIM05] ~[EVIL PRIEST MALE 05] Vous me supplierez de vous achever quand j'en aurai fini avec vous !~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~ Pitié ! Pitié !~ [EPRIM08] ~[EVIL PRIEST MALE 08] Pitié ! Pitié !~ [EPRIM08]
+@61643 = ~ Je n'ai pas l'habitude de m'abaisser à parler à des personnes comme vous, mais bonjour quand même.~ [NOBFE03] ~[NOBLE FEMALE 03] Je n'ai pas l'habitude de m'abaisser à parler à des personnes comme vous, mais bonjour quand même.~ [NOBFE03]
+@61644 = ~ Est-ce important, manant ?~ [NOBFE04] ~[NOBLE FEMALE 04] Est-ce important, manant ?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~ C'en est assez ! Ne me touchez pas !~ [NOBFE09] ~[NOBLE FEMALE 09] C'en est assez ! Ne me touchez pas !~ [NOBFE09]
+@61710 = ~ Vous êtes le bienvenu ici.~ [GPRIF01] ~[FEMALE PRIEST GOOD 01] Vous êtes la bienvenue ici.~ [GPRIF01]
+@61711 = ~ Ceux qui ont la foi sont toujours accueillis avec bienveillance.~ [GPRIF02] ~[FEMALE PRIEST GOOD 01] Ceux qui ont la foi sont toujours accueillis avec bienveillance.~ [GPRIF02]
+@61712 = ~ Mon dieu nous protège et nous surveille tous.~ [GPRIF03] ~[FEMALE PRIEST GOOD 01] Mon dieu nous protège et nous surveille tous.~ [GPRIF03]
+@61713 = ~ Je suis ici pour servir.~ [GPRIF04] ~[FEMALE PRIEST GOOD 04] Je suis ici pour servir.~ [GPRIF04]
+@61715 = ~ Vous êtes une insulte envers toutes mes convictions !~ [GPRIF05] ~[FEMALE PRIEST GOOD 05] Vous êtes une insulte envers toutes mes convictions !~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~ Démon ! Démon !~ [GPRIF08] ~[FEMALE PRIEST GOOD 08] Démon ! Démon !~ [GPRIF08]
+@61724 = ~ Je vous accueille à bras ouverts.~ [GPRIM01] ~[MALE PRIEST GOOD 01] Je vous accueille à bras ouverts.~ [GPRIM01]
+@61725 = ~ J'espère que vous venez en toute bonne foi.~ [GPRIM02] ~[MALE PRIEST GOOD 02] J'espère que vous venez en toute bonne foi.~ [GPRIM02]
+@61726 = ~ Que les dieux veillent sur vous.~ [GPRIM03] ~[MALE PRIEST GOOD 03] Que les dieux veillent sur vous.~ [GPRIM03]
+@61727 = ~ Tous les croyants sont les bienvenus.~ [GPRIM04] ~[MALE PRIEST GOOD 04] Tous les croyants sont les bienvenus.~ [GPRIM04]
+@61729 = ~ Justice sera rendue vite et efficacement !~ [GPRIM05] ~[MALE PRIEST GOOD 05] Justice sera rendue vite et efficacement !~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~ Que les dieux me protègent !~ [GPRIM08] ~[MALE PRIEST GOOD 08] Que les dieux me protègent !~ [GPRIM08]
+@61766 = ~ Il existe de nombreux moyens pour s'occuper des gens comme vous !~ [HVILLF01] ~[HUMAN VILLAIN FEMALE 01] Il existe de nombreux moyens pour s'occuper des gens comme vous !~ [HVILLF01]
+@61767 = ~ Vous ne verrez pas un autre jour se lever !~ [HVILLF02] ~[HUMAN VILLAIN FEMALE 02] Vous ne verrez pas un autre jour se lever !~ [HVILLF02]
+@61768 = ~ J'en ai assez de vous voir !~ [HVILLF03] ~[HUMAN VILLAIN FEMALE 03] J'en ai assez de vous voir !~ [HVILLF03]
+@61769 = ~ Vous allez vite avoir ce que vous méritez.~ [HVILLF04] ~[HUMAN VILLAIN FEMALE 04] Vous allez vite avoir ce que vous méritez.~ [HVILLF04]
+@61770 = ~ Vous allez mourir !~ [HVILLF05] ~[HUMAN VILLAIN FEMALE 05] Vous allez mourir !~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~ Une autre fois, peut-être...~ [HVILLF08] ~[HUMAN VILLAIN FEMALE 08] Une autre fois, peut-être...~ [HVILLF08]
+@61808 = ~ C'est important ?~ [PEASM203] ~[MALE PEASANT TWO 03] C'est important ?~ [PEASM203]
+@61809 = ~ Tant que ce n'est pas le collecteur d'impôts...~ [PEASM204] ~[MALE PEASANT TWO 04] Tant que ce n'est pas le collecteur d'impôts...~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~ J'ai peu de temps, donc, soyez rapide, manant.~ [NOBMA03] ~[NOBLE MALE 03] J'ai peu de temps, donc, soyez rapide, manant.~ [NOBMA03]
+@61836 = ~ J'en ai le droit par le sang.~ [NOBMA04] ~[NOBLE MALE 04] J'en ai le droit par le sang.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~ Je... Je dois partir !~ [NOBMA09] ~[NOBLE MALE 09] Je... Je dois partir !~ [NOBMA09]
+@61862 = ~ Qui va là ? Déclinez votre identité !~ [SOLM01] ~[SOLDIER MALE 01] Qui va là ? Déclinez votre identité !~ [SOLM01]
+@61863 = ~ Ne me dérangez pas dans mon travail.~ [SOLM02] ~[SOLDIER MALE 02] Ne me dérangez pas dans mon travail.~ [SOLM02]
+@61864 = ~ Du calme, citoyen.~ [SOLM03] ~[SOLDIER MALE 03] Du calme, citoyenne.~ [SOLM03]
+@61865 = ~ J'espère que vos intentions sont honorables.~ [SOLM04] ~[SOLDIER MALE 04] J'espère que vos intentions sont honorables.~ [SOLM04]
+@61866 = ~ Voyons si votre trempe est à l'épreuve de mon épée !~ [SOLM05] ~[SOLDIER MALE 05] Voyons si votre trempe est à l'épreuve de mon épée !~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~ Repli !~ [SOLM08] ~[SOLDIER MALE 08] Repli !~ [SOLM08]
+@61871 = ~ Bonne journée.~ [SOLF02] ~[SOLDIER FEMALE 02] Bonne journée.~ [SOLF02]
+@61872 = ~ Mon épée est au service de la ville.~ [SOLF03] ~[SOLDIER FEMALE 03] Mon épée est au service de la ville.~ [SOLF03]
+@61873 = ~ Ne faites rien de stupide, si vous voulez éviter les ennuis.~ [SOLF04] ~[SOLDIER FEMALE 04] Ne faites rien de stupide, si vous voulez éviter les ennuis.~ [SOLF04]
+@61874 = ~ Si vous croisez le fer avec moi, vous mourrez !~ [SOLF05] ~[SOLDIER FEMALE 05] Si vous croisez le fer avec moi, vous mourrez !~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~ Je dois battre en retraite !~ [SOLF08] ~[SOLDIER FEMALE 08] Je dois battre en retraite !~ [SOLF08]
+@61883 = ~ Parlez s'il le faut.~ [STHMA02] ~[SHADOW THIEF MALE 02] Parlez s'il le faut.~ [STHMA02]
+@61884 = ~ Vous cherchez quelque chose ?~ [STHMA03] ~[SHADOW THIEF MALE 03] Vous cherchez quelque chose ?~ [STHMA03]
+@61885 = ~ Vous feriez mieux de trouver une bonne justification à vos actions !~ [STHMA04] ~[SHADOW THIEF MALE 04] Vous feriez mieux de trouver une bonne justification à vos actions !~ [STHMA04]
+@61886 = ~ Si vous me suppliez, votre mort sera rapide !~ [STHMA05] ~[SHADOW THIEF MALE 05] Si vous me suppliez, votre mort sera rapide !~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~ Je... je dois retourner parmi les ombres !~ [STHMA09] ~[SHADOW THIEF MALE 09] Je... je dois retourner parmi les ombres !~ [STHMA09]
+@61901 = ~ Reculez, ou vous le regretterez.~ [RUFFIA01] ~[RUFFIAN 01] Reculez, ou vous le regretterez.~ [RUFFIA01]
+@61902 = ~ Pour une pièce de cuivre, ou deux, je peux briser un bras ou une jambe.~ [RUFFIA02] ~[RUFFIAN 02] Pour une pièce de cuivre, ou deux, je peux briser un bras ou une jambe.~ [RUFFIA02]
+@61903 = ~ Ahhh, allez, du vent !~ [RUFFIA03] ~[RUFFIAN 03] Ahhh, allez, du vent !~ [RUFFIA03]
+@61904 = ~ Vous êtes en acier, ou quoi ?~ [RUFFIA04] ~[RUFFIAN 04] Vous êtes en acier, ou quoi ?~ [RUFFIA04]
+@61905 = ~ Très bien ! Vous et moi ! Allons-y !~ [RUFFIA05] ~[RUFFIAN 05] Très bien ! Vous et moi ! Allons-y !~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~ Je me rends ! Je me rends !~ [RUFFIA08] ~[RUFFIAN 08] Je me rends ! Je me rends !~ [RUFFIA08]
+@61993 = ~ Comme toujours, le plaisir est pour moi.~ [GNFEM01] ~[GENERIC FEMALE NEUTRAL 01] Comme toujours, le plaisir est pour moi.~ [GNFEM01]
+@61994 = ~ Ne m'énervez pas !~ [GNFEM02] ~[GENERIC FEMALE NEUTRAL 02] Ne m'énervez pas !~ [GNFEM02]
+@61995 = ~ Vous paierez pour ça !~ [GNFEM03] ~[GENERIC FEMALE NEUTRAL 03] Vous paierez pour ça !~ [GNFEM03]
+@61996 = ~ Ca va faire mal !~ [GNFEM04] ~[GENERIC FEMALE NEUTRAL 04] Ca va faire mal !~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06] ~[GENERIC FEMALE NEUTRAL 06]~ [PHAERE06]
+@64285 = ~Coup vorpal~
+@68099 = ~Cornugon~
+@68100 = ~Cornugon~
+@73062 = ~Bonjour ! Comment allez-vous ?~ [GORCAM01]
+@73063 = ~Vous l'aurez voulu !~ [GORCAM02]
+@73064 = ~Oh, tant pis pour vous !~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~Vous ne pouvez pas lancer ce sort tant que le précédent fait encore effet.~
+@93789 = ~Hache d'armes +2~
+@93792 = ~Armure de cuir +2~

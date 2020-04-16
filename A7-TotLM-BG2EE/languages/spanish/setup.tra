@@ -1,11 +1,10 @@
 // -*- coding: us-ascii -*- 
 // Setup (index >= 1000000)
 @1000000 = ~Los Desafios del Funambulista~
-@1000050 = ~Hacer disponible los conjuros de IWD al usuario~
 @1000100 = ~Reequilibrar armas y equipo~
 
 
-@1100000 = ~Se require BG2:EE o EET.~
+@1100000 = ~Se require SoD, BG2:EE o EET.~
 @1100001 = ~Se require la actualizacion 2.0 o mas reciente de BG2:EE.~
 @1100002 = ~Se requiere la instalacion del componente principal.~
 @1100003 = ~Esta caracteristica ya existe en otra modificacion.~

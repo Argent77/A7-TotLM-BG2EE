@@ -1,18 +1,24 @@
 // -*- coding: us-ascii -*- 
 // Setup (index >= 1000000)
-
 @1000000 = ~Les Epreuves du Maitre des Leurres pour BG2:EE~
-@1000050 = ~Mettre les sorts de IWD a disposition du joueur~
 @1000100 = ~Reequilibrer les armes et l'equipement~
+@1000200 = ~Reduire les points d'experience des monstres et des quetes.~
+@1000201 = ~Reduction de 25 pour cent~
+@1000202 = ~Reduction 50 pour cent~
+@1000203 = ~Reduction 75 pour cent~
+@1000204 = ~Ne gagner aucun point d'experience~
+
 
 @1100000 = ~Necessite l'installation de BG2:EE ou EET.~
 @1100001 = ~Necessite BG2:EE beneficiant du patch 2.0 ou plus recent.~
 @1100002 = ~Ce composant requiert l'installation prealable du composant principal.~
 @1100003 = ~Cette fonctionnalite est deja installee par un autre mod.~
 @1100004 = ~Impossible de trouver la liste des sorts IWD installes. Aucun changement n'a ete apporte au jeu.~
+@1100005 = ~Deja installe par le composant principal.~
 
 
 // WeiDU prompts
+// -------------
 @-1000= "Le mod %TP2_FILE_NAME% contient"
 @-1001= "composants optionnels distincts.
 Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux

@@ -1,3 +1,5 @@
+INCLUDE ~%MOD_FOLDER%/lib/a7_pvrz.tpa~
+
 // Reads all lines from the current text file into an array.
 DEFINE_PATCH_FUNCTION READ_TEXT_LINES
 INT_VAR upper = 0 // whether to upper-case the textual content

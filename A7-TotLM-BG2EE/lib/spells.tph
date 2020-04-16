@@ -60,7 +60,7 @@ TODO:
 
 */
 
-COPY - ~%MOD_FOLDER%/spl/spell-iwd.ids~ ~override~
+COPY ~%MOD_FOLDER%/spl/spell-iwd.ids~ ~%MOD_FOLDER%/spl/spell-iwd.ids~
   CLEAR_ARRAY ~table~
   READ_2DA_ENTRIES_NOW ~table~ 2
   FOR (row = 0; row < table; ++row) BEGIN
@@ -81,9 +81,6 @@ ACTION_PHP_EACH spells_orig AS iwd_resref => spell_name BEGIN
       ADD_SPELL ~%MOD_FOLDER%/spl/%iwd_resref%.SPL~ type level ~%spell_name%~
       OUTER_SET spell_num = EVAL ~%spell_name%~
       LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET bg2ee_resref = spell_res END
-      ACTION_IF (spell_num >= 1000 && spell_num < 3000) BEGIN   // mark priest and wizard spells as hidden
-        OUTER_SET $map_hide_spell(~%bg2ee_resref%~) = 1
-      END
       OUTER_TEXT_SPRINT $map_spell(~%iwd_resref%~) ~%bg2ee_resref%~
       OUTER_SET $map_spell_added(~%iwd_resref%~) = 1
       OUTER_TEXT_SPRINT $map_spellicon(~%iwd_resref%A~) ~%bg2ee_resref%A~
@@ -226,25 +223,6 @@ ACTION_PHP_EACH map_spell AS iwd_resref => bg2ee_resref BEGIN
 END
 
 
-// Newly installed spells should not appear in spell list
-<<<<<<<< .../inlined/a7-totlm/empty.txt
->>>>>>>>
-// register spell names in internal file for use in subcomponents
-COPY ~.../inlined/a7-totlm/empty.txt~ ~%MOD_FOLDER%/backup/spells.installed~
-ACTION_IF (VARIABLE_IS_SET $map_spell(~SPPR738~)) BEGIN // Exclude "Heavenly Inferno"
-  OUTER_TEXT_SPRINT excluded_spell $map_spell(~SPPR738~)
-END ELSE BEGIN
-  OUTER_TEXT_SPRINT excluded_spell ~~
-END
-ACTION_PHP_EACH map_hide_spell AS resref => value BEGIN
-  OUTER_TEXT_SPRINT line ~%resref% 1           0          0~
-  APPEND ~hidespl.2da~ ~%line%~ UNLESS ~%resref%~
-  ACTION_IF (NOT ~%resref%~ STR_EQ ~%excluded_spell%~) BEGIN
-    APPEND_OUTER ~%MOD_FOLDER%/backup/spells.installed~ ~%resref%~ UNLESS ~%resref%~
-  END
-END
-
-
 // EFF files
 ACTION_BASH_FOR ~%MOD_FOLDER%/eff~ ~^.+\.eff$~ BEGIN
   ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
@@ -320,14 +298,14 @@ ACTION_IF (shield_num > 0) BEGIN
   END
   COPY_EXISTING ~%shield_res%.SPL~ ~override~
     SET mfm_num = IDS_OF_SYMBOL(~spell~ ~WIZARD_MORDENKAINENS_FORCE_MISSILES~)
-    SET mm_num = IDS_OF_SYMBOL(~spell~ ~MAGIC_MISSILE_SURE_HIT~)
+    SET mm_num = IDS_OF_SYMBOL(~spell~ ~TRAP_MAGIC_MISSILE~)
     PATCH_IF (mfm_num > 0 && mm_num > 0) BEGIN
       LPF RES_NUM_OF_SPELL_NAME
         STR_VAR spell_name = ~WIZARD_MORDENKAINENS_FORCE_MISSILES~
         RET mfm_num = spell_num mfm_res = spell_res
       END
       LPF RES_NUM_OF_SPELL_NAME
-        STR_VAR spell_name = ~MAGIC_MISSILE_SURE_HIT~
+        STR_VAR spell_name = ~TRAP_MAGIC_MISSILE~
         RET mm_num = spell_num mm_res = spell_res
       END
       LPF CLONE_EFFECT

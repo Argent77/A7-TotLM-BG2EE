@@ -7,13 +7,13 @@ END
 
 
 // Expand random treasure table
-COPY - ~%MOD_FOLDER%/2da/rndtres-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/rndtres-iwd.2da~ ~%MOD_FOLDER%/2da/rndtres-iwd.2da~
   CLEAR_ARRAY ~src_table~
   COUNT_2DA_COLS src_numCols
   READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
 BUT_ONLY
 
-COPY_EXISTING - ~rndtres.2da~ ~override~
+COPY_EXISTING ~rndtres.2da~ ~override~
   COUNT_2DA_COLS dst_numCols
   READ_2DA_ENTRY 1 0 1 defValue
 BUT_ONLY
@@ -38,13 +38,13 @@ BUT_ONLY
 
 
 // Expand xplist table
-COPY - ~%MOD_FOLDER%/2da/xplist-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/xplist-iwd.2da~ ~%MOD_FOLDER%/2da/xplist-iwd.2da~
   CLEAR_ARRAY ~src_table~
   COUNT_2DA_COLS src_numCols
   READ_2DA_ENTRIES_NOW ~src_table~ src_numCols
 BUT_ONLY
 
-COPY_EXISTING - ~xplist.2da~ ~override~
+COPY_EXISTING ~xplist.2da~ ~override~
   COUNT_2DA_COLS dst_numCols
   READ_2DA_ENTRY 1 0 1 defValue
 BUT_ONLY
@@ -92,12 +92,12 @@ BUT_ONLY
 
 
 // Expand statdesc.2da
-COPY - ~%MOD_FOLDER%/2da/statdesc-iwd.2da~ ~override~
+COPY ~%MOD_FOLDER%/2da/statdesc-iwd.2da~ ~%MOD_FOLDER%/2da/statdesc-iwd.2da~
   CLEAR_ARRAY ~src_table~
   READ_2DA_ENTRIES_NOW ~src_table~ 3
 BUT_ONLY
 
-COPY_EXISTING - ~statdesc.2da~ ~override~
+COPY_EXISTING ~statdesc.2da~ ~override~
   CLEAR_ARRAY ~dst_table~
   READ_2DA_ENTRIES_NOW ~dst_table~ 3
   SET max_id = 0
@@ -129,7 +129,7 @@ BUT_ONLY
 // Create custom autosave slot
 OUTER_SET savename_index = 0  // used later in DHOBART.DLG
 OUTER_SET savename_slot = 16
-COPY_EXISTING - ~savename.2da~ ~override~
+COPY_EXISTING ~savename.2da~ ~override~
   COUNT_2DA_COLS numCols
   COUNT_2DA_ROWS numCols numRows
   SET savename_index = numRows

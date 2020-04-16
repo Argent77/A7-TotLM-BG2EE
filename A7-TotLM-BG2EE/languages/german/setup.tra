@@ -1,15 +1,20 @@
 // -*- coding: us-ascii -*- 
 // Setup (index >= 1000000)
-@1000000 = ~Die Herausforderungen des Meisters der Verlockung fuer BG2:EE~
-@1000050 = ~Dem Spieler vorhandene IWD-Zauber zur Verfuegung stellen~
+@1000000 = ~Die Herausforderungen des Meisters der Verlockung fuer Baldur's Gate~
 @1000100 = ~Waffen und Ausruestung anpassen~
+@1000200 = ~Erfahrungspunkte von Monstern und Questbelohnungen verringern~
+@1000201 = ~Um 25 Prozent verringern~
+@1000202 = ~Um 50 Prozent verringern~
+@1000203 = ~Um 75 Prozent verringern~
+@1000204 = ~Keine Erfahrungspunkte vergeben~
 
 
-@1100000 = ~Benoetigt BG2:EE oder EET.~
-@1100001 = ~Benoetigt BG2:EE patch 2.0 oder neuer.~
+@1100000 = ~Benoetigt BG2:EE, SoD oder EET.~
+@1100001 = ~Benoetigt Patch 2.0 oder neuer.~
 @1100002 = ~Benoetigt die Hauptkomponente.~
-@1100003 = ~Diese Funktion wurde bereits von einer anderen Mod zur Verfuegung gestellt.~
+@1100003 = ~Ueberspringe: Dem Spieler vorhandene IWD-Zauber zur Verfuegung stellen. Diese Option wurde bereits von einer anderen Mod zur Verfuegung gestellt.~
 @1100004 = ~Liste mit installierten IWD-Zaubern nicht verfuegbar. Es wurden keine Veraenderungen vorgenommen.~
+@1100005 = ~Wurde bereits mit der Hauptkomponente installiert.~
 
 
 // WeiDU prompts

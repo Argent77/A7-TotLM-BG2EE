@@ -41,7 +41,7 @@ THEN
     ActionOverride(LastSeenBy(Myself),ChangeAIScript("SEDJINNI",CLASS))
     ActionOverride(LastSeenBy(Myself),ChangeAIScript("EFATKMEL",RACE))
     ActionOverride(LastSeenBy(Myself),ChangeAIScript("GNT1MOVE",GENERAL))
-    DisplayString(Myself,36936) // A contingency spell has been triggered
+    DisplayString(Myself,@36936) // A contingency spell has been triggered
     DisplayString(Myself,@90004) // Chain Contingency—Invisibility
     ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
     DisplayString(Myself,@90005) // Chain Contingency—Immunity: Divination

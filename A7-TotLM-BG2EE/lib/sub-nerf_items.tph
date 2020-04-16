@@ -4,23 +4,23 @@
 // AXEMINO.ITM (Axe of the Minotaur Lord +4): minlrd.cre
 //  - AX1H11.ITM
 // BRACEIP.ITM (Bracers of Icelandic Pearl): hobart.sto
-//  - BRAC14.ITM
+//  - BRAC14.ITM (BRAC03.ITM)
 // FLAILSK.ITM (Skullflail +4): hobart.sto
 //  - BLUN13.ITM
 // HELMCT.ITM (Chautog's Thinker): hrpmat.cre
-//  - HELM16.ITM
+//  - HELM16.ITM (HELM03.ITM)
 // SBOWEBU.ITM (Shortbow of Ebullience +3): hobart.sto
-// - BOW14.ITM
+// - BOW14.ITM (BOW08.ITM)
 // UBSWD5B.ITM (Bastard Sword +3: Incinerator): id9714.are > Container 32 (name: "Corpse Shelf")
-//  - SW1H37.ITM
+//  - SW1H37.ITM (SW1H42.ITM)
 // UFLAL4A.ITM (Fire Flail +3): criek.cre
-//  - BLUN18.ITM
+//  - BLUN18.ITM (BLUN13.ITM)
 // UFLAL5A.ITM (Shocking Flail +4): id9714.are > Container 11 (name: "Treasure Sarcophogus")
-//  - BLUN32.ITM
+//  - BLUN32.ITM (BLUN13.ITM)
 // ULSWD5A.ITM (Long Sword of Action +4): id9714.are > Container 1 (name: "Geddian's Sarcophogus"), mercwr2d.cre
 // - SW1H33.ITM, SW1H41.ITM
 // UMSTR5B.ITM (Morning Star +4: Defender): harald.cre
-//  - BLUN34.ITM
+//  - BLUN34.ITM (BLUN39.ITM)
 // URING5A.ITM (Ring of Greater Resistance): criek.cre, hrpmat.cre
 //  - RING06.ITM
 // USHLD3B.ITM (Great Shield +3): id9712.are > Container 1 (name: "Container 2")
@@ -30,9 +30,9 @@
 // USLTR5A.ITM (Shadowed Studded Leather +4): mercthfd.cre
 // - LEAT12.ITM
 // ZZ36DGD.ITM (Dead God's Dreaming +4, +6 vs. good): lordm.cre
-//  - SW1H35.ITM
+//  - SW1H35.ITM (SW1H24.ITM)
 // ZZC8HB.ITM (Hell's Bane): id9800.are > Container 9 (name: "Rack 1")
-//  - SW2H12.ITM
+//  - SW2H12.ITM (BDSW2H03.ITM)
 // ZZD5WOH.ITM (Wind of Heaven +4, +5 vs. elementals): djinni_.cre
 //  - SW1H23.ITM
 
@@ -45,7 +45,11 @@ BUT_ONLY IF_EXISTS
 COPY_EXISTING ~hrpmat.cre~ ~override~
   // Chautog's Thinker
   REMOVE_CRE_ITEM ~helmct~
-  ADD_CRE_ITEM ~helm16~ #1 #1 #1 ~none~ ~helmet inv1 inv2 inv3 inv4~
+  PATCH_IF (FILE_EXISTS_IN_GAME ~helm16.itm~) BEGIN
+    ADD_CRE_ITEM ~helm16~ #1 #1 #1 ~none~ ~helmet inv1 inv2 inv3 inv4~
+  END ELSE BEGIN
+    ADD_CRE_ITEM ~helm03~ #1 #1 #1 ~none~ ~helmet inv1 inv2 inv3 inv4~
+  END
   // Ring of Greater Resistance
   REMOVE_CRE_ITEM ~uring5a~
   ADD_CRE_ITEM ~ring06~ #0 #0 #0 ~none~ ~lring rring inv1 inv2 inv3 inv4~
@@ -54,7 +58,11 @@ BUT_ONLY IF_EXISTS
 COPY_EXISTING ~criek.cre~ ~override~
   // Fire Flail +3
   REMOVE_CRE_ITEM ~uflal4a~
-  ADD_CRE_ITEM ~blun18~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  PATCH_IF (FILE_EXISTS_IN_GAME ~blun18.itm~) BEGIN
+    ADD_CRE_ITEM ~blun18~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END ELSE BEGIN
+    ADD_CRE_ITEM ~blun13~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END
   // Ring of Greater Resistance
   REMOVE_CRE_ITEM ~uring5a~
   ADD_CRE_ITEM ~ring06~ #0 #0 #0 ~none~ ~lring rring inv1 inv2 inv3 inv4~
@@ -69,7 +77,11 @@ BUT_ONLY IF_EXISTS
 COPY_EXISTING ~harald.cre~ ~override~
   // Morning Star +4: Defender
   REMOVE_CRE_ITEM ~umstr5b~
-  ADD_CRE_ITEM ~blun34~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  PATCH_IF (FILE_EXISTS_IN_GAME ~blun34.itm~) BEGIN
+    ADD_CRE_ITEM ~blun34~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END ELSE BEGIN
+    ADD_CRE_ITEM ~blun39~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~mercthfd.cre~ ~override~
@@ -81,7 +93,11 @@ BUT_ONLY IF_EXISTS
 COPY_EXISTING ~lordm.cre~ ~override~
   // Dead God's Dreaming +4, +6 vs. good
   REMOVE_CRE_ITEM ~zz36dgd~
-  ADD_CRE_ITEM ~sw1h35~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  PATCH_IF (FILE_EXISTS_IN_GAME ~sw1h35.itm~) BEGIN
+    ADD_CRE_ITEM ~sw1h35~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END ELSE BEGIN
+    ADD_CRE_ITEM ~sw1h24~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
+  END
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~djinni_.cre~ ~override~
@@ -92,6 +108,11 @@ BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~hobart.sto~ ~override~
   // Bracers of Icelandic Pearl
+  PATCH_IF (FILE_EXISTS_IN_GAME ~brac14.itm~) BEGIN
+    TEXT_SPRINT new_item ~brac14~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~brac03~
+  END
   LPF REPLACE_STORE_ITEM
   INT_VAR
     number_in_stock = 1
@@ -100,7 +121,7 @@ COPY_EXISTING ~hobart.sto~ ~override~
     charges3        = 1
   STR_VAR
     old_item  = ~braceip~
-    new_item  = ~brac14~
+    new_item
     flags     = ~identified~
   END
   // Skullflail +4
@@ -116,6 +137,11 @@ COPY_EXISTING ~hobart.sto~ ~override~
     flags     = ~identified~
   END
   // Shortbow of Ebullience +3
+  PATCH_IF (FILE_EXISTS_IN_GAME ~bow14.itm~) BEGIN
+    TEXT_SPRINT new_item ~bow14~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~bow08~
+  END
   LPF REPLACE_STORE_ITEM
   INT_VAR
     number_in_stock = 1
@@ -124,29 +150,44 @@ COPY_EXISTING ~hobart.sto~ ~override~
     charges3        = 0
   STR_VAR
     old_item  = ~sbowebu~
-    new_item  = ~bow14~
+    new_item
     flags     = ~identified~
   END
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~id9714.are~ ~override~
   // Bastard Sword +3: Incinerator
+  PATCH_IF (FILE_EXISTS_IN_GAME ~sw1h37.itm~) BEGIN
+    TEXT_SPRINT new_item ~sw1h37~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~sw1h42~
+  END
   LPF REPLACE_AREA_ITEM
   STR_VAR
     old_item  = ~ubswd5b~
-    new_item  = ~sw1h37~
+    new_item
   END
   // Shocking Flail +4
+  PATCH_IF (FILE_EXISTS_IN_GAME ~blun32.itm~) BEGIN
+    TEXT_SPRINT new_item ~blun32~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~blun13~
+  END
   LPF REPLACE_AREA_ITEM
   STR_VAR
     old_item  = ~uflal5a~
-    new_item  = ~blun32~
+    new_item
   END
   // Long Sword of Action +4
+  PATCH_IF (FILE_EXISTS_IN_GAME ~sw1h33.itm~) BEGIN
+    TEXT_SPRINT new_item ~sw1h33~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~sw1h41~
+  END
   LPF REPLACE_AREA_ITEM
   STR_VAR
     old_item  = ~ulswd5a~
-    new_item  = ~sw1h33~
+    new_item
   END
   // Studded Leather of Resistance +3
   LPF REPLACE_AREA_ITEM
@@ -167,9 +208,82 @@ BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~id9800.are~ ~override~
   // Hell's Bane
+  PATCH_IF (FILE_EXISTS_IN_GAME ~sw2h12.itm~) BEGIN
+    TEXT_SPRINT new_item ~sw2h12~
+  END ELSE BEGIN
+    TEXT_SPRINT new_item ~bdsw2h03~
+  END
   LPF REPLACE_AREA_ITEM
   STR_VAR
     old_item  = ~zzc8hb~
-    new_item  = ~sw2h12~
+    new_item
   END
 BUT_ONLY IF_EXISTS
+
+
+// Additional replacements for SoD
+// scrl9b.itm (Summon Fiend, level 8)
+// - scrl8a.itm (Carrion Summons, level 6)
+// scrl9c.itm (Improved Mantle, level 8)
+// - scrl7o.itm (Protection From Magical Weapons, level 6)
+// scrl9n.itm (Gate, level 9)
+// - scrl7e.itm (Invisible Stalker, level 6)
+// scrl9q (Chain Contingency, level 9)
+// - scrl7u.itm (Contingency, level 6)
+// scrl9u (Power Word, Kill, level 9)
+// - scrl7r.itm (Death Fog, 6)
+// scrlap (Symbol, Stun, level 8)
+// - scrl7q.itm (Improved Haste, level 6)
+ACTION_IF (GAME_IS ~bgee~ && GAME_INCLUDES ~sod~) BEGIN
+  COPY_EXISTING ~id9712.are~ ~override~
+                ~id9800.are~ ~override~
+    LPF REPLACE_AREA_ITEM
+    STR_VAR
+      old_item = ~scrl9b~
+      new_item = ~scrl8a~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~id9714.are~ ~override~
+    LPF REPLACE_AREA_ITEM
+    STR_VAR
+      old_item = ~scrl9c~
+      new_item = ~scrl7o~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~id9717.are~ ~override~
+    LPF REPLACE_AREA_ITEM
+    STR_VAR
+      old_item = ~scrl9n~
+      new_item = ~scrl7e~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~id9712.are~ ~override~
+    LPF REPLACE_AREA_ITEM
+    STR_VAR
+      old_item = ~scrl9q~
+      new_item = ~scrl7u~
+    END
+    LPF REPLACE_AREA_ITEM
+    STR_VAR
+      old_item = ~scrl9u~
+      new_item = ~scrl7r~
+    END
+  BUT_ONLY IF_EXISTS
+
+  COPY_EXISTING ~bagh02.sto~ ~override~
+    LPF REPLACE_STORE_ITEM
+    INT_VAR
+      number_in_stock = 1
+      charges1        = 1
+      charges2        = 0
+      charges3        = 0
+    STR_VAR
+      old_item  = ~scrlap~
+      new_item  = ~scrl7q~
+      flags     = ~identified~
+    END
+  BUT_ONLY IF_EXISTS
+END

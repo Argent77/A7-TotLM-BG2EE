@@ -1,0 +1,106 @@
+// Subcomponent: Reduce experience from monsters and quests
+
+// Reduces experience gain for killing monsters or granted by scripts
+DEFINE_ACTION_FUNCTION REDUCE_EXPERIENCE
+INT_VAR
+  scale = 100 // reduction to, as percentage
+BEGIN
+  // updating CRE
+  GET_FILE_ARRAY cre_files ~%MOD_FOLDER%/cre~ ~^.+\.cre$~
+  ACTION_PHP_EACH cre_files AS _ => filespec BEGIN
+    LAF FILE_OF_FILESPEC STR_VAR filespec RET file END
+    COPY_EXISTING ~%file%~ ~override~
+      READ_ASCII 0 sig (8)
+      PATCH_IF (~%sig%~ STR_EQ ~CRE V1.0~) BEGIN
+        WRITE_LONG 0x14 (THIS * scale / 100)
+      END
+    BUT_ONLY IF_EXISTS
+  END
+
+  // updating XP tables
+  COPY_EXISTING ~xplist.2da~ ~override~
+    SET modified = 0  // tracks table changes
+    READ_2DA_ENTRIES_NOW xplist 3
+    FOR (row = 0; row < xplist; ++row) BEGIN
+      READ_2DA_ENTRY_FORMER xplist row 0 name
+      PATCH_IF (~%name%~ STR_EQ ~ID_Level_10_Hard~ ||
+                ~%name%~ STR_EQ ~ID_Level_12_Hard~) BEGIN
+        SET col = 2
+        WHILE (VARIABLE_IS_SET $xplist(~%row%~ ~%col%~)) BEGIN
+          READ_2DA_ENTRY_FORMER xplist row col value
+
+          PATCH_IF (INDEX(~[A-Za-z]_~ ~%value%~) = 0) BEGIN
+            INNER_PATCH_SAVE value ~%value%~ BEGIN
+              READ_ASCII 0 prefix (2)
+              DELETE_BYTES 0 2
+            END
+          END ELSE BEGIN
+            TEXT_SPRINT prefix ~~
+          END
+
+          PATCH_IF (IS_AN_INT ~value~ && value > 0) BEGIN
+            SET value = value * scale / 100
+            TEXT_SPRINT value ~%prefix%%value%~
+            SET_2DA_ENTRY_LATER xplist_out row col ~%value%~
+            SET modified = 1
+          END
+          SET col += 1
+        END
+
+        PATCH_IF (modified != 0) BEGIN
+          SET_2DA_ENTRIES_NOW xplist_out 3
+          PRETTY_PRINT_2DA
+        END
+      END
+    END
+  BUT_ONLY IF_EXISTS
+
+  // updating scripts
+  GET_FILE_ARRAY script_files ~%MOD_FOLDER%/bcs~ ~^.+\.baf$~
+  ACTION_PHP_EACH script_files AS _ => filespec BEGIN
+    LAF RES_OF_FILESPEC STR_VAR filespec RET res END
+    LAF REDUCE_XP_SCRIPT INT_VAR scale STR_VAR filename = EVAL ~%res%.BCS~ END
+  END
+
+  // updating dlg actions
+  GET_FILE_ARRAY dlg_files ~%MOD_FOLDER%/dlg~ ~^.+\.d$~
+  ACTION_PHP_EACH dlg_files AS _ => filespec BEGIN
+    LAF RES_OF_FILESPEC STR_VAR filespec RET res END
+    LAF REDUCE_XP_SCRIPT INT_VAR scale STR_VAR filename = EVAL ~%res%.DLG~ END
+  END
+END
+
+
+// Reduces experience gain in script actions
+DEFINE_ACTION_FUNCTION REDUCE_XP_SCRIPT
+INT_VAR
+  scale = 100
+STR_VAR
+  filename = ~~
+BEGIN
+  COPY_EXISTING ~%filename%~ ~override~
+    DECOMPILE_AND_PATCH BEGIN
+      // AddexperienceParty(I:XP*)
+      REPLACE_EVALUATE
+        ~AddexperienceParty(\([0-9]+\))~
+        BEGIN
+          TEXT_SPRINT value ~%MATCH1%~
+          PATCH_IF (IS_AN_INT ~value~) BEGIN
+            SET value = value * scale / 100
+          END
+        END
+        ~AddexperienceParty(%value%)~
+
+      // AddXPObject(O:Object*,I:XP*)
+      REPLACE_EVALUATE
+        ~AddXPObject(\([^,]+\),\([0-9]+\))~
+        BEGIN
+          TEXT_SPRINT value ~%MATCH2%~
+          PATCH_IF (IS_AN_INT ~value~) BEGIN
+            SET value = value * scale / 100
+          END
+        END
+        ~AddXPObject(%MATCH1%,%value%)~
+    END
+  BUT_ONLY IF_EXISTS
+END

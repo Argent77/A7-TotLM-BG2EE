@@ -1,0 +1,292 @@
+// Make IWD spells available to the player
+
+// Adding scrolls to stores, creature inventories and area containers
+// sto_resref list => scroll_resref
+ACTION_DEFINE_ASSOCIATIVE_ARRAY add_sto BEGIN
+  ~bagh02~ => ~id#sp714~  // Symbol, Pain
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~sahpr1~, ~scrolls~, ~shop08~, ~suelf10~, ~type1~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~sahpr1~, ~scrolls~, ~shop08~, ~suelf10~, ~type1~ => ~id#sw328~  // Lance of Disruption
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~sahpr1~, ~scrolls~, ~shop08~, ~suelf10~, ~type1~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~25spell~, ~25spell2~, ~garlena~, ~scrolls~, ~shop08~, ~suelf10~ => ~id#sw427~  // Emotion, Courage
+  ~25spell~, ~25spell2~, ~garlena~, ~scrolls~, ~shop08~, ~suelf10~ => ~id#sw428~  // Emotion, Fear
+  ~25spell~, ~25spell2~, ~garlena~, ~scrolls~, ~shop08~, ~suelf10~ => ~id#sw429~  // Emotion, Hope
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~sahpr1~, ~suelf10~, ~type1~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~scrolls~, ~suelf10~, ~type1~ => ~id#sw431~  // Shout
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~sahpr1~, ~scrolls~, ~suelf10~ => ~id#sw432~  // Vitriolic Sphere
+  ~25spell~, ~25spell2~, ~bmthief~, ~garlena~, ~scrolls~, ~suelf10~ => ~id#sw524~  // Shroud of Flame
+  ~25spell~, ~25spell2~, ~bernard3~, ~bernard4~, ~type2~, ~udduer02~, ~udsvir05~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~25spell~, ~25spell2~, ~bernard3~, ~bernard4~, ~type2~, ~udduer02~, ~udsvir05~ => ~id#sw630~  // Darts of Bone
+  ~25spell~, ~25spell2~, ~bernard3~, ~bernard4~, ~type2~, ~udduer02~, ~udsvir05~ => ~id#sw631~  // Soul Eater
+  ~25spell~, ~25spell2~, ~bernard5~, ~bernard6~, ~type3~, ~udduer01~ => ~id#sw725~  // Seven Eyes
+  ~25spell~, ~25spell2~, ~bernard5~, ~bernard6~, ~trmer04a~, ~type3~, ~uddrow25~, ~udduer02~ => ~id#sw726~  // Suffocate
+END
+
+// cre_resref list => scroll_resref
+ACTION_DEFINE_ASSOCIATIVE_ARRAY add_cre BEGIN
+  ~hobcap01~, ~uhogre03~, ~bhelm~, ~daqilue~, ~ar18prie~ => ~id#sp519~  // Spike Stones
+  ~hobcap01~, ~uhogre03~, ~daqilue~, ~ar18prie~ => ~id#sp714~  // Symbol, Pain
+  ~rethug02~, ~xappren2~, ~remage01~, ~cowled~, ~reband04~, ~gron~, ~surakw1~, ~surakw3~, ~sahkng01~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~rethug02~, ~remage01~, ~cowled~, ~xappren1~, ~remage02~, ~kalah2~, ~rerak01~, ~lehtin~, ~ohnredw8~ => ~id#sw328~  // Lance of Disruption
+  ~ohhwiz~, ~xappren1~, ~lyros~, ~xzar~, ~kalah2~, ~rerak01~, ~surakw3~, ~udtrap04~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~remage01~, ~sahcpt01~, ~vvshad2~, ~vvshad1~, ~beast~, ~ohnredw8~ => ~id#sw427~  // Emotion, Courage
+  ~xappren2~, ~cowled~, ~ohhwiz~, ~lyros~, ~gron~, ~pbhunt03~, ~surakw2~, ~gorwom01~ => ~id#sw428~  // Emotion, Fear
+  ~remage02~, ~kalah2~, ~vvshad5~, ~surakw4~, ~ar18mage~ => ~id#sw429~  // Emotion, Hope
+  ~cowled~, ~lyros~, ~xzar~, ~ohnredw7~, ~maevar~, ~degard~, ~surakw1~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~cowled~, ~pbhunt01~, ~ohnvicro~, ~surakw2~, ~surakw3~, ~udtrap04~, ~gpmage1~ => ~id#sw431~  // Shout
+  ~xappren2~, ~lyros~, ~maevar~, ~pbhunt03~, ~surakw1~, ~udtrap03~, ~sahkng01~, ~hdragred~ => ~id#sw432~  // Vitriolic Sphere
+  ~ohnredw7~, ~degard~, ~ohnvicro~, ~rerak01~, ~surakw4~, ~udtrap04~ => ~id#sw524~  // Shroud of Flame
+  ~ohryxtra~, ~ohnvicro~, ~pbhunt03~, ~surakw4~, ~lehtin~, ~hdragred~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~lyros~, ~xzar~, ~udtrap03~, ~vvshad4~, ~udtrap02~, ~gpmage1~ => ~id#sw630~  // Darts of Bone
+  ~lyros~, ~ohryxtra~, ~daqilue~, ~udtrap02~, ~hdragred~, ~gorwom01~ => ~id#sw631~  // Soul Eater
+  ~maevar~, ~ohnvicro~, ~lehtin~, ~udtrap02~, ~gpmage1~, ~ar18mage~ => ~id#sw725~  // Seven Eyes
+  ~ohryxtra~, ~ohnvicro~, ~sahkng01~, ~udtrap02~, ~gorwom01~ => ~id#sw726~  // Suffocate
+END
+
+// area_resref, container_idx [, item_to_replace] => scroll_resref
+ACTION_DEFINE_ASSOCIATIVE_ARRAY add_are BEGIN
+  ~ar1302~, ~1~ => ~id#sp519~  // Spike Stones
+  ~ar0602~, ~24~ => ~id#sp519~  // Spike Stones
+  ~ar0411~, ~7~ => ~id#sp519~  // Spike Stones
+  ~ar1513~, ~0~ => ~id#sp519~  // Spike Stones
+  ~ar0804~, ~0~ => ~id#sp519~  // Spike Stones
+  ~ar0411~, ~2~ => ~id#sp714~  // Symbol, Pain
+  ~ar0203~, ~0~ => ~id#sp714~  // Symbol, Pain
+  ~ar1202~, ~8~ => ~id#sp714~  // Symbol, Pain
+  ~ar0801~, ~2~ => ~id#sp714~  // Symbol, Pain
+  ~ar0808~, ~2~ => ~id#sp714~  // Symbol, Pain
+  ~ar2210~, ~0~ => ~id#sp714~  // Symbol, Pain
+  ~ar0315~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0602~, ~25~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0605~, ~4~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0405~, ~7~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0202~, ~4~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~oh6300~, ~2~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0412~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0406~, ~1~ => ~id#sw204~  // Snilloc's Snowball Swarm
+  ~ar0705~, ~2~ => ~id#sw328~  // Lance of Disruption
+  ~ar5203~, ~1~ => ~id#sw328~  // Lance of Disruption
+  ~ar0602~, ~30~ => ~id#sw328~  // Lance of Disruption
+  ~ar0510~, ~0~ => ~id#sw328~  // Lance of Disruption
+  ~ar1513~, ~8~ => ~id#sw328~  // Lance of Disruption
+  ~ar1301~, ~1~ => ~id#sw328~  // Lance of Disruption
+  ~ar0309~, ~1~ => ~id#sw328~  // Lance of Disruption
+  ~ar0701~, ~0~ => ~id#sw328~  // Lance of Disruption
+  ~id9800~, ~11~, ~scrl2f~ => ~id#sw328~  // Lance of Disruption
+  ~ar1302~, ~13~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar0504~, ~6~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar0603~, ~5~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar1202~, ~11~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar1514~, ~1~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar2207~, ~2~ => ~id#sw422~  // Beltyn's Burning Blood
+  ~ar0315~, ~1~ => ~id#sw427~  // Emotion, Courage
+  ~ar0602~, ~35~ => ~id#sw427~  // Emotion, Courage
+  ~ar0411~, ~3~ => ~id#sw427~  // Emotion, Courage
+  ~ar1202~, ~2~ => ~id#sw427~  // Emotion, Courage
+  ~ar0802~, ~0~ => ~id#sw427~  // Emotion, Courage
+  ~ar2801~, ~0~ => ~id#sw427~  // Emotion, Courage
+  ~ar0705~, ~8~ => ~id#sw428~  // Emotion, Fear
+  ~ar0602~, ~11~ => ~id#sw428~  // Emotion, Fear
+  ~ar0603~, ~7~ => ~id#sw428~  // Emotion, Fear
+  ~ar0202~, ~7~ => ~id#sw428~  // Emotion, Fear
+  ~ar0801~, ~3~ => ~id#sw428~  // Emotion, Fear
+  ~ar0808~, ~3~ => ~id#sw428~  // Emotion, Fear
+  ~oh6500~, ~5~ => ~id#sw428~  // Emotion, Fear
+  ~ar1302~, ~4~ => ~id#sw429~  // Emotion, Hope
+  ~ar0605~, ~3~ => ~id#sw429~  // Emotion, Hope
+  ~ar0405~, ~3~ => ~id#sw429~  // Emotion, Hope
+  ~ar1513~, ~2~ => ~id#sw429~  // Emotion, Hope
+  ~ar0205~, ~2~ => ~id#sw429~  // Emotion, Hope
+  ~ar2808~, ~1~ => ~id#sw429~  // Emotion, Hope
+  ~ar0705~, ~1~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar0603~, ~14~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar1202~, ~4~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar1103~, ~3~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar1514~, ~3~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~oh6500~, ~6~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar2207~, ~1~ => ~id#sw430~  // Mordenkainen's Force Missiles
+  ~ar0602~, ~7~ => ~id#sw431~  // Shout
+  ~ar0405~, ~0~ => ~id#sw431~  // Shout
+  ~ar0204~, ~0~ => ~id#sw431~  // Shout
+  ~oh6300~, ~9~ => ~id#sw431~  // Shout
+  ~ar1303~, ~3~ => ~id#sw431~  // Shout
+  ~ar0309~, ~4~ => ~id#sw431~  // Shout
+  ~ar0705~, ~3~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar1302~, ~5~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar0530~, ~2~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar0503~, ~0~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar1202~, ~7~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar0802~, ~2~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar1401~, ~2~ => ~id#sw432~  // Vitriolic Sphere
+  ~ar0411~, ~4~ => ~id#sw524~  // Shroud of Flame
+  ~oh6300~, ~8~ => ~id#sw524~  // Shroud of Flame
+  ~ar1513~, ~1~ => ~id#sw524~  // Shroud of Flame
+  ~ar0412~, ~1~ => ~id#sw524~  // Shroud of Flame
+  ~ar1303~, ~7~ => ~id#sw524~  // Shroud of Flame
+  ~ar0205~, ~3~ => ~id#sw524~  // Shroud of Flame
+  ~ar2207~, ~3~ => ~id#sw524~  // Shroud of Flame
+  ~id9800~, ~12~, ~scrl2g~ => ~id#sw524~  // Shroud of Flame
+  ~ar0705~, ~4~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar0202~, ~0~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar1202~, ~3~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar0317~, ~0~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar1512~, ~3~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar2207~, ~3~ => ~id#sw628~  // Otiluke's Freezing Sphere
+  ~ar5203~, ~1~ => ~id#sw630~  // Darts of Bone
+  ~ar0204~, ~0~ => ~id#sw630~  // Darts of Bone
+  ~ar1513~, ~3~ => ~id#sw630~  // Darts of Bone
+  ~oh6500~, ~4~ => ~id#sw630~  // Darts of Bone
+  ~ar1401~, ~3~ => ~id#sw630~  // Darts of Bone
+  ~oh7200~, ~6~ => ~id#sw630~  // Darts of Bone
+  ~ar2210~, ~0~ => ~id#sw630~  // Darts of Bone
+  ~ar0411~, ~6~ => ~id#sw631~  // Soul Eater
+  ~ar0202~, ~2~ => ~id#sw631~  // Soul Eater
+  ~ar0206~, ~0~ => ~id#sw631~  // Soul Eater
+  ~ar1202~, ~8~ => ~id#sw631~  // Soul Eater
+  ~ar0407~, ~2~ => ~id#sw631~  // Soul Eater
+  ~ar2210~, ~0~ => ~id#sw631~  // Soul Eater
+  ~ar0809~, ~1~ => ~id#sw631~  // Soul Eater
+  ~ar0411~, ~5~ => ~id#sw725~  // Seven Eyes
+  ~ar0530~, ~2~ => ~id#sw725~  // Seven Eyes
+  ~ar1202~, ~5~ => ~id#sw725~  // Seven Eyes
+  ~ar1103~, ~3~ => ~id#sw725~  // Seven Eyes
+  ~ar1514~, ~8~ => ~id#sw725~  // Seven Eyes
+  ~ar0308~, ~4~ => ~id#sw725~  // Seven Eyes
+  ~ar2300~, ~7~ => ~id#sw725~  // Seven Eyes
+  ~id9717~, ~2~, ~scrl9t~ => ~id#sw725~  // Seven Eyes
+  ~ar5203~, ~1~ => ~id#sw726~  // Suffocate
+  ~ar0202~, ~10~ => ~id#sw726~  // Suffocate
+  ~ar0410~, ~0~ => ~id#sw726~  // Suffocate
+  ~ar1514~, ~4~ => ~id#sw726~  // Suffocate
+  ~ar1512~, ~3~ => ~id#sw726~  // Suffocate
+  ~ar2810~, ~0~ => ~id#sw726~  // Suffocate
+  ~id9712~, ~5~, ~scrl8m~ => ~id#sw726~  // Suffocate
+END
+
+// SoD/EET: Adding scrolls to selected stores, creature inventories and area containers in BG1 and SoD
+ACTION_IF (GAME_INCLUDES ~sod~) BEGIN
+  // sto_resref list => scroll_resref
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY add_sto BEGIN
+    ~sto0703~, ~highhedg~, ~bdsorcsc~, ~bdbeleg3~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~sto0703~, ~highhedg~, ~bdsorcsc~, ~bdbeleg3~ => ~id#sw328~  // Lance of Disruption
+    ~bdpolvi~, ~bdonoro~, ~bdbeleg3~ => ~id#sp519~  // Spike Stones
+    ~sto0703~, ~bdsorcsc~, ~bdbeleg3~ => ~id#sw422~  // Beltyn's Burning Blood
+    ~bdsorcsc~, ~bdbeleg3~ => ~id#sw427~  // Emotion, Courage
+    ~bdsorcsc~ => ~id#sw428~  // Emotion, Fear
+    ~bdsorcsc~, ~bdbeleg3~ => ~id#sw429~  // Emotion, Hope
+    ~bdsorcsc~, ~bdbeleg3~ => ~id#sw430~  // Mordenkainen's Force Missiles
+    ~bdbeleg3~ => ~id#sw431~  // Shout
+    ~bdsorcsc~, ~bdbeleg3~ => ~id#sw432~  // Vitriolic Sphere
+    ~bdbeleg3~ => ~id#sw524~  // Shroud of Flame
+    ~bdbeleg3~ => ~id#sw628~  // Otiluke's Freezing Sphere
+    // ~~, ~~ => ~id#sw630~  // Darts of Bone
+    // ~~, ~~ => ~id#sw631~  // Soul Eater
+  END
+
+  // cre_resref list => scroll_resref
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY add_cre BEGIN
+    ~andris~, ~arkush~, ~gazib~, ~brenda~, ~venkt~, ~naaman~, ~drelik~, ~dezkie~, ~tranzi~, ~sakul~, ~cowled~, ~lendar~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~davaeo~, ~diana~, ~denak~, ~tarnes~, ~venkt~, ~bdkherr~, ~bdshkorl~, ~natash~, ~prat~, ~neekando~, ~krysti~, ~sunin~, ~marcel~, ~wiven~ => ~id#sw328~  // Lance of Disruption
+    // ~~, ~~ => ~id#sp519~  // Spike Stones
+    ~bdkherr~, ~shandal2~, ~hareis~, ~semaj~, ~vayya~ => ~id#sw422~  // Beltyn's Burning Blood
+    ~bdshkorl~, ~dushai~, ~dezkie~, ~garan~, ~resar~ => ~id#sw427~  // Emotion, Courage
+    ~zordra~, ~shandal2~, ~simage1~, ~drelik~, ~deathk~, ~mutami~ => ~id#sw428~  // Emotion, Fear
+    ~simage1~, ~hafiz~ => ~id#sw429~  // Emotion, Hope
+    ~davaeo~, ~narcil~, ~shandal2~, ~naaman~, ~sakul~ => ~id#sw430~  // Mordenkainen's Force Missiles
+    ~bdkherr~, ~hareis~, ~semaj~ => ~id#sw431~  // Shout
+    ~andris~, ~bdshkorl~, ~dezkie~, ~nemphr~ => ~id#sw432~  // Vitriolic Sphere
+    ~shandal2~, ~krysti~ => ~id#sw524~  // Shroud of Flame
+    ~shandal2~ => ~id#sw628~  // Otiluke's Freezing Sphere
+    ~bdkherr~ => ~id#sw630~  // Darts of Bone
+    // ~~, ~~ => ~id#sw631~  // Soul Eater
+  END
+
+  // area_resref, container_idx [, item_to_replace] => scroll_resref
+  ACTION_DEFINE_ASSOCIATIVE_ARRAY add_are BEGIN
+    ~bg1901~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bg2613~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bg1401~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bg5405~, ~0~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bg0308~, ~1~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bd0130~, ~9~ => ~id#sw204~  // Snilloc's Snowball Swarm
+    ~bg0110~, ~7~ => ~id#sw328~  // Lance of Disruption
+    ~bg2613~, ~1~ => ~id#sw328~  // Lance of Disruption
+    ~bg0138~, ~5~ => ~id#sw328~  // Lance of Disruption
+    ~bd0120~, ~0~ => ~id#sw328~  // Lance of Disruption
+    ~bg0614~, ~13~ => ~id#sw328~  // Lance of Disruption
+    ~bg2613~, ~2~ => ~id#sp519~  // Spike Stones
+    ~bg0512~, ~34~ => ~id#sp519~  // Spike Stones
+    ~bd7230~, ~10~ => ~id#sp519~  // Spike Stones
+    ~bg2619~, ~0~ => ~id#sp519~  // Spike Stones
+    ~bg0512~, ~27~ => ~id#sp714~  // Symbol, Pain
+    ~bg0110~, ~7~ => ~id#sw422~  // Beltyn's Burning Blood
+    ~bg1803~, ~6~ => ~id#sw422~  // Beltyn's Burning Blood
+    ~bg2614~, ~4~ => ~id#sw427~  // Emotion, Courage
+    ~bg0511~, ~7~ => ~id#sw427~  // Emotion, Courage
+    ~bd0067~, ~0~ => ~id#sw428~  // Emotion, Fear
+    ~bg0512~, ~23~ => ~id#sw429~  // Emotion, Hope
+    ~bg0513~, ~7~ => ~id#sw429~  // Emotion, Hope
+    ~bd5200~, ~10~ => ~id#sw430~  // Mordenkainen's Force Missiles
+    ~bd0062~, ~1~ => ~id#sw430~  // Mordenkainen's Force Missiles
+    ~bd5300~, ~1~ => ~id#sw431~  // Shout
+    ~bd7230~, ~15~ => ~id#sw432~  // Vitriolic Sphere
+    ~bd1200~, ~11~ => ~id#sw432~  // Vitriolic Sphere
+    ~bd4300~, ~1~ => ~id#sw524~  // Shroud of Flame
+    // ~~, ~~ => ~id#sw628~  // Otiluke's Freezing Sphere
+    // ~~, ~~ => ~id#sw630~  // Darts of Bone
+    // ~~, ~~ => ~id#sw631~  // Soul Eater
+  END
+END
+
+
+RANDOM_SEED ~~
+ACTION_PHP_EACH add_sto AS stores => resref BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.ITM~) BEGIN
+    OUTER_FOR (idx = 0; VARIABLE_IS_SET $stores(~%idx%~); ++idx) BEGIN
+      OUTER_TEXT_SPRINT store $stores(~%idx%~)
+      OUTER_SET stack = RANDOM (1 4)
+      COPY_EXISTING ~%store%.sto~ ~override~
+        ADD_STORE_ITEM ~%resref%~ LAST #1 #0 #0 ~identified~ (stack)
+      BUT_ONLY IF_EXISTS
+    END
+  END
+END
+
+ACTION_PHP_EACH add_cre AS creatures => resref BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.ITM~) BEGIN
+    OUTER_FOR (idx = 0; VARIABLE_IS_SET $creatures(~%idx%~); ++idx) BEGIN
+      OUTER_TEXT_SPRINT creature $creatures(~%idx%~)
+      OUTER_SET roll = RANDOM (0 1)
+      ACTION_IF (roll) BEGIN
+        COPY_EXISTING ~%creature%.cre~ ~override~
+          ADD_CRE_ITEM ~%resref%~ #1 #1 #0 ~none~ ~inv1 inv2 inv3 inv4 inv5 inv6 inv7 inv8 inv9 inv10 inv11 inv12 inv13 inv14 inv15 inv16~
+        BUT_ONLY IF_EXISTS
+      END
+    END
+  END
+END
+
+ACTION_PHP_EACH add_are AS area => resref BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%resref%.ITM~) BEGIN
+    OUTER_TEXT_SPRINT are_resref $area(~0~)
+    OUTER_SET are_container = $area(~1~)
+    COPY_EXISTING ~%are_resref%.are~ ~override~
+      PATCH_IF (VARIABLE_IS_SET $area(~2~)) BEGIN
+        TEXT_SPRINT itm_replace $area(~2~)
+        LPF REPLACE_AREA_ITEM
+          STR_VAR
+            old_item = EVAL ~%itm_replace%~
+            new_item = EVAL ~%resref%~
+        END
+      END ELSE BEGIN
+        PATCH_IF (RANDOM (0 3) > 0) BEGIN
+          LPF ADD_AREA_ITEM
+            INT_VAR
+              container_to_add_to = are_container + 1
+            STR_VAR
+              item_to_add         = EVAL ~%resref%~
+          END
+        END
+      END
+    BUT_ONLY IF_EXISTS
+  END
+END

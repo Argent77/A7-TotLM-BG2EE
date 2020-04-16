@@ -14,43 +14,75 @@ README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
 LANGUAGE ~English~
          ~english~
          ~%MOD_FOLDER%/languages/english/setup.tra~
-         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
 LANGUAGE ~Francais (by Gwendolyne)~
          ~french~
          ~%MOD_FOLDER%/languages/english/setup.tra~
-         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
          ~%MOD_FOLDER%/languages/french/setup.tra~
-         ~%MOD_FOLDER%/languages/french/mod.tra~
+         ~%MOD_FOLDER%/languages/french/iwdee.tra~
+         ~%MOD_FOLDER%/languages/french/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/french/extra.tra~
 LANGUAGE ~Deutsch~
          ~german~
          ~%MOD_FOLDER%/languages/english/setup.tra~
-         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
          ~%MOD_FOLDER%/languages/german/setup.tra~
-         ~%MOD_FOLDER%/languages/german/mod.tra~
+         ~%MOD_FOLDER%/languages/german/iwdee.tra~
+         ~%MOD_FOLDER%/languages/german/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/german/extra.tra~
 LANGUAGE ~Italiano (by Aedan and improbabile)~
          ~italian~
          ~%MOD_FOLDER%/languages/english/setup.tra~
-         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
          ~%MOD_FOLDER%/languages/italian/setup.tra~
-         ~%MOD_FOLDER%/languages/italian/mod.tra~
+         ~%MOD_FOLDER%/languages/italian/iwdee.tra~
+         ~%MOD_FOLDER%/languages/italian/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/italian/extra.tra~
 LANGUAGE ~Russian (by EugVV)~
          ~russian~
          ~%MOD_FOLDER%/languages/english/setup.tra~
-         ~%MOD_FOLDER%/languages/english/mod.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
          ~%MOD_FOLDER%/languages/russian/setup.tra~
-         ~%MOD_FOLDER%/languages/russian/mod.tra~
-// LANGUAGE ~Espanol (by Chidojuan)~
-         // ~spanish~
-         // ~%MOD_FOLDER%/languages/english/setup.tra~
-         // ~%MOD_FOLDER%/languages/english/mod.tra~
-         // ~%MOD_FOLDER%/languages/spanish/setup.tra~
-         // ~%MOD_FOLDER%/languages/spanish/mod.tra~
+         ~%MOD_FOLDER%/languages/russian/iwdee.tra~
+         ~%MOD_FOLDER%/languages/russian/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/russian/extra.tra~
+LANGUAGE ~Espanol (by Chidojuan)~
+         ~spanish~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
+         ~%MOD_FOLDER%/languages/spanish/setup.tra~
+         ~%MOD_FOLDER%/languages/spanish/iwdee.tra~
+         ~%MOD_FOLDER%/languages/spanish/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/spanish/extra.tra~
+LANGUAGE ~Polish~
+         ~polish~
+         ~%MOD_FOLDER%/languages/english/setup.tra~
+         ~%MOD_FOLDER%/languages/english/iwdee.tra~
+         ~%MOD_FOLDER%/languages/english/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/english/extra.tra~
+         ~%MOD_FOLDER%/languages/polish/setup.tra~
+         ~%MOD_FOLDER%/languages/polish/iwdee.tra~
+         ~%MOD_FOLDER%/languages/polish/bg2ee.tra~
+         ~%MOD_FOLDER%/languages/polish/extra.tra~
 
 
-BEGIN @1000000 // Trials of the Luremaster for BG2:EE
-  REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @1100000  // Requires BG2:EE or EET.
+BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
+  REQUIRE_PREDICATE (GAME_IS ~bg2ee~ || GAME_INCLUDES ~sod~) @1100000  // Requires SoD, BG2:EE or EET.
   REQUIRE_PREDICATE (VALID_SCRIPT_TRIGGERS ~NearLocation(Myself,0,0,0) NearSavedLocation(Myself,"x",0)~ &&
-                     VALID_SCRIPT_ACTIONS ~ZoomLock(0)~) @1100001 // Requires BG2:EE 2.0 or later.
+                     VALID_SCRIPT_ACTIONS ~ZoomLock(0)~) @1100001 // Requires game patched to 2.0 or later.
   DESIGNATED 0
 
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
@@ -65,20 +97,60 @@ BEGIN @1000000 // Trials of the Luremaster for BG2:EE
   INCLUDE ~%MOD_FOLDER%/lib/compile.tph~
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
 
+  // Make IWD spells available to the player
+  APPEND ~hidespl.2da~ ~SPPR738 1           0          0~ UNLESS ~SPPR738~  // "Heavenly Inferno" is not available by default
+  ACTION_IF (MOD_IS_INSTALLED ~setup-stratagems.tp2~ ~1500~ ||
+             MOD_IS_INSTALLED ~setup-iwdification.tp2~ ~30~) BEGIN
+    WARN @1100003 // Skipping: Make IWD spells available to the player. This feature is already installed by another mod.
+  END ELSE BEGIN
+    INCLUDE ~%MOD_FOLDER%/lib/spells_player.tph~
+  END
 
-BEGIN @1000050 // Make IWD spells available to the player
-  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
-  FORBID_COMPONENT ~setup-stratagems.tp2~ ~1500~ @1100003 // This feature is already installed by another mod.
-  FORBID_COMPONENT ~setup-stratagems.tp2~ ~1510~ @1100003 // This feature is already installed by another mod.
-  FORBID_COMPONENT ~setup-iwdification.tp2~ ~30~ @1100003 // This feature is already installed by another mod.
-  FORBID_COMPONENT ~setup-iwdification.tp2~ ~40~ @1100003 // This feature is already installed by another mod.
-  DESIGNATED 10
-
-  INCLUDE ~%MOD_FOLDER%/lib/sub-spells_player.tph~
+  // Original weapons and equipment are way too overpowered for SoD
+  ACTION_IF (GAME_IS ~bgee~) BEGIN
+    INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~
+  END
 
 
 BEGIN @1000100 // Rebalance weapons and equipment
   REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  REQUIRE_PREDICATE (NOT GAME_IS ~bgee~) @1100005 // Already installed by the main component.
   DESIGNATED 20
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~
+
+
+BEGIN @1000201 // Reduce by 25 percent
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
+  DESIGNATED 30
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
+  LAF REDUCE_EXPERIENCE INT_VAR scale = 75 END
+
+
+BEGIN @1000202 // Reduce by 50 percent
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
+  DESIGNATED 31
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
+  LAF REDUCE_EXPERIENCE INT_VAR scale = 50 END
+
+
+BEGIN @1000203 // Reduce by 75 percent
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
+  DESIGNATED 32
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
+  LAF REDUCE_EXPERIENCE INT_VAR scale = 25 END
+
+
+BEGIN @1000204 // No experience
+  REQUIRE_COMPONENT ~setup-a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
+  SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
+  DESIGNATED 33
+
+  INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
+  LAF REDUCE_EXPERIENCE INT_VAR scale = 0 END

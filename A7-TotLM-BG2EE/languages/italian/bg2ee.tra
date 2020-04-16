@@ -1,0 +1,292 @@
+// Strings from BG2:EE
+@334 = ~Intrappolato~
+@1121 = ~Minotauro~
+@1122 = ~Minotauro~
+@1280 = ~Stordito~
+@2613 = ~Wight~
+@2614 = ~Wight~
+@2619 = ~Paura~
+@2624 = ~Causa Ferite Gravi~
+@2628 = ~Disintegrazione~
+@2662 = ~Beholder~
+@2663 = ~Beholder~
+@2665 = ~Raggio della Morte~
+@2826 = ~Golem di Ferro~
+@2827 = ~Golem di Ferro~
+@2867 = ~Elementale della Terra~
+@2871 = ~Elementale della Terra~
+@2873 = ~Elementale del Fuoco~
+@2874 = ~Elementale del Fuoco~
+@2881 = ~Djinni~
+@2882 = ~Djinni~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Umber Hulk~
+@3021 = ~Umber Hulk~
+@7618 = ~Manto Potenziato
+(Scongiurazione)
+Livello: 8
+Raggio d'azione: 0
+Durata: 4 round
+Tempo di lancio: 1
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Quando questo incantesimo viene lanciato, conferisce al personaggio la completa invulnerabilità a tutte le armi di incantamento +3 o inferiore. Manto Potenziato è incredibilmente potente, ma dura davvero poco. Questo particolare, sommato al fatto che il tempo di lancio è breve, lo rende molto utile nella frenesia di un feroce combattimento. Manto Potenziato non funziona in congiunzione con Protezione dalle Armi Magiche. L'effetto dura fino al termine dell'incantesimo o finché non viene dissolto.~
+@7621 = ~Nebbia Mortale~
+@7622 = ~Nebbia Mortale
+(Apparizione)
+Livello: 6
+Raggio d'azione: 9 metri
+Durata: 1 turno
+Tempo di lancio: 6
+Area d'effetto: Raggio di 4,5 metri
+Tiro-salvezza: Nessuno
+
+Il lancio di questo incantesimo crea un'area di nebbia solida che ha la proprietà addizionale di essere altamente acida. Tutta la vita animale non immune all'acido subisce 8 punti di danno ad ogni round in cui rimane esposta ai vapori di Nebbia Mortale. L'incantesimo ucciderà all'istante tutte le creature evocate, indipendentemente dai loro Dadi-vita e immunità.~
+@7665 = ~Dito della Morte~
+@7672 = ~Dito della Morte
+(Necromanzia)
+Livello: 7
+Raggio d'azione: Visuale del lanciatore
+Durata: Permanente
+Tempo di lancio: 5
+Area d'effetto: 1 creatura
+Tiro-salvezza: Neg.
+
+Dito della Morte strappa l'energia vitale della vittima. Non appena il lancio dell'incantesimo è completato, il personaggio punta il suo dito contro il bersaglio, risucchiandone in maniera definitiva la forza vitale dal corpo a meno che non effettui con successo un tiro-salvezza contro Incantesimi con una penalità pari a -2. Una creatura che effettua con successo il proprio tiro-salvezza subisce comunque 2d8+1 punti di danno.~
+@7782 = ~Parola del Potere, Stordire
+(Evocazione/Attrazione)
+Livello: 7
+Raggio d'azione: Visuale del lanciatore
+Durata: Speciale
+Tempo di Lancio: 1
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Quando l'incantesimo Parola del Potere, Stordire viene lanciato, qualsiasi creatura scelta dal personaggio all'interno del suo campo visivo rimane stordita per un periodo di tempo che dipende dai Punti Ferita Attuali della vittima.
+
+1-29 Punti Ferita: Stordita per 4d4 round;
+30-59 Punti Ferita: Stordita per 2d4 round;
+60-89 Punti Ferita: Stordita per 1d4 round;
+90 Punti Ferita e oltre: Non influenzata dall'incantesimo.
+
+Si tenga presente che se una creatura è indebolita al punto che i suoi Punti Ferita sono inferiori rispetto al valore massimo normale, vengono considerati i Punti Ferita Attuali per determinare gli effetti dell'incantesimo.~
+@8364 = ~Dominato~
+@10554 = ~Non morto distrutto~
+@10685 = ~Lampada del Genio~
+@10872 = ~Respingi Incantesimo
+(Scongiurazione)
+Livello: 7
+Raggio d'azione: 0
+Durata: 3 round per livello
+Tempo di lancio: 7
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Questo potente incantesimo di Scongiurazione fa sì che le magie scagliate contro il personaggio vengano riflesse al lanciatore originario. La riflessione interessa un totale di 12 livelli d'incantesimi - inclusi quelli lanciati dalle pergamene e le abilità innate - ma esclude incantesimi e abilità con area d'effetto non centrata sul personaggio protetto, così come gli effetti ad area stazionaria quali Nube Assassina e Nube Maleodorante. Fintanto che l'incantesimo è lanciato direttamente sul personaggio, esso sarà riflesso sul lanciatore, a condizione che vi siano ancora livelli da assorbire. Ad esempio: se è rimasto soltanto un livello e un incantesimo di 3° livello viene lanciato contro il personaggio, esso verrà riflesso e l'effetto di Respingi Incantesimo avrà termine. Questo incantesimo non proteggerà il lanciatore da Dissolvi Magie, ma non verrà da esso dissolto.~
+@14665 = ~Pietrificato~
+@15326 = ~Lampada del Genio~
+@16109 = ~Teletrasporto~
+@17352 = ~Portale
+(Evocazione/Attrazione)
+Livello: 9
+Sfera: Evocazione
+Raggio d'azione: Visuale del lanciatore
+Durata: 33 round
+Tempo di lancio: 9
+Area d'effetto: Speciale
+Tiro-salvezza: Nessuno
+
+Lanciando questo incantesimo, il personaggio attira una creatura di un piano esterno - il diavolo della fossa - affinché attacchi i suoi nemici, ma la creatura potrebbe rivoltarsi contro di lui se non ha preso le necessarie precauzioni. Il lanciatore deve usare un incantesimo di Protezione dal Male su se stesso e sui suoi compagni per evitare di essere individuato dal diavolo. Se il personaggio non si protegge in questo modo, la creatura lo farà a pezzi insieme ai suoi compagni, banchettando infine con i resti.~
+@17361 = ~Evocare Immondo
+(Evocazione/Attrazione)
+Livello: 8
+Raggio d'azione: Visuale del lanciatore
+Durata: 15 round
+Tempo di lancio: 9
+Area d'effetto: Speciale
+Tiro-salvezza: Nessuno
+
+Più potente della variante dl 7° livello, il lancio dell'incantesimo Evocare Immondo attirerà un demone inferocito o un diavolo. Questo immondo attaccherà chiunque non sia protetto dall'incantesimo Protezione dal Male. Soltanto i personaggi disperati o aspiranti suicidi utilizzano questo incantesimo.~
+@18140 = ~Parola del Potere, Uccidere
+(Evocazione/Attrazione)
+Livello: 9
+Raggio d'azione: Visuale del lanciatore
+Durata: Istantanea
+Tempo di lancio: 1
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Quando l'incantesimo Parola del Potere, Uccidere viene pronunciato, una creatura all'interno del raggio d'azione viene uccisa. La creatura deve avere 60 o meno Punti Ferita, altrimenti l'incantesimo non ha effetto. Non c'è alcun tiro-salvezza.~
+@25946 = ~Raggio Rubino dell'Inversione
+(Alterazione)
+Livello: 7
+Raggio d'azione: 12 metri
+Durata: Istantanea
+Tempo di lancio: 5
+Area d'effetto: 1 creatura
+Tiro-salvezza: Nessuno
+
+Raggio Rubino dell'Inversione dissolve un incantesimo di protezione di qualsiasi livello attivo sulla creatura bersaglio. Gli incantesimi influenzati sono: Respingi Incantesimo Minore, Globo Minore di Invulnerabilità, Immunità agli Incantesimi, Globo di Invulnerabilità, Defletti Incantesimo Minore, Respingi Incantesimi, Defletti Incantesimo, Scudo Anti-incantesimi e Trappola per Incantesimi. Raggio Rubino dell'Inversione rimuoverà sempre l'incantesimo di protezione di livello più alto sul bersaglio; se un personaggio ha due protezioni dello stesso livello, la scelta è casuale. La Resistenza alla Magia del bersaglio, se presente, non viene applicata con questo incantesimo.~
+@25961 = ~Raggio Prismatico
+(Evocazione/Attrazione)
+Livello: 7
+Raggio d'azione: 18 metri
+Durata: Istantanea
+Tempo di lancio: 7
+Area d'effetto: Cono di 4,5 metri di lunghezza
+Tiro-salvezza: Speciale
+
+Quando questo incantesimo viene lanciato, il personaggio fa sì che sette raggi di luce, vibranti e multicolore, vengano emessi dalla sua mano. Questi raggi includono tutti i colori dello spettro visibile. Ogni creatura con meno di 8 Dadi-vita colpita da un raggio viene accecata per 5 round, a prescindere da ogni altro effetto. Tutte le creature all'interno dell'area d'effetto saranno toccate da uno o due raggi, ciascuno dei quali ha un potere e un effetto diverso:
+
+Rosso - Infligge 20 punti di danno. Un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno.
+Arancione - Infligge 40 punti di danno. Un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno.
+Giallo - Infligge 80 punti di danno. Un tiro-salvezza contro Incantesimi effettuato con successo dimezza il danno.
+Verde - Chi non effettua con successo un tiro-salvezza contro Veleno, muore. I sopravvissuti subiscono 20 punti di danno.
+Blu - Chi non effettua con successo un tiro-salvezza contro Pietrificazione viene trasformato in pietra.
+Indaco - Chi non effettua con successo un tiro-salvezza contro Bacchetta regredisce mentalmente.
+Viola - Chi non effettua con successo un tiro-salvezza contro Incantesimi viene disintegrato.~
+@26330 = ~Catena di Contingenze
+(Apparizione)
+Livello: 9
+Raggio d'azione: 0
+Durata: Finché non viene attivato
+Tempo di lancio: 1 round
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Catena di Contingenze incanala parte dell'energia magica dell'incantatore e la sprigiona solo in particolari circostanze. In pratica, il personaggio sceglie tre incantesimi che saranno sprigionati in specifiche situazioni, come ad esempio essere colpito da un nemico. Quando ciò accade, tutti e tre gli incantesimi vengono lanciati immediatamente. Nella contingenza possono essere usati incantesimi fino all'8° livello.~
+@33146 = ~Mummia~
+@33147 = ~Mummia~
+@34594 = ~Respingi Incantesimo~
+@34597 = ~Raggio Rubino dell'Inversione~
+@34606 = ~Raggio Prismatico~
+@34607 = ~Parola del Potere, Stordire~
+@34618 = ~Evocare Immondo~
+@34619 = ~Manto Potenziato~
+@34631 = ~Portale~
+@34634 = ~Catena di Contingenze~
+@34638 = ~Parola del Potere, Uccidere~
+@36936 = ~Un incantesimo di contingenza è stato fatto scattare~
+@37621 = ~Mummia Maggiore~
+@37688 = ~Mummia Maggiore~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~Colpito da una terribile malattia~
+@39957 = ~Simbolo, Stordimento
+(Evocazione/Attrazione)
+Livello: 8
+Raggio d'azione: 27 metri
+Durata: Speciale
+Tempo di lancio: 9
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Neg.
+
+Simbolo, Stordimento è una potente magia che permette al personaggio di tracciare un simbolo sul suolo o su un'altra superficie. Il simbolo vi rimane finché qualcuno non si avvicina troppo; a quel punto esploderà, facendo sì che tutte le creature all'interno dell'area debbano effettuare con successo un tiro-salvezza contro Incantesimi con una penalità pari a -4 o rimanere stordite per 2 round più un round ogni 3 livelli del lanciatore.~
+@46150 = ~*Beve una pozione*~
+@49103 = ~Simbolo, Stordimento~
+@54337 = ~Malato~
+@56859 = ~Borsa Conservante~
+@56861 = ~Borsa Conservante~
+@56862 = ~Borsa Conservante~
+@60376 = ~Ancora molto deve essere compiuto.~ [ELHAN101]
+@60377 = ~Scoprirete che gli elfi non sono un bersaglio facile!~ [ELHAN103]
+@60380 = ~Morirai ucciso dall'acciaio elfico!~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~Salve. Il tuo potere è impressionante.~ [EPRIM01]
+@61615 = ~Cosa vuoi tra noi fedeli?~ [EPRIM02]
+@61616 = ~Inchinati di fronte agli dèi e chiedi perdono!~ [EPRIM03]
+@61617 = ~Gli dèi sono implacabili, folle!~ [EPRIM04]
+@61618 = ~Quando avrò finito con te pregherai che giunga la tua morte!~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~Pietà! Abbi pietà!~ [EPRIM08]
+@61643 = ~In genere non parlo con quelli come te. Ad ogni modo, salve.~ [NOBFE03]
+@61644 = ~È importante, bifolco?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~Via! Non toccarmi!~ [NOBFE09]
+@61710 = ~Sei più che benvenuto.~ [GPRIF01]
+@61711 = ~Hai il mio saluto, fedele.~ [GPRIF02]
+@61712 = ~Il mio dio mi protegge e veglia su tutti noi.~ [GPRIF03]
+@61713 = ~Sono qui per servire.~ [GPRIF04]
+@61715 = ~Sei un affronto a tutto quello in cui credo!~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~Demonio! Demonio!~ [GPRIF08]
+@61724 = ~Ti accolgo a braccia aperte.~ [GPRIM01]
+@61725 = ~Confido che tu sia qui con buone intenzioni.~ [GPRIM02]
+@61726 = ~Possano gli dèi guardarti con benevolenza.~ [GPRIM03]
+@61727 = ~Tutti i fedeli sono i benvenuti, qui.~ [GPRIM04]
+@61729 = ~La giustizia sarà rapida e decisiva.~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~Che gli dèi mi proteggano!~ [GPRIM08]
+@61766 = ~Ci sono molti modi per trattare quelli come te!~ [HVILLF01]
+@61767 = ~Non arriverai vivo a stasera!~ [HVILLF02]
+@61768 = ~Ne ho avuto abbastanza di te!~ [HVILLF03]
+@61769 = ~Avrai presto quello che meriti!~ [HVILLF04]
+@61770 = ~Ti ucciderò!~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~Alla prossima, allora.~ [HVILLF08]
+@61808 = ~È importante?~ [PEASM203]
+@61809 = ~Visto che non sei l'esattore delle tasse...~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~Il mio tempo è prezioso quindi vedi di essere breve, zotico.~ [NOBMA03] ~Il mio tempo è prezioso quindi vedi di essere breve, zotica.~ [NOBMA03]
+@61836 = ~Ne ho diritto per lignaggio.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~Io... io devo sparire!~ [NOBMA09]
+@61862 = ~Altolà, chi va là?~ [SOLM01]
+@61863 = ~Non farmi perdere tempo.~ [SOLM02]
+@61864 = ~Tranquillo, cittadino.~ [SOLM03] ~Tranquilla, cittadina.~ [SOLM03]
+@61865 = ~Confido che tu non abbia intenzioni ostili.~ [SOLM04]
+@61866 = ~Saggerò il tuo coraggio con il freddo acciaio!~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~Ritirata!~ [SOLM08]
+@61871 = ~Buongiorno a te.~ [SOLF02]
+@61872 = ~Al tuo servizio con la mia spada.~ [SOLF03]
+@61873 = ~Non fare nulla di stupido e non avrai problemi.~ [SOLF04]
+@61874 = ~Incrocia la spada con me e morirai!~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~Indietro... Devo ritirarmi!~ [SOLF08]
+@61883 = ~Parla, se devi.~ [STHMA02]
+@61884 = ~Stai cercando qualcosa?~ [STHMA03]
+@61885 = ~Spiegati, cerca di essere chiaro!~ [STHMA04]
+@61886 = ~Prega che la morte arrivi presto e in fretta!~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~Devo... tornare nell'ombra!~ [STHMA09]
+@61901 = ~Stai indietro o te ne pentirai.~ [RUFFIA01]
+@61902 = ~Posso rompere un braccio o una gamba per una o due monete di rame.~ [RUFFIA02]
+@61903 = ~Ahhh, sono stanco di te.~ [RUFFIA03]
+@61904 = ~Sei davvero una roccia, tu.~ [RUFFIA04]
+@61905 = ~E va bene! Tu ed io! Fatti sotto!~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~Mi arrendo! Mi arrendo!~ [RUFFIA08]
+@61993 = ~ Come sempre, il piacere è mio.~ [GNFEM01] ~[GENERIC FEMALE NEUTRAL 01] Come sempre, il piacere è mio.~ [GNFEM01]
+@61994 = ~ Non farmi arrabbiare.~ [GNFEM02] ~[GENERIC FEMALE NEUTRAL 02] Non farmi arrabbiare.~ [GNFEM02]
+@61995 = ~ Pagherai per questo, ed anche caro.~ [GNFEM03] ~[GENERIC FEMALE NEUTRAL 03] Pagherai per questo, ed anche caro.~ [GNFEM03]
+@61996 = ~ Soffri!~ [GNFEM04] ~[GENERIC FEMALE NEUTRAL 04] Soffri!~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06] ~[GENERIC FEMALE NEUTRAL 06]~ [PHAERE06]
+@64285 = ~Colpo vorpal~
+@68099 = ~Cornugon~
+@68100 = ~Cornugon~
+@73062 = ~ Salute a voi! Come va?~ [GORCAM01] ~[GORCAM 01] Salute a voi! Come va?~ [GORCAM01]
+@73063 = ~ L'avete voluto voi!!~ [GORCAM02] ~[GORCAM 02] L'avete voluto voi!!~ [GORCAM02]
+@73064 = ~ Oh, che seccatura.~ [GORCAM03] ~[GORCAM 03] Oh, che seccatura.~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~Non puoi lanciare questo incantesimo finché l'attuale lancio non è terminato.~
+@93789 = ~Ascia da Battaglia +2~
+@93792 = ~Armatura di Cuoio +2~

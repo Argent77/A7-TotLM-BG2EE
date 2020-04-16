@@ -1,0 +1,304 @@
+// Strings from BG2:EE
+@334 = ~Enredado~
+@1121 = ~Minotauro~
+@1122 = ~Minotauro~
+@1280 = ~Atontado~
+@2613 = ~Tumulario~
+@2614 = ~Tumulario~
+@2619 = ~Miedo~
+@2624 = ~Causar heridas graves~
+@2628 = ~Desintegrar~
+@2662 = ~Contemplador~
+@2663 = ~Contemplador~
+@2665 = ~Rayo mortal~
+@2826 = ~Gólem de hierro~
+@2827 = ~Gólem de hierro~
+@2867 = ~Elemental de tierra~
+@2871 = ~Elemental de tierra~
+@2873 = ~Elemental de fuego~
+@2874 = ~Elemental de fuego~
+@2881 = ~Djinni~
+@2882 = ~Djinni~
+@2901 = ~Rakshasa~
+@2902 = ~Rakshasa~
+@3008 = ~Troll~
+@3010 = ~Troll~
+@3020 = ~Mole sombría~
+@3021 = ~Mole sombría~
+@7618 = ~Manto mejorado (Abjuración)
+Nivel: 8
+Alcance: El lanzador
+Duración: 4 asaltos
+Tiempo de lanzamiento: 1
+Área de efecto: El lanzador
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Al ser ejecutado, este conjuro concede invulnerabilidad total contra todas las armas, a excepción de aquellas que posean un encantamiento +4 o superior. Este sortilegio es increíblemente poderoso, de ahí su corta duración; sin embargo, su rápido tiempo de lanzamiento lo convierte en una herramienta increíblemente útil en mitad de un combate, donde obtener unos segundos podría marcar la diferencia entre la vida y la muerte. Nótese que el conjuro no funcionará en combinación con otro de Protección contra Armas Mágicas. El efecto durará hasta que el conjuro expire o sea disipado.~
+@7621 = ~Bruma mortal~
+@7622 = ~Bruma mortal (Evocación)
+Nivel: 6
+Alcance: 9 metros
+Duración: 1 turno
+Tiempo de lanzamiento: 6
+Área de efecto: Radio de 9 metros
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Este conjuro forma una nube sólida de niebla ácida. Toda criatura animal no inmune al ácido sufrirá 8 puntos de daño por cada asalto que permanezca en contacto con los vapores de la Bruma Mortal. Además, este conjuro matará instantáneamente a cualquier criatura que haya sido convocada, sin importar los dados de golpe o inmunidades que posea.~
+@7665 = ~Dedo de la muerte~
+@7672 = ~Dedo de la muerte (Nigromancia)
+Nivel: 7
+Alcance: Rango visual del lanzador
+Duración: Permanente
+Tiempo de lanzamiento: 5
+Área de efecto: 1 criatura
+Tirada de salvación: Niega efecto
+
+DESCRIPCIÓN:
+
+El Dedo de la Muerte acaba con la fuerza vital de su víctima. Tras pronunciar el ensalmo, el lanzador apunta con su índice a la criatura que desee matar y esta muere instantáneamente si no logra salvarse contra conjuro con una penalización -2. Las criaturas que tengan éxito en la tirada de salvación sufrirán 2D8 +1 puntos de daño.~
+@7782 = ~Palabra de poder: atontar (Conjuración/Convocación)
+Nivel: 7
+Alcance: Rango visual del lanzador
+Duración: Especial
+Tiempo de lanzamiento: 1
+Área de efecto: 1 criatura
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Cuando se ejecuta este conjuro, la criatura (que puede ser de cualquier tipo) elegida por el lanzador queda atontada durante un periodo de tiempo que dependerá de los puntos de golpe que posea en ese momento. Las criaturas con menos de 30 puntos de golpe quedan aturdidas durante 4D4 asaltos, las que tienen entre 30 y 59 lo hacen durante 2D4 asaltos, las de 60 a 89 durante 1D4 asaltos y las de 90 o más no resultan afectadas. Si la criatura estuviera debilitada y poseyera una cantidad de puntos de golpe inferior a su máximo normal, los puntos que tuviera en ese momento serían la referencia a utilizar.~
+@8364 = ~Dominado~
+@10554 = ~Muerto viviente destruido~
+@10685 = ~Redoma del genio~
+@10872 = ~Retorno de conjuros (Abjuración)
+Nivel: 7
+Alcance: El lanzador
+Duración: 3 asaltos/nivel
+Tiempo de lanzamiento: 7
+Área de efecto: El lanzador
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Este poderoso efecto de abjuración devuelve al lanzador original los conjuros cuyo objetivo sea el mago.
+
+Esto afecta a un total de 12 niveles de hechizo, incluyendo aquellos lanzados a partir de rollos de pergamino y aptitudes innatas. Sin embargo, no resultarán afectados los hechizos que no estén centrados directamente sobre el mago, como Nube Aniquiladora o Nube Hedionda.
+
+Siempre que un conjuro esté centrado en el mago protegido por Retorno de Conjuros, su efecto será devuelto al lanzador original. Este sortilegio afectará a conjuros de cualquier nivel, y lo seguirá haciendo mientras queden niveles por devolver.
+
+Si, por ejemplo, al mago solo le quedase un nivel por devolver y le lanzaran un conjuro de tercer nivel, este sortilegio sería devuelto a su lanzador y Retorno de Conjuros se cancelaría de inmediato.
+
+Este conjuro no protegerá a su lanzador contra Disipar Magia, pero tampoco resultará afectado por él.~
+@14665 = ~Petrificado~
+@15326 = ~Redoma del genio~
+@16109 = ~Teletransportar~
+@17352 = ~Umbral (Conjuración/Convocación)
+Nivel: 9
+Alcance: 9 metros
+Duración: 33 asaltos
+Tiempo de lanzamiento: 9
+Área de efecto: Especial
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Por medio de este conjuro, el lanzador atrae a un demonio abisal de los planos exteriores para que ataque a sus enemigos (aunque también atacará al lanzador si este no se anda con cuidado). Para impedir que el demonio advierta su presencia, el lanzador debe ejecutar un conjuro de Protección contra el Mal sobre él (y sus compañeros). Si el lanzador no lograra protegerse de esa forma, la criatura intentaría despedazarlo, al igual que a sus compañeros, devorando los restos a continuación.~
+@17361 = ~Convocar demonio (Conjuración/Convocación)
+Nivel: 8
+Alcance: Rango visual del lanzador
+Duración: 15 asaltos
+Tiempo de lanzamiento: 9
+Área de efecto: Especial
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Esta versión del conjuro Cacodemonio (más poderosa que la de séptimo nivel) traerá a un demonio enfurecido. El monstruo atacará a todas las criaturas del área que no estén protegidas contra el mal. Solo los hechiceros desesperados o suicidas se atreven a utilizar este sortilegio.~
+@18140 = ~Palabra de poder: matar (Conjuración/Convocación)
+Nivel: 9
+Alcance: Rango visual del lanzador
+Duración: Instantáneo
+Tiempo de lanzamiento: 1
+Área de efecto: 1 criatura
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Cuando se ejecuta este conjuro, se produce la muerte de una criatura que se encuentre dentro de su alcance. El sortilegio puede matar a una criatura de hasta 60 puntos de golpe, teniéndose en cuenta los que la víctima posea en el momento del lanzamiento aunque su máximo normal fuera superior a esa cantidad. No se permite realizar tirada de salvación. Este conjuro no surte efecto cuando la víctima posee más de 60 puntos de golpe.~
+@25946 = ~Rayo rubí de inversión (Alteración)
+Nivel: 7
+Alcance: 12 metros
+Duración: Instantáneo
+Tiempo de lanzamiento: 5
+Área de efecto: 1 criatura
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Al ser lanzado contra la criatura objetivo, este sortilegio disipa una de sus protecciones contra conjuros sin importar su nivel. Las protecciones contra conjuros disipadas son Desvío Menor de Conjuros, Esfera Menor de Invulnerabilidad, Inmunidad a Conjuros, Retorno Menor de Conjuros, Desvío de Conjuros, Esfera de Invulnerabilidad, Retorno de Conjuros y Trampa contra Conjuros. Este efecto siempre disipará la protección contra conjuros de mayor nivel que posea el objetivo, aunque se decidirá al azar si hay más de una con el mismo nivel. La resistencia mágica del objetivo (en caso de existir) no funcionará en lo que se refiere a este conjuro.~
+@25961 = ~Rociada prismática (Conjuración/Convocación)
+Nivel: 7
+Alcance: 18 metros
+Duración: Instantáneo
+Tiempo de lanzamiento: 7
+Área de efecto: Cono de 21 metros
+Tirada de salvación: Especial
+
+DESCRIPCIÓN:
+
+Al ejecutar este conjuro, el mago genera siete brillantes rayos de luz que salen de su mano. Estos incluyen todos los colores del espectro visible, y cada uno tiene un poder y un propósito diferentes. Toda criatura con menos de 8 DG que sea golpeada por uno de ellos quedará cegada durante 5 asaltos, además de sufrir cualquier efecto adicional. Toda criatura que se encuentre dentro del área de efecto será tocada por uno o dos rayos, cuyos efectos se incluyen en la siguiente lista:
+
+Rojo: Inflige 20 puntos de daño; tirada de salvación contra conjuro para sufrir solo la mitad
+Naranja: Inflige 40 puntos de daño; tirada de salvación contra conjuro para sufrir solo la mitad
+Amarillo: Inflige 80 puntos de daño; tirada de salvación contra conjuro para sufrir solo la mitad
+Verde: Debe superar una tirada de salvación contra veneno o morirá; el que sobreviva sufrirá igualmente 20 puntos de daño por veneno
+Azul: Debe superar una tirada de salvación contra petrificación o se convertirá en piedra
+Añil: Debe superar una tirada de salvación contra varita o sufrirá un efecto de debilidad mental
+Violeta: Debe superar una tirada de salvación contra conjuro o será desintegrado~
+@26330 = ~Contingencia en cadena (Evocación)
+Nivel: 9
+Alcance: El lanzador
+Duración: Permanente
+Tiempo de lanzamiento: 9
+Área de efecto: Especial
+Tirada de salvación: Ninguna
+
+DESCRIPCIÓN:
+
+Este conjuro canaliza parte de la energía mágica del hechicero y la desata cuando se dan ciertas circunstancias. Básicamente, el lanzador elige los tres conjuros que serán liberados y concreta esas circunstancias, como, por ejemplo, ser golpeado por un enemigo. Cuando se dé tal condición, los tres conjuros se ejecutarán instantáneamente. En esta versión de Contingencia se pueden almacenar conjuros de octavo nivel como máximo.~
+@33146 = ~Momia~
+@33147 = ~Momia~
+@34594 = ~Retorno de conjuros~
+@34597 = ~Rayo rubí de inversión~
+@34606 = ~Rociada prismática~
+@34607 = ~Palabra de poder: atontar~
+@34618 = ~Convocar demonio~
+@34619 = ~Manto mejorado~
+@34631 = ~Umbral~
+@34634 = ~Contingencia en cadena~
+@34638 = ~Palabra de poder: matar~
+@36936 = ~Se ha activado un conjuro de contingencia.~
+@37621 = ~Momia mayor~
+@37688 = ~Momia mayor~
+@38955 = ~Glabrezu~
+@38961 = ~Glabrezu~
+@39752 = ~Aquejado de una terrible enfermedad.~
+@39957 = ~Símbolo del atontamiento (Conjuración/Convocación)
+Nivel: 8
+Alcance: 27 metros
+Duración: Especial
+Tiempo de lanzamiento: 9
+Área de efecto: Radio de 9 metros
+Tirada de salvación: Niega efecto
+
+DESCRIPCIÓN:
+
+Símbolo del Atontamiento es un poderoso encantamiento que permite al lanzador inscribir un símbolo en el suelo o sobre cualquier otra superficie. El símbolo se quedará en ese lugar hasta que alguien se acerque demasiado a él, momento en que explotará, obligando a todos los que estén en el área de efecto a salvarse contra conjuro con una penalización -4. En caso de fallar, quedarán aturdidos durante 2 asaltos + 1 asalto por cada 3 niveles del lanzador.~
+@46150 = ~se bebe una poción~
+@49103 = ~Símbolo del atontamiento~
+@54337 = ~Enfermo~
+@56859 = ~Bolsa de contención~
+@56861 = ~Bolsa de contención~
+@56862 = ~Bolsa de contención~
+@60376 = ~Todavía queda mucho por hacer.~ [ELHAN101]
+@60377 = ~¡Veréis que los elfos no son una presa fácil!~ [ELHAN103]
+@60380 = ~¡El acero élfico segará vuestra vida!~ [ELHAN104]
+@60381 = ~~ [ELHAN105]
+@60382 = ~~ [ELHAN106]
+@61614 = ~Bienvenido. Puedo sentir vuestro gran poder.~ [EPRIM01] ~Bienvenida. Puedo sentir vuestro gran poder.~ [EPRIM01]
+@61615 = ~¿Qué es lo que deseáis de los piadosos?~ [EPRIM02]
+@61616 = ~¡Inclinaos ante los dioses e implorad su piedad!~ [EPRIM03]
+@61617 = ~¡Necio, los dioses no conciben el perdón!~ [EPRIM04]
+@61618 = ~¡Rogaréis que os mate cuando haya terminado con vos!~ [EPRIM05]
+@61619 = ~~ [EPRIM06]
+@61620 = ~~ [EPRIM07]
+@61621 = ~¡Piedad! ¡Tened piedad!~ [EPRIM08]
+@61643 = ~No suelo hablar con los de vuestra calaña, pero... hola.~ [NOBFE03]
+@61644 = ~¿Es importante, plebeyo?~ [NOBFE04] ~¿Es importante, plebeya?~ [NOBFE04]
+@61647 = ~~ [NOBFE07]
+@61648 = ~~ [NOBFE08]
+@61649 = ~¡Atrás! ¡No me toquéis!~ [NOBFE09]
+@61710 = ~Sois más que bienvenido a mi presencia.~ [GPRIF01] ~Sois más que bienvenida a mi presencia.~ [GPRIF01]
+@61711 = ~Os saludo, oh, piadoso.~ [GPRIF02] ~Os saludo, oh, piadosa.~ [GPRIF02]
+@61712 = ~Mi dios me protege y nos vigila a todos.~ [GPRIF03]
+@61713 = ~Estoy aquí para servir.~ [GPRIF04]
+@61715 = ~¡Sois una ofensa para todo en lo que creo!~ [GPRIF05]
+@61720 = ~~ [GPRIF06]
+@61721 = ~~ [GPRIF07]
+@61723 = ~¡Demonio! ¡¡Demonio!!~ [GPRIF08]
+@61724 = ~Os recibo con los brazos abiertos.~ [GPRIM01]
+@61725 = ~Supongo que estáis aquí de buena fe.~ [GPRIM02]
+@61726 = ~Ojalá que los dioses os sean propicios.~ [GPRIM03]
+@61727 = ~Todos los piadosos son bienvenidos aquí.~ [GPRIM04]
+@61729 = ~¡La justicia será rápida y terminante!~ [GPRIM05]
+@61730 = ~~ [GPRIM06]
+@61731 = ~~ [GPRIM07]
+@61732 = ~¡Que los dioses me protejan!~ [GPRIM08]
+@61766 = ~¡Hay muchas formas de tratar a los de vuestra calaña!~ [HVILLF01]
+@61767 = ~¡No veréis otro amanecer!~ [HVILLF02]
+@61768 = ~¡Ya he tenido bastante con vos!~ [HVILLF03]
+@61769 = ~Enseguida tendréis lo que os merecéis.~ [HVILLF04]
+@61770 = ~¡Os voy a matar!~ [HVILLF05]
+@61771 = ~~ [HVILLF06]
+@61772 = ~~ [HVILLF07]
+@61773 = ~Ya habrá otra ocasión.~ [HVILLF08]
+@61808 = ~¿Es importante?~ [PEASM203]
+@61809 = ~Mientras no seáis el recaudador...~ [PEASM204]
+@61812 = ~~ [PEASM207]
+@61813 = ~~ [PEASM208]
+@61814 = ~~ [PEASM209]
+@61835 = ~Mi tiempo es oro, así que sed breve, plebeyo.~ [NOBMA03] ~Mi tiempo es oro, así que sed breve, plebeya.~ [NOBMA03]
+@61836 = ~Mi derecho nace de mi sangre.~ [NOBMA04]
+@61839 = ~~ [NOBMA07]
+@61840 = ~~ [NOBMA08]
+@61841 = ~¡Debo... debo huir!~ [NOBMA09]
+@61862 = ~¡Confesad en qué estáis metido!~ [SOLM01] ~¡Confesad en qué estáis metida!~ [SOLM01]
+@61863 = ~No interrumpáis mis tareas.~ [SOLM02]
+@61864 = ~Descansad, ciudadano.~ [SOLM03] ~Descansad, ciudadana.~ [SOLM03]
+@61865 = ~Creo que no albergáis intenciones hostiles.~ [SOLM04]
+@61866 = ~¡Pondré a prueba vuestro temple con el frío acero!~ [SOLM05]
+@61867 = ~~ [SOLM06]
+@61868 = ~~ [SOLM07]
+@61869 = ~¡Retirada!~ [SOLM08]
+@61871 = ~Que tengáis un buen día.~ [SOLF02]
+@61872 = ~Con mi espada, presto mi servicio.~ [SOLF03]
+@61873 = ~No hagáis nada estúpido y no tendréis problemas.~ [SOLF04]
+@61874 = ~¡Cruzad vuestro acero con el mío y moriréis!~ [SOLF05]
+@61875 = ~~ [SOLF06]
+@61876 = ~~ [SOLF07]
+@61877 = ~¡Retroceder! ¡Tengo que retroceder!~ [SOLF08]
+@61883 = ~Decidme lo que sea.~ [STHMA02]
+@61884 = ~¿Estáis buscando algo?~ [STHMA03]
+@61885 = ~¡Explicaos de una vez, y haced que la razón suene convincente!~ [STHMA04]
+@61886 = ~¡Implorad la muerte y haré que sea rápida!~ [STHMA05]
+@61888 = ~~ [STHMA07]
+@61889 = ~~ [STHMA08]
+@61890 = ~¡Debo... volver a las sombras!~ [STHMA09]
+@61901 = ~Retroceded o lo lamentaréis.~ [RUFFIA01]
+@61902 = ~Puedo romper un brazo o una pierna por una o dos monedas de cobre.~ [RUFFIA02]
+@61903 = ~Ah, largo de aquí.~ [RUFFIA03]
+@61904 = ~Sois como el hierro, de verdad.~ [RUFFIA04]
+@61905 = ~¡De acuerdo! ¡Vos y yo solos! ¡Vamos con ello!~ [RUFFIA05]
+@61906 = ~~ [RUFFIA06]
+@61907 = ~~ [RUFFIA07]
+@61908 = ~¡Está bien, me rindo!~ [RUFFIA08]
+@61993 = ~Como siempre, el placer es mío.~ [GNFEM01]
+@61994 = ~No me hagáis enfadar.~ [GNFEM02]
+@61995 = ~Lo pagaréis muy caro.~ [GNFEM03]
+@61996 = ~¡Sufrid!~ [GNFEM04]
+@61997 = ~~ [PHAERE05]
+@61998 = ~~ [PHAERE06]
+@64285 = ~Golpe vorpalino~
+@68099 = ~Cornugón~
+@68100 = ~Cornugón~
+@73062 = ~¡Saludos! ¿Cómo estáis?~ [GORCAM01]
+@73063 = ~¡Vosotros os lo habéis buscado!~ [GORCAM02]
+@73064 = ~¡Oh, qué disparate!~ [GORCAM03]
+@73065 = ~~ [GORCAM04]
+@74011 = ~No podéis lanzar este hechizo hasta que no se haya agotado el conjuro actual.~
+@93789 = ~Hacha de batalla +2~
+@93792 = ~Armadura de cuero +2~
