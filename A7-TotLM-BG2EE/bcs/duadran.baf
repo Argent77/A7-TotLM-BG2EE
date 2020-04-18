@@ -81,7 +81,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL7M")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(Myself,WIZARD_TRUE_SIGHT)
     SetInterrupt(TRUE)
 END
@@ -111,7 +111,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -141,7 +141,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -171,7 +171,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -201,7 +201,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -231,7 +231,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -261,7 +261,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL8G")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
     SetInterrupt(TRUE)
 END
@@ -290,7 +290,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END
@@ -319,7 +319,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END
@@ -348,7 +348,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END
@@ -377,7 +377,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END
@@ -406,7 +406,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END
@@ -435,7 +435,7 @@ THEN
     SetInterrupt(FALSE)
     SetGlobalTimer("OH_Cast","LOCALS",6)
     DestroyItem("SCRL6U")
-    DisplayStringHead(Myself,46153)
+    DisplayStringHead(Myself,@46153)
     SpellNoDec(LastSeenBy(Myself),WIZARD_BREACH)
     SetInterrupt(TRUE)
 END

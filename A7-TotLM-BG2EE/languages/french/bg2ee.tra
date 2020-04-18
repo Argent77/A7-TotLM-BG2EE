@@ -192,6 +192,7 @@ Jet de sauvegarde : annule
 Symbole, étourdissement est un puissant enchantement qui permet au magicien d'inscrire un symbole sur le sol ou tout autre surface. Ce symbole explosera si quelqu'un s'en approche trop près, l'obligeant à réussir un jet de sauvegarde contre les sorts avec un malus de 4, sous peine d'être étourdi pendant 2 rounds + 1 round par tranche de 3 niveaux du magicien.~
 @39968 = ~Déclencheur de sorts - Lancé~
 @46150 = ~avale une potion~
+@46153 = ~utilise un parchemin~
 @49103 = ~Symbole Étourdissement~
 @54337 = ~Malade~
 @56859 = ~Sac de contenance~
