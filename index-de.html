@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOD: Die Herausforderungen des Meisters der Verlockung für BG2:EE</title>
-    <meta name="description" content="Die Icewind Dale-Erweiterung &quot;Die Herausforderungen des Meisters der Verlockung&quot; bereitgestellt für BG2:EE und EET (Enhanced Edition Trilogy)." />
+    <title>MOD: Die Herausforderungen des Meisters der Verlockung für Baldur's Gate</title>
+    <meta name="description" content="Die Icewind Dale-Erweiterung &quot;Die Herausforderungen des Meisters der Verlockung&quot; bereitgestellt für BG2:EE, Siege of Dragonspear und EET (Enhanced Edition Trilogy)." />
     <meta name="keywords" content="bg2ee, eet, mod, adventure, dungeon crawler" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
@@ -20,8 +20,8 @@
     </div>
 
     <header>
-      <h1 class="title">Die Herausforderungen des Meisters der Verlockung für BG2:EE</h1>
-      <div class="subtitle">Die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” bereitgestellt für BG2:EE und EET (Enhanced Edition Trilogy).</div>
+      <h1 class="title">Die Herausforderungen des Meisters der Verlockung für Baldur's Gate</h1>
+      <div class="subtitle">Die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” bereitgestellt für BG2:EE, Siege of Dragonspear und EET (Enhanced Edition Trilogy).</div>
       <hr />
       <p class="about"><strong>Autor: Argent77</strong></p>
       <ul id="globalnav" class="about">
@@ -30,7 +30,7 @@
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a></li>
-        <li>Version: 1.0</li>
+        <li>Version: 2.0</li>
       </ul>
       <hr />
       <nav>
@@ -48,8 +48,8 @@
       <!-- ================== O V E R V I E W ================== -->
       <section id="overview">
         <h2>Übersicht</h2>
-        <p>Diese Mod stellt die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” für BG2:EE (Version 2.0 oder später) und EET (Enhanced Edition Trilogy) bereit.</p>
-        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh im Wirtshaus in den Umarhügeln ansprecht. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
+        <p>Diese Mod stellt die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” für BG2:EE (Version 2.0 oder später), Siege of Dragonspear und EET (Enhanced Edition Trilogy) bereit.</p>
+        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh ansprecht. Man kann ihn entweder im Wirtshaus in den Umarhügeln (SvA), in der Taverne in Amkethran (TdB) oder im südöstlichen Bereich des Coalition Camps (Siege of Dragonspear) antreffen. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
         <hr class="spacer" />
         <p>Schaut im <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forum</a> oder <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forum</a> vorbei, wenn ihr Fragen habt, oder besucht <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> oder <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>, um die aktuellste Modversion herunterzuladen.</p>
         <div class="back">
@@ -65,9 +65,13 @@
         <p>Es ist nicht nötig ein neues Spiel zu starten. Allerdings muss sie installiert werden, bevor ihr zum ersten Mal die Herberge in den Umarhügeln betretet.</p>
         <p>Um die Mod zu deinstallieren, startet <em>„setup-A7-TotLM-BG2EE.exe”</em> oder <em>„setup-A7-TotLM-BG2EE.command”</em> erneut und folgt den Anweisungen.</p>
         <hr class="spacer" />
-        <h3>Kompatibilität</h3>
-        <p>Es sind keine Kompatibilitätsprobleme mit anderen Mods bekannt.</p>
-        <p>Diese Mod sollte vor Sword Coast Stratagems (SCS) installiert werden.</p>
+        <h3>Kompatibilität und Modreihenfolge</h3>
+        <p>Keine Kompatibilitätsprobleme mit anderen Mods bekannt. Allerdings wird die Installation von Zaubern aus Icewind Dale übersprungen, falls die folgenden Mods installiert sind:</p>
+        <ul>
+          <li><strong>Sword Coast Statagems (SCS):</strong> Komponente <em>"Include arcane spells from IWD:EE"</em></li>
+          <li><strong>IWDification:</strong> Komponente <em>"IWD arcane spell pack"</em></li>
+        </ul>
+        <!-- <p>Es wird empfohlen, diese Mod nach den oben genannten Modkomponenten zu installieren, um das Risiko von möglichen Konflikten zu minimieren.</p> -->
         <div class="back">
           <a class="novisit" href="#top">ZURÜCK ZUM ANFANG</a>
         </div>
@@ -78,18 +82,25 @@
         <h2>Modkomponenten</h2>
         <ol class="gappedlist">
           <li>
-            <p><strong>Die Herausforderungen des Meisters der Verlockung für BG2:EE</strong> <em>(benötigt BG2:EE oder EET ab Patchversion 2.0)</em></p>
+            <p><strong>Die Herausforderungen des Meisters der Verlockung für Baldur's Gate</strong> <em>(benötigt BG2:EE, SoD oder EET ab Patchversion 2.0)</em></p>
             <p>Das ist die Hauptkomponente der Mod. Sie installiert alle notwendigen Gebiete, Kreaturen, Gegenstände, Zauber und vieles mehr, um das Abenteuer zu genießen. (Empfohlene Gruppenstärke: Stufe 11 oder höher.)</p>
-            <p>Die Mod führt einige kleinere Veränderungen durch, um das Abenteuer besser an BG2 anzupassen. Zauber und Gegenstände aus Icewind Dale, die keine oder nur eine geringe Bedeutung haben, wurden durch BG2-Zauber und -Gegenstände ersetzt. Außerdem wurden einige Ereignisse, Skripte und Monsteranimationen erweitert, verbessert oder an BG2 angepasst.</p>
+            <p>Die Mod führt einige kleinere Veränderungen durch, um das Abenteuer besser an das Baldur's Gate Universum anzupassen. Zauber und Gegenstände aus Icewind Dale, die keine oder nur eine geringe Bedeutung haben, wurden durch Zauber und Gegenstände aus Baldur's Gate ersetzt. Außerdem wurden einige Ereignisse, Skripte und Monsteranimationen erweitert, verbessert oder an Baldur's Gate angepasst.</p>
+            <p>Diese Komponente stellt dem Spieler zusätzlich eine große Anzahl an Icewind Dale Zaubern zur Verfügung. Sie können in Shops, Containern oder von Monstern erworben bzw. erlangt werden.</p>
           </li>
           <li>
-            <p><strong>Dem Spieler vorhandene IWD-Zauber zur Verfügung stellen</strong> <em>(benötigt die Hauptkomponente)</em></p>
-            <p>Diese Mod kommt mit einigen speziellen Icewind Dale Zaubern daher, die von den Akteuren des Abenteuers benutzt werden. Diese Komponente stellt diese Zauber auch dem Spieler zur Verfügung. Sie können in Shops, Containern oder von Monstern erworben bzw. erlangt werden.</p>
-            <p><strong>Hinweis:</strong> Diese Komponente sollte nicht installiert werden, falls ihr Icewind Dale-Zauber mit IWDification oder Sword Coast Stratagems (SCS) installieren wollt.</p>
-          </li>
-          <li>
-            <p><strong>Waffen und Ausrüstung anpassen</strong> <em>(benötigt die Hauptkomponente)</em></p>
+            <p><strong>Waffen und Ausrüstung anpassen</strong> <em>(benötigt die Hauptkomponente; nicht für SoD verfügbar)</em></p>
             <p>Viele Gegenstände aus Icewind Dale sind überaus mächtig. Sie würden den weiteren Verlauf des Spiels sehr vereinfachen und dadurch den Spielspaß mindern. Diese Komponente ersetzt diese Gegenstände durch weniger starke Varianten aus BG2.</p>
+            <p><strong>Hinweis:</strong> Aus Gründen der Spielbalance wird in BG1:SoD diese Komponente zusammen mit der Hauptkomponente <em>"Die Herausforderungen des Meisters der Verlockung für Baldur's Gate"</em> installiert.</p>
+          </li>
+          <li>
+            <p><strong>Erfahrungspunkte von Monstern und Questbelohnungen verringern</strong> <em>(benötigt die Hauptkomponente)</em></p>
+            <p>Das Abenteuer erlaubt es euch, um die 300.000 bis 400.000 Erfahrungspunkte zu verdienen. Je nachdem, wann oder wo das Abenteuer beginnt, kann dieser "Erfahrungsgewinn" die Spielbalance deutlich stören. Diese Komponente ermöglicht es euch, Erfahrungspunkte durch das Töten von Gegnern oder Abschließen von Questabschnitten zu verringern. Folgende Auswahlmöglichkeiten stehen zur Verfügung:</p>
+            <ol>
+              <li>Um 25 Prozent verringern</li>
+              <li>Um 50 Prozent verringern</li>
+              <li>Um 75 Prozent verringern <em>(Empfohlen, wenn das Abenteuer in Siege of Dragonspear startet.)</em></li>
+              <li>Keine Erfahrungspunkte vergeben</li>
+            </ol>
           </li>
         </ol>
         <div class="back">
@@ -105,7 +116,7 @@
         <p><strong>French translation:</strong> Gwendolyne</p>
         <p><strong>Italian translation:</strong> Aedan and improbabile</p>
         <p><strong>Russian translation:</strong> Eugene Vlasov (aka EugVV)</p>
-        <!--<p><strong>Spanish translation:</strong> Chidojuan</p>-->
+        <p><strong>Spanish translation:</strong> Chidojuan</p>
         <p><strong>Additional help:</strong> typo_tilly, jastey</p>
         <hr class="spacer" />
         <h5>Copyright Notice:</h5>
@@ -115,7 +126,7 @@
               <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
             </a>
           </div>
-          <p>"Trials of the Luremaster for BG2:EE" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          <p>"Trials of the Luremaster for Baldur's Gate" is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
           <hr class="spacer" />
           <p>Baldur's Gate II: Enhanced Edition and Icewind Dale: Enhanced Edition &copy; Beamdog.</p>
         </div>
@@ -127,6 +138,16 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <h6>Version 2.0</h6>
+        <ul>
+          <li>Made adventure available to Siege of Dragonspear.</li>
+          <li>Added multiple starting points of the adventure (SoD:Coalition Camp, SoA:Umar Hills, ToB:Amkethran).</li>
+          <li>Merged subcomponent "Make IWD spells available to the player" with main component to solve compatibility issues.</li>
+          <li>Added optional component to reduce experience gained during the adventure.</li>
+          <li>Added partial Spanish translation (thanks Chidojuan).</li>
+          <li>Added partial Polish translation.</li>
+          <li>Various bugfixes.</li>
+        </ul>
         <h6>Version 1.0</h6>
         <ul>
           <li>Initial release</li>
