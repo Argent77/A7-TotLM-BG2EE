@@ -1,6 +1,6 @@
 BACKUP ~A7-TotLM-BG2EE/backup~
 SUPPORT ~http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/~
-VERSION ~1.0~
+VERSION ~2.0~
 
 ALWAYS
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
