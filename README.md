@@ -1,5 +1,5 @@
 # Trials of the Luremaster for Baldur's Gate
-*The Icewind Dale expansion "Trials of the Luremaster" made available to BG2:EE and EET (Enhanced Edition Trilogy).*
+*The Icewind Dale expansion "Trials of the Luremaster" made available to BG2:EE, Siege of Dragonspear and EET (Enhanced Edition Trilogy).*
 
 **Author:** Argent77
 
