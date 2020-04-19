@@ -98,7 +98,6 @@ BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
   INCLUDE ~%MOD_FOLDER%/lib/misc.tph~
 
   // Make IWD spells available to the player
-  APPEND ~hidespl.2da~ ~SPPR738 1           0          0~ UNLESS ~SPPR738~  // "Heavenly Inferno" is not available by default
   ACTION_IF (MOD_IS_INSTALLED ~setup-stratagems.tp2~ ~1500~ ||
              MOD_IS_INSTALLED ~setup-iwdification.tp2~ ~30~) BEGIN
     WARN @1100003 // Skipping: Make IWD spells available to the player. This feature is already installed by another mod.
