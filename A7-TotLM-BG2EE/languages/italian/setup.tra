@@ -3,9 +3,9 @@
 @1000000 = ~Trials of the Luremaster per Baldur's Gate~
 @1000100 = ~Riequilibra armi ed equipaggiamento~
 @1000200 = ~Riduci esperienza ottenuta da mostri e missioni~
-@1000201 = ~Reduci del 25 percento~
-@1000202 = ~Reduci del 50 percento~
-@1000203 = ~Reduci del 75 percento~
+@1000201 = ~Riduci del 25 percento~
+@1000202 = ~Riduci del 50 percento~
+@1000203 = ~Riduci del 75 percento~
 @1000204 = ~Non conferire esperienza~
 
 @1100000 = ~SoD, BG2:EE or EET.~
