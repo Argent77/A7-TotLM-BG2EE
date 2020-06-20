@@ -3,7 +3,7 @@ IF
   LOS([PC],25)
 THEN
   RESPONSE #100
-    ReallyForceSpell(Myself,INNATE_HARPY_WAIL)
+    ReallyForceSpellRES("IDSP138",Myself)
     SetGlobal("EFHARPY_inactive","LOCALS",1)
   RESPONSE #50
     Continue()

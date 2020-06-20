@@ -5,7 +5,7 @@ THEN
   RESPONSE #100
     SetGlobal("ALTAR_OF_HEAVEN","MYAREA",1)
     DestroyItem("DGEM03")
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 
 IF
@@ -15,7 +15,7 @@ THEN
   RESPONSE #100
     SetGlobal("ALTAR_OF_DAY","MYAREA",1)
     DestroyItem("DGEM01")
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 
 IF
@@ -25,7 +25,7 @@ THEN
   RESPONSE #100
     SetGlobal("ALTAR_OF_SEA","MYAREA",1)
     DestroyItem("DGEM06")
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 
 IF
@@ -35,7 +35,7 @@ THEN
   RESPONSE #100
     SetGlobal("ALTAR_OF_EARTH","MYAREA",1)
     DestroyItem("DGEM10")
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 
 IF
@@ -45,6 +45,6 @@ THEN
   RESPONSE #100
     SetGlobal("ALTAR_OF_SUNSET","MYAREA",1)
     DestroyItem("DGEM07")
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 

@@ -4,6 +4,6 @@ THEN
   RESPONSE #100
     CreateItem("DGEM08",1,1,1)
     SetGlobal("ALTAR_OF_HEAVEN","MYAREA",2)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 

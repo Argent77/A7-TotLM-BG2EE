@@ -5,7 +5,7 @@ THEN
   RESPONSE #100
     DestroyItem("DGEM02")
     GiveItemCreate("DGEM02",[PC],0,0,0)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    ForceSpellRES("IDSP167",Myself)
     StartCutScene("caCorCat")
 END
 
@@ -16,7 +16,7 @@ THEN
   RESPONSE #100
     DestroyItem("DGEM09")
     GiveItemCreate("DGEM09",[PC],0,0,0)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    ForceSpellRES("IDSP167",Myself)
     StartCutScene("caCorCat")
 END
 
@@ -27,7 +27,7 @@ THEN
   RESPONSE #100
     DestroyItem("DGEM05")
     GiveItemCreate("DGEM05",[PC],0,0,0)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    ForceSpellRES("IDSP167",Myself)
     StartCutScene("caCorCat")
 END
 
@@ -38,7 +38,7 @@ THEN
   RESPONSE #100
     DestroyItem("DGEM04")
     GiveItemCreate("DGEM04",[PC],0,0,0)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW_BAD)
+    ForceSpellRES("IDSP167",Myself)
     StartCutScene("caCorCat")
 END
 
@@ -48,7 +48,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("DGEM08_PLACED","MYAREA",1)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 
 IF
@@ -57,6 +57,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("DGEM08_PLACED","MYAREA",0)
-    ForceSpell(Myself,INNATE_CONTAINER_GLOW)
+    ForceSpellRES("IDSP166",Myself)
 END
 

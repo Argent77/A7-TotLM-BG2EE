@@ -10,7 +10,7 @@ THEN
     MultiPlayerSync()
     MoveViewObject(Myself,INSTANT)
     MultiPlayerSync()
-    PlaySound("AM9711G")
+    // PlaySound("AM9711G")   // resref unavailable in IWD
     EquipItem("CIFADE")
     Wait(2)
     Deactivate(Myself)

@@ -36,35 +36,43 @@ IF
   RandomNum(6,1)
 THEN
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CHARM_PERSON)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CHARM_PERSON)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FEAR)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FEAR)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FLESH_TO_STONE)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DISINTEGRATE)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DISINTEGRATE)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DEATH_RAY)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLOW)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DOMINATION)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLEEP)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
 END
@@ -74,35 +82,43 @@ IF
   GlobalGT("BEHOLDER_CASTS","LOCALS",0)
 THEN
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CAUSE_SERIOUS_WOUNDS)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CAUSE_SERIOUS_WOUNDS)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_CHARM_PERSON)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_CHARM_PERSON)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FEAR)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FEAR)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_FLESH_TO_STONE)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_FLESH_TO_STONE)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DISINTEGRATE)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DISINTEGRATE)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_DEATH_RAY)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DEATH_RAY)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLOW)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_DOMINATION)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
   RESPONSE #100
-    ForceSpell(LastSeenBy(Myself),INNATE_BEHOLDER_SLEEP)
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_SLOW)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_HOLD_PERSON)
+    IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
+    Wait(1)
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),BEHOLDER_ANTIMAGIC_RAY)
     IncrementGlobal("BEHOLDER_CASTS","LOCALS",-1)
     Wait(1)
 END

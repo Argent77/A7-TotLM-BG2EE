@@ -4,7 +4,7 @@ THEN
   RESPONSE #100
     CutSceneId("HEAVEN")
     ZoomLock(FALSE)
-    ForceSpellPoint([2790.1924],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    ForceSpellPointRES("IDSP168",[2790.1924])
     SmallWait(2)
     CreateCreature("CORCAT",[2790.1924],14)
 END
@@ -15,7 +15,7 @@ THEN
   RESPONSE #100
     CutSceneId("DAY")
     SmallWait(3)
-    ForceSpellPoint([2957.1837],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    ForceSpellPointRES("IDSP168",[2957.1837])
     SmallWait(2)
     CreateCreature("CORCAT",[2957.1837],14)
 END
@@ -26,7 +26,7 @@ THEN
   RESPONSE #100
     CutSceneId("EARTH")
     SmallWait(6)
-    ForceSpellPoint([2848.2084],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    ForceSpellPointRES("IDSP168",[2848.2084])
     SmallWait(2)
     CreateCreature("CORCAT",[2848.2084],10)
 END
@@ -37,7 +37,7 @@ THEN
   RESPONSE #100
     CutSceneId("SEA")
     SmallWait(9)
-    ForceSpellPoint([3453.1967],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    ForceSpellPointRES("IDSP168",[3453.1967])
     SmallWait(2)
     CreateCreature("CORCAT",[3453.1967],2)
 END
@@ -48,7 +48,7 @@ THEN
   RESPONSE #100
     CutSceneId("NIGHT")
     SmallWait(12)
-    ForceSpellPoint([3391.2134],INNATE_CORNUGON_SUMMON_TRAVEL_ANIMATION)
+    ForceSpellPointRES("IDSP168",[3391.2134])
     SmallWait(2)
     CreateCreature("CORCAT",[3391.2134],6)
 END

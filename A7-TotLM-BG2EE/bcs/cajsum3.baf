@@ -20,7 +20,7 @@ THEN
 END
 
 IF
-  HaveSpell(INNATE_SUMMON_GLABREZU)
+  HaveSpellRES("IDSP158")
   See(NearestEnemyOf(Myself))
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
@@ -28,7 +28,7 @@ THEN
   RESPONSE #100
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobal("SUMMON_TIMER","LOCALS",0)
-    Spell(LastSeenBy(Myself),INNATE_SUMMON_GLABREZU)
+    SpellRES("IDSP158",LastSeenBy(Myself))
     Wait(2)
 END
 
@@ -476,11 +476,11 @@ END
 IF
   !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
-  HaveSpell(INNATE_SUMMON_GLABREZU)
+  HaveSpellRES("IDSP158")
 THEN
   RESPONSE #100
     SetGlobal("SUMMON_TIMER","LOCALS",0)
-    SpellPoint([3216.2024],INNATE_SUMMON_GLABREZU)
+    SpellPointRES("IDSP158",[3216.2024])
     Wait(2)
 END
 

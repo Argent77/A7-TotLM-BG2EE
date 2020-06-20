@@ -17,7 +17,7 @@ THEN
   RESPONSE #100
     IncrementGlobal("Internal4","LOCALS",1)
     SetGlobalTimer("#localtimer","LOCALS",19)
-    ReallyForceSpell(NearestEnemyOf(Myself),INNATE_MYCONID_SPORES)
+    ReallyForceSpellRES("IDSP188",NearestEnemyOf(Myself))
     Wait(2)
 END
 

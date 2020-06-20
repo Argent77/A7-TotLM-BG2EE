@@ -4,7 +4,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",7)
-    ReallyForceSpell(Myself,INNATE_MUSTARD_JELLY_VAPOR)
+    ReallyForceSpellRES("IDSP164",Myself)
     Wait(2)
 END
 

@@ -3,7 +3,7 @@ IF
 THEN
   RESPONSE #100
     DisplayString(Myself,14381)
-    ActionOverride(LastTrigger,ReallyForceSpell(Myself,TRAP_DEATH_FOG))
+    ActionOverride(LastTrigger,ReallyForceSpellRES("IDSP030",Myself))
     Wait(2)
 END
 
@@ -12,7 +12,7 @@ IF
 THEN
   RESPONSE #100
     DisplayString(Myself,14381)
-    ActionOverride(LastTrigger,ReallyForceSpell(Myself,TRAP_DEATH_FOG))
+    ActionOverride(LastTrigger,ReallyForceSpellRES("IDSP030",Myself))
     Wait(2)
 END
 

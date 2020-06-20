@@ -74,7 +74,7 @@ THEN
     SetGlobal("TELEPORT_SET","LOCALS",0)
     SetGlobal("ATTACK_SET","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1749.1145],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[1749.1145]))
 END
 
 IF
@@ -89,7 +89,7 @@ THEN
     SetGlobal("TELEPORT_SET","LOCALS",0)
     SetGlobal("ATTACK_SET","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([844.1167],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[844.1167]))
 END
 
 IF
@@ -105,7 +105,7 @@ THEN
     SetGlobal("ATTACK_SET","LOCALS",1)
     SetGlobal("TELEPORT_3","MYAREA",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1534.1862],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[1534.1862]))
 END
 
 IF

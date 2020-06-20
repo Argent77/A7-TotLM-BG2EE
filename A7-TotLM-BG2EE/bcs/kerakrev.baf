@@ -10,7 +10,7 @@ THEN
     FaceObject(NearestEnemyOf(Myself))
     SmallWait(6)
     SetGlobal("MAP_GROUP_HOSTILE8","MYAREA",1)
-    ForceSpell(Myself,INNATE_HOBART_TO_RAKSHASA)
+    ForceSpellRES("IDSP162",Myself)
     MoveViewObject([PC],INSTANT)
     EndCutSceneMode()
     Enemy()

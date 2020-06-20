@@ -15,7 +15,7 @@ THEN
   RESPONSE #100
     IncrementGlobal("Internal4","LOCALS",1)
     SetGlobalTimer("#localtimer","LOCALS",21)
-    ReallyForceSpell(Myself,INNATE_BOMBARDIER_BEETLE_CLOUD)
+    ReallyForceSpellRES("IDSP191",Myself)
     Wait(2)
 END
 

@@ -4,7 +4,7 @@ IF
   Allegiance(Myself,ENEMY)
 THEN
   RESPONSE #100
-    ReallyForceSpell(Myself,INNATE_JACKALWERE_GAZE)
+    ReallyForceSpellRES("IDSP159",Myself)
     Wait(1)
     SetGlobal("EFJGAZE_inactive","LOCALS",1)
 END

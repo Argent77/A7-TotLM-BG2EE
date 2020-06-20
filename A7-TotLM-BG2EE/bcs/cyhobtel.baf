@@ -7,7 +7,7 @@ THEN
     SetGlobal("9700_RESET_JOIN","GLOBAL",1)
     DisplayString("HOBART",@23357)
     ActionOverride("HOBART",SetSequence(2)) // SEQ_CAST
-    ReallyForceSpell(Myself,INNATE_TELEPORT_WITHOUT_ERROR)
+    ReallyForceSpellRES("IDSP163",Myself)
     CreateVisualEffectObject("PORTALH","HOBART")
     Wait(1)
     FadeToColor([30.0],0)
@@ -23,7 +23,7 @@ THEN
     LeaveAreaLUA("ID9700","LOAD9700",[1446.1088],8)
     MultiPlayerSync()
     SmallWait(5)
-    ReallyForceSpell(Myself,INNATE_TELEPORT_WITHOUT_ERROR)
+    ReallyForceSpellRES("IDSP163",Myself)
     CreateVisualEffectObject("PORTALH","HOBART")
     FadeFromColor([15.0],0)
     Wait(1)

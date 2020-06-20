@@ -21,7 +21,7 @@ END
 
 IF
   !Global("SET_ATTACK","LOCALS",0)
-  HaveSpell(INNATE_SUMMON_GLABREZU)
+  HaveSpellRES("IDSP158")
   !Range(NearestEnemyOf(Myself),8)
 THEN
   RESPONSE #100
@@ -33,7 +33,7 @@ IF
   Global("SET_ATTACK","LOCALS",0)
   OR(2)
     Range(NearestEnemyOf(Myself),4)
-    !HaveSpell(INNATE_SUMMON_GLABREZU)
+    !HaveSpellRES("IDSP158")
 THEN
   RESPONSE #100
     SetGlobal("SET_ATTACK","LOCALS",1)
@@ -44,7 +44,7 @@ IF
   Global("SUMMONER_TURN","MYAREA",1)
   OR(2)
     !Global("SET_ATTACK","LOCALS",0)
-    !HaveSpell(INNATE_SUMMON_GLABREZU)
+    !HaveSpellRES("IDSP158")
 THEN
   RESPONSE #100
     SetGlobal("SUMMONER_TURN","MYAREA",2)
@@ -72,7 +72,7 @@ THEN
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobalTimer("SUMMONER_TIMER","MYAREA",FIVE_ROUNDS)
     SetGlobal("SUMMONER_TURN","MYAREA",2)
-    ForceSpellPoint([875.2181],INNATE_SUMMON_GLABREZU)
+    ForceSpellPointRES("IDSP158",[875.2181])
     Wait(2)
 END
 

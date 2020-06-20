@@ -29,12 +29,12 @@ THEN
   RESPONSE #100
     DestroyItem("blun02")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_FLESH_TO_STONE)
+    ReallyForceSpellRES("IDSP035",LastTrigger)
     Wait(2)
   RESPONSE #100
     DestroyItem("blun02")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_POISON_PARALYZATION_DARTS)
+    ReallyForceSpellRES("IDSP028",LastTrigger)
     Wait(2)
 END
 
@@ -49,12 +49,12 @@ THEN
   RESPONSE #100
     DestroyItem("blun03")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_POISON_CONFUSION_DARTS)
+    ReallyForceSpellRES("IDSP029",LastTrigger)
     Wait(2)
   RESPONSE #100
     DestroyItem("blun03")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_MAGIC_MISSILE_5)
+    ReallyForceSpellRES("IDSP033",LastTrigger)
     Wait(2)
 END
 
@@ -69,7 +69,7 @@ THEN
   RESPONSE #100
     DestroyItem("blun04")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_DEATH_FOG)
+    ReallyForceSpellRES("IDSP030",LastTrigger)
     Wait(2)
   RESPONSE #100
     DestroyItem("blun04")
@@ -99,7 +99,7 @@ THEN
   RESPONSE #100
     DestroyItem("blun05")
     DisplayString(Myself,14381)
-    ReallyForceSpell(LastTrigger,TRAP_FINGER_OF_DEATH)
+    ReallyForceSpellRES("IDSP031",LastTrigger)
     Wait(2)
 END
 

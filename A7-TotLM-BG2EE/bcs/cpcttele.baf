@@ -6,32 +6,32 @@ THEN
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([383.1346],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[383.1346]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([1207.1972],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[1207.1972]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([3113.1835],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[3113.1835]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([470.1954],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[470.1954]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([2187.2377],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[2187.2377]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
-    ActionOverride(NearestEnemyOf(Myself),ForceSpellPoint([3469.1326],INNATE_CRYPT_THING_TELEPORT))
+    ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[3469.1326]))
     Wait(2)
   RESPONSE #100
     SetGlobal("CRYPT_THING_TELEPORT","LOCALS",1)
