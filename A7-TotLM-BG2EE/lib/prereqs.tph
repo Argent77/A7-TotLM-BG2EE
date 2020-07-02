@@ -1,5 +1,12 @@
 // Prerequisites
 
+// Ensure that required stats.ids entries exist
+APPEND ~stats.ids~ ~157 DEATH_WARD~ UNLESS ~\bDEATH_WARD\b~
+APPEND ~stats.ids~ ~159 OFFENSIVE_MODIFIER~ UNLESS ~\bOFFENSIVE_MODIFIER\b~
+APPEND ~stats.ids~ ~160 DEFENSIVE_MODIFIER~ UNLESS ~\bDEFENSIVE_MODIFIER\b~
+APPEND ~stats.ids~ ~161 STRENGTH_MODIFIER~ UNLESS ~\bSTRENGTH_MODIFIER\b~
+
+
 // Remap selected CONTAINR.2DA entries to default entry "non-visible"
 OUTER_FOR (idx = 0; idx < 17; ++idx) BEGIN
   OUTER_SET $map_containr(~%idx%~) = (idx < 13) ? idx : 8
