@@ -3,14 +3,28 @@
 // Items to be replaced or removed:
 // AXEMINO.ITM (Axe of the Minotaur Lord +4): minlrd.cre
 //  - AX1H11.ITM
+// BRAC10.ITM (Legacy of the Masters): harald.cre
+//  - BRAC09.ITM
 // BRACEIP.ITM (Bracers of Icelandic Pearl): hobart.sto
 //  - BRAC14.ITM (BRAC03.ITM)
+// CLCK17.ITM (Robe of the Evil Archmagi): jklsum.cre
+//  - CLCK12.ITM
+// CLOAKSC.ITM (Cloak of Scintillating Colors): adran.cre
+//  - remove completely
 // FLAILSK.ITM (Skullflail +4): hobart.sto
 //  - BLUN13.ITM
 // HELMCT.ITM (Chautog's Thinker): hrpmat.cre
 //  - HELM16.ITM (HELM03.ITM)
+// ISWARM.ITM (Black Swan Armor +2): criek.cre
+//  - PLAT10.ITM
+// MISC07.ITM (Gold): id9800.are > Container 6 (name: "Chest 2")
+//  - MISC23.ITM
+// RING07.ITM (The Guard's Ring +2): jklsum.cre
+//  - RING06.ITM
 // SBOWEBU.ITM (Shortbow of Ebullience +3): hobart.sto
-// - BOW14.ITM (BOW08.ITM)
+//  - BOW14.ITM (BOW08.ITM)
+// SW1H15_.ITM (Scimitar +3, Frostbrand): id9800.are > Container 5 (name: "Chest 1")
+//  - SW1H22.ITM
 // UBSWD5B.ITM (Bastard Sword +3: Incinerator): id9714.are > Container 32 (name: "Corpse Shelf")
 //  - SW1H37.ITM (SW1H42.ITM)
 // UFLAL4A.ITM (Fire Flail +3): criek.cre
@@ -18,7 +32,7 @@
 // UFLAL5A.ITM (Shocking Flail +4): id9714.are > Container 11 (name: "Treasure Sarcophogus")
 //  - BLUN32.ITM (BLUN13.ITM)
 // ULSWD5A.ITM (Long Sword of Action +4): id9714.are > Container 1 (name: "Geddian's Sarcophogus"), mercwr2d.cre
-// - SW1H33.ITM, SW1H41.ITM
+//  - SW1H33.ITM, SW1H41.ITM
 // UMSTR5B.ITM (Morning Star +4: Defender): harald.cre
 //  - BLUN34.ITM (BLUN39.ITM)
 // URING5A.ITM (Ring of Greater Resistance): criek.cre, hrpmat.cre
@@ -42,6 +56,11 @@ COPY_EXISTING ~minlrd.cre~ ~override~
   ADD_CRE_ITEM ~ax1h11~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
 BUT_ONLY IF_EXISTS
 
+COPY_EXISTING ~adran.cre~ ~override~
+  // Cloak of Scintillating Colors
+  REMOVE_CRE_ITEM ~cloaksc~
+BUT_ONLY IF_EXISTS
+
 COPY_EXISTING ~hrpmat.cre~ ~override~
   // Chautog's Thinker
   REMOVE_CRE_ITEM ~helmct~
@@ -56,6 +75,9 @@ COPY_EXISTING ~hrpmat.cre~ ~override~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~criek.cre~ ~override~
+  // Black Swan Armor +2
+  REMOVE_CRE_ITEM ~iswarm~
+  ADD_CRE_ITEM ~plat10~ #0 #0 #0 ~none~ ~armor inv1 inv2 inv3 inv4~
   // Fire Flail +3
   REMOVE_CRE_ITEM ~uflal4a~
   PATCH_IF (FILE_EXISTS_IN_GAME ~blun18.itm~) BEGIN
@@ -75,6 +97,9 @@ COPY_EXISTING ~mercwr2d.cre~ ~override~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~harald.cre~ ~override~
+  // Legacy of the Masters
+  REMOVE_CRE_ITEM ~brac10~
+  ADD_CRE_ITEM ~brac09~ #0 #0 #0 ~none~ ~gloves inv1 inv2 inv3 inv4~
   // Morning Star +4: Defender
   REMOVE_CRE_ITEM ~umstr5b~
   PATCH_IF (FILE_EXISTS_IN_GAME ~blun34.itm~) BEGIN
@@ -82,6 +107,15 @@ COPY_EXISTING ~harald.cre~ ~override~
   END ELSE BEGIN
     ADD_CRE_ITEM ~blun39~ #0 #0 #0 ~none~ ~weapon1 weapon2 weapon3 weapon4~ EQUIP
   END
+BUT_ONLY IF_EXISTS
+
+COPY_EXISTING ~jklsum.cre~ ~override~
+  // Robe of the Evil Archmagi
+  REMOVE_CRE_ITEM ~clck17~
+  ADD_CRE_ITEM ~clck12~ #0 #0 #0 ~none~ ~armor inv1 inv2 inv3 inv4~
+  // The Guard's Ring +2
+  REMOVE_CRE_ITEM ~ring07~
+  ADD_CRE_ITEM ~ring06~ #0 #0 #0 ~none~ ~lring rring inv1 inv2 inv3 inv4~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~mercthfd.cre~ ~override~
@@ -207,6 +241,20 @@ COPY_EXISTING ~id9712.are~ ~override~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~id9800.are~ ~override~
+  // Gold
+  LPF REPLACE_AREA_ITEM
+  INT_VAR
+    charges1  = 1
+  STR_VAR
+    old_item  = ~misc07~
+    new_item  = ~misc23~
+  END
+  // Scimitar +3, Frostbrand
+  LPF REPLACE_AREA_ITEM
+  STR_VAR
+    old_item  = ~sw1h15_~
+    new_item  = ~sw1h22~
+  END
   // Hell's Bane
   PATCH_IF (FILE_EXISTS_IN_GAME ~sw2h12.itm~) BEGIN
     TEXT_SPRINT new_item ~sw2h12~
