@@ -119,11 +119,6 @@ END
 // Updating installed spells
 ACTION_PHP_EACH map_spell AS iwd_resref => bg2ee_resref BEGIN
   ACTION_IF ($map_spell_added(~%iwd_resref%~)) BEGIN
-    // "Heavenly Inferno" is not available to the player by default
-    ACTION_IF (~%iwd_resref%~ STR_EQ ~SPPR738~) BEGIN
-      APPEND ~hidespl.2da~ ~%bg2ee_resref%    1           0          0~ UNLESS ~%bg2ee_resref%~
-    END
-
     COPY_EXISTING ~%bg2ee_resref%.SPL~ ~override~
       // updating icon BAM
       READ_ASCII 0x3a bam_resref (8) NULL
