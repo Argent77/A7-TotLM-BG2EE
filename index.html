@@ -30,7 +30,7 @@
         <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Project</a></li>
-        <li>Version: 2.0</li>
+        <li>Version: 2.1</li>
       </ul>
       <hr />
       <nav>
@@ -66,7 +66,8 @@
         <p>To uninstall, run <em>"setup-A7-TotLM-BG2EE.exe"</em> or <em>"setup-A7-TotLM-BG2EE.command"</em> again and follow the prompts.</p>
         <hr class="spacer" />
         <h3>Compatibility and mod order</h3>
-        <p>No compatibility issues with other mods known. However, importing Icewind Dale spells will be skipped if the following mods are detected:</p>
+        <p><strong>Spell Revisions</strong> component <em>"Dispel Magic Fix"</em> interferes with the special dying behavior of revenants and trolls, making them unkillable by normal means. To work around this issue, install that component <em>before</em> the main component of this mod.</p>
+        <p>Importing Icewind Dale spells will be skipped if the following mods are detected:</p>
         <ul>
           <li><strong>Sword Coast Statagems (SCS):</strong> Component <em>"Include arcane spells from IWD:EE"</em></li>
           <li><strong>IWDification:</strong> Component <em>"IWD arcane spell pack"</em></li>
@@ -138,6 +139,16 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Version History</h2>
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Rebalanced Harpy Wail.</li>
+          <li>Reduced number of SPELL.IDS additions.</li>
+          <li>Improved "Rebalance weapons and equipment" subcomponent.</li>
+          <li>Added workaround to deal with compatibility issues caused by mods using Detectable Spells library.</li>
+          <li>Removed unused spell 'Heavenly Inferno'.</li>
+          <li>Fixed invalid resource references in various mod files.</li>
+          <li>Fixed typos in Italian translation.</li>
+        </ul>
         <h6>Version 2.0</h6>
         <ul>
           <li>Made adventure available to Siege of Dragonspear.</li>

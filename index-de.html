@@ -21,7 +21,7 @@
 
     <header>
       <h1 class="title">Die Herausforderungen des Meisters der Verlockung für Baldur's Gate</h1>
-      <div class="subtitle">Die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” bereitgestellt für BG2:EE, Siege of Dragonspear und EET (Enhanced Edition Trilogy).</div>
+      <div class="subtitle">Die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” bereitgestellt für BG2:EE, BGEE - Belagerung von Drachenspeer und EET (Enhanced Edition Trilogy).</div>
       <hr />
       <p class="about"><strong>Autor: Argent77</strong></p>
       <ul id="globalnav" class="about">
@@ -30,7 +30,7 @@
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a></li>
-        <li>Version: 2.0</li>
+        <li>Version: 2.1</li>
       </ul>
       <hr />
       <nav>
@@ -49,7 +49,7 @@
       <section id="overview">
         <h2>Übersicht</h2>
         <p>Diese Mod stellt die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” für BG2:EE (Version 2.0 oder später), Siege of Dragonspear und EET (Enhanced Edition Trilogy) bereit.</p>
-        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh ansprecht. Man kann ihn entweder im Wirtshaus in den Umarhügeln (SvA), in der Taverne in Amkethran (TdB) oder im südöstlichen Bereich des Coalition Camps (Siege of Dragonspear) antreffen. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
+        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh ansprecht. Man kann ihn entweder im Wirtshaus in den Umarhügeln (SvA), in der Taverne in Amkethran (TdB) oder im südöstlichen Bereich des Bündnislagers (Belagerung von Drachenspeer) antreffen. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
         <hr class="spacer" />
         <p>Schaut im <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forum</a> oder <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forum</a> vorbei, wenn ihr Fragen habt, oder besucht <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> oder <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>, um die aktuellste Modversion herunterzuladen.</p>
         <div class="back">
@@ -66,7 +66,8 @@
         <p>Um die Mod zu deinstallieren, startet <em>„setup-A7-TotLM-BG2EE.exe”</em> oder <em>„setup-A7-TotLM-BG2EE.command”</em> erneut und folgt den Anweisungen.</p>
         <hr class="spacer" />
         <h3>Kompatibilität und Modreihenfolge</h3>
-        <p>Keine Kompatibilitätsprobleme mit anderen Mods bekannt. Allerdings wird die Installation von Zaubern aus Icewind Dale übersprungen, falls die folgenden Mods installiert sind:</p>
+        <p>Die Komponente <em>"Dispel Magic Fix"</em> von <strong>Spell Revisions</strong> verändert das Sterbeverhalten von Trollen und Wiedergängern und macht sie praktisch unzerstörbar. Um das Problem zu umgehen, sollte die Komponente <em>vor</em> dieser Mod installiert werden.</p>
+        <p>Die Installation von Zaubern aus Icewind Dale wird übersprungen, falls die folgenden Mods installiert sind:</p>
         <ul>
           <li><strong>Sword Coast Statagems (SCS):</strong> Komponente <em>"Include arcane spells from IWD:EE"</em></li>
           <li><strong>IWDification:</strong> Komponente <em>"IWD arcane spell pack"</em></li>
@@ -138,6 +139,16 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Rebalanced Harpy Wail.</li>
+          <li>Reduced number of SPELL.IDS additions.</li>
+          <li>Improved "Rebalance weapons and equipment" subcomponent.</li>
+          <li>Added workaround to deal with compatibility issues caused by mods using Detectable Spells library.</li>
+          <li>Removed unused spell 'Heavenly Inferno'.</li>
+          <li>Fixed invalid resource references in various mod files.</li>
+          <li>Fixed typos in Italian translation.</li>
+        </ul>
         <h6>Version 2.0</h6>
         <ul>
           <li>Made adventure available to Siege of Dragonspear.</li>

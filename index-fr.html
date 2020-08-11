@@ -30,7 +30,7 @@
         <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projet</a></li>
-        <li>Version : 2.0</li>
+        <li>Version : 2.1</li>
       </ul>
       <hr />
       <nav>
@@ -65,7 +65,8 @@
         <p>Il n'est pas nécessaire de commencer une nouvelle partie pour bénéficier de son contenu. Cependant, vous devez l'installer avant d'entrer dans la zone ou vous pouvez rencontrer Hobart pour la première fois.</p>
         <p>Pour le désinstaller, relancez <em>"setup-A7-TotLM-BG2EE.exe"</em> ou <em>"setup-A7-TotLM-BG2EE.command"</em> et suivez les instructions à l'écran.</p>
         <hr class="spacer" />
-        <h3>Compatibility</h3>
+        <h3>Compatibilité et ordre des mods</h3>
+        <p>Comme le composant <em>"Correction de la Dissipation de la Magie"</em> de <strong>Spell Revisions</strong> interfère avec la manière de mourir des revenants et des trolls, les rendant in-tuables par des moyens classiques, la seule solution de remédier à ce dysfonctionnement consiste à installer ce composant de SR <em>avant</em> le composant principal de ce mos.</p>
         <p>L'installation des sorts d'Icewind Dale sera ignorée si l'un des mods suivants est déjà installé :</p>
         <ul>
           <li><strong>Sword Coast Statagems (SCS):</strong> Composant <em>"Inclure les sorts profanes d'IWD:EE"</em></li>
@@ -137,10 +138,20 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Historique des versions</h2>
+        <h6>Version 2.1</h6>
+        <ul>
+          <li>Rééquilibrage du Cri de la banshee.</li>
+          <li>Réduction des ajouts au fichier SPELL.IDS.</li>
+          <li>Amélioration du composant "Rééquilibrer les armes et l'équipement".</li>
+          <li>Ajout d'une astuce pour gérer les problèmes de compatibilité provoqués par des mods utilisant la librairie "Detectable Spells".</li>
+          <li>Suppression du sort inutilisé "Enfer divin".</li>
+          <li>Correction de références invalides à des ressources de plusieurs mods.</li>
+          <li>Corrections de typos dans la traduction italienne.</li>
+        </ul>
         <h6>Version 2.0</h6>
         <ul>
           <li>Aventure rendue possible dans Siege of Dragonspear.</li>
-          <li>Ajout de multiples points de départ de l'aventure (SoD: Camp de la Coalition - SoA : Collines d'Umar - ToB : Amkethran).</li>
+          <li>Ajout de multiples points de départ de l'aventure (SoD : Camp de la Coalition - SoA : Collines d'Umar - ToB : Amkethran).</li>
           <li>Fusion du sous-composant "Mettre les sorts de IWD à disposition du joueur" au composant principal pour résoudre des problèmes de compatibilité.</li>
           <li>Ajout d'un composant optionnel réduisant les points d'expérience gagnés pendant l'aventure.</li>
           <li>Ajout de la traduction partielle espagnole (merci à Chidojuan).</li>
