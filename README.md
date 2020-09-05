@@ -34,7 +34,7 @@ The whole adventure allows you to earn about 300,000 to 400,000 XP which can be 
 
 1. Reduce by 25 percent
 2. Reduce by 50 percent
-3. Reduce by 75 percent *(Recommended if you start the quest in the Coalition Camp, Siege of Dragonspear campain.)*
+3. Reduce by 75 percent *(Recommended if you start the quest in the Coalition Camp, Siege of Dragonspear campaign.)*
 4. Grant no experience
 
 ## Copyright Notice
