@@ -1,15 +1,20 @@
-BACKUP ~A7-TotLM-BG2EE/backup~
+BACKUP ~weidu_external/backup/A7-TotLM-BG2EE~
 SUPPORT ~http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/~
 VERSION ~2.2~
 
 ALWAYS
+  // required because of non-standard BACKUP path
+  OUTER_TEXT_SPRINT MOD_FOLDER ~A7-TotLM-BG2EE~
+  // root folder for mutable data
+  OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
+
   INCLUDE ~%MOD_FOLDER%/lib/eet.tph~
 END
 
-README ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.html~
-       ~%MOD_FOLDER%/readme/readme-%LANGUAGE%.txt~
-       ~%MOD_FOLDER%/readme/readme.html~
-       ~%MOD_FOLDER%/readme/readme.txt~
+README ~A7-TotLM-BG2EE/readme/readme-%LANGUAGE%.html~
+       ~A7-TotLM-BG2EE/readme/readme-%LANGUAGE%.txt~
+       ~A7-TotLM-BG2EE/readme/readme.html~
+       ~A7-TotLM-BG2EE/readme/readme.txt~
 
 LANGUAGE ~English~
          ~english~
