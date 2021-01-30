@@ -1,3 +1,9 @@
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/Argent77/A7-TotLM-BG2EE?color=darkred&include_prereleases&label=latest%20release)](https://GitHub.com/Argent77/A7-TotLM-BG2EE/releases/latest)
+[![GitHub release date (latest by date)](https://img.shields.io/github/release-date/Argent77/A7-TotLM-BG2EE?color=gold)](https://GitHub.com/Argent77/A7-TotLM-BG2EE/releases/latest)
+[![Github downloads (all releases)](https://img.shields.io/github/downloads/Argent77/A7-TotLM-BG2EE/total.svg?color=blueviolet)](https://GitHub.com/Argent77/A7-TotLM-BG2EE/releases)
+[![Platform](https://img.shields.io/static/v1?label=platform&message=Windows%20%7C%20macOS%20%7C%20Linux%20%7C%20Project%20Infinity&color=informational)](https://GitHub.com/Argent77/A7-TotLM-BG2EE/releases/latest)
+[![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Italian%20%7C%20Polish%20%7C%20Russian%20%7C%20Spanish&color=limegreen)]()
+
 # Trials of the Luremaster for Baldur's Gate
 *The Icewind Dale expansion "Trials of the Luremaster" made available to BG2:EE, Siege of Dragonspear and EET (Enhanced Edition Trilogy).*
 
