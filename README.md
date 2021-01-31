@@ -7,11 +7,10 @@
 # Trials of the Luremaster for Baldur's Gate
 *The Icewind Dale expansion "Trials of the Luremaster" made available to BG2:EE, Siege of Dragonspear and EET (Enhanced Edition Trilogy).*
 
-**Author:** Argent77
+[![Website](https://img.shields.io/static/v1?label=Website&message=Trials%20of%20the%20Luremaster&color=ccc7ba&labelColor=eee&style=flat)](https://argent77.github.io/A7-TotLM-BG2EE/index.html)
 
-**Website:** https://argent77.github.io/A7-TotLM-BG2EE/index.html
-
-**Discussion:** [Beamdog Forums](https://forums.beamdog.com/discussion/73701/) or [Spellhold Studios Forums](http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/)
+[![Beamdog Forums](https://img.shields.io/static/v1?label=Discussion&message=Beamdog%20Forums&color=444&labelColor=eee&style=flat)](https://forums.beamdog.com/discussion/73701)
+[![SHS Forums](https://img.shields.io/static/v1?label=Discussion&message=SHS%20Forums&color=951514&labelColor=eee&style=flat)](http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/)
 
 ## Overview
 
