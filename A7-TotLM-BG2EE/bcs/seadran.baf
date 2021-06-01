@@ -1,11 +1,11 @@
 IF
-  Global("ID#SPAWN_DJINNI","GLOBAL",0)
+  Global("ID#SPAWN_DJINNI","ID9708",0)
   Allegiance(Myself,ENEMY)
   Detect([PC])
 THEN
   RESPONSE #100
     DisplayStringHead(Myself,@27394)
-    SetGlobal("ID#SPAWN_DJINNI","GLOBAL",1)
+    SetGlobal("ID#SPAWN_DJINNI","ID9708",1)
     SetGlobal("SPELL_SET","LOCALS",1)
     Continue()
 END

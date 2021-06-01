@@ -38,11 +38,11 @@ THEN
 END
 
 IF
-  !Global("ID#SPAWN_DJINNI","GLOBAL",0)
-  !Global("#spawn_group_0","MYAREA",1)
+  !Global("ID#SPAWN_DJINNI","ID9708",0)
+  !Global("#spawn_group_0","ID9708",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9708",1)
     CreateCreature("djinni_",[582.320],2)
     Continue()
 END
