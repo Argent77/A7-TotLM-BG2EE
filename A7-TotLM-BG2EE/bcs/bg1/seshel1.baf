@@ -1,0 +1,50 @@
+IF
+  !GlobalTimerNotExpired("id_cast","LOCALS")
+  DifficultyGT(EASIEST)
+  HasItem("POTN52",Myself)  // Potion of Extra Healing
+  HPPercentLT(Myself,75)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("id_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN52",Myself)  // Potion of Extra Healing
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("id_cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  HasItem("POTN14",Myself)  // Oil of Speed
+  !StateCheck(Myself,STATE_HASTED)
+  CheckStat(Myself,0,IMPROVEDHASTE)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("id_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN14",Myself)  // Oil of Speed
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("id_cast","LOCALS")
+  See(NearestEnemyOf(Myself))
+  DifficultyGT(EASY)
+  HasItem("POTN04",Myself)  // Potion of Storm Giant Strength
+  CheckStatLT(Myself,19,STR)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobalTimer("id_cast","LOCALS",ONE_ROUND)
+    UseItem("POTN04",Myself)  // Potion of Storm Giant Strength
+    DisplayStringHead(Myself,@46150)  // *quaffs a potion*
+    SetInterrupt(TRUE)
+  RESPONSE #100
+    Continue()
+END
