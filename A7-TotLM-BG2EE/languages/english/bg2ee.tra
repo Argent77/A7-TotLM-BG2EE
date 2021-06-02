@@ -198,6 +198,7 @@ Saving Throw: Neg.
 
 Symbol, Stun is a powerful enchantment that allows the wizard to inscribe a symbol on the ground or any other surface. The symbol will remain there until someone comes too close, at which point it will explode, causing all those within the area to make a Save vs. Spell at a -4 penalty or be stunned for 2 rounds + 1 round for every 3 levels of the caster.~
 @39968 = ~Spell Trigger—Fired~
+@41495 = ~One Level Drained~
 @46150 = ~*quaffs a potion*~
 @46153 = ~*uses a scroll*~
 @49103 = ~Symbol, Stun~

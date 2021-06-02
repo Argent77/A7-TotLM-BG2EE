@@ -200,6 +200,7 @@ Tirada de salvación: Niega efecto
 DESCRIPCIÓN:
 
 Símbolo del Atontamiento es un poderoso encantamiento que permite al lanzador inscribir un símbolo en el suelo o sobre cualquier otra superficie. El símbolo se quedará en ese lugar hasta que alguien se acerque demasiado a él, momento en que explotará, obligando a todos los que estén en el área de efecto a salvarse contra conjuro con una penalización -4. En caso de fallar, quedarán aturdidos durante 2 asaltos + 1 asalto por cada 3 niveles del lanzador.~
+@41495 = ~Un nivel consumido~
 @46150 = ~se bebe una poción~
 @46153 = ~utiliza un pergamino~
 @49103 = ~Símbolo del atontamiento~

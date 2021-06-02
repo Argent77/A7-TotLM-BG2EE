@@ -204,6 +204,7 @@ Obszar działania: w promieniu 4 metrów
 Rzut obronny: neguje
 
 Symbol: ogłuszenie to potężne zaklęcie. Dzięki niemu mag może wyrysować na ziemi czy innej powierzchni magiczny symbol. Symbol pozostanie w tym miejscu, dopóki ktoś się do niego nie zbliży. Wtedy wybucha i wszystkie istoty będące w zasięgu jego działania muszą wykonać rzut obronny przeciw czarom z modyfikatorem -4 lub zostają ogłuszone na dwie rundy plus jedną rundę na trzy poziomy czarującego.~
+@41495 = ~Wyssano jeden poziom~
 @46150 = ~*pije miksturę*~
 @46153 = ~*używa zwoju*~
 @49103 = ~Symbol: ogłuszenie~

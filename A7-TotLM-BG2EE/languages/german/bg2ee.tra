@@ -198,6 +198,7 @@ Bereich: 3,5 m Radius
 Rettungswurf: Ja (gg. Zauber)
 
 Mithilfe dieses mächtigen Zaubers kann der Anwender ein Symbol auf den Erdboden oder eine beliebige andere Oberfläche zeichnen. Das Symbol bleibt an diesem Ort, bis sich jemand nähert. Dann entlädt sich seine magische Energie explosionsartig. Jeder im Wirkungsbereich muss einen Rettungswurf -4 gegen Zauber bestehen, oder er wird für 2 Runden + 1 Runde je 3 Stufen des Anwenders betäubt.~
+@41495 = ~1 Stufe verloren~
 @46150 = ~trinkt einen Trank~
 @46153 = ~benutzt eine Schriftrolle~
 @49103 = ~Symbol der Betäubung~

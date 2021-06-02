@@ -188,6 +188,7 @@ Area d'effetto: Raggio di 9 metri
 Tiro-salvezza: Neg.
 
 Simbolo, Stordimento è una potente magia che permette al personaggio di tracciare un simbolo sul suolo o su un'altra superficie. Il simbolo vi rimane finché qualcuno non si avvicina troppo; a quel punto esploderà, facendo sì che tutte le creature all'interno dell'area debbano effettuare con successo un tiro-salvezza contro Incantesimi con una penalità pari a -4 o rimanere stordite per 2 round più un round ogni 3 livelli del lanciatore.~
+@41495 = ~Un livello Risucchiato~
 @46150 = ~*Beve una pozione*~
 @46153 = ~*Usa una pergamena*~
 @49103 = ~Simbolo, Stordimento~
