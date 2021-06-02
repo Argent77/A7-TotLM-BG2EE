@@ -74,6 +74,7 @@ Quando l'incantesimo Parola del Potere, Stordire viene lanciato, qualsiasi creat
 90 Punti Ferita e oltre: Non influenzata dall'incantesimo.
 
 Si tenga presente che se una creatura è indebolita al punto che i suoi Punti Ferita sono inferiori rispetto al valore massimo normale, vengono considerati i Punti Ferita Attuali per determinare gli effetti dell'incantesimo.~
+@8320 = ~Punteggio di Abilità Risucchiato~
 @8364 = ~Dominato~
 @10554 = ~Non morto distrutto~
 @10685 = ~Lampada del Genio~
@@ -87,6 +88,7 @@ Area d'effetto: Il lanciatore
 Tiro-salvezza: Nessuno
 
 Questo potente incantesimo di Scongiurazione fa sì che le magie scagliate contro il personaggio vengano riflesse al lanciatore originario. La riflessione interessa un totale di 12 livelli d'incantesimi - inclusi quelli lanciati dalle pergamene e le abilità innate - ma esclude incantesimi e abilità con area d'effetto non centrata sul personaggio protetto, così come gli effetti ad area stazionaria quali Nube Assassina e Nube Maleodorante. Fintanto che l'incantesimo è lanciato direttamente sul personaggio, esso sarà riflesso sul lanciatore, a condizione che vi siano ancora livelli da assorbire. Ad esempio: se è rimasto soltanto un livello e un incantesimo di 3° livello viene lanciato contro il personaggio, esso verrà riflesso e l'effetto di Respingi Incantesimo avrà termine. Questo incantesimo non proteggerà il lanciatore da Dissolvi Magie, ma non verrà da esso dissolto.~
+@14007 = ~Panico~
 @14665 = ~Pietrificato~
 @15326 = ~Lampada del Genio~
 @16109 = ~Teletrasporto~

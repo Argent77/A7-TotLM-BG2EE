@@ -76,6 +76,7 @@ Durch dieses Wort der Macht wird ein ausgewähltes Wesen in Sichtweite des Anwen
   60–89 Trefferpunkte: betäubt für 1W4 Runden
   90+ Trefferpunkte: nicht betroffen
 Es werden immer die aktuellen Trefferpunkte des Opfers und nicht dessen maximale Trefferpunkte zur Kalkulation verwendet.~
+@8320 = ~Attribut gesenkt~
 @8364 = ~Beherrscht~
 @10554 = ~Untoter zerstört~
 @10685 = ~Die Flasche des Flaschengeistes~
@@ -90,6 +91,7 @@ Bereich: Anwender
 Rettungswurf: Nein
 
 Dieser mächtige Zauber reflektiert Magie, die auf das geschützte Wesen gerichtet wird. Der Zauber wirft insgesamt 12 Zaubergrade zurück. Das betrifft auch Zauber von Schriftrollen und zauberähnliche Fähigkeiten. Flächendeckende Zauber, die nicht auf das geschützte Wesen zentriert werden, und flächendeckende Zauber, die stationär sind, so wie „Todeswolke“ und „Stinkende Wolke“, sind nicht betroffen. „Zauber zurückwerfen“ wirkt so lange, wie der Schutz nicht völlig aufgebraucht wurde. Wenn beispielsweise nur noch 1 Grad an Zaubern zurückgeworfen werden kann, wird dennoch ein Zauber des 3. Grades zurückgeworfen. Der Zauber schützt nicht vor „Magie bannen“, kann dadurch aber auch nicht aufgehoben werden.~
+@14007 = ~Panik~
 @14665 = ~Versteinert~
 @15326 = ~Die Flasche des Flaschengeistes~
 @16109 = ~Teleportieren~

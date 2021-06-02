@@ -77,6 +77,7 @@ Korzystając z tego czaru, czarodziej wskazuje na wybraną istotę i wypowiada s
 
 Istoty z 90 lub więcej punktami życia są odporne na efekty zaklęcia.
 Należy pamiętać, że liczy się ilość punktów w chwili rzucenia czaru, a nie maksymalna.~
+@8320 = ~Wyssano cechę~
 @8364 = ~Dominacja~
 @10554 = ~Nieumarły zniszczony~
 @10685 = ~Flasza geniusza~
@@ -95,6 +96,7 @@ To potężne zaklęcie sprawia, że czary rzucone na maga są odbijane w kierunk
 Dopóki dostępne będą jakiekolwiek poziomy, rzucony czar zostanie odbity. Przykładowo, pozostał tylko jeden poziom, a na czarodzieja zostaje rzucone zaklęcie 3. poziomu. W takim wypadku zostanie ono wchłonięte, anulując jednocześnie działanie Odbicia czaru.
 
 Zaklęcie to nie chroni czarującego przed Rozproszeniem magii, lecz nie zostanie też przez nie rozproszone.~
+@14007 = ~Panika~
 @14665 = ~Petryfikacja~
 @15326 = ~Flasza geniusza~
 @16109 = ~Teleport~

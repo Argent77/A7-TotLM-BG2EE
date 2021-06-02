@@ -71,6 +71,7 @@ Tirada de salvación: Ninguna
 DESCRIPCIÓN:
 
 Cuando se ejecuta este conjuro, la criatura (que puede ser de cualquier tipo) elegida por el lanzador queda atontada durante un periodo de tiempo que dependerá de los puntos de golpe que posea en ese momento. Las criaturas con menos de 30 puntos de golpe quedan aturdidas durante 4D4 asaltos, las que tienen entre 30 y 59 lo hacen durante 2D4 asaltos, las de 60 a 89 durante 1D4 asaltos y las de 90 o más no resultan afectadas. Si la criatura estuviera debilitada y poseyera una cantidad de puntos de golpe inferior a su máximo normal, los puntos que tuviera en ese momento serían la referencia a utilizar.~
+@8320 = ~Puntos de aptitud consumidos~
 @8364 = ~Dominado~
 @10554 = ~Muerto viviente destruido~
 @10685 = ~Redoma del genio~
@@ -93,6 +94,7 @@ Siempre que un conjuro esté centrado en el mago protegido por Retorno de Conjur
 Si, por ejemplo, al mago solo le quedase un nivel por devolver y le lanzaran un conjuro de tercer nivel, este sortilegio sería devuelto a su lanzador y Retorno de Conjuros se cancelaría de inmediato.
 
 Este conjuro no protegerá a su lanzador contra Disipar Magia, pero tampoco resultará afectado por él.~
+@14007 = ~Pánico~
 @14665 = ~Petrificado~
 @15326 = ~Redoma del genio~
 @16109 = ~Teletransportar~

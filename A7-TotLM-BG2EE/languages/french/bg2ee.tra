@@ -71,6 +71,7 @@ Zone d'effet : 1 créature
 Jet de sauvegarde : aucun
 
 Lorsqu'un Mot de pouvoir, étourdissement est prononcé, la créature ciblée par ce sort est étourdie. La durée est fonction du nombre de points de vie de la cible. Les créatures ayant de 1 à 29 points de vie sont étourdies pendant 4d4 rounds, celles ayant de 30 à 59 points pendant 2d4 rounds et celles ayant de 60 à 89 points pendant 1d4 rounds. Au-delà de 90 points de vie, les créatures sont immunisées contre ce sort. Note : on utilise le nombre de points de vie actuel pour déterminer les effets du sort.~
+@8320 = ~Score de capacité absorbé~
 @8364 = ~Dominé(e)~
 @10554 = ~Mort-vivant détruit~
 @10685 = ~Fiole du Génie~
@@ -85,6 +86,7 @@ Zone d'effet : le lanceur
 Jet de sauvegarde : aucun
 
 Ce puissant sort d'abjuration fait "rebondir" les sorts lancés sur le magicien et les renvoie à leur expéditeur, y compris ceux provenant de parchemins ou de compétences semblables aux sorts. Il peut au total renvoyer jusqu'à 12 niveaux de sorts, par exemple : 4 sorts de 3ème niveau, ou 1 sort de 6ème et un sort de 7ème, etc. Les sorts de zone stationnaires ou non-centrés sur le magicien protégé, comme le Nuage puant ou le Nuage mortel par exemple, ne sont pas renvoyés. Le sort doit être lancé spécifiquement sur le magicien pour qu'il soit retourné à son expéditeur. Notez que même s'il ne reste qu'un seul niveau et qu'un sort de niveau 3 - par exemple - est lancé sur le magicien, il sera repoussé en même temps que la dissipation de la protection. Ce sort ne protège pas son lanceur d'une dissipation magique.~
+@14007 = ~Panique~
 @14665 = ~Pétrifié(e)~
 @15326 = ~Fiole du Génie~
 @16109 = ~Téléportation~
