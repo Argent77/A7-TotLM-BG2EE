@@ -1,0 +1,13 @@
+IF
+  Global("id#warcry","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+  NumCreatureGT([0.0.ORC],2)
+  !CheckSpellState(Myself,BUFF_ENHANCEMENT)
+THEN
+  RESPONSE #100
+    SetGlobal("id#warcry","LOCALS",1)
+    ForceSpellRES("ID#WCRY1",Myself)
+    Continue()
+  RESPONSE #100
+    Continue()
+END
