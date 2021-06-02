@@ -318,5 +318,46 @@ ACTION_IF (shield_num > 0) BEGIN
           resource = EVAL ~%mfm_res%~
       END
     END
-  BUT_ONLY
+  BUT_ONLY IF_EXISTS
+END
+
+
+// Updating "Cure Disease" spell
+OUTER_SET spell_id = IDS_OF_SYMBOL(~spell~ ~CLERIC_CURE_DISEASE~)
+ACTION_IF (spell_id > 1000) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME
+    STR_VAR spell_name = ~CLERIC_CURE_DISEASE~
+    RET spell_num spell_res
+  END
+  COPY_EXISTING ~%spell_res%.SPL~ ~override~
+    // Spell makes olive slime vulnerable to physical damage
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 318  // Protection from resource
+        target = 2    // preset target
+        timing = 10   // instant/limited (ticks)
+        parameter1 = IDS_OF_SYMBOL(~class~ ~OLIVE_SLIME~)
+        parameter2 = 105  // class = param1
+        power = (spell_num MODULO 1000) / 100
+        resist_dispel = 2 // no dispel/bypass resistance
+        duration = 1
+        insert_point = 0
+      STR_VAR
+        resource = EVAL ~%spell_res%~
+    END
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 326  // Apply effects list
+        target = 2    // preset target
+        timing = 1    // instant/permanent until death
+        parameter1 = IDS_OF_SYMBOL(~class~ ~OLIVE_SLIME~)
+        parameter2 = 105  // class = param1
+        power = (spell_num MODULO 1000) / 100
+        resist_dispel = 2 // no dispel/bypass resistance
+        duration = 0
+        insert_point = 0
+      STR_VAR
+        resource = ~ID#OSLM1~
+    END
+  BUT_ONLY IF_EXISTS
 END
