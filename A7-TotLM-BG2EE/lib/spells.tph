@@ -30,6 +30,46 @@ BEGIN
   END
 END
 
+DEFINE_ACTION_FUNCTION RESERVE_SPELL_ICON_NAME
+INT_VAR
+  bam_index = 1 // the current BAM index
+STR_VAR
+  bg2ee_resref = ~~ // default BG2EE BAM resref
+RET
+  bam_index     // the updated BAM index for the next pass
+  bg2ee_resref    // the resulting BAM resref
+BEGIN
+  ACTION_IF (FILE_EXISTS_IN_GAME ~%bg2ee_resref%A.BAM~ ||
+             FILE_EXISTS_IN_GAME ~%bg2ee_resref%B.BAM~ ||
+             FILE_EXISTS_IN_GAME ~%bg2ee_resref%C.BAM~) BEGIN
+    ACTION_IF (bam_index < 10) BEGIN
+      OUTER_TEXT_SPRINT resref_base ~id#i00~
+    END ELSE ACTION_IF (bam_index < 100) BEGIN
+      OUTER_TEXT_SPRINT resref_base ~id#i0~
+    END ELSE BEGIN
+      OUTER_TEXT_SPRINT resref_base ~id#i~
+    END
+
+    // finding set of free bam resrefs
+    OUTER_WHILE (FILE_EXISTS_IN_GAME ~%resref_base%%bam_index%A.BAM~ ||
+                 FILE_EXISTS_IN_GAME ~%resref_base%%bam_index%B.BAM~ ||
+                 FILE_EXISTS_IN_GAME ~%resref_base%%bam_index%C.BAM~) BEGIN
+      OUTER_SET bam_index += 1
+      ACTION_IF (bam_index < 10) BEGIN
+        OUTER_TEXT_SPRINT resref_base ~id#i00~
+      END ELSE ACTION_IF (bam_index < 100) BEGIN
+        OUTER_TEXT_SPRINT resref_base ~id#i0~
+      END ELSE BEGIN
+        OUTER_TEXT_SPRINT resref_base ~id#i~
+      END
+    END
+
+    OUTER_TEXT_SPRINT bg2ee_resref ~%resref_base%%bam_index%~
+    OUTER_SET bam_index += 1
+  END
+END
+
+
 /*
 TODO:
 - read spell-iwd.ids into "$spells_orig(iwd_resref) = symbolic_name"
@@ -73,6 +113,7 @@ COPY ~%MOD_FOLDER%/spl/spell-iwd.ids~ ~%MOD_FOLDER%/spl/spell-iwd.ids~
 BUT_ONLY
 
 // Installing and registering SPPR/SPWI/SPIN spells
+OUTER_SET bam_index = 1
 ACTION_PHP_EACH spells_orig AS iwd_resref => spell_name BEGIN
   OUTER_SET code = IDS_OF_SYMBOL(~spell~ ~%spell_name%~)
   ACTION_IF (code < 0) BEGIN
@@ -83,6 +124,11 @@ ACTION_PHP_EACH spells_orig AS iwd_resref => spell_name BEGIN
       LAF RES_NAME_OF_SPELL_NUM INT_VAR spell_num RET bg2ee_resref = spell_res END
       OUTER_TEXT_SPRINT $map_spell(~%iwd_resref%~) ~%bg2ee_resref%~
       OUTER_SET $map_spell_added(~%iwd_resref%~) = 1
+      LAF RESERVE_SPELL_ICON_NAME
+        INT_VAR bam_index
+        STR_VAR bg2ee_resref
+        RET bam_index bg2ee_resref
+      END
       OUTER_TEXT_SPRINT $map_spellicon(~%iwd_resref%A~) ~%bg2ee_resref%A~
       OUTER_TEXT_SPRINT $map_spellicon(~%iwd_resref%B~) ~%bg2ee_resref%B~
       OUTER_TEXT_SPRINT $map_spellicon(~%iwd_resref%C~) ~%bg2ee_resref%C~
