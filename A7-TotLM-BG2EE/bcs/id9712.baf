@@ -82,14 +82,27 @@ END
 
 IF
   !Global("GUARDS_3","MYAREA",0)
-  !Global("#spawn_group_3","MYAREA",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_3","MYAREA",1)
+    SetGlobal("GUARDS_3","MYAREA",0)
     CreateCreature("ckspgrdh",[2128.1490],11)
     CreateCreature("ckspgrdh",[2256.1452],3)
     CreateCreature("ckspgrdh",[2148.1588],11)
     CreateCreature("ckspgrdh",[2404.1508],3)
+    Continue()
+  RESPONSE #100
+    SetGlobal("GUARDS_3","MYAREA",0)
+    CreateCreature("ckspgrdh",[1123.1344],2)
+    CreateCreature("ckspgrdh",[919.1421],10)
+    CreateCreature("ckspgrdh",[1045.1248],2)
+    CreateCreature("ckspgrdh",[838.1316],10)
+    Continue()
+  RESPONSE #100
+    SetGlobal("GUARDS_3","MYAREA",0)
+    CreateCreature("ckspgrdh",[1526.965],10)
+    CreateCreature("ckspgrdh",[1648.912],2)
+    CreateCreature("ckspgrdh",[1577.1035],10)
+    CreateCreature("ckspgrdh",[1710.986],2)
     Continue()
 END
 

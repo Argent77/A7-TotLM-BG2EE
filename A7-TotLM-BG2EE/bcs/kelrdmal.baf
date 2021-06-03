@@ -1,4 +1,58 @@
 IF
+  Global("bd_summoned","LOCALS",0)
+  See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+  SetGlobalTimerRandom("bd_summoned","LOCALS",TWO_ROUNDS,FIVE_ROUNDS)
+  Continue()
+END
+
+IF
+  Global("guards_summoned","LOCALS",0)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("GUARDS_1","MYAREA",1)
+  GlobalTimerExpired("bd_summoned","LOCALS")
+  DifficultyGT(EASY)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("guards_summoned","LOCALS",1)
+    SetGlobal("GUARDS_1","MYAREA",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
+    DisplayStringHead(Myself,104011)  // "Guards!"
+END
+
+IF
+  Global("guards_summoned","LOCALS",1)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("GUARDS_2","MYAREA",1)
+  GlobalTimerExpired("bd_summoned","LOCALS")
+  DifficultyGT(NORMAL)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("guards_summoned","LOCALS",2)
+    SetGlobal("GUARDS_2","MYAREA",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
+    DisplayStringHead(Myself,104011)  // "Guards!"
+END
+
+IF
+  Global("guards_summoned","LOCALS",2)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("GUARDS_2","MYAREA",1)
+  Global("GUARDS_3","MYAREA",0)
+  GlobalTimerExpired("bd_summoned","LOCALS")
+  DifficultyGT(HARD)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobal("GUARDS_3","MYAREA",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,THREE_TURNS)
+    DisplayStringHead(Myself,104011)  // "Guards!"
+END
+
+IF
   Global("ATTACK_SET","LOCALS",0)
   !Global("TELEPORT_1","MYAREA",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
@@ -404,54 +458,6 @@ THEN
     SetGlobal("ATTACK_SET","LOCALS",0)
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     ForceSpell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
-END
-
-IF
-  Global("guards_summoned","LOCALS",0)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("GUARDS_1","MYAREA",1)
-  DifficultyGT(EASY)
-  See(NearestEnemyOf(Myself))
-THEN
-  RESPONSE #100
-    SetGlobal("guards_summoned","LOCALS",1)
-    SetGlobal("GUARDS_1","MYAREA",1)
-    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
-    DisplayStringHead(Myself,@15409) // "Guards!"
-    Continue()
-  RESPONSE #50
-    Continue()
-END
-
-IF
-  Global("guards_summoned","LOCALS",1)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("GUARDS_2","MYAREA",1)
-  GlobalTimerExpired("bd_summoned","LOCALS")
-  DifficultyGT(NORMAL)
-  See(NearestEnemyOf(Myself))
-THEN
-  RESPONSE #100
-    SetGlobal("guards_summoned","LOCALS",2)
-    SetGlobal("GUARDS_2","MYAREA",1)
-    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
-    DisplayStringHead(Myself,@15409) // "Guards!"
-    Continue()
-END
-
-IF
-  Global("guards_summoned","LOCALS",2)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("GUARDS_3","MYAREA",1)
-  GlobalTimerExpired("bd_summoned","LOCALS")
-  DifficultyGT(HARD)
-  See(NearestEnemyOf(Myself))
-THEN
-  RESPONSE #100
-    SetGlobal("guards_summoned","LOCALS",3)
-    SetGlobal("GUARDS_3","MYAREA",1)
-    DisplayStringHead(Myself,@15409) // "Guards!"
-    Continue()
 END
 
 IF
