@@ -1,6 +1,8 @@
 IF
   !Global("EFXDELH_inactive","LOCALS",1)
-  LevelPartyGT(14)
+  OR(2)
+    LevelPartyGT(14)
+    DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
     DestroySelf()

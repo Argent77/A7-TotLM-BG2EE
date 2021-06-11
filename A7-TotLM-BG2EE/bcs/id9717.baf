@@ -14,3 +14,12 @@ THEN
     Continue()
 END
 
+IF
+  Global("ID9717_SPAWNED","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("ID9717_SPAWNED","GLOBAL",1)
+    SetGlobal("ID9717_TROLL","GLOBAL",0)
+    SetGlobal("ID9717_BEHOLDER","GLOBAL",0)
+    Continue()
+END

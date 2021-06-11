@@ -46,6 +46,7 @@ IF
   !Global("KETEAM1_inactive","LOCALS",1)
   !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
   !Global("#spawn_group_0","MYAREA",1)
+  DifficultyGT(EASY)
 THEN
   RESPONSE #100
     SetGlobal("#spawn_group_0","MYAREA",1)
@@ -55,8 +56,34 @@ THEN
 END
 
 IF
+  !Global("KETEAM1_inactive","LOCALS",1)
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("#spawn_group_0","MYAREA",1)
+  !DifficultyGT(EASY)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_0","MYAREA",1)
+    Continue()
+END
+
+IF
   !Global("GUARDS_1","MYAREA",0)
   !Global("#spawn_group_1","MYAREA",1)
+  !DifficultyGT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("#spawn_group_1","MYAREA",1)
+    CreateCreature("ckspgrdh",[1526.965],10)
+    CreateCreature("ckspgrdh",[1648.912],2)
+    CreateCreature("ckspgrdh",[1577.1035],10)
+    CreateCreature("ckspgrdh",[1710.986],2)
+    Continue()
+END
+
+IF
+  !Global("GUARDS_1","MYAREA",0)
+  !Global("#spawn_group_1","MYAREA",1)
+  DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobal("#spawn_group_1","MYAREA",1)

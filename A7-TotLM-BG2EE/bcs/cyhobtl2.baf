@@ -1,0 +1,46 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MultiPlayerSync()
+    SmallWait(5)
+    ReallyForceSpellRES("IDSP163",Myself)
+    CreateVisualEffectObject("PORTALH","HOBART")
+    FadeFromColor([15.0],0)
+    Wait(1)
+    UnhideGUI()
+    EndCutSceneMode()
+END
+
+IF
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    CutSceneId("Ambush_Harpy_4")
+    DestroySelf()
+END
+
+IF
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    CutSceneId("Ambush_Harpy_5")
+    DestroySelf()
+END
+
+IF
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    CutSceneId("Fixed Wyvern 1")
+    DestroySelf()
+END
+
+IF
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    CutSceneId("Fixed Wyvern 5")
+    DestroySelf()
+END

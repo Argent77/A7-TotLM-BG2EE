@@ -67,12 +67,31 @@ IF
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   !GlobalTimerNotExpired("SUMMONER_TIMER","MYAREA")
   NearSavedLocation(Myself,"#savedloc",2)
+  !DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobalTimer("SUMMONER_TIMER","MYAREA",FIVE_ROUNDS)
     SetGlobal("SUMMONER_TURN","MYAREA",2)
+    RemoveSpellRES("IDSP158")
     ForceSpellPointRES("IDSP158",[875.2181])
+    Wait(2)
+END
+
+IF
+  Global("SUMMONER_TURN","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !GlobalTimerNotExpired("SUMMONER_TIMER","MYAREA")
+  NearSavedLocation(Myself,"#savedloc",2)
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    SetGlobalTimer("SUMMONER_TIMER","MYAREA",FIVE_ROUNDS)
+    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    RemoveSpellRES("IDSP158")
+    ForceSpellPointRES("IDSP160",[875.2181])
     Wait(2)
 END
 

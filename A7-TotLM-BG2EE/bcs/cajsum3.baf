@@ -24,11 +24,27 @@ IF
   See(NearestEnemyOf(Myself))
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
+  !DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobal("SUMMON_TIMER","LOCALS",0)
     SpellRES("IDSP158",LastSeenBy(Myself))
+    Wait(2)
+END
+
+IF
+  HaveSpellRES("IDSP158")
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    SetGlobal("SUMMON_TIMER","LOCALS",0)
+    RemoveSpellRES("IDSP158")
+    ForceSpellRES("IDSP160",LastSeenBy(Myself))
     Wait(2)
 END
 
@@ -477,10 +493,24 @@ IF
   !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
   HaveSpellRES("IDSP158")
+  !DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobal("SUMMON_TIMER","LOCALS",0)
     SpellPointRES("IDSP158",[3216.2024])
+    Wait(2)
+END
+
+IF
+  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+  !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
+  HaveSpellRES("IDSP158")
+  DifficultyLT(NORMAL)
+THEN
+  RESPONSE #100
+    SetGlobal("SUMMON_TIMER","LOCALS",0)
+    RemoveSpellRES("IDSP158")
+    ForceSpellPointRES("IDSP160",[3216.2024])
     Wait(2)
 END
 

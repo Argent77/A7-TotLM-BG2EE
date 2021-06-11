@@ -1,0 +1,89 @@
+IF
+  See([GOODCUTOFF])
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  StateCheck(Myself,STATE_PANIC)
+THEN
+  RESPONSE #100
+    RandomWalkContinuous()
+END
+
+IF
+  See([0.0.0.IMP])
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  OR(2)
+    See([GOODCUTOFF.0.0.CLERIC_ALL])
+    See([GOODCUTOFF.0.0.MAGE_ALL])
+  Global("silence","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),TANARI_SILENCE)  // SPIN998.SPL (Silence, 15' Radius)
+    SetGlobal("silence","LOCALS",1)
+END
+
+IF
+  See([GOODCUTOFF])
+  Global("abilities","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("abilities","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),TANARI_PARALYZE)  // SPIN999.SPL (Hold Person)
+END
+
+IF
+  See([GOODCUTOFF])
+THEN
+  RESPONSE #60
+    AttackOneRound(LastSeenBy(Myself))
+    AttackOneRound(LastSeenBy(Myself))
+  RESPONSE #30
+    ForceSpell(LastSeenBy(Myself),TANARI_VAMPIRIC_TOUCH)  // SPIN997.SPL (Vampiric Touch)
+    AttackOneRound(LastSeenBy(Myself))
+  RESPONSE #10
+    ForceSpell(LastSeenBy(Myself),TANARI_PARALYZE)  // SPIN999.SPL (Hold Person)
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  OR(2)
+    See([0.0.0.CLERIC_ALL])
+    See([0.0.0.MAGE_ALL])
+  Global("silence","LOCALS",0)
+THEN
+  RESPONSE #100
+    ForceSpell(LastSeenBy(Myself),TANARI_SILENCE)  // SPIN998.SPL (Silence, 15' Radius)
+    SetGlobal("silence","LOCALS",1)
+END
+
+IF
+  See([ANYONE])
+  Global("abilities","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("abilities","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),TANARI_PARALYZE)  // SPIN999.SPL (Hold Person)
+END
+
+IF
+  See([ANYONE])
+THEN
+  RESPONSE #70
+    AttackReevaluate(LastSeenBy(Myself),30)
+  RESPONSE #20
+    ForceSpell(LastSeenBy(Myself),TANARI_VAMPIRIC_TOUCH)  // SPIN997.SPL (Vampiric Touch)
+    Wait(2)
+  RESPONSE #10
+    ForceSpell(LastSeenBy(Myself),TANARI_PARALYZE)  // SPIN999.SPL (Hold Person)
+    Wait(2)
+END
+

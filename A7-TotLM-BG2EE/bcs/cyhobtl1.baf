@@ -21,13 +21,6 @@ THEN
     ActionOverride(Player6,LeaveAreaLUA("ID9700","LOAD9700",[1554.1005],4))
     LeaveAreaLUAPanic("ID9700","LOAD9700",[1446.1088],8)
     LeaveAreaLUA("ID9700","LOAD9700",[1446.1088],8)
-    MultiPlayerSync()
-    SmallWait(5)
-    ReallyForceSpellRES("IDSP163",Myself)
-    CreateVisualEffectObject("PORTALH","HOBART")
-    FadeFromColor([15.0],0)
-    Wait(1)
-    UnhideGUI()
-    EndCutSceneMode()
+    StartCutSceneEx("cyhobtl2",TRUE)
 END
 

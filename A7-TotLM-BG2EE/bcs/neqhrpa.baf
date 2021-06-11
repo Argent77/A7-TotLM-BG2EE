@@ -1,12 +1,16 @@
 IF
-  LevelPartyGT(14)
+  OR(2)
+    LevelPartyGT(14)
+    DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
     ChangeAIScript("NEQHRPAH",CLASS)
 END
 
 IF
-  LevelPartyLT(12)
+  OR(2)
+    LevelPartyLT(12)
+    DifficultyLT(EASY)
 THEN
   RESPONSE #100
     ChangeAIScript("NEQHRPAL",CLASS)

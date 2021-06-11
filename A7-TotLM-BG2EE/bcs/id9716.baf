@@ -14,3 +14,24 @@ THEN
     Continue()
 END
 
+IF
+  Global("ID9717_SPAWNED","GLOBAL",0)
+  DifficultyLT(NORMAL)
+  !Global("ID9717_TROLL","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ID9717_TROLL","GLOBAL",1)
+  SetGlobal("ID9717_BEHOLDER","GLOBAL",0)
+  Continue()
+END
+
+IF
+  Global("ID9717_SPAWNED","GLOBAL",0)
+  !DifficultyLT(NORMAL)
+  !Global("ID9717_BEHOLDER","GLOBAL",1)
+THEN
+RESPONSE #100
+  SetGlobal("ID9717_TROLL","GLOBAL",0)
+  SetGlobal("ID9717_BEHOLDER","GLOBAL",1)
+  Continue()
+END
