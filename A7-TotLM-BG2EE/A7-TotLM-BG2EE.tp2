@@ -89,6 +89,7 @@ BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
   REQUIRE_PREDICATE (VALID_SCRIPT_TRIGGERS ~NearLocation(Myself,0,0,0) NearSavedLocation(Myself,"x",0)~ &&
                      VALID_SCRIPT_ACTIONS ~ZoomLock(0)~) @1100001 // Requires game patched to 2.0 or later.
   DESIGNATED 0
+  LABEL ~A7-TOTLM-BG2EE-MAIN~
 
   INCLUDE ~%MOD_FOLDER%/lib/functions.tph~
   INCLUDE ~%MOD_FOLDER%/lib/prereqs.tph~
@@ -120,6 +121,7 @@ BEGIN @1000100 // Rebalance weapons and equipment
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
   REQUIRE_PREDICATE (NOT GAME_IS ~bgee~) @1100005 // Already installed by the main component.
   DESIGNATED 20
+  LABEL ~A7-TOTLM-BG2EE-REBALANCE_ITEMS~
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~
 
@@ -128,6 +130,7 @@ BEGIN @1000201 // Reduce by 25 percent
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
   SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
   DESIGNATED 30
+  LABEL ~A7-TOTLM-BG2EE-REDUCE_XP_BY_25~
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
   LAF REDUCE_EXPERIENCE INT_VAR scale = 75 END
@@ -137,6 +140,7 @@ BEGIN @1000202 // Reduce by 50 percent
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
   SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
   DESIGNATED 31
+  LABEL ~A7-TOTLM-BG2EE-REDUCE_XP_BY_50~
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
   LAF REDUCE_EXPERIENCE INT_VAR scale = 50 END
@@ -146,6 +150,7 @@ BEGIN @1000203 // Reduce by 75 percent
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
   SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
   DESIGNATED 32
+  LABEL ~A7-TOTLM-BG2EE-REDUCE_XP_BY_75~
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
   LAF REDUCE_EXPERIENCE INT_VAR scale = 25 END
@@ -155,6 +160,7 @@ BEGIN @1000204 // No experience
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
   SUBCOMPONENT @1000200 // Reduce experience from monsters and quests
   DESIGNATED 33
+  LABEL ~A7-TOTLM-BG2EE-REDUCE_XP_BY_100~
 
   INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_xp.tph~
   LAF REDUCE_EXPERIENCE INT_VAR scale = 0 END
