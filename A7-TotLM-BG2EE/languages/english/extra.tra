@@ -112,3 +112,21 @@ We were able to defeat the Luremaster in a grand battle and put his spirit to re
 @91101 = ~Well, it's not really any of my business, but you look a little inexperienced to me. I haven't much use for a hero who doesn't even survive the first battle.~
 @91102 = ~I'm up to the task.~
 @91103 = ~You are right. I'll come back later.~
+@91104 = ~Cell Key #3~
+@91105 = ~This bronze key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #3."
+
+STATISTICS:
+
+Weight: 0~
+@91106 = ~Cell Key #2~
+@91107 = ~This copper key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #2."
+
+STATISTICS:
+
+Weight: 0~
+@91108 = ~Cell Key #1~
+@91109 = ~This iron key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #1."
+
+STATISTICS:
+
+Weight: 0~

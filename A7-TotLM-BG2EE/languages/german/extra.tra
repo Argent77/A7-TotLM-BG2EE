@@ -112,3 +112,21 @@ Wir haben es geschafft, den Meister der Verlockung in einem epischen Kampf zu be
 @91101 = ~Es geht mich zwar nichts an, aber Ihr seht mir ein wenig unerfahren aus. Ich kann mit einem Helden nicht viel anfangen, wenn er bereits am erstbesten Kampf scheitert.~ ~Es geht mich zwar nichts an, aber Ihr seht mir ein wenig unerfahren aus. Ich kann mit einer Heldin nicht viel anfangen, wenn sie bereits am erstbesten Kampf scheitert.~
 @91102 = ~Ich bin der Aufgabe gewachsen.~
 @91103 = ~Ihr habt Recht. Ich werde später nochmal wiederkommen.~
+@91104 = ~Zellenschlüssel 3~
+@91105 = ~Dieser Bronzeschlüssel ist sehr alt. Unten am Schlüssel ist das Wort "Zelle 3" eingraviert.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@91106 = ~Zellenschlüssel 2~
+@91107 = ~Dieser Kupferschlüssel ist sehr alt. Unten am Schlüssel ist das Wort "Zelle 2" eingraviert.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
+@91108 = ~Zellenschlüssel 1~
+@91109 = ~Dieser Eisenschlüssel ist sehr alt. Unten am Schlüssel ist das Wort "Zelle 1" eingraviert.
+
+EIGENSCHAFTEN:
+
+Gewicht: 0~
