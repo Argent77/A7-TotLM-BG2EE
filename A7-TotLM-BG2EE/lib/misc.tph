@@ -238,7 +238,7 @@ BUT_ONLY
 
 COPY_EXISTING ~id9800.bcs~ ~override~
   DECOMPILE_AND_PATCH BEGIN
-    REPLACE_TEXTUALLY ~SetGlobal("FOG_TYPE","GLOBAL",0)~ ~SetGlobal("FOG_TYPE","GLOBAL",%fog_id9800_idx%)~
+    REPLACE_TEXTUALLY ~SetGlobal("FOG_TYPE","GLOBAL",-?[1-9][0-9]*)~ ~SetGlobal("FOG_TYPE","GLOBAL",%fog_id9800_idx%)~
   END
 BUT_ONLY
 

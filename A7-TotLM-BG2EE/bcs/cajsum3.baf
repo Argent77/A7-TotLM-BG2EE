@@ -1,4 +1,24 @@
 IF
+  Global("difficulty_check","LOCALS",0)
+  DifficultyLT(HARD)
+THEN
+  RESPONSE #100
+    SetGlobal("difficulty_check","LOCALS",1)
+    RemoveSpellRES("IDSP158")
+    Continue()
+END
+
+IF
+  Global("difficulty_check","LOCALS",0)
+  DifficultyLT(EASY)
+THEN
+  RESPONSE #100
+    SetGlobal("difficulty_check","LOCALS",1)
+    RemoveSpellRES("IDSP158")
+    Continue()
+END
+
+IF
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   See(NearestEnemyOf(Myself))
   HaveSpell(WIZARD_STONE_SKIN)
