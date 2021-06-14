@@ -721,7 +721,6 @@ PARAMETRY:
 Specjalne:
 – Odporność na ogień: +15%
 – 50% szans na dodatkowe 1k8 obrażeń od ognia, po trafieniu
-– 10% szans na ogłuszenie celu, po trafieniu
 
 Obrażenia: 2k4 +3
 TraK0: +3
@@ -741,7 +740,6 @@ PARAMETRY:
 
 Specjalne:
 – 50% szans na dodatkowe 1k3 obrażeń od elektryczności, po trafieniu
-– 15% szans na ogłuszenie celu na cztery sekundy, po trafieniu
 
 Obrażenia: 1k8 +2
 TraK0: +2
@@ -781,7 +779,6 @@ PARAMETRY:
 Specjalne:
 – Klasa Pancerza: +1
 – 50% szans na dodatkowe 2k3 obrażeń od elektryczności, po trafieniu
-– 10% szans na ogłuszenie celu na cztery sekundy, po trafieniu 
 
 Obrażenia: 1k6 +5
 TraK0: +4
@@ -805,7 +802,6 @@ PARAMETRY:
 
 Specjalne:
 – Klasa Pancerza: +1
-– Odporność na obrażenia sieczne: +15%
 – Jeden dodatkowy atak na rundę
 
 Obrażenia: 1k8 +4
@@ -825,7 +821,6 @@ Waga: 4~
 PARAMETRY:
 
 Specjalne:
-– 25% szans na dodatkowe 1k3 obrażeń od zimna, po trafieniu
 – 15% szans na przeniknięcie ofiary (1 obrażenie co sekundę przez dziesięć sekund), po trafieniu
 
 Obrażenia: 2k4 +2
@@ -846,9 +841,8 @@ PARAMETRY:
 
 Specjalne:
 – Klasa Pancerza: +2
-– Odporność na obrażenia sieczne: +20%
-– Odporność na obrażenia kłute: +20%
-– Odporność na magię: +15%
+– Odporność na obrażenia sieczne: +5%
+– Odporność na obrażenia kłute: +5%
 
 Obrażenia: 2k4 +4
 TraK0: +4
@@ -879,8 +873,8 @@ PARAMETRY:
 
 Specjalne:
 – Klasa Pancerza: +2
-– Odporność na obrażenia obuchowe: +25%
-– Rzuty obronne: +3 przeciw czarom
+– Odporność na obrażenia obuchowe: +5%
+– Rzuty obronne: +2 przeciw czarom
 
 Waga: 0~
 @14640 = ~Wzmocniony pawęż +2~
@@ -890,8 +884,6 @@ PARAMETRY:
 
 Specjalne:
 – Klasa Pancerza: +3 (+4 przeciw pociskom)
-– Odporność na obrażenia obuchowe: +15%
-– Odporność na ogień: +15%
 
 Wymagania:
 – Siła: 14
@@ -905,10 +897,6 @@ PARAMETRY:
 Specjalne:
 – Klasa Pancerza: +4 (+5 przeciw pociskom)
 – TraK0: -2
-– Odporność na obrażenia sieczne: +15%
-– Odporność na obrażenia obuchowe: +15%
-– Odporność na obrażenia kłute: +15%
-– Odporność na ogień: +15%
 
 Wymagania:
 – Siła: 18
@@ -982,11 +970,8 @@ Waga: 20~
 PARAMETRY:
 
 Specjalne:
-– Odporność na obrażenia sieczne: +15%
-– Odporność na obrażenia kłute: +15%
-– Odporność na ogień: +15%
-– Odporność na elektryczność: +15%
-– Rzuty obronne: +2 przeciw czarom
+– Odporność na obrażenia sieczne: +5%
+– Odporność na obrażenia kłute: +5%
 
 Klasa Pancerza: 4 (3 przeciw broniom kłutym i pociskom, 2 przeciw broniom siecznym)
 
@@ -1000,12 +985,10 @@ Waga: 15~
 PARAMETRY:
 
 Specjalne:
-– Ciche chodzenie: +30%
-– Krycie się w cieniu: +30%
-– Odporność na obrażenia kłute: +20%
-– Odporność na obrażenia sieczne: +20%
-– Odporność na ogień: +20%
-– Odporność na elektryczność: +20%
+– Ciche chodzenie: +15%
+– Krycie się w cieniu: +15%
+– Odporność na obrażenia kłute: +5%
+– Odporność na obrażenia sieczne: +5%
 
 Klasa Pancerza: 3 (2 przeciw broniom kłutym i pociskom, 1 przeciw broniom siecznym)
 
@@ -1712,12 +1695,12 @@ Wszystko wydaje się dość proste, ale to mnie właśnie martwi. Takie jasne i 
 @27032 = ~„Gińcie, najeźdźcy!”~
 @27033 = ~Ta część wieży rozpadła się, zostawiając w podłodze ziejącą dziurę.~
 @27034 = ~Topór władcy minotaurów +4~
-@27035 = ~Ta wspaniała broń należała kiedyś do władcy minotaurów, zamieszkującego katakumby Mistrza Wabienia. Topór ma podwójne ostrze osadzone na solidnym, dębowym trzonku. Jest doskonale wyważony i można nim władać jedną ręką. Jest to zaczarowana broń, w związku z czym jej użytkownik zyskuje premię +4 do testów trafienia i zadawanych obrażeń. Poza tym, przy każdym celnym trafieniu istnieje 25% szans na ogłuszenie przeciwnika na 1k4 rundy.
+@27035 = ~Ta wspaniała broń należała kiedyś do władcy minotaurów, zamieszkującego katakumby Mistrza Wabienia. Topór ma podwójne ostrze osadzone na solidnym, dębowym trzonku. Jest doskonale wyważony i można nim władać jedną ręką. Jest to zaczarowana broń, w związku z czym jej użytkownik zyskuje premię +4 do testów trafienia i zadawanych obrażeń. Poza tym, przy każdym celnym trafieniu istnieje 10% szans na ogłuszenie przeciwnika na 1k4 rundy.
 
 PARAMETRY:
 
 Specjalne:
-– 25% szans na ogłuszenie celu na 1k4 rundy, po trafieniu
+– 10% szans na ogłuszenie celu na 1k4 rundy, po trafieniu
 
 Obrażenia: 1k12 +4
 TraK0: +4
@@ -2049,8 +2032,7 @@ Na pierwszy rzut oka płaszcz wydaje się mieć oślepiająco biały kolor. Tak 
 PARAMETRY:
 
 Specjalne:
-– Klasa Pancerza: +3 
-– Można go założyć razem z innymi przedmiotami zapewniającymi ochronę
+– Klasa Pancerza: +2
  
 Waga: 3 ~
 @27364 = ~Ten wysmukły łuk emanuje ciepłem, choć w dotyku wydaje się być zimny, jak gdyby wysysał energię z ciała swojego użytkownika. Magicznymi właściwościami obdarzył go pewien starzejący się nekromanta z Bryn Shander, po tym jak jego chowaniec, lawowy mefit, został zabity przez arcykapłana Auril. Nekromanta podarował łuk płatnemu zabójcy, Teravenowi Docenowi, któremu przez kolejne trzy lata udało się zabić wiele dzieci Lodowej Panny. Jednak zabójca spotkał w końcu godnego siebie przeciwnika. Próbował zaatakować z zasadzki pewnego gnoma, uzbrojonego w różdżkę ognistych kul. Z wielokrotnych ognistych wybuchów ocalał tylko ten łuk.

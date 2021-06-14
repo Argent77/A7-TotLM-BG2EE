@@ -526,7 +526,7 @@ Typ:  1-händig~
 
 EIGENSCHAFTEN:
 
-Bei einem Treffer besteht eine 50%ige Chance, zusätzlich 1W8 Schaden durch Feuer zu verursachen. Des weiteren besteht eine 10%ige Chance, das Ziel für 4 Sekunden zu betäuben.
+Bei einem Treffer besteht eine 50%ige Chance, zusätzlich 1W8 Schaden durch Feuer zu verursachen.
 
 Schaden: 2W4 +3 (Klinge)
 ETW0-Bonus: -3
@@ -541,7 +541,7 @@ Typ: 1-händig~
 
 EIGENSCHAFTEN:
 
-Bei einem Treffer besteht eine 50%ige Chance, zusätzlich 1W3 Schaden durch Elektrizität zu verursachen. Des weiteren besteht eine 10%ige Chance, das Ziel für 4 Sekunden zu betäuben.
+Bei einem Treffer besteht eine 50%ige Chance, zusätzlich 1W3 Schaden durch Elektrizität zu verursachen.
 
 Schaden: 1W8 +2 (Klinge)
 ETW0-Bonus: -2
@@ -569,7 +569,6 @@ Typ: 1-händig~
 EIGENSCHAFTEN:
 
 Bei einem Treffer besteht eine 50%ige Chance, dass zusätzlich 2W3 Schadenspunkte durch Elektrizität angerichtet werden.
-Desweiteren besteht eine 10%ige Chance, dass das Ziel für 4 Sekunden betäubt wird.
 
 Schaden: 1W6 +5 (Wucht)
 ETW0-Bonus: -4
@@ -590,7 +589,6 @@ EIGENSCHAFTEN:
 Schaden: 1W8 +4 (Klinge)
 ETW0-Bonus: -4
 RK-Bonus: -1
-Widerstandsbonus: +15 % Widerstandskraft gegen Klingenwaffen
 Besonderheit: +1 zusätzlicher Angriff pro Runde
 Gewicht: 4
 Initiativefaktor: 4
@@ -607,7 +605,6 @@ ETW0:  +2
 Schadenstyp: durch Wucht
 Besonderheit:
   15 % Chance, dass Zielwesen geteilt wird
-  25 % Chance  auf +1-3 Schadenspunkte durch Kälte
 Gewicht: 10
 Initiative: 6
 Waffenfertigkeit: Streitkolben
@@ -622,9 +619,8 @@ ETW0: +4
 Schadenstyp: durch Wucht
 Rüstungsklasse: +2 Bonus
 Widerstandsboni: 
-  +15 % Magieresistenz
-  +20 % Widerstandskraft gegen Klinge
-  +20 % Widerstandskraft gegen Spitze
+  +5 % Widerstandskraft gegen Klinge
+  +5 % Widerstandskraft gegen Spitze
 Gewicht: 10
 Initiative: 6
 Waffenfertigkeit: Streitkolben
@@ -645,8 +641,8 @@ STATISTIK:
 
 Rüstungsklasse: +2 Bonus
 Widerstandsboni:
- +25 % Widerstandskraft gegen Wucht
- +3 Rettungswurf gegen Zauber~
+ +5 % Widerstandskraft gegen Wucht
+ +2 Rettungswurf gegen Zauber~
 @14640 = ~Großer Schild, verstärkt +2~
 @14641 = ~Dieser auch als Rhombus- oder Turmschild bekannte Schild ist aus massivem Metall gefertigt und reicht seinem Benutzer beinahe vom Kinn bis zu den Füßen. Der Schild muss gut am Unterarm befestigt werden, und sein Griff muss immer fest mit der Hand umschlossen werden. Die den Schild haltende Hand kann deshalb natürlich nur zum Führen des Schildes eingesetzt werden.
 
@@ -654,9 +650,6 @@ STATISTIK:
 
 Rüstungsklasse: +3 Bonus
 Besonderheit: +1 RK gegen Geschosswaffen
-Widerstandsboni:
-  +15 % Widerstandskraft gegen Feuer
-  +15 % Widerstandkraft gegen Wucht
 Gewicht: 12~
 @14644 = ~Großer Schild +3~
 @14646 = ~Dieser auch als Rhombus- oder Turmschild bekannte Schild ist aus massivem Metall gefertigt und reicht seinem Benutzer beinahe vom Kinn bis zu den Füßen. Der Schild muss gut am Unterarm befestigt werden, und sein Griff muss immer fest mit der Hand umschlossen werden. Die den Schild haltende Hand kann deshalb natürlich nur zum Führen des Schildes eingesetzt werden.
@@ -666,10 +659,6 @@ STATISTIK:
 Rüstungsklasse: +4 Bonus
 ETW0: -2 Punktabzug
 Besonderheit: +1 RK gegen Geschosswaffen
-Widerstandsboni:
-  +15 % Widerstandskraft gegen Klinge
-  +15 % Widerstandkraft gegen Wucht
-  +15 % Widerstandskraft gegen Spitze
 Gewicht: 18
 Mindeststärke von 18 ist erforderlich~
 @14682 = ~Kurzschwert der Handlung +2~
@@ -723,11 +712,8 @@ STATISTIK:
 
 Rüstungsklasse: 4
 Widerstandsboni:
-  +15 % Widerstandskraft gegen Spitze
-  +15 % Widerstandskraft gegen Klinge
-  +15 % Widerstandskraft gegen Feuer
-  +15 % Widerstandskraft gegen Elektrizität
-  +2 Rettungswurf gegen Zauber
+  +5 % Widerstandskraft gegen Spitze
+  +5 % Widerstandskraft gegen Klinge
 Gewicht: 15~
 @14834 = ~Beschlagenes Lederwams +4: Schattenrüstung~
 @14835 = ~Das beschlagene Lederwams hat mit der normalen Lederrüstung nur wenig gemeinsam. Während die Lederrüstung eine harte Schale darstellt, ist das beschlagene Lederwams weich und geschmeidig und beschlagen mit Hunderten von Metallnieten. Die Nieten sitzen so dicht aneinander, dass sie eine bewegliche Decke aus hartem Metall bilden, die Angriffe durch Spitze oder Klinge abwehren. Die weiche Unterlage aus Leder dient den Nieten eigentlich nur zur Befestigung.
@@ -736,12 +722,10 @@ STATISTIK:
 
 Rüstungsklasse: 3 (2 gegen Stich und Geschoss, 1 gegen Klinge)
 Mindeststärke: 6
-Besonderheit: +30 % Leise bewegen, +30% Im Schatten verstecken
+Besonderheit: +15 % Leise bewegen, +15% Im Schatten verstecken
 Widerstandsbonus:
-  +20 % Widerstandskraft gegen Stich
-  +20 % Widerstandskraft gegen Klinge
-  +20 % Widerstandskraft gegen Feuer
-  +20 % Widerstandskraft gegen Elektrizität
+  +5 % Widerstandskraft gegen Stich
+  +5 % Widerstandskraft gegen Klinge
 Gewicht: 15~
 @14847 = ~Zweihändige Axt +2: Lebensspender~
 @14848 = ~Diese starke Waffe besteht aus einem 1,20 bis 1,30 Meter langen Stiel und einer sehr schweren Klinge. Sie kommt entweder als Doppelaxt (zwei Klingen rechts und links) oder mit nur einer Klinge vor. Es ist eine unhandliche Waffe, doch ein geschickter Krieger kann damit durchaus heftige Hiebe austeilen. In die riesige Klinge sind zwergische Runen eingeritzt, die der Axt noch mehr Macht verleihen sollen.
@@ -1296,7 +1280,7 @@ Dies erscheint mir recht unkompliziert zu sein, und genau deshalb bereitet es mi
 @27032 = ~"Sterbt, Ihr verdammten Eindringlinge!"~
 @27033 = ~Dieser Abschnitt des Turms ist weggebrochen. Im Fußboden befindet sich ein klaffendes Loch.~
 @27034 = ~Axt des Minotaurenfürsten~
-@27035 = ~Diese prächtige Waffe hat einst einem Minotaurenfürsten gehört, der in den Katakomben des Meisters der Verlockung gefangen war. Die Axt besteht aus einer schweren Doppelklinge, die auf einem stabilen Eichenschaft montiert ist. Sie ist gut ausbalanciert und kann einhändig geschwungen werden. Die Axt ist magisch verzaubert, wodurch der Träger +4 auf Trefferwürfe und Schaden erhält. Bei einem erfolgreichen Treffer wird der Gegner zu 25% für 1W4 Runden betäubt.
+@27035 = ~Diese prächtige Waffe hat einst einem Minotaurenfürsten gehört, der in den Katakomben des Meisters der Verlockung gefangen war. Die Axt besteht aus einer schweren Doppelklinge, die auf einem stabilen Eichenschaft montiert ist. Sie ist gut ausbalanciert und kann einhändig geschwungen werden. Die Axt ist magisch verzaubert, wodurch der Träger +4 auf Trefferwürfe und Schaden erhält. Bei einem erfolgreichen Treffer wird der Gegner zu 10% für 1W4 Runden betäubt.
 
 SPEZIFISCHE EIGENSCHAFTEN:
 
@@ -1612,8 +1596,8 @@ Auf den ersten Blick scheint dieser Umhang eine strahlend weiße Farbe zu haben.
 
 SPEZIFISCHE EIGENSCHAFTEN:
 
-Der Umhang gibt dem Träger -3 auf RK und kann mit jeder anderen Form magischen Schutzes kombiniert werden, d. h. er kann beispielsweise über einer magischen Rüstung getragen werden, ganz im Gegensatz zu einem normalen Schutzumhang.
-RK-Bonus: -3
+Der Umhang gibt dem Träger -2 auf RK.
+RK-Bonus: -2
 Gewicht: 3~
 @27364 = ~Dieser schlanke Kurzbogen strahlt enorme Hitze aus, aber wenn man ihn berührt, wirkt er eisig kalt, ganz so, als würde er dem Träger Körperwärme entziehen. Der Bogen wurde von einem alten Nekromanten aus Bryn Shander erschaffen, nachdem sein Vertrauter, ein Lavamephit, von einem Hohepriester der Auril getötet worden war. Er übergab den Bogen dann dem Meuchelmörder Teraven Docen, der im Verlauf der nächsten drei Jahre zahlreiche Kinder Aurils tötete. Der Meuchelmörder fand sein Ende, als er versuchte, einen einsam reisenden Gnom zu überfallen, der leider mit einem Stab der Feuerbälle ausgerüstet gewesen war. Nur der Bogen überlebte das Inferno ...
 

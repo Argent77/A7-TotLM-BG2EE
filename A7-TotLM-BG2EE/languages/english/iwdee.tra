@@ -685,7 +685,6 @@ Equipped abilities:
 
 Combat abilities:
 – 50% chance of dealing +1d8 fire damage
-– 10% chance target is stunned for 4 seconds
 
 THAC0: +3
 Damage: 2d4+3 (slashing)
@@ -703,7 +702,6 @@ STATISTICS:
 
 Combat abilities:
 – 50% chance of dealing +1d3 electrical damage
-– 15% chance target is stunned for 4 seconds
 
 THAC0: +2
 Damage: 1d8+2 (slashing)
@@ -741,7 +739,6 @@ Equipped abilities:
 
 Combat abilities:
 – 50% chance of dealing +2d3 electrical damage
-– 10% chance target is stunned for 4 seconds
 
 THAC0: +4
 Damage: 1d6+5 (crushing)
@@ -763,7 +760,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +1
-– Slashing Resistance: +15%
 
 Combat abilities:
 – 1 extra attack per round
@@ -783,7 +779,6 @@ Weight: 4~
 STATISTICS:
 
 Combat abilities:
-– 25% chance of dealing +1d3 cold damage
 – 15% chance target is phased (takes 1 damage per second) for 10 seconds
 
 THAC0: +2
@@ -802,9 +797,8 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +2
-– Slashing Resistance: +20%
-– Piercing Resistance: +20%
-– Magic Resistance: +15%
+– Slashing Resistance: +5%
+– Piercing Resistance: +5%
 
 THAC0: +4
 Damage: 2d4+4 (crushing)
@@ -833,8 +827,8 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +2
-– Crushing Resistance: +25%
-– Save vs. Spell: +3
+– Crushing Resistance: +5%
+– Save vs. Spell: +2
 
 Weight: 0~
 @14640 = ~Reinforced Large Shield +2~
@@ -844,8 +838,6 @@ STATISTICS:
 
 Equipped abilities:
 – Armor Class: +3, an extra +1 vs. missile attacks
-– Crushing Resistance: +15%
-– Fire Resistance: +15%
 
 Requires:
  14 Strength
@@ -859,10 +851,6 @@ STATISTICS:
 Equipped abilities:
 – Armor Class: +4, an extra +1 vs. missile attacks
 – THAC0: -2
-– Slashing Resistance: +15%
-– Crushing Resistance: +15%
-– Piercing Resistance: +15%
-– Fire Resistance: +15%
 
 Requires:
  18 Strength
@@ -933,11 +921,8 @@ Weight: 20~
 STATISTICS:
 
 Equipped abilities:
-– Piercing Resistance: +15%
-– Slashing Resistance: +15%
-– Fire Resistance: +15%
-– Electrical Resistance: +15%
-– Save vs. Spell: +2
+– Piercing Resistance: +5%
+– Slashing Resistance: +5%
 
 Armor Class: 4 (3 vs. piercing and missile, 2 vs. slashing)
 Requires:
@@ -950,12 +935,10 @@ Weight: 15~
 STATISTICS:
 
 Equipped abilities:
-– Piercing Resistance: +20%
-– Slashing Resistance: +20%
-– Fire Resistance: +20%
-– Electrical Resistance: +20%
-– Move Silently: +30%
-– Hide In Shadows: +30%
+– Piercing Resistance: +5%
+– Slashing Resistance: +5%
+– Move Silently: +15%
+– Hide In Shadows: +15%
 
 Armor Class: 3 (2 vs. piercing and missile, 1 vs. slashing)
 Requires:
@@ -1647,12 +1630,12 @@ Now, this all seems rather straightforward, and that is exactly what worries me.
 @27032 = ~"Die, invading scum!"~
 @27033 = ~This section of the tower has crumbled away, leaving a gaping hole in the floor.~
 @27034 = ~Axe of the Minotaur Lord +4~
-@27035 = ~This fine weapon once belonged to the Minotaur Lord in the Luremaster's catacombs. The axe sports a double blade mounted on a solid oak shaft. It is finely balanced and may be used one-handed. The axe is enchanted, giving the user a +4 to both hit and damage. A successful hit also has a 25% chance of stunning an opponent for 1d4 rounds. 
+@27035 = ~This fine weapon once belonged to the Minotaur Lord in the Luremaster's catacombs. The axe sports a double blade mounted on a solid oak shaft. It is finely balanced and may be used one-handed. The axe is enchanted, giving the user a +4 to both hit and damage. A successful hit also has a 10% chance of stunning an opponent for 1d4 rounds. 
 
 STATISTICS:
 
 Combat abilities:
-– 25% chance target is stunned
+– 10% chance target is stunned
 
 THAC0: +4
 Damage: 1d12+4 (slashing)
@@ -1981,8 +1964,7 @@ At first glance this cloak appears to be blinding white in color. However, it is
 STATISTICS:
 
 Equipped abilities:
-– Armor Class: +3
-– Can be worn in combination with any other protective enchantment
+– Armor Class: +2
 
 Weight: 3~
 @27364 = ~This slender bow radiates an intense amount of heat, yet it seems cold to the touch, as if it were draining energy from the user's body. An aging necromancer from Bryn Shander enchanted it, after his lava-mephit familiar was slain by an Aurilite high priest. The bow was then given to an assassin for hire, Teraven Docen, who was quite successful in bringing down many of the ice-maiden's children over a three-year period of bounty hunting. The assassin met his match, however, when attempting to ambush a traveling gnome who carried a wand of fireballs. Only the bow survived the repeated immolations.

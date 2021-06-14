@@ -666,7 +666,6 @@ Tipo de daño: Cortante
 Aptitudes especiales:
  Resistencia al fuego: +15%
  50% de probabilidad de hacer +1D8 de daño por fuego
- 10% de probabilidad de Aturdir al objetivo
 Peso: 10
 Factor de velocidad: 8
 Talento marcial: Mandoble
@@ -681,7 +680,6 @@ GAC0: bonificación +2
 Tipo de daño: Cortante
 Aptitudes especiales:
  50% de probabilidad de hacer +1D3 de daño eléctrico
- 15% de probabilidad de Aturdir al objetivo
 Peso: 7
 Factor de velocidad: 7
 Talento marcial: Hacha
@@ -711,7 +709,6 @@ Tipo de daño: Contundente
 Bonificación a la clase de armadura: +1
 Aptitudes especiales:
  50% de probabilidad de hacer +2D3 de daño eléctrico
- 10% de probabilidad de Aturdir al objetivo
 Peso: 15
 Factor de velocidad: 7
 Talento marcial: Mayal
@@ -737,8 +734,6 @@ Tipo de daño: Cortante
 Bonificación a la clase de armadura: +1
 Aptitudes especiales:
  1 ataque adicional por asalto
-Aptitudes poseídas:
- Resistencia al daño cortante: +15%
 Peso: 4
 Factor de velocidad: 4
 Talento marcial: Espada larga
@@ -753,7 +748,6 @@ GAC0: bonificación +2
 Tipo de daño: Contundente
 Aptitudes especiales:
  15% de probabilidad de que el objetivo Cambie de fase
- 25% de probabilidad de hacer +1D3 de daño por frío
 Peso: 10
 Factor de velocidad: 6
 Talento marcial: Maza/lucero del alba
@@ -770,9 +764,8 @@ GAC0: bonificación +4
 Tipo de daño: Contundente
 Bonificación a la clase de armadura: +2
 Aptitudes especiales:
- Resistencia a la magia: +15%
- Resistencia al daño cortante: +20%
- Resistencia al daño perforante: +20%
+ Resistencia al daño cortante: +5%
+ Resistencia al daño perforante: +5%
 Peso: 10
 Factor de velocidad: 6
 Talento marcial: Maza/lucero del alba
@@ -794,8 +787,8 @@ CARACTERÍSTICAS:
 
 Bonificación a la clase de armadura: +2
 Aptitudes poseídas:
- Resistencia al daño contundente: +25%
- +3 a las tiradas de salvación contra conjuros~
+ Resistencia al daño contundente: +5%
+ +2 a las tiradas de salvación contra conjuros~
 @14640 = ~Escudo grande reforzado +2~
 @14641 = ~El escudo corporal, también conocido como escudo de torre o cometa, es un escudo inmenso de metal o de madera que se alarga desde la barbilla del usuario hasta los pies. Debe asegurarse firmemente en el antebrazo y la mano del escudo debe agarrarlo firmemente en todo momento. Desde luego, esto limita el uso de la mano del escudo a solamente mantener en su lugar el escudo corporal.
 
@@ -804,9 +797,6 @@ CARACTERÍSTICAS:
 Bonificación a la clase de armadura: +3
 Aptitudes especiales:
  +1 contra armas de proyectil
-Aptitudes poseídas:
- Resistencia al fuego: +15%
- Resistencia al daño contundente: +15%
 Peso: 12~
 @14644 = ~Escudo magnífico +3~
 @14646 = ~El escudo corporal, también conocido como escudo de torre o cometa, es un escudo inmenso de metal o de madera que se alarga desde la barbilla del usuario hasta los pies. Debe asegurarse firmemente en el antebrazo y la mano del escudo debe agarrarlo firmemente en todo momento. Desde luego, esto limita el uso de la mano del escudo a solamente mantener en su lugar el escudo corporal.
@@ -817,10 +807,6 @@ Bonificación a la clase de armadura: +4
 GAC0: penalización -2
 Aptitudes especiales:
  +1 contra armas de proyectil
-Aptitudes poseídas:
- Resistencia al daño cortante: +15%
- Resistencia al daño contundente: +15%
- Resistencia al daño perforante: +15%
 Peso: 18
 Requisitos: Fuerza 18~
 @14682 = ~Espada corta de acción +2~
@@ -881,11 +867,8 @@ CARACTERÍSTICAS:
 
 Clase de armadura: 4
 Aptitudes poseídas:
- Resistencia al daño perforante: +15%
- Resistencia al daño cortante: +15%
- Resistencia al daño por fuego: +15%
- Resistencia al daño eléctrico: +15%
- +2 a las tiradas de salvación contra conjuros
+ Resistencia al daño perforante: +5%
+ Resistencia al daño cortante: +5%
 Peso: 15~
 @14834 = ~Ensombrecida +4~
 @14835 = ~Cuero tachonado +4
@@ -896,12 +879,10 @@ CARACTERÍSTICAS:
 
 Clase de armadura: 3
 Aptitudes especiales:
- Sigilo: +30%
+ Sigilo: +15%
 Aptitudes poseídas:
- Resistencia al daño perforante: +20%
- Resistencia al daño cortante: +20%
- Resistencia al daño por fuego: +20%
- Resistencia al daño eléctrico: +20%
+ Resistencia al daño perforante: +5%
+ Resistencia al daño cortante: +5%
 Peso: 15~
 @14847 = ~Dadora de vida +2: Hacha de dos manos~
 @14848 = ~Hacha a dos manos +2
@@ -1591,7 +1572,7 @@ Aptitudes poseídas:
 @27034 = ~Hacha del Señor de los minotauros~
 @27035 = ~Esta excelente arma perteneció una vez al Señor de los minotauros de las mazmorras del Funambulista. El hacha la forma una doble hoja montada sobre un sólido mango de roble. Está muy bien equilibrada y puede usarse a una mano.
 
-El hacha está encantada y concede al usuario una bonificación +4 tanto al golpe como al daño. Todo golpe exitoso tiene también un 25% de probabilidad de aturdir a un oponente durante 1D4 asaltos.
+El hacha está encantada y concede al usuario una bonificación +4 tanto al golpe como al daño. Todo golpe exitoso tiene también un 10% de probabilidad de aturdir a un oponente durante 1D4 asaltos.
 
 CARACTERÍSTICAS:
 
@@ -1599,7 +1580,7 @@ Daño: 1D12+4
 GAC0: bonificación +4
 Tipo de daño: Cortante
 Aptitudes especiales:
- 25% de probabilidad de Aturdir al objetivo durante 1D4 asaltos
+ 10% de probabilidad de Aturdir al objetivo durante 1D4 asaltos
 Peso: 10
 Factor de velocidad: 8
 Talento marcial: Hacha
@@ -1915,11 +1896,11 @@ Y ya no os molestaremos más con ningún ardid.~
 
 A primera vista, esta capa parece ser de un color blanco cegador. Sin embargo, la verdad es que está compuesta de miles de colores que bailan y juguetean ante cualquier fuente de luz disponible. Este aluvión de colores centelleantes tiende a distraer y a cegar parcialmente a cualquiera que mire fíjamente a su portador.
 
-La capa otorga una Bonificación a la clase de armadura de +3 y puede llevarse en combinación con cualquier otra prenda que posea un encantamiento de protección... por lo tanto puede usarse sobre una armadura mágica, cosa que no puede hacerse con una capa de protección.
+La capa otorga una Bonificación a la clase de armadura de +2.
 
 CARACTERÍSTICAS:
 
-Bonificación a la clase de armadura: +3
+Bonificación a la clase de armadura: +2
 Peso: 3~
 @27364 = ~Este arco enjuto irradia una gran cantidad de calor, aunque está totalmente frío al tacto, como si estuviera absorbiendo energía del cuerpo del usuario.
 

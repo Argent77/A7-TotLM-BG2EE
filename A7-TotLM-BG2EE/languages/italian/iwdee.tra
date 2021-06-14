@@ -681,7 +681,6 @@ Abilità durante l'uso:
 
 Abilità in combattimento:
 - 50% di possibilità di infliggere 1d8 punti di danno da fuoco
-- 10% di possibilità che il bersaglio venga stordito per 4 secondi
 
 THAC0: +3
 Danno: 2d4+3 (tagliente)
@@ -700,7 +699,6 @@ STATISTICHE:
 
 Abilità in combattimento:
 - 50% di possibilità di infliggere 1d3 punti di danno da elettricità
-- 15% di possibilità che il bersaglio venga stordito per 4 secondi
 
 THAC0: +2
 Danno: 1d8+2 (tagliente)
@@ -740,7 +738,6 @@ Abilità durante l'uso:
 
 Abilità in combattimento:
 - 50% di possibilità di infliggere 2d3 punti di danno da elettricità
-- 10% di possibilità che il bersaglio venga stordito per 4 secondi
 
 THAC0: +4
 Danno: 1d6+5 (contuntente)
@@ -763,7 +760,6 @@ STATISTICHE:
 
 Abilità durante l'uso:
 - Classe Armatura: +1
-- Resistenza al danno tagliente: +15%
 
 Abilità in combattimento:
 - 1 attacco addizionale per round
@@ -784,7 +780,6 @@ Peso: 4~
 STATISTICHE:
 
 Abilità in combattimento:
-- 25% di possibilità di infliggere 1d3 punti di danno da freddo
 - 15% di possibilità che il bersaglio diventi In Fase (subisce 1 punti di danno al secondo) per 10 secondi
 
 THAC0: +2
@@ -804,9 +799,8 @@ STATISTICHE:
 
 Abilità durante l'uso:
 - Classe Armatura: +2
-- Resistenza al danno tagliente: +20%
-- Resistenza al danno perforante: +20%
-- Resistenza alla Magia: +15%
+- Resistenza al danno tagliente: +5%
+- Resistenza al danno perforante: +5%
 
 THAC0: +4
 Danno: 2d4+4 (contundente)
@@ -836,8 +830,8 @@ STATISTICHE:
 
 Abilità durante l'uso:
 - Classe Armatura: +2
-- Resistenza al danno contundente: +25% 
-- Tiri-salvezza contro Incantesimi: +3
+- Resistenza al danno contundente: +5% 
+- Tiri-salvezza contro Incantesimi: +2
 
 Peso: 0~
 @14640 = ~Scudo Grande Rinforzato +2~
@@ -847,8 +841,6 @@ STATISTICHE:
 
 Abilità durante l'uso:
 - Classe Armatura: +3, +4 contro attacchi a distanza
-- Resistenza al danno contundente: +15%
-- Resistenza al Fuoco: +15%
 
 Richiede:
 Forza 14
@@ -862,10 +854,6 @@ STATISTICHE:
 Abilità durante l'uso:
 - Classe Armatura: +4, +5 contro attacchi a distanza
 - THAC0: -2
-- Resistenza al danno tagliente: +15%
-- Resistenza al danno contundente: +15%
-- Resistenza al danno perforante: +15%
-- Resistenza al Fuoco: +15%
 
 Richiede:
 Forza 18
@@ -938,11 +926,8 @@ Peso: 20~
 STATISTICHE:
 
 Abilità durante l'uso:
-- Resistenza al danno perforante: +15%
-- Resistenza al danno tagliente: +15%
-- Resistenza al Fuoco: +15%
-- Resistenza all'Elettricità: +15%
-- Tiri-salvezza contro Incantesimi: +2
+- Resistenza al danno perforante: +5%
+- Resistenza al danno tagliente: +5%
 
 Classe Armatura: 4 (3 contro danno perforante e da proiettile, 2 contro danno tagliente)
 
@@ -956,12 +941,10 @@ Peso: 15~
 STATISTICHE:
 
 Abilità durante l'uso:
-- Resistenza al danno perforante: +20%
-- Resistenza al danno tagliente: +20%
-- Resistenza al Fuoco: +20%
-- Resistenza all'Elettricità: +20%
-- Muoversi Silenziosamente: +30%
-- Nascondersi tra le Ombre: +30%
+- Resistenza al danno perforante: +5%
+- Resistenza al danno tagliente: +5%
+- Muoversi Silenziosamente: +15%
+- Nascondersi tra le Ombre: +15%
 
 Classe Armatura: 3 (2 contro danno perforante e da proiettile, 1 contro danno tagliente)
 
@@ -1628,12 +1611,12 @@ Sembra tutto troppo semplice ed è esattamente questo che mi preoccupa. Non èti
 @27032 = ~"Muori, sporco invasore!"~
 @27033 = ~Questa sezione della torre è caduta in rovina, lasciando una grossa apertura sul pavimento.~
 @27034 = ~Ascia del Signore dei Minotauri~
-@27035 = ~Un tempo, questa pregiata arma apparteneva al Signore dei Minotauri nelle catacombe del Maestro degli Inganni. L'ascia possiede una doppia lama montata su una solida asta di legno di quercia. È molto ben bilanciata e può essere utilizzata con una sola mano. L'ascia è incantata, fornendo a chi la usa un bonus pari a +4 ai tiri per colpire e al danno. Un colpo andato a segno ha anche il 25% di possibilità di stordire un avversario per 1d4 round.
+@27035 = ~Un tempo, questa pregiata arma apparteneva al Signore dei Minotauri nelle catacombe del Maestro degli Inganni. L'ascia possiede una doppia lama montata su una solida asta di legno di quercia. È molto ben bilanciata e può essere utilizzata con una sola mano. L'ascia è incantata, fornendo a chi la usa un bonus pari a +4 ai tiri per colpire e al danno. Un colpo andato a segno ha anche il 10% di possibilità di stordire un avversario per 1d4 round.
 
 STATISTICHE:
 
 Abilità in combattimento:
-- 25% di possibilità che il bersaglio venga stordito
+- 10% di possibilità che il bersaglio venga stordito
 
 THAC0: +4
 Danno: 1d12+4 (tagliente)
@@ -1964,8 +1947,7 @@ A prima vista, questo mantello sembra essere di un colore bianco accecante. Si t
 STATISTICHE:
 
 Abilità durante l'uso:
-- Classe Armatura: +3
-- Può essere indossato insieme ad altri oggetti di protezione
+- Classe Armatura: +2
 
 Peso: 3~
 @27364 = ~Questo sottile arco irradia un'intensa quantità di calore, eppure sembra freddo al tocco, come se stesse risucchiando energia dal corpo di chi lo utilizza. Lo incantò un anziano necromante di Bryn Shander, dopo che il suo famiglio, un mephit di lava, fu ucciso da un alto sacerdote di Auril. L'arco venne dato ad un assassino, Teraven Docen, che ebbe piuttosto successo nell'abbattere molti dei figli della Vergine dei Ghiacci nel giro di tre anni. Tuttavia, l'assassino incontrò la sua fine quando provò a tendere un'imboscata ad uno gnomo vagabondo che aveva con sé una bacchetta delle palle di fuoco. Solo l'arco si salvò dalle ripetute esplosioni.

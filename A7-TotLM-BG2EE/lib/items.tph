@@ -106,6 +106,6 @@ END
 
 
 // Protection items that can't be worn together
-ACTION_FOR_EACH resref IN ~URING5A~ BEGIN
+ACTION_FOR_EACH resref IN ~URING5A~ ~CLOAKSC~ BEGIN
   APPEND ~itemexcl.2da~ ~%resref%   1~
 END

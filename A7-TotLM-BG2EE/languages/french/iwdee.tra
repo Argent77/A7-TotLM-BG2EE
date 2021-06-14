@@ -660,7 +660,6 @@ PARAMÈTRES :
 
 Capacités de combat :
 - 50% de chances d'infliger +1d8 points de dégâts de feu à chaque coup au but
-- 10% de chances d'étourdir la cible à chaque coup au but
 
 TAC0 : +3
 Dégâts : 2d4 +3 (tranchant)
@@ -678,7 +677,6 @@ PARAMÈTRES :
 
 Capacités de combat :
 - 50% de chances d'infliger +1d3 points de dégâts d'électricité à chaque coup au but
-- 15% de chances d'étourdir la cible pendant 4 secondes à chaque coup au but
 
 TAC0 : +2
 Dégâts : 1d8 +2 (tranchant)
@@ -716,7 +714,6 @@ Capacités d'équipement :
 
 Capacités de combat :
 - 50% de chances d'infliger +2d3 dégâts électriques à chaque coup au but
-- 10% de chances d'étourdir la cible pendant 4 secondes à chaque coup au but
 
 TAC0 : +4
 Dégâts : 1d6 +5 (contondant)
@@ -738,7 +735,6 @@ PARAMÈTRES :
 
 Capacités d'équipement :
 - classe d'armure : +1
-- résistance aux dégâts tranchants : +15%
 
 Capacités de combat :
 - une attaque supplémentaire par round
@@ -758,7 +754,6 @@ La morgenstern est un manche en bois couronné d'une tête en métal constituée
 PARAMÈTRES :
 
 Capacités de combat :
-- 25% de chances d'infliger +1d3 dégâts de froid à chaque coup au but
 - 15% de chances de mettre la cible en état de phase pendant 10 secondes (1 point de dégâts par seconde) à chaque coup au but
 
 TAC0 : +2
@@ -777,9 +772,8 @@ PARAMÈTRES :
 
 Capacités d'équipement :
 - classe d'armure : +2
-- résistance aux dégâts tranchants : +20%
-- résistance aux dégâts perforants : +20%
-- résistance à la magie : +15%
+- résistance aux dégâts tranchants : +5%
+- résistance aux dégâts perforants : +5%
 
 TAC0 : +4
 Dégâts : 2d4 +4 (contondant)
@@ -811,8 +805,8 @@ PARAMÈTRES :
 
 Capacités d'équipement :
 - classe d'armure : +2
-- jets de sauvegarde contre les sorts : +3
-- résistance aux dégâts contondants : +25%
+- jets de sauvegarde contre les sorts : +2
+- résistance aux dégâts contondants : +5%
 
 Poids : 0~
 @14640 = ~Pavois renforcé +2~
@@ -822,8 +816,6 @@ PARAMÈTRES :
 
 Capacités d'équipement :
 - classe d'armure : +3, bonus de +1 contre les projectiles
-- résistance aux dégâts contondants : +15%
-- résistance au feu : +15%
 
 Nécessite : 14 en force
 
@@ -836,10 +828,6 @@ PARAMÈTRES :
 Capacités d'équipement :
 - TAC0 : -2
 - classe d'armure : +4, bonus de +1 contre les projectiles
-- résistance aux dégâts tranchants : +15%
-- résistance aux dégâts perforants : +15%
-- résistance aux dégâts contondants : +15%
-- résistance au feu : +15%
 
 Nécessite : 18 en force
 
@@ -910,11 +898,8 @@ La besantine a peu de choses en commun avec une armure de cuir normale. L'armure
 PARAMÈTRES :
 
 Capacités d'équipement :
-- jets de sauvegarde contre les sorts : +2
-- résistance aux dégâts tranchants : +15%
-- résistance aux dégâts perforants : +15%
-- résistance au feu : +15%
-- résistance à l'électricité : +15%
+- résistance aux dégâts tranchants : +5%
+- résistance aux dégâts perforants : +5%
 
 Classe d'armure : 4 (3 contre les armes perforantes et les projectiles, 2 contre les armes tranchantes)
 Nécessite : 6 en force
@@ -927,12 +912,10 @@ La besantine a peu de choses en commun avec une armure de cuir normale. L'armure
 PARAMÈTRES :
 
 Capacités d'équipement :
-- résistance aux dégâts tranchants : +20%
-- résistance aux dégâts perforants : +20%
-- résistance au feu : +20%
-- résistance à l'électricité : +20%
-- déplacement silencieux : +30%
-- se cacher dans l'ombre : +30%
+- résistance aux dégâts tranchants : +5%
+- résistance aux dégâts perforants : +5%
+- déplacement silencieux : +15%
+- se cacher dans l'ombre : +15%
 
 Classe d'armure : 3 (2 contre les armes perforantes et les projectiles, 1 contre les armes tranchantes)
 Nécessite : 6 en force
@@ -1580,12 +1563,12 @@ Le passage est libre, à nos foyers il mène.~
 @27033 = ~Cette partie de la tour s'est effondrée, laissant un grand trou dans le sol.~
 @27034 = ~Hache du seigneur minotaure +4~
 @27035 = ~La Hache du Seigneur Minotaure
-Cette arme magnifique a appartenu au seigneur Minotaure qui vivait dans les catacombes du Maître des Leurres. Elle se compose d'une lame à double tranchant montée sur un robuste manche en bois de chêne. Parfaitement équilibrée, elle peut être maniée à une main. Cette hache est magique et donne à celui qui l'utilise un bonus de +4 au toucher et aux dégâts. Un toucher réussi a également 25% de chance d'étourdir un adversaire pendant 1d4 rounds.
+Cette arme magnifique a appartenu au seigneur Minotaure qui vivait dans les catacombes du Maître des Leurres. Elle se compose d'une lame à double tranchant montée sur un robuste manche en bois de chêne. Parfaitement équilibrée, elle peut être maniée à une main. Cette hache est magique et donne à celui qui l'utilise un bonus de +4 au toucher et aux dégâts. Un toucher réussi a également 10% de chance d'étourdir un adversaire pendant 1d4 rounds.
 
 PARAMÈTRES :
 
 Capacités de combat :
-- 25% de chances d'étourdir l'adversaire pendant 1d4 rounds à chaque coup au but
+- 10% de chances d'étourdir l'adversaire pendant 1d4 rounds à chaque coup au but
 
 TAC0 : +4
 Dégâts : 1d12 +4 (tranchant)
@@ -1912,8 +1895,7 @@ L'origine de cette cape a été perdue dans la nuit des temps. Cependant, elle a
 PARAMÈTRES :
 
 Capacités d'équipement :
-- classe d'armure : +3
-- peut être combinée avec tout autre enchantement de protection
+- classe d'armure : +2
 
 Poids : 3~
 @27364 = ~L'Arc Court d'Exubérance
