@@ -407,3 +407,24 @@ ACTION_IF (spell_id > 1000) BEGIN
     END
   BUT_ONLY IF_EXISTS
 END
+
+
+// Updating Ghost's panic aura
+COPY_EXISTING ~ID#PAN1A.SPL~ ~override~
+  PATCH_IF (splprot_kit_equal >= 0) BEGIN
+    SET kit_undead_hunter = IDS_OF_SYMBOL(~kit~ ~UNDEADHUNTER~)
+    PATCH_IF (kit_undead_hunter > 0) BEGIN
+      // Undead Hunter kit is immune to panic aura
+      LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 318  // Protection from resource
+          target = 2    // Preset target
+          parameter1 = kit_undead_hunter
+          parameter2 = splprot_kit_equal
+          insert_point = 3
+        STR_VAR
+          resource = ~ID#PAN1A~
+      END
+    END
+  END
+BUT_ONLY

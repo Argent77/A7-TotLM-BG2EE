@@ -133,6 +133,32 @@ COPY_EXISTING ~statdesc.2da~ ~override~
 BUT_ONLY
 
 
+// Add splprot.2da entry: KIT equals Parameter1 value
+OUTER_SET splprot_kit_equal = "-1"  // storage for new entry index
+COPY_EXISTING ~splprot.2da~ ~override~
+  READ_2DA_ENTRIES_NOW splprot 1
+  FOR (row = 3; row < splprot; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER splprot row 1 stat
+    PATCH_IF (IS_AN_INT ~stat~ && stat = 152) BEGIN
+      READ_2DA_ENTRY_FORMER splprot row 2 value
+      PATCH_IF (IS_AN_INT ~value~ && value = "-1") BEGIN
+        READ_2DA_ENTRY_FORMER splprot row 3 rel
+        PATCH_IF (IS_AN_INT ~rel~ && rel = 1) BEGIN
+          SET splprot_kit_equal = row - 3
+          SET row = splprot
+        END
+      END
+    END
+  END
+  PATCH_IF (splprot_kit_equal < 0) BEGIN
+    SET idx = splprot - 3
+    INSERT_2DA_ROW splprot 1 ~%idx%_STAT(KIT)=n 152 -1 1~
+    SET splprot_kit_equal = idx
+    PRETTY_PRINT_2DA
+  END
+BUT_ONLY
+
+
 // Create custom autosave slot
 OUTER_SET savename_index = 0  // used later in DHOBART.DLG
 OUTER_SET savename_slot = 16
