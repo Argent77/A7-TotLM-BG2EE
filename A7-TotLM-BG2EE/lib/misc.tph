@@ -138,8 +138,8 @@ ACTION_IF (GAME_INCLUDES ~sod~) BEGIN
   OUTER_SET hobart_checks += 1
   OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("BD3000")~
 
-  // Hobart leaves the camp with the crowd
 <<<<<<<< .../inlined/totlm-bg2ee/lwhobart_camp.baf
+// Hobart leaves the camp with the crowd
 IF
   GlobalGT("bd_plot","GLOBAL",394)
   AreaCheck("BD3000")  // Allied Siege Camp
@@ -147,8 +147,38 @@ THEN
   RESPONSE #100
     DestroySelf()
 END
+
+// Hobart leaves the castle after Charname is accused of murder
+IF
+  GlobalGT("bd_plot","GLOBAL",599)
+  AreaCheck("BD4300")  // Dragonspear Castle Basement
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
 >>>>>>>>
   EXTEND_TOP ~lwhobart.bcs~ ~.../inlined/totlm-bg2ee/lwhobart_camp.baf~
+
+  // Hobart is available in Castle Dragonspear after the party returns from Avernus
+<<<<<<<< .../inlined/totlm-bg2ee/bd4300.baf
+IF
+  GlobalGT("bd_plot","GLOBAL",584)
+  Global("ID#Master_Quest","GLOBAL",0)
+  Global("ID#HobartMoved","BD4300",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    SetGlobal("ID#HobartMoved","bd4300",1)
+    CreateCreature("hobart",[1008.1032],14)
+    SmallWait(2)
+    ActionOverride("hobart",ChangeAIScript("LWHOBART",OVERRIDE))
+    ActionOverride("hobart",ChangeAIScript("EFHEALI1",CLASS))
+    ActionOverride("hobart",ChangeAIScript("EFATKMEL",RACE))
+    ActionOverride("hobart",ChangeAIScript("EFTWNCHK",SPECIFICS))
+    SetInterrupt(TRUE)
+END
+>>>>>>>>
+  EXTEND_BOTTOM ~bd4300.bcs~ ~.../inlined/totlm-bg2ee/bd4300.baf~
 END
 
 // Hobart isn't needed anymore after the quest is completed
