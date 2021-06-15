@@ -131,6 +131,7 @@ Tirada de salvación: Ninguna
 DESCRIPCIÓN:
 
 Cuando se ejecuta este conjuro, se produce la muerte de una criatura que se encuentre dentro de su alcance. El sortilegio puede matar a una criatura de hasta 60 puntos de golpe, teniéndose en cuenta los que la víctima posea en el momento del lanzamiento aunque su máximo normal fuera superior a esa cantidad. No se permite realizar tirada de salvación. Este conjuro no surte efecto cuando la víctima posee más de 60 puntos de golpe.~
+@23359 = ~Etéreo~
 @25946 = ~Rayo rubí de inversión (Alteración)
 Nivel: 7
 Alcance: 12 metros

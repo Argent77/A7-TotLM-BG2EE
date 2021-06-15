@@ -123,6 +123,7 @@ Zone d'effet : 1 créature
 Jet de sauvegarde : aucun
 
 Lorsqu'un Mot de pouvoir mortel est prononcé, une créature située dans la zone d'effet du sort est brusquement abattue. Ce mot de pouvoir est capable de tuer toute créature ayant 60 points de vie ou moins (on se base sur le nombre de points de vie ACTUELS de la créature pour évaluer les effets de ce sort). Aucun jet de sauvegarde n'est autorisé. Si la cible à plus de 60 points de vie, ce mot de pouvoir n'a aucun effet sur elle.~
+@23359 = ~Éthéré~
 @25946 = ~Rayon rubis d'inversion
 (Altération)
 

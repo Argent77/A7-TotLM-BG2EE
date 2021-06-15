@@ -128,6 +128,7 @@ Bereich: 1 Wesen
 Rettungswurf: Nein
 
 Wird dieses Wort der Macht ausgesprochen, tötet es ein Wesen in Reichweite augenblicklich. Es sind nur Wesen mit maximal 60 Trefferpunkten betroffen, wobei die aktuellen Trefferpunkte und nicht die maximalen Trefferpunkte des Wesens herangezogen werden. Hat das Ziel mehr als 60 Trefferpunkte, hat der Zauber keine Auswirkungen. Es gibt keinen Rettungswurf.~
+@23359 = ~Ätherisch~
 @25946 = ~Rubinroter Strahl der Aufhebung
 
 Grad: 7

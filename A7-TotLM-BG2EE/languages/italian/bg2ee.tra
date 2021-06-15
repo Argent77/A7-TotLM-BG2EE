@@ -123,6 +123,7 @@ Area d'effetto: 1 creatura
 Tiro-salvezza: Nessuno
 
 Quando l'incantesimo Parola del Potere, Uccidere viene pronunciato, una creatura all'interno del raggio d'azione viene uccisa. La creatura deve avere 60 o meno Punti Ferita, altrimenti l'incantesimo non ha effetto. Non c'è alcun tiro-salvezza.~
+@23359 = ~Etereo~
 @25946 = ~Raggio Rubino dell'Inversione
 (Alterazione)
 Livello: 7

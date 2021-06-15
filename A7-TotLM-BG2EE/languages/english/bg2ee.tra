@@ -128,6 +128,7 @@ Area of Effect: 1 creature
 Saving Throw: None
 
 When a Power Word, Kill spell is uttered, one creature within the spell range is slain. The creature must have 60 or fewer current Hit Points, otherwise the spell has no effect. There is no Saving Throw.~
+@23359 = ~Ethereal~
 @25946 = ~Ruby Ray Of Reversal
 (Alteration)
 

@@ -1,0 +1,86 @@
+IF
+  Global("difficulty_check","LOCALS",0)
+  !DifficultyLT(HARD)
+THEN
+  RESPONSE #100
+    SetGlobal("spell_ethereal","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("difficulty_check","LOCALS",0)
+  !DifficultyLT(EASY)
+THEN
+  RESPONSE #100
+    SetGlobal("spell_magic_missile","LOCALS",1)
+    Continue()
+END
+
+IF
+  Global("difficulty_check","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetGlobal("difficulty_check","LOCALS",1)
+    Continue()
+END
+
+IF
+  !GlobalTimerNotExpired("ethereal_timer","LOCALS")
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !Global("spell_ethereal","LOCALS",0)
+  RandomNum(2,1)
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    SetGlobalTimer("ethereal_timer","LOCALS",ONE_TURN)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpellRES("IDSP927",Myself)  // Ethereal
+END
+
+IF
+  !GlobalTimerNotExpired("missile_timer","LOCALS")
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !Global("spell_magic_missile","LOCALS",0)
+  RandomNum(3,1)
+  See(NearestEnemyOf(Myself))
+  !CheckSpellState(LastSeenBy(Myself),WIZARD_SHIELD)
+  !CheckSpellState(LastSeenBy(Myself),BUFF_PRO_SPELLS)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("missile_timer","LOCALS",THREE_ROUNDS)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  !GlobalTimerNotExpired("missile_timer","LOCALS")
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !Global("spell_magic_missile","LOCALS",0)
+  RandomNum(3,2)
+  See(SecondNearestEnemyOf(Myself))
+  !CheckSpellState(LastSeenBy(Myself),WIZARD_SHIELD)
+  !CheckSpellState(LastSeenBy(Myself),BUFF_PRO_SPELLS)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("missile_timer","LOCALS",THREE_ROUNDS)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  !GlobalTimerNotExpired("missile_timer","LOCALS")
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  !Global("spell_magic_missile","LOCALS",0)
+  RandomNum(3,3)
+  See(ThirdNearestEnemyOf(Myself))
+  !CheckSpellState(LastSeenBy(Myself),WIZARD_SHIELD)
+  !CheckSpellState(LastSeenBy(Myself),BUFF_PRO_SPELLS)
+  !StateCheck(LastSeenBy(Myself),STATE_REALLY_DEAD)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("missile_timer","LOCALS",THREE_ROUNDS)
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
