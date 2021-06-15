@@ -19,8 +19,6 @@
 //  - PLAT10.ITM
 // MISC07.ITM (Gold): id9800.are > Container 6 (name: "Chest 2")
 //  - MISC23.ITM
-// RING07.ITM (The Guard's Ring +2): jklsum.cre
-//  - RING06.ITM
 // SBOWEBU.ITM (Shortbow of Ebullience +3): hobart.sto
 //  - BOW14.ITM (BOW08.ITM)
 // SW1H15_.ITM (Scimitar +3, Frostbrand): id9800.are > Container 5 (name: "Chest 1")
@@ -35,7 +33,7 @@
 //  - SW1H33.ITM, SW1H41.ITM
 // UMSTR5B.ITM (Morning Star +4: Defender): harald.cre
 //  - BLUN34.ITM (BLUN39.ITM)
-// URING5A.ITM (Ring of Greater Resistance): criek.cre, hrpmat.cre
+// URING5A.ITM (Ring of Greater Resistance): criek.cre
 //  - RING06.ITM
 // USHLD3B.ITM (Great Shield +3): id9712.are > Container 1 (name: "Container 2")
 //  - SHLD06.ITM
@@ -69,9 +67,6 @@ COPY_EXISTING ~hrpmat.cre~ ~override~
   END ELSE BEGIN
     ADD_CRE_ITEM ~helm03~ #1 #1 #1 ~none~ ~helmet inv1 inv2 inv3 inv4~
   END
-  // Ring of Greater Resistance
-  REMOVE_CRE_ITEM ~uring5a~
-  ADD_CRE_ITEM ~ring06~ #0 #0 #0 ~none~ ~lring rring inv1 inv2 inv3 inv4~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~criek.cre~ ~override~
@@ -113,9 +108,6 @@ COPY_EXISTING ~jklsum.cre~ ~override~
   // Robe of the Evil Archmagi
   REMOVE_CRE_ITEM ~clck17~
   ADD_CRE_ITEM ~clck12~ #0 #0 #0 ~none~ ~armor inv1 inv2 inv3 inv4~
-  // The Guard's Ring +2
-  REMOVE_CRE_ITEM ~ring07~
-  ADD_CRE_ITEM ~ring06~ #0 #0 #0 ~none~ ~lring rring inv1 inv2 inv3 inv4~
 BUT_ONLY IF_EXISTS
 
 COPY_EXISTING ~mercthfd.cre~ ~override~
