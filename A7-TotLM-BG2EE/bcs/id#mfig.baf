@@ -1,0 +1,17 @@
+IF
+  NumTimesTalkedTo(0)
+  See([PC])
+THEN
+  RESPONSE #100
+    StartDialogNoSet([PC])
+END
+
+IF
+  Global("Gone","LOCALS",0)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    ApplySpellRES("IDSP056",Myself)
+    Wait(6)
+    SetInterrupt(TRUE)
+END

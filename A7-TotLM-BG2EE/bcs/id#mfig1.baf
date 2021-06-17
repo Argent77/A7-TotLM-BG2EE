@@ -1,0 +1,9 @@
+IF
+  OR(3)
+    SpellCastOnMe([PC],CLERIC_RESURRECTION)
+    SpellCastOnMe([FAMILIAR],CLERIC_RESURRECTION)
+    SpellCastOnMe([CONTROLLED],CLERIC_RESURRECTION)
+THEN
+  RESPONSE #100
+    ChangeAnimation("id#mfig1")
+END
