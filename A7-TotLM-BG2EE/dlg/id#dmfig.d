@@ -6,6 +6,6 @@ IF ~Global("Gone","LOCALS",0) Name("MumFig2",Myself)~ Cleric
 END
 
 IF ~Global("Gone","LOCALS",0) !Name("MumFig2",Myself)~ Acolyte
-  SAY #61126 /* Wha—?! Where am I? What has happened? */
+  SAY @91112 /* Wha—?! Where am I? What has happened?  Ugh, too weak... can't move. */
   IF ~~ DO ~SetGlobal("Gone","LOCALS",1) AddXPWorth(Myself) ApplySpellRES("IDSP056",Myself)~ EXIT
 END
