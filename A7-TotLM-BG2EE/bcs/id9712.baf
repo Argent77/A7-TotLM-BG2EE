@@ -143,3 +143,19 @@ THEN
     SetRestEncounterProbabilityNight(0)
     SetAreaRestFlag(1)
 END
+
+IF
+  !Global("CastleSafe","MYAREA",0)
+  !Global("9712_WATER_WEIRD_SPAWN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9712_WATER_WEIRD_SPAWN","GLOBAL",0)
+END
+
+IF
+  Global("CastleSafe","MYAREA",0)
+  Global("9712_WATER_WEIRD_SPAWN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("9712_WATER_WEIRD_SPAWN","GLOBAL",1)
+END

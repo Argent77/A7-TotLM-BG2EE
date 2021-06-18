@@ -1,34 +1,44 @@
 IF
-  IsActive(Myself)
+  Global("9711_WATER_WEIRD_SPAWN","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DestroySelf()
+END
+
+IF
+  OR(2)
+    OnCreation()
+    Global("disabled","LOCALS",0)
   !Range(NearestEnemyOf(Myself),30)
   !See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
+    SetGlobal("disabled","LOCALS",1)
     Wait(1)
     SetSequence(16) // SEQ_SLEEP
     Wait(1)
-    Deactivate(Myself)
+    ApplySpellRES("ID#DSLC",Myself)
     SetInterrupt(TRUE)
 END
 
 IF
-  !IsActive(Myself)
+  !Global("disabled","LOCALS",0)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
     SetInterrupt(FALSE)
-    Activate(Myself)
+    SetGlobal("disabled","LOCALS",0)
+    ApplySpellRES("ID#ESLC",Myself)
     SetSequence(1)  // SEQ_AWAKE
     SetInterrupt(TRUE)
 END
 
 IF
-  !IsActive(Myself)
+  !Global("disabled","LOCALS",0)
   !Range(NearestEnemyOf(Myself),30)
   !See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
     NoAction()
 END
-

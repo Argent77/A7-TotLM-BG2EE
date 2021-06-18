@@ -110,6 +110,16 @@ THEN
 END
 
 IF
+  Global("InitSpawns","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("InitSpawns","MYAREA",1)
+    SetGlobal("9711_WATER_WEIRD_SPAWN","GLOBAL",1)
+    SetGlobal("9712_WATER_WEIRD_SPAWN","GLOBAL",1)
+    Continue()
+END
+
+IF
   OnCreation()
 THEN
   RESPONSE #100
