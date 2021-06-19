@@ -1,0 +1,220 @@
+IF
+  General(SixthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(SixthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(SixthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(FifthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(FifthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(FifthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(FourthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(FourthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(FourthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(ThirdNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(ThirdNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(ThirdNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(SecondNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(SecondNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(SecondNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(NearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(NearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(NearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(NearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(NearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(NearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(SixthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(SixthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(SixthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(SixthNearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(SixthNearestEnemyOf(Myself),5,ARMORCLASS)
+  See(SixthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(FifthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(FifthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(FifthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(FifthNearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(FifthNearestEnemyOf(Myself),5,ARMORCLASS)
+  See(FifthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+
+IF
+  General(FourthNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(FourthNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(FourthNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(FourthNearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(FourthNearestEnemyOf(Myself),5,ARMORCLASS)
+  See(FourthNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(ThirdNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(ThirdNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(ThirdNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(ThirdNearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(ThirdNearestEnemyOf(Myself),5,ARMORCLASS)
+  See(ThirdNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(SecondNearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(SecondNearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(SecondNearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(SecondNearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(SecondNearestEnemyOf(Myself),5,ARMORCLASS)
+  See(SecondNearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  General(NearestEnemyOf(Myself),HUMANOID)
+  !CheckSpellState(NearestEnemyOf(Myself),BARBARIAN_RAGE)
+  !CheckSpellState(NearestEnemyOf(Myself),BERSERKER_RAGE)
+  !CheckSpellState(NearestEnemyOf(Myself),MINSC_BERSERK)
+  !CheckSpellState(NearestEnemyOf(Myself),POTION_OF_CLARITY)
+  !CheckStatGT(NearestEnemyOf(Myself),0,CLERIC_CHAOTIC_COMMANDS)
+  OR(2)
+    CheckStatLT(NearestEnemyOf(Myself),10,DEX)
+    CheckStatGT(NearestEnemyOf(Myself),5,ARMORCLASS)
+  See(NearestEnemyOf(Myself))
+  False()
+THEN
+  RESPONSE #100
+    Continue()
+END
+
+IF
+  !Allegiance(LastSeenBy(Myself),EVILCUTOFF)
+  See(LastSeenBy(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Range(LastSeenBy(Myself),8)
+THEN
+  RESPONSE #100
+    SetInterrupt(FALSE)
+    RunAwayFrom(LastSeenBy(Myself),45)
+    SetInterrupt(TRUE)
+  RESPONSE #50
+    Continue()
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+  AttackedBy([ANYONE],DEFAULT)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),30)
+END
