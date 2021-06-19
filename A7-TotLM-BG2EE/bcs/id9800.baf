@@ -18,23 +18,26 @@ THEN
 END
 
 IF
-  OnCreation()
+  OR(2)
+    OnCreation()
+    PartyRested()
   Global("fog_disabled","MYAREA",0)
 THEN
   RESPONSE #100
     SetGlobal("FOG_TYPE","GLOBAL",1)
-    SetGlobalTimerRandom("FOG_TIMER","MYAREA",THIRTY_MINUTES,TWO_HOURS)
     Weather(FOG)
     Continue()
 END
 
 IF
-  Global("fog_disabled","MYAREA",0)
-  GlobalTimerExpired("FOG_TIMER","MYAREA")
+  Global("fog_disabled","MYAREA",1)
+  OR(2)
+    OnCreation()
+    PartyRested()
 THEN
   RESPONSE #100
-    SetGlobalTimerRandom("FOG_TIMER","MYAREA",THIRTY_MINUTES,TWO_HOURS)
-    Weather(FOG)
+    SetGlobal("fog_disabled","MYAREA",2)
+    RemoveAreaType(WEATHER)
     Continue()
 END
 
@@ -44,7 +47,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("fog_disabled","MYAREA",1)
-    SetGlobal("FOG_TYPE","GLOBAL",0)
     Continue()
 END
 
