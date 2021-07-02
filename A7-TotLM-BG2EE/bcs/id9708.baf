@@ -43,7 +43,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("#spawn_group_0","ID9708",1)
-    CreateCreature("djinni_",[582.320],2)
+    CreateCreature("djinni#",[582.320],2)
     Continue()
 END
 
