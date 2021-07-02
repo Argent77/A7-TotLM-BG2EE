@@ -7,37 +7,37 @@ THEN
 END
 
 IF
-  !Global("DANCE_CUTSCENE","MYAREA",4)
+  !Global("DANCE_CUTSCENE","ID9712",4)
   OR(3)
     See("BEHOLDER_1")
     See("BEHOLDER_2")
     See("BEHOLDER_3")
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("DANCE_CUTSCENE","ID9712",4)
     Continue()
 END
 
 IF
-  !Global("DANCE_CUTSCENE","MYAREA",4)
+  !Global("DANCE_CUTSCENE","ID9712",4)
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("DANCE_CUTSCENE","ID9712",4)
     Continue()
 END
 
 IF
-  Global("DANCE_CUTSCENE","MYAREA",0)
+  Global("DANCE_CUTSCENE","ID9712",0)
   See([PC])
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",1)
+    SetGlobal("DANCE_CUTSCENE","ID9712",1)
     Continue()
 END
 
 IF
-  Global("DANCE_CUTSCENE","MYAREA",4)
+  Global("DANCE_CUTSCENE","ID9712",4)
 THEN
   RESPONSE #100
     EquipItemEx("CIFADE",0)

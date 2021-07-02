@@ -7,30 +7,30 @@ THEN
 END
 
 IF
-  Global("DANCE_CUTSCENE","MYAREA",1)
+  Global("DANCE_CUTSCENE","ID9712",1)
 THEN
   RESPONSE #100
-    SetGlobalTimer("DANCE_TIMER","MYAREA",12)
-    SetGlobal("DANCE_CUTSCENE","MYAREA",2)
+    SetGlobalTimer("DANCE_TIMER","ID9712",12)
+    SetGlobal("DANCE_CUTSCENE","ID9712",2)
     Continue()
 END
 
 IF
-  Global("DANCE_CUTSCENE","MYAREA",2)
-  !GlobalTimerNotExpired("DANCE_TIMER","MYAREA")
+  Global("DANCE_CUTSCENE","ID9712",2)
+  !GlobalTimerNotExpired("DANCE_TIMER","ID9712")
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",3)
+    SetGlobal("DANCE_CUTSCENE","ID9712",3)
     Continue()
 END
 
 IF
-  Global("ORGAN_DISABLED","MYAREA",0)
-  Global("DANCE_CUTSCENE","MYAREA",4)
+  Global("ORGAN_DISABLED","ID9712",0)
+  Global("DANCE_CUTSCENE","ID9712",4)
 THEN
   RESPONSE #100
     SoundActivate("AM9712C",FALSE)
-    SetGlobal("ORGAN_DISABLED","MYAREA",1)
+    SetGlobal("ORGAN_DISABLED","ID9712",1)
     Continue()
 END
 
@@ -44,12 +44,12 @@ END
 
 IF
   !Global("KETEAM1_inactive","LOCALS",1)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("#spawn_group_0","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE1","ID9712",0)
+  !Global("#spawn_group_0","ID9712",1)
   DifficultyGT(EASY)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9712",1)
     CreateVisualEffect("DDOORH",[1621.191])
     CreateCreature("beholdh",[1621.191],14)
     Continue()
@@ -57,36 +57,34 @@ END
 
 IF
   !Global("KETEAM1_inactive","LOCALS",1)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("#spawn_group_0","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE1","ID9712",0)
+  !Global("#spawn_group_0","ID9712",1)
   !DifficultyGT(EASY)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9712",1)
     Continue()
 END
 
 IF
-  !Global("GUARDS_1","MYAREA",0)
-  !Global("#spawn_group_1","MYAREA",1)
+  !Global("GUARDS_1","ID9712",0)
+  !Global("#spawn_group_1","ID9712",1)
   !DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_1","MYAREA",1)
-    CreateCreature("ckspgrdh",[1526.965],10)
+    SetGlobal("#spawn_group_1","ID9712",1)
     CreateCreature("ckspgrdh",[1648.912],2)
-    CreateCreature("ckspgrdh",[1577.1035],10)
     CreateCreature("ckspgrdh",[1710.986],2)
     Continue()
 END
 
 IF
-  !Global("GUARDS_1","MYAREA",0)
-  !Global("#spawn_group_1","MYAREA",1)
+  !Global("GUARDS_1","ID9712",0)
+  !Global("#spawn_group_1","ID9712",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_1","MYAREA",1)
+    SetGlobal("#spawn_group_1","ID9712",1)
     CreateCreature("ckspgrdh",[1526.965],10)
     CreateCreature("ckspgrdh",[1648.912],2)
     CreateCreature("ckspgrdh",[1577.1035],10)
@@ -95,11 +93,11 @@ THEN
 END
 
 IF
-  !Global("GUARDS_2","MYAREA",0)
-  !Global("#spawn_group_2","MYAREA",1)
+  !Global("GUARDS_2","ID9712",0)
+  !Global("#spawn_group_2","ID9712",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_2","MYAREA",1)
+    SetGlobal("#spawn_group_2","ID9712",1)
     CreateCreature("ckspgrdh",[1123.1344],2)
     CreateCreature("ckspgrdh",[919.1421],10)
     CreateCreature("ckspgrdh",[1045.1248],2)
@@ -108,24 +106,24 @@ THEN
 END
 
 IF
-  !Global("GUARDS_3","MYAREA",0)
+  !Global("GUARDS_3","ID9712",0)
 THEN
   RESPONSE #100
-    SetGlobal("GUARDS_3","MYAREA",0)
+    SetGlobal("GUARDS_3","ID9712",0)
     CreateCreature("ckspgrdh",[2128.1490],11)
     CreateCreature("ckspgrdh",[2256.1452],3)
     CreateCreature("ckspgrdh",[2148.1588],11)
     CreateCreature("ckspgrdh",[2404.1508],3)
     Continue()
   RESPONSE #100
-    SetGlobal("GUARDS_3","MYAREA",0)
+    SetGlobal("GUARDS_3","ID9712",0)
     CreateCreature("ckspgrdh",[1123.1344],2)
     CreateCreature("ckspgrdh",[919.1421],10)
     CreateCreature("ckspgrdh",[1045.1248],2)
     CreateCreature("ckspgrdh",[838.1316],10)
     Continue()
   RESPONSE #100
-    SetGlobal("GUARDS_3","MYAREA",0)
+    SetGlobal("GUARDS_3","ID9712",0)
     CreateCreature("ckspgrdh",[1526.965],10)
     CreateCreature("ckspgrdh",[1648.912],2)
     CreateCreature("ckspgrdh",[1577.1035],10)
@@ -135,17 +133,17 @@ END
 
 IF
   Dead("LUREMASTER")
-  Global("CastleSafe","MYAREA",0)
+  Global("CastleSafe","ID9712",0)
 THEN
   RESPONSE #100
-    SetGlobal("CastleSafe","MYAREA",1)
+    SetGlobal("CastleSafe","ID9712",1)
     SetRestEncounterProbabilityDay(0)
     SetRestEncounterProbabilityNight(0)
     SetAreaRestFlag(1)
 END
 
 IF
-  !Global("CastleSafe","MYAREA",0)
+  !Global("CastleSafe","ID9712",0)
   !Global("9712_WATER_WEIRD_SPAWN","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -153,7 +151,7 @@ THEN
 END
 
 IF
-  Global("CastleSafe","MYAREA",0)
+  Global("CastleSafe","ID9712",0)
   Global("9712_WATER_WEIRD_SPAWN","GLOBAL",0)
 THEN
   RESPONSE #100

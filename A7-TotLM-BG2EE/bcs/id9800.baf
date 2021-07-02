@@ -7,13 +7,13 @@ THEN
 END
 
 IF
-  Global("SUMMONER_TURN","MYAREA",0)
+  Global("SUMMONER_TURN","ID9800",0)
 THEN
   RESPONSE #100
-    SetGlobal("SUMMONER_TURN","MYAREA",1)
+    SetGlobal("SUMMONER_TURN","ID9800",1)
     Continue()
   RESPONSE #100
-    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    SetGlobal("SUMMONER_TURN","ID9800",2)
     Continue()
 END
 
@@ -21,7 +21,7 @@ IF
   OR(2)
     OnCreation()
     PartyRested()
-  Global("fog_disabled","MYAREA",0)
+  Global("fog_disabled","ID9800",0)
 THEN
   RESPONSE #100
     SetGlobal("FOG_TYPE","GLOBAL",1)
@@ -30,39 +30,39 @@ THEN
 END
 
 IF
-  Global("fog_disabled","MYAREA",1)
+  Global("fog_disabled","ID9800",1)
   OR(2)
     OnCreation()
     PartyRested()
 THEN
   RESPONSE #100
-    SetGlobal("fog_disabled","MYAREA",2)
+    SetGlobal("fog_disabled","ID9800",2)
     RemoveAreaType(WEATHER)
     Continue()
 END
 
 IF
-  Global("fog_disabled","MYAREA",0)
+  Global("fog_disabled","ID9800",0)
   NumDeadGT("Shambler",5)
 THEN
   RESPONSE #100
-    SetGlobal("fog_disabled","MYAREA",1)
+    SetGlobal("fog_disabled","ID9800",1)
     Continue()
 END
 
 IF
-  Global("OH_auto_save","MYAREA",0)
+  Global("OH_auto_save","ID9800",0)
   OpenState("ID9800_Hide1",TRUE)
 THEN
   RESPONSE #100
-    SetGlobal("OH_auto_save","MYAREA",1)
+    SetGlobal("OH_auto_save","ID9800",1)
 END
 
 IF
-  Global("OH_auto_save","MYAREA",0)
+  Global("OH_auto_save","ID9800",0)
   OpenState("ID9800_Hide1",TRUE)
 THEN
   RESPONSE #100
-    SetGlobal("OH_auto_save","MYAREA",1)
+    SetGlobal("OH_auto_save","ID9800",1)
 END
 

@@ -25,27 +25,27 @@ END
 
 IF
   Global("ID9700_HANGING_MAN","GLOBAL",0)
-  !Global("#_9700MS2_ATTACK","MYAREA",1)
+  !Global("#_9700MS2_ATTACK","ID9700",1)
 THEN
   RESPONSE #100
-    SetGlobal("#_9700MS2_ATTACK","MYAREA",1)
+    SetGlobal("#_9700MS2_ATTACK","ID9700",1)
     StaticSequence("9700MS2",0) // SEQ_ATTACK
     Deactivate("AM9700B")
     Continue()
 END
 
 IF
-  !Global("#_9700MS1_CAST","MYAREA",1)
+  !Global("#_9700MS1_CAST","ID9700",1)
   OpenState("ID9700_STAIR1",TRUE)
 THEN
   RESPONSE #100
-    SetGlobal("#_9700MS1_CAST","MYAREA",1)
+    SetGlobal("#_9700MS1_CAST","ID9700",1)
     StaticSequence("9700MS1",2) // SEQ_CAST
     Continue()
 END
 
 IF
-  Global("HOBART_TALK","MYAREA",0)
+  Global("HOBART_TALK","ID9700",0)
   LevelPartyLT(12)
 THEN
   RESPONSE #100
@@ -54,7 +54,7 @@ THEN
 END
 
 IF
-  Global("HOBART_TALK","MYAREA",0)
+  Global("HOBART_TALK","ID9700",0)
   LevelPartyLT(14)
 THEN
   RESPONSE #100
@@ -63,39 +63,39 @@ THEN
 END
 
 IF
-  Global("HOBART_TALK","MYAREA",0)
+  Global("HOBART_TALK","ID9700",0)
 THEN
   RESPONSE #100
     StartCutSceneMode()
     MultiPlayerSync()
     StartCutScene("CYHOBTLK")
-    SetGlobal("HOBART_TALK","MYAREA",1)
+    SetGlobal("HOBART_TALK","ID9700",1)
 END
 
 IF
   !Global("9700_RESET","GLOBAL",0)
 THEN
   RESPONSE #100
-    SetGlobal("MAP_GROUP_HOSTILE2","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE4","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE2","ID9700",0)
+    SetGlobal("MAP_GROUP_HOSTILE4","ID9700",0)
     SetGlobal("9700_RESET","GLOBAL",0)
     Continue()
 END
 
 IF
-  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+  Global("HARPY_WYVERN_DUEL","ID9700",1)
   Dead("HARPY_0")
   Dead("HARPY_1")
   Dead("HARPY_2")
   Dead("HARPY_3")
 THEN
   RESPONSE #100
-    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",3)
+    SetGlobal("HARPY_WYVERN_DUEL","ID9700",3)
     Continue()
 END
 
 IF
-  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+  Global("HARPY_WYVERN_DUEL","ID9700",1)
   Dead("WYVERN_0")
   Dead("WYVERN_1")
   Dead("WYVERN_2")
@@ -105,15 +105,15 @@ IF
   Dead("WYVERN_6")
 THEN
   RESPONSE #100
-    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",2)
+    SetGlobal("HARPY_WYVERN_DUEL","ID9700",2)
     Continue()
 END
 
 IF
-  Global("InitSpawns","MYAREA",0)
+  Global("InitSpawns","ID9700",0)
 THEN
   RESPONSE #100
-    SetGlobal("InitSpawns","MYAREA",1)
+    SetGlobal("InitSpawns","ID9700",1)
     SetGlobal("9711_WATER_WEIRD_SPAWN","GLOBAL",1)
     SetGlobal("9712_WATER_WEIRD_SPAWN","GLOBAL",1)
     Continue()
@@ -129,10 +129,10 @@ END
 
 IF
   False()
-  Global("OH_auto_save","MYAREA",0)
+  Global("OH_auto_save","ID9700",0)
   CombatCounter(0)
 THEN
   RESPONSE #100
-    SetGlobal("OH_auto_save","MYAREA",1)
+    SetGlobal("OH_auto_save","ID9700",1)
 END
 

@@ -1,15 +1,15 @@
 IF
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  Global("MINOTAUR_TRAP","MYAREA",2)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
+  Global("MINOTAUR_TRAP","ID9801",2)
   See([PC])
   Detect([PC])
 THEN
   RESPONSE #100
-    SetGlobal("MINOTAUR_TRAP","MYAREA",3)
+    SetGlobal("MINOTAUR_TRAP","ID9801",3)
     DisplayStringHead(Myself,@18048)
-    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE1","ID9801",1)
     SmallWait(8)
-    SetGlobal("MINOTAUR_TRAP","MYAREA",4)
+    SetGlobal("MINOTAUR_TRAP","ID9801",4)
     Continue()
 END
 
@@ -23,7 +23,7 @@ THEN
 END
 
 IF
-  Global("MINOTAUR_TRAP","MYAREA",4)
+  Global("MINOTAUR_TRAP","ID9801",4)
   !GlobalTimerNotExpired("#localtimer","LOCALS")
   Detect([PC])
 THEN
@@ -41,16 +41,16 @@ THEN
 END
 
 IF
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE1","ID9801",1)
     Continue()
 END
 
 IF
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
@@ -59,7 +59,7 @@ THEN
 END
 
 IF
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
 THEN
   RESPONSE #100
     NoAction()

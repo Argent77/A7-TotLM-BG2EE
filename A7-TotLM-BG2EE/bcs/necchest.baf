@@ -1,155 +1,125 @@
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Contains("blun01",Myself)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_1",Myself)
+  Global("TALE_CHEST_1","ID9705",0)
   OR(2)
     Entered([PC])
     Opened([PC])
 THEN
   RESPONSE #100
-    DestroyItem("blun01")
+    SetGlobal("TALE_CHEST_1","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpell(LastTrigger,TRAP_LIGHTNING_BOLT)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun01")
+    SetGlobal("TALE_CHEST_1","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpell(LastTrigger,TRAP_FIREBALL)
     Wait(2)
 END
 
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Contains("blun02",Myself)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_2",Myself)
+  Global("TALE_CHEST_2","ID9705",0)
   OR(2)
     Entered([PC])
     Opened([PC])
 THEN
   RESPONSE #100
-    DestroyItem("blun02")
+    SetGlobal("TALE_CHEST_2","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP035",LastTrigger)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun02")
+    SetGlobal("TALE_CHEST_2","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP028",LastTrigger)
     Wait(2)
 END
 
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Contains("blun03",Myself)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_3",Myself)
+  Global("TALE_CHEST_3","ID9705",0)
   OR(2)
     Entered([PC])
     Opened([PC])
 THEN
   RESPONSE #100
-    DestroyItem("blun03")
+    SetGlobal("TALE_CHEST_3","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP029",LastTrigger)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun03")
+    SetGlobal("TALE_CHEST_3","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP033",LastTrigger)
     Wait(2)
 END
 
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Contains("blun04",Myself)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_4",Myself)
+  Global("TALE_CHEST_4","ID9705",0)
   OR(2)
     Entered([PC])
     Opened([PC])
 THEN
   RESPONSE #100
-    DestroyItem("blun04")
+    SetGlobal("TALE_CHEST_4","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP030",LastTrigger)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun04")
+    SetGlobal("TALE_CHEST_4","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpell(LastTrigger,TRAP_CLOUDKILL)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun04")
+    SetGlobal("TALE_CHEST_4","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpell(LastTrigger,TRAP_STINKING_CLOUD)
     Wait(2)
 END
 
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Contains("blun05",Myself)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_5",Myself)
+  Global("TALE_CHEST_5","ID9705",0)
   OR(2)
     Entered([PC])
     Opened([PC])
 THEN
   RESPONSE #100
-    DestroyItem("blun05")
+    SetGlobal("TALE_CHEST_5","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpell(LastTrigger,WIZARD_ABI_DALZIMS_HORRID_WILTING)
     Wait(2)
   RESPONSE #100
-    DestroyItem("blun05")
+    SetGlobal("TALE_CHEST_5","ID9705",1)
     DisplayString(Myself,14381)
     ReallyForceSpellRES("IDSP031",LastTrigger)
     Wait(2)
 END
 
 IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Global("SET_CHEST_1","MYAREA",0)
+  !Global("TALE_PLACED","ID9705",0)
+  Name("Chest_6",Myself)
+  Global("TALE_CHEST_6","ID9705",0)
+  OR(2)
+    Entered([PC])
+    Opened([PC])
 THEN
   RESPONSE #100
-    SetGlobal("SET_CHEST_1","MYAREA",1)
-    CreateItem("blun01",0,0,0)
-END
-
-IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Global("SET_CHEST_2","MYAREA",0)
-THEN
+    SetGlobal("TALE_CHEST_6","ID9705",1)
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_FLAMESTRIKE)
+    Wait(2)
   RESPONSE #100
-    SetGlobal("SET_CHEST_2","MYAREA",1)
-    CreateItem("blun02",0,0,0)
-END
-
-IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Global("SET_CHEST_3","MYAREA",0)
-THEN
-  RESPONSE #100
-    SetGlobal("SET_CHEST_3","MYAREA",1)
-    CreateItem("blun03",0,0,0)
-END
-
-IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Global("SET_CHEST_4","MYAREA",0)
-THEN
-  RESPONSE #100
-    SetGlobal("SET_CHEST_4","MYAREA",1)
-    CreateItem("blun04",0,0,0)
-END
-
-IF
-  !Global("TALE_PLACED","MYAREA",0)
-  !Contains("TALE1",Myself)
-  Global("SET_CHEST_5","MYAREA",0)
-THEN
-  RESPONSE #100
-    SetGlobal("SET_CHEST_5","MYAREA",1)
-    CreateItem("blun05",0,0,0)
+    SetGlobal("TALE_CHEST_6","ID9705",1)
+    DisplayString(Myself,14381)
+    ReallyForceSpell(LastTrigger,TRAP_CHROMATIC_ORB)
+    Wait(2)
 END
 

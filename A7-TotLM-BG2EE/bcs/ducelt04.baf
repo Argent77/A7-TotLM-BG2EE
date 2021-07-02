@@ -6,12 +6,12 @@ THEN
 END
 
 IF
-  Global("CELL_04","MYAREA",0)
+  Global("CELL_04","ID9717",0)
   Entered([PC])
 THEN
   RESPONSE #100
     Unlock("ID9717_Door8")
     OpenDoor("ID9717_Door8")
-    SetGlobal("CELL_04","MYAREA",1)
+    SetGlobal("CELL_04","ID9717",1)
 END
 

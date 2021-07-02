@@ -16,13 +16,13 @@ END
 
 IF
   Allegiance(Myself,ENEMY)
-  Global("MAP_GROUP_HOSTILE7","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE7","ID9711",0)
   Detect([PC])
 THEN
   RESPONSE #100
     FaceObject(NearestEnemyOf(Myself))
     DisplayStringHead(Myself,@24945)
-    SetGlobal("MAP_GROUP_HOSTILE7","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE7","ID9711",1)
     Wait(2)
     Continue()
 END

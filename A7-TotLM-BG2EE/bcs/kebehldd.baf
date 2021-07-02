@@ -1,16 +1,16 @@
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
-  GlobalGT("DANCE_CUTSCENE","MYAREA",2)
-  Global("BEHOLDER_MOVE","MYAREA",0)
+  GlobalGT("DANCE_CUTSCENE","ID9712",2)
+  Global("BEHOLDER_MOVE","ID9712",0)
 THEN
   RESPONSE #100
-    SetGlobal("BEHOLDER_MOVE","MYAREA",1)
+    SetGlobal("BEHOLDER_MOVE","ID9712",1)
     Continue()
 END
 
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
-  Global("BEHOLDER_MOVE","MYAREA",2)
+  Global("BEHOLDER_MOVE","ID9712",2)
   !See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
@@ -23,7 +23,7 @@ IF
   See([PC])
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("DANCE_CUTSCENE","ID9712",4)
     SetGlobal("SAW_PC","LOCALS",1)
     Continue()
 END
@@ -34,7 +34,7 @@ IF
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    SetGlobal("DANCE_CUTSCENE","MYAREA",4)
+    SetGlobal("DANCE_CUTSCENE","ID9712",4)
     SetGlobal("SAW_PC","LOCALS",1)
     Continue()
 END
@@ -44,7 +44,7 @@ IF
   Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
   Global("CREATURE_STATE_VARBit20","LOCALS",1)
   NearLocation(Myself,1146,500,8)
-  Global("BEHOLDER_MOVE","MYAREA",1)
+  Global("BEHOLDER_MOVE","ID9712",1)
 THEN
   RESPONSE #100
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",1)
@@ -55,7 +55,7 @@ END
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
-  Global("BEHOLDER_MOVE","MYAREA",1)
+  Global("BEHOLDER_MOVE","ID9712",1)
   ActionListEmpty()
 THEN
   RESPONSE #100
@@ -67,7 +67,7 @@ END
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",1)
-  Global("BEHOLDER_MOVE","MYAREA",1)
+  Global("BEHOLDER_MOVE","ID9712",1)
   ActionListEmpty()
 THEN
   RESPONSE #100
@@ -78,17 +78,17 @@ END
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",2)
-  Global("BEHOLDER_MOVE","MYAREA",1)
+  Global("BEHOLDER_MOVE","ID9712",1)
   ActionListEmpty()
 THEN
   RESPONSE #100
-    SetGlobal("BEHOLDER_MOVE","MYAREA",2)
+    SetGlobal("BEHOLDER_MOVE","ID9712",2)
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",3)
 END
 
 IF
   !Global("KEBEHLDD_inactive","LOCALS",1)
-  GlobalLT("DANCE_CUTSCENE","MYAREA",4)
+  GlobalLT("DANCE_CUTSCENE","ID9712",4)
 THEN
   RESPONSE #100
     NoAction()

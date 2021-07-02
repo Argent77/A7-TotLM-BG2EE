@@ -8,7 +8,7 @@ IF
     !Contains("DGEM04","Night")
 THEN
   RESPONSE #100
-    SetGlobal("HIDE_STATE","MYAREA",0)
+    SetGlobal("HIDE_STATE","ID9800",0)
     SoundActivate("AM9800D",FALSE)
     StaticSequence("9800MS1",0) // SEQ_ATTACK
     CloseDoor(Myself)
@@ -16,7 +16,7 @@ THEN
 END
 
 IF
-  Global("HIDE_STATE","MYAREA",0)
+  Global("HIDE_STATE","ID9800",0)
   Contains("DGEM08","Heaven")
   Contains("DGEM02","Day")
   Contains("DGEM09","Earth")
@@ -24,13 +24,13 @@ IF
   Contains("DGEM04","Night")
 THEN
   RESPONSE #100
-    SetGlobal("HIDE_STATE","MYAREA",1)
+    SetGlobal("HIDE_STATE","ID9800",1)
     Continue()
 END
 
 IF
-  !Global("HIDE_STATE","MYAREA",0)
-  Global("OPENED_HIDE","MYAREA",0)
+  !Global("HIDE_STATE","ID9800",0)
+  Global("OPENED_HIDE","ID9800",0)
   OpenState(Myself,FALSE)
 THEN
   RESPONSE #100
@@ -39,8 +39,8 @@ THEN
 END
 
 IF
-  !Global("HIDE_STATE","MYAREA",0)
-  !Global("OPENED_HIDE","MYAREA",0)
+  !Global("HIDE_STATE","ID9800",0)
+  !Global("OPENED_HIDE","ID9800",0)
   OpenState(Myself,FALSE)
 THEN
   RESPONSE #100
@@ -51,30 +51,30 @@ THEN
 END
 
 IF
-  Global("HIDE_DOOR_XP","MYAREA",0)
-  !Global("OPENED_HIDE","MYAREA",0)
+  Global("HIDE_DOOR_XP","ID9800",0)
+  !Global("OPENED_HIDE","ID9800",0)
 THEN
   RESPONSE #100
     AddexperienceParty(30000)
-    SetGlobal("HIDE_DOOR_XP","MYAREA",1)
+    SetGlobal("HIDE_DOOR_XP","ID9800",1)
 END
 
 IF
-  !Global("#_9800MS1_AWAKE","MYAREA",1)
+  !Global("#_9800MS1_AWAKE","ID9800",1)
   OpenState(Myself,TRUE)
 THEN
   RESPONSE #100
-    SetGlobal("#_9800MS1_AWAKE","MYAREA",1)
+    SetGlobal("#_9800MS1_AWAKE","ID9800",1)
     SoundActivate("AM9800D",TRUE)
     StaticSequence("9800MS1",1) // SEQ_AWAKE
 END
 
 IF
-  !Global("#_9800MS1_ATTACK","MYAREA",1)
+  !Global("#_9800MS1_ATTACK","ID9800",1)
   OpenState(Myself,FALSE)
 THEN
   RESPONSE #100
-    SetGlobal("#_9800MS1_ATTACK","MYAREA",1)
+    SetGlobal("#_9800MS1_ATTACK","ID9800",1)
     SoundActivate("AM9800D",FALSE)
     StaticSequence("9800MS1",0) // SEQ_ATTACK
 END

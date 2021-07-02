@@ -8,7 +8,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
   !Global("SPRITE_IS_DEADHARALD","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -18,7 +18,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
   !Global("SPRITE_IS_DEADHOBART","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -28,7 +28,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
   !Global("SPRITE_IS_DEADCRIEK","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -38,7 +38,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
   !Global("SPRITE_IS_DEADADRAN","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -48,7 +48,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
   !Global("SPRITE_IS_DEADSHELHAI","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -58,7 +58,7 @@ END
 
 IF
   !Global("#luremaster_final_spawn","ID9711",1)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
 THEN
   RESPONSE #100
     CreateCreature("trsph1",[1314.619],4)
@@ -128,19 +128,19 @@ THEN
 END
 
 IF
-  Global("RESET_TEAMS","MYAREA",0)
-  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  Global("RESET_TEAMS","ID9711",0)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
 THEN
   RESPONSE #100
-    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE2","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE3","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE4","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE5","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE6","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE7","MYAREA",0)
-    SetGlobal("MAP_GROUP_HOSTILE8","MYAREA",0)
-    SetGlobal("RESET_TEAMS","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE1","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE2","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE3","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE4","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE5","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE6","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE7","ID9711",0)
+    SetGlobal("MAP_GROUP_HOSTILE8","ID9711",0)
+    SetGlobal("RESET_TEAMS","ID9711",1)
     Continue()
 END
 
@@ -237,12 +237,11 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("#spawn_group_0","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE1","ID9711",0)
+  !Global("#spawn_group_0","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9711",1)
     CreateCreature("ckspgrdh",[208.1404],12)
     CreateCreature("ckspgrdh",[918.1218],2)
     CreateCreature("ckspgrdh",[302.1340],12)
@@ -251,24 +250,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("#spawn_group_0","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE1","ID9711",0)
+  !Global("#spawn_group_0","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9711",1)
     CreateCreature("ckspgrdh",[624.1918],8)
     CreateCreature("ckspgrdh",[672.1918],8)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE2","MYAREA",0)
-  !Global("#spawn_group_1","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE2","ID9711",0)
+  !Global("#spawn_group_1","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_1","MYAREA",1)
+    SetGlobal("#spawn_group_1","ID9711",1)
     CreateCreature("ckspgrd2",[870.1937],8)
     CreateCreature("ckspgrd2",[428.1219],2)
     CreateCreature("ckspgrd2",[1296.1728],4)
@@ -277,24 +275,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE2","MYAREA",0)
-  !Global("#spawn_group_1","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE2","ID9711",0)
+  !Global("#spawn_group_1","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_1","MYAREA",1)
+    SetGlobal("#spawn_group_1","ID9711",1)
     CreateCreature("ckspgrd2",[798.1920],8)
     CreateCreature("ckspgrd2",[923.1922],8)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
-  !Global("#spawn_group_2","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE3","ID9711",0)
+  !Global("#spawn_group_2","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_2","MYAREA",1)
+    SetGlobal("#spawn_group_2","ID9711",1)
     CreateCreature("ckspgrd3",[1017.1576],8)
     CreateCreature("ckspgrd3",[1541.1354],6)
     CreateCreature("ckspgrd3",[491.1717],10)
@@ -303,24 +300,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
-  !Global("#spawn_group_2","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE3","ID9711",0)
+  !Global("#spawn_group_2","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_2","MYAREA",1)
+    SetGlobal("#spawn_group_2","ID9711",1)
     CreateCreature("ckspgrd3",[1101.1907],8)
     CreateCreature("ckspgrd3",[1247.1835],8)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
-  !Global("#spawn_group_3","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE4","ID9711",0)
+  !Global("#spawn_group_3","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_3","MYAREA",1)
+    SetGlobal("#spawn_group_3","ID9711",1)
     CreateCreature("ckspgrd4",[1567.1352],6)
     CreateCreature("ckspgrd4",[1752.1271],6)
     CreateCreature("ckspgrd4",[944.1218],12)
@@ -329,24 +325,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
-  !Global("#spawn_group_3","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE4","ID9711",0)
+  !Global("#spawn_group_3","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_3","MYAREA",1)
+    SetGlobal("#spawn_group_3","ID9711",1)
     CreateCreature("ckspgrd4",[1886.1311],8)
     CreateCreature("ckspgrd4",[1445.1438],8)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE5","MYAREA",0)
-  !Global("#spawn_group_4","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE5","ID9711",0)
+  !Global("#spawn_group_4","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_4","MYAREA",1)
+    SetGlobal("#spawn_group_4","ID9711",1)
     CreateCreature("ckspgrd5",[2228.946],2)
     CreateCreature("ckspgrd5",[2021.689],2)
     CreateCreature("ckspgrd5",[1246.1507],8)
@@ -355,24 +350,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE5","MYAREA",0)
-  !Global("#spawn_group_4","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE5","ID9711",0)
+  !Global("#spawn_group_4","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_4","MYAREA",1)
+    SetGlobal("#spawn_group_4","ID9711",1)
     CreateCreature("ckspgrd5",[1932.1504],2)
     CreateCreature("ckspgrd5",[1708.1604],10)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE6","MYAREA",0)
-  !Global("#spawn_group_5","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE6","ID9711",0)
+  !Global("#spawn_group_5","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_5","MYAREA",1)
+    SetGlobal("#spawn_group_5","ID9711",1)
     CreateCreature("ckspgrd6",[1780.1268],8)
     CreateCreature("ckspgrd6",[1517.1357],8)
     CreateCreature("ckspgrd6",[1923.1299],8)
@@ -381,24 +375,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE6","MYAREA",0)
-  !Global("#spawn_group_5","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE6","ID9711",0)
+  !Global("#spawn_group_5","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_5","MYAREA",1)
+    SetGlobal("#spawn_group_5","ID9711",1)
     CreateCreature("ckspgrd6",[1204.1887],8)
     CreateCreature("ckspgrd6",[1154.1909],8)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE7","MYAREA",0)
-  !Global("#spawn_group_6","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE7","ID9711",0)
+  !Global("#spawn_group_6","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_6","MYAREA",1)
+    SetGlobal("#spawn_group_6","ID9711",1)
     CreateCreature("ckspgrd7",[382.1124],8)
     CreateCreature("ckspgrd7",[495.1050],8)
     CreateCreature("ckspgrd7",[175.595],10)
@@ -407,24 +400,23 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE7","MYAREA",0)
-  !Global("#spawn_group_6","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE7","ID9711",0)
+  !Global("#spawn_group_6","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_6","MYAREA",1)
+    SetGlobal("#spawn_group_6","ID9711",1)
     CreateCreature("ckspgrd7",[513.1084],6)
     CreateCreature("ckspgrd7",[347.1311],14)
     Continue()
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE8","MYAREA",0)
-  !Global("#spawn_group_7","MYAREA",1)
-  !DifficultyGT(NORMAL)
+  !Global("MAP_GROUP_HOSTILE8","ID9711",0)
+  !Global("#spawn_group_7","ID9711",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_7","MYAREA",1)
+    SetGlobal("#spawn_group_7","ID9711",1)
     CreateCreature("rakshinv",[1913.136],14)
     CreateCreature("ckinvst",[1905.244],14)
     CreateCreature("ckinvst",[2063.191],0)
@@ -436,12 +428,12 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE8","MYAREA",0)
-  !Global("#spawn_group_7","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE8","ID9711",0)
+  !Global("#spawn_group_7","ID9711",1)
   DifficultyGT(NORMAL)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_7","MYAREA",1)
+    SetGlobal("#spawn_group_7","ID9711",1)
     CreateCreature("rakshinv",[2388.728],6)
     CreateCreature("ckinvst",[2237.635],8)
     CreateCreature("ckinvst",[2309.708],8)
@@ -452,17 +444,17 @@ END
 
 IF
   Dead("LUREMASTER")
-  Global("CastleSafe","MYAREA",0)
+  Global("CastleSafe","ID9711",0)
 THEN
   RESPONSE #100
-    SetGlobal("CastleSafe","MYAREA",1)
+    SetGlobal("CastleSafe","ID9711",1)
     SetRestEncounterProbabilityDay(0)
     SetRestEncounterProbabilityNight(0)
     SetAreaRestFlag(1)
 END
 
 IF
-  !Global("CastleSafe","MYAREA",0)
+  !Global("CastleSafe","ID9711",0)
   !Global("9711_WATER_WEIRD_SPAWN","GLOBAL",0)
 THEN
   RESPONSE #100
@@ -470,7 +462,7 @@ THEN
 END
 
 IF
-  Global("CastleSafe","MYAREA",0)
+  Global("CastleSafe","ID9711",0)
   Global("9711_WATER_WEIRD_SPAWN","GLOBAL",0)
 THEN
   RESPONSE #100

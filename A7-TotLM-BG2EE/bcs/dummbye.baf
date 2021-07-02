@@ -3,7 +3,7 @@ IF
 THEN
   RESPONSE #100
     CutSceneId(Myself)
-    SetGlobal("MAGICMOUTH_DONE","MYAREA",1)
+    SetGlobal("MAGICMOUTH_DONE","ID9717",1)
     EndCutSceneMode()
 END
 

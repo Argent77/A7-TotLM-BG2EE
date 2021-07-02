@@ -16,26 +16,32 @@ THEN
 END
 
 IF
-  Global("TALE_PLACED","MYAREA",0)
+  Global("TALE_PLACED","ID9705",0)
 THEN
   RESPONSE #100
     ActionOverride("CHEST_1",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_1","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
   RESPONSE #100
     ActionOverride("CHEST_2",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_2","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
   RESPONSE #100
     ActionOverride("CHEST_3",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_3","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
   RESPONSE #100
     ActionOverride("CHEST_4",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_4","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
   RESPONSE #100
     ActionOverride("CHEST_5",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_5","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
   RESPONSE #100
     ActionOverride("CHEST_6",CreateItem("TALE1",0,0,0))
-    SetGlobal("TALE_PLACED","MYAREA",1)
+    SetGlobal("TALE_CHEST_6","ID9705",1)
+    SetGlobal("TALE_PLACED","ID9705",1)
 END
 
 IF

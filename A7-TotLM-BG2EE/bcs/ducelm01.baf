@@ -1,14 +1,14 @@
 IF
-  Global("CELL_01","MYAREA",0)
+  Global("CELL_01","ID9717",0)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
-    SetGlobal("CELL_01","MYAREA",1)
+    SetGlobal("CELL_01","ID9717",1)
     Continue()
 END
 
 IF
-  !Global("CELL_01","MYAREA",0)
+  !Global("CELL_01","ID9717",0)
   ActionListEmpty()
   !See([PC])
 THEN

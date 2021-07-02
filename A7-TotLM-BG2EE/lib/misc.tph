@@ -180,6 +180,8 @@ END
 >>>>>>>>
   EXTEND_BOTTOM ~bd4300.bcs~ ~.../inlined/totlm-bg2ee/bd4300.baf~
 END
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("BD4300")~
 
 // Hobart isn't needed anymore after the quest is completed
 ACTION_IF (hobart_checks > 1) BEGIN

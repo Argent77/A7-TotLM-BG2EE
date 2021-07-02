@@ -1,49 +1,49 @@
 IF
-  Global("ALTAR_OF_HEAVEN","MYAREA",0)
+  Global("ALTAR_OF_HEAVEN","ID9801",0)
   Contains("DGEM03",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("ALTAR_OF_HEAVEN","MYAREA",1)
+    SetGlobal("ALTAR_OF_HEAVEN","ID9801",1)
     DestroyItem("DGEM03")
     ForceSpellRES("IDSP166",Myself)
 END
 
 IF
-  Global("ALTAR_OF_DAY","MYAREA",0)
+  Global("ALTAR_OF_DAY","ID9801",0)
   Contains("DGEM01",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("ALTAR_OF_DAY","MYAREA",1)
+    SetGlobal("ALTAR_OF_DAY","ID9801",1)
     DestroyItem("DGEM01")
     ForceSpellRES("IDSP166",Myself)
 END
 
 IF
-  Global("ALTAR_OF_SEA","MYAREA",0)
+  Global("ALTAR_OF_SEA","ID9801",0)
   Contains("DGEM06",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("ALTAR_OF_SEA","MYAREA",1)
+    SetGlobal("ALTAR_OF_SEA","ID9801",1)
     DestroyItem("DGEM06")
     ForceSpellRES("IDSP166",Myself)
 END
 
 IF
-  Global("ALTAR_OF_EARTH","MYAREA",0)
+  Global("ALTAR_OF_EARTH","ID9801",0)
   Contains("DGEM10",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("ALTAR_OF_EARTH","MYAREA",1)
+    SetGlobal("ALTAR_OF_EARTH","ID9801",1)
     DestroyItem("DGEM10")
     ForceSpellRES("IDSP166",Myself)
 END
 
 IF
-  Global("ALTAR_OF_SUNSET","MYAREA",0)
+  Global("ALTAR_OF_SUNSET","ID9801",0)
   Contains("DGEM07",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("ALTAR_OF_SUNSET","MYAREA",1)
+    SetGlobal("ALTAR_OF_SUNSET","ID9801",1)
     DestroyItem("DGEM07")
     ForceSpellRES("IDSP166",Myself)
 END

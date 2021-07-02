@@ -2,6 +2,6 @@ IF
   Entered([PC])
 THEN
   RESPONSE #100
-    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",1)
+    SetGlobal("HARPY_WYVERN_DUEL","ID9700",1)
 END
 

@@ -1,9 +1,9 @@
 IF
-  Global("ALTAR_OF_EARTH","MYAREA",1)
+  Global("ALTAR_OF_EARTH","ID9801",1)
 THEN
   RESPONSE #100
     CreateItem("DGEM09",1,1,1)
-    SetGlobal("ALTAR_OF_EARTH","MYAREA",2)
+    SetGlobal("ALTAR_OF_EARTH","ID9801",2)
     ForceSpellRES("IDSP166",Myself)
 END
 

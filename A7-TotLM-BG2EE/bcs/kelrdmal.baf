@@ -9,56 +9,56 @@ END
 
 IF
   Global("guards_summoned","LOCALS",0)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("GUARDS_1","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE1","ID9712",0)
+  !Global("GUARDS_1","ID9712",1)
   GlobalTimerExpired("bd_summoned","LOCALS")
   DifficultyGT(EASY)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
     SetGlobal("guards_summoned","LOCALS",1)
-    SetGlobal("GUARDS_1","MYAREA",1)
-    SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
-    DisplayStringHead(Myself,104011)  // "Guards!"
+    SetGlobal("GUARDS_1","ID9712",1)
+    SetGlobalTimerRandom("bd_summoned","LOCALS",TWO_ROUNDS,FIVE_ROUNDS)
+    DisplayStringHead(Myself,@15409)  // "Guards!"
 END
 
 IF
   Global("guards_summoned","LOCALS",1)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  !Global("GUARDS_2","MYAREA",1)
+  !Global("MAP_GROUP_HOSTILE1","ID9712",0)
+  !Global("GUARDS_2","ID9712",1)
   GlobalTimerExpired("bd_summoned","LOCALS")
   DifficultyGT(NORMAL)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
     SetGlobal("guards_summoned","LOCALS",2)
-    SetGlobal("GUARDS_2","MYAREA",1)
+    SetGlobal("GUARDS_2","ID9712",1)
     SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,TWO_TURNS)
-    DisplayStringHead(Myself,104011)  // "Guards!"
+    DisplayStringHead(Myself,@15409)  // "Guards!"
 END
 
 IF
   Global("guards_summoned","LOCALS",2)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
-  Global("GUARDS_2","MYAREA",1)
-  Global("GUARDS_3","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE1","ID9712",0)
+  Global("GUARDS_2","ID9712",1)
+  Global("GUARDS_3","ID9712",0)
   GlobalTimerExpired("bd_summoned","LOCALS")
   DifficultyGT(HARD)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
-    SetGlobal("GUARDS_3","MYAREA",1)
+    SetGlobal("GUARDS_3","ID9712",1)
     SetGlobalTimerRandom("bd_summoned","LOCALS",ONE_TURN,THREE_TURNS)
-    DisplayStringHead(Myself,104011)  // "Guards!"
+    DisplayStringHead(Myself,@15409)  // "Guards!"
 END
 
 IF
   Global("ATTACK_SET","LOCALS",0)
-  !Global("TELEPORT_1","MYAREA",0)
+  !Global("TELEPORT_1","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
-  !Global("TELEPORT_2","MYAREA",0)
+  !Global("TELEPORT_2","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
-  !Global("TELEPORT_3","MYAREA",0)
+  !Global("TELEPORT_3","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -88,7 +88,7 @@ END
 
 IF
   Global("TELEPORT_SET","LOCALS",2)
-  !Global("TELEPORT_2","MYAREA",0)
+  !Global("TELEPORT_2","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -98,7 +98,7 @@ END
 
 IF
   Global("TELEPORT_SET","LOCALS",3)
-  !Global("TELEPORT_3","MYAREA",0)
+  !Global("TELEPORT_3","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -108,7 +108,7 @@ END
 
 IF
   Global("TELEPORT_SET","LOCALS",1)
-  !Global("TELEPORT_1","MYAREA",0)
+  !Global("TELEPORT_1","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
 THEN
   RESPONSE #100
@@ -119,7 +119,7 @@ END
 IF
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   Global("TELEPORT_SET","LOCALS",1)
-  Global("TELEPORT_1","MYAREA",0)
+  Global("TELEPORT_1","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
   See(NearestEnemyOf(Myself))
 THEN
@@ -134,7 +134,7 @@ END
 IF
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   Global("TELEPORT_SET","LOCALS",2)
-  Global("TELEPORT_2","MYAREA",0)
+  Global("TELEPORT_2","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
   See(NearestEnemyOf(Myself))
 THEN
@@ -149,7 +149,7 @@ END
 IF
   !GlobalTimerNotExpired("bd_cast","LOCALS")
   Global("TELEPORT_SET","LOCALS",3)
-  Global("TELEPORT_3","MYAREA",0)
+  Global("TELEPORT_3","ID9712",0)
   !StateCheck(Myself,STATE_REALLY_DEAD)
   See(NearestEnemyOf(Myself))
 THEN
@@ -157,7 +157,7 @@ THEN
     SetGlobalTimer("bd_cast","LOCALS",3)
     SetGlobal("TELEPORT_SET","LOCALS",0)
     SetGlobal("ATTACK_SET","LOCALS",1)
-    SetGlobal("TELEPORT_3","MYAREA",1)
+    SetGlobal("TELEPORT_3","ID9712",1)
     ReallyForceSpellRES("cttelvis",NearestEnemyOf(Myself))
     ActionOverride(NearestEnemyOf(Myself),ForceSpellPointRES("IDSP140",[1534.1862]))
 END

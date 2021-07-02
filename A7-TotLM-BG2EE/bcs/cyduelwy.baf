@@ -3,7 +3,7 @@ IF
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    SetGlobal("MAP_GROUP_HOSTILE6","MYAREA",0)
+    SetGlobal("MAP_GROUP_HOSTILE6","ID9700",0)
     SetGlobal("CYDUELWY_inactive","LOCALS",1)
 END
 

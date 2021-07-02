@@ -1,24 +1,24 @@
 IF
   !Global("CYDUEL_inactive","LOCALS",1)
-  Global("HARPY_WYVERN_DUEL","MYAREA",0)
+  Global("HARPY_WYVERN_DUEL","ID9700",0)
   See([PC])
 THEN
   RESPONSE #100
-    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",1)
+    SetGlobal("HARPY_WYVERN_DUEL","ID9700",1)
 END
 
 IF
   !Global("CYDUEL_inactive","LOCALS",1)
-  Global("HARPY_WYVERN_DUEL","MYAREA",0)
+  Global("HARPY_WYVERN_DUEL","ID9700",0)
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
-    SetGlobal("HARPY_WYVERN_DUEL","MYAREA",1)
+    SetGlobal("HARPY_WYVERN_DUEL","ID9700",1)
 END
 
 IF
   !Global("CYDUEL_inactive","LOCALS",1)
-  Global("HARPY_WYVERN_DUEL","MYAREA",0)
+  Global("HARPY_WYVERN_DUEL","ID9700",0)
 THEN
   RESPONSE #100
     NoAction()

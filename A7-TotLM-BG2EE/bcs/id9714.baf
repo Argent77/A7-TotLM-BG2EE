@@ -7,11 +7,11 @@ THEN
 END
 
 IF
-  !Global("#_9714MS3_AWAKE","MYAREA",1)
-  !Global("DOOR_1_UNLOCKED","MYAREA",0)
+  !Global("#_9714MS3_AWAKE","ID9714",1)
+  !Global("DOOR_1_UNLOCKED","ID9714",0)
 THEN
   RESPONSE #100
-    SetGlobal("#_9714MS3_AWAKE","MYAREA",1)
+    SetGlobal("#_9714MS3_AWAKE","ID9714",1)
     StaticSequence("9714MS3",1) // SEQ_AWAKE
     Continue()
 END
@@ -35,40 +35,40 @@ END
 
 IF
   Global("ID#SPAWN_ERRIS","GLOBAL",1)
-  !Global("#spawn_group_0","MYAREA",1)
+  !Global("#spawn_group_0","ID9714",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_0","MYAREA",1)
+    SetGlobal("#spawn_group_0","ID9714",1)
     CreateCreature("erris",[3190.860],4)
     Continue()
 END
 
 IF
   Global("ID#SPAWN_GEDDIAN","GLOBAL",1)
-  !Global("#spawn_group_1","MYAREA",1)
+  !Global("#spawn_group_1","ID9714",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_1","MYAREA",1)
+    SetGlobal("#spawn_group_1","ID9714",1)
     CreateCreature("geddian",[3327.822],10)
     Continue()
 END
 
 IF
   Global("ID#SPAWN_GILES","GLOBAL",1)
-  !Global("#spawn_group_2","MYAREA",1)
+  !Global("#spawn_group_2","ID9714",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_2","MYAREA",1)
+    SetGlobal("#spawn_group_2","ID9714",1)
     CreateCreature("giles",[3257.928],2)
     Continue()
 END
 
 IF
   Global("ID#SPAWN_ZIERKKI","GLOBAL",1)
-  !Global("#spawn_group_3","MYAREA",1)
+  !Global("#spawn_group_3","ID9714",1)
 THEN
   RESPONSE #100
-    SetGlobal("#spawn_group_3","MYAREA",1)
+    SetGlobal("#spawn_group_3","ID9714",1)
     CreateCreature("zierkki",[3360.892],12)
     Continue()
 END

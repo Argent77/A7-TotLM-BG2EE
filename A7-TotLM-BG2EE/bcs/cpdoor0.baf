@@ -6,15 +6,14 @@ THEN
 END
 
 IF
-  !Global("DOOR_1_UNLOCKED","MYAREA",0)
-  !Global("DOOR_2_UNLOCKED","MYAREA",0)
-  !Global("DOOR_3_UNLOCKED","MYAREA",0)
-  !Global("DOOR_4_UNLOCKED","MYAREA",0)
-  !Global("DOOR_5_UNLOCKED","MYAREA",0)
-  !Global("DOOR_6_UNLOCKED","MYAREA",0)
+  !Global("DOOR_1_UNLOCKED","ID9714",0)
+  !Global("DOOR_2_UNLOCKED","ID9714",0)
+  !Global("DOOR_3_UNLOCKED","ID9714",0)
+  !Global("DOOR_4_UNLOCKED","ID9714",0)
+  !Global("DOOR_5_UNLOCKED","ID9714",0)
+  !Global("DOOR_6_UNLOCKED","ID9714",0)
 THEN
   RESPONSE #100
     OpenDoor(Myself)
-    OpenDoor("AR9200_GATE1")
 END
 

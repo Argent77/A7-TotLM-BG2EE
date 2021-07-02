@@ -3,13 +3,13 @@ IF
 THEN
   RESPONSE #100
     CutSceneId(Myself)
-    SetGlobal("HOBART_TRANSFORM","MYAREA",1)
+    SetGlobal("HOBART_TRANSFORM","ID9711",1)
     ClearAllActions()
     MultiPlayerSync()
     MoveViewObject(Myself,INSTANT)
     FaceObject(NearestEnemyOf(Myself))
     SmallWait(6)
-    SetGlobal("MAP_GROUP_HOSTILE8","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE8","ID9711",1)
     ForceSpellRES("IDSP162",Myself)
     MoveViewObject([PC],INSTANT)
     EndCutSceneMode()

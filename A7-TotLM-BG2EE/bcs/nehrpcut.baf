@@ -28,7 +28,7 @@ THEN
     FaceObject([PC])
     Wait(3)
     MultiPlayerSync()
-    SetGlobal("AREA_CUTSCENE","MYAREA",2)
+    SetGlobal("AREA_CUTSCENE","ID9706",2)
     EndCutSceneMode()
     StartDialogNoSet(Player1)
 END

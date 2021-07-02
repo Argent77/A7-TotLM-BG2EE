@@ -1,6 +1,6 @@
 IF
   Race(Myself,HARPY)
-  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE3","ID9700",0)
 THEN
   RESPONSE #100
     ChangeAIScript("GNT3MOVE",DEFAULT)
@@ -8,7 +8,7 @@ END
 
 IF
   Race(Myself,WYVERN)
-  !Global("MAP_GROUP_HOSTILE6","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE6","ID9700",0)
 THEN
   RESPONSE #100
     ChangeAIScript("GNT6MOVE",DEFAULT)
@@ -22,7 +22,7 @@ THEN
 END
 
 IF
-  Global("HARPY_WYVERN_DUEL","MYAREA",1)
+  Global("HARPY_WYVERN_DUEL","ID9700",1)
 THEN
   RESPONSE #100
     RandomWalk()

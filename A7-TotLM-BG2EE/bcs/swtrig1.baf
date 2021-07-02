@@ -4,7 +4,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("ID9706_HIDDEN_DOOR_STATE","GLOBAL",1)
-    DisplayStringNoNameHead([PC],@40717)
+    DisplayStringNoNameHead(LastTrigger,@40717)
 END
 
 IF
@@ -13,6 +13,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("ID9706_HIDDEN_DOOR_STATE","GLOBAL",0)
-    DisplayStringNoNameHead([PC],@40718)
+    DisplayStringNoNameHead(LastTrigger,@40718)
 END
 

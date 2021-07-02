@@ -61,55 +61,55 @@ THEN
 END
 
 IF
-  Global("SUMMONER_TURN","MYAREA",1)
+  Global("SUMMONER_TURN","ID9800",1)
   OR(2)
     !Global("SET_ATTACK","LOCALS",0)
     !HaveSpellRES("IDSP158")
 THEN
   RESPONSE #100
-    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    SetGlobal("SUMMONER_TURN","ID9800",2)
     Continue()
 END
 
 IF
   Global("SET_ATTACK","LOCALS",0)
-  Global("SUMMONER_TURN","MYAREA",2)
+  Global("SUMMONER_TURN","ID9800",2)
   Dead("JACKAL_SUMMONER_2")
 THEN
   RESPONSE #100
-    SetGlobal("SUMMONER_TURN","MYAREA",1)
+    SetGlobal("SUMMONER_TURN","ID9800",1)
     Continue()
 END
 
 IF
-  Global("SUMMONER_TURN","MYAREA",1)
-  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
+  Global("SUMMONER_TURN","ID9800",1)
+  !Global("MAP_GROUP_HOSTILE4","ID9800",0)
   !GlobalTimerNotExpired("bd_cast","LOCALS")
-  !GlobalTimerNotExpired("SUMMONER_TIMER","MYAREA")
+  !GlobalTimerNotExpired("SUMMONER_TIMER","ID9800")
   NearSavedLocation(Myself,"#savedloc",2)
   !DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
-    SetGlobalTimer("SUMMONER_TIMER","MYAREA",FIVE_ROUNDS)
-    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    SetGlobalTimer("SUMMONER_TIMER","ID9800",FIVE_ROUNDS)
+    SetGlobal("SUMMONER_TURN","ID9800",2)
     RemoveSpellRES("IDSP158")
     ForceSpellPointRES("IDSP158",[875.2181])
     Wait(2)
 END
 
 IF
-  Global("SUMMONER_TURN","MYAREA",1)
-  !Global("MAP_GROUP_HOSTILE4","MYAREA",0)
+  Global("SUMMONER_TURN","ID9800",1)
+  !Global("MAP_GROUP_HOSTILE4","ID9800",0)
   !GlobalTimerNotExpired("bd_cast","LOCALS")
-  !GlobalTimerNotExpired("SUMMONER_TIMER","MYAREA")
+  !GlobalTimerNotExpired("SUMMONER_TIMER","ID9800")
   NearSavedLocation(Myself,"#savedloc",2)
   DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
-    SetGlobalTimer("SUMMONER_TIMER","MYAREA",FIVE_ROUNDS)
-    SetGlobal("SUMMONER_TURN","MYAREA",2)
+    SetGlobalTimer("SUMMONER_TIMER","ID9800",FIVE_ROUNDS)
+    SetGlobal("SUMMONER_TURN","ID9800",2)
     RemoveSpellRES("IDSP158")
     ForceSpellPointRES("IDSP160",[875.2181])
     Wait(2)

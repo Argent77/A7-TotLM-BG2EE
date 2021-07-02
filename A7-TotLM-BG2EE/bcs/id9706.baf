@@ -40,17 +40,17 @@ THEN
 END
 
 IF
-  Global("AREA_CUTSCENE","MYAREA",2)
+  Global("AREA_CUTSCENE","ID9706",2)
 THEN
   RESPONSE #100
     MultiPlayerSync()
     MoveViewObject([PC],INSTANT)
-    SetGlobal("AREA_CUTSCENE","MYAREA",3)
+    SetGlobal("AREA_CUTSCENE","ID9706",3)
     Continue()
 END
 
 IF
-  Global("AREA_CUTSCENE","MYAREA",0)
+  Global("AREA_CUTSCENE","ID9706",0)
   LevelPartyLT(12)
 THEN
   RESPONSE #100
@@ -60,12 +60,12 @@ THEN
 END
 
 IF
-  Global("AREA_CUTSCENE","MYAREA",0)
+  Global("AREA_CUTSCENE","ID9706",0)
 THEN
   RESPONSE #100
     StartCutSceneMode()
     MultiPlayerSync()
-    SetGlobal("AREA_CUTSCENE","MYAREA",1)
+    SetGlobal("AREA_CUTSCENE","ID9706",1)
     StartCutScene("NEHRPCUT")
 END
 

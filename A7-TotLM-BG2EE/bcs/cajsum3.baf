@@ -510,7 +510,7 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE3","ID9800",0)
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
   HaveSpellRES("IDSP158")
   !DifficultyLT(NORMAL)
@@ -522,7 +522,7 @@ THEN
 END
 
 IF
-  !Global("MAP_GROUP_HOSTILE3","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE3","ID9800",0)
   !GlobalTimerNotExpired("SUMMON_TIMER","LOCALS")
   HaveSpellRES("IDSP158")
   DifficultyLT(NORMAL)

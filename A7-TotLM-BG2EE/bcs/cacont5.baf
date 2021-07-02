@@ -1,5 +1,5 @@
 IF
-  Global("HIDE_STATE","MYAREA",0)
+  Global("HIDE_STATE","ID9800",0)
   Contains("DGEM08",Myself)
 THEN
   RESPONSE #100
@@ -10,7 +10,7 @@ THEN
 END
 
 IF
-  Global("HIDE_STATE","MYAREA",0)
+  Global("HIDE_STATE","ID9800",0)
   Contains("DGEM02",Myself)
 THEN
   RESPONSE #100
@@ -21,7 +21,7 @@ THEN
 END
 
 IF
-  Global("HIDE_STATE","MYAREA",0)
+  Global("HIDE_STATE","ID9800",0)
   Contains("DGEM09",Myself)
 THEN
   RESPONSE #100
@@ -32,7 +32,7 @@ THEN
 END
 
 IF
-  Global("HIDE_STATE","MYAREA",0)
+  Global("HIDE_STATE","ID9800",0)
   Contains("DGEM05",Myself)
 THEN
   RESPONSE #100
@@ -43,20 +43,20 @@ THEN
 END
 
 IF
-  Global("DGEM04_PLACED","MYAREA",0)
+  Global("DGEM04_PLACED","ID9800",0)
   Contains("DGEM04",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("DGEM04_PLACED","MYAREA",1)
+    SetGlobal("DGEM04_PLACED","ID9800",1)
     ForceSpellRES("IDSP166",Myself)
 END
 
 IF
-  !Global("DGEM04_PLACED","MYAREA",0)
+  !Global("DGEM04_PLACED","ID9800",0)
   !Contains("DGEM04",Myself)
 THEN
   RESPONSE #100
-    SetGlobal("DGEM08_PLACED","MYAREA",0)
+    SetGlobal("DGEM08_PLACED","ID9800",0)
     ForceSpellRES("IDSP166",Myself)
 END
 

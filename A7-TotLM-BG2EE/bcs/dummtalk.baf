@@ -7,40 +7,40 @@ THEN
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",3)
+  Global("MAGICMOUTH_TALK","ID9717",3)
 THEN
   RESPONSE #100
     StaticSequence("9717MS1",2) // SEQ_CAST
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",4)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",4)
 END
 
 IF
-  !Global("MAGICMOUTH_DONE","MYAREA",0)
+  !Global("MAGICMOUTH_DONE","ID9717",0)
 THEN
   RESPONSE #100
     DestroySelf()
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",2)
+  Global("MAGICMOUTH_TALK","ID9717",2)
   See([ENEMY])
 THEN
   RESPONSE #100
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",3)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",3)
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",0)
-  !GlobalTimerNotExpired("MAGICMOUTH_TIMER","MYAREA")
+  Global("MAGICMOUTH_TALK","ID9717",0)
+  !GlobalTimerNotExpired("MAGICMOUTH_TIMER","ID9717")
   See([PC])
 THEN
   RESPONSE #100
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",1)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",1)
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",2)
-  !GlobalTimerNotExpired("MAGICMOUTH_TIMER","MYAREA")
+  Global("MAGICMOUTH_TALK","ID9717",2)
+  !GlobalTimerNotExpired("MAGICMOUTH_TIMER","ID9717")
   See([PC])
   !Allegiance(Myself,ENEMY)
   !StateCheck(Myself,STATE_REALLY_DEAD)
@@ -48,35 +48,35 @@ THEN
   RESPONSE #100
     StartCutSceneMode()
     ClearAllActions()
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",3)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",3)
     MultiPlayerSync()
     EndCutSceneMode()
     StartDialogNoSet(Player1)
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",1)
+  Global("MAGICMOUTH_TALK","ID9717",1)
 THEN
   RESPONSE #100
     StaticSequence("9717MS1",1) // SEQ_AWAKE
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",2)
-    SetGlobalTimer("MAGICMOUTH_TIMER","MYAREA",5)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",2)
+    SetGlobalTimer("MAGICMOUTH_TIMER","ID9717",5)
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",4)
+  Global("MAGICMOUTH_TALK","ID9717",4)
   !See([PC])
 THEN
   RESPONSE #100
-    SetGlobalTimer("MAGICMOUTH_TIMER","MYAREA",5)
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",0)
+    SetGlobalTimer("MAGICMOUTH_TIMER","ID9717",5)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",0)
 END
 
 IF
-  Global("MAGICMOUTH_TALK","MYAREA",2)
+  Global("MAGICMOUTH_TALK","ID9717",2)
   !See([PC])
 THEN
   RESPONSE #100
-    SetGlobal("MAGICMOUTH_TALK","MYAREA",3)
+    SetGlobal("MAGICMOUTH_TALK","ID9717",3)
 END
 

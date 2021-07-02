@@ -6,11 +6,11 @@ THEN
 END
 
 IF
-  Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE9","ID9711",0)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
-    SetGlobal("MAP_GROUP_HOSTILE9","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE9","ID9711",1)
     Continue()
 END
 
@@ -19,23 +19,23 @@ IF
 THEN
   RESPONSE #100
     Enemy()
-    SetGlobal("MAP_GROUP_HOSTILE9","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE9","ID9711",1)
     Continue()
 END
 
 IF
   !Allegiance(Myself,ENEMY)
-  Global("LUREMASTER_CUTSCENE","MYAREA",0)
+  Global("LUREMASTER_CUTSCENE","ID9711",0)
   See([PC])
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    SetGlobal("LUREMASTER_CUTSCENE","MYAREA",1)
+    SetGlobal("LUREMASTER_CUTSCENE","ID9711",1)
     StartCutScene("DULURCUT")
 END
 
 IF
-  Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE9","ID9711",0)
 THEN
   RESPONSE #100
     NoAction()

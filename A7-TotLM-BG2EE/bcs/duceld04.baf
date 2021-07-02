@@ -1,5 +1,5 @@
 IF
-  !Global("CELL_04","MYAREA",0)
+  !Global("CELL_04","ID9717",0)
   OpenState(Myself,TRUE)
 THEN
   RESPONSE #100
@@ -7,7 +7,7 @@ THEN
 END
 
 IF
-  !Global("CELL_04","MYAREA",0)
+  !Global("CELL_04","ID9717",0)
   OpenState(Myself,FALSE)
 THEN
   RESPONSE #100
@@ -16,10 +16,10 @@ THEN
 END
 
 IF
-  Global("CELL_04","MYAREA",0)
+  Global("CELL_04","ID9717",0)
   OpenState(Myself,TRUE)
 THEN
   RESPONSE #100
-    SetGlobal("CELL_04","MYAREA",1)
+    SetGlobal("CELL_04","ID9717",1)
 END
 

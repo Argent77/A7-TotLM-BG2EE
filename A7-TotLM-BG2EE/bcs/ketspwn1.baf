@@ -11,10 +11,10 @@ THEN
 END
 
 IF
-  Global("TELEPORT_1","MYAREA",0)
+  Global("TELEPORT_1","ID9712",0)
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100
-    SetGlobal("TELEPORT_1","MYAREA",1)
+    SetGlobal("TELEPORT_1","ID9712",1)
 END
 

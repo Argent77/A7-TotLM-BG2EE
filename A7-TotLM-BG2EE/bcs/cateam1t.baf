@@ -1,33 +1,33 @@
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  GlobalLT("MINOTAUR_TRAP","MYAREA",4)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  GlobalLT("MINOTAUR_TRAP","ID9801",4)
+  !Global("MAP_GROUP_HOSTILE1","ID9801",0)
 THEN
   RESPONSE #100
-    SetGlobal("MINOTAUR_TRAP","MYAREA",4)
+    SetGlobal("MINOTAUR_TRAP","ID9801",4)
     Continue()
 END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MINOTAUR_TRAP","MYAREA",2)
+  Global("MINOTAUR_TRAP","ID9801",2)
   See([PC])
   Detect([PC])
 THEN
   RESPONSE #100
-    SetGlobal("MINOTAUR_TRAP","MYAREA",3)
+    SetGlobal("MINOTAUR_TRAP","ID9801",3)
     DisplayStringHead(Myself,@18048)
     Enemy()
-    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE1","ID9801",1)
     SmallWait(8)
-    SetGlobal("MINOTAUR_TRAP","MYAREA",4)
+    SetGlobal("MINOTAUR_TRAP","ID9801",4)
     Continue()
 END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   !Allegiance(Myself,ENEMY)
-  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  !Global("MAP_GROUP_HOSTILE1","ID9801",0)
 THEN
   RESPONSE #100
     Enemy()
@@ -46,7 +46,7 @@ END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
   !GlobalTimerNotExpired("#localtimer","LOCALS")
   Detect([PC])
 THEN
@@ -58,7 +58,7 @@ END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MINOTAUR_TRAP","MYAREA",4)
+  Global("MINOTAUR_TRAP","ID9801",4)
   !GlobalTimerNotExpired("#localtimer","LOCALS")
   Detect([PC])
 THEN
@@ -77,23 +77,23 @@ END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
   AttackedBy([GOODCUTOFF],DEFAULT)
 THEN
   RESPONSE #100
     Enemy()
-    SetGlobal("MAP_GROUP_HOSTILE1","MYAREA",1)
+    SetGlobal("MAP_GROUP_HOSTILE1","ID9801",1)
     Continue()
 END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MINOTAUR_TRAP","MYAREA",0)
+  Global("MINOTAUR_TRAP","ID9801",0)
   See([PC])
   Detect([PC])
 THEN
   RESPONSE #100
-    SetGlobal("MINOTAUR_TRAP","MYAREA",1)
+    SetGlobal("MINOTAUR_TRAP","ID9801",1)
     DisplayStringHead(Myself,@27031)
     Continue()
 END
@@ -103,7 +103,7 @@ IF
   Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
   Global("CREATURE_STATE_VARBit20","LOCALS",1)
   NearLocation(Myself,1072,1193,8)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",1)
@@ -114,7 +114,7 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",0)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("CREATURE_STATE_VARBit20","LOCALS",1)
@@ -127,7 +127,7 @@ IF
   Global("MOVEMENT_LIST_0_LOC","LOCALS",1)
   Global("CREATURE_STATE_VARBit20","LOCALS",1)
   NearLocation(Myself,996,811,8)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",2)
@@ -138,7 +138,7 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",1)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("CREATURE_STATE_VARBit20","LOCALS",1)
@@ -151,7 +151,7 @@ IF
   Global("MOVEMENT_LIST_0_LOC","LOCALS",2)
   Global("CREATURE_STATE_VARBit20","LOCALS",1)
   NearLocation(Myself,996,559,8)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",3)
@@ -162,7 +162,7 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",2)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     SetGlobal("CREATURE_STATE_VARBit20","LOCALS",1)
@@ -173,7 +173,7 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",3)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
 THEN
   RESPONSE #100
     Face(0)
@@ -183,7 +183,7 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",4)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
   !GlobalTimerNotExpired("MOVEMENT_LIST_0_TIMER","LOCALS")
 THEN
   RESPONSE #100
@@ -194,17 +194,17 @@ END
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
   Global("MOVEMENT_LIST_0_LOC","LOCALS",5)
-  Global("MINOTAUR_TRAP","MYAREA",1)
+  Global("MINOTAUR_TRAP","ID9801",1)
   !GlobalTimerNotExpired("MOVEMENT_LIST_0_TIMER","LOCALS")
 THEN
   RESPONSE #100
-    SetGlobal("MINOTAUR_TRAP","MYAREA",2)
+    SetGlobal("MINOTAUR_TRAP","ID9801",2)
     SetGlobal("MOVEMENT_LIST_0_LOC","LOCALS",6)
 END
 
 IF
   !Global("CATEAM1T_inactive","LOCALS",1)
-  Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Global("MAP_GROUP_HOSTILE1","ID9801",0)
 THEN
   RESPONSE #100
     NoAction()

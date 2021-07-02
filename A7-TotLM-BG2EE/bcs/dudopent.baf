@@ -1,15 +1,15 @@
 IF
-  Global("GATE_OPEN","MYAREA",0)
+  Global("GATE_OPEN","ID9718",0)
   OpenState(Myself,TRUE)
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    SetGlobal("GATE_OPEN","MYAREA",1)
+    SetGlobal("GATE_OPEN","ID9718",1)
     StartCutScene("DUDOPENC")
 END
 
 IF
-  !Global("GATE_OPEN","MYAREA",0)
+  !Global("GATE_OPEN","ID9718",0)
   Unlocked(Myself)
 THEN
   RESPONSE #100
@@ -18,7 +18,7 @@ THEN
 END
 
 IF
-  !Global("GATE_OPEN","MYAREA",0)
+  !Global("GATE_OPEN","ID9718",0)
   !Unlocked(Myself)
 THEN
   RESPONSE #100

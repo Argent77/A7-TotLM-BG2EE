@@ -1,10 +1,10 @@
 IF
-  Global("HOBART_TRANSFORM","MYAREA",0)
+  Global("HOBART_TRANSFORM","ID9711",0)
   Allegiance(Myself,ENEMY)
 THEN
   RESPONSE #100
     StartCutSceneMode()
-    SetGlobal("HOBART_TRANSFORM","MYAREA",1)
+    SetGlobal("HOBART_TRANSFORM","ID9711",1)
     StartCutScene("KERAKREV")
 END
 

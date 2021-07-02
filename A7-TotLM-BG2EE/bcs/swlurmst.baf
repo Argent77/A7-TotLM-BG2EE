@@ -18,11 +18,11 @@ THEN
 END
 
 IF
-  !Global("WATCH_GROUP","MYAREA",0)
+  !Global("WATCH_GROUP","ID9701",0)
   Global("FORCE_TALK","LOCALS",0)
 THEN
   RESPONSE #100
-    SetGlobal("WATCH_GROUP","MYAREA",0)
+    SetGlobal("WATCH_GROUP","ID9701",0)
     Continue()
 END
 
