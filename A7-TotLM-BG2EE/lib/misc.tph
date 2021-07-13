@@ -96,6 +96,26 @@ ACTION_IF (GAME_INCLUDES ~soa~) BEGIN
 END
 
 ACTION_IF (GAME_INCLUDES ~tob~) BEGIN
+  // Saradush
+  COPY_EXISTING ~ar5003.are~ ~override~
+    LPF fj_are_structure
+    INT_VAR
+      fj_loc_x       = 910
+      fj_loc_y       = 585
+      fj_orientation = 13
+      fj_animation   = IDS_OF_SYMBOL(~animate~ ~THIEF_MALE_HALFLING~)
+    STR_VAR
+      fj_structure_type = ~actor~
+      fj_name           = ~ID#Hobart~
+      fj_cre_resref     = ~HOBART~
+      fj_bcs_override   = ~LWHOBART~
+      fj_bcs_class      = ~EFHEALI1~
+      fj_bcs_race       = ~EFATKMEL~
+      fj_bcs_specific   = ~EFTWNCHK~
+    END
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("AR5003")~
+
   // Amkethran
   COPY_EXISTING ~ar5501.are~ ~override~
     LPF fj_are_structure
@@ -179,9 +199,9 @@ THEN
 END
 >>>>>>>>
   EXTEND_BOTTOM ~bd4300.bcs~ ~.../inlined/totlm-bg2ee/bd4300.baf~
-END
   OUTER_SET hobart_checks += 1
   OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("BD4300")~
+END
 
 // Hobart isn't needed anymore after the quest is completed
 ACTION_IF (hobart_checks > 1) BEGIN
