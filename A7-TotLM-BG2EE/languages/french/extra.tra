@@ -8,6 +8,11 @@ Nous avons pu vaincre le Maître des Leurres au cours d'une grande bataille et p
 @90004 = ~Chaîne de contingences - Invisibilité~
 @90005 = ~Chaîne de contingences - Immunité : Divination~
 @90006 = ~Chaîne de contingences - Globe d'invulnérabilité~
+@90007 = ~Garde funeste~
+@90008 = ~Esprit de hantise~
+@90009 = ~Essaie de posséder sa cible~
+@90010 = ~Possédé(e)~
+@90011 = ~Lent~ // TODO: add correct translation
 
 @91000 = ~Dabath~
 @91001 = ~Ah... La mort ! La mort partout !~
@@ -144,9 +149,5 @@ Poids : 0~
 PARAMÈTRES :
 
 Poids : 0~
-@91110 = ~Garde funeste~
-@91111 = ~Ah ! Je vous remercie de m'avoir délivré de cette malédiction. Mais je peux sentir le poids des siècles, m'éloignant de ce lieu. Je peux enfin reposer en paix.~
-@91112 = ~Quoi ?! Où suis-je ? Que s'est-il passé ?  Arg... Je suis si faible... Je ne peux pas bouger.~
-@91113 = ~Esprit de hantise~
-@91114 = ~Essaie de posséder sa cible~
-@91115 = ~Possédé(e)~
+@91110 = ~Ah ! Je vous remercie de m'avoir délivré de cette malédiction. Mais je peux sentir le poids des siècles, m'éloignant de ce lieu. Je peux enfin reposer en paix.~
+@91111 = ~Quoi ?! Où suis-je ? Que s'est-il passé ?  Arg... Je suis si faible... Je ne peux pas bouger.~

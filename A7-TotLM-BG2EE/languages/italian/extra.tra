@@ -9,6 +9,8 @@ Siamo riusciti a sconfiggere il Maestro degli Inganni in un'imponente battaglia 
 @90005 = ~Contingenza Concatenata - Immunità agli Incantesimi, Divinazione~
 @90006 = ~Contingenza Concatenata - Globo d'Invulnerabilità~
 
+@90011 = ~Lentezza~ // TODO: add correct translation
+
 @91000 = ~Dabath~
 @91001 = ~Aah... Morte! Morte ovunque!~
 @91002 = ~Così tanta morte!~

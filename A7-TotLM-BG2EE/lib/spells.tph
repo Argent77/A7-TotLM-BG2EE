@@ -69,6 +69,89 @@ BEGIN
   END
 END
 
+// Returns whether the spell effect exists in the current SPL resource.
+DEFINE_PATCH_FUNCTION SPELL_EFFECT_EXISTS
+INT_VAR
+  check_globals = 0   // whether to check global effects
+  check_headers = 1   // whether to check extended headers (abilities)
+  opcode = "-2"
+  target = "-2"
+  timing = "-2"
+  parameter1 = "-2"
+  parameter2 = "-2"
+  power = "-2"
+  resist_dispel = "-2"
+  duration = "-2"
+  probability1 = "-2"
+  probability2 = "-2"
+  dicenumber = "-2"
+  dicesize = "-2"
+  savingthrow = "-2"
+  savebonus = "-2"
+  special = "-2"
+STR_VAR
+  resource = ~IGNORE_RES~
+RET
+  exists  // indicates whether matching effect exists
+  index   // effects index of the first instance of the matching effect, -1 otherwise
+BEGIN
+  SET exists = 0
+  SET index = "-1"
+
+  READ_LONG 0x64 ofs_abil
+  READ_SHORT 0x68 num_abil
+  READ_LONG 0x6a ofs_effects
+  READ_SHORT 0x6e idx_effects_global
+  READ_SHORT 0x6e num_effects_global
+
+  SET num_effects = idx_effects_global + num_effects_global
+  PATCH_IF (check_headers) BEGIN
+    // determining total count of effect entries
+    FOR (i = 0; i < num_abil; ++i) BEGIN
+      SET ofs = ofs_abil + i * 40
+      READ_SHORT (ofs + 0x1e) num
+      READ_SHORT (ofs + 0x20) idx
+      PATCH_IF (num > 0 && (num + idx) > num_effects) BEGIN
+        SET num_effects = num + idx
+      END
+    END
+  END
+
+  // checking effects
+  FOR (i = 0; i < num_effects; ++i) BEGIN
+    PATCH_IF (check_headers && (i < idx_effects_global || num_effects_global = 0)) ||
+             (check_globals && (num_effects_global > 0 && i >= idx_effects_global)) BEGIN
+      SET ofs = ofs_effects + i * 48
+      SET match = 1
+      PATCH_IF (opcode != "-2") BEGIN SET match &= (opcode = SHORT_AT (ofs + 0x00)) END
+      PATCH_IF (target != "-2") BEGIN SET match &= (target = BYTE_AT (ofs + 0x02)) END
+      PATCH_IF (power != "-2") BEGIN SET match &= (power = BYTE_AT (ofs + 0x03)) END
+      PATCH_IF (parameter1 != "-2") BEGIN SET match &= (parameter1 = LONG_AT (ofs + 0x04)) END
+      PATCH_IF (parameter2 != "-2") BEGIN SET match &= (parameter2 = LONG_AT (ofs + 0x08)) END
+      PATCH_IF (timing != "-2") BEGIN SET match &= (timing = BYTE_AT (ofs + 0x0c)) END
+      PATCH_IF (resist_dispel != "-2") BEGIN SET match &= (resist_dispel = BYTE_AT (ofs + 0x0d)) END
+      PATCH_IF (duration != "-2") BEGIN SET match &= (duration = LONG_AT (ofs + 0x0e)) END
+      PATCH_IF (probability1 != "-2") BEGIN SET match &= (probability1 = BYTE_AT (ofs + 0x12)) END
+      PATCH_IF (probability2 != "-2") BEGIN SET match &= (probability2 = BYTE_AT (ofs + 0x13)) END
+      PATCH_IF (dicenumber != "-2") BEGIN SET match &= (dicenumber = LONG_AT (ofs + 0x1c)) END
+      PATCH_IF (dicesize != "-2") BEGIN SET match &= (dicesize = LONG_AT (ofs + 0x20)) END
+      PATCH_IF (savingthrow != "-2") BEGIN SET match &= (savingthrow = LONG_AT (ofs + 0x24)) END
+      PATCH_IF (savebonus != "-2") BEGIN SET match &= (savebonus = LONG_AT (ofs + 0x28)) END
+      PATCH_IF (special != "-2") BEGIN SET match &= (special = LONG_AT (ofs + 0x2c)) END
+      PATCH_IF (NOT ~%resource%~ STR_EQ ~IGNORE_RES~) BEGIN
+        READ_ASCII (ofs + 0x14) res (8) NULL
+        SET match &= (~%res%~ STR_EQ ~%resource%~)
+      END
+
+      PATCH_IF (match) BEGIN
+        SET index = i
+        SET exists = match
+        SET i = num_effects
+      END
+    END
+  END
+END
+
 
 /*
 TODO:
@@ -404,6 +487,62 @@ ACTION_IF (spell_id > 1000) BEGIN
         insert_point = 0
       STR_VAR
         resource = ~ID#OSLM1~
+    END
+  BUT_ONLY IF_EXISTS
+END
+
+
+// Updating "Curse" spell
+OUTER_SET spell_id = IDS_OF_SYMBOL(~spell~ ~CLERIC_CURSE~)
+OUTER_SET spell2_id = IDS_OF_SYMBOL(~spell~ ~CLERIC_BLESS~)
+ACTION_IF (spell_id > 1000 && spell2_id > 1000) BEGIN
+  LAF RES_NUM_OF_SPELL_NAME
+    STR_VAR spell_name = ~CLERIC_CURSE~
+    RET
+      curse_num = spell_num
+      curse_res = spell_res
+  END
+  LAF RES_NUM_OF_SPELL_NAME
+    STR_VAR spell_name = ~CLERIC_BLESS~
+    RET
+      bless_num = spell_num
+      bless_res = spell_res
+  END
+
+  // Patching "Curse"
+  COPY_EXISTING ~%curse_res%.SPL~ ~override~
+    LPF ADD_SPELL_EFFECT
+      INT_VAR
+        opcode = 321  // Remove effects by resource
+        target = 2    // preset target
+        timing = 1    // instant/permanent until death
+        power = (curse_num MODULO 1000) / 100
+        resist_dispel = 1 // dispel/not bypass resistance
+        insert_point = 1
+      STR_VAR
+        resource = EVAL ~%bless_res%~
+    END
+  BUT_ONLY IF_EXISTS
+
+  // Patching "Bless"
+  COPY_EXISTING ~%bless_res%.SPL~ ~override~
+    LPF SPELL_EFFECT_EXISTS
+      INT_VAR opcode = 321
+      STR_VAR resource = EVAL ~%curse_res%~
+      RET exists
+    END
+    PATCH_IF (NOT exists) BEGIN
+      LPF ADD_SPELL_EFFECT
+        INT_VAR
+          opcode = 321  // Remove effects by resource
+          target = 2    // preset target
+          timing = 1    // instant/permanent until death
+          power = (curse_num MODULO 1000) / 100
+          resist_dispel = 1 // dispel/not bypass resistance
+          insert_point = 0
+        STR_VAR
+          resource = EVAL ~%curse_res%~
+      END
     END
   BUT_ONLY IF_EXISTS
 END

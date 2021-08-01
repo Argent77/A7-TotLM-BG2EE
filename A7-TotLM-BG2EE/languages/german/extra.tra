@@ -8,6 +8,11 @@ Wir haben es geschafft, den Meister der Verlockung in einem epischen Kampf zu be
 @90004 = ~Kombinierter Notfall: Unsichtbarkeit~
 @90005 = ~Kombinierter Notfall: Immunität gegen Zauber: Erkenntniszauber~
 @90006 = ~Kombinierter Notfall: Kugel der Unverwundbarkeit~
+@90007 = ~Tyrannoswachen-Skelett~
+@90008 = ~Spuk~
+@90009 = ~Versuch, das Ziel in Besitz zu nehmen~
+@90010 = ~Besessen~
+@90011 = ~Verringerte Bewegungsrate~
 
 @91000 = ~Dabath~
 @91001 = ~Aah...Tod! Überall Tod!~
@@ -130,9 +135,5 @@ Gewicht: 0~
 EIGENSCHAFTEN:
 
 Gewicht: 0~
-@91110 = ~Tyrannoswachen-Skelett~
-@91111 = ~Ah, danke, dass Ihr mich von diesem Fluch erlöst habt. Allerdings spüre ich bereits den Druck der Jahrhunderte, der mich von diesem Ort fortzieht. Jetzt kann ich endlich in Frieden ruhen.~
-@91112 = ~Wa–?! Wo bin ich? Was ist passiert?  Uhm, zu schwach... kann mich nicht bewegen.~
-@91113 = ~Spuk~
-@91114 = ~Versuch, das Ziel in Besitz zu nehmen~
-@91115 = ~Besessen~
+@91110 = ~Ah, danke, dass Ihr mich von diesem Fluch erlöst habt. Allerdings spüre ich bereits den Druck der Jahrhunderte, der mich von diesem Ort fortzieht. Jetzt kann ich endlich in Frieden ruhen.~
+@91111 = ~Wa–?! Wo bin ich? Was ist passiert?  Uhm, zu schwach... kann mich nicht bewegen.~

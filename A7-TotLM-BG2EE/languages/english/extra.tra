@@ -8,6 +8,11 @@ We were able to defeat the Luremaster in a grand battle and put his spirit to re
 @90004 = ~Chain Contingency—Invisibility~
 @90005 = ~Chain Contingency—Immunity: Divination~
 @90006 = ~Chain Contingency—Globe of Invulnerability~
+@90007 = ~Baneguard Skeleton~
+@90008 = ~Haunt~
+@90009 = ~Attempts to possess target~
+@90010 = ~Possessed~
+@90011 = ~Reduced Movement Rate~
 
 @91000 = ~Dabath~
 @91001 = ~Aah...death! Death everywhere!~
@@ -130,9 +135,5 @@ Weight: 0~
 STATISTICS:
 
 Weight: 0~
-@91110 = ~Baneguard Skeleton~
-@91111 = ~Ahh! Thank you for releasing me from that curse. But I already feel the weight of the centuries, pulling me away from this place. Now I can finally rest in peace.~
-@91112 = ~Wha—?! Where am I? What has happened?  Ugh, too weak... can't move.~
-@91113 = ~Haunt~
-@91114 = ~Attempts to possess target~
-@91115 = ~Possessed~
+@91110 = ~Ahh! Thank you for releasing me from that curse. But I already feel the weight of the centuries, pulling me away from this place. Now I can finally rest in peace.~
+@91111 = ~Wha—?! Where am I? What has happened?  Ugh, too weak... can't move.~
