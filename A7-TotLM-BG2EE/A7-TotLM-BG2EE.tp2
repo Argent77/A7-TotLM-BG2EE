@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-TotLM-BG2EE~
 SUPPORT ~http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/~
-VERSION ~2.2~
+VERSION ~3.0~
 
 ALWAYS
   // required because of non-standard BACKUP path
