@@ -25,12 +25,12 @@
       <hr />
       <p class="about"><strong>Author: Argent77</strong></p>
       <ul id="globalnav" class="about">
-        <li><strong>Download</strong> (<a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
+        <!-- <li><strong>Download</strong> (<a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li> -->
         <li><strong>Download</strong> (<a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>)</li>
         <li><strong>Discussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Discussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Project</a></li>
-        <li>Version: 2.2</li>
+        <li>Version: 3.0</li>
       </ul>
       <hr />
       <nav>
@@ -49,9 +49,9 @@
       <section id="overview">
         <h2>Overview</h2>
         <p>This mod makes the Icewind Dale expansion "Trials of the Luremaster" available to BG2:EE (v2.0 or later), Siege of Dragonspear and EET (Enhanced Edition Trilogy).</p>
-        <p>The quest starts by talking to the halfling Hobart Stubbletoes, who can be found either in the Umar Hills Inn (SoA), Amkethran Inn (ToB) or in the southeastern area of the Coalition Camp (SoD). In the course of the adventure you have the opportunity to explore a haunted castle, test your mettle in challenging combat and lift an ancient curse.</p>
+        <p>The quest starts by talking to the halfling Hobart Stubbletoes, who can be found either in the Umar Hills Inn (SoA), Saradush Tavern (ToB), Amkethran Inn (ToB), in the southeastern area of the Coalition Camp (SoD) or Castle Dragonspear (SoD). In the course of the adventure you have the opportunity to explore a haunted castle, test your mettle in challenging combat and lift an ancient curse.</p>
         <hr class="spacer" />
-        <p>Visit the <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forums</a> or the <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forums</a> if you have questions, or download the latest version from <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> or <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>.</p>
+        <p>Visit the <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forums</a> or the <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forums</a> if you have questions, or download the latest version from <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>.</p>
         <div class="back">
           <a class="novisit" href="#top">BACK TO TOP</a>
         </div>
@@ -59,11 +59,13 @@
 
       <!-- ================== I N S T A L L A T I O N ================== -->
       <section id="installation">
-      <div class="content">
         <h2>Installation</h2>
         <p>This is a WeiDU mod, that means it is very easy to install. Simply unpack the downloaded archive into your game's installation directory (where you can find the file "chitin.key") and run <em>"setup-A7-TotLM-BG2EE.exe"</em> (Windows) or <em>"setup-A7-TotLM-BG2EE.command"</em> (macOS). Follow the instructions and you are ready to start.</p>
         <p>It is not required to start a new game after installing the mod. However, you must install it before entering either of the potential locations where you can meet Hobart for the first time.</p>
         <p>To uninstall, run <em>"setup-A7-TotLM-BG2EE.exe"</em> or <em>"setup-A7-TotLM-BG2EE.command"</em> again and follow the prompts.</p>
+        <hr class="spacer" />
+        <h3>Note for Siege of Dragonspear (SoD)</h3>
+        <p>GOG and Steam both install the <em>Siege of Dragonspear</em> expansion in a way that is not moddable out of the box. You must install a mod called <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> on your SoD installation before this or any other WeiDU-based mods can be installed.</p>
         <hr class="spacer" />
         <h3>Compatibility and mod order</h3>
         <p><strong>Spell Revisions</strong> component <em>"Dispel Magic Fix"</em> interferes with the special dying behavior of revenants and trolls, making them unkillable by normal means. To work around this issue, install that component <em>before</em> the main component of this mod.</p>
@@ -139,6 +141,46 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Version History</h2>
+        <!--
+        <h6>Version 3.1</h6>
+        <ul>
+          <li>Added complete Polish translation (thanks Cahir).</li>
+        </ul>
+        <hr class="spacer" />
+        -->
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Brought several creatures closer to their pen &amp; paper descriptions:
+            <ul>
+              <li>Added new creature type: Haunt.</li>
+              <li>Bats may inflict diseases.</li>
+              <li>Crypt Things are immune to Turn Undead.</li>
+              <li>Corrected creature name: Boneguard Skeleton &#10132; Baneguard Skeleton.</li>
+              <li>Baneguard Skeletons may use Ethereal ability and can cast Magic Missile.</li>
+              <li>Ghosts have a strength-draining attack and emit an aura of fear.</li>
+              <li>Neo-Orogs have a war cry to improve their attack and damage ratings.</li>
+              <li>Olive Slime becomes physically vulnerable after casting "Cure Disease" on them.</li>
+              <li>Water Kin Elementals: improved resistances to slashing, piercing and missile damage, can paralyze with their attacks and cannot be killed permanently.</li>
+              <li>Mummies are susceptible to the Resurrection spell.</li>
+              <li>Minotaurs are immune to the Maze spell.</li>
+              <li>Wights can level drain.</li>
+            </ul>
+          </li>
+          <li>More starting points of the adventure: Saradush Tavern (ToB), Dragonspear Castle Basement after the party returns from Avernus (SoD).</li>
+          <li>Slightly nerfed a number of items and equipment.</li>
+          <li>Added more Restoration scrolls and cure options.</li>
+          <li>Added various improvements to the new IWD spells.</li>
+          <li>Improved combat scripts of the Banite adventurers.</li>
+          <li>Improved combat script of Lord Maluradek: Better call for help.</li>
+          <li>Made combat challenge more dependent on game difficulty level.</li>
+          <li>Fixed Wyvern creature animations.</li>
+          <li>Fixed incorrect spell icons that are sometimes assigned to the new IWD spells.</li>
+          <li>Improved challenge of escaping castle dungeon, level 3.</li>
+          <li>Added global labels for Project Infinity.</li>
+          <li>Updated Russian translation.</li>
+          <li>Various bugfixes.</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 2.2</h6>
         <ul>
           <li>Added Project Infinity metadata.</li>

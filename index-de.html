@@ -25,12 +25,12 @@
       <hr />
       <p class="about"><strong>Autor: Argent77</strong></p>
       <ul id="globalnav" class="about">
-        <li><strong>Download</strong> (<a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
+        <!-- <li><strong>Download</strong> (<a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li> -->
         <li><strong>Download</strong> (<a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>)</li>
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a></li>
-        <li>Version: 2.2</li>
+        <li>Version: 3.0</li>
       </ul>
       <hr />
       <nav>
@@ -49,9 +49,9 @@
       <section id="overview">
         <h2>Übersicht</h2>
         <p>Diese Mod stellt die Icewind Dale-Erweiterung „Die Herausforderungen des Meisters der Verlockung” für BG2:EE (Version 2.0 oder später), Siege of Dragonspear und EET (Enhanced Edition Trilogy) bereit.</p>
-        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh ansprecht. Man kann ihn entweder im Wirtshaus in den Umarhügeln (SvA), in der Taverne in Amkethran (TdB) oder im südöstlichen Bereich des Bündnislagers (Belagerung von Drachenspeer) antreffen. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
+        <p>Das Abenteuer beginnt, wenn ihr den Halbling Hobart Stummelzeh ansprecht. Man kann ihn entweder im Wirtshaus in den Umarhügeln (SvA), in der Taverne von Saradush (TdB), in der Taverne von Amkethran (TdB), im südöstlichen Bereich des Bündnislagers oder Schloss Drachenspeer (Belagerung von Drachenspeer) antreffen. Im Laufe des Abenteuers habt ihr die Gelegenheit, ein Spukschloss zu erkunden, euren Mut in herausfordernden Kämpfen zu testen und einen uralten Fluch zu brechen.</p>
         <hr class="spacer" />
-        <p>Schaut im <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forum</a> oder <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forum</a> vorbei, wenn ihr Fragen habt, oder besucht <a href="http://www.shsforums.net/files/category/136-trials-of-the-luremaster-for-bg2ee/">Spellhold Studios</a> oder <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>, um die aktuellste Modversion herunterzuladen.</p>
+        <p>Schaut im <a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS Forum</a> oder <a href="https://forums.beamdog.com/discussion/73701/">Beamdog Forum</a> vorbei, wenn ihr Fragen habt, oder besucht <a href="https://github.com/Argent77/A7-TotLM-BG2EE/releases/latest">GitHub</a>, um die aktuellste Modversion herunterzuladen.</p>
         <div class="back">
           <a class="novisit" href="#top">ZURÜCK ZUM ANFANG</a>
         </div>
@@ -59,11 +59,13 @@
 
       <!-- ================== I N S T A L L A T I O N ================== -->
       <section id="installation">
-      <div class="content">
         <h2>Installation</h2>
         <p>Dies ist eine WeiDU-Mod. Das bedeutet, sie ist sehr einfach zu installieren. Entpackt die Zipdatei in euer Spielverzeichnis (wo ihr die Datei "chitin.key" finden könnt) und startet entweder <em>„setup-A7-TotLM-BG2EE.exe”</em> (Windows) oder <em>„setup-A7-TotLM-BG2EE.command”</em> (macOS). Folgt den Anweisungen im Textfenster und die Mod ist startbereit.</p>
         <p>Es ist nicht nötig ein neues Spiel zu starten. Allerdings muss sie installiert werden, bevor ihr zum ersten Mal die Herberge in den Umarhügeln betretet.</p>
         <p>Um die Mod zu deinstallieren, startet <em>„setup-A7-TotLM-BG2EE.exe”</em> oder <em>„setup-A7-TotLM-BG2EE.command”</em> erneut und folgt den Anweisungen.</p>
+        <hr class="spacer" />
+        <h3>Hinweis zu „Belagerung von Drachenspeer” (<abbr class="desc" title="Siege of Dragonspear">SoD</abbr>)</h3>
+        <p>Sowohl GOG als auch Steam installieren die „Belagerung von Drachenspeer”-Erweiterung in einem Format, welches nicht ohne Weiteres modifiziert werden kann. Ihr müsst zuerst eine Mod namens <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> in Eurem SoD-Spiel installieren, bevor diese oder weitere WeiDU-basierte Mods installiert werden können.</p>
         <hr class="spacer" />
         <h3>Kompatibilität und Modreihenfolge</h3>
         <p>Die Komponente <em>"Dispel Magic Fix"</em> von <strong>Spell Revisions</strong> verändert das Sterbeverhalten von Trollen und Wiedergängern und macht sie praktisch unzerstörbar. Um das Problem zu umgehen, sollte die Komponente <em>vor</em> dieser Mod installiert werden.</p>
@@ -139,6 +141,46 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <!--
+        <h6>Version 3.1</h6>
+        <ul>
+          <li>Added complete Polish translation (thanks Cahir).</li>
+        </ul>
+        <hr class="spacer" />
+        -->
+        <h6>Version 3.0</h6>
+        <ul>
+          <li>Brought several creatures closer to their pen &amp; paper descriptions:
+            <ul>
+              <li>Added new creature type: Haunt.</li>
+              <li>Bats may inflict diseases.</li>
+              <li>Crypt Things are immune to Turn Undead.</li>
+              <li>Corrected creature name: Boneguard Skeleton &#10132; Baneguard Skeleton.</li>
+              <li>Baneguard Skeletons may use Ethereal ability and can cast Magic Missile.</li>
+              <li>Ghosts have a strength-draining attack and emit an aura of fear.</li>
+              <li>Neo-Orogs have a war cry to improve their attack and damage ratings.</li>
+              <li>Olive Slime becomes physically vulnerable after casting "Cure Disease" on them.</li>
+              <li>Water Kin Elementals: improved resistances to slashing, piercing and missile damage, can paralyze with their attacks and cannot be killed permanently.</li>
+              <li>Mummies are susceptible to the Resurrection spell.</li>
+              <li>Minotaurs are immune to the Maze spell.</li>
+              <li>Wights can level drain.</li>
+            </ul>
+          </li>
+          <li>More starting points of the adventure: Saradush Tavern (ToB), Dragonspear Castle Basement after the party returns from Avernus (SoD).</li>
+          <li>Slightly nerfed a number of items and equipment.</li>
+          <li>Added more Restoration scrolls and cure options.</li>
+          <li>Added various improvements to the new IWD spells.</li>
+          <li>Improved combat scripts of the Banite adventurers.</li>
+          <li>Improved combat script of Lord Maluradek: Better call for help.</li>
+          <li>Made combat challenge more dependent on game difficulty level.</li>
+          <li>Fixed Wyvern creature animations.</li>
+          <li>Fixed incorrect spell icons that are sometimes assigned to the new IWD spells.</li>
+          <li>Improved challenge of escaping castle dungeon, level 3.</li>
+          <li>Added global labels for Project Infinity.</li>
+          <li>Updated Russian translation.</li>
+          <li>Various bugfixes.</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 2.2</h6>
         <ul>
           <li>Added Project Infinity metadata.</li>
