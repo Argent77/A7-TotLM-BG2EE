@@ -8,8 +8,11 @@ Siamo riusciti a sconfiggere il Maestro degli Inganni in un'imponente battaglia 
 @90004 = ~Contingenza Concatenata - Invisibilità~
 @90005 = ~Contingenza Concatenata - Immunità agli Incantesimi, Divinazione~
 @90006 = ~Contingenza Concatenata - Globo d'Invulnerabilità~
-
-@90011 = ~Lentezza~ // TODO: add correct translation
+@90007 = ~Scheletro Guardia di Bane~
+@90008 = ~Presenza~
+@90009 = ~Cerca di possedere il bersaglio~
+@90010 = ~In Preda alla Possessione~
+@90011 = ~Fattore-movimento Ridotto~
 
 @91000 = ~Dabath~
 @91001 = ~Aah... Morte! Morte ovunque!~
@@ -132,6 +135,5 @@ Peso: 0~
 STATISTICHE:
 
 Peso: 0~
-@91110 = ~Scheletro Guardiaossa~
-
-@91112 = ~Che!!? Dove sono? Cosa è successo?~
+@91110 = ~Ahh! Grazie per avermi liberato da quella maledizione. Sento già il peso dei secoli allontanarmi da questo posto. Ora posso finalmente riposare in pace.~ ~Ahh! Grazie per avermi liberata da quella maledizione. Sento già il peso dei secoli allontanarmi da questo posto. Ora posso finalmente riposare in pace.~
+@91111 = ~Cos...?! Dove sono? Cos'è successo? Ugh, sono troppo debole... Non riesco a muovermi.~
