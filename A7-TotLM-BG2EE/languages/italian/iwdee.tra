@@ -40,6 +40,7 @@ Do not translate~
 @2332 = ~Oggetto Trasparente del Mostro~
 @2556 = ~Ancora una volta, chi sei?~
 @2693 = ~Evocare Elementale dell'Acqua~
+@2938 = ~Simbolo, Dolore~
 @2969 = ~Invisibilità
 (Illusione/Visione)
 Livello: 2
@@ -1162,6 +1163,7 @@ Peso: 0~
 @21407 = ~Onda Devastante~
 @21409 = ~Raffica di Spine~
 @21410 = ~Muro di Luce Lunare~
+@21413 = ~Causa Malattia~
 @21418 = ~Crescita di Spine~
 @21420 = ~Tocco della Muffa~
 @21421 = ~Lancia dell'Unicorno~
