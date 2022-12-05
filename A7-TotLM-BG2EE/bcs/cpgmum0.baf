@@ -11,11 +11,11 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",9)
-    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_HOPELESSNESS)
     Wait(2)
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",12)
-    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_PAIN)
     Wait(2)
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",12)
@@ -34,7 +34,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",12)
-    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_HOPELESSNESS)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_HOPELESSNESS)
     Wait(2)
 END
 
@@ -44,7 +44,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",12)
-    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_OF_PAIN)
+    ForceSpell(LastSeenBy(Myself),CLERIC_SYMBOL_PAIN)
     Wait(2)
 END
 
