@@ -1,3 +1,16 @@
+// Return to IWD-in-EET - Lonelywood
+IF
+  Global("ID#LURE","GLOBAL",1)
+  Global("ID#Master_Quest_Location","GLOBAL",4)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    DisplayString(LastSummonerOf(Myself),@23357)
+    StartCutSceneMode()
+    StartCutScene("KERTRNLW")
+    DestroySelf()
+END
+
 // Return to SoD - Coalition Camp
 IF
   Global("ID#LURE","GLOBAL",1)
@@ -59,6 +72,7 @@ IF
   Global("ID#LURE","GLOBAL",1)
   !Global("ID#Master_Quest_Location","GLOBAL",2)
   !Global("ID#Master_Quest_Location","GLOBAL",3)
+  !Global("ID#Master_Quest_Location","GLOBAL",4)
 THEN
   RESPONSE #100
     ClearAllActions()

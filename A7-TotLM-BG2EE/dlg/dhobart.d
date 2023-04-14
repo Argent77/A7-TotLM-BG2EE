@@ -84,6 +84,7 @@ IF ~~ THEN BEGIN 11
   IF ~~                                              THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutSceneEx("cyHobTl1",TRUE)~ EXIT
   IF ~OR(2) AreaCheck("BD3000") AreaCheck("BD4300")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",2) ClearAllActions() StartCutSceneMode() StartCutSceneEx("cyHobTl1",TRUE)~ EXIT
   IF ~OR(2) AreaCheck("AR5003") AreaCheck("AR5501")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",3) ClearAllActions() StartCutSceneMode() StartCutSceneEx("cyHobTl1",TRUE)~ EXIT
+  IF ~AreaCheck("ID9101")~ THEN DO ~SetGlobal("ID#Master_Quest","GLOBAL",1) SetGlobal("ID#Master_Quest_Location","GLOBAL",4) ClearAllActions() StartCutSceneMode() StartCutSceneEx("cyHobTl1",TRUE)~ EXIT
 END
 
 IF WEIGHT #0 ~NumTimesTalkedToGT(0) Global("ID#Master_Quest","GLOBAL",0)~ THEN BEGIN 12

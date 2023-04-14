@@ -1,7 +1,17 @@
 // Installing and updating items
 
+// These items should always be installed
+ACTION_DEFINE_ASSOCIATIVE_ARRAY item_override BEGIN
+  ~ringlur~   => 1  // Tarnished Ring
+END
+
 ACTION_BASH_FOR ~%MOD_FOLDER%/itm~ ~^.+\.itm$~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+  OUTER_TEXT_SPRINT resref ~%BASH_FOR_RES%~
+  ACTION_TO_LOWER ~resref~
+  OUTER_SET can_install = (VARIABLE_IS_SET $item_override(~%resref%~) && $item_override(~%resref%~) != 0) ||
+                          (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~)
+
+  ACTION_IF (can_install) BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
       // updating strrefs
       PATCH_FOR_EACH ofs IN ~0x08~ ~0x0c~ ~0x50~ ~0x54~ BEGIN

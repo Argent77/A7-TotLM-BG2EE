@@ -30,5 +30,26 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/sto~ ~^.+\.sto$~ BEGIN
           WRITE_ASCIIE ofs ~%new_resref%~ (8)
         END
       END
+  END ELSE BEGIN
+    // Adding extra items to existing stores
+    ACTION_MATCH ~%BASH_FOR_RES%~ WITH
+      ~hobart~ BEGIN
+        COPY_EXISTING ~%BASH_FOR_FILE%~ ~override~
+          ADD_STORE_ITEM ~POTN21~ LAST #1 #0 #0 ~IDENTIFIED~ #2   // Potion of Clarity
+          ADD_STORE_ITEM ~POTN27~ LAST #1 #0 #0 ~IDENTIFIED~ #2   // Potion of Fire Breath
+          ADD_STORE_ITEM ~SCRL06~ LAST #1 #0 #0 ~IDENTIFIED~ #2   // Protection From Fire
+          ADD_STORE_ITEM ~SCRL04~ LAST #1 #0 #0 ~IDENTIFIED~ #2   // Protection From Cold
+          ADD_STORE_ITEM ~SCRLPET~ LAST #1 #0 #0 ~IDENTIFIED~ #2  // Stone to Flesh Scroll
+          ADD_STORE_ITEM ~SCRL09~ LAST #1 #0 #0 ~IDENTIFIED~ #1   // Protection From Undead
+          ADD_STORE_ITEM ~RESTORE~ LAST #1 #0 #0 ~IDENTIFIED~ #3  // Restoration
+        BUT_ONLY
+      END
+      ~bagh02~ BEGIN
+        COPY_EXISTING ~%BASH_FOR_FILE%~ ~override~
+          ADD_STORE_ITEM ~POTN21~ LAST #1 #0 #0 ~IDENTIFIED~ #2   // Potion of Clarity
+        BUT_ONLY
+      END
+      DEFAULT
+    END
   END
 END

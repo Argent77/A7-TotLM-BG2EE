@@ -46,8 +46,44 @@ BEGIN
   END
 END
 
+
+// These creatures should always be installed
+ACTION_DEFINE_ASSOCIATIVE_ARRAY creature_override BEGIN
+  ~batcat~    => 1  // Bat
+  ~ckspgrd~   => 1  // Spectral Guard
+  ~ckspgrdh~  => 1  // Spectral Guard
+  ~crypthng~  => 1  // Crypt Thing
+  ~erris~     => 1  // Shade of Sir Erris
+  ~geddian~   => 1  // Shade of Sir Geddian
+  ~ghost~     => 1  // Ghost
+  ~giles~     => 1  // Shade of Sir Giles
+  ~hobart2~   => 1  // Hobart Stubbletoes
+  ~mercthfd~  => 1  // Dabath
+  ~rndcryp~   => 1  // Crypt Thing
+  ~tradran~   => 1  // Spectral Hero
+  ~trcriek~   => 1  // Spectral Hero
+  ~trharld~   => 1  // Spectral Hero
+  ~trhobrt~   => 1  // Spectral Hero
+  ~trshelh~   => 1  // Spectral Hero
+  ~trsph1~    => 1  // Spectral Hero
+  ~trsph2~    => 1  // Spectral Hero
+  ~trsph3~    => 1  // Spectral Hero
+  ~trsph4~    => 1  // Spectral Hero
+  ~trsph5~    => 1  // Spectral Hero
+  ~trsph6~    => 1  // Spectral Hero
+  ~trsph7~    => 1  // Spectral Hero
+  ~trsph8~    => 1  // Spectral Hero
+  ~trsph9~    => 1  // Spectral Hero
+  ~zierkki~   => 1  // Shade of Sir Zierkki
+END
+
 ACTION_BASH_FOR ~%MOD_FOLDER%/cre~ ~^.+\.cre$~ BEGIN
-  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~) BEGIN
+  OUTER_TEXT_SPRINT resref ~%BASH_FOR_RES%~
+  ACTION_TO_LOWER ~resref~
+  OUTER_SET can_install = (VARIABLE_IS_SET $creature_override(~%resref%~) && $creature_override(~%resref%~) != 0) ||
+                          (NOT FILE_EXISTS_IN_GAME ~%BASH_FOR_FILE%~)
+
+  ACTION_IF (can_install) BEGIN
     COPY ~%BASH_FOR_FILESPEC%~ ~override~
       LPF FIX_CRE END
   END

@@ -203,6 +203,12 @@ END
   OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("BD4300")~
 END
 
+ACTION_IF (FILE_EXISTS_IN_GAME ~id9101.are~) BEGIN
+  // Lonelywood (IWD-in-EET)
+  OUTER_SET hobart_checks += 1
+  OUTER_TEXT_SPRINT hobart_trigger ~%hobart_trigger% AreaCheck("ID9101")~
+END
+
 // Hobart isn't needed anymore after the quest is completed
 ACTION_IF (hobart_checks > 1) BEGIN
   OUTER_TEXT_SPRINT hobart_trigger ~OR(%hobart_checks%) %hobart_trigger%~
