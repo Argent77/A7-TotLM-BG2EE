@@ -58,8 +58,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY creature_override BEGIN
   ~ghost~     => 1  // Ghost
   ~giles~     => 1  // Shade of Sir Giles
   ~hobart2~   => 1  // Hobart Stubbletoes
+  ~jklsum~    => 1  // Summoner
   ~mercthfd~  => 1  // Dabath
+  ~rakshinv~  => 1  // Rakshasa
   ~rndcryp~   => 1  // Crypt Thing
+  ~shmblr~    => 1  // Shambler
   ~tradran~   => 1  // Spectral Hero
   ~trcriek~   => 1  // Spectral Hero
   ~trharld~   => 1  // Spectral Hero
