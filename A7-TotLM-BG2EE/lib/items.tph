@@ -119,3 +119,32 @@ END
 ACTION_FOR_EACH resref IN ~CLOAKSC~ ~URING5A~ ~USLTR4A~ ~USLTR5A~ BEGIN
   APPEND ~itemexcl.2da~ ~%resref%   1~ UNLESS ~\b%resref%\b~
 END
+
+
+// Finalizing teleportation ring
+<<<<<<<< .../inlined/totlm-bg2ee/ringlur.baf
+IF
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    StartCutSceneEx("kereturn",TRUE)
+END
+>>>>>>>>
+
+LAF EXTEND_CUT250
+  STR_VAR baf_file = ~.../inlined/totlm-bg2ee/ringlur.baf~
+  RET value
+END
+
+COPY_EXISTING ~ringlur.itm~ ~override~
+  LPF ADD_ITEM_EFFECT
+    INT_VAR
+      insert_point = 0  // add as first effect
+      opcode = 265      // Modify global variable
+      target = 1        // Self
+      parameter1 = value
+      timing = 9        // Instant/Permanent
+    STR_VAR
+      resource = "CUT250" // Variable name
+  END
+BUT_ONLY

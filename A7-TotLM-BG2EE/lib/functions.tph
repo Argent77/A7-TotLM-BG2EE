@@ -96,3 +96,163 @@ BEGIN
     DEFAULT
   END
 END
+
+
+// This function expands opcode 298 functionality, so that it can be used for customized cutscene content.
+//
+// STR_VAR script       (optional) Script content as string that should be added to the cutscene script. 
+// STR_VAR baf_file     (optional) Script source file path with cutscene content.
+// STR_VAR bcs_resource (optional) Name of BCS game resource with cutscene content.
+// RET value            Non-zero value used for Global("CUT250","GLOBAL") to identify the specified cutscene script block(s).
+//                      This value can be used for further preparations (e.g. to initialize opcode 265 in associated SPL, ITM or EFF resources).
+//                      Zero if script content could not be added to the cutscene.
+//
+// Note: The Global("CUT250","GLOBAL") check is automatically added to the top of the trigger section of all specified script blocks.
+//       You can leave it empty if the Global("CUT250","GLOBAL") check is the only required trigger for the script block.
+DEFINE_ACTION_FUNCTION EXTEND_CUT250
+STR_VAR
+  script       = ~~
+  baf_file     = ~~
+  bcs_resource = ~~
+RET
+  value
+BEGIN
+  OUTER_SET value = 0
+
+  ACTION_IF (GAME_IS ~bgee bg2ee eet iwdee pstee~) BEGIN
+    LAF __PREPARE_CUT250 END
+
+    // adding script source file content to script string (if specified)
+    ACTION_IF (NOT ~%baf_file%~ STR_EQ ~~) BEGIN
+      COPY - ~%baf_file%~ ~%baf_file%~
+        READ_ASCII 0 content (BUFFER_LENGTH)
+        SPRINT script ~%script%%LNL%%content%~
+      BUT_ONLY
+    END
+
+    // adding bcs resource content to script string (if specified)
+    ACTION_IF (NOT ~%bcs_resource%~ STR_EQ ~~) BEGIN
+      COPY_EXISTING ~%bcs_resource%~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          READ_ASCII 0 content (BUFFER_LENGTH)
+          SPRINT script ~%script%%LNL%%content%~
+        END
+      BUT_ONLY
+    END
+
+    COPY_EXISTING ~cut250b.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        // determining next "CUT250" value
+        SET cur_value = "-1"
+        REPLACE_EVALUATE ~Global("CUT250","GLOBAL",\([-0-9]+\))~ BEGIN
+          PATCH_IF (IS_AN_INT ~MATCH1~ && MATCH1 > cur_value) BEGIN
+            SET cur_value = MATCH1
+          END
+        END ~%MATCH0%~
+
+        // extending script
+        PATCH_IF (cur_value >= 0) BEGIN
+          SET value = cur_value + 1
+
+          // adding Global() condition
+          INNER_PATCH_SAVE script ~%script%~ BEGIN
+            REPLACE_TEXTUALLY CASE_SENSITIVE ~\bIF\b~ ~IF%LNL%Global("CUT250","GLOBAL",%value%)%LNL%~
+          END
+
+          SET len = STRING_LENGTH ~%script%~
+          SET ofs = BUFFER_LENGTH
+          INSERT_BYTES ofs len
+          WRITE_ASCIIE ofs ~%script%~ (len)
+        END
+      END
+    BUT_ONLY
+  END
+END
+
+
+// Customized cut250a script
+<<<<<<<< .../inlined/EXTEND_CUT250/cut250a.baf
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    StartCutSceneEx("CUT250B",TRUE)
+END
+>>>>>>>>
+
+// Initial cut250b script
+<<<<<<<< .../inlined/EXTEND_CUT250/cut250b.baf
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("CUT250","GLOBAL",0)
+END
+>>>>>>>>
+
+// Placeholder script for original cutscene script (non-BG2)
+<<<<<<<< .../inlined/EXTEND_CUT250/cut250b-placeholder.baf
+IF
+  Global("CUT250","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    EndCutSceneMode()
+END
+>>>>>>>>
+
+// Used internally. Unhardcodes cutscene script CUT250A.BCS.
+DEFINE_ACTION_FUNCTION __PREPARE_CUT250
+BEGIN
+  // Initializing customized cutscene script file
+  ACTION_IF (NOT FILE_EXISTS_IN_GAME ~cut250b.bcs~) BEGIN
+    COMPILE ~.../inlined/EXTEND_CUT250/cut250b.baf~
+
+    // preparing original cutscene content
+    OUTER_SPRINT cut250a ~~
+    ACTION_IF (NOT FILE_EXISTS_IN_GAME ~cut250a.bcs~) BEGIN
+      // CUT250A.BCS may not exist in BGEE, IWDEE or PSTEE
+      COMPILE ~.../inlined/EXTEND_CUT250/cut250a.baf~
+    END ELSE BEGIN
+      // transfering and patching original script content to string variable for later
+      OUTER_SET cut250a_prepared = 0
+      COPY_EXISTING ~cut250a.bcs~ ~override~
+        DECOMPILE_AND_PATCH BEGIN
+          SET cut250a_prepared = INDEX_BUFFER(~StartCutSceneEx(~) >= 0
+          PATCH_IF (NOT cut250a_prepared) BEGIN
+            READ_ASCII 0 cut250a (BUFFER_LENGTH)
+            DELETE_BYTES 0 BUFFER_LENGTH
+
+            INNER_PATCH_SAVE cut250a ~%cut250a%~ BEGIN
+              REPLACE_TEXTUALLY ~\bTrue()$~ ~Global("CUT250","GLOBAL",0)~
+            END
+          END
+        END
+      BUT_ONLY
+
+      // updating original script content
+      ACTION_IF (NOT cut250a_prepared) BEGIN
+        COMPILE ~.../inlined/EXTEND_CUT250/cut250a.baf~
+      END
+    END
+
+    // creating new content from scratch (should only apply to BGEE, IWDEE or PSTEE)
+    ACTION_IF (~%cut250a%~ STR_EQ ~~) BEGIN
+      COPY - ~.../inlined/EXTEND_CUT250/cut250b-placeholder.baf~ ~.../inlined/EXTEND_CUT250/cut250b-placeholder.baf~
+        READ_ASCII 0 cut250a (BUFFER_LENGTH)
+      BUT_ONLY
+    END
+
+    // extending customized cutscene script by original content
+    COPY_EXISTING ~cut250b.bcs~ ~override~
+      DECOMPILE_AND_PATCH BEGIN
+        SET len = STRING_LENGTH ~%cut250a%~
+        SET ofs = BUFFER_LENGTH
+        INSERT_BYTES ofs len
+        WRITE_ASCIIE ofs ~%cut250a%~ (len)
+      END
+    BUT_ONLY
+  END
+END

@@ -1,6 +1,6 @@
 // Scripts and dialogs
 
-COMPILE ~%MOD_FOLDER%/bcs~
+COMPILE EVAL ~%MOD_FOLDER%/bcs~
 
 // Compiling game-specific scripts
 ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
