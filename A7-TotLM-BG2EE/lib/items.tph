@@ -127,7 +127,7 @@ IF
 THEN
   RESPONSE #100
     CutSceneId(Player1)
-    StartCutSceneEx("kereturn",TRUE)
+    StartCutSceneEx("id#retrn",TRUE)
 END
 >>>>>>>>
 
