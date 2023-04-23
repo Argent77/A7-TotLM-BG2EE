@@ -30,7 +30,7 @@
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a></li>
-        <li>Version: 3.0</li>
+        <li>Version: 3.1</li>
       </ul>
       <hr />
       <nav>
@@ -68,6 +68,7 @@
         <p>Sowohl GOG als auch Steam installieren die „Belagerung von Drachenspeer”-Erweiterung in einem Format, welches nicht ohne Weiteres modifiziert werden kann. Ihr müsst zuerst eine Mod namens <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> in Eurem SoD-Spiel installieren, bevor diese oder weitere WeiDU-basierte Mods installiert werden können.</p>
         <hr class="spacer" />
         <h3>Kompatibilität und Modreihenfolge</h3>
+        <p><strong>Tipuns IWD-in-EET</strong> ist größtenteil kompatibel mit dieser Mod. Allerdings werden nicht alle Monster- und Skriptverbesserungen verfügbar sein. IWD-in-EET muss vor dieser Mod installiert werden.</p>
         <p>Die Komponente <em>"Dispel Magic Fix"</em> von <strong>Spell Revisions</strong> verändert das Sterbeverhalten von Trollen und Wiedergängern und macht sie praktisch unzerstörbar. Um das Problem zu umgehen, sollte die Komponente <em>vor</em> dieser Mod installiert werden.</p>
         <p>Die Installation von Zaubern aus Icewind Dale wird übersprungen, falls die folgenden Mods installiert sind:</p>
         <ul>
@@ -93,6 +94,33 @@
           <li>
             <p><strong>Waffen und Ausrüstung anpassen</strong> <em>(benötigt die Hauptkomponente; nicht für SoD verfügbar)</em></p>
             <p>Viele Gegenstände aus Icewind Dale sind überaus mächtig. Sie würden den weiteren Verlauf des Spiels sehr vereinfachen und dadurch den Spielspaß mindern. Diese Komponente ersetzt diese Gegenstände durch weniger starke Varianten aus BG2.</p>
+            <details>
+              <summary title="Anklicken um die Beschreibung ein- oder auszublenden"><strong>Liste aller Anpassungen</strong></summary>
+              <ul>
+                <li>Axt des Minotaurenfürsten: Ersetzt durch Streitaxt +2</li>
+                <li>Handschuhe der Waffenkunst: Ersetzt durch den Zweiten Schwertarm des Xarrnous</li>
+                <li>Eislandperlen-Armschienen: Ersetzt durch Abwehrarmschützer RK 4 (SoD: Panzerung bis zum Tod)</li>
+                <li>Robe der bösen Erzmagier: Ersetzt durch Schurkenrobe</li>
+                <li>Robe der Schillernden Farben: Wurde komplett entfernt</li>
+                <li>Der Schädelflegel: Ersetzt durch Flegel +2</li>
+                <li>Chautogs Denkhelm: Ersetzt durch Intelligenzhelm (SoD: Helm des Edlen +1)</li>
+                <li>Rüstung des Schwarzen Schwans: Ersetzt durch Plattenpanzer +1</li>
+                <li>Kurzbogen des Überschwangs: Ersetzt durch Bogen der Tuigan +1 (SoD: Beschützer der Dryaden +2)</li>
+                <li>Krummsäbel +3, Frostbrand: Ersetzt durch Krummsäbel +1</li>
+                <li>Bastardschwert +3: Einäscherungssofen: Ersetzt durch Taragarth der Wundbrand +1 (SoD: Bastardschwert +2)</li>
+                <li>Feuerflegel +3: Ersetzt durch Schädelschmetterer +3 (SoD: Flegel +2)</li>
+                <li>Schockflegel +4: Ersetzt durch Flegel +3 (SoD: Flegel +2)</li>
+                <li>Langschwert der Handlung +4: Ersetzt durch Ras die tanzende Klinge +2 (SoD: Langschwert +2)</li>
+                <li>Morgenstern +4: Verteidiger: Ersetzt durch Morgenstern +3 (SoD: Der Drescher +2)</li>
+                <li>Ring des größeren Widerstands: Ersetzt durch Prinzenring +1</li>
+                <li>Großer Schild +3: Ersetzt durch Langschild +1</li>
+                <li>Beschlagenes Lederwams des Widerstands +3: Ersetzt durch Beschlagenes Lederwams +2</li>
+                <li>Beschlagenes Lederwams +4: Schattenrüstung: Ersetzt durch Lederrüstung +3</li>
+                <li>Traumklinge des Toten Gottes: Ersetzt durch Adjatha der Trinker +2 (SoD: Brennende Erde +1)</li>
+                <li>Höllenbann: Ersetzt durch Flamme des Nordens +2 (SoD: Schwert des Untergangs +2)</li>
+                <li>Himmelswind: Ersetzt durch Rashads Klaue +2</li>
+              </ul>
+            </details>
             <p><strong>Hinweis:</strong> Aus Gründen der Spielbalance wird in BG1:SoD diese Komponente zusammen mit der Hauptkomponente <em>"Die Herausforderungen des Meisters der Verlockung für Baldur's Gate"</em> installiert.</p>
           </li>
           <li>
@@ -141,13 +169,17 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
-        <!--
         <h6>Version 3.1</h6>
         <ul>
-          <li>Added complete Polish translation (thanks Cahir).</li>
+          <li>Added official support for Tipun's IWD-in-EET (see compatibility section of the readme for more details).</li>
+          <li>Subcomponent "Rebalance weapons and equipment": Added more details about rebalanced items to the readme.</li>
+          <li>Fixed item stacking in Bag of Holding from the Banite adventurers.</li>
+          <li>Fixed return location when the quest is started in Saradush.</li>
+          <li>Fixed mislabeled spell names in SoD.</li>
+          <li>Compatibility improvements with Iwdification.</li>
+          <li>Updated Italian translation (thanks Aedan).</li>
         </ul>
         <hr class="spacer" />
-        -->
         <h6>Version 3.0</h6>
         <ul>
           <li>Brought several creatures closer to their pen &amp; paper descriptions:
