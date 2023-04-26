@@ -1,3 +1,12 @@
+// Reactivate Pocket Plane ability
+IF
+  !Global("InToB","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReallyForceSpellRES("ID#PPYES",Myself)
+END
+
 // Return to SoD - Coalition Camp
 IF
   Global("ID#LURE","GLOBAL",1)

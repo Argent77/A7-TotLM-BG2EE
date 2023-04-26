@@ -1,3 +1,12 @@
+// Deactivate Pocket Plane ability
+IF
+  !Global("InToB","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ReallyForceSpellRES("ID#PPNO",Myself)
+END
+
 IF
   True()
 THEN
@@ -23,4 +32,3 @@ THEN
     LeaveAreaLUA("ID9700","LOAD9700",[1446.1088],8)
     StartCutSceneEx("cyhobtl2",TRUE)
 END
-
