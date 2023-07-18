@@ -32,7 +32,23 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/bam~ ~^.+\.BAM$~ BEGIN
 END
 
 COPY ~%MOD_FOLDER%/bmp~ ~override~
-COPY ~%MOD_FOLDER%/ini~ ~override~
+
+ACTION_BASH_FOR ~%MOD_FOLDER%/ini~ ~^.+\.ini$~ BEGIN
+  COPY ~%BASH_FOR_FILESPEC%~ ~override~
+END
+
+// Adding new creature animations to ANIMATE.IDS
+COPY ~%MOD_FOLDER%/ini/animate-iwd.ids~ ~%MOD_FOLDER%/ini/animate-iwd.ids~
+  CLEAR_ARRAY ~ini_items~
+  READ_2DA_ENTRIES_NOW ~ini_items~ 2
+  FOR (row = 0; row < ini_items; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER ~ini_items~ row 0 id
+    READ_2DA_ENTRY_FORMER ~ini_items~ row 1 res
+    INNER_ACTION BEGIN
+      APPEND ~animate.ids~ ~%id% %res%~ UNLESS ~\b%res%\b~
+    END
+  END
+BUT_ONLY
 
 
 // Installing tilesets
