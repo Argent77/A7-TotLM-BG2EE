@@ -351,9 +351,7 @@ Poids : 5~
 
 CARACTERISTIQUES :
 
-Poids : 5
-Non-utilisable par :
-~
+Poids : 5~
 @7360 = ~Anneau d'Action Libre : Le Cadeau d'Edventar
 Cet anneau fut donné au naufrageur et chasseur des récifs, connu seulement sous le nom d'Edventar, par un groupe d'elfes aquatiques qui étaient depuis longtemps ses amis. En effet, en mettant en fuite la "Reine des Pirates", Yenandra de Dambrath, Edventar a contribué à leur survie, bien que Yenandra continue d'être redoutée partout où la terre rencontre la mer.
 
@@ -2443,6 +2441,7 @@ Et jamais l'homme, me posséder ne peut.~
 @40248 = ~Vos compétences de pistage ne révèlent que peu de choses sur cet endroit. Néanmoins, vous discernez des traces d'une étrange substance visqueuse qui semble couvrir les zones les plus sombres du plafond.~
 @40249 = ~Les traces les plus communes dans cet endroit semblent appartenir à de grandes créatures canines. À quelques endroits, elles semblent se fondre dans des empreintes de pas humaines. Des traces de toiles gigantesques et de nombreux déchets vous font penser que des araignées de très grande taille se trouvent dans la zone nord-est des cavernes. Également, des monceaux de végétation en décomposition parsèment les sols au nord de la zone. Il y a enfin une faible odeur de soufre dans l'air.~
 @40250 = ~Les traces les plus communes dans cet endroit semblent appartenir à de grandes créatures canines. À quelques endroits, elles semblent se fondre dans des empreintes de pas humaines. Des traces de toiles gigantesques et de nombreux déchets vous font penser que des araignées de très grande taille se trouvent dans la zone nord des cavernes. De temps en temps, vous trouvez une grande plume noire qui a sans doute été abandonnée par une sorte de bête ailée. À cela s'ajoute une étrange odeur dans l'air, qui semble à la fois humaine et animale. Elle pourrait provenir d'une sorte d'hybride.~
+@40255 = ~Décharge d'électricité statique~
 @40294 = ~Également appelée tourmaline incolore, l'étoile d'eau est rare dans les royaumes.
 
 PARAMÈTRES :

@@ -72,7 +72,7 @@ ACTION_BASH_FOR ~%MOD_FOLDER%/pro~ ~^.+\.pro$~ BEGIN
   END ELSE BEGIN
     OUTER_TEXT_SPRINT res ~%BASH_FOR_RES%~
     ACTION_TO_UPPER ~res~
-    OUTER_SET $projectl_old(~res~) = pro_id
+    OUTER_SET $projectl_old(~%res%~) = pro_id
   END
   ACTION_IF (pro_id >= 0) BEGIN
     OUTER_TEXT_SPRINT pro_ref ~%BASH_FOR_RES%~

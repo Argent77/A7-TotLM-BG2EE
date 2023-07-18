@@ -803,8 +803,7 @@ Gewicht: 3
 Initiativefaktor: 6
 Mindeststärke: 12
 Fertigkeit: Langbogen
-Typ:  2-händig
-~
+Typ:  2-händig~
 @17683 = ~Diese Kugel enthält magische Wellen, die die Kugel etwas leichter und ihre Flugbahn beim Einsatz gegen einen Gegner etwas ruhiger werden lassen.
 
 STATISTIK:
@@ -1646,8 +1645,7 @@ Gewicht: 2
 Initiativefaktor: 4
 Mindeststärke: 5
 Waffenfertigkeit: Kampfstab
-Waffentyp: Zweihändig
-~
+Waffentyp: Zweihändig~
 @27370 = ~Eislandperlen-Armschienen~
 @27371 = ~Man sagt, dass diese Armschienen von einem Magier während seines Aufenthalts am Grat der Welt angefertigt wurden. Am Ufer des Treibeismeeres hatte sich der Erschaffer dieser Armschienen niedergelassen. Es handelte sich um den ziemlich sturen Bannwirker Prashnak. Wie man sagt, hatte Prashnak enorme Probleme dabei, sich gegen eine Trollplage in der Gegend zu verteidigen. Offensichtlich waren die Trolle daran interessiert, seine von ihm selbst aus dem Eis gegrabene Behausung, die strategisch sehr günstig lag, mit Beschlag zu belegen. Prashnak setzte Säurestürme ein, um die Trolle in Schach zu halten. Den jungen Magier ermüdeten jedoch die beständigen Angriffe, und die Trolle wurden im Verlauf der Zeit immer wagemutiger.
 Er verwendete mehrere Monate darauf, um die fortschrittliche Anwendung von Magie der Verdorrung, elementarer Beschwörung und von Einfrieren auf magischem Weg zu studieren. Nach dieser Vorbereitung wagte er sich an sein Experiment. Er beschwor einen Wasserlementar, verdampfte geschickt gewählte Teile des Wesens und fror den armen Elementar schlussendlich ein. Nachdem er dies mehrmals wiederholt hatte, war die Gegend mit gar grausig anzusehenden Eisskulpturen überzogen. Die Trolle fürchteten sich aufgrund ihres einfachen Gemüts so sehr vor den Skulpturen, dass sie aus der Gegend flohen. Da sein Experiment ein so durchschlagender Erfolg gewesen war, beschloss der überschwängliche junge Magier, seine fürchterlichen Studien bis zum heutigen Tag fortzusetzen. Offenbar fielen die Armschienen aber irgendeinem Dieb in die Hände, weil sie von dem jungen Magier nunmehr bereits seit mehreren Jahren vermisst werden.
@@ -2090,12 +2088,11 @@ Doch kein Mensch wird mich halten so bald.~
 @40244 = ~Mehrere Türen in dieser Gegend wirken, als seien sie erst vor kurzem benutzt worden, jedoch lassen sich keine Fußspuren finden, die anzeigen, dass sie tatsächlich durchschritten wurden. Es ist fast so, als seien die Türen von einer Art äußeren Kraft manipuliert worden.~
 @40245 = ~Dieser Bereich riecht nach Staub und Verfall. Möglicherweise war hier einmal eine Art Gruft oder etwas in der Art. Hin und wieder entdeckt ihr ein paar vereinzelte Knochen und einige zerrissene Lumpen auf dem Boden.~
 @40246 = ~Ein strenger Geruch nach Innereien und Geschlachtetem legt nahe, dass in dieser Gegend entweder Orogs oder Minotauren oder sogar beide ihr Unwesen treiben. Kratzspuren an einigen Wänden belegen zudem das Vorhandensein von Erdkolossen und Trollen. Darüber hinaus nehmt ihr auch einen schwachen Pilzgeruch wahr.~
-@40247 = ~Ein strenger Geruch nach Innereien und Geschlachtetem legt nahe, dass in dieser Gegend entweder Orogs oder Minotauren oder sogar beide ihr Unwesen treiben. Kratzspuren an einigen Wänden belegen zudem das Vorhandensein von Erdkolossen und Trollen. Gelegentlich findet ihr auch den Kot von Lindwürmern oder ähnlichen Kreaturen.
-~
+@40247 = ~Ein strenger Geruch nach Innereien und Geschlachtetem legt nahe, dass in dieser Gegend entweder Orogs oder Minotauren oder sogar beide ihr Unwesen treiben. Kratzspuren an einigen Wänden belegen zudem das Vorhandensein von Erdkolossen und Trollen. Gelegentlich findet ihr auch den Kot von Lindwürmern oder ähnlichen Kreaturen.~
 @40248 = ~Eure Fähigkeiten des Spurenlesens verraten Euch nur sehr wenig über diese Gegend. Ihr könnt jedoch vage Spuren einer merkwürdigen, schleimigen Substanz ausmachen, die offenbar die dunklen Flecken an der Decke überzieht.~
 @40249 = ~Die meisten Spuren in diesem Areal scheinen von großen, hundeartigen Gestaltwandlern zu stammen. An mehreren Stellen scheinen sie in menschliche Fußabdrücke überzugehen. Spuren von außergewöhnlich großen Netzen und eine Menge Abfall führen Euch zu dem Schluss, dass es unnatürlich große Spinnen in den nordöstlichen Teilen der Höhlen geben muss. Darüber hinaus findet Ihr große Haufen verrotteter Vegetation in allen nördlichen Teilen des Gebiets verstreut. Es liegt auch ein schwacher Geruch von Schwefel in der Luft.~
-@40250 = ~Die meisten Spuren in diesem Areal scheinen von großen, hundeartigen Gestaltwandlern zu stammen. An mehreren Stellen scheinen sie in menschliche Fußabdrücke überzugehen. Spuren von außergewöhnlich großen Netzen und eine Menge Abfall führen Euch zu dem Schluss, dass es unnatürlich große Spinnen in den nördlichen Bereichen der Höhlen geben muss. Darüber hinaus findet Ihr große, schwarze Federn, die scheinbar von einer großen geflügelten Kreatur stammen. Zusätzlich ist die Luft von einem Geruch nach organischen Abfällen erfüllt. Es scheinen sowohl menschliche, als auch tierische Abfälle zu sein. Es handelt sich wohl um eine Art Hybrid-Monster.
-~
+@40250 = ~Die meisten Spuren in diesem Areal scheinen von großen, hundeartigen Gestaltwandlern zu stammen. An mehreren Stellen scheinen sie in menschliche Fußabdrücke überzugehen. Spuren von außergewöhnlich großen Netzen und eine Menge Abfall führen Euch zu dem Schluss, dass es unnatürlich große Spinnen in den nördlichen Bereichen der Höhlen geben muss. Darüber hinaus findet Ihr große, schwarze Federn, die scheinbar von einer großen geflügelten Kreatur stammen. Zusätzlich ist die Luft von einem Geruch nach organischen Abfällen erfüllt. Es scheinen sowohl menschliche, als auch tierische Abfälle zu sein. Es handelt sich wohl um eine Art Hybrid-Monster.~
+@40255 = ~Entladung von statischer Elektrizität~
 @40294 = ~Wasserstern wird auch als Achroit oder farbloser Turmalin bezeichnet und ist in den Reichen selten.
 
 EIGENSCHAFTEN:
