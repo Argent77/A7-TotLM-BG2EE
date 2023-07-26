@@ -137,3 +137,15 @@ EIGENSCHAFTEN:
 Gewicht: 0~
 @91110 = ~Ah, danke, dass Ihr mich von diesem Fluch erlöst habt. Allerdings spüre ich bereits den Druck der Jahrhunderte, der mich von diesem Ort fortzieht. Jetzt kann ich endlich in Frieden ruhen.~
 @91111 = ~Wa–?! Wo bin ich? Was ist passiert?  Uhm, zu schwach... kann mich nicht bewegen.~
+// South Tower (Wyverns)
+@91112 = ~Ihr hört, wie sich in der Ferne in nordöstlicher Richtung eine Tür öffnet.~
+@91113 = ~Ihr hört, wie sich in der Ferne in nordöstlicher Richtung eine Tür schließt.~
+// West Tower (Harald)
+@91114 = ~Ihr hört, wie sich in der Ferne in südöstlicher Richtung eine Tür öffnet.~
+@91115 = ~Ihr hört, wie sich in der Ferne in südöstlicher Richtung eine Tür schließt.~
+// North Tower (Harpy Queen)
+@91116 = ~Ihr hört, wie sich in der Ferne in südwestlicher Richtung eine Tür öffnet.~
+@91117 = ~Ihr hört, wie sich in der Ferne in südwestlicher Richtung eine Tür schließt.~
+// Eeast Tower (Banites)
+@91118 = ~Ihr hört, wie sich in der Ferne in nordwestlicher Richtung eine Tür öffnet.~
+@91119 = ~Ihr hört, wie sich in der Ferne in nordwestlicher Richtung eine Tür schließt.~

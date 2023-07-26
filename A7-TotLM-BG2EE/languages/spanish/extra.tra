@@ -16,3 +16,15 @@ Nosotros logramos derrotar el Funambulista en una gran batalla y le dimos descan
 @91003 = ~No... No lo soporto más. ¡Concédanme muerte y paz!~
 
 @91111 = ~¿Qué? ¿Dónde estoy? ¿Qué ha ocurrido?~
+// South Tower (Wyverns)
+@91112 = ~Oís una puerta abrirse en la distancia al noreste.~
+@91113 = ~Oís una puerta cerrarse en la distancia al noreste.~
+// West Tower (Harald)
+@91114 = ~Oís una puerta abrirse en la distancia al sudeste.~
+@91115 = ~Oís una puerta cerrarse en la distancia al sudeste.~
+// North Tower (Harpy Queen)
+@91116 = ~Oís una puerta abrirse en la distancia al suroeste.~
+@91117 = ~Oís una puerta cerrarse en la distancia al suroeste.~
+// Eeast Tower (Banites)
+@91118 = ~Oís una puerta abrirse en la distancia al noroeste.~
+@91119 = ~Oís una puerta cerrarse en la distancia al noroeste.~

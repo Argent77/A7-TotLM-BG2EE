@@ -151,3 +151,15 @@ PARAMÈTRES :
 Poids : 0~
 @91110 = ~Ah ! Je vous remercie de m'avoir délivré de cette malédiction. Mais je peux sentir le poids des siècles, m'éloignant de ce lieu. Je peux enfin reposer en paix.~
 @91111 = ~Quoi ?! Où suis-je ? Que s'est-il passé ?  Arg... Je suis si faible... Je ne peux pas bouger.~
+// South Tower (Wyverns)
+@91112 = ~Vous entendez une porte s'ouvrir au loin, au nord-est.~
+@91113 = ~Vous entendez une porte se fermer au loin, au nord-est.~
+// West Tower (Harald)
+@91114 = ~Vous entendez une porte s'ouvrir au loin, au sud-est.~
+@91115 = ~Vous entendez une porte se fermer au loin, au sud-est.~
+// North Tower (Harpy Queen)
+@91116 = ~Vous entendez une porte s'ouvrir au loin, au sud-ouest.~
+@91117 = ~Vous entendez une porte se fermer au loin, au sud-ouest.~
+// Eeast Tower (Banites)
+@91118 = ~Vous entendez une porte s'ouvrir au loin, au nord-ouest.~
+@91119 = ~Vous entendez une porte se fermer au loin, au nord-ouest.~

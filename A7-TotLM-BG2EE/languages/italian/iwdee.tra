@@ -2596,6 +2596,6 @@ Alternativamente può anche essere usata come incantesimo arcano di livello 3 Bl
 @40373 = ~Pietra Intagliata~
 @40374 = ~Scrigno Magico~
 @40660 = ~Construct immunity item - do not translate~
-@40717 = ~Senti una porta aprirsi in lontananza.~
-@40718 = ~Senti una porta chiudersi in lontananza.~
+// @40717 = ~Senti una porta aprirsi in lontananza.~
+// @40718 = ~Senti una porta chiudersi in lontananza.~
 @40880 = ~Sciamano~

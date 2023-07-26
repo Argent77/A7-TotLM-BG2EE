@@ -2611,6 +2611,6 @@ Puede ser usado como el hechizo de tercer nivel de mago Inmovilizar persona dura
 @40373 = ~Piedra incrustada~
 @40374 = ~Cofre mágico~
 @40660 = ~Construct immunity item - do not translate~
-@40717 = ~Oís una puerta abrirse en la distancia.~
-@40718 = ~Oís una puerta cerrarse en la distancia.~
+// @40717 = ~Oís una puerta abrirse en la distancia.~
+// @40718 = ~Oís una puerta cerrarse en la distancia.~
 @40880 = ~Shaman~

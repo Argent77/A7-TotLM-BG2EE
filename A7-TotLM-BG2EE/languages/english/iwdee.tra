@@ -2633,6 +2633,6 @@ It can also be used as the 3rd-level wizard spell Hold Person, rendering humanoi
 @40373 = ~Inlaid Stone~
 @40374 = ~Magical Chest~
 @40660 = ~Construct immunity item - do not translate~
-@40717 = ~You hear a door opening in the distance.~
-@40718 = ~You hear a door closing in the distance.~
+// @40717 = ~You hear a door opening in the distance.~
+// @40718 = ~You hear a door closing in the distance.~
 @40880 = ~Shaman~

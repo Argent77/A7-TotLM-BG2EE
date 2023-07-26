@@ -137,3 +137,15 @@ STATISTICS:
 Weight: 0~
 @91110 = ~Ahh! Thank you for releasing me from that curse. But I already feel the weight of the centuries, pulling me away from this place. Now I can finally rest in peace.~
 @91111 = ~Wha—?! Where am I? What has happened?  Ugh, too weak... can't move.~
+// South Tower (Wyverns)
+@91112 = ~You hear a door opening in the distance to the northeast.~
+@91113 = ~You hear a door closing in the distance to the northeast.~
+// West Tower (Harald)
+@91114 = ~You hear a door opening in the distance to the southeast.~
+@91115 = ~You hear a door closing in the distance to the southeast.~
+// North Tower (Harpy Queen)
+@91116 = ~You hear a door opening in the distance to the southwest.~
+@91117 = ~You hear a door closing in the distance to the southwest.~
+// Eeast Tower (Banites)
+@91118 = ~You hear a door opening in the distance to the northwest.~
+@91119 = ~You hear a door closing in the distance to the northwest.~

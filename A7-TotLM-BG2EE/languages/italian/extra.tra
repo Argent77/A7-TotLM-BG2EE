@@ -137,3 +137,15 @@ STATISTICHE:
 Peso: 0~
 @91110 = ~Ahh! Grazie per avermi liberato da quella maledizione. Sento già il peso dei secoli allontanarmi da questo posto. Ora posso finalmente riposare in pace.~ ~Ahh! Grazie per avermi liberata da quella maledizione. Sento già il peso dei secoli allontanarmi da questo posto. Ora posso finalmente riposare in pace.~
 @91111 = ~Cos...?! Dove sono? Cos'è successo? Ugh, sono troppo debole... Non riesco a muovermi.~
+// South Tower (Wyverns)
+@91112 = ~Senti una porta aprirsi in lontananza, a nord-est.~
+@91113 = ~Senti una porta chiudersi in lontananza, a nord-est.~
+// West Tower (Harald)
+@91114 = ~Senti una porta aprirsi in lontananza, a sud-est.~
+@91115 = ~Senti una porta chiudersi in lontananza, a sud-est.~
+// North Tower (Harpy Queen)
+@91116 = ~Senti una porta aprirsi in lontananza, a sud-ovest.~
+@91117 = ~Senti una porta chiudersi in lontananza, a sud-ovest.~
+// Eeast Tower (Banites)
+@91118 = ~Senti una porta aprirsi in lontananza, a nord-ovest.~
+@91119 = ~Senti una porta chiudersi in lontananza, a nord-ovest.~
