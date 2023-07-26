@@ -5,7 +5,7 @@ IF
     DifficultyLT(NORMAL)
 THEN
   RESPONSE #100
-    IncrementGlobal("SPRITE_IS_DEADSHAMBLER","GLOBAL",1)
+    IncrementGlobal("SPRITE_IS_DEAD9800SHAMBLER","GLOBAL",1)
     DestroySelf()
 END
 
