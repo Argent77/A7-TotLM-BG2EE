@@ -39,6 +39,22 @@ THEN
 END
 
 IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("HRPFND_2")
+    MoveToObject(Player1)
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("HRPFND_3")
+    MoveToObject(Player1)
+END
+
+IF
   OnCreation()
 THEN
   RESPONSE #100
