@@ -43,7 +43,7 @@ END
 
 IF
   Global("fog_disabled","ID9800",0)
-  NumDeadGT("Shambler",5)
+  NumDeadGT("9800Shambler",5)
 THEN
   RESPONSE #100
     SetGlobal("fog_disabled","ID9800",1)
