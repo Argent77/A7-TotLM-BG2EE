@@ -149,3 +149,7 @@ Weight: 0~
 // Eeast Tower (Banites)
 @91118 = ~You hear a door opening in the distance to the northwest.~
 @91119 = ~You hear a door closing in the distance to the northwest.~
+@91120 = ~So you've already been there?~
+@91121 = ~Yes, of course. But I couldn't get at the treasure inside the castle yet. That's what I need heroes like you for.~
+@91122 = ~Did you find anything of worth in the castle at all?~
+@91123 = ~Well, I've collected a few bits and pieces of treasure from the castle ruins.~

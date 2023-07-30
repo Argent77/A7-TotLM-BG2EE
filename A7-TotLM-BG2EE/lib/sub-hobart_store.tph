@@ -1,0 +1,3 @@
+// Subcomponent: Allow to trade with Hobart before starting the adventure
+
+COMPILE ~%MOD_FOLDER%/extra/dhobart-store.d~
