@@ -368,22 +368,25 @@ COPY ~%MOD_FOLDER%/lua/bgee-append.lua~ ~%MOD_FOLDER%/lua/bgee-append.lua~
 BUT_ONLY
 
 COPY_EXISTING ~bgee.lua~ ~override~
-  PATCH_IF (GAME_IS ~bgee~ && GAME_INCLUDES ~sod~) BEGIN
-    TEXT_SPRINT cheatAreas ~cheatAreasExpansion~
-  END ELSE BEGIN
-    TEXT_SPRINT cheatAreas ~cheatAreas~
+  CLEAR_ARRAY ~cheatAreas~
+  SET $cheatAreas(~cheatAreasExpansion~) = 1
+  PATCH_IF (GAME_IS ~bg2ee eet~) BEGIN
+    SET $cheatAreas(~cheatAreas~) = 1
   END
-  SET pos_start = INDEX_BUFFER(~^[ %TAB%]*%cheatAreas%[ %TAB%]*=[ %TAB%]*{[ %TAB%]*[%WNL%]~)
-  PATCH_IF (pos_start >= 0) BEGIN
-    SET pos_end = INDEX_BUFFER(~^[ %TAB%]*}[ %TAB%]*[%WNL%]~ pos_start)
-    PATCH_IF (pos_end > pos_start) BEGIN
-      SET pos = pos_end
-      PATCH_PHP_EACH lines AS _ => line BEGIN
-        TEXT_SPRINT line ~%TAB%%line%%WNL%~
-        SET len = STRING_LENGTH ~%line%~
-        INSERT_BYTES pos len
-        WRITE_ASCIIE pos ~%line%~ (len)
-        SET pos += len
+
+  PHP_EACH cheatAreas AS area_list => _ BEGIN
+    SET pos_start = INDEX_BUFFER(~^[ %TAB%]*%area_list%[ %TAB%]*=[ %TAB%]*{[ %TAB%]*[%WNL%]~)
+    PATCH_IF (pos_start >= 0) BEGIN
+      SET pos_end = INDEX_BUFFER(~^[ %TAB%]*}[ %TAB%]*[%WNL%]~ pos_start)
+      PATCH_IF (pos_end > pos_start) BEGIN
+        SET pos = pos_end
+        PATCH_PHP_EACH lines AS _ => line BEGIN
+          TEXT_SPRINT line ~%TAB%%line%%WNL%~
+          SET len = STRING_LENGTH ~%line%~
+          INSERT_BYTES pos len
+          WRITE_ASCIIE pos ~%line%~ (len)
+          SET pos += len
+        END
       END
     END
   END
