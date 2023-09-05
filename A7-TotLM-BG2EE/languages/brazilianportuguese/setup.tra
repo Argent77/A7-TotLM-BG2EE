@@ -1,0 +1,18 @@
+// -*- coding: us-ascii -*- 
+// Setup (index >= 1000000)
+@1000000 = ~Trials of the Luremaster pro Baldur's Gate~
+@1000100 = ~Rebalancear as armas e o equipamento~
+@1000200 = ~Reduzir a experiência dos monstros e missões~
+@1000201 = ~Reduzir em 25 por cento~
+@1000202 = ~Reduzir em 50 por cento~
+@1000203 = ~Reduzir em 75 por cento~
+@1000204 = ~Não conceder experiência~
+@1000300 = ~Permitir negociar com o Hobart antes de iniciar a aventura~
+
+
+@1100000 = ~Requer o Siege of Dragonspear, Baldur's Gate 2: Enhanced Edition ou o Enhanced Edition Trilogy.~
+@1100001 = ~Requer que o jogo esteja na versão 2.0 ou superior.~
+@1100002 = ~Requer que o componente principal esteja instalado.~
+@1100003 = ~Ignorar: Torna os feitiços do IWD disponíveis para o jogador. Esta função já é instalada por outro mod.~
+@1100004 = ~Não pôde achar a lista de feitiços do IWD instalados. Não foram feitas mudanças.~
+@1100005 = ~Já instalado pelo componente principal.~

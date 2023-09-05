@@ -1,0 +1,155 @@
+// New strings
+@90000 = ~Provações do Mestre dos Artifícios
+
+Nós fomos capazes de derrotar o Luremaster numa grande batalha e pôr o espírito dele pra descansar. Ele nos deixou um anel não diferente daquele que Hobart usou pra nos trazer para o castelo assombrado. Ele nos transportou de volta pra onde nós encontramos o Hobart pela primeira vez e desapareceu sem rastro.~
+@90001 = ~Spell Trigger—Mirror Image~
+@90002 = ~Spell Trigger—Improved Invisibility~
+@90003 = ~Spell Trigger—Immunity: Divination~
+@90004 = ~Chain Contingency—Invisibility~
+@90005 = ~Chain Contingency—Immunity: Divination~
+@90006 = ~Chain Contingency—Globe of Invulnerability~
+@90007 = ~Baneguard Skeleton~
+@90008 = ~Assombração~
+@90009 = ~Tenta possuir o alvo~
+@90010 = ~Possuído~
+@90011 = ~Taxa de Movimentação Reduzida~
+
+@91000 = ~Dabath~
+@91001 = ~Aah... morte! Morte em toda parte!~
+@91002 = ~Tanta morte!~
+@91003 = ~I... I can't take it anymore. Grant me death and peace!~
+@91004 = ~And you'd be so bold to proclaim as such? I suppose I should be thankful to know exactly where you stand.~
+@91005 = ~Anny just loves it when the bad guys just come out and announce as such.~
+@91006 = ~Bah! Imoen, please, do not call me that!~
+@91007 = ~Oh, sure thing, Anomy *giggle*~
+@91008 = ~Mrpmh...~
+@91009 = ~This is exactly what I don't need right now. Begone, spirit, we care not for your "trials".~
+@91010 = ~But Minsc and Boo are already heroes! You have not heard? Ah, but you shall see!~
+@91011 = ~It seems this spirit seeks to conduct a play in which our roles have already been set. *sigh* It is a tiresome script that we dance to.~
+@91012 = ~Oh oh, do we get a gold star? How about a sticker of some kind? A magnetic stone I can send to my mom so she can put it up on the food cooler that reads 'Best Hero in class'?~
+@91013 = ~If it be up ta me, we'll get this spectre's bloody head cleaved free from his neck. A fine a trophy as ye can ask for.~
+@91014 = ~Pass. I think I've made my mom question my life decisions enough as is without sending her strange heads my friends cut off.~
+@91015 = ~And so we continue to perform his play with only the barest script to read from. Ah, well, this sparrow always did have a penchant for improvisation.~
+@91016 = ~I begin to see the method in this spirit's madness. He needed someone to carry the story of this place away. But, still, he seems committed to making it a difficult task.~
+@91017 = ~Suits me just fine. Was gettin' tired of all this barmy-brained double speakin'. Sure 'nuff, we keep killin', we'll make a mountain o' corpses ta climb out on.~
+@91018 = ~I haven't felt like this since the time I got lost in my great aunt's turnip farm. She grew them big, with stems that went up higher than the eye could see. And if you were an intrepid young gnome with a bit of the mid-day munchies, it wasn't hard to find yourself lost in the thick of it while hankering for a treat. Of course there it wasn't starvation you had to worry about but having your stomach burst from eating too much. Starvation at least has a way of making your mind keen... too many turnips and your mind and body move as slow as molasses. Speaking of... anyone else a bit peckish?~
+@91019 = ~No. Just tell him no. We've entertained this ghost's fancies long enough. *sigh* Were it ever so easy...~
+@91020 = ~And despite your appreciation, you'll undoubtedly not give us a choice in the matter.~
+@91021 = ~Why must such things always be done with violence? Isn't there a better way to put the spirits to rest than by fighting them?~
+@91022 = ~That would be nice, wouldn't it? Shame it doesn't usually go that way.~
+@91023 = ~Fear not! Tales will speak of Minsc and Boo and friends for all time!~
+@91024 = ~Yes. Great. FINE. We've indulged this pointless nostalgia long enough! Remove us from here.~
+@91025 = ~Great deeds speak for themselves. It's not our mission to ensure they are remembered but to do the right thing as an example for others to follow.~
+@91026 = ~I still wonder that myself... But, no, a dream is something you can wake up from and usually things will still be alright. Well, sometimes, at least.~
+@91027 = ~Even a moment's weakness and indecision can lead you very far astray. You should have kept the teachings of Tyr closer to heart.~
+@91028 = ~Yes... I am aware of that now. So painfully aware.~
+@91029 = ~There is always hope, brother. Tyr is a just god. He will understand... if you'd but make the attempt.~
+@91030 = ~To ask for forgiveness is to cleanse the soul in the eyes of the gods. You must find what strength is left in you and seek it.~
+@91031 = ~Bah, if you won't end this wretch, step out of the way. I'll not stand his bawling a moment longer.~
+@91032 = ~Is anyone else thirsty? Hmm... on second thought, his veins are practically dry. I'd hardly get a sip from him.~
+@91033 = ~We could be parted from civilization for some time. I wonder when it will be that we should worry for our own necks when you do become parched.~
+@91034 = ~Of course you have nothing to fear. I would sooner die a second death than betray the trust you've given to me.~
+@91035 = ~Betraying my trust would require I gave the slightest bit to you to begin with.~
+@91036 = ~I... am unsure what the right course of action is here. Surely he deserves some measure of peace... but can death really be the only way?~
+@91037 = ~It can't. It shouldn't. We need to try to find some other way to help this poor man.~
+@91038 = ~The wolf does not ask the fawn for a name before it attacks. If your intention is to devour us, then this facade is a worthless diversion.~
+@91039 = ~Bite your tongue, druid. I am no fawn. Let these harpies know me to be Dorn so that they can shriek my name as I send them to the Abyss!~
+@91040 = ~The only name you need to know is that of my weapon, foul thing. As you can see, I've scrawled it onto the side so that it may brand those who challenge us.~
+@91041 = ~*whispers* Its name is Justine! It's kinda cute that he does that. *giggle*~
+@91042 = ~You don't even realize you're in a cage... you're nothing but vultures who can't see anything but the scraps thrown to you.~
+@91043 = ~(Not so different from this band of bottom feeders who sustain themselves on my leavings then...)~
+@91044 = ~You must be unfamiliar with the phrase 'you attract more flies with honey instead of vinegar'. Perhaps you would like to rephrase your questions in a more friendly manner?~
+@91045 = ~We are not going to help you, priest. Follow your dead god into the Nine Hells!~
+@91046 = ~Be on your guard: This is not the same halfling coward we encountered outside.~
+@91047 = ~This cannot be Hobart. I implore you, do not trust what he says.~
+@91048 = ~An evasive answer. Continue to chase this line of questioning and whatever this thing truly is, its nature will be revealed to us.~
+@91049 = ~Be careful, <CHARNAME>! Something is not what it seems. I can clearly sense evil intent behind his words.~
+@91050 = ~Oh yeah, we're real old buddies. Go waaaaay back. Remember that time you trapped us in this desert all of minutes after we met you? Good times.~
+@91051 = ~You can't take anything seriously, can you Neera?~
+@91052 = ~Well *someone* here has to balance you out.~
+@91053 = ~At least we find one friendly being in these depths. Your assistance would be well met, friend.~
+@91054 = ~More akin to my own druidic circle then. Yet I've seen little more control from your peers than the common werewolf.~
+@91055 = ~A portal away from this place? Speak now. I will not permit remaining in this fetid pit a moment further!~
+@91056 = ~He's referring to the fall of Netheril, I think. They would have been down here for ages.~
+@91057 = ~Netheril? Could be. Or he could be referring to the time my uncle Scratchy invented the Jansen patented turnip catapult. To test it out, we took the rotten yield (after all, there's no use in wasting a good turnip) and launched them set aflame to the horizon, laughing all the while as they streaked across the sky. Why, we never thought much about where they landed... perhaps it was here! Oh, I shudder to imagine the horror these people must have experienced as flaming turnips rained down upon them!~
+@91058 = ~Could he be referring to the time my uncle Scratchy invented the Jansen patented turnip catapult? To test it out, we took the rotten yield (after all, there's no use in wasting a good turnip) and launched them set aflame to the horizon, laughing all the while as they streaked across the sky. Why, we never thought much about where they landed... perhaps it was here! Oh, I shudder to imagine the horror these people must have experienced as flaming turnips rained down upon them!~
+@91059 = ~I'm... pretty sure that wasn't it.~
+@91060 = ~*sniffle* Are you sure? Why bless your heart, young Nalia. You've saved this frail old gnome from a lifetime of regrets!~
+@91061 = ~I... you're welcome?~
+@91062 = ~It's to be a treasure hunt then? *sigh* What better way to pass the time in such a lovely dank cave?~
+@91063 = ~Heroes, yes! We crush evil beneath righteous hamster fury! Point the way, little one, and Minsc and Boo will charge on!~
+@91064 = ~The cunning lion does not jump at the first antelope that crosses its path, for it may find an able antelope's hooves can still break its neck. Rather, it circles the herd unseen in high grass, picking out the best prospect with ample consideration. So do we also take care in the missions we accept.~
+@91065 = ~Ah, you've heard of us then? Yes, I dare say we are great heroes and have little fear for any danger you propose. Speak on.~
+@91066 = ~Anomen, take care that your pride is not a rope that others may lead you by.~
+@91067 = ~Bah, it's not pride to state the truth.~
+@91068 = ~Har har! I like this one. Enough to hold me axe from splittin' his head long enough to hear his offer.~
+@91069 = ~As much as other races' notions of halfling hospitality and courtesy can sometimes be overbearing, you could stand to learn some, my friend.~
+@91071 = ~*sigh* And, of course, because everyone who has entered has died, this is supposed to make it a more enticing prospect? The foolishness of surfacers never ceases to amaze me.~
+@91072 = ~This is all starting to sound uncomfortably familiar...~
+@91073 = ~Intriguing. I believe that would be our specialty.~
+@91074 = ~Well, at least my castle didn't do *that*.~
+@91075 = ~Aye, there be at least a speck of truth in every story! But much richer this sparrow would be if every audience believed that made all stories equally true.~
+@91076 = ~I for one hardly see why a castle that sucks people inside of it is even so strange. Why, I once had a turnip farm that did the very same! You see, in order to keep myself cool during the hot summer months tending it, I had summoned an air elemental to provide a nice soothing breeze. The problem is, Jeremy (that was the elemental's name, you see) often would switch from blowing to sucking at the drop of a hat, and the ensuing vortex would often send onlookers hurdling through the farm. But of course, in every trial is an opportunity and with a bit of entrepreneurship I started the most exciting turnip based theme park in Faerûn!~
+@91077 = ~Unfortunately, that venture was a bit short lived, due to a series of fatalities that were frankly a bit overblown by visitors. Heh, overblown, get it?... *sigh* Jeremy would have laughed.~
+@91078 = ~This seems unwise. This man is hiding something from us but also asking us to take his word on faith alone. Ah, lead as you will.~
+@91079 = ~So you admit to being a common vulture? Heed my warning then: Should there be some deception at play, you will not escape the hand of justice.~
+@91080 = ~Scavenge at my feet and you'll find yourself crushed under my boot.~
+@91081 = ~Uhh... so this is a trap, right? Like, I don't wanna be the one to tell you 'I told you so' but...~
+@91082 = ~I told you so. Heh, actually, I do like saying that. But also seriously this sucks.~
+@91083 = ~Yet again we are ensnared by foul magics. It seems I am doomed to endure these travails even beyond my family line.~
+@91084 = ~Worry not, friend Valygar. As long as we stand together, we will surely overcome this.~
+@91085 = ~You're being very flippant for someone who is moments away from being carved into bloody pieces.~
+@91086 = ~Sakpul iblith! To think that there could even be still more unpleasant places on the surface.~
+@91087 = ~That would explain why the air is so dry. Good thing I packed that lip balm after all...~
+@91088 = ~We are far afield without a way back... for now. We should get into the castle quickly. If we are to find a way out, it will be in there. And besides, the sun will be particularly unpleasant outside.~
+@91089 = ~...~
+@91090 = ~You've told us a great many thing my friend except for one: The truth. What are you hiding?~
+@91091 = ~I... don't know what you're talking about.~
+@91092 = ~Your secrets only serve to hurt yourself, my friend.~
+@91093 = ~I tire of this halfling skirting around the truth. If he does not start talking, I will force his cooperation through magical persuasion.~
+@91094 = ~Perhaps he is under the influence of some sort of geas? Ah, not exactly my specialty, but I have heard of such charms in my travels.~
+@91095 = ~Akin to being trapped in one of the Lady's mazes. Usually 'tis only a man's sanity that flies free from such traps.~
+@91096 = ~May I see the ring? Perhaps something in the enchantment might allow me to...~
+@91097 = ~Afraid not, friend. My soul is connected to it... if I take it off, it'll kill me. No mage I've met has been able to figure it out.~
+@91098 = ~Yeah, I think I do. No hard feelings. But don't worry, we're really good. We'll figure this whole thing out and you'll be free in no time.~
+@91099 = ~You're sweet to say, but I've seen too many adventurers destroyed by this place to give me any hope.~
+@91100 = ~Yeah, but you haven't seen nothin' like us.~
+@91101 = ~Well, it's not really any of my business, but you look a little inexperienced to me. I haven't much use for a hero who doesn't even survive the first battle.~
+@91102 = ~I'm up to the task.~
+@91103 = ~You are right. I'll come back later.~
+@91104 = ~Cell Key #3~
+@91105 = ~This bronze key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #3."
+
+STATISTICS:
+
+Weight: 0~
+@91106 = ~Cell Key #2~
+@91107 = ~This copper key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #2."
+
+STATISTICS:
+
+Weight: 0~
+@91108 = ~Cell Key #1~
+@91109 = ~This iron key is extremely worn with age. A deep inscription at the base of the key reads, "Cell #1."
+
+STATISTICS:
+
+Weight: 0~
+@91110 = ~Ahh! Obrigado por me libertar daquela maldição. Mas eu já sinto o peso dos séculos me puxando pra longe deste lugar. Agora eu posso finalmente descansar em paz.~
+@91111 = ~O qu—?! Aonde eu estou? O que aconteceu? Ugh, muito fraco... não consigo me mover.~
+// South Tower (Wyverns)
+@91112 = ~Você ouve uma porta se abrindo a distância a nordeste.~
+@91113 = ~Você ouve uma porta se fechando a distância a nordeste.~
+// West Tower (Harald)
+@91114 = ~Você ouve uma porta se abrindo a distância a sudeste.~
+@91115 = ~Você ouve uma porta se fechando a distância a sudeste.~
+// North Tower (Harpy Queen)
+@91116 = ~Você ouve uma porta se abrindo a distância a sudoeste.~
+@91117 = ~Você ouve uma porta se fechando a distância a sudoeste.~
+// Eeast Tower (Banites)
+@91118 = ~Você ouve uma porta se abrindo a distância a noroeste.~
+@91119 = ~Você ouve uma porta se fechando a distância a noroeste.~
+@91120 = ~Então você já esteve lá?~
+@91121 = ~Sim, claro. Mas eu ainda não pude chegar no tesouro dentro do castelo. É por isso que eu preciso de heróis como vocês.~
+@91122 = ~Você achou qualquer coisa de valor no castelo?~
+@91123 = ~Bem, eu coletei alguns fragmentos e pedaços de tesouro das ruínas do castelo.~
