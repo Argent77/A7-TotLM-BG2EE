@@ -52,6 +52,55 @@ THEN
     Continue()
 END
 
+IF
+  !Global("id#cave","ID9801",1)
+  OR(2)
+    Specifics(Myself,103)
+    Specifics(Myself,104)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !Global("id#cave","ID9801",2)
+  OR(2)
+    Specifics(Myself,107)
+    Specifics(Myself,108)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !Global("id#cave","ID9801",3)
+  OR(2)
+    Specifics(Myself,101)
+    Specifics(Myself,102)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !Global("id#cave","ID9801",4)
+  OR(2)
+    Specifics(Myself,109)
+    Specifics(Myself,110)
+THEN
+  RESPONSE #100
+    NoAction()
+END
+
+IF
+  !Global("id#cave","ID9801",5)
+  OR(2)
+    Specifics(Myself,105)
+    Specifics(Myself,106)
+THEN
+  RESPONSE #100
+    NoAction()
+END
 
 IF
   GlobalTimerNotExpired("#localtimer","LOCALS")

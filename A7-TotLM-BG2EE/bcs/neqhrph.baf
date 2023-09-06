@@ -1,4 +1,17 @@
 IF
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("#SHOUT_TIMER","LOCALS")
+  OR(2)
+    See(NearestEnemyOf(Myself))
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#SHOUT_TIMER","LOCALS",7)
+    GlobalShout(1030)
+    Continue()
+END
+
+IF
   HasItem("POTN52",Myself)
   HPPercentLT(Myself,50)
 THEN

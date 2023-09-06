@@ -13,6 +13,8 @@ IF
   !See([PC])
 THEN
   RESPONSE #100
-    MoveToObject(Player1)
+    RandomWalk()
+  RESPONSE #100
+    NoAction()
 END
 

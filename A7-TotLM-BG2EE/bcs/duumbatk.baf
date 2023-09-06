@@ -1,4 +1,54 @@
 IF
+  AreaCheck("ID9717")
+  Global("#INIT_SHOUT","LOCALS",0)
+  NearLocation(Myself,1270,1350,8)
+THEN
+  RESPONSE #100
+    SetGlobal("#INIT_SHOUT","LOCALS",5)
+    Continue()
+END
+
+IF
+  AreaCheck("ID9717")
+  Global("#INIT_SHOUT","LOCALS",0)
+  NearLocation(Myself,3430,240,8)
+THEN
+  RESPONSE #100
+    SetGlobal("#INIT_SHOUT","LOCALS",6)
+    Continue()
+END
+
+IF
+  !Global("CELL_05","ID9717",0)
+  Allegiance(Myself,ENEMY)
+  Global("#INIT_SHOUT","LOCALS",5)
+  !GlobalTimerNotExpired("#SHOUT_TIMER","LOCALS")
+  OR(2)
+    See(NearestEnemyOf(Myself))
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#SHOUT_TIMER","LOCALS",7)
+    GlobalShout(1015)
+    Continue()
+END
+
+IF
+  !Global("CELL_06","ID9717",0)
+  Allegiance(Myself,ENEMY)
+  Global("#INIT_SHOUT","LOCALS",6)
+  !GlobalTimerNotExpired("#SHOUT_TIMER","LOCALS")
+  OR(2)
+    See(NearestEnemyOf(Myself))
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#SHOUT_TIMER","LOCALS",7)
+    GlobalShout(1016)
+    Continue()
+END
+
+IF
   See(NearestEnemyOf(Myself))
 THEN
   RESPONSE #100

@@ -1,4 +1,18 @@
 IF
+  !Global("MAP_GROUP_HOSTILE1","MYAREA",0)
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("#SHOUT_TIMER","LOCALS")
+  OR(2)
+    See(NearestEnemyOf(Myself))
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#SHOUT_TIMER","LOCALS",7)
+    GlobalShout(1001)
+    Continue()
+END
+
+IF
   Global("MAP_GROUP_HOSTILE1","MYAREA",0)
   See(NearestEnemyOf(Myself))
 THEN

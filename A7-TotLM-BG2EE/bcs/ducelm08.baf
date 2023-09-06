@@ -1,4 +1,13 @@
 IF
+  !Global("CELL_08","ID9717",0)
+  !See([PC])
+  Heard([EVILCUTOFF],1018)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
   Global("CELL_08","ID9717",0)
   See(NearestEnemyOf(Myself))
 THEN
@@ -13,6 +22,6 @@ IF
   !See([PC])
 THEN
   RESPONSE #100
-    MoveToObject(Player1)
+    RandomWalk()
 END
 

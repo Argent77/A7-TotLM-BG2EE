@@ -1,8 +1,18 @@
 IF
+  !See([PC])
+  Heard([EVILCUTOFF],1030)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
   ActionListEmpty()
   !See([PC])
 THEN
   RESPONSE #100
-    MoveToObject(Player1)
+    RandomWalk()
+  RESPONSE #100
+    NoAction()
 END
 

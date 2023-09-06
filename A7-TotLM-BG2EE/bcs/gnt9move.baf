@@ -1,11 +1,21 @@
 IF
+  !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
+  Allegiance(Myself,ENEMY)
+  !See([PC])
+  Heard([EVILCUTOFF],1009)
+THEN
+  RESPONSE #100
+    MoveToObject(LastHeardBy(Myself))
+END
+
+IF
   ActionListEmpty()
   !Global("MAP_GROUP_HOSTILE9","MYAREA",0)
   Allegiance(Myself,ENEMY)
   !See([PC])
 THEN
   RESPONSE #100
-    MoveToObject(Player1)
+    RandomWalk()
   RESPONSE #100
     NoAction()
 END

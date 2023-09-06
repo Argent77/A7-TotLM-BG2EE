@@ -14,3 +14,73 @@ THEN
     Continue()
 END
 
+IF
+  !Global("id#cave","ID9801",1)
+  OR(6)
+    NearLocation(Player1,954,2336,9)
+    NearLocation(Player2,954,2336,9)
+    NearLocation(Player3,954,2336,9)
+    NearLocation(Player4,954,2336,9)
+    NearLocation(Player5,954,2336,9)
+    NearLocation(Player6,954,2336,9)
+THEN
+  RESPONSE #100
+    SetGlobal("id#cave","ID9801",1)
+END
+
+IF
+  !Global("id#cave","ID9801",2)
+  OR(6)
+    NearLocation(Player1,2189,458,9)
+    NearLocation(Player2,2189,458,9)
+    NearLocation(Player3,2189,458,9)
+    NearLocation(Player4,2189,458,9)
+    NearLocation(Player5,2189,458,9)
+    NearLocation(Player6,2189,458,9)
+THEN
+  RESPONSE #100
+    SetGlobal("id#cave","ID9801",2)
+END
+
+IF
+  !Global("id#cave","ID9801",3)
+  OR(6)
+    NearLocation(Player1,2123,1490,9)
+    NearLocation(Player2,2123,1490,9)
+    NearLocation(Player3,2123,1490,9)
+    NearLocation(Player4,2123,1490,9)
+    NearLocation(Player5,2123,1490,9)
+    NearLocation(Player6,2123,1490,9)
+THEN
+  RESPONSE #100
+    SetGlobal("id#cave","ID9801",3)
+END
+
+IF
+  !Global("id#cave","ID9801",4)
+  OR(6)
+    NearLocation(Player1,3270,1212,9)
+    NearLocation(Player2,3270,1212,9)
+    NearLocation(Player3,3270,1212,9)
+    NearLocation(Player4,3270,1212,9)
+    NearLocation(Player5,3270,1212,9)
+    NearLocation(Player6,3270,1212,9)
+THEN
+  RESPONSE #100
+    SetGlobal("id#cave","ID9801",4)
+END
+
+IF
+  !Global("id#cave","ID9801",5)
+  OR(6)
+    NearLocation(Player1,2496,2488,9)
+    NearLocation(Player2,2496,2488,9)
+    NearLocation(Player3,2496,2488,9)
+    NearLocation(Player4,2496,2488,9)
+    NearLocation(Player5,2496,2488,9)
+    NearLocation(Player6,2496,2488,9)
+THEN
+  RESPONSE #100
+    SetGlobal("id#cave","ID9801",5)
+END
+

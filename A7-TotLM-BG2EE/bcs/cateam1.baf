@@ -1,4 +1,19 @@
 IF
+  !Global("MAP_GROUP_HOSTILE1","ID9801",0)
+  Allegiance(Myself,ENEMY)
+  !GlobalTimerNotExpired("#SHOUT_TIMER","LOCALS")
+  OR(2)
+    See(NearestEnemyOf(Myself))
+    AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#SHOUT_TIMER","LOCALS",7)
+    GlobalShout(1030)
+    Continue()
+END
+
+
+IF
   Global("MAP_GROUP_HOSTILE1","ID9801",0)
   Global("MINOTAUR_TRAP","ID9801",2)
   See([PC])
