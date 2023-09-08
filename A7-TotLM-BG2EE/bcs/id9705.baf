@@ -1,4 +1,14 @@
 IF
+  OnCreation()
+  !Global("InToB","GLOBAL",0)
+  TriggerOverride(Player1,HaveSpell(ENTER_POCKET_PLANE))
+THEN
+  RESPONSE #100
+    ApplySpellRES("ID#PPNO2",Player1)
+    Continue()
+END
+
+IF
   !Global("ID9705_visited","GLOBAL",1)
 THEN
   RESPONSE #100

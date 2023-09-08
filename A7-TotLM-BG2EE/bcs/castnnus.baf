@@ -12,7 +12,6 @@ IF
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",THREE_ROUNDS)
-    SetGlobal("#action","LOCALS",0)
     SaveObjectLocation("LOCALS","#targetpoint",LastSeenBy(Myself))
     ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
     Wait(2)
@@ -26,29 +25,27 @@ THEN
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   !Global("#targetpoint","LOCALS",0)
   !NearSavedLocation(Myself,"LOCALS#targetpoint",10)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToSavedLocation("#targetpoint","LOCALS")
-  RESPONSE #25
+    SetGlobal("#targetpoint","LOCALS",0)
+  RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   !NearSavedLocation(Myself,"LOCALS#homepoint",10)
 THEN
   RESPONSE #100
-    NoAction()
-  RESPONSE #25
-    SetGlobal("#action","LOCALS",1)
+    SetGlobal("#targetpoint","LOCALS",0)
     MoveToSavedLocation("#homepoint","LOCALS")
-  RESPONSE #10
+  RESPONSE #100
     Continue()
 END
 
@@ -103,72 +100,74 @@ THEN
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player1)
+  !StateCheck(Player1,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player1)
   RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player2)
+  !StateCheck(Player2,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player2)
   RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player3)
+  !StateCheck(Player3,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player3)
   RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player4)
+  !StateCheck(Player4,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player4)
   RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player5)
+  !StateCheck(Player5,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player5)
   RESPONSE #100
     Continue()
 END
 
 IF
+  ActionListEmpty()
   GlobalTimerNotExpired("#localtimer","LOCALS")
-  Global("#action","LOCALS",0)
   InMyArea(Player6)
+  !StateCheck(Player6,STATE_NOT_TARGETABLE)
 THEN
   RESPONSE #100
-    SetGlobal("#action","LOCALS",1)
     MoveToObject(Player6)
+  RESPONSE #100
+    Continue()
 END
 

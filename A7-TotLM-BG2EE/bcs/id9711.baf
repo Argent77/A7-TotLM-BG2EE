@@ -1,4 +1,14 @@
 IF
+  OnCreation()
+  !Global("InToB","GLOBAL",0)
+  TriggerOverride(Player1,HaveSpell(ENTER_POCKET_PLANE))
+THEN
+  RESPONSE #100
+    ApplySpellRES("ID#PPNO2",Player1)
+    Continue()
+END
+
+IF
   !Global("ID9711_visited","GLOBAL",1)
 THEN
   RESPONSE #100
@@ -53,6 +63,17 @@ IF
 THEN
   RESPONSE #100
     CreateCreature("trshelh",[864.753],12)
+    Continue()
+END
+
+IF
+  !Global("#luremaster_final_spawn","ID9711",1)
+  !Global("MAP_GROUP_HOSTILE9","ID9711",0)
+  !Global("SPRITE_IS_DEADLORDMALURADEK","GLOBAL",0)
+  DifficultyGT(HARD)
+THEN
+  RESPONSE #100
+    CreateCreature("trlordm",[986.554],14)
     Continue()
 END
 

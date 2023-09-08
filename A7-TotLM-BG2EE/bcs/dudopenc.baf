@@ -4,7 +4,7 @@ THEN
   RESPONSE #100
     CutSceneId("LUREMASTER")
     MultiPlayerSync()
-    Face(6)
+    Face(14)
     MoveViewPoint([802.790],VERY_FAST)
     Wait(2)
     FadeToColor([20.0],0)
