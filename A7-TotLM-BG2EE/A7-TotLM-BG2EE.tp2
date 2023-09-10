@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-TotLM-BG2EE~
-SUPPORT ~http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/~
-VERSION ~3.1~
+SUPPORT ~https://forums.beamdog.com/discussion/73701~
+VERSION ~4.0~
 
 ALWAYS
   // required because of non-standard BACKUP path
@@ -83,7 +83,7 @@ LANGUAGE ~Polish~
          ~A7-TotLM-BG2EE/languages/polish/bg2ee.tra~
          ~A7-TotLM-BG2EE/languages/polish/extra.tra~
 
-LANGUAGE ~Brazilian Portuguese (by Felipefpl)~
+LANGUAGE ~Brazilian Portuguese (by Felipe)~
          ~brazilianportuguese~
          ~A7-TotLM-BG2EE/languages/english/setup.tra~
          ~A7-TotLM-BG2EE/languages/english/iwdee.tra~
