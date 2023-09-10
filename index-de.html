@@ -30,7 +30,7 @@
         <li><strong>Diskussion</strong> (<a href="http://www.shsforums.net/forum/669-trials-of-the-luremaster-for-bg2ee/">SHS</a>)</li>
         <li><strong>Diskussion</strong> (<a href="https://forums.beamdog.com/discussion/73701/">Beamdog</a>)</li>
         <li><a href="https://github.com/Argent77/A7-TotLM-BG2EE">Projekt</a></li>
-        <li>Version: 3.1</li>
+        <li>Version: 4.0</li>
       </ul>
       <hr />
       <nav>
@@ -68,7 +68,7 @@
         <p>Sowohl GOG als auch Steam installieren die „Belagerung von Drachenspeer”-Erweiterung in einem Format, welches nicht ohne Weiteres modifiziert werden kann. Ihr müsst zuerst eine Mod namens <a href="https://github.com/Argent77/A7-DlcMerger/releases/latest">DLC Merger</a> in Eurem SoD-Spiel installieren, bevor diese oder weitere WeiDU-basierte Mods installiert werden können.</p>
         <hr class="spacer" />
         <h3>Kompatibilität und Modreihenfolge</h3>
-        <p><strong>Tipuns IWD-in-EET</strong> ist größtenteil kompatibel mit dieser Mod. Allerdings werden nicht alle Monster- und Skriptverbesserungen verfügbar sein. IWD-in-EET muss vor dieser Mod installiert werden.</p>
+        <p><strong>Tipuns IWD-in-EET</strong> ist größtenteil kompatibel mit dieser Mod. Allerdings werden nicht alle Monster- und Skriptverbesserungen verfügbar sein. IWD-in-EET (IWD1_EET) muss vor dieser Mod installiert werden.</p>
         <p>Die Komponente <em>"Dispel Magic Fix"</em> von <strong>Spell Revisions</strong> verändert das Sterbeverhalten von Trollen und Wiedergängern und macht sie praktisch unzerstörbar. Um das Problem zu umgehen, sollte die Komponente <em>vor</em> dieser Mod installiert werden.</p>
         <p>Die Installation von Zaubern aus Icewind Dale wird übersprungen, falls die folgenden Mods installiert sind:</p>
         <ul>
@@ -133,6 +133,11 @@
               <li>Keine Erfahrungspunkte vergeben</li>
             </ol>
           </li>
+          <li>
+            <p><strong>Handel mit Hobart vor Beginn des Abenteuers erlauben</strong> <em>(benötigt die Hauptkomponente)</em></p>
+            <p>Diese Komponente erlaubt es euch, bereits vor dem Start des Abenteuers mit Hobart zu handeln.</p>
+            <p><strong>Achtung:</strong> Einige Gegenstände, die Ihr von Hobart erwerben könnt, sind ziemlich mächtig und könnten die Herausforderungen des restlichen Spielverlaufs mindern.</p>
+          </li>
         </ol>
         <div class="back">
           <a class="novisit" href="#top">ZURÜCK ZUM ANFANG</a>
@@ -146,6 +151,7 @@
         <p><strong>Additional dialog content:</strong> AWizardDidIt</p>
         <p><strong>French translation:</strong> Gwendolyne</p>
         <p><strong>Italian translation:</strong> Aedan and improbabile</p>
+        <p><strong>Brazilian Portuguese translation:</strong> Felipe</p>
         <p><strong>Russian translation:</strong> Eugene Vlasov (aka EugVV)</p>
         <p><strong>Spanish translation:</strong> Chidojuan</p>
         <p><strong>Additional help:</strong> typo_tilly, jastey</p>
@@ -169,6 +175,28 @@
       <!-- ================== V E R S I O N   H I S T O R Y ================== -->
       <section id="changelog">
         <h2>Versionshistorie</h2>
+        <h6>Version 4.0</h6>
+        <ul>
+          <li>Added new subcomponent: Allow to trade with Hobart before starting the adventure.</li>
+          <li>Added Brazilian Portuguese translation (thanks Felipe).</li>
+          <li>Made Blast Skeletons' self-destruction more reliable.</li>
+          <li>Improved Luremaster immunities to fix potential softlocks.</li>
+          <li>Improved feedback messages when pulling levers in the four castle towers.</li>
+          <li>Improved handling of the illusionary staircase on the eastern castle wall.</li>
+          <li>Improved scripted intro of the harpies in the NE tower.</li>
+          <li>Improved spiders encounter in the Ruined Temple of Helm.</li>
+          <li>Improved scripting of Stone Nuisances.</li>
+          <li>Improved traps in castle dungeon, level 3.</li>
+          <li>Improved challenge of the final battle with the Luremaster on hardest difficulty.</li>
+          <li>Improved combat scripts of creatures: Changed from unconditionally following Player1 to "Call for Help"-style behavior.</li>
+          <li>Prevent cheating in the Watchknight Tomb via quickloot bar by placing treasure into a container.</li>
+          <li>Fixed a loophole with the Pocket Plane ability that could allow the party to leave the castle prematurely in ToB.</li>
+          <li>Fixed or improved spells: Static Charge, Mordenkainen's Force Missiles, Spike Growth, Smashing Wave, Symbol Pain, Vitriolic Sphere, Symbol Hopelessness, Emotion Fear.</li>
+          <li>Fixed Hobart's race and class attributes (fixes reputation loss if killed in the castle).</li>
+          <li>Fixed mod areas not always listed in the debug console.</li>
+          <li>Fixed conflicts with BG:EE resources.</li>
+        </ul>
+        <hr class="spacer" />
         <h6>Version 3.1</h6>
         <ul>
           <li>Added official support for Tipun's IWD-in-EET (see compatibility section of the readme for more details).</li>
