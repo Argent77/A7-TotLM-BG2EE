@@ -43,6 +43,12 @@ The whole adventure allows you to earn about 300,000 to 400,000 XP which can be 
 3. Reduce by 75 percent *(Recommended if you start the quest in the Coalition Camp, Siege of Dragonspear campaign.)*
 4. Grant no experience
 
+### 4. Allow to trade with Hobart before starting the adventure *(requires the main component)*
+
+This component allows you to trade with Hobart's store even before you accept to join his adventure.
+
+**Attention:** Some of the items for sale are quite powerful and may reduce the challenges of the rest of the game.
+
 ## Copyright Notice
 
 The mod "Trials of the Luremaster for Baldur's Gate" is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
