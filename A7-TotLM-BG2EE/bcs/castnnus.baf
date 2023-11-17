@@ -7,13 +7,80 @@ THEN
 END
 
 IF
+  DifficultyLT(HARDEST)
   See(NearestEnemyOf(Myself))
   !GlobalTimerNotExpired("#localtimer","LOCALS")
 THEN
   RESPONSE #100
     SetGlobalTimer("#localtimer","LOCALS",THREE_ROUNDS)
     SaveObjectLocation("LOCALS","#targetpoint",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  !DifficultyLT(HARDEST)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("#localtimer","LOCALS",TWO_ROUNDS)
+    SaveObjectLocation("LOCALS","#targetpoint",LastSeenBy(Myself))
+    Continue()
+END
+
+IF
+  DifficultyLT(HARD)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #100
     ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+END
+
+IF
+  Difficulty(HARD)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #50
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+  RESPONSE #50
+    ForceSpell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    Wait(2)
+END
+
+IF
+  !NightmareModeOn()
+  DifficultyGT(HARD)
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #25
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+  RESPONSE #50
+    ForceSpell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    Wait(2)
+  RESPONSE #25
+    ForceSpell(LastSeenBy(Myself),WIZARD_VITRIOLIC_SPHERE)
+    Wait(2)
+END
+
+IF
+  NightmareModeOn()
+  See(NearestEnemyOf(Myself))
+  !GlobalTimerNotExpired("#localtimer","LOCALS")
+THEN
+  RESPONSE #25
+    ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+    Wait(2)
+  RESPONSE #25
+    ForceSpell(LastSeenBy(Myself),WIZARD_MORDENKAINENS_FORCE_MISSILES)
+    Wait(2)
+  RESPONSE #50
+    ForceSpell(LastSeenBy(Myself),WIZARD_VITRIOLIC_SPHERE)
     Wait(2)
 END
 
