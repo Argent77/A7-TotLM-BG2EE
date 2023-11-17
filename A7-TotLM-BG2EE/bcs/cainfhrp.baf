@@ -1,28 +1,52 @@
 IF
-  HaveSpell(WIZARD_BURNING_HANDS)
-  See(NearestEnemyOf(Myself))
-THEN
-  RESPONSE #100
-    Spell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
-    Wait(2)
-END
-
-IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
   HaveSpell(WIZARD_AGANNAZAR_SCORCHER)
   See(NearestEnemyOf(Myself))
+  CheckStatLT(LastSeenBy(Myself),75,RESISTFIRE)
+  RandomNum(2,1)
 THEN
   RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     Spell(LastSeenBy(Myself),WIZARD_AGANNAZAR_SCORCHER)
     Wait(2)
 END
 
 IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
   HaveSpell(WIZARD_FLAME_ARROW)
   See(NearestEnemyOf(Myself))
+  CheckStatLT(LastSeenBy(Myself),75,RESISTFIRE)
+  RandomNum(2,1)
 THEN
   RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     Spell(LastSeenBy(Myself),WIZARD_FLAME_ARROW)
-    Wait(2)
+END
+
+IF
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HaveSpell(WIZARD_MAGIC_MISSILE)
+  See(NearestEnemyOf(Myself))
+  CheckStatLT(LastSeenBy(Myself),75,RESISTMAGIC)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  DifficultyGT(NORMAL)
+  !GlobalTimerNotExpired("bd_cast","LOCALS")
+  HaveSpell(WIZARD_DIRE_CHARM)
+  See(NearestEnemyOf(Myself))
+  !Race(LastSeenBy(Myself),ELF)
+  !Race(LastSeenBy(Myself),HALF_ELF)
+  RandomNum(2,1)
+THEN
+  RESPONSE #100
+    SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
+    Spell(LastSeenBy(Myself),WIZARD_DIRE_CHARM)
 END
 
 IF
