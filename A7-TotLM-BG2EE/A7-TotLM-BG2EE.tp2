@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-TotLM-BG2EE~
 SUPPORT ~https://forums.beamdog.com/discussion/73701~
-VERSION ~4.2~
+VERSION ~4.1~
 
 ALWAYS
   // required because of non-standard BACKUP path
@@ -93,7 +93,12 @@ LANGUAGE ~Brazilian Portuguese (by Felipe)~
          ~A7-TotLM-BG2EE/languages/brazilianportuguese/iwdee.tra~
          ~A7-TotLM-BG2EE/languages/brazilianportuguese/bg2ee.tra~
          ~A7-TotLM-BG2EE/languages/brazilianportuguese/extra.tra~
-
+LANGUAGE ~Simplified Chinese (by Lewis Liu)~
+         ~schinese~
+         ~A7-TotLM-BG2EE/languages/schinese/setup.tra~
+         ~A7-TotLM-BG2EE/languages/schinese/iwdee.tra~
+         ~A7-TotLM-BG2EE/languages/schinese/bg2ee.tra~
+         ~A7-TotLM-BG2EE/languages/schinese/extra.tra~
 
 BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
   REQUIRE_PREDICATE (GAME_IS ~bg2ee~ || GAME_INCLUDES ~sod~) @1100000  // Requires SoD, BG2:EE or EET.
