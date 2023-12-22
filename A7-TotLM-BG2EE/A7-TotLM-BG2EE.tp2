@@ -1,6 +1,6 @@
 BACKUP ~weidu_external/backup/A7-TotLM-BG2EE~
 SUPPORT ~https://forums.beamdog.com/discussion/73701~
-VERSION ~4.1~
+VERSION ~4.2~
 
 ALWAYS
   // required because of non-standard BACKUP path
