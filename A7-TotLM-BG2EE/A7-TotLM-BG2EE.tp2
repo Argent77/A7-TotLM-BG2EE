@@ -82,7 +82,6 @@ LANGUAGE ~Polish~
          ~A7-TotLM-BG2EE/languages/polish/iwdee.tra~
          ~A7-TotLM-BG2EE/languages/polish/bg2ee.tra~
          ~A7-TotLM-BG2EE/languages/polish/extra.tra~
-
 LANGUAGE ~Brazilian Portuguese (by Felipe)~
          ~brazilianportuguese~
          ~A7-TotLM-BG2EE/languages/english/setup.tra~
@@ -95,10 +94,15 @@ LANGUAGE ~Brazilian Portuguese (by Felipe)~
          ~A7-TotLM-BG2EE/languages/brazilianportuguese/extra.tra~
 LANGUAGE ~Simplified Chinese (by Lewis Liu)~
          ~schinese~
+         ~A7-TotLM-BG2EE/languages/english/setup.tra~
+         ~A7-TotLM-BG2EE/languages/english/iwdee.tra~
+         ~A7-TotLM-BG2EE/languages/english/bg2ee.tra~
+         ~A7-TotLM-BG2EE/languages/english/extra.tra~
          ~A7-TotLM-BG2EE/languages/schinese/setup.tra~
          ~A7-TotLM-BG2EE/languages/schinese/iwdee.tra~
          ~A7-TotLM-BG2EE/languages/schinese/bg2ee.tra~
          ~A7-TotLM-BG2EE/languages/schinese/extra.tra~
+
 
 BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
   REQUIRE_PREDICATE (GAME_IS ~bg2ee~ || GAME_INCLUDES ~sod~) @1100000  // Requires SoD, BG2:EE or EET.
