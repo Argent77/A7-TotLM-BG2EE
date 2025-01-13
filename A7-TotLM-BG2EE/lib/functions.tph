@@ -1,5 +1,59 @@
 INCLUDE ~%MOD_FOLDER%/lib/a7_pvrz.tpa~
 
+// Installs a marker file in the override folder to indicate a specific state.
+DEFINE_ACTION_FUNCTION INSTALL_MARKER
+STR_VAR
+  prefix = ~a7#totlm#~
+  label = ~~
+BEGIN
+  COPY ~%MOD_FOLDER%/itm/id#key1.itm~ ~override/%prefix%%label%.mrk~
+    WRITE_LONG NAME1 "-1"
+    WRITE_LONG NAME2 "-1"
+    WRITE_LONG UNIDENTIFIED_DESC "-1"
+    WRITE_LONG IDENTIFIED_DESC "-1"
+END
+
+// Loads definitions from the "Settings" section of the current ini file.
+// Ini key strings are used as variable name with the associated values as content.
+DEFINE_PATCH_MACRO LOAD_INI_ENTRIES
+BEGIN
+  LOCAL_SET __section = 0
+  LOCAL_SPRINT __ini_entry ~~
+
+  LPF READ_TEXT_LINES
+    RET __ini_entries = lines
+    RET_ARRAY __ini_entries = lines
+  END
+
+  FOR (i = 0; i < __ini_entries && __section < 2; ++i) BEGIN
+    SPRINT __ini_entry $__ini_entries(~%i%~)
+    // removing comments; trimming whitespace
+    INNER_PATCH_SAVE __ini_entry ~%__ini_entry%~ BEGIN
+      REPLACE_TEXTUALLY ~//.*~ ~~
+      REPLACE_TEXTUALLY ~#.*~ ~~
+      REPLACE_TEXTUALLY ~[ %TAB%]*=[ %TAB%]*~ ~=~
+      REPLACE_TEXTUALLY ~^[ %TAB%]+~ ~~
+      REPLACE_TEXTUALLY ~[ %TAB%]+$~ ~~
+    END
+
+    PATCH_IF (__section == 0 && ~%__ini_entry%~ STR_EQ ~[Settings]~) BEGIN
+      // section begins
+      SET __section = 1
+    END ELSE PATCH_IF (__section == 1 && ~%__ini_entry%~ STRING_MATCHES_REGEXP ~\[[^]]*\]~ == 0) BEGIN
+      // section ends
+      SET __section = 2
+    END ELSE PATCH_IF (__section == 1 && INDEX(~=~ ~%__ini_entry%~) > 0) BEGIN
+      // evaluating ini entry
+      INNER_PATCH ~%__ini_entry%~ BEGIN
+        REPLACE_EVALUATE ~^\([_a-zA-Z][_a-zA-Z0-9]*\)=\(.*\)~ BEGIN
+          SPRINT EVAL ~%MATCH1%~ ~%MATCH2%~
+        END ~%MATCH0%~
+      END
+    END
+  END
+END
+
+
 // Reads all lines from the current text file into an array.
 DEFINE_PATCH_FUNCTION READ_TEXT_LINES
 INT_VAR upper = 0 // whether to upper-case the textual content

@@ -1,5 +1,9 @@
 // Prerequisites
 
+COPY ~%MOD_FOLDER%/%MOD_FOLDER%.ini~ ~%MOD_FOLDER%/%MOD_FOLDER%.ini~
+  LPM LOAD_INI_ENTRIES
+BUT_ONLY IF_EXISTS
+
 // Ensure that required stats.ids entries exist
 APPEND ~stats.ids~ ~157 DEATH_WARD~ UNLESS ~\bDEATH_WARD\b~
 APPEND ~stats.ids~ ~159 OFFENSIVE_MODIFIER~ UNLESS ~\bOFFENSIVE_MODIFIER\b~

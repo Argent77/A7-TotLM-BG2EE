@@ -133,13 +133,19 @@ BEGIN @1000000 // Trials of the Luremaster for Baldur's Gate
 
   // Original weapons and equipment are way too overpowered for SoD
   ACTION_IF (GAME_IS ~bgee~) BEGIN
-    INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~
+    ACTION_IF (VARIABLE_IS_SET ~sod_rebalance~ && IS_AN_INT ~sod_rebalance~ && sod_rebalance == 0) BEGIN
+      PRINT @1100006  // Skipping: Rebalance weapons and equipment
+    END ELSE BEGIN
+      LAF INSTALL_MARKER STR_VAR label = ~rebalance_items~ END
+      INCLUDE ~%MOD_FOLDER%/lib/sub-nerf_items.tph~
+    END
   END
 
 
 BEGIN @1000100 // Rebalance weapons and equipment
   REQUIRE_COMPONENT ~a7-totlm-bg2ee.tp2~ ~0~ @1100002 // Requires the main component to be installed.
-  REQUIRE_PREDICATE (NOT GAME_IS ~bgee~) @1100005 // Already installed by the main component.
+  REQUIRE_PREDICATE (NOT FILE_EXISTS ~override/a7#totlm#rebalance_items.mrk~) @1100005 // Already installed by the main component.
+  // REQUIRE_PREDICATE (NOT GAME_IS ~bgee~) @1100005 // Already installed by the main component.
   DESIGNATED 20
   LABEL ~A7-TOTLM-BG2EE-REBALANCE_ITEMS~
 
