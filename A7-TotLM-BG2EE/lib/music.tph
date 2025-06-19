@@ -1,5 +1,7 @@
 // Installing soundtracks
 
+COPY ~%MOD_FOLDER%/music/spcid1.acm~ ~music~
+
 COPY ~%MOD_FOLDER%/music/songlist-iwd.2da~ ~%MOD_FOLDER%/music/songlist-iwd.2da~
   COUNT_2DA_COLS numCols
   READ_2DA_ENTRIES_NOW ~src_table~ numCols
@@ -18,6 +20,7 @@ ACTION_PHP_EACH mus_files AS id => mus_file BEGIN
   ADD_MUSIC ~%folder%~ ~%MOD_FOLDER%/music/%mus_file%~
   OUTER_SET new_id = EVAL ~%folder%~
   OUTER_SET $map_music(~%id%~) = new_id
+  APPEND ~songlist.ids~ ~%new_id% %folder%~ UNLESS ~\b%folder%\b~
 END
 
 COPY_EXISTING ~songlist.2da~ ~override~
