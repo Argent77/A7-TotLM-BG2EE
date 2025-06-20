@@ -1561,12 +1561,12 @@ Le passage est libre, à nos foyers il mène.~
 @27033 = ~Cette partie de la tour s'est effondrée, laissant un grand trou dans le sol.~
 @27034 = ~Hache du seigneur minotaure +4~
 @27035 = ~La Hache du Seigneur Minotaure
-Cette arme magnifique a appartenu au seigneur Minotaure qui vivait dans les catacombes du Maître des Leurres. Elle se compose d'une lame à double tranchant montée sur un robuste manche en bois de chêne. Parfaitement équilibrée, elle peut être maniée à une main. Cette hache est magique et donne à celui qui l'utilise un bonus de +4 au toucher et aux dégâts. Un toucher réussi a également 10% de chance d'étourdir un adversaire pendant 1d4 rounds.
+Cette arme magnifique a appartenu au seigneur Minotaure qui vivait dans les catacombes du Maître des Leurres. Elle se compose d'une lame à double tranchant montée sur un robuste manche en bois de chêne. Parfaitement équilibrée, elle peut être maniée à une main. Cette hache est magique et donne à celui qui l'utilise un bonus de +4 au toucher et aux dégâts. Un toucher réussi a également 10% de chance d'étourdir un adversaire pendant un round.
 
 PARAMÈTRES :
 
 Capacités de combat :
-- 10% de chances d'étourdir l'adversaire pendant 1d4 rounds à chaque coup au but
+- 10% de chances d'étourdir l'adversaire pendant un round à chaque coup au but
 
 TAC0 : +4
 Dégâts : 1d12 +4 (tranchant)

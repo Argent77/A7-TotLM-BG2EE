@@ -1630,7 +1630,7 @@ Now, this all seems rather straightforward, and that is exactly what worries me.
 @27032 = ~"Die, invading scum!"~
 @27033 = ~This section of the tower has crumbled away, leaving a gaping hole in the floor.~
 @27034 = ~Axe of the Minotaur Lord +4~
-@27035 = ~This fine weapon once belonged to the Minotaur Lord in the Luremaster's catacombs. The axe sports a double blade mounted on a solid oak shaft. It is finely balanced and may be used one-handed. The axe is enchanted, giving the user a +4 to both hit and damage. A successful hit also has a 10% chance of stunning an opponent for 1d4 rounds. 
+@27035 = ~This fine weapon once belonged to the Minotaur Lord in the Luremaster's catacombs. The axe sports a double blade mounted on a solid oak shaft. It is finely balanced and may be used one-handed. The axe is enchanted, giving the user a +4 to both hit and damage. A successful hit also has a 10% chance of stunning an opponent for one round. 
 
 STATISTICS:
 

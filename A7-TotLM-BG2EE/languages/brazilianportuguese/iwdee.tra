@@ -1630,7 +1630,7 @@ Parece tudo bem simples, e é exatamente isso o que me preocupa. O Mestre não t
 @27032 = ~"Morram, invasores!"~
 @27033 = ~Esta parte da torre desmoronou, deixando um buraco no chão.~
 @27034 = ~Machado do Minotauro Soberano +4~
-@27035 = ~Esta bela arma pertenceu ao Minotauro Lorde das catacumbas do Mestre dos Artifícios. O machado tem uma lâmina dupla montada em uma haste de carvalho resistente. Ele é cuidadosamente equilibrado e pode ser usado em uma mão. O machado está encantado, o que dá ao usuário um bônus de +4 para atingir e dano. Um acerto também tem 10% de chance de atordoar um oponente por 1d4 rodadas. 
+@27035 = ~Esta bela arma pertenceu ao Minotauro Lorde das catacumbas do Mestre dos Artifícios. O machado tem uma lâmina dupla montada em uma haste de carvalho resistente. Ele é cuidadosamente equilibrado e pode ser usado em uma mão. O machado está encantado, o que dá ao usuário um bônus de +4 para atingir e dano. Um acerto também tem 10% de chance de atordoar um oponente por uma ronda. 
 
 ESTATÍSTICAS:
 

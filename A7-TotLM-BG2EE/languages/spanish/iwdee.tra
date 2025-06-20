@@ -1572,7 +1572,7 @@ Aptitudes poseídas:
 @27034 = ~Hacha del Señor de los minotauros~
 @27035 = ~Esta excelente arma perteneció una vez al Señor de los minotauros de las mazmorras del Funambulista. El hacha la forma una doble hoja montada sobre un sólido mango de roble. Está muy bien equilibrada y puede usarse a una mano.
 
-El hacha está encantada y concede al usuario una bonificación +4 tanto al golpe como al daño. Todo golpe exitoso tiene también un 10% de probabilidad de aturdir a un oponente durante 1D4 asaltos.
+El hacha está encantada y concede al usuario una bonificación +4 tanto al golpe como al daño. Todo golpe exitoso tiene también un 10% de probabilidad de aturdir a un oponente durante un asalto.
 
 CARACTERÍSTICAS:
 
@@ -1580,7 +1580,7 @@ Daño: 1D12+4
 GAC0: bonificación +4
 Tipo de daño: Cortante
 Aptitudes especiales:
- 10% de probabilidad de Aturdir al objetivo durante 1D4 asaltos
+ 10% de probabilidad de Aturdir al objetivo durante un asalto
 Peso: 10
 Factor de velocidad: 8
 Talento marcial: Hacha

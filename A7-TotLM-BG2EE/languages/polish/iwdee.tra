@@ -1695,12 +1695,12 @@ Wszystko wydaje się dość proste, ale to mnie właśnie martwi. Takie jasne i 
 @27032 = ~„Gińcie, najeźdźcy!”~
 @27033 = ~Ta część wieży rozpadła się, zostawiając w podłodze ziejącą dziurę.~
 @27034 = ~Topór władcy minotaurów +4~
-@27035 = ~Ta wspaniała broń należała kiedyś do władcy minotaurów, zamieszkującego katakumby Mistrza Wabienia. Topór ma podwójne ostrze osadzone na solidnym, dębowym trzonku. Jest doskonale wyważony i można nim władać jedną ręką. Jest to zaczarowana broń, w związku z czym jej użytkownik zyskuje premię +4 do testów trafienia i zadawanych obrażeń. Poza tym, przy każdym celnym trafieniu istnieje 10% szans na ogłuszenie przeciwnika na 1k4 rundy.
+@27035 = ~Ta wspaniała broń należała kiedyś do władcy minotaurów, zamieszkującego katakumby Mistrza Wabienia. Topór ma podwójne ostrze osadzone na solidnym, dębowym trzonku. Jest doskonale wyważony i można nim władać jedną ręką. Jest to zaczarowana broń, w związku z czym jej użytkownik zyskuje premię +4 do testów trafienia i zadawanych obrażeń. Poza tym, przy każdym celnym trafieniu istnieje 10% szans na ogłuszenie przeciwnika na jedną rundę.
 
 PARAMETRY:
 
 Specjalne:
-– 10% szans na ogłuszenie celu na 1k4 rundy, po trafieniu
+– 10% szans na ogłuszenie celu na jedną rundę, po trafieniu
 
 Obrażenia: 1k12 +4
 TraK0: +4
