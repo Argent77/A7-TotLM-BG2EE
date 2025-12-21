@@ -22,7 +22,7 @@ The quest starts by talking to the halfling Hobart Stubbletoes, who can be found
 
 ## Components
 
-### 1. Trials of the Luremaster *(requires BG2:EE or EET patched to 2.0 or higher)*
+### 1. Trials of the Luremaster *(requires BG2:EE, SoD or EET patched to 2.0 or higher)*
 
 This is the main component. It installs many new areas, creatures, items, spells and everything else needed to enjoy the adventure.
 
