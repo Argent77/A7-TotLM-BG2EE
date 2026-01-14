@@ -231,7 +231,9 @@ ACTION_IF (hobart_checks > 1) BEGIN
 END
 <<<<<<<< .../inlined/totlm-bg2ee/lwhobart_checks.baf
 IF
-  !Global("ID#Master_Quest","GLOBAL",0)
+  OR(2)
+    !Global("ID#Master_Quest","GLOBAL",0)
+    !Global("Master_Quest","GLOBAL",0)
   %hobart_trigger%
 THEN
   RESPONSE #100
