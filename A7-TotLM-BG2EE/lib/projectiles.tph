@@ -52,14 +52,15 @@ END
 
 
 // Generate list of original projectile resref -> id mappings
-COPY ~%MOD_FOLDER%/pro/projectl-iwd.ids~ ~%MOD_FOLDER%/pro/projectl-iwd.ids~
-  CLEAR_ARRAY ~pro_items~
-  READ_2DA_ENTRIES_NOW ~pro_items~ 2
+COPY ~%MOD_FOLDER%/pro/projectl-iwd.2da~ ~%MOD_FOLDER%/pro/projectl-iwd.2da~
+  READ_2DA_ENTRIES_NOW ~pro_items~ 3
   FOR (row = 0; row < pro_items; ++row) BEGIN
     READ_2DA_ENTRY_FORMER ~pro_items~ row 0 id
-    READ_2DA_ENTRY_FORMER ~pro_items~ row 1 res
-    TO_UPPER ~res~
-    SET $projectl_old(~%res%~) = id
+    READ_2DA_ENTRY_FORMER ~pro_items~ row 1 resref
+    READ_2DA_ENTRY_FORMER ~pro_items~ row 2 label
+    TO_UPPER ~resref~
+    SET $projectl_old(~%resref%~) = id
+    SPRINT $projectl_old(~%resref%~ ~label~) ~%label%~
   END
 BUT_ONLY
 
@@ -67,13 +68,21 @@ BUT_ONLY
 ACTION_BASH_FOR ~%MOD_FOLDER%/pro~ ~^.+\.pro$~ BEGIN
   OUTER_SET pro_id = IDS_OF_SYMBOL(~projectl~ ~%BASH_FOR_RES%~)
   ACTION_IF (pro_id < 0) BEGIN
-    ADD_PROJECTILE ~%BASH_FOR_DIRECTORY%/%BASH_FOR_RES%.%BASH_FOR_EXT%~
-    OUTER_SET pro_id = EVAL ~%BASH_FOR_RES%~ - 1
+    OUTER_TEXT_SPRINT pro_ref ~%BASH_FOR_RES%~
+    ACTION_TO_UPPER ~pro_ref~
+    ACTION_IF (VARIABLE_IS_SET $projectl_old(~%pro_ref%~)) BEGIN
+      OUTER_SPRINT label $projectl_old(~%pro_ref%~ ~label~)
+      ADD_PROJECTILE ~%BASH_FOR_DIRECTORY%/%BASH_FOR_RES%.%BASH_FOR_EXT%~ ~%label%~
+      OUTER_SET pro_id = EVAL ~%BASH_FOR_RES%~ - 1
+    END ELSE BEGIN
+      OUTER_SET pro_id = "-1"
+    END
   END ELSE BEGIN
-    OUTER_TEXT_SPRINT res ~%BASH_FOR_RES%~
-    ACTION_TO_UPPER ~res~
-    OUTER_SET $projectl_old(~%res%~) = pro_id
+    OUTER_TEXT_SPRINT resref ~%BASH_FOR_RES%~
+    ACTION_TO_UPPER ~resref~
+    OUTER_SET $projectl_old(~%resref%~) = pro_id
   END
+
   ACTION_IF (pro_id >= 0) BEGIN
     OUTER_TEXT_SPRINT pro_ref ~%BASH_FOR_RES%~
     ACTION_TO_UPPER ~pro_ref~
