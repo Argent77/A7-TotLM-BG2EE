@@ -3,8 +3,6 @@ SUPPORT ~https://forums.beamdog.com/discussion/73701~
 VERSION ~4.4~
 
 ALWAYS
-  // required because of non-standard BACKUP path
-  OUTER_TEXT_SPRINT MOD_FOLDER ~A7-TotLM-BG2EE~
   // root folder for mutable data
   OUTER_TEXT_SPRINT WORK_FOLDER ~weidu_external~
 
