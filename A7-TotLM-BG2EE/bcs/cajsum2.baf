@@ -4,7 +4,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("difficulty_check","LOCALS",1)
-    RemoveSpellRES("IDSP158")
+    RemoveSpellRES("IDSP158", Myself)
     Continue()
 END
 
@@ -14,7 +14,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("difficulty_check","LOCALS",1)
-    RemoveSpellRES("IDSP158")
+    RemoveSpellRES("IDSP158", Myself)
     Continue()
 END
 
@@ -93,7 +93,7 @@ THEN
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobalTimer("SUMMONER_TIMER","ID9800",FIVE_ROUNDS)
     SetGlobal("SUMMONER_TURN","ID9800",1)
-    RemoveSpellRES("IDSP158")
+    RemoveSpellRES("IDSP158", Myself)
     ForceSpellPointRES("IDSP158",[875.2181])
     Wait(2)
 END
@@ -110,7 +110,7 @@ THEN
     SetGlobalTimer("bd_cast","LOCALS",ONE_ROUND)
     SetGlobalTimer("SUMMONER_TIMER","ID9800",FIVE_ROUNDS)
     SetGlobal("SUMMONER_TURN","ID9800",1)
-    RemoveSpellRES("IDSP158")
+    RemoveSpellRES("IDSP158", Myself)
     ForceSpellPointRES("IDSP160",[875.2181])
     Wait(2)
 END
